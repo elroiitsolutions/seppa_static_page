@@ -1,0 +1,67 @@
+"use client";
+import React from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+interface AnimatedHeadingProps {
+  text: string;
+  className?: string;
+  elementType?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  delay?: number;
+}
+
+const Character = ({ char, progress, range }: { char: string, progress: any, range: number[] }) => {
+  const opacity = useTransform(progress, range, [0.2, 1]);
+  return (
+    <motion.span style={{ opacity }}>
+      {char}
+    </motion.span>
+  );
+};
+
+const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({ 
+  text, 
+  className = "", 
+  elementType: Element = 'h2',
+  delay = 0
+}) => {
+  const container = React.useRef<HTMLElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start 90%", "end 60%"]
+  });
+
+  const words = text.split(" ");
+  let charCount = 0;
+  const totalChars = text.replace(/\s/g, "").length;
+
+  return (
+    <Element className={className} ref={container as any}>
+      <span className="flex flex-wrap gap-[0.25em]">
+        {words.map((word, i) => {
+          return (
+            <span key={i} className="inline-flex">
+              {word.split("").map((char, j) => {
+                const start = charCount / totalChars;
+                // Add a small overlap (1.5) for a smoother sweep effect
+                const end = start + (1.5 / totalChars);
+                charCount++;
+                
+                return (
+                  <Character 
+                    key={j} 
+                    char={char} 
+                    progress={scrollYProgress} 
+                    range={[start, end]} 
+                  />
+                );
+              })}
+            </span>
+          );
+        })}
+      </span>
+    </Element>
+  );
+};
+
+export default AnimatedHeading;
