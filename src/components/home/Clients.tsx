@@ -1,7 +1,22 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
-import logoImg from '@/assets/logo/logo.png';
+import aquafina from '@/assets/logo/aquafina-logo-vector.png';
+import atlas from '@/assets/logo/atlas.jpg';
+import bis from '@/assets/logo/bis.jpg';
+import direct from '@/assets/logo/direct.jpg';
+import foster from '@/assets/logo/foster.jpg';
+import haywards from '@/assets/logo/haywards.jpg';
+import hello from '@/assets/logo/hello.jpg';
+import kingfish from '@/assets/logo/kingfish.jpg';
+import mcdo from '@/assets/logo/mcdo.jpg';
+import perno from '@/assets/logo/perno.jpg';
+import sabol from '@/assets/logo/sabol.jpg';
+import seagrams from '@/assets/logo/seagrams.jpg';
+import sip from '@/assets/logo/sip.jpg';
+import playboy from '@/assets/logo/playboy.png';
+import royalchallenge from '@/assets/logo/royalchallenge.png';
+
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -14,22 +29,21 @@ const staggerContainer = {
 };
 
 const clients = [
-  { id: 1, name: 'Client 1', image: logoImg.src },
-  { id: 2, name: 'Client 2', image: logoImg.src },
-  { id: 3, name: 'Client 3', image: logoImg.src },
-  { id: 4, name: 'Client 4', image: logoImg.src },
-  { id: 5, name: 'Client 5', image: logoImg.src },
-  { id: 6, name: 'Client 6', image: logoImg.src },
-  { id: 7, name: 'Client 7', image: logoImg.src },
-  { id: 8, name: 'Client 8', image: logoImg.src },
-  { id: 9, name: 'Client 9', image: logoImg.src },
-  { id: 10, name: 'Client 10', image: logoImg.src },
-  { id: 11, name: 'Client 11', image: logoImg.src },
-  { id: 12, name: 'Client 12', image: logoImg.src },
-  { id: 13, name: 'Client 13', image: logoImg.src },
-  { id: 14, name: 'Client 14', image: logoImg.src },
-  { id: 15, name: 'Client 15', image: logoImg.src },
-  { id: 16, name: 'Client 16', image: logoImg.src }
+  { id: 1, name: 'Client 2', image: aquafina.src },
+  { id: 2, name: 'Client 3', image: atlas.src },
+  { id: 3, name: 'Client 4', image: bis.src },
+  { id: 4, name: 'Client 5', image: direct.src },
+  { id: 5, name: 'Client 6', image: foster.src },
+  { id: 6, name: 'Client 7', image: haywards.src },
+  { id: 7, name: 'Client 8', image: hello.src },
+  { id: 8, name: 'Client 9', image: kingfish.src },
+  { id: 9, name: 'Client 10', image: mcdo.src },
+  { id: 10, name: 'Client 11', image: perno.src },
+  { id: 11, name: 'Client 12', image: sabol.src },
+  { id: 12, name: 'Client 13', image: seagrams.src },
+  { id: 13, name: 'Client 14', image: sip.src },
+  { id: 14, name: 'Client 15', image: playboy.src },
+  { id: 15, name: 'Client 16', image: royalchallenge.src }
 ];
 
 const Clients = () => {

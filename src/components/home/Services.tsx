@@ -16,22 +16,27 @@ const staggerContainer = {
 
 const services = [
   {
-    title: 'Custom Textiles',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
+    title: 'Complete Beer/Wine & Mead processing and packaging lines',
+    image: 'pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg'
   },
   {
-    title: 'Fabric Manufacturing',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
+    title: 'Complete liquor & spirits/RTDs & seltzers processing and packaging lines',
+    image: 'pics/istockphoto-2209086842-612x612.jpg'
   },
   {
-    title: 'Sustainable Practices',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
+    title: 'Complete mineral water/Alkaline water processing and packaging lines',
+    image: 'pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg'
+  },
+  {
+    title: 'Complete soft drinks/juice/milk processing and packaging lines',
+    image: 'pics/pexels-photo-17559580.jpg'
   }
+  
 ];
 
 const Services = () => {
   return (
-    <section className="py-24 bg-[#273051] relative overflow-hidden m-3 rounded-2xl">
+    <section className="py-24 bg-[#101934] relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern Overlay (Optional subtle texture) */}
        <div className="absolute inset-0 pointer-events-none bg-no-repeat bg-center bg-cover opacity-15" style={{ backgroundImage: `url(${bgPattern.src})` }}></div>
 
@@ -52,7 +57,7 @@ const Services = () => {
           
           <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
             <AnimatedHeading 
-              text="Comprehensive textile services you can trust" 
+              text="Comprehensive Processing & Packaging Systems You Can Trust" 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-white leading-tight [&>span]:justify-center" 
             />
@@ -61,7 +66,7 @@ const Services = () => {
 
         {/* Services Grid */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}

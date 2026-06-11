@@ -33,7 +33,7 @@ const HomeHero = () => {
     className="absolute inset-0 w-full h-full object-cover"
   >
     <source
-      src="https://demo.awaikenthemes.com/assets/videos/yarnex-video.mp4"
+      src="/videos/stock-footage-shop-for-the-production-of-drinking-water-on-the-conveyor-moving-water-bottles-production-of.mp4"
       type="video/mp4"
     />
   </video>
@@ -65,7 +65,8 @@ const HomeHero = () => {
               <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
               <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
             </div>
-            <span className="text-white font-small text-sm md:text-base tracking-wide">Crafted Textiles. Trusted Quality.</span>
+            <span className="text-white font-small text-sm md:text-base tracking-wide">Crafting quality textiles for global industries
+</span>
           </motion.div>
           
           {/* Main Heading */}
@@ -73,22 +74,22 @@ const HomeHero = () => {
             variants={fadeInUp}
             className="text-4xl md:text-6xl lg:text-[52px] font-heading font-bold text-white leading-[1.1] mb-4 md:mb-6"
           >
-            Crafting quality textiles for global industries
+            Global Leader in Processing & Packaging Technology
           </motion.h1>
           
           {/* Subtitle */}
           <motion.p variants={fadeInUp} className="text-base md:text-xl text-gray-300 mb-8 md:mb-10 max-w-2xl leading-relaxed">
-            Through advanced manufacturing processes, strict quality control, and innovative textile solutions, we serve diverse industries worldwide.
+            Engineering high-efficiency, fully automated lines for Water, Soft Drinks, Juices, Beer, Spirits, and Liquid Dairy. Powered by 50 years of manufacturing excellence across the India, USA, and Middle East markets.
           </motion.p>
           
           {/* Buttons */}
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-10">
             {/* Book Consultation */}
             <div className="flex items-center gap-2 md:gap-3 group cursor-pointer">
-              <Link href="/contact-us" className="inline-flex bg-[#273051] text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide">
+              <Link href="/contact-us" className="inline-flex bg-[#101934] text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide">
                 Book Consultation
               </Link>
-              <Link href="/contact-us" className="w-12 h-12 md:w-[60px] md:h-[60px] bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#273051] transition duration-300 shadow-md">
+              <Link href="/contact-us" className="w-12 h-12 md:w-[60px] md:h-[60px] bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#101934] transition duration-300 shadow-md">
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-5 h-5 md:w-[22px] md:h-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
               </Link>
             </div>
@@ -97,12 +98,12 @@ const HomeHero = () => {
             <div className="flex items-center gap-4 cursor-pointer group">
               <div className="w-[72px] h-[72px] rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
                 <div className="w-[56px] h-[56px] rounded-full bg-black/40 flex items-center justify-center">
-                  <div className="w-11 h-11 rounded-full bg-[#273051] flex items-center justify-center text-white pl-1 shadow-lg group-hover:bg-seppa-red transition-colors duration-300">
+                  <div className="w-11 h-11 rounded-full bg-[#101934] flex items-center justify-center text-white pl-1 shadow-lg group-hover:bg-seppa-red transition-colors duration-300">
                     <FiPlay size={18} fill="currentColor" />
                   </div>
                 </div>
               </div>
-              <span className="text-white font-bold text-xl tracking-wide group-hover:text-seppa-red transition-colors duration-300">Watch Video</span>
+              <span className="text-white font-bold text-xl tracking-wide group-hover:text-seppa-red transition-colors duration-300">Watch Video to know us</span>
             </div>
           </motion.div>
         </motion.div>
@@ -119,9 +120,9 @@ const HomeHero = () => {
           >
             {[
               "Eco-Friendly Dyeing Processes",
-              "Reduced Water Consumption",
-              "Ethical Production Standards",
-              "Responsible Supply Chain"
+              "Aseptic Non-Contact Fillers",
+              "Non-Thermal Pasteurization",
+              "High-Speed Electric PET Blowing"
             ].map((text, idx) => (
               <motion.div key={idx} variants={fadeInUp} className="flex items-center gap-2">
                 <FiCheckCircle className="text-seppa-red text-xl" />

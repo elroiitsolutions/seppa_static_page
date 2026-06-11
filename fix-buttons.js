@@ -17,14 +17,14 @@ for (const file of filesToFix) {
     let content = fs.readFileSync(fullPath, 'utf8');
     let originalContent = content;
 
-    // Fix pill button hover: change group-hover:bg-white to group-hover:bg-[#273051]
+    // Fix pill button hover: change group-hover:bg-white to group-hover:bg-[#101934]
     // But ONLY if it's accompanied by text-white and bg-[#8B2A2A] in the same className string.
     // An easier way is just string replacements for the exact broken lines:
     
-    content = content.replace(/group-hover:bg-white/g, 'group-hover:bg-[#273051]');
+    content = content.replace(/group-hover:bg-white/g, 'group-hover:bg-[#101934]');
     
     // Fix arrow button normal state:
-    content = content.replace(/bg-white flex items-center justify-center text-white/g, 'bg-[#273051] flex items-center justify-center text-white');
+    content = content.replace(/bg-white flex items-center justify-center text-white/g, 'bg-[#101934] flex items-center justify-center text-white');
 
     if (content !== originalContent) {
         fs.writeFileSync(fullPath, content);

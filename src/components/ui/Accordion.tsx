@@ -40,7 +40,7 @@ const Accordion: React.FC<AccordionProps> = ({ items, defaultOpenIndex = 0 }) =>
               <motion.div
                 animate={{ rotate: isOpen ? 180 : 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className={`flex-shrink-0 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-white transition-colors duration-300 shadow-sm ${isOpen ? 'bg-seppa-red' : 'bg-[#273051]'}`}
+                className={`flex-shrink-0 w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center text-white transition-colors duration-300 shadow-sm ${isOpen ? 'bg-seppa-red' : 'bg-[#101934]'}`}
               >
                 <FiChevronDown className="text-xl" />
               </motion.div>
