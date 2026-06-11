@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D6A848;
+  --color-dark: #1a1a1a;
+  --color-light: #ffffff;
+  --color-seppa-red: #E30D28;
+  
+  --font-sans: 'Poppins', sans-serif;
+  --font-heading: 'Cal Sans', sans-serif;
+}
+
+@font-face {
+	font-family: 'Cal Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/CalSans-Regular.woff2') format('woff2'),
+		 url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/CalSans-Regular.woff') format('woff');
+	font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-light text-dark antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
