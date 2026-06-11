@@ -17,31 +17,31 @@ const awards = [
     id: 1,
     title: 'Industry Leader Award',
     description: 'Recognized for outstanding leadership and innovation in the manufacturing sector.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+1'
+    image: 'https://placehold.co/600x400/101934/FFFFFF/png?text=Award+1'
   },
   {
     id: 2,
     title: 'Excellence in Quality',
     description: 'Awarded for maintaining the highest standards of quality control across all product lines.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+2'
+    image: 'https://placehold.co/600x400/101934/FFFFFF/png?text=Award+2'
   },
   {
     id: 3,
     title: 'Global Export Award',
     description: 'Honored for exceptional contribution to global trade and expanding international reach.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+3'
+    image: 'https://placehold.co/600x400/101934/FFFFFF/png?text=Award+3'
   },
   {
     id: 4,
     title: 'Sustainability Champion',
     description: 'Celebrating our commitment to eco-friendly practices and sustainable manufacturing.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+4'
+    image: 'https://placehold.co/600x400/101934/FFFFFF/png?text=Award+4'
   },
   {
     id: 5,
     title: 'Innovation of the Year',
     description: 'Received for developing cutting-edge technology that revolutionized packaging lines.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+5'
+    image: 'https://placehold.co/600x400/101934/FFFFFF/png?text=Award+5'
   }
 ];
 

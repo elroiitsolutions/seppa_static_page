@@ -16,19 +16,19 @@ const staggerContainer = {
 
 const blogs = [
   {
-    title: "Sustainable Textile Trends Shaping Global Industry Today",
+    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
     date: "February 14, 2026",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/blog-1.jpg"
+    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   },
   {
-    title: "Key Quality Standards Every Textile Manufacturer Should Follow",
-    date: "February 14, 2026",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/blog-2.jpg"
+    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
+    date: "March 11, 2026",
+    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   },
   {
-    title: "How Sustainable Practices Improve Textile Manufacturing Efficiency",
-    date: "February 14, 2026",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/blog-3.jpg"
+    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
+    date: "April 04, 2026",
+    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   }
 ];
 

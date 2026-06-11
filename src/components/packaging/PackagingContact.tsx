@@ -124,7 +124,7 @@ const PackagingContact = () => {
                 </div>
                 <button 
                   type="submit" 
-                  className="bg-[#273051] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-seppa-red transition duration-300 w-auto inline-block"
+                  className="bg-[#101934] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-seppa-red transition duration-300 w-auto inline-block"
                 >
                   Send Inquiry
                 </button>

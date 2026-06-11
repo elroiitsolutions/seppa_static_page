@@ -18,7 +18,7 @@ const tabsData = [
   {
     id: 'organic',
     title: 'Juices, Drinks & Isotonics',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-tab-1.jpg',
+    image: 'pics/pexels-photo-17559580.jpg',
     features: [
       "Industry-leading expertise",
       "Innovative product technology",
@@ -29,7 +29,7 @@ const tabsData = [
   {
     id: 'fresh',
     title: 'Carbonated Soft Drinks',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg',
+    image: 'pics/c4ee15bc22fa3a63fce34fd4017026e4.jpg',
     features: [
       "Sustainable raw materials",
       "Eco-friendly manufacturing",
@@ -40,7 +40,7 @@ const tabsData = [
   {
     id: 'delivery',
     title: 'Liquid Dairy Products',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg',
+    image: 'pics/large.jpg',
     features: [
       "Global logistics network",
       "On-time delivery tracking",
@@ -51,7 +51,7 @@ const tabsData = [
   {
     id: 'beer',
     title: 'Beer',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg',
+    image: 'pics/a-beermovie.jpg',
     features: [
       "Global logistics network",
       "On-time delivery tracking",
@@ -78,19 +78,18 @@ const OurIndustries = () => {
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
               {/* <span className="w-1.5 h-1.5 rounded-full bg-gold"></span> */}
               <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-              <span className="text-sm font-medium text-dark uppercase tracking-wider">Why seppa</span>
+              <span className="text-sm font-medium text-dark uppercase tracking-wider">The Seppa Advantage</span>
             </motion.div>
 
             <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6">
-              Welcome to Seppa – Global Leader in Processing and Packaging Solutions
+            WHY SEPPA SOLUTIONS? <br/> An Uncompromising Operational Efficiency, Engineered Internationally
             </motion.h2>
             
-            <motion.p variants={fadeInUp} className="text-gray-600 text-lg mb-8 leading-relaxed">
+            {/* <motion.p variants={fadeInUp} className="text-gray-600 text-lg mb-8 leading-relaxed">
            50 YEARS OF COMPLETE LINE SOLUTION
-            </motion.p>
+            </motion.p> */}
             <motion.p variants={fadeInUp} className="text-gray-600 text-lg mb-8 leading-relaxed">
-            SEPPA is a world leader in complete line solutions. with over 50 years of experience in packaging equipments and complete line solutions covering water, soft drink, juice, sparkling water, beer, liquor and milk with a state of art design and production center in India, USA and Middle East to deliver multi product solutions.
-            </motion.p>
+Decades of specialized liquid engineering allows Seppa to deliver reliable, highly adaptable multi-product systems. We build machinery that meets strict global safety standards while ensuring rapid ROI for modern bottling plants.</motion.p>
              {/* Custom Tabs */}
                         <motion.div variants={fadeInUp} className="mb-10">
                           <div className="flex items-center gap-8 border-b border-gray-200 relative overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
@@ -148,10 +147,10 @@ const OurIndustries = () => {
             {/* Button */}
             <motion.div variants={fadeInUp}>
               <Link href="/about-us" className="mt-12 flex items-center gap-3 group cursor-pointer w-max">
-                <span className="inline-flex bg-[#273051] text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide">
-                  About Us
+                <span className="inline-flex bg-[#101934] text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide">
+                  Schedule a Technical Consultation
                 </span>
-                <span className="w-[60px] h-[60px] bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#273051] transition duration-300 shadow-md">
+                <span className="w-[60px] h-[60px] bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#101934] transition duration-300 shadow-md">
                   <svg className="transform transition-transform duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
                 </span>
               </Link>
@@ -217,12 +216,12 @@ const OurIndustries = () => {
             transition={{ duration: 0.8 }}
           >
             <img 
-              src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/industries-image-1.jpg" 
+              src="pics/corporate.jpg" 
               alt="Factory machinery" 
               className="w-[85%] rounded-3xl shadow-xl object-cover ml-auto"
             />
             <img 
-              src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/industries-image-2.jpg" 
+              src="pics/seppa logo.png" 
               alt="Girl sewing" 
               className="w-[55%] absolute -bottom-10 left-0 border-[10px] border-[#f9f8f4] rounded-[2rem] shadow-2xl object-cover z-10"
             />

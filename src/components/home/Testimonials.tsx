@@ -15,21 +15,21 @@ const staggerContainer = {
 
 const testimonials = [
   {
-    name: "Jacob Jones",
-    quote: "The quality of fabrics and consistently meet international their team is reliable, responsive time.",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/testimonial-1.jpg",
+    name: "Rajesh Vardhan",
+    quote: "Seppa's Kombo Pure monobloc system cut our floor footprint by 40% while maintaining absolute sterility. Their turnkey water line engineering is unmatched.",
+    image: "pics/Rajesh.jpg",
     rating: 5
   },
   {
-    name: "Annette Black",
-    quote: "The quality of fabrics and consistently meet international their team is reliable, responsive time.",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/testimonial-2.jpg",
+    name: "Marcus Vance",
+    quote: "Their high-speed RFC filling system and four-axis automated palletizer completely streamlined our CSD production, halving our end-of-line logistics costs.",
+    image: "pics/Marcus.jpg",
     rating: 5
   },
   {
-    name: "Brooklyn Simmons",
-    quote: "The quality of fabrics and consistently meet international their team is reliable, responsive time.",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/testimonial-3.jpg",
+    name: "Amara Al-Jamil",
+    quote: "The combination of Non-Thermal Pasteurization and Aseptic Non-Contact Fillers extended our juice shelf life perfectly with zero contamination risks.",
+    image: "pics/Amara.jpg",
     rating: 5
   }
 ];
@@ -54,11 +54,11 @@ const Testimonials = () => {
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
               {/* <span className="w-1.5 h-1.5 rounded-full bg-red"></span> */}
               <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-              <span className="text-sm font-medium text-dark uppercase tracking-wider">Our Testimonials</span>
+              <span className="text-sm font-medium text-dark uppercase tracking-wider">Global Trust & Proven Success</span>
             </motion.div>
             
             <AnimatedHeading 
-              text="Client experiences that define our textile excellence" 
+              text="What Global Beverage Brands Say About Seppa Automation" 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight" 
             />

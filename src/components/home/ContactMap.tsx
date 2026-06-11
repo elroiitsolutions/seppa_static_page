@@ -44,11 +44,11 @@ const ContactMap = () => {
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-            <span className="text-sm font-medium text-dark uppercase tracking-wider">Contact Us</span>
+            <span className="text-sm font-medium text-dark uppercase tracking-wider">GET IN TOUCH</span>
           </motion.div>
           
           <AnimatedHeading 
-            text="Reach us for professional textile support" 
+            text="Partner with global liquid packaging specialists" 
             elementType="h2" 
             className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight" 
           />
@@ -67,12 +67,12 @@ const ContactMap = () => {
             <div className="bg-white rounded-[2rem] p-10 shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold font-heading text-dark mb-4">We're Here To Help You</h3>
               <p className="text-gray-500 mb-8 leading-relaxed">
-                We're here to help you every step of and make your experience smooth.
+                We assist you through every stage of your project from initial turnkey plant layout engineering to seamless machinery commissioning and lifetime maintenance.
               </p>
               
               <div className="rounded-2xl overflow-hidden mb-8 shadow-sm">
                 <img 
-                  src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/contact-help-img.jpg" 
+                  src="pics/customer.jpg" 
                   alt="Customer Support" 
                   className="w-full h-auto object-cover"
                 />
@@ -117,7 +117,7 @@ const ContactMap = () => {
             {/* Using an SVG or image for the map background */}
             <div className="relative w-full opacity-60">
               <img 
-                src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/map-bg.png" 
+                src="pics/cta-map-image.png" 
                 alt="World Map" 
                 className="w-full h-auto"
                 onError={(e) => {

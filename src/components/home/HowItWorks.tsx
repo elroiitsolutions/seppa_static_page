@@ -19,41 +19,41 @@ const processes = [
   {
     num: "01",
     title: "ELECTRIC PET BLOWING MACHINE",
-    desc: "Material selection begins with sourcing premium fibers and fabrics that meet the required performance.",
-    tags: ["Manufacturing", "Bulk Orders"]
+    desc: "A high-speed, servo-driven molding solution engineered for energy-efficient, eco-friendly, and highly precise PET bottle manufacturing.",
+    tags: ["Know more"]
   },
   {
     num: "02",
-    title: "Production & ProcessingNON THERMAL PASTEURIZERS",
-    desc: "Material selection begins with sourcing premium fibers and fabrics that meet the required performance.",
-    tags: ["Textile", "High Quality"]
+    title: "NON THERMAL PASTEURIZERS",
+    desc: "Advanced cold preservation systems that extend beverage shelf life and eliminate micro-organisms without applying heat, fully preserving natural flavors and nutrients.",
+    tags: ["Know more"]
   },
   {
     num: "03",
-    title: "PASEPTIC NON CONTACT FILLERS",
-    desc: "Material selection begins with sourcing premium fibers and fabrics that meet the required performance.",
-    tags: ["Fast Delivery", "Custom Orders"]
+    title: "ASEPTIC NON CONTACT FILLERS",
+    desc: "High-sterility volumetric filling systems that eliminate contamination risks entirely by accurately dispensing liquids without physically touching the bottle mouth.",
+    tags: ["Know more"]
   }
   ,
   {
     num: "04",
     title: "FOUR AXIS PALLETIZER",
-    desc: "Material selection begins with sourcing premium fibers and fabrics that meet the required performance.",
-    tags: ["Fast Delivery", "Custom Orders"]
+    desc: "A fully automated robotic stacking system designed for high-speed, precise configuration of crates, boxes, and end-of-line packaging logistics.",
+    tags: ["Know more"]
   }
   ,
   {
     num: "05",
     title: "KOMBO PURE",
-    desc: "Material selection begins with sourcing premium fibers and fabrics that meet the required performance.",
-    tags: ["Fast Delivery", "Custom Orders"]
+    desc: "A compact, integrated monobloc system that fuses bottle-blowing, non-contact filling, and capping into a single sterile environment to drastically slash capex and floor footprint.",
+    tags: ["Know more"]
   }
   ,
   {
     num: "06",
     title: "LOW COST AUTO BLOWING MACHINE",
-    desc: "Material selection begins with sourcing premium fibers and fabrics that meet the required performance.",
-    tags: ["Fast Delivery", "Custom Orders"]
+    desc: "An affordable, highly efficient entry-level automatic blow molding system tailored to give small-scale bottling plants high-yield automation on a budget.",
+    tags: ["Know more"]
   }
 ];
 
@@ -62,7 +62,7 @@ const HowItWorks = () => {
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(1); // Default center card is active
 
   return (
-    <section className="py-24 bg-[#273051] relative overflow-hidden m-3 rounded-2xl">
+    <section className="py-24 bg-[#101934] relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none bg-no-repeat bg-center bg-cover opacity-15" style={{ backgroundImage: `url(${bgPattern.src})` }}></div>
 
@@ -79,7 +79,7 @@ const HowItWorks = () => {
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-[#1c1c1c] mb-6">
             {/* <span className="w-1.5 h-1.5 rounded-full bg-gold"></span> */}
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-            <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">How It Works</span>
+            <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">SEPPA Updates</span>
           </motion.div>
           <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
             <AnimatedHeading
