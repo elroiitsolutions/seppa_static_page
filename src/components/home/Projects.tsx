@@ -22,32 +22,32 @@ const projects = [
   {
     title: 'PET BLOWER',
     subtitle: 'Complete Line Solutions for PET Blowing.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-1.jpg'
+    image: 'pics/pet-blower.jpg'
   },
   {
     title: 'PROCESS TECHNOLOGY',
     subtitle: 'Complete Line Solutions for Process Technology.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-2.jpg'
+    image: 'pics/process-technology.jpg'
   },
   {
     title: 'PET FILLING LINE',
     subtitle: 'Complete Line Solutions for PET Filling.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-3.jpg'
+    image: 'pics/pet-filling-machine.jpg'
   },
   {
     title: 'GLASS FILLING LINE',
     subtitle: 'Complete Line Solutions for Glass Filling.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
+    image: 'pics/glass-filling-machine.jpg'
   },
   {
     title: 'CAN FILLING LINE',
     subtitle: 'Complete Line Solutions for Can Filling.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
+    image: 'pics/can-filling-machine.jpg'
   },
   {
     title: 'LARGE BOTTLE FILLING LINE',
     subtitle: 'Complete Line Solutions for Large Bottles.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
+    image: 'pics/large-bottle-filling-machine.jpg'
   }
 ];
 
@@ -105,7 +105,7 @@ const Projects = () => {
             {projects.map((project, idx) => (
               <SwiperSlide key={idx} className="h-auto py-4">
                 <motion.div variants={fadeInUp} className="group/item cursor-pointer h-full">
-                  <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4] shadow-lg h-full">
+                  <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-lg h-full">
                     <img
                       src={project.image}
                       alt={project.title}

@@ -192,13 +192,13 @@ const Header: React.FC = () => {
         <div className="hidden lg:flex items-center gap-2 group cursor-pointer">
           <Link
             href="/contact-us"
-            className="px-6 py-3 rounded-full font-bold transition duration-300 bg-[#273051] text-white group-hover:bg-seppa-red tracking-wide"
+            className="px-6 py-3 rounded-full font-bold transition duration-300 bg-[#101934] text-white group-hover:bg-seppa-red tracking-wide"
           >
             Contact Us
           </Link>
           <Link
             href="/contact-us"
-            className="w-12 h-12 rounded-full bg-seppa-red group-hover:bg-[#273051] transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
+            className="w-12 h-12 rounded-full bg-seppa-red group-hover:bg-[#101934] transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
           >
             <svg className="transform transition-transform duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
           </Link>
@@ -225,7 +225,7 @@ const Header: React.FC = () => {
             <Link href="/contact-us" className="text-dark font-medium font-heading hover:text-[#cda262] transition border-b border-gray-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
 
             <div className="pt-4 mt-auto">
-              <Link href="/contact-us" className="bg-seppa-red text-white px-6 py-4 rounded-full font-medium hover:bg-[#273051] transition flex items-center justify-center gap-2 w-full text-center" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/contact-us" className="bg-seppa-red text-white px-6 py-4 rounded-full font-medium hover:bg-[#101934] transition flex items-center justify-center gap-2 w-full text-center" onClick={() => setIsMobileMenuOpen(false)}>
                 Contact Us
               </Link>
             </div>

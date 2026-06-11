@@ -158,10 +158,10 @@ const WhyChooseUs = () => {
 
             {/* Button */}
             <motion.div variants={fadeInUp} className="mt-12 flex items-center gap-3 group cursor-pointer w-max">
-              <Link href="/about-us" className="inline-flex bg-[#273051] text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide">
+              <Link href="/about-us" className="inline-flex bg-[#101934] text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide">
                 Explore Fabrics
               </Link>
-              <Link href="/about-us" className="w-[60px] h-[60px] bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#273051] transition duration-300 shadow-md">
+              <Link href="/about-us" className="w-[60px] h-[60px] bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#101934] transition duration-300 shadow-md">
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
               </Link>
             </motion.div>
