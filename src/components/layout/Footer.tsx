@@ -81,11 +81,13 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-xl font-heading font-bold mb-8">Our Services</h3>
               <ul className="space-y-4 text-gray-300 font-medium">
-                <li><Link href="/services" className="hover:text-seppa-red transition">Custom Textiles</Link></li>
-                <li><Link href="/services" className="text-seppa-red transition">Fabric Manufacturing</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Quality Testing</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Sustainable Practices</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Textile Printing</Link></li>
+                <li><Link href="/services" className="hover:text-seppa-red transition">Packaging</Link></li>
+                <li><Link href="/services" className="hover:text-seppa-red transition">Spare parts & Logistics Training</Link></li>
+                <li><Link href="/services" className="hover:text-seppa-red transition">Maintenance</Link></li>
+                <li><Link href="/services" className="hover:text-seppa-red transition">Line Improvement</Link></li>
+                <li><Link href="/services" className="hover:text-seppa-red transition">Line Conversions & Moulds</Link></li>
+                <li><Link href="/services" className="hover:text-seppa-red transition">Audits</Link></li>
+                <li><Link href="/services" className="hover:text-seppa-red transition">Training</Link></li>
               </ul>
             </div>
 

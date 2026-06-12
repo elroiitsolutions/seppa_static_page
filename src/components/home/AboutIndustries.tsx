@@ -15,7 +15,7 @@ const staggerContainer = {
 
 const AboutIndustries = () => {
   return (
-    <section className="py-12 lg:py-24 bg-white overflow-hidden">
+    <section id="about-industries" className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
 
         {/* Header Section */}
