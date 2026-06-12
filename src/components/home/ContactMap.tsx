@@ -29,9 +29,10 @@ const indiaCities = ['Mumbai (Corporate Office)', 'Bengaluru', 'New Delhi', 'Hyd
 
 const ContactMap = () => {
   const [showIndiaList, setShowIndiaList] = useState(false);
+  const [activePin, setActivePin] = useState<string | null>(null);
 
   return (
-    <section className="py-16 lg:py-24 bg-white relative">
+    <section className="py-16 lg:py-24 bg-white relative" onClick={() => setActivePin(null)}>
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
@@ -133,6 +134,11 @@ const ContactMap = () => {
                 key={loc.id} 
                 className="absolute group cursor-pointer z-10 hover:z-30" 
                 style={{ top: loc.top, left: loc.left }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActivePin(activePin === loc.id ? null : loc.id);
+                  setShowIndiaList(false); // Close India list if open
+                }}
               >
                 <div className="relative transform -translate-x-1/2 -translate-y-1/2">
                   <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border-[2px] md:border-[3px] border-white shadow-xl overflow-hidden group-hover:scale-110 transition-transform duration-300 relative">
@@ -141,8 +147,8 @@ const ContactMap = () => {
                   {/* Red dot status indicator */}
                   <div className="absolute bottom-0 right-0 w-3 h-3 bg-seppa-red rounded-full border-2 border-white group-hover:scale-110 transition-transform duration-300"></div>
                   
-                  {/* Tooltip on Hover */}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] w-max opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-40">
+                  {/* Tooltip on Hover / Click */}
+                  <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] w-max transition-all duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-40 ${activePin === loc.id ? 'opacity-100 visible' : 'opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible'}`}>
                     <h4 className="text-dark font-bold text-sm mb-1">{loc.name}</h4>
                     <p className="text-gray-500 text-xs">{loc.desc}</p>
                   </div>

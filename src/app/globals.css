@@ -31,6 +31,9 @@
 }
 
 /* Custom Swiper Pagination Styles */
+.swiper {
+  padding-bottom: 40px !important;
+}
 .swiper-pagination {
   bottom: 0px !important;
 }
