@@ -22,9 +22,9 @@ const staggerContainer = {
 
 const HomeHero = () => {
   return (
-    <section className="relative h-[100vh] overflow-hidden ">
+    <section className="relative min-h-[100vh] lg:h-[100vh] overflow-hidden flex flex-col pt-24 pb-8 lg:py-0">
     {/* Background Video */}
-      <div className="absolute inset-0 z-0 bg-dark md:m-3 md:rounded-2xl overflow-hidden">
+      <div className="absolute inset-0 z-0 bg-dark lg:m-3 lg:rounded-2xl overflow-hidden">
   <video
     autoPlay
     loop
@@ -51,15 +51,15 @@ const HomeHero = () => {
     ))}
   </div>
 </div>      
-      <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
+      <div className="container mx-auto px-4 relative z-10 w-full flex-1 flex flex-col justify-center pb-8">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="max-w-4xl"
+          className="max-w-4xl flex flex-col items-start text-left"
         >
           {/* Top avatars and subtitle */}
-          <motion.div variants={fadeInUp} className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+          <motion.div variants={fadeInUp} className="flex flex-row items-center justify-start gap-3 md:gap-4 mb-4 md:mb-6">
             <div className="flex -space-x-2 md:-space-x-3">
               <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
               <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
@@ -83,7 +83,7 @@ const HomeHero = () => {
           </motion.p>
           
           {/* Buttons */}
-          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-10">
+          <motion.div variants={fadeInUp} className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
             {/* Book Consultation */}
             <div className="flex items-center gap-2 md:gap-3 group cursor-pointer">
               <Link href="/contact-us" className="inline-flex bg-[#101934] text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
@@ -110,13 +110,13 @@ const HomeHero = () => {
       </div>
 
       {/* Bottom Checklists */}
-     <div className="absolute bottom-0 left-0 w-full to-transparent pt-16 pb-8 md:pb-8 z-10">
+      <div className="relative w-full to-transparent pt-8 pb-8 z-10 mt-auto">
         <div className="container mx-auto px-4 pb-6 md:pb-14">
           <motion.div 
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-x-12 gap-y-3"
+            className="flex flex-col lg:flex-row lg:flex-wrap justify-start items-start lg:items-center gap-x-12 gap-y-3 w-fit"
           >
             {[
               "Eco-Friendly Dyeing Processes",

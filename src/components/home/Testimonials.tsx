@@ -36,7 +36,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white relative overflow-hidden">
       {/* Background Dot Pattern (Optional) */}
       <div className="absolute inset-0 opacity-40 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#e5e7eb 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
 
@@ -109,14 +109,18 @@ const Testimonials = () => {
 
         {/* Testimonials Grid */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
           variants={staggerContainer}
         >
           {testimonials.map((testimonial, idx) => (
-            <motion.div key={idx} variants={fadeInUp} className="group cursor-pointer">
+            <motion.div 
+              key={idx} 
+              variants={fadeInUp} 
+              className={`group cursor-pointer ${idx === 2 ? 'md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:w-full' : ''}`}
+            >
               <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4] shadow-lg">
                 <img 
                   src={testimonial.image} 

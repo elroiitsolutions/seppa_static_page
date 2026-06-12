@@ -11,8 +11,20 @@ const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
   // Dynamic header classes - static/absolute positioning (no sticky behavior)
-  const headerClass = "absolute top-0 left-0 w-full z-50 bg-transparent pt-6 lg:pt-12 pb-4 lg:pb-6 border-b border-white/20";
+  const headerClass = "absolute top-0 left-0 w-full z-50 bg-transparent pt-6 lg:pt-12";
 
   const linkClass = "font-medium hover:text-gold transition flex items-center gap-1 py-2 text-white";
 
@@ -21,7 +33,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={headerClass}>
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex justify-between items-center pb-4 lg:pb-6 border-b border-white/20">
         {/* Logo */}
         <div className="logo z-50 relative">
           <Link href="/">
@@ -206,8 +218,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={`lg:hidden text-2xl z-50 relative ${!isMobileMenuOpen ? 'text-white' : 'text-dark'
-            }`}
+          className={`lg:hidden text-2xl z-50 relative text-white`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <FiX /> : <FiMenu />}
@@ -216,16 +227,176 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Content */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-white z-40 pt-24 pb-8 px-6 overflow-y-auto shadow-2xl animate-in slide-in-from-right duration-300">
-          <div className="flex flex-col space-y-6 text-lg">
-            <Link href="/" className="text-dark font-medium font-heading hover:text-[#cda262] transition border-b border-gray-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-            <Link href="/about-us" className="text-dark font-medium font-heading hover:text-[#cda262] transition border-b border-gray-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-            <Link href="/services" className="text-dark font-medium font-heading hover:text-[#cda262] transition border-b border-gray-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-            <Link href="/projects" className="text-dark font-medium font-heading hover:text-[#cda262] transition border-b border-gray-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
-            <Link href="/contact-us" className="text-dark font-medium font-heading hover:text-[#cda262] transition border-b border-gray-100 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
+        <div className="lg:hidden fixed inset-0 bg-[#101934] z-40 pt-24 pb-8 px-6 overflow-y-auto shadow-2xl animate-in slide-in-from-right duration-300">
+          <div className="flex flex-col space-y-4 text-lg pb-10">
+            <Link href="/" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+            
+            {/* Products */}
+            <details className="group border-b border-white/10 pb-2">
+              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                Products <FiChevronDown className="transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
+                <Link href="/complete-lines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Complete Lines</Link>
+                
+                <div className="font-medium text-seppa-red">Bottling</div>
+                <Link href="/liquid" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Soft Drinks / Carbonated Beverages</Link>
+                <Link href="/juice-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Juice / Non-Carbonated Beverages</Link>
+                <Link href="/beer-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Beer</Link>
+                <Link href="/dairy-product-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Dairy</Link>
+                <Link href="/ketchup-sauce-filling-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Ketchup / Sauce</Link>
+                <Link href="/water-bottle-filling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Water</Link>
+                
+                <div className="font-medium text-seppa-red pt-2">Filling Technologies</div>
+                <Link href="/rinsing-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Rinsers</Link>
+                <Link href="/capping-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Cappers</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Labellers</Link>
+                <Link href="/bottle-handling-systems" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Bottle Handling Systems</Link>
+                <Link href="/conveyors" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Conveyors</Link>
+                <Link href="/kombination-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Kombination Machines (Rinser-Filler-Capper)</Link>
+                <Link href="/monobloc-filling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Monobloc Filling Machines</Link>
+              </div>
+            </details>
 
-            <div className="pt-4 mt-auto">
-              <Link href="/contact-us" className="bg-seppa-red text-white px-6 py-4 rounded-full font-medium hover:bg-[#101934] transition flex items-center justify-center gap-2 w-full text-center" onClick={() => setIsMobileMenuOpen(false)}>
+            {/* Packaging */}
+            <details className="group border-b border-white/10 pb-2">
+              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                Packaging <FiChevronDown className="transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
+                <div className="font-medium text-seppa-red">Pet Blowers</div>
+                <Link href="/automatic" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Automatic Pet Blowers</Link>
+                <Link href="/semi-automatic" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Semi Automatic Pet Blowers</Link>
+                <Link href="/pet-jars" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Pet Jar Blowing Machine</Link>
+                <Link href="/pet" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Pet</Link>
+                <Link href="/can" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Can</Link>
+                <Link href="/glass" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Glass</Link>
+                <Link href="/pouch" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Pouch</Link>
+                <Link href="/brick-carton" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Brick Carton</Link>
+                <Link href="/Gable-top-carton" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Gable Top Carton</Link>
+                <Link href="/Aseptic-drum" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Aseptic Drum</Link>
+              </div>
+            </details>
+
+            {/* Liquid */}
+            <details className="group border-b border-white/10 pb-2">
+              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                Liquid <FiChevronDown className="transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
+                <div className="font-medium text-seppa-red">Mineral Water Line Machines</div>
+                <Link href="/still-water" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Still Water</Link>
+                <Link href="/mineral-water" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Mineral Water</Link>
+                <Link href="/alkaline-water" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Alkaline Water</Link>
+                <Link href="/sparkling-water" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Sparkling Water</Link>
+                <Link href="/structured-water" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Structured Water</Link>
+                <Link href="/flavored-vitaminized-water" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Flavored Vitaminized Water</Link>
+                
+                <Link href="/pet" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Soft Drink / Beverages</Link>
+                
+                <div className="font-medium text-seppa-red pt-2">Juices & Nectars</div>
+                <Link href="/juice" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Juice , Nectars soft drinks</Link>
+                <Link href="/isotonics" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Isotonics</Link>
+                <Link href="/teas" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Teas (JNSDIT)</Link>
+
+                <Link href="/beer" className="text-gray-300 hover:text-seppa-red pt-2" onClick={() => setIsMobileMenuOpen(false)}>Beer</Link>
+                <Link href="/alcohol-spirits" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Alcohol & Spirits</Link>
+                <Link href="/wine-mead" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Wine & Mead</Link>
+                <Link href="/rt" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>RTD's & Seltzers</Link>
+                <Link href="/ldp" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>LDP (Liquid Dairy Products)</Link>
+                <Link href="/ketchups-sauces" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Tomato & Ketchups</Link>
+              </div>
+            </details>
+
+            {/* Services */}
+            <details className="group border-b border-white/10 pb-2">
+              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                Services <FiChevronDown className="transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
+                <Link href="/complete-lines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Packaging</Link>
+                <Link href="/liquid" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Spare parts & Logistics Training</Link>
+                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Maintenance</Link>
+                <Link href="/juice-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Line Improvement</Link>
+                <Link href="/beer-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Line Conversions & Moulds</Link>
+                <Link href="/wine-me" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Audits</Link>
+                <Link href="/liquor-spirits-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Training</Link>
+              </div>
+            </details>
+
+            {/* Complete Lines */}
+            <details className="group border-b border-white/10 pb-2">
+              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                Complete Lines <FiChevronDown className="transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
+                <Link href="/complete-lines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Complete Lines</Link>
+                <Link href="/liquid" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Water Lines</Link>
+                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Soft Drink & Beverages Lines</Link>
+                <Link href="/juice-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Juice & Nectars Lines</Link>
+                <Link href="/beer-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Beer Lines</Link>
+                <Link href="/wine-me" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Wine & Mead Lines</Link>
+                <Link href="/liquor-spirits-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Liquor & Spirits Lines</Link>
+                <Link href="/dairy-product-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Liquid Dairy Products</Link>
+                <Link href="/ketchup-sauce-filling-line-machines" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Ketchups & Sauces</Link>
+              </div>
+            </details>
+
+            {/* Equipments */}
+            <details className="group border-b border-white/10 pb-2">
+              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                Equipments <FiChevronDown className="transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
+                <div className="font-medium text-seppa-red">Processing & Handling</div>
+                <Link href="/complete-lines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Processing</Link>
+                <Link href="/liquid" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Blowing</Link>
+                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Pre Form Sterlization</Link>
+                <Link href="/juice-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Unscramblers</Link>
+                <Link href="/beer-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Rinser Filler Capper</Link>
+                <Link href="/wine-me" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Kombo</Link>
+                <Link href="/liquor-spirits-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Elevators</Link>
+                <Link href="/bottle-handling-systems" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Bottle Handling</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Carton Handling</Link>
+                
+                <div className="font-medium text-seppa-red pt-2">Labelling & Packaging</div>
+                <Link href="/dairy-product-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Labelling</Link>
+                <Link href="/ketchup-sauce-filling-line-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Batch Coders</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Shrink Wrapping</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Pallet Equipment</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Stretch Wrapping</Link>
+                
+                <div className="font-medium text-seppa-red pt-2">Ancillary & Others</div>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Crate Stacker</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Refrigeration System</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Air Dryer</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Crate Washers</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Glass Bottle Washer</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Glass Bottle Filler Capper</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Tunnel Pasteurizers</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Tunnel Cooler</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>De Capper</Link>
+                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2" onClick={() => setIsMobileMenuOpen(false)}>Large Bottle Filler</Link>
+              </div>
+            </details>
+
+            {/* Enquiry */}
+            <details className="group border-b border-white/10 pb-2">
+              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                Enquiry <FiChevronDown className="transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
+                <Link href="/product-enquiry" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Product Enquiry</Link>
+                <Link href="/investors" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Investors</Link>
+                <Link href="/dealers" className="text-gray-300 hover:text-seppa-red" onClick={() => setIsMobileMenuOpen(false)}>Dealers</Link>
+              </div>
+            </details>
+
+            <Link href="/videos" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Videos</Link>
+            {/* <Link href="/contact-us" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link> */}
+
+            <div className="pt-6 mt-auto">
+              <Link href="/contact-us" className="bg-seppa-red text-white px-6 py-4 rounded-full font-medium hover:bg-white hover:text-[#101934] transition flex items-center justify-center gap-2 w-full text-center shadow-md" onClick={() => setIsMobileMenuOpen(false)}>
                 Contact Us
               </Link>
             </div>

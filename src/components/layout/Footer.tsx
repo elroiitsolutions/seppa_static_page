@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from "next/link";
-import { FiFacebook, FiInstagram, FiTwitter, FiArrowUpRight } from 'react-icons/fi';
-import { FaPinterestP } from 'react-icons/fa';
+import { FiFacebook, FiInstagram, FiArrowUpRight } from 'react-icons/fi';
+import { FaYoutube } from 'react-icons/fa';
 import logoImg from '@/assets/logo/logo.png';
 import bgPattern from '@/assets/bg/black-line-1.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#101934] text-white pt-20 pb-8 mt-20 relative overflow-hidden m-3 rounded-2xl">
+    <footer className="bg-[#101934] text-white pt-20 pb-8 mt-12 lg:mt-20 relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none bg-no-repeat bg-center bg-cover opacity-15" style={{ backgroundImage: `url(${bgPattern.src})` }}></div>
 
@@ -120,20 +120,17 @@ const Footer: React.FC = () => {
         {/* Bottom Footer Area */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 font-medium text-sm md:text-base">
-            Copyright © {new Date().getFullYear()} <span className="text-white hover:text-seppa-red transition cursor-pointer">Seppa Solutions</span>. All rights reserved.
+            Copyright © 2021 <span className="text-white hover:text-seppa-red transition cursor-pointer">Seppa Solutions</span>. All rights reserved.
           </div>
           <div className="flex gap-2">
-            <a href="#" aria-label="Pinterest" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">
-              <FaPinterestP />
-            </a>
-            <a href="#" aria-label="X Twitter" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">
-              <FiTwitter />
-            </a>
             <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">
               <FiFacebook />
             </a>
             <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">
               <FiInstagram />
+            </a>
+            <a href="https://www.youtube.com/channel/UCRSNui4SKhLRozL29Ielyzg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition text-lg">
+              <FaYoutube />
             </a>
           </div>
         </div>
