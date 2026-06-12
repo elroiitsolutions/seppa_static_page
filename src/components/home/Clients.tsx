@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import aquafina from '@/assets/logo/aquafina-logo-vector.png';
@@ -47,8 +47,34 @@ const clients = [
 ];
 
 const Clients = () => {
+  const [activeClientId, setActiveClientId] = useState<number | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleClientClick = (clientId: number) => {
+    setActiveClientId(clientId);
+    setIsPaused(true);
+
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = setTimeout(() => {
+      setActiveClientId(null);
+      setIsPaused(false);
+    }, 3000);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
@@ -79,7 +105,7 @@ const Clients = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
           variants={fadeInUp}
-          className="relative w-full overflow-hidden py-8 marquee-container"
+          className={`relative w-full overflow-hidden py-8 marquee-container ${isPaused ? 'is-paused' : ''}`}
         >
           {/* CSS Marquee Implementation */}
           <div className="flex w-max animate-marquee">
@@ -87,7 +113,11 @@ const Clients = () => {
             {/* First set of logos */}
             <div className="flex shrink-0 items-center">
               {clients.map((client) => (
-                <div key={`first-${client.id}`} className="w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 cursor-pointer flex justify-center">
+                <div 
+                  key={`first-${client.id}`} 
+                  onClick={() => handleClientClick(client.id)}
+                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
+                >
                   <img 
                     src={client.image} 
                     alt={client.name} 
@@ -100,7 +130,11 @@ const Clients = () => {
             {/* Second set of logos (duplicate for seamless infinite loop) */}
             <div className="flex shrink-0 items-center">
               {clients.map((client) => (
-                <div key={`second-${client.id}`} className="w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 cursor-pointer flex justify-center">
+                <div 
+                  key={`second-${client.id}`} 
+                  onClick={() => handleClientClick(client.id)}
+                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
+                >
                   <img 
                     src={client.image} 
                     alt={client.name} 
@@ -123,8 +157,17 @@ const Clients = () => {
         .animate-marquee {
           animation: marquee 40s linear infinite;
         }
-        .marquee-container:hover .animate-marquee {
+        .is-paused .animate-marquee {
           animation-play-state: paused !important;
+        }
+        @media (hover: hover) {
+          .marquee-container:hover .animate-marquee {
+            animation-play-state: paused !important;
+          }
+          .client-logo-interactive:hover {
+            filter: grayscale(0) !important;
+            opacity: 1 !important;
+          }
         }
       `}} />
     </section>
