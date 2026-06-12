@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { FiCheckCircle, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import AnimatedHeading from '../ui/AnimatedHeading';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -19,45 +20,25 @@ const tabsData = [
     id: 'organic',
     title: 'Juices, Drinks & Isotonics',
     image: 'pics/pexels-photo-17559580.jpg',
-    features: [
-      "Industry-leading expertise",
-      "Innovative product technology",
-      "Competitive pricing global reach",
-      "Dedicated customer support"
-    ]
+    description: "Juices, nectars, soft drinks, isotonics and teas (JNSDIT) are one of the fastest growing beverage segments worldwide."
   },
   {
     id: 'fresh',
     title: 'Carbonated Soft Drinks',
     image: 'pics/c4ee15bc22fa3a63fce34fd4017026e4.jpg',
-    features: [
-      "Sustainable raw materials",
-      "Eco-friendly manufacturing",
-      "Ethical labor practices",
-      "Premium quality assurance"
-    ]
+    description: "Carbonated soft drinks remain one of the world's most valuable beverage categories, outsold only by bottled water."
   },
   {
     id: 'delivery',
     title: 'Liquid Dairy Products',
     image: 'pics/large.jpg',
-    features: [
-      "Global logistics network",
-      "On-time delivery tracking",
-      "Secure packaging solutions",
-      "24/7 support availability"
-    ]
+    description: "Liquid dairy products remain a nutritious part of daily life, and with growing consumer emphasis on healthier living..."
   },
   {
     id: 'beer',
     title: 'Beer',
     image: 'pics/a-beermovie.jpg',
-    features: [
-      "Global logistics network",
-      "On-time delivery tracking",
-      "Secure packaging solutions",
-      "24/7 support availability"
-    ]
+    description: "More than 5 billion litres of beer was packaged in PET. The switch to PET was seen a few decades ago with carbonated soft drinks."
   }
 ];
 const OurIndustries = () => {
@@ -148,7 +129,7 @@ const OurIndustries = () => {
                   {activeTab.id === tab.id && (
                     <motion.div 
                       layoutId="activeTabIndicator"
-                      className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#b88f45]"
+                      className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-seppa-red"
                     />
                   )}
                 </button>
@@ -185,17 +166,19 @@ const OurIndustries = () => {
                   />
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
-                  <h3 className="text-3xl font-heading font-bold text-dark mb-8 hidden lg:block">{activeTab.title}</h3>
-                  <ul className="space-y-6">
-                    {activeTab.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-[#f9f8f4] flex items-center justify-center flex-shrink-0">
-                          <FiCheckCircle className="text-[#b88f45] text-xl" />
-                        </div>
-                        <span className="text-gray-700 font-medium text-lg">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="mb-8 hidden lg:block">
+                    <AnimatedHeading 
+                      text={activeTab.title}
+                      elementType="h3"
+                      className="text-3xl font-heading font-bold text-dark"
+                    />
+                  </div>
+                  <p className="text-gray-700 text-lg leading-relaxed mb-8">
+                    {activeTab.description}{" "}
+                    <Link href="#" className="text-seppa-red hover:underline font-medium ml-1">
+                      more.
+                    </Link>
+                  </p>
                 </div>
               </motion.div>
             </AnimatePresence>

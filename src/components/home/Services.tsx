@@ -36,7 +36,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-24 bg-[#101934] relative overflow-hidden m-3 rounded-2xl">
+    <section className="py-12 lg:py-24 bg-[#101934] relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern Overlay (Optional subtle texture) */}
        <div className="absolute inset-0 pointer-events-none bg-no-repeat bg-center bg-cover opacity-15" style={{ backgroundImage: `url(${bgPattern.src})` }}></div>
 
@@ -51,7 +51,7 @@ const Services = () => {
           variants={staggerContainer}
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-[#1c1c1c] mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
             <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Our Services</span>
           </motion.div>
           
@@ -66,7 +66,7 @@ const Services = () => {
 
         {/* Services Grid */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}

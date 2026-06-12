@@ -58,7 +58,7 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold font-heading text-dark mb-1">Quick Email:</h3>
-                    <p className="text-gray-600">info@yarnex.com</p>
+                    <p className="text-gray-600">info@seppasolutions.com</p>
                   </div>
                 </a>
 

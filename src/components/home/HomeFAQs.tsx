@@ -67,10 +67,10 @@ const HomeFAQs = () => {
             />
             
             <motion.div variants={fadeInUp} className="flex items-center gap-3 group cursor-pointer w-max">
-              <Link href="/faqs" className="inline-flex bg-[#101934] text-white px-7 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-seppa-red transition duration-300 tracking-wide">
+              <Link href="/faqs" className="inline-flex bg-[#101934] text-white px-7 py-3 md:py-4 rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide">
                 View all FAQ's
               </Link>
-              <Link href="/faqs" className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full hover:bg-[#101934] transition duration-300 shadow-md">
+              <Link href="/faqs" className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#101934] transition duration-300 shadow-md">
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
               </Link>
             </motion.div>

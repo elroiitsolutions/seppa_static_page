@@ -53,7 +53,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="pt-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
 
         {/* Header Section */}
@@ -139,19 +139,7 @@ const Projects = () => {
           </button>
         </motion.div>
 
-        {/* Bottom Marquee / Text */}
-        <motion.div
-          className="mt-20 text-center flex items-center justify-center gap-3 border-t border-gray-200 pt-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          {/* <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="Icon" className="w-6 h-6 rounded-full object-cover" />
-          <p className="text-gray-600 font-medium">
-            From raw fibers to refined fabrics – <span className="text-gold font-bold underline">Sustainability Woven Into Every Thread.</span>
-          </p> */}
-        </motion.div>
+
 
       </div>
     </section>

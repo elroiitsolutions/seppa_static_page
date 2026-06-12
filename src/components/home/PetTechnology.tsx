@@ -58,7 +58,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className="bg-white overflow-hidden">
+        <section className="py-12 lg:py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
 
                 {/* Header Section */}
@@ -77,7 +77,7 @@ const Projects = () => {
 
                     <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
                         <AnimatedHeading
-                            text="Select a SEPPA PET SOLUTIONS you are looking for ?"
+                            text={"Select a SEPPA PET SOLUTIONS you are looking for\u00A0?"}
                             elementType="h2"
                             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark leading-tight [&>span]:justify-center"
                         />
@@ -145,15 +145,7 @@ const Projects = () => {
                     </button>
                 </motion.div>
 
-                {/* Bottom Marquee / Text */}
-                <motion.div
-                    className="mt-20 text-center flex items-center justify-center gap-3 border-t border-gray-200 pt-8"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={fadeInUp}
-                >
-                </motion.div>
+
 
             </div>
         </section>
