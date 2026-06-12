@@ -16,25 +16,25 @@ const staggerContainer = {
 
 const blogs = [
   {
-    title: "Sustainable Textile Trends Shaping Global Industry Today",
+    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
     date: "February 14, 2026",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/blog-1.jpg"
+    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   },
   {
-    title: "Key Quality Standards Every Textile Manufacturer Should Follow",
-    date: "February 14, 2026",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/blog-2.jpg"
+    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
+    date: "March 11, 2026",
+    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   },
   {
-    title: "How Sustainable Practices Improve Textile Manufacturing Efficiency",
-    date: "February 14, 2026",
-    image: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/blog-3.jpg"
+    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
+    date: "April 04, 2026",
+    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   }
 ];
 
 const LatestBlogs = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
@@ -53,7 +53,7 @@ const LatestBlogs = () => {
           <AnimatedHeading 
             text="Informing you with industry focused updates" 
             elementType="h2" 
-            className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight" 
+            className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight [&>span]:justify-center" 
           />
         </motion.div>
 
@@ -87,7 +87,7 @@ const LatestBlogs = () => {
                 
                 <div className="flex items-center justify-between border-t border-gray-100 pt-6">
                   <div className="flex items-center gap-2 text-gray-500 font-medium text-sm">
-                    <FiCalendar className="text-gold" />
+                    <FiCalendar className="text-seppa-red" />
                     <span>{blog.date}</span>
                   </div>
                   

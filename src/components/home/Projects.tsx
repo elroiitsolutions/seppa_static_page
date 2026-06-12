@@ -22,38 +22,38 @@ const projects = [
   {
     title: 'PET BLOWER',
     subtitle: 'Complete Line Solutions for PET Blowing.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-1.jpg'
+    image: 'pics/pet-blower.jpg'
   },
   {
     title: 'PROCESS TECHNOLOGY',
     subtitle: 'Complete Line Solutions for Process Technology.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-2.jpg'
+    image: 'pics/process-technology.jpg'
   },
   {
     title: 'PET FILLING LINE',
     subtitle: 'Complete Line Solutions for PET Filling.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-3.jpg'
+    image: 'pics/pet-filling-machine.jpg'
   },
   {
     title: 'GLASS FILLING LINE',
     subtitle: 'Complete Line Solutions for Glass Filling.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
+    image: 'pics/glass-filling-machine.jpg'
   },
   {
     title: 'CAN FILLING LINE',
     subtitle: 'Complete Line Solutions for Can Filling.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
+    image: 'pics/can-filling-machine.jpg'
   },
   {
     title: 'LARGE BOTTLE FILLING LINE',
     subtitle: 'Complete Line Solutions for Large Bottles.',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
+    image: 'pics/large-bottle-filling-machine.jpg'
   }
 ];
 
 const Projects = () => {
   return (
-    <section className="pt-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
 
         {/* Header Section */}
@@ -105,7 +105,7 @@ const Projects = () => {
             {projects.map((project, idx) => (
               <SwiperSlide key={idx} className="h-auto py-4">
                 <motion.div variants={fadeInUp} className="group/item cursor-pointer h-full">
-                  <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4] shadow-lg h-full">
+                  <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-lg h-full">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -139,19 +139,7 @@ const Projects = () => {
           </button>
         </motion.div>
 
-        {/* Bottom Marquee / Text */}
-        <motion.div
-          className="mt-20 text-center flex items-center justify-center gap-3 border-t border-gray-200 pt-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          {/* <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="Icon" className="w-6 h-6 rounded-full object-cover" />
-          <p className="text-gray-600 font-medium">
-            From raw fibers to refined fabrics – <span className="text-gold font-bold underline">Sustainability Woven Into Every Thread.</span>
-          </p> */}
-        </motion.div>
+
 
       </div>
     </section>

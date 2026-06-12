@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'About Us' }]} 
       />
       
-      {/* About Our Industries */}
+      {/* About Our Industriesss */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-16">
