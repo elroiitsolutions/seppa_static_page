@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
-import logoImg from '@/assets/logo/logo.png';
+import aquafina from '@/assets/logo/aquafina-logo-vector.png';
+import atlas from '@/assets/logo/atlas.jpg';
+import bis from '@/assets/logo/bis.jpg';
+import direct from '@/assets/logo/direct.jpg';
+import foster from '@/assets/logo/foster.jpg';
+import haywards from '@/assets/logo/haywards.jpg';
+import hello from '@/assets/logo/hello.jpg';
+import kingfish from '@/assets/logo/kingfish.jpg';
+import mcdo from '@/assets/logo/mcdo.jpg';
+import perno from '@/assets/logo/perno.jpg';
+import sabol from '@/assets/logo/sabol.jpg';
+import seagrams from '@/assets/logo/seagrams.jpg';
+import sip from '@/assets/logo/sip.jpg';
+import playboy from '@/assets/logo/playboy.png';
+import royalchallenge from '@/assets/logo/royalchallenge.png';
+
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -14,27 +29,52 @@ const staggerContainer = {
 };
 
 const clients = [
-  { id: 1, name: 'Client 1', image: logoImg.src },
-  { id: 2, name: 'Client 2', image: logoImg.src },
-  { id: 3, name: 'Client 3', image: logoImg.src },
-  { id: 4, name: 'Client 4', image: logoImg.src },
-  { id: 5, name: 'Client 5', image: logoImg.src },
-  { id: 6, name: 'Client 6', image: logoImg.src },
-  { id: 7, name: 'Client 7', image: logoImg.src },
-  { id: 8, name: 'Client 8', image: logoImg.src },
-  { id: 9, name: 'Client 9', image: logoImg.src },
-  { id: 10, name: 'Client 10', image: logoImg.src },
-  { id: 11, name: 'Client 11', image: logoImg.src },
-  { id: 12, name: 'Client 12', image: logoImg.src },
-  { id: 13, name: 'Client 13', image: logoImg.src },
-  { id: 14, name: 'Client 14', image: logoImg.src },
-  { id: 15, name: 'Client 15', image: logoImg.src },
-  { id: 16, name: 'Client 16', image: logoImg.src }
+  { id: 1, name: 'Client 2', image: aquafina.src },
+  { id: 2, name: 'Client 3', image: atlas.src },
+  { id: 3, name: 'Client 4', image: bis.src },
+  { id: 4, name: 'Client 5', image: direct.src },
+  { id: 5, name: 'Client 6', image: foster.src },
+  { id: 6, name: 'Client 7', image: haywards.src },
+  { id: 7, name: 'Client 8', image: hello.src },
+  { id: 8, name: 'Client 9', image: kingfish.src },
+  { id: 9, name: 'Client 10', image: mcdo.src },
+  { id: 10, name: 'Client 11', image: perno.src },
+  { id: 11, name: 'Client 12', image: sabol.src },
+  { id: 12, name: 'Client 13', image: seagrams.src },
+  { id: 13, name: 'Client 14', image: sip.src },
+  { id: 14, name: 'Client 15', image: playboy.src },
+  { id: 15, name: 'Client 16', image: royalchallenge.src }
 ];
 
 const Clients = () => {
+  const [activeClientId, setActiveClientId] = useState<number | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleClientClick = (clientId: number) => {
+    setActiveClientId(clientId);
+    setIsPaused(true);
+
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = setTimeout(() => {
+      setActiveClientId(null);
+      setIsPaused(false);
+    }, 3000);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
@@ -65,7 +105,7 @@ const Clients = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
           variants={fadeInUp}
-          className="relative w-full overflow-hidden py-8 marquee-container"
+          className={`relative w-full overflow-hidden py-8 marquee-container ${isPaused ? 'is-paused' : ''}`}
         >
           {/* CSS Marquee Implementation */}
           <div className="flex w-max animate-marquee">
@@ -73,7 +113,11 @@ const Clients = () => {
             {/* First set of logos */}
             <div className="flex shrink-0 items-center">
               {clients.map((client) => (
-                <div key={`first-${client.id}`} className="w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 cursor-pointer flex justify-center">
+                <div 
+                  key={`first-${client.id}`} 
+                  onClick={() => handleClientClick(client.id)}
+                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
+                >
                   <img 
                     src={client.image} 
                     alt={client.name} 
@@ -86,7 +130,11 @@ const Clients = () => {
             {/* Second set of logos (duplicate for seamless infinite loop) */}
             <div className="flex shrink-0 items-center">
               {clients.map((client) => (
-                <div key={`second-${client.id}`} className="w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100 cursor-pointer flex justify-center">
+                <div 
+                  key={`second-${client.id}`} 
+                  onClick={() => handleClientClick(client.id)}
+                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
+                >
                   <img 
                     src={client.image} 
                     alt={client.name} 
@@ -109,8 +157,17 @@ const Clients = () => {
         .animate-marquee {
           animation: marquee 40s linear infinite;
         }
-        .marquee-container:hover .animate-marquee {
+        .is-paused .animate-marquee {
           animation-play-state: paused !important;
+        }
+        @media (hover: hover) {
+          .marquee-container:hover .animate-marquee {
+            animation-play-state: paused !important;
+          }
+          .client-logo-interactive:hover {
+            filter: grayscale(0) !important;
+            opacity: 1 !important;
+          }
         }
       `}} />
     </section>

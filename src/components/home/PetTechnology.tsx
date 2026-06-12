@@ -22,43 +22,43 @@ const projects = [
     {
         title: 'MINERAL WATER / SOFT DRINK PET BOTTLE MACHINE',
         subtitle: 'MINERAL WATER / SOFT DRINK PET BOTTLE MACHINE',
-        image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-1.jpg'
+        image: 'pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg'
     },
     {
         title: 'MILK / JUICE PET BOTTLE MACHINE',
         subtitle: 'Complete Line Solutions for Process Technology.',
-        image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-2.jpg'
+        image: 'pics/large.jpg'
     },
     {
-        title: 'PET Bottle Blowing Machine',
+        title: 'PET HOUSEHOLD CLEANING PRODUCTS',
         subtitle: 'Complete Line Solutions for PET Filling.',
-        image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/project-3.jpg'
+        image: 'pics/PET-HOUSEHOLD.png'
     },
     {
         title: 'OIL / KETCHUPS PET BOTTLE MACHINE',
         subtitle: 'Complete Line Solutions for Glass Filling.',
-        image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
+        image: 'pics/ar-taste-test-ketchup-hero-01-4x3-691200ff01674e20805c9ed469841597.jpg'
     },
     {
         title: 'ALCOHOL AND SPRITS PET BOTTLE',
         subtitle: 'Complete Line Solutions for Can Filling.',
-        image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
+        image: 'pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg'
     },
     {
         title: 'LARGE PET BOTTLE FOR 3 TO 20 LITERS',
         subtitle: 'Complete Line Solutions for Large Bottles.',
-        image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
+        image: 'pics/LARGE-PET-BOTTLE.jpg'
     },
     {
         title: 'PHARMA / COSMETICS BOTTLE PET MACHINE',
         subtitle: 'Complete Line Solutions for Large Bottles.',
-        image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
+        image: 'pics/pharmaceutical-packaging-bottles-134.jpg'
     }
 ];
 
 const Projects = () => {
     return (
-        <section className="bg-white overflow-hidden">
+        <section className="py-12 lg:py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
 
                 {/* Header Section */}
@@ -77,7 +77,7 @@ const Projects = () => {
 
                     <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
                         <AnimatedHeading
-                            text="Select a SEPPA PET SOLUTIONS you are looking for ?"
+                            text={"Select a SEPPA PET SOLUTIONS you are looking for\u00A0?"}
                             elementType="h2"
                             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark leading-tight [&>span]:justify-center"
                         />
@@ -111,7 +111,7 @@ const Projects = () => {
                         {projects.map((project, idx) => (
                             <SwiperSlide key={idx} className="h-auto py-4">
                                 <motion.div variants={fadeInUp} className="group/item cursor-pointer h-full">
-                                    <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4] shadow-lg h-full">
+                                    <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-lg h-full">
                                         <img
                                             src={project.image}
                                             alt={project.title}
@@ -145,15 +145,7 @@ const Projects = () => {
                     </button>
                 </motion.div>
 
-                {/* Bottom Marquee / Text */}
-                <motion.div
-                    className="mt-20 text-center flex items-center justify-center gap-3 border-t border-gray-200 pt-8"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={fadeInUp}
-                >
-                </motion.div>
+
 
             </div>
         </section>

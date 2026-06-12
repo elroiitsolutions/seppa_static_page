@@ -89,7 +89,7 @@ const SpecialOffer = () => {
               variants={fadeInUp} 
               className="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.5rem)] group cursor-pointer"
             >
-              <div className="bg-[#273051] rounded-3xl overflow-hidden p-6 md:p-8 shadow-lg border border-gray-800 transition duration-300 hover:border-gray-600 h-full flex flex-col items-center justify-center min-h-[180px]">
+              <div className="bg-[#101934] rounded-3xl overflow-hidden p-6 md:p-8 shadow-lg border border-gray-800 transition duration-300 hover:border-gray-600 h-full flex flex-col items-center justify-center min-h-[180px]">
                 <h3 className="text-[13px] md:text-[15px] font-bold font-heading text-white group-hover:text-gold transition duration-300 text-center leading-relaxed">
                   {report.title}
                 </h3>

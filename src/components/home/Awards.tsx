@@ -12,47 +12,28 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const awards = [
-  {
-    id: 1,
-    title: 'Industry Leader Award',
-    description: 'Recognized for outstanding leadership and innovation in the manufacturing sector.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+1'
-  },
-  {
-    id: 2,
-    title: 'Excellence in Quality',
-    description: 'Awarded for maintaining the highest standards of quality control across all product lines.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+2'
-  },
-  {
-    id: 3,
-    title: 'Global Export Award',
-    description: 'Honored for exceptional contribution to global trade and expanding international reach.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+3'
-  },
-  {
-    id: 4,
-    title: 'Sustainability Champion',
-    description: 'Celebrating our commitment to eco-friendly practices and sustainable manufacturing.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+4'
-  },
-  {
-    id: 5,
-    title: 'Innovation of the Year',
-    description: 'Received for developing cutting-edge technology that revolutionized packaging lines.',
-    image: 'https://placehold.co/600x400/273051/FFFFFF/png?text=Award+5'
-  }
+import achieve1 from '@/assets/achievements/achieve1.jpeg';
+import achieve2 from '@/assets/achievements/achieve2.jpeg';
+import achieve3 from '@/assets/achievements/achieve3.jpeg';
+import achieve4 from '@/assets/achievements/achieve4.jpeg';
+import achieve5 from '@/assets/achievements/achieve5.jpeg';
+
+const achievements = [
+  { id: 1, image: achieve1.src },
+  { id: 2, image: achieve2.src },
+  { id: 3, image: achieve3.src },
+  { id: 4, image: achieve4.src },
+  { id: 5, image: achieve5.src }
 ];
 
 const Awards = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 md:py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
         <motion.div 
-          className="text-center max-w-[1200px] mx-auto mb-16"
+          className="text-center max-w-[1200px] mx-auto mb-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
@@ -75,48 +56,60 @@ const Awards = () => {
           </motion.p>
         </motion.div>
 
-        {/* Awards Flex Grid */}
-        <motion.div 
-          className="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-[1200px] mx-auto"
+        {/* Marquee Slider */}
+        <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={staggerContainer}
+          viewport={{ once: true, amount: 0.5 }}
+          variants={fadeInUp}
+          className="relative w-full overflow-hidden py-2 marquee-container"
         >
-          {/* {awards.map((award) => (
-            <motion.div 
-              key={award.id} 
-              variants={fadeInUp} 
-              className="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1.35rem)] group cursor-pointer"
-            >
-              <div className="bg-white rounded-[2rem] overflow-hidden p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full hover:-translate-y-2"> */}
-                
-                {/* Image Container */}
-                {/* <div className="w-full h-48 md:h-56 rounded-2xl overflow-hidden mb-6 relative bg-gray-50">
-                  <div className="absolute inset-0 bg-dark/5 group-hover:bg-transparent transition-colors duration-300 z-10 pointer-events-none"></div>
+          {/* CSS Marquee Implementation */}
+          <div className="flex w-max animate-marquee">
+            
+            {/* First set of images */}
+            <div className="flex shrink-0 items-center">
+              {achievements.map((achievement) => (
+                <div key={`first-${achievement.id}`} className="w-[200px] md:w-[280px] lg:w-[350px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center">
                   <img 
-                    src={award.image} 
-                    alt={award.title} 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    src={achievement.image} 
+                    alt={`Achievement ${achievement.id}`} 
+                    className="max-h-32 md:max-h-40 lg:max-h-48 w-auto object-contain drop-shadow-sm rounded-lg" 
                   />
-                </div> */}
-
-                {/* Content */}
-                {/* <div className="flex flex-col flex-grow text-center">
-                  <h3 className="text-xl md:text-2xl font-bold font-heading text-dark group-hover:text-seppa-red transition duration-300 mb-3">
-                    {award.title}
-                  </h3>
-                  <p className="text-gray-500 leading-relaxed text-sm md:text-base">
-                    {award.description}
-                  </p>
                 </div>
+              ))}
+            </div>
 
-              </div>
-            </motion.div>
-          ))} */}
+            {/* Second set of images (duplicate for seamless infinite loop) */}
+            <div className="flex shrink-0 items-center">
+              {achievements.map((achievement) => (
+                <div key={`second-${achievement.id}`} className="w-[200px] md:w-[280px] lg:w-[350px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center">
+                  <img 
+                    src={achievement.image} 
+                    alt={`Achievement ${achievement.id}`} 
+                    className="max-h-32 md:max-h-40 lg:max-h-48 w-auto object-contain drop-shadow-sm rounded-lg" 
+                  />
+                </div>
+              ))}
+            </div>
+
+          </div>
         </motion.div>
 
       </div>
+
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+        .marquee-container:hover .animate-marquee {
+          animation-play-state: paused !important;
+        }
+      `}} />
     </section>
   );
 };
