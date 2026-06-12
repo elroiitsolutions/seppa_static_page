@@ -31,7 +31,7 @@ const ContactMap = () => {
   const [showIndiaList, setShowIndiaList] = useState(false);
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-16 lg:py-24 bg-white relative">
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
@@ -50,7 +50,7 @@ const ContactMap = () => {
           <AnimatedHeading 
             text="Partner with global liquid packaging specialists" 
             elementType="h2" 
-            className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight" 
+            className="text-3xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight" 
           />
         </motion.div>
 
@@ -135,7 +135,7 @@ const ContactMap = () => {
                 style={{ top: loc.top, left: loc.left }}
               >
                 <div className="relative transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border-[3px] border-white shadow-xl overflow-hidden group-hover:scale-110 transition-transform duration-300 relative">
+                  <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border-[2px] md:border-[3px] border-white shadow-xl overflow-hidden group-hover:scale-110 transition-transform duration-300 relative">
                     <img src={loc.flag} alt={loc.name} className="w-full h-full object-cover" />
                   </div>
                   {/* Red dot status indicator */}
@@ -157,7 +157,7 @@ const ContactMap = () => {
             >
               <div className="relative transform -translate-x-1/2 -translate-y-1/2">
                 <div 
-                  className="w-12 h-12 md:w-14 md:h-14 rounded-full border-[4px] border-white shadow-xl overflow-hidden hover:scale-110 transition-transform duration-300 cursor-pointer relative"
+                  className="w-10 h-10 md:w-14 md:h-14 rounded-full border-[2px] md:border-[4px] border-white shadow-xl overflow-hidden hover:scale-110 transition-transform duration-300 cursor-pointer relative"
                   onClick={() => setShowIndiaList(!showIndiaList)}
                 >
                   <img src={indiaLocation.flag} alt={indiaLocation.name} className="w-full h-full object-cover" />
@@ -168,8 +168,8 @@ const ContactMap = () => {
                 {/* India Ping Animation */}
                 <div className="absolute inset-0 rounded-full border-2 border-seppa-red animate-ping opacity-70 pointer-events-none"></div>
                 
-                {/* Clickable India Tooltip / Dropdown */}
-                <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] w-56 transition-all duration-300 origin-top before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-50 ${showIndiaList ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
+                {/* Desktop Clickable India Tooltip / Dropdown */}
+                <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] w-56 transition-all duration-300 origin-top before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-50 ${showIndiaList ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
                   <div className="p-4 border-b border-gray-100">
                     <h4 className="text-dark font-bold text-base">India Locations</h4>
                     <p className="text-gray-500 text-xs mt-1">Our offices across the country</p>
@@ -196,6 +196,38 @@ const ContactMap = () => {
 
         </div>
       </div>
+
+      {/* Mobile Modal for India Locations */}
+      {showIndiaList && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 md:hidden px-4 backdrop-blur-sm" onClick={() => setShowIndiaList(false)}>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+            className="bg-white rounded-3xl shadow-2xl w-full max-w-sm overflow-hidden border border-gray-100" 
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="p-5 border-b border-gray-100 flex justify-between items-center bg-[#fdfbf6]">
+              <div>
+                <h4 className="text-dark font-bold text-xl font-heading">India Locations</h4>
+                <p className="text-gray-500 text-sm mt-1">Our offices across the country</p>
+              </div>
+              <button onClick={() => setShowIndiaList(false)} className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-gray-400 hover:text-seppa-red transition-colors border border-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+            </div>
+            <ul className="p-4">
+              {indiaCities.map((city, idx) => (
+                <li key={idx} className="px-4 py-3.5 text-base text-gray-700 hover:bg-[#f8f6f0] hover:text-seppa-red rounded-xl transition-colors cursor-pointer flex items-center gap-4 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-seppa-red opacity-80"></span>
+                  {city}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
+      )}
+
     </section>
   );
 };

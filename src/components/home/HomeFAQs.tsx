@@ -41,7 +41,7 @@ const homeFaqs = [
 
 const HomeFAQs = () => {
   return (
-    <section className="py-24 bg-[#fdfbf6] relative overflow-hidden m-3 rounded-2xl">
+    <section className="py-12 lg:py-24 bg-[#fdfbf6] relative overflow-hidden m-3 rounded-2xl">
       <div className="absolute inset-0 pointer-events-none bg-repeat opacity-100" style={{ backgroundImage: `url(${bgPattern.src})`, backgroundSize: 'auto' }}></div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -49,7 +49,7 @@ const HomeFAQs = () => {
           
           {/* Left Content */}
           <motion.div 
-            className="w-full lg:w-5/12 sticky top-24"
+            className="w-full lg:w-5/12 lg:sticky lg:top-24"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -63,14 +63,14 @@ const HomeFAQs = () => {
             <AnimatedHeading 
               text="Expert answers to liquid packaging & processing questions" 
               elementType="h2" 
-              className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark leading-tight mb-10 max-w-[400px]" 
+              className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold text-dark leading-tight mb-10 max-w-[400px]" 
             />
             
             <motion.div variants={fadeInUp} className="flex items-center gap-3 group cursor-pointer w-max">
               <Link href="/faqs" className="inline-flex bg-[#101934] text-white px-7 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-seppa-red transition duration-300 tracking-wide">
                 View all FAQ's
               </Link>
-              <Link href="/faqs" className="w-12 h-12 md:w-14 md:h-14 bg-seppa-red flex items-center justify-center text-white rounded-full hover:bg-[#101934] transition duration-300 shadow-md">
+              <Link href="/faqs" className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full hover:bg-[#101934] transition duration-300 shadow-md">
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
               </Link>
             </motion.div>
