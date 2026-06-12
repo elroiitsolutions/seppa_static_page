@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion  ,Variants} from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
 import { FiCheckCircle, FiPlay } from 'react-icons/fi';
 
@@ -22,36 +22,41 @@ const staggerContainer = {
 
 const HomeHero = () => {
   return (
-    <section className="relative min-h-[100vh] lg:h-[100vh] overflow-hidden flex flex-col pt-24 pb-8 lg:py-0">
-    {/* Background Video */}
+    <section className="relative min-h-[100vh] lg:h-[100vh] overflow-hidden flex flex-col pt-24 pb-8 lg:pt-[140px] lg:pb-0">
+      {/* Background Video */}
       <div className="absolute inset-0 z-0 bg-dark lg:m-3 lg:rounded-2xl overflow-hidden">
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-  >
-    <source
-      src="/videos/stock-footage-shop-for-the-production-of-drinking-water-on-the-conveyor-moving-water-bottles-production-of.mp4"
-      type="video/mp4"
-    />
-  </video>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="/videos/stock-footage-shop-for-the-production-of-drinking-water-on-the-conveyor-moving-water-bottles-production-of.mp4"
+            type="video/mp4"
+          />
+        </video>
 
- <div className="absolute inset-0 bg-gradient-to-r from-dark/90 to-dark/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/90 to-dark/10"></div>
 
-  {/* Diagonal Lines */}
-  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    {[15, 35, 55, 75, 95].map((pos, idx) => (
-      <div
-        key={idx}
-        style={{ left: `${pos}%` }}
-        className="absolute top-[-50%] bottom-[-50%] w-px bg-white/10 rotate-[20deg] hidden md:block"
-      />
-    ))}
-  </div>
-</div>      
-      <div className="container mx-auto px-4 relative z-10 w-full flex-1 flex flex-col justify-center pb-8">
+        {/* Diagonal Lines */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {[15, 35, 55, 75, 95].map((pos, idx) => (
+            <div
+              key={idx}
+              style={{ left: `${pos}%` }}
+              className="absolute top-[-50%] bottom-[-50%] w-px bg-white/10 rotate-[20deg] hidden md:block"
+            />
+          ))}
+        </div>
+      </div>      
+      
+      {/* 
+        Using a fixed max-width (max-w-[1280px]) instead of standard 'container' 
+        to ensure the layout stays exactly the same on 1080p, 2K, 4K, and Ultrawide monitors.
+      */}
+      <div className="w-full max-w-[1280px] mx-auto px-4 relative z-10 flex-1 flex flex-col justify-center pb-8">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -65,8 +70,9 @@ const HomeHero = () => {
               <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
               <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
             </div>
-            <span className="text-white font-small text-sm md:text-base tracking-wide">Crafting quality machinery for global industries
-</span>
+            <span className="text-white font-medium text-sm md:text-base tracking-wide">
+              Crafting quality machinery for global industries
+            </span>
           </motion.div>
           
           {/* Main Heading */}
@@ -95,7 +101,14 @@ const HomeHero = () => {
             </div>
             
             {/* Watch Video */}
-            <div className="flex items-center gap-4 cursor-pointer group">
+            <a 
+              href="#about-industries" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about-industries')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="flex items-center gap-4 cursor-pointer group"
+            >
               <div className="w-[72px] h-[72px] rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
                 <div className="w-[56px] h-[56px] rounded-full bg-black/40 flex items-center justify-center">
                   <div className="w-11 h-11 rounded-full bg-[#101934] flex items-center justify-center text-white pl-1 shadow-lg group-hover:bg-seppa-red transition-colors duration-300">
@@ -104,14 +117,14 @@ const HomeHero = () => {
                 </div>
               </div>
               <span className="text-white font-bold text-xl tracking-wide group-hover:text-seppa-red transition-colors duration-300">Watch Video to know us</span>
-            </div>
+            </a>
           </motion.div>
         </motion.div>
       </div>
 
       {/* Bottom Checklists */}
       <div className="relative w-full to-transparent pt-8 pb-8 z-10 mt-auto">
-        <div className="container mx-auto px-4 pb-6 md:pb-14">
+        <div className="w-full max-w-[1280px] mx-auto px-4 pb-6 md:pb-14">
           <motion.div 
             initial="hidden"
             animate="visible"

@@ -14,21 +14,22 @@ const staggerContainer = {
 };
 
 const locations = [
-  { id: 'usa', name: 'USA', desc: 'Irving, Texas', top: '35%', left: '22%', flag: 'https://flagcdn.com/w80/us.png' },
-  { id: 'canada', name: 'Canada', desc: 'Edmonton, Alberta', top: '22%', left: '18%', flag: 'https://flagcdn.com/w80/ca.png' },
-  { id: 'uk', name: 'UK', desc: 'United Kingdom', top: '25%', left: '46%', flag: 'https://flagcdn.com/w80/gb.png' },
-  { id: 'belgium', name: 'Brussels', desc: 'Belgium', top: '27%', left: '48%', flag: 'https://flagcdn.com/w80/be.png' },
-  { id: 'germany', name: 'Germany', desc: 'Europe', top: '25%', left: '51%', flag: 'https://flagcdn.com/w80/de.png' },
-  { id: 'armenia', name: 'Armenia', desc: 'Eurasia', top: '30%', left: '59%', flag: 'https://flagcdn.com/w80/am.png' },
-  { id: 'uae', name: 'UAE', desc: 'Ajman Free Zone', top: '42%', left: '61%', flag: 'https://flagcdn.com/w80/ae.png' },
-  { id: 'australia', name: 'Australia', desc: 'Oceania', top: '75%', left: '85%', flag: 'https://flagcdn.com/w80/au.png' },
+  { id: 'usa', name: 'USA', desc: 'Irving, Texas', top: '35%', left: '22%', flag: 'https://flagcdn.com/w80/us.png', cities: ['Irving, Texas'] },
+  { id: 'canada', name: 'Canada', desc: 'Edmonton, Alberta', top: '22%', left: '18%', flag: 'https://flagcdn.com/w80/ca.png', cities: ['Edmonton, Alberta'] },
+  { id: 'uk', name: 'UK', desc: 'United Kingdom', top: '25%', left: '46%', flag: 'https://flagcdn.com/w80/gb.png', cities: ['United Kingdom'] },
+  { id: 'belgium', name: 'Brussels', desc: 'Belgium', top: '27%', left: '48%', flag: 'https://flagcdn.com/w80/be.png', cities: ['Belgium'] },
+  { id: 'germany', name: 'Germany', desc: 'Europe', top: '25%', left: '51%', flag: 'https://flagcdn.com/w80/de.png', cities: ['Europe'] },
+  { id: 'armenia', name: 'Armenia', desc: 'Eurasia', top: '30%', left: '59%', flag: 'https://flagcdn.com/w80/am.png', cities: ['Eurasia'] },
+  { id: 'uae', name: 'UAE', desc: 'Ajman Free Zone', top: '42%', left: '61%', flag: 'https://flagcdn.com/w80/ae.png', cities: ['Ajman Free Zone'] },
+  { id: 'australia', name: 'Australia', desc: 'Oceania', top: '75%', left: '85%', flag: 'https://flagcdn.com/w80/au.png', cities: ['Oceania'] },
 ];
 
 const indiaLocation = { id: 'india', name: 'India', desc: 'Click to view cities', top: '45%', left: '68%', flag: 'https://flagcdn.com/w80/in.png' };
 const indiaCities = ['Mumbai (Corporate Office)', 'Bengaluru', 'New Delhi', 'Hyderabad', 'Chennai'];
 
+const allLocations = [...locations, { ...indiaLocation, cities: indiaCities }];
+
 const ContactMap = () => {
-  const [showIndiaList, setShowIndiaList] = useState(false);
   const [activePin, setActivePin] = useState<string | null>(null);
 
   return (
@@ -137,7 +138,6 @@ const ContactMap = () => {
                 onClick={(e) => {
                   e.stopPropagation();
                   setActivePin(activePin === loc.id ? null : loc.id);
-                  setShowIndiaList(false); // Close India list if open
                 }}
               >
                 <div className="relative transform -translate-x-1/2 -translate-y-1/2">
@@ -148,7 +148,7 @@ const ContactMap = () => {
                   <div className="absolute bottom-0 right-0 w-3 h-3 bg-seppa-red rounded-full border-2 border-white group-hover:scale-110 transition-transform duration-300"></div>
                   
                   {/* Tooltip on Hover / Click */}
-                  <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] w-max transition-all duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-40 ${activePin === loc.id ? 'opacity-100 visible' : 'opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible'}`}>
+                  <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] w-max transition-all duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-40 ${activePin === loc.id ? 'opacity-100 visible' : 'opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible'}`}>
                     <h4 className="text-dark font-bold text-sm mb-1">{loc.name}</h4>
                     <p className="text-gray-500 text-xs">{loc.desc}</p>
                   </div>
@@ -164,7 +164,7 @@ const ContactMap = () => {
               <div className="relative transform -translate-x-1/2 -translate-y-1/2">
                 <div 
                   className="w-10 h-10 md:w-14 md:h-14 rounded-full border-[2px] md:border-[4px] border-white shadow-xl overflow-hidden hover:scale-110 transition-transform duration-300 cursor-pointer relative"
-                  onClick={() => setShowIndiaList(!showIndiaList)}
+                  onClick={(e) => { e.stopPropagation(); setActivePin(activePin === 'india' ? null : 'india'); }}
                 >
                   <img src={indiaLocation.flag} alt={indiaLocation.name} className="w-full h-full object-cover" />
                 </div>
@@ -175,7 +175,7 @@ const ContactMap = () => {
                 <div className="absolute inset-0 rounded-full border-2 border-seppa-red animate-ping opacity-70 pointer-events-none"></div>
                 
                 {/* Desktop Clickable India Tooltip / Dropdown */}
-                <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] w-56 transition-all duration-300 origin-top before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-50 ${showIndiaList ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
+                <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] w-56 transition-all duration-300 origin-top before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-50 ${activePin === 'india' ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
                   <div className="p-4 border-b border-gray-100">
                     <h4 className="text-dark font-bold text-base">India Locations</h4>
                     <p className="text-gray-500 text-xs mt-1">Our offices across the country</p>
@@ -191,7 +191,7 @@ const ContactMap = () => {
                 </div>
 
                 {/* Normal Hover Tooltip (hides when clicked) */}
-                <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-xl w-max transition-opacity duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white ${showIndiaList ? 'opacity-0 invisible' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'}`}>
+                <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-xl w-max transition-opacity duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white ${activePin === 'india' ? 'opacity-0 invisible' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'}`}>
                   <h4 className="text-dark font-bold text-sm mb-1">{indiaLocation.name}</h4>
                   <p className="text-gray-500 text-xs">{indiaLocation.desc}</p>
                 </div>
@@ -203,34 +203,40 @@ const ContactMap = () => {
         </div>
       </div>
 
-      {/* Mobile Modal for India Locations */}
-      {showIndiaList && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 md:hidden px-4 backdrop-blur-sm" onClick={() => setShowIndiaList(false)}>
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="bg-white rounded-3xl shadow-2xl w-full max-w-sm overflow-hidden border border-gray-100" 
-            onClick={e => e.stopPropagation()}
-          >
-            <div className="p-5 border-b border-gray-100 flex justify-between items-center bg-[#fdfbf6]">
-              <div>
-                <h4 className="text-dark font-bold text-xl font-heading">India Locations</h4>
-                <p className="text-gray-500 text-sm mt-1">Our offices across the country</p>
-              </div>
-              <button onClick={() => setShowIndiaList(false)} className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-gray-400 hover:text-seppa-red transition-colors border border-gray-100">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-              </button>
-            </div>
-            <ul className="p-4">
-              {indiaCities.map((city, idx) => (
-                <li key={idx} className="px-4 py-3.5 text-base text-gray-700 hover:bg-[#f8f6f0] hover:text-seppa-red rounded-xl transition-colors cursor-pointer flex items-center gap-4 font-medium">
-                  <span className="w-2.5 h-2.5 rounded-full bg-seppa-red opacity-80"></span>
-                  {city}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+      {/* Mobile Modal for Locations */}
+      {activePin && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 md:hidden px-4 backdrop-blur-sm" onClick={() => setActivePin(null)}>
+          {(() => {
+            const activeLoc = allLocations.find(l => l.id === activePin);
+            if (!activeLoc) return null;
+            return (
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                className="bg-white rounded-3xl shadow-2xl w-full max-w-sm overflow-hidden border border-gray-100" 
+                onClick={e => e.stopPropagation()}
+              >
+                <div className="p-5 border-b border-gray-100 flex justify-between items-center bg-[#fdfbf6]">
+                  <div>
+                    <h4 className="text-dark font-bold text-xl font-heading">{activeLoc.name} Locations</h4>
+                    <p className="text-gray-500 text-sm mt-1">Our offices across the country</p>
+                  </div>
+                  <button onClick={() => setActivePin(null)} className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-gray-400 hover:text-seppa-red transition-colors border border-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  </button>
+                </div>
+                <ul className="p-4">
+                  {activeLoc.cities.map((city: string, idx: number) => (
+                    <li key={idx} className="px-4 py-3.5 text-base text-gray-700 hover:bg-[#f8f6f0] hover:text-seppa-red rounded-xl transition-colors cursor-pointer flex items-center gap-4 font-medium">
+                      <span className="w-2.5 h-2.5 rounded-full bg-seppa-red opacity-80"></span>
+                      {city}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            );
+          })()}
         </div>
       )}
 
