@@ -50,7 +50,7 @@ const ContactMap = () => {
           <AnimatedHeading 
             text="Partner with global liquid packaging specialists" 
             elementType="h2" 
-            className="text-3xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight" 
+            className="text-3xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight [&>span]:justify-center" 
           />
         </motion.div>
 

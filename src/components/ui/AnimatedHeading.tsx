@@ -33,7 +33,7 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({
 
   const words = text.split(" ");
   let charCount = 0;
-  const totalChars = text.replace(/\s/g, "").length;
+  const totalChars = words.reduce((acc, word) => acc + word.length, 0);
 
   return (
     <Element className={className} ref={container as any}>
@@ -42,9 +42,9 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({
           return (
             <span key={i} className="inline-flex">
               {word.split("").map((char, j) => {
-                const start = charCount / totalChars;
+                const start = charCount / (totalChars + 0.5);
                 // Add a small overlap (1.5) for a smoother sweep effect
-                const end = start + (1.5 / totalChars);
+                const end = start + (1.5 / (totalChars + 0.5));
                 charCount++;
                 
                 return (

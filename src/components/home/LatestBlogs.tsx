@@ -34,7 +34,7 @@ const blogs = [
 
 const LatestBlogs = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* Header Section */}
@@ -53,7 +53,7 @@ const LatestBlogs = () => {
           <AnimatedHeading 
             text="Informing you with industry focused updates" 
             elementType="h2" 
-            className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight" 
+            className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight [&>span]:justify-center" 
           />
         </motion.div>
 
@@ -87,7 +87,7 @@ const LatestBlogs = () => {
                 
                 <div className="flex items-center justify-between border-t border-gray-100 pt-6">
                   <div className="flex items-center gap-2 text-gray-500 font-medium text-sm">
-                    <FiCalendar className="text-gold" />
+                    <FiCalendar className="text-seppa-red" />
                     <span>{blog.date}</span>
                   </div>
                   
