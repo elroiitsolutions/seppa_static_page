@@ -22,7 +22,7 @@ const staggerContainer = {
 
 const HomeHero = () => {
   return (
-    <section className="relative min-h-[100vh] lg:h-[100vh] overflow-hidden flex flex-col pt-24 pb-8 lg:pt-[140px] lg:pb-0">
+    <section className="relative min-h-screen w-full overflow-hidden flex flex-col">
       {/* Background Video */}
       <div className="absolute inset-0 z-0 bg-dark lg:m-3 lg:rounded-2xl overflow-hidden">
         <video
@@ -53,10 +53,10 @@ const HomeHero = () => {
       </div>      
       
       {/* 
-        Using a fixed max-width (max-w-[1280px]) instead of standard 'container' 
-        to ensure the layout stays exactly the same on 1080p, 2K, 4K, and Ultrawide monitors.
+        Using responsive Tailwind containers to ensure proper scaling across 
+        1366x768, 1440p, 1080p, 4K, and Ultrawide monitors.
       */}
-      <div className="w-full max-w-[1280px] mx-auto px-4 relative z-10 flex-1 flex flex-col justify-center pb-8">
+      <div className="container mx-auto 2xl:max-w-screen-2xl px-4 relative z-10 flex-1 flex flex-col justify-center pt-28 lg:pt-36 pb-8">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -123,8 +123,8 @@ const HomeHero = () => {
       </div>
 
       {/* Bottom Checklists */}
-      <div className="relative w-full to-transparent pt-8 pb-8 z-10 mt-auto">
-        <div className="w-full max-w-[1280px] mx-auto px-4 pb-6 md:pb-14">
+      <div className="relative w-full to-transparent pt-4 pb-8 z-10 mt-auto">
+        <div className="container mx-auto 2xl:max-w-screen-2xl px-4 pb-6 lg:pb-10">
           <motion.div 
             initial="hidden"
             animate="visible"

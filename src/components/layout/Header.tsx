@@ -23,8 +23,26 @@ const Header: React.FC = () => {
     };
   }, [isMobileMenuOpen]);
 
-  // Dynamic header classes - static/absolute positioning (no sticky behavior)
-  const headerClass = "absolute top-0 left-0 w-full z-50 bg-transparent pt-6 lg:pt-12";
+  // Handle scroll event for sticky header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Dynamic header classes - sticky behavior only on desktop
+  const headerClass = `top-0 left-0 w-full z-50 transition-all duration-300 absolute lg:fixed ${
+    scrolled 
+      ? 'bg-transparent lg:bg-[#101934]/95 lg:backdrop-blur-md pt-4 lg:pt-3 lg:pb-3 lg:shadow-lg' 
+      : 'bg-transparent pt-4 lg:pt-8'
+  }`;
 
   const linkClass = "font-medium hover:text-gold transition flex items-center gap-1 py-2 text-white";
 
@@ -33,15 +51,17 @@ const Header: React.FC = () => {
 
   return (
     <header className={headerClass}>
-      <div className="container mx-auto px-4 flex justify-between items-center pb-4 lg:pb-6 border-b border-white/20">
+      <div className={`container mx-auto px-4 flex justify-between items-center pb-4 lg:pb-6 border-b transition-colors duration-300 ${scrolled ? 'border-transparent' : 'border-white/20'}`}>
         {/* Logo */}
         <div className="logo z-50 relative">
           <Link href="/">
-            <img
-              src={logoImg.src}
-              alt="Seppa Solutions Logo"
-              className="h-10 md:h-14 transition-all duration-300 bg-white"
-            />
+            <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-2'>
+              <img
+                src={logoImg.src}
+                alt="Seppa Solutions Logo"
+                className="h-10 md:h-10 transition-all duration-300 "
+              />
+            </div>
           </Link>
         </div>
 
