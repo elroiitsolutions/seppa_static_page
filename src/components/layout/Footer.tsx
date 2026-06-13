@@ -81,13 +81,13 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-xl font-heading font-bold mb-8">Our Services</h3>
               <ul className="space-y-4 text-gray-300 font-medium">
-                <li><Link href="/services" className="hover:text-seppa-red transition">Packaging</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Spare parts & Logistics Training</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Maintenance</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Line Improvement</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Line Conversions & Moulds</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Audits</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Training</Link></li>
+                <li><Link href="/services/packaging" className="hover:text-seppa-red transition">Packaging</Link></li>
+                <li><Link href="/services/spare-parts" className="hover:text-seppa-red transition">Spare parts & Logistics Training</Link></li>
+                <li><Link href="/services/maintenance" className="hover:text-seppa-red transition">Maintenance</Link></li>
+                <li><Link href="/services/improvement" className="hover:text-seppa-red transition">Line Improvement</Link></li>
+                <li><Link href="/services/conversions" className="hover:text-seppa-red transition">Line Conversions & Moulds</Link></li>
+                <li><Link href="/services/audits" className="hover:text-seppa-red transition">Audits</Link></li>
+                <li><Link href="/services/training" className="hover:text-seppa-red transition">Training</Link></li>
               </ul>
             </div>
 
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
         {/* Bottom Footer Area */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 font-medium text-sm md:text-base">
-            Copyright © 2021 <span className="text-white hover:text-seppa-red transition cursor-pointer">Seppa Solutions</span>. All rights reserved.
+            Copyright © 2021 <span className="text-white hover:text-seppa-red transition cursor-pointer"><Link href="/">Seppa Solutions</Link></span>. All rights reserved.
           </div>
           <div className="flex gap-2">
             <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">
