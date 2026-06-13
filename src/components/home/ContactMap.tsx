@@ -148,7 +148,7 @@ const ContactMap = () => {
                   <div className="absolute bottom-0 right-0 w-3 h-3 bg-seppa-red rounded-full border-2 border-white group-hover:scale-110 transition-transform duration-300"></div>
                   
                   {/* Tooltip on Hover / Click */}
-                  <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] w-max transition-all duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-40 ${activePin === loc.id ? 'opacity-100 visible' : 'opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible'}`}>
+                  <div className={`hidden lg:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] w-max transition-all duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-40 ${activePin === loc.id ? 'opacity-100 visible' : 'opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible'}`}>
                     <h4 className="text-dark font-bold text-sm mb-1">{loc.name}</h4>
                     <p className="text-gray-500 text-xs">{loc.desc}</p>
                   </div>
@@ -175,7 +175,7 @@ const ContactMap = () => {
                 <div className="absolute inset-0 rounded-full border-2 border-seppa-red animate-ping opacity-70 pointer-events-none"></div>
                 
                 {/* Desktop Clickable India Tooltip / Dropdown */}
-                <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] w-56 transition-all duration-300 origin-top before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-50 ${activePin === 'india' ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
+                <div className={`hidden lg:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] w-56 transition-all duration-300 origin-top before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white z-50 ${activePin === 'india' ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
                   <div className="p-4 border-b border-gray-100">
                     <h4 className="text-dark font-bold text-base">India Locations</h4>
                     <p className="text-gray-500 text-xs mt-1">Our offices across the country</p>
@@ -191,7 +191,7 @@ const ContactMap = () => {
                 </div>
 
                 {/* Normal Hover Tooltip (hides when clicked) */}
-                <div className={`hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-xl w-max transition-opacity duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white ${activePin === 'india' ? 'opacity-0 invisible' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'}`}>
+                <div className={`hidden lg:block absolute top-full left-1/2 transform -translate-x-1/2 mt-3 bg-white px-5 py-3 rounded-xl shadow-xl w-max transition-opacity duration-300 pointer-events-none before:content-[''] before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-transparent before:border-b-white ${activePin === 'india' ? 'opacity-0 invisible' : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible'}`}>
                   <h4 className="text-dark font-bold text-sm mb-1">{indiaLocation.name}</h4>
                   <p className="text-gray-500 text-xs">{indiaLocation.desc}</p>
                 </div>
@@ -205,7 +205,7 @@ const ContactMap = () => {
 
       {/* Mobile Modal for Locations */}
       {activePin && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 md:hidden px-4 backdrop-blur-sm" onClick={() => setActivePin(null)}>
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 lg:hidden px-4 backdrop-blur-sm" onClick={() => setActivePin(null)}>
           {(() => {
             const activeLoc = allLocations.find(l => l.id === activePin);
             if (!activeLoc) return null;

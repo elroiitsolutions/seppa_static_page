@@ -18,7 +18,7 @@ const PetPage: React.FC = () => {
         title="PET Solutions" 
         breadcrumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Services', path: '/services' },
+          { name: 'Packaging', path: '/services/packaging' },
           { name: 'PET' }
         ]} 
       />

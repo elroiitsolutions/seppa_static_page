@@ -16,19 +16,20 @@ const staggerContainer = {
 
 const Services: React.FC = () => {
   const services = [
-    { title: 'Custom Textiles', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg', link: '/services/custom-textiles' },
-    { title: 'Fabric Manufacturing', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg', link: '/services/fabric-manufacturing' },
-    { title: 'Sustainable Practices', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg', link: '/services/sustainable-practices' },
-    { title: 'Quality Testing', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-4.jpg', link: '/services/quality-testing' },
-    { title: 'Textile Printing', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-5.jpg', link: '/services/textile-printing' },
-    { title: 'Yarn Processing', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-6.jpg', link: '/services/yarn-processing' },
+    { title: 'Packaging', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg', link: '/services/packaging' },
+    { title: 'Spare parts & Logistics Training', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg', link: '/services/spare-parts-and-logistics-training' },
+    { title: 'Maintenance', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg', link: '/services/maintenance' },
+    { title: 'Line Improvement', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-4.jpg', link: '/services/line-improvement' },
+    { title: 'Line Conversions & Moulds', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-5.jpg', link: '/services/line-conversions-and-moulds' },
+    { title: 'Audits', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-6.jpg', link: '/services/audits' },
+    { title: 'Training', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg', link: '/services/training' },
   ];
 
   const steps = [
-    { number: '01', title: 'Material Selection', desc: 'Material selection begins with sourcing premium fibers and fabrics that meet the require performance.' },
-    { number: '02', title: 'Manufacturing', desc: 'Our advanced manufacturing processes ensure strength, uniformity, and quality for various applications.' },
-    { number: '03', title: 'Quality Assurance', desc: 'Rigorous quality testing guarantees every fabric roll meets global durability and consistency standards.' },
-    { number: '04', title: 'Delivery', desc: 'Efficient packaging and global logistics ensure fast delivery for bulk orders worldwide.' }
+    { number: '01', title: 'Consultation & Planning', desc: 'We work closely with you to understand your specific operational, performance, and compliance requirements.' },
+    { number: '02', title: 'Custom Engineering', desc: 'Our advanced design processes ensure equipment tailored specifically to maximize your line efficiency.' },
+    { number: '03', title: 'Manufacturing & Testing', desc: 'Rigorous quality assurance and testing guarantees every system meets global durability standards.' },
+    { number: '04', title: 'Installation & Support', desc: 'Efficient installation and comprehensive training ensure smooth operations and long-term reliability.' }
   ];
 
   return (
@@ -55,13 +56,13 @@ const Services: React.FC = () => {
                 className="group relative rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-light"
               >
                 <Link href={service.link} className="block w-full h-full">
-                  <div className="aspect-[4/3] w-full overflow-hidden relative">
-                    <div className="absolute inset-0 bg-dark opacity-10 group-hover:opacity-30 transition duration-300 z-10"></div>
+                  <div className="aspect-[4/3] w-full overflow-hidden relative group/image">
                     <img 
                       src={service.image} 
                       alt={service.title} 
                       className="w-full h-full object-cover group-hover:scale-110 transition duration-700" 
                     />
+                    <div className="shine-overlay"></div>
                   </div>
                   <div className="bg-white p-6 relative z-20 text-center transform group-hover:-translate-y-2 transition duration-300">
                     <h3 className="text-2xl font-bold font-heading text-dark group-hover:text-gold transition">
@@ -89,7 +90,7 @@ const Services: React.FC = () => {
               How It Work
             </motion.h3>
             <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight">
-              From concept to delivery our textile process
+              From concept to delivery our integrated process
             </motion.h2>
           </motion.div>
 

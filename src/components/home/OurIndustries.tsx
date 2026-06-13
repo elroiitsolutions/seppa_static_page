@@ -20,25 +20,29 @@ const tabsData = [
     id: 'organic',
     title: 'Juices, Drinks & Isotonics',
     image: 'pics/pexels-photo-17559580.jpg',
-    description: "Juices, nectars, soft drinks, isotonics and teas (JNSDIT) are one of the fastest growing beverage segments worldwide."
+    description: "Juices, nectars, soft drinks, isotonics and teas (JNSDIT) are one of the fastest growing beverage segments worldwide.",
+    link: "/juice"
   },
   {
     id: 'fresh',
     title: 'Carbonated Soft Drinks',
     image: 'pics/c4ee15bc22fa3a63fce34fd4017026e4.jpg',
-    description: "Carbonated soft drinks remain one of the world's most valuable beverage categories, outsold only by bottled water."
+    description: "Carbonated soft drinks remain one of the world's most valuable beverage categories, outsold only by bottled water.",
+    link: "/liquid"
   },
   {
     id: 'delivery',
     title: 'Liquid Dairy Products',
     image: 'pics/large.jpg',
-    description: "Liquid dairy products remain a nutritious part of daily life, and with growing consumer emphasis on healthier living..."
+    description: "Liquid dairy products remain a nutritious part of daily life, and with growing consumer emphasis on healthier living...",
+    link: "/dairy-product-line-machines"
   },
   {
     id: 'beer',
     title: 'Beer',
     image: 'pics/a-beermovie.jpg',
-    description: "More than 5 billion litres of beer was packaged in PET. The switch to PET was seen a few decades ago with carbonated soft drinks."
+    description: "More than 5 billion litres of beer was packaged in PET. The switch to PET was seen a few decades ago with carbonated soft drinks.",
+    link: "/beer"
   }
 ];
 const OurIndustries = () => {
@@ -70,10 +74,12 @@ const OurIndustries = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
               <span className="text-sm font-medium text-dark uppercase tracking-wider">The Seppa Advantage</span>
             </div>
-
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6">
-              WHY SEPPA SOLUTIONS? <br className="hidden md:block" /> An Uncompromising Operational Efficiency, Engineered Internationally
-            </h2>
+        
+            <AnimatedHeading 
+              text="WHY SEPPA SOLUTIONS? \n An Uncompromising Operational Efficiency, Engineered Internationally" 
+              elementType="h2" 
+              className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6 text-center" 
+            />
             
             <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
               Decades of specialized liquid engineering allows Seppa to deliver reliable, highly adaptable multi-product systems. We build machinery that meets strict global safety standards while ensuring rapid ROI for modern bottling plants.
@@ -88,11 +94,14 @@ const OurIndustries = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <img 
-              src="pics/corporate.jpg" 
-              alt="Factory machinery" 
-              className="w-full md:w-[85%] rounded-[2rem] shadow-xl object-cover mx-auto aspect-[16/9] md:aspect-[21/9]"
-            />
+            <div className="w-full md:w-[85%] mx-auto relative group overflow-hidden rounded-[2rem] shadow-xl aspect-[16/9] md:aspect-[21/9] cursor-pointer">
+              <img 
+                src="pics/corporate.jpg" 
+                alt="Factory machinery" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+              />
+              <div className="shine-overlay" />
+            </div>
             <img 
               src="pics/seppa logo.png" 
               alt="Seppa logo" 
@@ -158,12 +167,13 @@ const OurIndustries = () => {
                 transition={{ duration: 0.4 }}
                 className="flex flex-col lg:flex-row gap-12 items-center bg-white rounded-[2.5rem] p-6 lg:p-10 shadow-sm border border-gray-100"
               >
-                <div className="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-sm aspect-[4/3] lg:aspect-auto lg:h-[400px]">
+                <div className="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-sm aspect-[4/3] lg:aspect-auto lg:h-[400px] relative group cursor-pointer">
                   <img 
                     src={activeTab.image} 
                     alt={activeTab.title} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                   />
+                  <div className="shine-overlay" />
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
                   <div className="mb-8 hidden lg:block">
@@ -175,7 +185,7 @@ const OurIndustries = () => {
                   </div>
                   <p className="text-gray-700 text-lg leading-relaxed mb-8">
                     {activeTab.description}{" "}
-                    <Link href="#" className="text-seppa-red hover:underline font-medium ml-1">
+                    <Link href={activeTab.link} className="text-seppa-red hover:underline font-medium ml-1">
                       more.
                     </Link>
                   </p>

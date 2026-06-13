@@ -37,8 +37,11 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({
 
   return (
     <Element className={className} ref={container as any}>
-      <span className="flex flex-wrap gap-[0.25em]">
+      <span className={`flex flex-wrap gap-[0.25em] ${className?.includes('text-center') ? 'justify-center' : className?.includes('text-right') ? 'justify-end' : ''}`}>
         {words.map((word, i) => {
+          if (word === "\\n") {
+            return <span key={i} className="basis-full h-0"></span>;
+          }
           return (
             <span key={i} className="inline-flex">
               {word.split("").map((char, j) => {
