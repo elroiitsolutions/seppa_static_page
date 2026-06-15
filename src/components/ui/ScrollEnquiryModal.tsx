@@ -31,7 +31,7 @@ const ScrollEnquiryModal: React.FC = () => {
       
       const scrollPercentage = (scrollY / (documentHeight - windowHeight)) * 100;
 
-      if (scrollPercentage > 45) {
+      if (scrollPercentage > 15) {
         setIsOpen(true);
         setHasOpened(true);
         sessionStorage.setItem(sessionKey, 'true');
