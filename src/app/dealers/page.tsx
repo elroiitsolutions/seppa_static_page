@@ -19,10 +19,9 @@ const pageData: EnquiryPageData = {
     },
     {
       name: "company",
-      label: "Company Name",
+      label: "Company Name / Individual ",
       type: "text",
       placeholder: "Your company name",
-      required: true,
       halfWidth: true
     },
     {
@@ -53,7 +52,6 @@ const pageData: EnquiryPageData = {
       label: "Business Proposal",
       type: "textarea",
       placeholder: "Tell us about your current business, network, and why you want to partner with us...",
-      required: true
     }
   ]
 };

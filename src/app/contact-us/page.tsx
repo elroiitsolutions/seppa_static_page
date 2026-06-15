@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import PageHeader from '@/components/layout/PageHeader';
-import { motion } from 'framer-motion';
-import { FiPhoneCall, FiMail, FiMapPin, FiGlobe } from 'react-icons/fi';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FiPhoneCall, FiMail, FiMapPin, FiGlobe, FiChevronDown, FiChevronUp, FiCheck } from 'react-icons/fi';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -113,7 +113,17 @@ const offices = [
 ];
 
 const ContactUs: React.FC = () => {
-  const [activeOffice, setActiveOffice] = React.useState(offices[0]);
+  const [activeOffice, setActiveOffice] = React.useState<typeof offices[0]>(offices[0]);
+  const [expandedCountry, setExpandedCountry] = React.useState<string>("India");
+
+  const groupedOffices = React.useMemo(() => {
+    const groups: Record<string, typeof offices> = {};
+    offices.forEach(office => {
+      if (!groups[office.country]) groups[office.country] = [];
+      groups[office.country].push(office);
+    });
+    return groups;
+  }, []);
 
   return (
     <div className="bg-gray-50">
@@ -257,51 +267,85 @@ const ContactUs: React.FC = () => {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h3 className="text-seppa-red font-medium uppercase tracking-wider mb-2">Our Network</h3>
             <h2 className="text-4xl font-heading font-bold text-[#101934]">Global Branch Offices</h2>
-            <p className="mt-4 text-gray-600">Select any office below to view its location on the map.</p>
+            <p className="mt-4 text-gray-600">Select an office below to view its location on the map.</p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8 items-start">
-            {/* Scrollable Offices List */}
+            {/* Scrollable Offices List - Grouped by Country */}
             <div className="w-full lg:w-1/3 space-y-4">
-              {offices.map((office, idx) => (
-                <div 
-                  key={idx}
-                  onClick={() => setActiveOffice(office)}
-                  className={`border p-6 rounded-2xl cursor-pointer transition-all duration-300 group ${
-                    activeOffice.city === office.city 
-                      ? 'bg-seppa-red/5 border-seppa-red shadow-md' 
-                      : 'bg-gray-50 border-gray-100 hover:border-seppa-red/50 hover:shadow-md'
-                  }`}
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                      activeOffice.city === office.city ? 'bg-seppa-red text-white' : 'bg-seppa-red/10 text-seppa-red group-hover:bg-seppa-red group-hover:text-white'
-                    }`}>
-                      <FiGlobe size={14} />
-                    </div>
-                    <h4 className={`text-lg font-bold font-heading transition-colors ${
-                      activeOffice.city === office.city ? 'text-seppa-red' : 'text-[#101934] group-hover:text-seppa-red'
-                    }`}>{office.city}</h4>
-                  </div>
-                  
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <div className="flex items-start gap-3">
-                      <FiMapPin className="text-seppa-red mt-1 shrink-0" />
-                      <p className="leading-relaxed">{office.address}</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <FiPhoneCall className="text-seppa-red mt-1 shrink-0" />
-                      <div>
-                        {office.phone.map((ph, i) => (
-                          <p key={i}>{ph}</p>
-                        ))}
+              {Object.entries(groupedOffices).map(([country, countryOffices]) => (
+                <div key={country} className="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
+                  <button 
+                    onClick={() => setExpandedCountry(expandedCountry === country ? "" : country)}
+                    className="w-full flex items-center justify-between p-5 bg-white hover:bg-gray-50 transition"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-seppa-red/10 flex items-center justify-center text-seppa-red">
+                        <FiGlobe size={16} />
                       </div>
+                      <h4 className="text-lg font-bold font-heading text-[#101934]">{country} <span className="text-gray-400 text-sm ml-1">({countryOffices.length})</span></h4>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <FiMail className="text-seppa-red mt-1 shrink-0" />
-                      <p className="truncate">{office.email}</p>
+                    <div className="text-gray-400">
+                      {expandedCountry === country ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
                     </div>
-                  </div>
+                  </button>
+                  
+                  <AnimatePresence>
+                    {expandedCountry === country && (
+                      <motion.div 
+                        initial={{ height: 0, opacity: 0 }} 
+                        animate={{ height: "auto", opacity: 1 }} 
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-4 pt-0 space-y-3 bg-white">
+                          {countryOffices.map((office, idx) => {
+                            const isSelected = activeOffice.city === office.city;
+                            return (
+                              <div 
+                                key={idx}
+                                onClick={() => setActiveOffice(office)}
+                                className={`border p-5 rounded-xl cursor-pointer transition-all duration-300 relative group ${
+                                  isSelected 
+                                    ? 'bg-seppa-red/5 border-seppa-red shadow-sm' 
+                                    : 'bg-gray-50 border-transparent hover:border-seppa-red/30 hover:bg-white hover:shadow-sm'
+                                }`}
+                              >
+                                
+                                <div className="">
+                                  <h5 className={`text-base font-bold font-heading mb-3 transition-colors ${
+                                    isSelected ? 'text-seppa-red' : 'text-[#101934]'
+                                  }`}>
+                                    {office.city}
+                                  </h5>
+                                  
+                                  <div className="space-y-2.5 text-sm text-gray-600">
+                                    <div className="flex items-start gap-2.5">
+                                      <FiMapPin className="text-gray-400 mt-1 shrink-0" />
+                                      <p className="leading-relaxed">{office.address}</p>
+                                    </div>
+                                    <div className="flex items-start gap-2.5">
+                                      <FiPhoneCall className="text-gray-400 mt-1 shrink-0" />
+                                      <div>
+                                        {office.phone.map((ph, i) => (
+                                          <p key={i}>{ph}</p>
+                                        ))}
+                                      </div>
+                                    </div>
+                                    <div className="flex items-start gap-2.5">
+                                      <FiMail className="text-gray-400 mt-1 shrink-0" />
+                                      <p className="truncate">{office.email}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               ))}
             </div>
@@ -315,9 +359,9 @@ const ContactUs: React.FC = () => {
                 transition={{ duration: 0.5 }}
                 className="w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-50 relative"
               >
-                <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm border border-gray-100 font-bold text-[#101934] flex items-center gap-2">
-                  <FiMapPin className="text-seppa-red" />
-                  Showing: {activeOffice.city}
+                <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm border border-gray-100 font-bold text-[#101934] flex items-center gap-2 max-w-[80%]">
+                  <FiMapPin className="text-seppa-red shrink-0" />
+                  <span className="truncate">Showing: {activeOffice.city}</span>
                 </div>
                 <iframe 
                   src={`https://maps.google.com/maps?q=${encodeURIComponent(activeOffice.mapQuery || activeOffice.address)}&t=&z=${activeOffice.mapZoom || 14}&ie=UTF8&iwloc=&output=embed`}

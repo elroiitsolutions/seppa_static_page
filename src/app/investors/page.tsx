@@ -1,4 +1,3 @@
-import React from 'react';
 import EnquiryPageLayout, { EnquiryPageData } from '@/components/enquiry/EnquiryPageLayout';
 
 const pageData: EnquiryPageData = {
@@ -50,8 +49,7 @@ const pageData: EnquiryPageData = {
       name: "message",
       label: "Message / Inquiry",
       type: "textarea",
-      placeholder: "Please share your investment interests, background, and any specific questions...",
-      required: true
+      placeholder: "Please share your investment interests, background, and any specific questions..."
     }
   ]
 };
