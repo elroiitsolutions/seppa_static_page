@@ -15,6 +15,8 @@ import LatestBlogs from '@/components/home/LatestBlogs';
 export interface PackagingPageData {
   title: string;
   breadcrumbName: string;
+  rootBreadcrumbName?: string;
+  rootBreadcrumbPath?: string;
   headerImage?: string;
   overviewTitle: string;
   overviewDescription: string;
@@ -37,7 +39,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
         title={data.title} 
         breadcrumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Packaging', path: '/pack.html' },
+          { name: data.rootBreadcrumbName || 'Packaging', path: data.rootBreadcrumbPath || '/services/packaging' },
           { name: data.breadcrumbName }
         ]} 
       />
