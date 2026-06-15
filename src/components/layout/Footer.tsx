@@ -1,9 +1,11 @@
+"use client";
 import React from 'react';
 import Link from "next/link";
 import { FiFacebook, FiInstagram, FiArrowUpRight } from 'react-icons/fi';
 import { FaYoutube } from 'react-icons/fa';
 import logoImg from '@/assets/logo/logo.png';
 import bgPattern from '@/assets/bg/black-line-1.png';
+
 
 const Footer: React.FC = () => {
   return (
@@ -53,12 +55,12 @@ const Footer: React.FC = () => {
               Let’s engineer high-performance packaging lines together
             </h2>
             <div className="flex items-center gap-3 group cursor-pointer w-max">
-              <Link href="/contact-us" className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
+              <button onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
                 Get In Touch
-              </Link>
-              <Link href="/contact-us" className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
+              </button>
+              <button onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
                 <FiArrowUpRight className="transform transition-transform duration-300 group-hover:rotate-45" size={22} strokeWidth={2.5} />
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -81,13 +83,13 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-xl font-heading font-bold mb-8">Our Services</h3>
               <ul className="space-y-4 text-gray-300 font-medium">
-                <li><Link href="/services" className="hover:text-seppa-red transition">Packaging</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Spare parts & Logistics Training</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Maintenance</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Line Improvement</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Line Conversions & Moulds</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Audits</Link></li>
-                <li><Link href="/services" className="hover:text-seppa-red transition">Training</Link></li>
+                <li><Link href="/services/packaging" className="hover:text-seppa-red transition">Packaging</Link></li>
+                <li><Link href="/services/spare-parts" className="hover:text-seppa-red transition">Spare parts & Logistics Training</Link></li>
+                <li><Link href="/services/maintenance" className="hover:text-seppa-red transition">Maintenance</Link></li>
+                <li><Link href="/services/improvement" className="hover:text-seppa-red transition">Line Improvement</Link></li>
+                <li><Link href="/services/conversions" className="hover:text-seppa-red transition">Line Conversions & Moulds</Link></li>
+                <li><Link href="/services/audits" className="hover:text-seppa-red transition">Audits</Link></li>
+                <li><Link href="/services/training" className="hover:text-seppa-red transition">Training</Link></li>
               </ul>
             </div>
 
@@ -122,7 +124,7 @@ const Footer: React.FC = () => {
         {/* Bottom Footer Area */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 font-medium text-sm md:text-base">
-            Copyright © 2021 <span className="text-white hover:text-seppa-red transition cursor-pointer">Seppa Solutions</span>. All rights reserved.
+            Copyright © 2021 <span className="text-white hover:text-seppa-red transition cursor-pointer"><Link href="/">Seppa Solutions</Link></span>. All rights reserved.
           </div>
           <div className="flex gap-2">
             <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">

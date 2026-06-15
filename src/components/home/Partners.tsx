@@ -5,6 +5,7 @@ import canadian from '@/assets/logo/canadian.png';
 import prodeb from '@/assets/logo/prodeb.png';
 import american from '@/assets/logo/american.png';
 import clear from '@/assets/logo/clear.png';
+import { link } from 'fs';
 
 
 // const fadeInUp: Variants = {
@@ -18,10 +19,10 @@ import clear from '@/assets/logo/clear.png';
 // };
 
 const partners = [
-  { id: 1, image: canadian.src },
-  { id: 2, image: prodeb.src },
-  { id: 3, image: american.src },
-  { id: 4, image: clear.src }
+  { id: 1, image: canadian.src, link:'https://www.canadiancrystalline.com/' },
+  { id: 2, image: prodeb.src, link:'https://www.prodebbrewery.com/' },
+  { id: 3, image: american.src, link:'https://www.americanbrewworks.com/' },
+  { id: 4, image: clear.src, link:'https://www.canadianclear.com/' }
 ];
 
 const Partners = () => {
@@ -65,15 +66,17 @@ const Partners = () => {
               // variants={fadeInUp}
               className="bg-white rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 overflow-hidden p-8 flex flex-col items-center justify-center group cursor-pointer"
             >
+              <a href={partner.link}>
               <div className="h-24 w-full flex items-center justify-center mb-6">
                 <img 
                   src={partner.image} 
-                  className="max-h-full max-w-full" 
+                  className="max-h-full max-w-full hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <h3 className="text-lg md:text-xl font-bold font-heading text-dark group-hover:text-seppa-red transition-colors duration-300 text-center">
-                {/* {partner.name} */}
-              </h3>
+              </a>
+              {/* <h3 className="text-lg md:text-xl font-bold font-heading text-dark group-hover:text-seppa-red transition-colors duration-300 text-center">
+                {partner.name}
+              </h3> */}
             </motion.div>
           ))}
         </motion.div>
