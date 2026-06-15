@@ -73,16 +73,17 @@ const Services = () => {
           variants={staggerContainer}
         >
           {services.map((service, idx) => (
-            <motion.div key={idx} variants={fadeInUp} className="group cursor-pointer">
-              <div className="bg-[#1c1c1c] rounded-3xl overflow-hidden p-3 shadow-lg border border-gray-800 transition duration-300 hover:border-gray-600">
-                <div className="rounded-2xl overflow-hidden aspect-[4/3] mb-4">
+            <motion.div key={idx} variants={fadeInUp} className="group cursor-pointer h-full">
+              <div className="bg-[#1c1c1c] rounded-3xl overflow-hidden p-3 shadow-lg border border-gray-800 transition duration-300 hover:border-gray-600 h-full flex flex-col">
+                <div className="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shrink-0 relative group/image">
                   <img 
                     src={service.image} 
                     alt={service.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-700" 
+                    className="w-full h-full object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out" 
                   />
+                  <div className="shine-overlay" />
                 </div>
-                <div className="text-center pb-4 pt-2">
+                <div className="text-center pb-4 pt-2 flex-grow flex flex-col justify-center">
                   <h3 className="text-xl font-bold font-heading text-white group-hover:text-gold transition duration-300">
                     {service.title}
                   </h3>
