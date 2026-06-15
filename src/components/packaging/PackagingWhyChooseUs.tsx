@@ -47,7 +47,18 @@ const defaultReasons = [
   }
 ];
 
-const PackagingWhyChooseUs = () => {
+export interface PackagingWhyChooseUsProps {
+  title?: string;
+  description?: string;
+  paragraphs?: string[];
+  imageSrc?: string;
+}
+
+const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, description, paragraphs, imageSrc }) => {
+  const displayTitle = title || "Elevating Your Brand with Superior Automation";
+  const displayDesc = description || "We combine innovative designs, sustainable operations, and advanced manufacturing technologies to deliver automated solutions that protect your products and captivate your customers.";
+  const displayImage = imageSrc || "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg";
+
   return (
     <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
@@ -62,7 +73,7 @@ const PackagingWhyChooseUs = () => {
           >
             <div className="rounded-[2rem] overflow-hidden h-[750px] w-full shadow-lg relative bg-light">
               <img 
-                src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg" 
+                src={displayImage} 
                 alt="Packaging Quality" 
                 className="w-full h-full object-cover"
               />
@@ -83,28 +94,36 @@ const PackagingWhyChooseUs = () => {
             </motion.div>
             
             <AnimatedHeading 
-              text="Elevating Your Brand with Superior Automation" 
+              text={displayTitle} 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6" 
             />
             
             <motion.p variants={fadeInUp} className="text-lg text-gray-500 mb-10 leading-relaxed">
-              We combine innovative designs, sustainable operations, and advanced manufacturing technologies to deliver automated solutions that protect your products and captivate your customers.
+              {displayDesc}
             </motion.p>
 
-            <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
-              {defaultReasons.map((reason) => (
-                <div key={reason.id} className="flex gap-4">
-                  <div className="flex-shrink-0 w-14 h-14 bg-light rounded-xl flex items-center justify-center text-seppa-red text-2xl shadow-sm">
-                    {reason.icon}
+            {paragraphs && paragraphs.length > 0 ? (
+              <motion.div variants={fadeInUp} className="space-y-6">
+                {paragraphs.map((p, idx) => (
+                  <p key={idx} className="text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
+                ))}
+              </motion.div>
+            ) : (
+              <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+                {defaultReasons.map((reason) => (
+                  <div key={reason.id} className="flex gap-4">
+                    <div className="flex-shrink-0 w-14 h-14 bg-light rounded-xl flex items-center justify-center text-seppa-red text-2xl shadow-sm">
+                      {reason.icon}
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold font-heading text-dark mb-2">{reason.title}</h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">{reason.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-xl font-bold font-heading text-dark mb-2">{reason.title}</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">{reason.description}</p>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
+                ))}
+              </motion.div>
+            )}
 
           </motion.div>
         </div>
