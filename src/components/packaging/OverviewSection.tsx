@@ -18,10 +18,11 @@ interface OverviewSectionProps {
   title: string;
   description: string;
   benefits: string[];
+  subDescription?: string[];
   imageSrc: string;
 }
 
-const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, benefits, imageSrc }) => {
+const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, subDescription, benefits, imageSrc }) => {
   return (
     <section className="py-24 bg-light overflow-hidden">
       <div className="container mx-auto px-4">
@@ -59,6 +60,16 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, b
                   </li>
                 ))}
               </ul>
+              {subDescription && subDescription.length > 0 && (
+                <div className="mt-8 space-y-4">
+                  {subDescription.map((desc, idx) => (
+                    
+                    <p key={idx} className="text-lg text-gray-600 leading-relaxed">
+                      {desc}
+                    </p>
+                  ))}
+                </div>
+              )}
             </motion.div>
 
           </motion.div>

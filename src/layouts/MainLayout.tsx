@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -5,7 +6,7 @@ import MagicCursor from '@/components/ui/MagicCursor';
 import FloatingActions from '@/components/ui/FloatingActions';
 import ScrollEnquiryModal from '@/components/ui/ScrollEnquiryModal';
 
-interface MainLayoutProps {
+interface MainLayoutProps { 
   children: ReactNode;
 }
 

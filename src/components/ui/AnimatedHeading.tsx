@@ -37,13 +37,13 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({
 
   return (
     <Element className={className} ref={container as any}>
-      <span className={`flex flex-wrap gap-[0.25em] ${className?.includes('text-center') ? 'justify-center' : className?.includes('text-right') ? 'justify-end' : ''}`}>
+      <span className="block" style={{ textAlign: 'inherit' }}>
         {words.map((word, i) => {
-          if (word === "\\n") {
-            return <span key={i} className="basis-full h-0"></span>;
+          if (word === "\n") {
+            return <span key={i} className="basis-full h-0 block"></span>;
           }
           return (
-            <span key={i} className="inline-flex">
+            <span key={i} className="inline-block mr-[0.25em]">
               {word.split("").map((char, j) => {
                 const start = charCount / (totalChars + 0.5);
                 // Add a small overlap (1.5) for a smoother sweep effect
