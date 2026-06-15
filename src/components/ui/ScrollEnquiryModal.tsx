@@ -8,7 +8,14 @@ const ScrollEnquiryModal: React.FC = () => {
   const [hasOpened, setHasOpened] = useState(false);
 
   useEffect(() => {
-    // Check if the user has already seen the modal in this session
+    // Always listen for the custom event to open the modal
+    const handleOpenModalEvent = () => setIsOpen(true);
+    window.addEventListener('open-enquiry-modal', handleOpenModalEvent);
+    return () => window.removeEventListener('open-enquiry-modal', handleOpenModalEvent);
+  }, []);
+
+  useEffect(() => {
+    // Check if the user has already seen the modal via scroll in this session
     const sessionKey = 'seppa_enquiry_modal_seen';
     if (sessionStorage.getItem(sessionKey)) {
       setHasOpened(true);

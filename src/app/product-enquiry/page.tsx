@@ -61,7 +61,6 @@ const pageData: EnquiryPageData = {
       label: "Project Requirements",
       type: "textarea",
       placeholder: "Tell us about your project, capacity requirements, and any specific details...",
-      required: true
     }
   ]
 };

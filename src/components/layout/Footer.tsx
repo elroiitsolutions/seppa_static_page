@@ -1,9 +1,11 @@
+"use client";
 import React from 'react';
 import Link from "next/link";
 import { FiFacebook, FiInstagram, FiArrowUpRight } from 'react-icons/fi';
 import { FaYoutube } from 'react-icons/fa';
 import logoImg from '@/assets/logo/logo.png';
 import bgPattern from '@/assets/bg/black-line-1.png';
+
 
 const Footer: React.FC = () => {
   return (
@@ -53,12 +55,12 @@ const Footer: React.FC = () => {
               Let’s engineer high-performance packaging lines together
             </h2>
             <div className="flex items-center gap-3 group cursor-pointer w-max">
-              <Link href="/contact-us" className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
+              <button onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
                 Get In Touch
-              </Link>
-              <Link href="/contact-us" className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
+              </button>
+              <button onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
                 <FiArrowUpRight className="transform transition-transform duration-300 group-hover:rotate-45" size={22} strokeWidth={2.5} />
-              </Link>
+              </button>
             </div>
           </div>
 
