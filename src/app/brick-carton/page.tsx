@@ -6,12 +6,12 @@ import pack from '@/assets/packaging/brick/brickcarton.avif';
 import orange from '@/assets/packaging/brick/orange.jpg';
 import packag from '@/assets/packaging/brick/package.webp';
 import machine from '@/assets/packaging/brick/machine.jpg';
-import brickBanner from '@/assets/packaging/brick/brick-banner.png';
+//import brickBanner from '@/assets/packaging/brick/brick-banner.png';
 
 const pageData: PackagingPageData = {
   title: "Brick Carton Packaging Machines",
   breadcrumbName: "Brick Carton",
-  headerImage: brickBanner.src,
+  headerImage: orange.src,
   overviewTitle: "Brick Carton Packaging: The Complete Guide for Beverage and Dairy Manufacturers",
   overviewDescription: "What Is Brick Carton Packaging?",
   overviewsubDescription:["The brick carton is a package made up of paperboard, aluminium, or low density polyethylene. Brick carton packaging protects the product from external contaminants and moisture, and it extends shelf life two things every food and beverage manufacturer cares about, often in that order.","It is a customizable form of packaging products as per the specificity and requirement of the product manufacturer. Brick carton packaging is available in different volumes and also helps in boosting the market of related products such as brick carton packaging testing instruments.","Brick carton packaging is made of numerous layers of paper, plastic, and aluminium. The aseptic brick carton filling machine is an advanced technique which creates an optimal seal for the brick carton package's gable top. Aseptic brick carton packaging gives products a shelf life of up to six months.","Products packaged in brick carton packaging retain their nutritional value until the point of consumption. The multi layer construction keeps heat, light, pressure, microorganisms, and external contamination out not sequentially, but all at once."],
