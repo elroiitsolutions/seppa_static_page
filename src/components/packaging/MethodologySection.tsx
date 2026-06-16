@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
+import { FiCheck, FiCircle, FiStar } from 'react-icons/fi';
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -15,7 +16,7 @@ const staggerContainer = {
 
 export interface MethodologyStep {
   title: string;
-  description: string;
+  description: string | string[];
   image: string;
 }
 
@@ -78,16 +79,26 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
                 variants={staggerContainer}
               >
                 {/* Content */}
-                <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
+                <motion.div variants={fadeInUp} className="w-full lg:w-1/2 group cursor-pointer">
                   <div className="flex items-center gap-4 mb-6">
-                    <span className="w-12 h-12 rounded-full bg-light flex items-center justify-center text-seppa-red font-bold font-heading text-xl shadow-sm">
-                      {idx + 1}
+                    <span className="w-12 h-12 rounded-full flex items-center justify-center text-seppa-red font-bold font-heading text-xl shadow-sm group-hover:bg-seppa-red group-hover:text-white group-hover:border-seppa-red transition-all duration-500">
+                      <FiStar size={24}/>
                     </span>
                     <h3 className="text-3xl font-bold font-heading text-dark">{step.title}</h3>
                   </div>
-                  <p className="text-gray-600 text-lg leading-relaxed text-justify">
-                    {step.description}
-                  </p>
+                  {Array.isArray(step.description) ? (
+                    <div className="space-y-4">
+                      {step.description.map((desc, i) => (
+                        <p key={i} className="text-gray-600 text-lg leading-relaxed text-justify">
+                          {desc}
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-gray-600 text-lg leading-relaxed text-justify">
+                      {step.description}
+                    </p>
+                  )}
                 </motion.div>
 
                 {/* Image */}
@@ -112,14 +123,14 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
         {/* Outro */}
         {outro && outro.length > 0 && (
           <motion.div 
-            className="mt-24 max-w-4xl mx-auto text-center bg-light rounded-[2rem] p-10 md:p-14 border border-gray-100 shadow-sm"
+            className="mt-24 max-w-4xl mx-auto text-center bg-transparent rounded-[2rem] p-8 md:p-12"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={staggerContainer}
           >
             {outro.map((p, idx) => (
-              <motion.p key={idx} variants={fadeInUp} className="text-xl md:text-2xl text-dark font-heading font-medium leading-relaxed mb-6 last:mb-0">
+              <motion.p key={idx} variants={fadeInUp} className="text-xl md:text-2xl text-gray-600 text-justify-center leading-relaxed text-center">
                 {p}
               </motion.p>
             ))}
