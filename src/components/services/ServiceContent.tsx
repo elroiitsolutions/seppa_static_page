@@ -38,7 +38,7 @@ const ServiceContent: React.FC<ServiceContentProps> = ({ serviceName }) => {
         variants={fadeInUp}
       >
         <motion.p 
-          className="text-gray-600 text-lg leading-relaxed mb-6"
+          className="text-gray-600 text-base md:text-lg leading-relaxed mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -58,7 +58,7 @@ const ServiceContent: React.FC<ServiceContentProps> = ({ serviceName }) => {
         </motion.h2>
         
         <motion.p 
-          className="text-gray-600 text-lg leading-relaxed mb-6"
+          className="text-gray-600 text-base md:text-lg leading-relaxed mb-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -75,7 +75,7 @@ const ServiceContent: React.FC<ServiceContentProps> = ({ serviceName }) => {
           transition={{ duration: 0.5, delay: 0.25 }}
         >
           <h4 className="text-xl font-bold text-dark mb-4 font-heading">Key Advantages</h4>
-          <ul className="list-disc pl-5 text-gray-600 space-y-3 text-lg">
+          <ul className="list-disc pl-5 text-gray-600 space-y-3 text-base md:text-lg">
             <li>Strategic planning tailored to your operational goals.</li>
             <li>State-of-the-art methodology ensuring consistency.</li>
             <li>Rigorous quality assurance at every single step.</li>
@@ -107,13 +107,13 @@ const ServiceContent: React.FC<ServiceContentProps> = ({ serviceName }) => {
                 transition={{ duration: 0.4, delay: i * 0.08 }}
               >
                 <details className="group bg-white rounded-xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-gray-100 overflow-hidden" open={i === 0}>
-                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-lg text-dark group-open:text-seppa-red transition-colors">
+                  <summary className="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-base md:text-lg text-dark group-open:text-seppa-red transition-colors">
                     <span className="font-bold">{faq.q}</span>
                     <span className="transition group-open:rotate-180 bg-[#d3a35d] text-white rounded-full p-1 shrink-0 group-open:bg-[#8b3236]">
                       <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                     </span>
                   </summary>
-                  <div className="text-gray-600 px-6 pb-6 text-lg leading-relaxed animate-fadeIn">
+                  <div className="text-gray-600 px-6 pb-6 text-base md:text-lg leading-relaxed animate-fadeIn">
                     {faq.a}
                   </div>
                 </details>

@@ -74,7 +74,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
           />
           
           {subtitle && (
-            <motion.p variants={fadeInUp} className="text-lg text-gray-600">
+            <motion.p variants={fadeInUp} className="text-base md:text-lg text-gray-600">
               {subtitle}
             </motion.p>
           )}
@@ -136,7 +136,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
                 </h3>
               </div>
               
-              <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                 {selectedFeature.description}
               </p>
             </motion.div>
