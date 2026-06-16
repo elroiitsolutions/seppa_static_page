@@ -114,7 +114,7 @@ const offices = [
 
 const ContactUs: React.FC = () => {
   const [activeOffice, setActiveOffice] = React.useState<typeof offices[0]>(offices[0]);
-  const [expandedCountry, setExpandedCountry] = React.useState<string>("India");
+  const [expandedCountries, setExpandedCountries] = React.useState<string[]>(["India"]);
 
   const groupedOffices = React.useMemo(() => {
     const groups: Record<string, typeof offices> = {};
@@ -270,13 +270,13 @@ const ContactUs: React.FC = () => {
             <p className="mt-4 text-gray-600">Select an office below to view its location on the map.</p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8 items-start">
+          <div className="flex flex-col lg:flex-row gap-8 items-start relative">
             {/* Scrollable Offices List - Grouped by Country */}
-            <div className="w-full lg:w-1/3 space-y-4">
+            <div className="w-full lg:w-1/3 space-y-4 order-2 lg:order-1">
               {Object.entries(groupedOffices).map(([country, countryOffices]) => (
                 <div key={country} className="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
                   <button 
-                    onClick={() => setExpandedCountry(expandedCountry === country ? "" : country)}
+                    onClick={() => setExpandedCountries(prev => prev.includes(country) ? prev.filter(c => c !== country) : [...prev, country])}
                     className="w-full flex items-center justify-between p-5 bg-white hover:bg-gray-50 transition"
                   >
                     <div className="flex items-center gap-3">
@@ -286,12 +286,12 @@ const ContactUs: React.FC = () => {
                       <h4 className="text-lg font-bold font-heading text-[#101934]">{country} <span className="text-gray-400 text-sm ml-1">({countryOffices.length})</span></h4>
                     </div>
                     <div className="text-gray-400">
-                      {expandedCountry === country ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
+                      {expandedCountries.includes(country) ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
                     </div>
                   </button>
                   
                   <AnimatePresence>
-                    {expandedCountry === country && (
+                    {expandedCountries.includes(country) && (
                       <motion.div 
                         initial={{ height: 0, opacity: 0 }} 
                         animate={{ height: "auto", opacity: 1 }} 
@@ -305,7 +305,16 @@ const ContactUs: React.FC = () => {
                             return (
                               <div 
                                 key={idx}
-                                onClick={() => setActiveOffice(office)}
+                                onClick={() => {
+                                  setActiveOffice(office);
+                                  if (window.innerWidth < 1024) {
+                                    const mapEl = document.getElementById('map-container');
+                                    if (mapEl) {
+                                      const y = mapEl.getBoundingClientRect().top + window.scrollY - 80;
+                                      window.scrollTo({ top: y, behavior: 'smooth' });
+                                    }
+                                  }
+                                }}
                                 className={`border p-5 rounded-xl cursor-pointer transition-all duration-300 relative group ${
                                   isSelected 
                                     ? 'bg-seppa-red/5 border-seppa-red shadow-sm' 
@@ -351,13 +360,13 @@ const ContactUs: React.FC = () => {
             </div>
 
             {/* Dynamic Map Display */}
-            <div className="w-full lg:w-2/3 lg:sticky lg:top-28">
+            <div id="map-container" className="w-full lg:w-2/3 lg:sticky lg:top-28 lg:z-10 order-1 lg:order-2">
               <motion.div 
                 key={activeOffice.city}
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full h-[600px] rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-50 relative"
+                className="w-full h-[350px] md:h-[450px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl border-4 lg:border-8 border-gray-50 relative"
               >
                 <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm border border-gray-100 font-bold text-[#101934] flex items-center gap-2 max-w-[80%]">
                   <FiMapPin className="text-seppa-red shrink-0" />

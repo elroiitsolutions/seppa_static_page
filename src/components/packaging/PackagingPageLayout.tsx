@@ -38,7 +38,7 @@ export interface PackagingPageData {
   overviewTitle: string;
   overviewDescription: string;
   overviewsubDescription?: string[];
-  overviewBenefits: string[];
+  overviewBenefits?: string[];
   overviewImage: string;
   contentBlocks?: ContentBlockProps[];
   applicationsTitle?: string;
@@ -51,6 +51,7 @@ export interface PackagingPageData {
     title?: string;
     description?: string;
     paragraphs?: string[];
+    reasons?: { id?: number | string; icon?: React.ReactNode; title: string; description: string }[];
     image?: string;
   };
   methodology?: {
@@ -122,6 +123,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
         title={data.whyChoose?.title}
         description={data.whyChoose?.description}
         paragraphs={data.whyChoose?.paragraphs}
+        reasons={data.whyChoose?.reasons}
         imageSrc={data.whyChoose?.image}
       />
 

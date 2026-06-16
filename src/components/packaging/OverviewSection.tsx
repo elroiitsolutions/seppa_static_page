@@ -17,7 +17,7 @@ const staggerContainer = {
 interface OverviewSectionProps {
   title: string;
   description: string;
-  benefits: string[];
+  benefits?: string[];
   subDescription?: string[];
   imageSrc: string;
 }
@@ -29,7 +29,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           <motion.div 
-            className="w-full lg:w-1/2"
+            className="w-full lg:w-1/2 order-2 lg:order-1"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -51,15 +51,19 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
             </motion.p>
 
             <motion.div variants={fadeInUp}>
-              <h4 className="text-xl font-bold font-heading text-dark mb-4">Key Benefits</h4>
-              <ul className="space-y-4">
-                {benefits.map((benefit, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <FiCheckCircle className="text-seppa-red text-xl flex-shrink-0 mt-1" />
-                    <span className="text-gray-700 font-medium">{benefit}</span>
-                  </li>
-                ))}
-              </ul>
+              {benefits && benefits.length > 0 && (
+                <>
+                  <h4 className="text-xl font-bold font-heading text-dark mb-4">Key Benefits</h4>
+                  <ul className="space-y-4">
+                    {benefits.map((benefit, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <FiCheckCircle className="text-seppa-red text-xl flex-shrink-0 mt-1" />
+                        <span className="text-gray-700 font-medium">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
               {subDescription && subDescription.length > 0 && (
                 <div className="mt-8 space-y-4">
                   {subDescription.map((desc, idx) => (
@@ -75,7 +79,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
           </motion.div>
 
           <motion.div 
-            className="w-full lg:w-1/2"
+            className="w-full lg:w-1/2 order-1 lg:order-2"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
