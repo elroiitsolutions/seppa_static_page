@@ -13,6 +13,8 @@ export interface ContentBlockProps {
   features?: string[];
   image1?: string;
   image2?: string;
+  bgClass?: string;
+  reverse?: boolean;
 }
 
 const fadeInUp: Variants = {
@@ -30,18 +32,18 @@ const imageVariants: Variants = {
   visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
-const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, features, image1, image2 }) => {
+const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, features, image1, image2, bgClass = "bg-[#fdfbf6] m-3 rounded-2xl", reverse = false }) => {
   const hasImages = image1 || image2;
 
   return (
-    <section className="py-16 lg:py-24 bg-[#fdfbf6] overflow-hidden m-3 rounded-2xl relative">
+    <section className={`py-16 lg:py-24 ${bgClass} overflow-hidden relative`}>
       <div className="container mx-auto px-4 relative z-10">
         
         {hasImages ? (
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
-            {/* Left Content */}
+          <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-16 items-center`}>
+            {/* Content */}
             <motion.div 
-              className="w-full lg:w-1/2"
+              className="w-full lg:w-1/2 order-2 lg:order-1"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.1 }}
@@ -74,7 +76,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                 <motion.div variants={fadeInUp} className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
                   {features.map((feature, idx) => (
                     <div key={idx} className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full bg-[#e8cd9c]/20 flex items-center justify-center text-[#cda262] flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-seppa-red/10 flex items-center justify-center text-seppa-red flex-shrink-0">
                         <FiCheckCircle className="text-xl" />
                       </div>
                       <span className="text-dark font-medium text-lg">{feature}</span>
@@ -84,8 +86,8 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
               )}
             </motion.div>
 
-            {/* Right Images */}
-            <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px]">
+            {/* Images */}
+            <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px] order-1 lg:order-2">
               <motion.div 
                 className="absolute top-0 right-0 w-[85%] h-[80%] rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10"
                 initial="hidden"
