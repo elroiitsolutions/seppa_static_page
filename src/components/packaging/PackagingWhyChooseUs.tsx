@@ -101,14 +101,14 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
               className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6" 
             />
             
-            <motion.p variants={fadeInUp} className="text-lg text-gray-500 mb-10 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-base md:text-lg text-gray-500 mb-10 leading-relaxed">
               {displayDesc}
             </motion.p>
 
             {paragraphs && paragraphs.length > 0 ? (
               <motion.div variants={fadeInUp} className="space-y-6">
                 {paragraphs.map((p, idx) => (
-                  <p key={idx} className="text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
+                  <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
                 ))}
               </motion.div>
             ) : (

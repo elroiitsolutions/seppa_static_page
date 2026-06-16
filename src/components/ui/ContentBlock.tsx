@@ -66,7 +66,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
               
               <div className="space-y-4 mb-10">
                 {paragraphs.map((text, idx) => (
-                  <motion.p key={idx} variants={fadeInUp} className="text-lg text-gray-600 leading-relaxed">
+                  <motion.p key={idx} variants={fadeInUp} className="text-base md:text-lg text-gray-600 leading-relaxed">
                     {text}
                   </motion.p>
                 ))}
@@ -79,7 +79,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       <div className="w-12 h-12 rounded-full bg-seppa-red/10 flex items-center justify-center text-seppa-red flex-shrink-0">
                         <FiCheckCircle className="text-xl" />
                       </div>
-                      <span className="text-dark font-medium text-lg">{feature}</span>
+                      <span className="text-dark font-medium text-base md:text-lg">{feature}</span>
                     </div>
                   ))}
                 </motion.div>
@@ -149,7 +149,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
 
             <div className="space-y-6">
               {paragraphs.map((text, idx) => (
-                <motion.p key={idx} variants={fadeInUp} className="text-lg text-gray-600 leading-relaxed">
+                <motion.p key={idx} variants={fadeInUp} className="text-base md:text-lg text-gray-600 leading-relaxed">
                   {text}
                 </motion.p>
               ))}

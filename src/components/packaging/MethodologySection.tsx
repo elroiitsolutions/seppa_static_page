@@ -59,7 +59,7 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
           />
           
           {subtitle && (
-            <motion.p variants={fadeInUp} className="text-lg text-gray-600 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-base md:text-lg text-gray-600 leading-relaxed">
               {subtitle}
             </motion.p>
           )}
@@ -89,13 +89,13 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
                   {Array.isArray(step.description) ? (
                     <div className="space-y-4">
                       {step.description.map((desc, i) => (
-                        <p key={i} className="text-gray-600 text-lg leading-relaxed text-justify">
+                        <p key={i} className="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
                           {desc}
                         </p>
                       ))}
                     </div>
                   ) : (
-                    <p className="text-gray-600 text-lg leading-relaxed text-justify">
+                    <p className="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
                       {step.description}
                     </p>
                   )}

@@ -46,7 +46,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
               className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6" 
             />
             
-            <motion.p variants={fadeInUp} className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
               {description}
             </motion.p>
 
@@ -68,7 +68,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
                 <div className="mt-8 space-y-4">
                   {subDescription.map((desc, idx) => (
                     
-                    <p key={idx} className="text-lg text-gray-600 leading-relaxed">
+                    <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed">
                       {desc}
                     </p>
                   ))}
