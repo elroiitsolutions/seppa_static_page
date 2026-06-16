@@ -44,9 +44,9 @@ export interface PackagingPageData {
   applicationsTitle?: string;
   applicationsSubtitle?: string;
   applications?: FeatureItem[];
-  featuresTitle: string;
-  featuresSubtitle: string;
-  features: FeatureItem[];
+  featuresTitle?: string;
+  featuresSubtitle?: string;
+  features?: FeatureItem[];
   whyChoose?: {
     title?: string;
     description?: string;
@@ -77,6 +77,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
       {/* Banner/Hero Section */}
       <PageHeader 
         title={data.title} 
+        bgImage={data.headerImage}
         breadcrumbs={[
           { name: 'Home', path: '/' },
           { name: data.rootBreadcrumbName || 'Packaging', path: data.rootBreadcrumbPath || '/services/packaging' },
@@ -110,13 +111,15 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
       )}
 
       {/* Features & Advantages */}
-      <FeaturesSection 
-        title={data.featuresTitle}
-        subtitle={data.featuresSubtitle}
-        features={data.features}
-        centerLastRow={true}
-        bgClass="bg-[#fdfbf6] m-3 rounded-2xl relative"
-      />
+      {data.features && data.features.length > 0 && (
+        <FeaturesSection 
+          title={data.featuresTitle || "Features & Advantages"}
+          subtitle={data.featuresSubtitle}
+          features={data.features}
+          centerLastRow={true}
+          bgClass="bg-[#fdfbf6] m-3 rounded-2xl relative"
+        />
+      )}
 
       {/* Why Choose SEPPA */}
       <PackagingWhyChooseUs 

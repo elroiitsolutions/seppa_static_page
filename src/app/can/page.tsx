@@ -10,9 +10,12 @@ import install from '@/assets/packaging/can/install.webp';
 import commissing from '@/assets/packaging/can/commissing.jpeg';
 import training from '@/assets/packaging/can/training.webp';
 import sales from '@/assets/packaging/can/sales.webp';
+//import canBanner from '@/assets/packaging/can/can-banner.png';
+
 const pageData: PackagingPageData = {
   title: "Engineering the Future of Beverage Packaging: Complete Aluminium Can Filling & Sealing Solutions by Seppa",
   breadcrumbName: "Can",
+  headerImage: overview.src,
   overviewTitle: "Introduction to Aluminium Can Packaging Solutions",
   overviewDescription: "Aluminium Cans are the most sustainable beverage package on virtually every measure. Aluminium Cans have a high recycling rate and more recycled content than competing packaging types. They are light weight, stackable and strong allowing brands to package and transport more beverages using less material. As also, Aluminium Cans are far more valuable than glass or plastic ensuring recycling more variable and effective.",
   overviewBenefits: [
