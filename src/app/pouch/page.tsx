@@ -5,14 +5,16 @@ import img2 from '@/assets/packaging/pouch/moderm.webp';
 import pack from '@/assets/packaging/pouch/pouch.webp';
 import pouch from '@/assets/packaging/pouch/pouch-package.jpg'
 import machine from '@/assets/packaging/pouch/pouch-machine.jpg';
+import pouchBanner from '@/assets/packaging/pouch/pouch-banner.webp';
 
 const pageData: PackagingPageData = {
   title: "PLASTIC POUCH Low Cost, Flexible Solutions",
   breadcrumbName: "Pouch",
+  headerImage: pouchBanner.src,
   overviewTitle: "Water, Beverage and Milk in a Pouch",
   overviewDescription: "In several countries, the drinking Water, Beverage and Dairy industry is also using pouch packaging for milk. Made from Polypropylene, this pouch is reusable, easy to pour and produces 75% less waste than conventional milk packaging. Plastic packaging is commercially feasible and stabilizes the cost of raw materials, making it easy and practical to execute.",
     overviewsubDescription:["It replaces the high cost of other types of packaging reducing the cost of the final product.","SEPPA offers a wide range of Pouch Sterilizing, Filling and Sealing equipment’s fully automatic, low speed and high speed lines for Water, Milk, Beverage, Oil, and petroleum products. This includes Pouch Sterilizer, Filler and Sealer, Date and Batch Coders, Shrink/Carton packaging equipment, Palletizers and Stretch Wrappers.", "The global flexible packaging market crossed $260 billion in 2023 and continues growing at 4.5% annually (Mordor Intelligence, 2024). Brand owners are switching from rigid containers to flexible packaging pouches because they weigh less, ship more efficiently, and use up to 70% less material per unit. For anyone running a filling line today, the choice of pouch packaging machine is one of the most commercially significant equipment decisions on the table."],
-  overviewImage: pouch.src,
+  overviewImage: pouchBanner.src,
    contentBlocks: [
     {
       //badge: "Turnkey Lines",
