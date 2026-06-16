@@ -5,10 +5,12 @@ import machine from '@/assets/packaging/brick/machine.jpg';
 import packag from '@/assets/packaging/brick/package.webp';
 import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
 import brickAvif from '@/assets/packaging/brick/brickcarton.avif';
+import brickBanner from '@/assets/packaging/brick/brick-banner.png';
 
 const pageData: PackagingPageData = {
   title: "Gable Top Carton Packaging Systems SEPPA PAK™",
   breadcrumbName: "Gable Top Carton",
+  headerImage: brickBanner.src,
   overviewTitle: "Introduction: SEPPA PAK™ Gable Top Carton Aseptic, Flexible, and Built for the Real World",
   overviewDescription: "",
   overviewsubDescription: [
