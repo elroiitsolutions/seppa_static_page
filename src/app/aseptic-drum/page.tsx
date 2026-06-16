@@ -5,10 +5,12 @@ import machine from '@/assets/packaging/brick/machine.jpg';
 import packag from '@/assets/packaging/brick/package.webp';
 import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
 import brickAvif from '@/assets/packaging/brick/brickcarton.avif';
+import drumBanner from '@/assets/packaging/aseptric-drum/drum.png';
 
 const pageData: PackagingPageData = {
   title: "The Definitive Guide to Aseptic Drum Filling: Engineering Sterility at Industrial Scale",
   breadcrumbName: "Aseptic Drum",
+  headerImage: drumBanner.src,
   overviewTitle: "Introduction to Aseptic Drum Systems",
   overviewDescription: "",
   overviewsubDescription: [
