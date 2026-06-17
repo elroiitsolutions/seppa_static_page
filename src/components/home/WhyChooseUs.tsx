@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
   const [activeTab, setActiveTab] = useState(tabsData[0]);
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           

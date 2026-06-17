@@ -18,6 +18,7 @@ const ScrollEnquiryModal: React.FC = () => {
     // Check if the user has already seen the modal via scroll in this session
     const sessionKey = 'seppa_enquiry_modal_seen';
     if (sessionStorage.getItem(sessionKey)) {
+      // eslint-disable-next-line
       setHasOpened(true);
       return;
     }

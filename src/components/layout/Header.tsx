@@ -119,7 +119,7 @@ const Header: React.FC = () => {
                   <Link href="/flavored-vitaminized-water" className={dropdownItemClass}>Flavored Vitaminized Water</Link>
                 </div>
               </div>
-              <Link href="/soft-drink-line-machines" className={dropdownItemClass}>Soft Drink / Beverages</Link>
+              <Link href="/soft-drinks" className={dropdownItemClass}>Soft Drink / Beverages</Link>
               <div className="relative group/sub">
                 <Link href="/juice" className="px-6 py-2.5 hover:text-dark transition-colors w-full flex items-center justify-between gap-2 group/link">
                   <span className="leading-snug">Juices & Nectars</span>
@@ -160,10 +160,10 @@ const Header: React.FC = () => {
             <div className={dropdownClass}>
               <Link href="/complete-lines" className={dropdownItemClass}>Complete Lines</Link>
               <Link href="/liquid" className={dropdownItemClass}>Water Lines</Link>
-              <Link href="/soft-drink-line-machines" className={dropdownItemClass}>Soft Drink & Beverages Lines</Link>
+              <Link href="/soft-drink-lines" className={dropdownItemClass}>Soft Drink & Beverages Lines</Link>
               <Link href="/juice-line-machines" className={dropdownItemClass}>Juice & Nectars Lines</Link>
               <Link href="/beer-line-machines" className={dropdownItemClass}>Beer Lines</Link>
-              <Link href="/wine-me" className={dropdownItemClass}>Wine & Mead Lines</Link>
+              <Link href="/wine-mead-lines" className={dropdownItemClass}>Wine & Mead Lines</Link>
               <Link href="/liquor-spirits-line-machines" className={dropdownItemClass}>Liquor & Spirits Lines</Link>
               <Link href="/dairy-product-line-machines" className={dropdownItemClass}>Liquid  Dairy Products</Link>
               <Link href="/ketchup-sauce-filling-line-machines" className={dropdownItemClass}>Ketchups & Sauces </Link>
@@ -173,7 +173,7 @@ const Header: React.FC = () => {
             <button className={linkClass}>
               Equipments<FiChevronDown className="text-sm opacity-70" />
             </button>
-            <div className="absolute top-full -left-64 mt-2 w-[90vw] lg:w-[900px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-3 grid grid-rows-6 grid-flow-col">
+            <div className="absolute top-full -left-64 mt-2 w-[90vw] lg:w-[900px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-3 grid grid-cols-2 lg:grid-cols-4 gap-4">
               {/* Column 1 */}
               <Link href="/processing" className={dropdownItemClass}>Processing</Link>
               <Link href="/blowing" className={dropdownItemClass}>Blowing</Link>
@@ -263,7 +263,7 @@ const Header: React.FC = () => {
                 </Link>
                 
                 <div className="font-medium text-seppa-red">Bottling</div>
-                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/soft-drinks" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Soft Drinks / Carbonated Beverages</span>
                 </Link>
@@ -402,7 +402,7 @@ const Header: React.FC = () => {
                   <span>Flavored Vitaminized Water</span>
                 </Link>
                 
-                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/soft-drinks" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Soft Drink / Beverages</span>
                 </Link>
@@ -499,7 +499,7 @@ const Header: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Water Lines</span>
                 </Link>
-                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/soft-drinks" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Soft Drink & Beverages Lines</span>
                 </Link>
@@ -511,7 +511,7 @@ const Header: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Beer Lines</span>
                 </Link>
-                <Link href="/wine-me" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/wine-mead-lines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Wine & Mead Lines</span>
                 </Link>

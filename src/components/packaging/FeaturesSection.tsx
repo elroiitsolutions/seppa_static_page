@@ -42,8 +42,8 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
   const [selectedFeature, setSelectedFeature] = useState<FeatureItem | null>(null);
 
   const gridClass = centerLastRow 
-    ? "flex flex-wrap justify-center items-start gap-8" 
-    : (columns === 4 ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-8" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-8");
+    ? "flex flex-wrap justify-center items-stretch gap-8" 
+    : (columns === 4 ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-stretch gap-8" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-8");
 
   const itemClass = centerLastRow 
     ? (columns === 4 ? "w-full md:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)]" : "w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)]")
@@ -51,7 +51,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
 
   return (
     <>
-      <section className={`py-24 overflow-hidden ${bgClass}`}>
+      <section className={`py-12 lg:py-24 overflow-hidden ${bgClass}`}>
         <div className="container mx-auto px-4">
         
         {/* Header */}
@@ -157,7 +157,7 @@ const FeatureCard: React.FC<{ feature: FeatureItem; itemClass: string; onReadMor
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
-      className={`${itemClass} bg-light rounded-[2rem] p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 group`}
+      className={`${itemClass} flex flex-col bg-light rounded-[2rem] p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 group`}
     >
       <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-seppa-red text-2xl mb-6 shadow-sm group-hover:-translate-y-1 transition-transform duration-300 flex-shrink-0">
         <FiStar />

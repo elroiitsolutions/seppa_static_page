@@ -6,6 +6,9 @@ import packag from '@/assets/packaging/brick/package.webp';
 import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
 import brickAvif from '@/assets/packaging/brick/brickcarton.avif';
 import brickBanner from '@/assets/packaging/brick/brick-banner.png';
+import execute from '@/assets/packaging/can/execute.webp';
+import install from '@/assets/packaging/can/install.webp';
+import training from '@/assets/packaging/can/training.webp';
 
 const pageData: PackagingPageData = {
   title: "Gable Top Carton Packaging Systems SEPPA PAK™",
@@ -89,17 +92,17 @@ const pageData: PackagingPageData = {
       {
         title: "Phase 3: Machine Build and Factory Acceptance Testing",
         description: "Seppa builds and integrates the specified equipment, then puts it through a structured Factory Acceptance Test before it ships. The FAT validates fill accuracy, seal integrity, line speed, and hygiene compliance against the agreed specification. Clients or their technical representatives attend the FAT to review the performance data directly. Nothing ships on the basis of the manufacturer's internal say so.",
-        image: machine.src
+        image: execute.src
       },
       {
         title: "Phase 4: On Site Commissioning and Training",
         description: "Installation covers mechanical setup, utility connections, and production trials with actual product. Operators and maintenance personnel receive hands on training across routine operation, CIP procedures, changeover sequences, and fault diagnosis. Training documentation is provided in the client's working language. The goal is a production team that can run the line competently from day one not one that is dependent on the supplier for basic decisions.",
-        image: brickCarton.src
+        image: install.src
       },
       {
         title: "Phase 5: 24/7 Technical Support",
         description: "After commissioning, Seppa Solutions stays in contact. Remote monitoring, telephone technical assistance, and on site response when the situation warrants it. Spare parts availability is maintained across Seppa's service network to protect uptime for liquid carton packaging operations. Downtime on a filling line is expensive; having a support structure that takes that seriously is not optional for serious production environments.",
-        image: packag.src
+        image: training.src
       }
     ],
     outro: [

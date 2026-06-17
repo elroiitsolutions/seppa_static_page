@@ -1,45 +1,98 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import bannerImg from '@/assets/packaging/generated/beer_banner.png';
+import overviewImg from '@/assets/packaging/generated/beer_overview.png';
+import imgB from '@/assets/packaging/generated/beer_bottling_closeup_1781701513819.png';
 
 const pageData: PackagingPageData = {
-  title: "Beer",
+  title: "Beer Manufacturing Plant Solutions | Seppa Solutions",
   breadcrumbName: "Beer",
   rootBreadcrumbName: "Liquid",
   rootBreadcrumbPath: "/liquid",
-  overviewTitle: "Premium Solutions for Beer",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Beer. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  headerImage: bannerImg.src,
+  overviewTitle: "Beer Has Been Around Longer Than Most Things",
+  overviewDescription: "Beer has been around longer than most things we consider ancient. Mesopotamian cultures were brewing it around 10,000 B.C. The Egyptians documented it on papyrus by 5,000 B.C. Belgium, Germany, and the British Isles shaped the styles we still drink today and somewhere between then and now, it became one of the largest industries on earth.",
+  overviewsubDescription: [
+    "The global beer market sits at $520 billion USD, accounting for about 75% of all alcohol consumed worldwide. It's on track to reach $750 billion by 2025. India, China, the U.S., Russia, Brazil, Mexico, and Germany lead consumption. The craft segment, meanwhile, has grown well past niche status and could hit $500 billion on its own. In India, microbreweries are still early stage but gaining ground fast the market is expected to cross a billion dollars within five years.",
+    "Running a beer manufacture business at any scale comes down to the same hard requirements: every batch has to taste like the last one, production costs have to stay controlled, and hygiene can't slip. There's no shortcut around those three things. SEPPA builds the processing and packaging equipment that makes them achievable not as aspirational targets, but as operational reality.",
+    "Glass, PET, and cans are where packaging is heading. SEPPA helps clients design bottles worth looking at and production lines that run efficiently without eating up floor space. The engineering and service support stay in place after installation, because a line that runs well on day one needs to keep running well on day five hundred."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Beer Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
+  overviewLayout:"stacked",
+  overviewImage: overviewImg.src,
+  featuresTitle: "Complete Beer Manufacturing Plant Solutions",
   features: [
+    { title: "Turnkey Integration", description: "Starting a beer manufacturing plant isn't really a machine selection problem it's a systems design problem. Vessel sizing, utility routing, hygiene zoning, automation architecture each decision shapes the ones that come after it. Get the lauter tun sizing wrong early and you're capacity constrained before you've poured a single pint for a customer. Seppa's approach is full turnkey integration. Every stage of beer production is designed as part of a connected system brewhouse to fermentation, fermentation to filtration, filtration to packaging. Nothing is treated as a standalone unit. When the system is designed to work as a whole, it behaves as one." },
+    { title: "Scalability", description: "Scalability is built in from the start. Most breweries grow if the product is good. A 500 litre startup that hits its market can become a 5,000 litre operation within a few years. Seppa designs for that trajectory utility connections sized for future loads, vessel layouts that accommodate additions so the infrastructure doesn't become a ceiling." },
+    { title: "Core Equipment", description: "Seppa's beer production scope covers raw material intake, milling, mashing, lautering, wort boiling, fermentation and conditioning, filtration, bright beer manufacture transfer, and packaging across bottles, cans, kegs, and PET. Stage to stage integration cuts manual touchpoints, which reduces both contamination risk and labour overhead two things that are directly connected in any production environment." }
+  ],
+  applicationsTitle: "Core Equipment in a Beer Manufacturing Plant",
+  applicationsSubtitle: "The beer brewing equipment inside any serious facility comes down to a handful of systems that each need to work well individually and together. Weakness in one shows up in the finished glass.",
+  applications: [
+    { title: "Milling and Mashing", description: "Grain needs to be cracked open the right way husk mostly intact, endosperm exposed. Too fine and the lauter bed clogs. Milling sets the tone for everything in beer production downstream. Seppa's roller mills maintain consistent grist particle size regardless of grain moisture variation. Mashing converts those starches to fermentable sugars using direct steam injection or hot liquor jacket systems with tight temperature control single infusion, multi step, or decoction, depending on the recipe." },
+    { title: "Lautering", description: "This is where most small breweries run into trouble. Clear wort separation from spent grain sounds simple; it isn't. Pack the grain bed too tight and runoff stops. Lift the rakes too fast and you pull harsh tannins into the wort. Seppa's lauter systems use variable speed rotating rakes with programmable lift profiles in beer brewing equipment terms, it's one of the most underrated specs in the entire brewhouse." },
+    { title: "Boiling and Hop Management", description: "Kettle design affects flavour more than most brewers expect early on. Internal calandria or external heat exchangers (matched to beer manufacturing plant capacity) hit the evaporation rates needed to drive off DMS precursors and reach target gravity. Hop additions run through automated dosing ports timed to the boil schedule, with late kettle and whirlpool options built in." },
+    { title: "Bright Beer and Filtration", description: "Post fermentation, beer manufacturing plant moves through diatomaceous earth, sheet, or membrane filtration into carbonation and holding tanks. Seppa's beer manufacturing equipment here includes inline carbonation dosing, dissolved oxygen monitoring, and pressure rated bright tanks with fully sanitary fittings. DO pickup in post fermentation handling is one of the most common causes of shelf life failure in packaged beer brewing equipment the pipework design is specified to prevent it." }
+  ],
+  contentBlocks: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
+      title: "How Seppa Delivers Better Beer Manufacturing Plants",
+      paragraphs: [
+        "Ask any experienced brewer what separates a facility that consistently hits its targets from one that doesn't, and the answers are usually the same: hygiene design, temperature control, and process visibility. Seppa's beer manufacturing plant engineering addresses all three as hard specifications.",
+        "316L stainless steel throughout not 304. The molybdenum content in 316L resists chloride induced pitting in wort and beer manufacture environments where 304 eventually fails. Product contact surfaces are electropolished to Ra ≤ 0.8 µm. No deadlegs. Every line drains. Every valve configuration allows full CIP coverage. These aren't optional extras they're in the base spec because contamination events are expensive and preventable ones are indefensible.",
+        "Centralised glycol cooling sized for peak simultaneous demand across all active fermenters. Each jacket zone runs through motorised modulating valves on PLC-managed setpoint profiles. Multiple vessels can run fermentation ramps, cold crash schedules, and conditioning holds at the same time without manual oversight.",
+        "SCADA-based cellar management across fermentation, CIP, transfers, and packaging. At volume, beer manufacture without that level of automation becomes a staffing and consistency problem. One interface, full visibility, alarm management, batch logging, trend data across every shift and every crew member running the floor."
+      ],
+      layout:"stacked",
+      image1:imgB.src,
+    },
+  ],
+  whyChoose: {
+    title: "Why Manufacturers Work With Seppa",
+    description: "Equipment suppliers aren't hard to find. What's harder is one that designs to your actual site, stays on the project through commissioning, and is reachable after handover when something goes wrong because something always does. That's what clients across every category of beer manufacturing equipment Seppa delivers consistently say.",
+    reasons: [
+      { title: "Custom Solutions", description: "No two beer manufacturing plant projects are the same floor plan or the same production brief. Seppa doesn't use catalogue systems. Every project starts with a site visit, real constraint mapping ceiling heights, drainage points, utility capacities and a layout that works for that specific building." },
+      { title: "Energy Efficiency", description: "Energy costs dominate running expenses in beer production. Heat recovery from wort cooling preheats strike water. Boil vapour condensation replaces simple venting. Insulated hot liquor storage cuts standby losses. Across a typical installation, these measures reduce utility consumption by 20–30% versus standard equipment arrangements which compounds significantly over a five year operating period." },
+      { title: "Batch Consistency", description: "Batch consistency is what a brewery's commercial reputation is built on. Seppa's beer brewing equipment is specified for repeatability: automated controls, calibrated instruments, documented CIP protocols. The variables that can't be removed are managed. The ones that can be automated are." },
+      { title: "Long-Term Support", description: "Post-commissioning, Seppa stays in the relationship troubleshooting, spare parts, process optimisation as volumes grow, upgrades when the original spec no longer covers the demand." }
+    ],
+    image: overviewImg.src
+  },
+  methodology: {
+    title: "Methodology",
+    subtitle: "Every beer manufacturing plant Seppa delivers follows the same five-phase process. The timeline scales with project size; the process doesn't change.",
+    steps: [
+      { title: "Phase 1: Site Feasibility & Design", description: "Site feasibility comes first floor area, utilities, drainage assessed, process flow diagrams and layout produced before any fabrication starts. Custom fabrication follows sign off, with weld and dimensional checks throughout.", image: overviewImg.src },
+      { title: "Phase 2: Installation and Commissioning", description: "Installation and commissioning covers mechanical erection, pipework, wiring, instrumentation, and trial brews with Seppa engineers on site to verify what was designed is what was built.", image: bannerImg.src },
+      { title: "Phase 3: Operational Training", description: "Operational training is a step many equipment suppliers skip. Seppa doesn't because handing over a beer manufacturing plant to a crew that hasn't been properly trained on it is a setup for early problems. Staff leave commissioning knowing equipment operation, cleaning protocols, yeast management, and maintenance routines. That's what responsible beer manufacture actually looks like at handover. Ongoing support troubleshooting, parts, upgrades continues after the keys change hands.", image: overviewImg.src }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "What automation options does Seppa offer?",
+      answer: "It depends on the beer manufacturing plant size and the team's experience. Semi automated setups handle temperature and timing while operators manage recipes manually. Fully integrated SCADA systems run the entire facility from milling to packaging. Most mid scale beer manufacturing plant land between the two, with automation added as volume and operational confidence grow."
     },
     {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
+      question: "Why 316L instead of 304 stainless steel?",
+      answer: "316L carries molybdenum. In wort and beer environments particularly with CIP chemicals in rotation 304 develops chloride induced pitting corrosion over time. It's a documented failure mode. Every product-contact surface in Seppa's beer manufacturing equipment is 316L as standard."
     },
     {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
+      question: "Can a craft brewery scale up without rebuilding everything?",
+      answer: "Usually. Seppa builds beer manufacturing plant systems with scalability built into the engineering upfront utility connections sized for future loads, vessel layouts that accommodate additions. Customers who started at 1,000–2,000 litres per batch have reached 10,000–15,000 litres on the same site without major infrastructure changes."
     },
     {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      question: "What ROI timeline is realistic for a new brewery?",
+      answer: "Honestly, it varies with product mix, local pricing, and utilisation rate. Seppa customers running mid-sized facilities at around 70% capacity have generally recovered capital within three to five years. Energy recovery and automation help pull that timeline in. No specific number means anything without knowing the actual business model."
+    },
+    {
+      question: "Does Seppa handle packaging as well as brewing?",
+      answer: "Yes the scope covers raw materials intake through packaged product. Glass, cans, kegs, and PET are all covered. Handling brewing and packaging as one integrated beer manufacturing plant project means the packaging line is matched to brewhouse throughput from day one, with beer manufacturing equipment and beer production capacity aligned rather than mismatched later."
     }
   ]
 };
 
-const Page = () => {
+const BeerPage = () => {
   return <PackagingPageLayout data={pageData} />;
 };
 
-export default Page;
+export default BeerPage;
