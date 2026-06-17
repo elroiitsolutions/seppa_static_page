@@ -9,7 +9,9 @@ interface AnimatedHeadingProps {
   delay?: number;
 }
 
-const Character = ({ char, progress, range }: { char: string, progress: any, range: number[] }) => {
+import { MotionValue } from "framer-motion";
+
+const Character = ({ char, progress, range }: { char: string, progress: MotionValue<number>, range: number[] }) => {
   const opacity = useTransform(progress, range, [0.2, 1]);
   return (
     <motion.span style={{ opacity }}>

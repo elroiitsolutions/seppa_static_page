@@ -12,12 +12,12 @@ export interface CTAProps {
 
 const CallToAction: React.FC<CTAProps> = ({ 
   title, 
-  description, 
-  buttonText = "Get in Touch", 
-  buttonLink = "/contact-us" 
+  description,
+  buttonText = "Get in Touch",
+  buttonLink = "/contact-us"
 }) => {
   return (
-    <section className="py-24 bg-[#101934] relative overflow-hidden my-12 mx-3 rounded-[2rem] shadow-2xl">
+    <section className="py-12 lg:py-24 bg-[#101934] relative overflow-hidden my-12 mx-3 rounded-[2rem] shadow-2xl">
       <div className="absolute inset-0 opacity-10 bg-[url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/bg-pattern.png')] bg-repeat" />
       
       {/* Decorative Blur Orbs */}
@@ -38,6 +38,14 @@ const CallToAction: React.FC<CTAProps> = ({
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-12">
             {description}
           </p>
+          {buttonText && buttonLink && (
+            <Link 
+              href={buttonLink}
+              className="inline-block bg-seppa-red text-white font-bold px-10 py-4 rounded-full text-lg hover:bg-white hover:text-seppa-red transition duration-300 shadow-[0_0_20px_rgba(219,10,10,0.4)]"
+            >
+              {buttonText}
+            </Link>
+          )}
         </motion.div>
       </div>
     </section>

@@ -1,11 +1,16 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import top from '@/assets/packaging/gable/gabletop1.jpg';
-import machine from '@/assets/packaging/brick/machine.jpg';
-import packag from '@/assets/packaging/brick/package.webp';
-import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
-import brickAvif from '@/assets/packaging/brick/brickcarton.avif';
-import drumBanner from '@/assets/packaging/aseptric-drum/drum.png';
+import top from '@/assets/packaging/generated/aseptic_drum_closeup_1781701609871.png';
+import machine from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import packag from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import brickCarton from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
+import brickAvif from '@/assets/packaging/generated/juice_processing_wide_1781701462502.png';
+import drumBanner from '@/assets/packaging/generated/aseptic_drum_filler_1781701596612.png';
+import meth1 from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
+import meth2 from '@/assets/packaging/generated/wine_production_wide_1781701527332.png';
+import meth3 from '@/assets/packaging/generated/brewery_line_wide_1781701502517.png';
+import meth4 from '@/assets/packaging/generated/csd_bottles_closeup_1781701449618.png';
+import meth5 from '@/assets/packaging/generated/glass_bottling_wide_1781701406159.png';
 
 const pageData: PackagingPageData = {
   title: "The Definitive Guide to Aseptic Drum Filling: Engineering Sterility at Industrial Scale",
@@ -24,7 +29,8 @@ const pageData: PackagingPageData = {
       paragraphs: [
         "Because aseptic processing applies heat for short, precisely controlled bursts, the product never gets cooked into submission. The flavours, vitamins, and texture keep much better than stuff from a retort line. Plus, there are no need for chemical preservatives. Transport costs are way lower compared to IQF, and cold storage fees nearly disappear. So, the benefits really pile up fast!"
       ],
-      image1: brickCarton.src
+      image1: brickCarton.src,
+      image2: brickCarton.src
     },
     {
       title: "Aseptic Containers",
@@ -43,7 +49,9 @@ const pageData: PackagingPageData = {
         "The story doesn't end with food. Dairy concentrate producers use bulk aseptic packaging to move cream bases, condensed milk, and whey concentrates around the globe without ever touching a refrigerated container. Pharmaceutical and nutraceutical companies depend on sterile drum filling for buffer solutions, fermentation feedstocks, and active liquid intermediates where even a single colony-forming unit can scrap a batch. Beverage ingredient suppliers think natural extracts, coffee concentrates, brewed tea bases have largely settled on drum filling as the default standard for B2B liquid transport.",
         "SEPPA designs and builds both Bag in Drum and Bag in Box type aseptic fillers. Double head configurations are on the menu too, with filling nozzles of either 1 or 2 inches chosen based on how viscous the product is and whether it carries particulates. The aseptic filling machine works with preformed, pre sterilized bags from 5 to 200 liters, including linked bag formats running 5 to 20 liters for smaller volume jobs."
       ],
-      image1: machine.src
+      image1: machine.src,
+      image2: brickCarton.src,
+      layout: "stacked"
     }
   ],
   featuresTitle: "Choosing the Right Aseptic Drum Filling Solution for Your Production Line",
@@ -67,11 +75,11 @@ const pageData: PackagingPageData = {
     title: "Methodology: From Site Audit to Validation",
     subtitle: "Installing an aseptic filling machine isn't a simple plug and play deal. Seppa Solutions follows a five phase engineering process, refined over decades, for every setup.",
     steps: [
-      { title: "Site Audit & Process Mapping", description: "Our engineers walk the plant floor, take stock of utilities, look at product characteristics, pin down throughput targets, and map every connection point to upstream sterilizers and downstream palletizers.", image: top.src },
-      { title: "Custom System Design", description: "A bespoke layout gets built in 3D CAD, backed by full P&ID documentation and FEA validated sanitary piping.", image: brickAvif.src },
-      { title: "Precision Integration", description: "The aseptic filling equipment is fabricated, put through factory acceptance testing (FAT), and shipped in pre assembled modules so on site work stays minimal.", image: machine.src },
-      { title: "Commissioning & Start Up", description: "Our team handles installation, utility hookup, and the first round of sterility qualification right alongside your crew.", image: brickCarton.src },
-      { title: "Validation Support", description: "Full IQ/OQ/PQ documentation, microbiological challenge testing, and regulatory dossiers are delivered to back you up during FDA, EFSA, or local agency audits.", image: packag.src }
+      { title: "Site Audit & Process Mapping", description: "Our engineers walk the plant floor, take stock of utilities, look at product characteristics, pin down throughput targets, and map every connection point to upstream sterilizers and downstream palletizers.", image: meth1.src },
+      { title: "Custom System Design", description: "A bespoke layout gets built in 3D CAD, backed by full P&ID documentation and FEA validated sanitary piping.", image: meth2.src },
+      { title: "Precision Integration", description: "The aseptic filling equipment is fabricated, put through factory acceptance testing (FAT), and shipped in pre assembled modules so on site work stays minimal.", image: meth3.src },
+      { title: "Commissioning & Start Up", description: "Our team handles installation, utility hookup, and the first round of sterility qualification right alongside your crew.", image: meth4.src },
+      { title: "Validation Support", description: "Full IQ/OQ/PQ documentation, microbiological challenge testing, and regulatory dossiers are delivered to back you up during FDA, EFSA, or local agency audits.", image: meth5.src }
     ]
   },
   faqTitle: "Frequently Asked Questions",

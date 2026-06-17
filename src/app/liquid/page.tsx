@@ -1,45 +1,120 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import bannerImg from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import overviewImg from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import img1 from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import img2 from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
+import img3 from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import meth1 from '@/assets/packaging/pouch/moderm.webp';
+import meth2 from '@/assets/packaging/can/commissing.webp';
+import meth3 from '@/assets/packaging/can/install.webp';
 
 const pageData: PackagingPageData = {
-  title: "Liquid / Spare Parts",
-  breadcrumbName: "Liquid / Spare Parts",
-  rootBreadcrumbName: "Services",
-  rootBreadcrumbPath: "/services",
-  overviewTitle: "Premium Solutions for Liquid / Spare Parts",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Liquid / Spare Parts. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  title: "Complete Water and Sparkling Water Production Line Solutions",
+  breadcrumbName: "Water Lines",
+  rootBreadcrumbName: "Complete Lines",
+  rootBreadcrumbPath: "/complete-lines",
+  headerImage: bannerImg.src,
+  overviewTitle: "Complete Water and Sparkling Water Production Line Solutions",
+  overviewDescription: "Here is something that does not get said enough in this industry: most water line failures do not start in the equipment. They start in how the system was put together. Mismatched vendors, treatment stages spec'd independently from the filling section, CIP cycles designed without accounting for the blower downstream these are the things that quietly erode output capacity and create compliance headaches years after commissioning.",
+  overviewsubDescription: [
+    "SEPPA built its complete line approach around that exact problem. A water processing plant should behave as one system. Purification, carbonation, filling, labeling, coding every stage engineered to hand off cleanly to the next one. That is what SEPPA has been doing for over 50 years, across more than 7,000 installations worldwide.",
+    "The full scope covers processing, packaging design, blowing, R-F-C (Rinse Fill Cap), Kombopure, labeling, date and batch coding, packing, palletizing, and stretch wrapping. Whether you are building a new water processing plant from scratch or trying to extract more from an existing site, the engineering logic is the same: get the integration right, and everything else follows."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Liquid / Spare Parts Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
-  features: [
+  overviewImage: overviewImg.src,
+  contentBlocks: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
+      title: "Water Treatment and Purification Systems",
+      paragraphs: [
+        "The quality coming out of a water processing plant is entirely a function of what goes in and of every treatment decision made in between.",
+        "A properly designed water processing plant does not rely on any single barrier. Source water goes through sediment pre filtration first, which handles suspended solids and protects downstream membranes. Then activated carbon adsorption strips chlorine and organic compounds that affect taste and accelerate membrane degradation. Reverse osmosis membranes come next the workhorse stage that removes dissolved solids, heavy metals, and most ionic contaminants",
+        "Mineral balance is where a mineral water plant design diverges from a straightforward purification build. Post RO water is essentially stripped of everything, which means controlled re mineralization is required calibrated dosing of calcium, magnesium, and bicarbonate to hit the target mineral profile. This is not optional for mineral water classification; it affects taste, pH stability, and label compliance in most export markets simultaneously.",
+        "The water line connecting treatment to filling matters more than most operators appreciate until something goes wrong. Dead legs trap biofilm. Inadequate slope to drain allows standing water. Surface finishes below Ra 0.8 μm become contamination sites within weeks. SEPPA's piping and vessel design builds these standards in from the start rather than trying to correct them during qualification."
+      ],
+      image1: img1.src,
+      reverse: true
     },
     {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
+      title: "Water and Sparkling Water Filling Equipment",
+      paragraphs: [
+        "Still water filling is a precision operation. Sparkling water filling is harder in ways that are easy to underestimate.",
+        "CO₂ wants to leave the water. That is the fundamental problem. It dissolved under pressure and it will flash off the moment that pressure drops at the filling valve, in turbulence, against a warm container wall. In a high output water processing plant, every variable between the carbonation vessel and the sealed bottle has to stay within tight tolerances simultaneously: temperature, line backpressure, fill speed, counter pressure inside the container. Any one of them drifting causes foaming losses, inconsistent fill levels, or carbonation volume well below specification.",
+        "SEPPA uses isobaric filling technology for carbonated beverages. Before filling starts, the container is pre pressurised to match the CO₂ pressure in the filler bowl. The pressure differential between product and container stays near zero throughout the fill, which prevents nucleation and flash off entirely. What you get is consistent carbonation volume, accurate fill levels, and no foaming losses results that gravity filling or standard pressure differential filling cannot deliver on carbonated products.",
+        "For still water, the water line from treatment through to filling runs under laminar flow or full aseptic conditions depending on shelf life requirements and target market specifications. The Kombopure system closes that circuit completely, integrating blow, fill, and cap in one enclosed unit so atmospheric exposure is essentially eliminated."
+      ],
+      image1: img2.src,
+      reverse: false
     },
     {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
+      title: "Applications of Water Bottling Plants",
+      paragraphs: [
+        "The range of operations that genuinely need a properly designed water processing plant is wider than it looks from the outside.",
+        "Large scale municipal and regional operations are the most visible segment 30,000 to 60,000 containers per hour, lines running three shifts, reliability measured in years. These large scale builds need full automation from treatment through to pallet dispatch, and they need service infrastructure that can respond in hours rather than days. Downtime at this scale is expensive in a way that is hard to overstate.",
+        "Mid scale independent brands and private label producers sit in the middle tier. Same hygienic standards as the big players, but with harder demands on flexibility multiple SKUs on a single line, frequent changeovers, CIP cycles that have to fit into a production schedule that was not designed around them. A mineral water plant at this scale lives or dies on changeover speed and how well the treatment system handles variable mineral targets between SKUs.",
+        "Premium and boutique sparkling water is a growing segment that deserves its own mention. These producers are selling carbonation character and mineral origin as product attributes, which means the water processing plant has to preserve those characteristics with precision. Rough handling in the filling section even a few degrees of temperature variance or a momentary pressure drop shows up in the final product.",
+        "SEPPA also builds for hotel groups, resorts, and food service operators running in house branded water programs. These are smaller scale installations by volume, but they apply the same engineering standards as larger sites. A water bottling plant at 500 BPH and one at 30,000 BPH have different line speeds, not different hygiene requirements."
+      ],
+      image1: img3.src,
+      reverse: true
+    }
+  ],
+  whyChoose: {
+    title: "Why Choose SEPPA Solutions for Water Bottling Plants?",
+    paragraphs: [
+      "There is a version of this question that deserves a direct answer rather than a list of credentials.",
+      "What SEPPA actually offers that most equipment suppliers do not is fifty plus years of post commissioning data from more than 7,000 installations. That is not a sales figure; it is an engineering resource. Failure modes that only appear after three years of operation, mineral water plant configurations that work in theory but create CIP problems in practice, water bottling plant layouts that seem efficient until you try to do a changeover SEPPA has seen these patterns across enough sites to design around them before they happen on your line.",
+      "The engineering behind every SEPPA water processing plant line follows hygienic design principles that go beyond compliance: minimal dead legs, 3-A or EHEDG compliant contact surfaces, CIP compatible circuit layouts, and access panels that are actually reachable during maintenance. The gap between \"technically compliant\" and \"easy to keep clean\" matters every single day the line is running.",
+      "The Kombo and Kombopure platforms give water line customers a genuine range of integration options, from simpler standalone configurations to fully enclosed aseptic blow fill cap systems. For any water processing plant where microbiological integrity is the primary specification concern, Kombopure removes the largest variable in the process: atmospheric exposure at the fill point.",
+      "Water line replacement within an existing SEPPA installation is designed to be a straightforward upgrade. New innovations are built for backward compatibility where possible, so a targeted water line replacement swapping a filling section, adding a new labeler does not require rebuilding the line around it. That matters when you are running a water processing plant that cannot afford a six week shutdown every time regulations shift or a new pack format is required."
+    ]
+  },
+  methodology: {
+    title: "Our Methodology: How SEPPA Engineers a Complete Line",
+    steps: [
+      {
+        title: "Source Characterisation",
+        description: "A water processing plant is not a product catalogue selection. It is an engineering project, and the methodology behind it determines whether commissioning takes three weeks or six months. SEPPA's process starts with source water characterisation not assumed feed water quality, but actual analysis of the source. Total dissolved solids, hardness, silica, microbial load, seasonal variation. The treatment train is sized and sequenced from that data, not from a generic template.",
+        image: meth1.src
+      },
+      {
+        title: "System Modelling",
+        description: "From there, the line is modelled as a system. Filling speed drives blower output requirements. Blower cycle time affects how much buffer capacity the circuit needs between treatment and filling. CIP cycle timing is mapped against production scheduling to identify conflicts before they become line stoppages. This kind of upstream downstream modelling is what separates a coherent water processing plant from a line that hits its rated speed in trials and then runs at 70% in practice.",
+        image: meth2.src
+      },
+      {
+        title: "Control Architecture",
+        description: "Once the equipment configuration is defined, SEPPA engineers the control architecture to match. Line speed fluctuations communicate between sections via the control system rather than manifesting as jams, stoppages, or carbonation variation.",
+        image: meth3.src
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "How energy-efficient is a modern water bottling plant?",
+      answer: "Current SEPPA lines run servo driven systems with heat recovery on blow molding a meaningful shift from older pneumatic and hydraulic designs. A modern water bottling plant at 20,000 BPH typically uses 15–20% less energy per bottle than a comparable line from ten years ago. The actual figure depends on container size, carbonation level, and ambient temperature. SEPPA can model projected energy consumption during the design phase so you are not relying on estimates after commissioning."
     },
     {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      question: "How do you maintain pH balance in a mineral water plant?",
+      answer: "pH in a mineral water plant is a downstream result of mineral composition and CO₂ equilibrium, not something controlled independently. Post RO water is slightly acidic by default; re-mineralization raises it toward target. In sparkling water, dissolved CO₂ drops pH measurably typically to the 3.5–4.5 range which has to be factored into both specification and label compliance."
+    },
+    {
+      question: "What does water line optimization actually involve?",
+      answer: "It starts with a bottleneck analysis finding the constraint that limits total output. Sometimes it is fill speed. Sometimes it is CIP cycle time or changeover time between SKUs. Sometimes the water line itself is the problem: insufficient flow capacity, aging RO membranes running at reduced flux, or piping layouts creating pressure drops across the treatment circuit. Targeted water line replacement of the actual constraint, combined with control system tuning, usually delivers faster returns than a full line rebuild."
+    },
+    {
+      question: "What does long term maintenance of a water processing plant look like?",
+      answer: "RO membranes need periodic cleaning and replacement typically every 2–3 years, though feed water quality drives that timeline more than calendar time. UV lamps have rated hours and need replacing on schedule regardless of whether they still appear to work. Ozone generators require electrode maintenance. On the filling side, valve seals, cap tooling, and labeler components are defined wear items."
+    },
+    {
+      question: "Can existing lines be upgraded to SEPPA's current technology?",
+      answer: "Yes, in most cases without a full line rebuild. Water line replacement of individual machines filling sections, labelers, palletizers is designed for drop in compatibility with existing SEPPA infrastructure. A water line replacement project that previously meant three weeks of downtime now typically takes a planned weekend. For a mineral water plant or sparkling water operation looking to upgrade to Kombopure aseptic filling, that is available as a modular installation into an existing water processing plant layout."
     }
   ]
 };
 
-const Page = () => {
+const LiquidPage = () => {
   return <PackagingPageLayout data={pageData} />;
 };
 
-export default Page;
+export default LiquidPage;

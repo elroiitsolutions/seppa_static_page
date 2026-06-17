@@ -56,7 +56,7 @@ const HomeHero = () => {
         Using responsive Tailwind containers to ensure proper scaling across 
         1366x768, 1440p, 1080p, 4K, and Ultrawide monitors.
       */}
-      <div className="container mx-auto 2xl:max-w-screen-2xl px-4 relative z-10 flex-1 flex flex-col justify-center pt-28 lg:pt-36 pb-8">
+      <div className="container mx-auto 2xl:max-w-screen-2xl px-4 relative z-10 flex-1 flex flex-col justify-center pt-20 lg:pt-36 pb-8">
         <motion.div
           initial="hidden"
           animate="visible"

@@ -26,6 +26,10 @@ export interface MethodologySectionProps {
   subtitle?: string;
   steps: MethodologyStep[];
   outro?: string[];
+  keyAdvantages?: {
+    title?: string;
+    items: string[];
+  };
 }
 
 const MethodologySection: React.FC<MethodologySectionProps> = ({ 
@@ -33,10 +37,11 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
   title, 
   subtitle, 
   steps,
-  outro
+  outro,
+  keyAdvantages
 }) => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         
         {/* Header */}
@@ -80,11 +85,13 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
               >
                 {/* Content */}
                 <motion.div variants={fadeInUp} className="w-full lg:w-1/2 group cursor-pointer">
-                  <div className="flex items-center gap-4 mb-6">
-                    <span className="w-12 h-12 rounded-full flex items-center justify-center text-seppa-red font-bold font-heading text-xl shadow-sm group-hover:bg-seppa-red group-hover:text-white group-hover:border-seppa-red transition-all duration-500">
-                      <FiStar size={24}/>
-                    </span>
-                    <h3 className="text-3xl font-bold font-heading text-dark">{step.title}</h3>
+                  <div className={`flex items-center ${step.title.toLowerCase().startsWith('phase') || step.title.toLowerCase().startsWith('step') ? 'gap-0' : 'gap-4'} mb-6`}>
+                    {!(step.title.toLowerCase().startsWith('phase') || step.title.toLowerCase().startsWith('step')) && (
+                      <span className="w-12 h-12 shrink-0 rounded-full flex items-center justify-center text-seppa-red font-bold font-heading text-xl shadow-sm group-hover:bg-seppa-red group-hover:text-white group-hover:border-seppa-red transition-all duration-500">
+                        <FiStar size={24}/>
+                      </span>
+                    )}
+                    <h3 className="text-3xl md:text-4xl font-bold font-heading text-dark leading-tight">{step.title}</h3>
                   </div>
                   {Array.isArray(step.description) ? (
                     <div className="space-y-4">
@@ -122,18 +129,22 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
 
         {/* Outro */}
         {outro && outro.length > 0 && (
-          <motion.div 
-            className="mt-24 max-w-4xl mx-auto text-center bg-transparent rounded-[2rem] p-8 md:p-12"
+          <motion.div
+            className="mt-20 max-w-4xl mx-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={staggerContainer}
           >
-            {outro.map((p, idx) => (
-              <motion.p key={idx} variants={fadeInUp} className="text-xl md:text-2xl text-gray-600 text-justify-center leading-relaxed text-center">
-                {p}
-              </motion.p>
-            ))}
+            <motion.div variants={fadeInUp} className="bg-[#FAF9F6] rounded-2xl border-l-4 border-seppa-red p-8 md:p-10 shadow-sm relative">
+              <div className="pl-6 space-y-6">
+                {outro.map((p, idx) => (
+                  <p key={idx} className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            </motion.div>
           </motion.div>
         )}
 
