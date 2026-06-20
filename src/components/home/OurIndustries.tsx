@@ -76,7 +76,7 @@ const OurIndustries = () => {
             </div>
         
             <AnimatedHeading 
-              text="WHY SEPPA SOLUTIONS? \n An Uncompromising Operational Efficiency, Engineered Internationally" 
+              text="WHY SEPPA SOLUTIONS? An Uncompromising Operational Efficiency, Engineered Internationally" 
               elementType="h2" 
               className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6 text-center" 
             />

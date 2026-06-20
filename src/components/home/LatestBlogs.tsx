@@ -18,17 +18,17 @@ const blogs = [
   {
     title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
     date: "February 14, 2026",
-    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
+    image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   },
   {
     title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
     date: "March 11, 2026",
-    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
+    image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   },
   {
     title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
     date: "April 04, 2026",
-    image: "pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
+    image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
   }
 ];
 
