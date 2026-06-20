@@ -50,7 +50,7 @@ const defaultReasons = [
 export interface PackagingWhyChooseUsProps {
   title?: string;
   description?: string;
-  paragraphs?: string[];
+  paragraphs?: (string | React.ReactNode)[];
   reasons?: { id?: number | string; icon?: React.ReactNode; title: string; description: string }[];
   imageSrc?: string;
 }
@@ -139,7 +139,11 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
             {paragraphs && paragraphs.length > 0 ? (
               <motion.div variants={fadeInUp} className="space-y-6">
                 {paragraphs.map((p, idx) => (
-                  <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
+                  typeof p === 'string' ? (
+                    <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
+                  ) : (
+                    <React.Fragment key={idx}>{p}</React.Fragment>
+                  )
                 ))}
               </motion.div>
             ) : (

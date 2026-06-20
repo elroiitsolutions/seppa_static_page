@@ -22,10 +22,11 @@ const staggerContainer = {
 
 const HomeHero = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex flex-col">
-      {/* Background Video */}
-      <div className="absolute inset-0 z-0 bg-dark lg:m-3 lg:rounded-2xl overflow-hidden">
-        <video
+    <section className="relative min-h-screen w-full overflow-hidden flex flex-col" style={{ minHeight: '100dvh' }}>
+      {/* Background Video Wrapper - uses hero-video-wrapper class defined in globals.css */}
+      <div className="hero-video-wrapper absolute inset-0 z-0 pointer-events-none">
+        <div className="relative w-full h-full bg-dark overflow-hidden pointer-events-auto hero-video-inner">
+          <video
           autoPlay
           loop
           muted
@@ -38,7 +39,8 @@ const HomeHero = () => {
           />
         </video>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-dark/90 to-dark/10"></div>
+        {/* Using inline rgba() for cross-browser gradient consistency */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(26,26,26,0.90), rgba(26,26,26,0.10))' }}></div>
 
         {/* Diagonal Lines */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -50,8 +52,8 @@ const HomeHero = () => {
             />
           ))}
         </div>
-      </div>      
-      
+      </div>
+      </div>
       {/* 
         Using responsive Tailwind containers to ensure proper scaling across 
         1366x768, 1440p, 1080p, 4K, and Ultrawide monitors.
@@ -90,12 +92,11 @@ const HomeHero = () => {
           
           {/* Buttons */}
           <motion.div variants={fadeInUp} className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
-            {/* Book Consultation */}
             <div className="flex items-center gap-2 md:gap-3 group cursor-pointer">
-              <Link href="/contact-us" className="inline-flex bg-[#101934] text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
+              <Link href="/contact-us" className="inline-flex bg-seppa-blue text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
                 Book Consultation
               </Link>
-              <Link href="/contact-us" className="w-12 h-12 md:w-[60px] md:h-[60px] flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#101934] transition duration-300 shadow-md">
+              <Link href="/contact-us" className="w-12 h-12 md:w-[60px] md:h-[60px] flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-seppa-blue transition duration-300 shadow-md">
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-5 h-5 md:w-[22px] md:h-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
               </Link>
             </div>
@@ -111,7 +112,7 @@ const HomeHero = () => {
             >
               <div className="w-[72px] h-[72px] rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
                 <div className="w-[56px] h-[56px] rounded-full bg-black/40 flex items-center justify-center">
-                  <div className="w-11 h-11 rounded-full bg-[#101934] flex items-center justify-center text-white pl-1 shadow-lg group-hover:bg-seppa-red transition-colors duration-300">
+                  <div className="w-11 h-11 rounded-full bg-seppa-blue flex items-center justify-center text-white pl-1 shadow-lg group-hover:bg-seppa-red transition-colors duration-300">
                     <FiPlay size={18} fill="currentColor" />
                   </div>
                 </div>

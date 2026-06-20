@@ -111,7 +111,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
           title={data.applicationsTitle || "Applications"}
           subtitle={data.applicationsSubtitle}
           features={data.applications}
-          columns={4}
+          columns={data.applications.length === 4 ? 4 : 3}
           centerLastRow={true}
         />
       )}
