@@ -44,7 +44,8 @@ const pageData: PackagingPageData = {
         "That's not a side note it's the actual engineering problem. A packaging machine that's overbuilt for delicate goods wastes money. One that's underbuilt for heavy product fails in the field. Seppa designs the case packing machine and surrounding packaging equipment around what's actually moving through the line, not a generic template."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     },
     {
       title: "What automation actually buys a manufacturer",

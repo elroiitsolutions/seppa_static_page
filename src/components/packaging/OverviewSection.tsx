@@ -16,9 +16,9 @@ const staggerContainer = {
 
 interface OverviewSectionProps {
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   benefits?: string[];
-  subDescription?: string[];
+  subDescription?: (string | React.ReactNode)[];
   imageSrc: string;
   imageSrc2?: string;
   layout?: 'side-by-side' | 'stacked';
@@ -103,9 +103,13 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
                 {subDescription && subDescription.length > 0 && (
                   <div className="mt-8 space-y-4">
                     {subDescription.map((desc, idx) => (
-                      <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">
-                        {desc}
-                      </p>
+                      typeof desc === 'string' ? (
+                        <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">
+                          {desc}
+                        </p>
+                      ) : (
+                        <div key={idx}>{desc}</div>
+                      )
                     ))}
                   </div>
                 )}
@@ -153,9 +157,13 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
                 {subDescription && subDescription.length > 0 && (
                   <div className="mt-8 space-y-4">
                     {subDescription.map((desc, idx) => (
-                      <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed">
-                        {desc}
-                      </p>
+                      typeof desc === 'string' ? (
+                        <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed">
+                          {desc}
+                        </p>
+                      ) : (
+                        <div key={idx}>{desc}</div>
+                      )
                     ))}
                   </div>
                 )}

@@ -37,32 +37,22 @@ const pageData: PackagingPageData = {
       ],
       image1: img1.src,
       reverse: true
+    }
+  ],
+  featuresTitle: "Key Features of Our Processing Systems",
+  featuresSubtitle: "",
+  features: [
+    { 
+      title: "Materials and Surface Standards", 
+      description: "Every wetted surface in our liquid processing equipment is fabricated from AISI 316L stainless steel with electropolished Ra ≤ 0.8 µm finishes. That is not an aesthetic choice. Surface roughness at that level prevents biofilm formation in a measurable way meaning your CIP cycles work as designed, rather than fighting contamination that should not exist. All gaskets and seals are FDA-compliant EPDM or PTFE, rated for steam-in-place (SIP) temperatures up to 140°C. The complete processing line from inlet to discharge is designed with no dead legs, no horizontal pipe runs without drainage gradient, and no internal crevices where product residue can pool." 
     },
-    {
-      title: "Materials and Surface Standards",
-      paragraphs: [
-        "Every wetted surface in our liquid processing equipment is fabricated from AISI 316L stainless steel with electropolished Ra ≤ 0.8 µm finishes. That is not an aesthetic choice. Surface roughness at that level prevents biofilm formation in a measurable way meaning your CIP cycles work as designed, rather than fighting contamination that should not exist.",
-        "All gaskets and seals are FDA-compliant EPDM or PTFE, rated for steam-in-place (SIP) temperatures up to 140°C. The complete processing line from inlet to discharge is designed with no dead legs, no horizontal pipe runs without drainage gradient, and no internal crevices where product residue can pool."
-      ],
-      image1: img2.src,
-      reverse: false
+    { 
+      title: "Modular Design Logic", 
+      description: "Our processing machinery uses a skid based modular architecture. A pilot scale 500 L/h unit can be upgraded to 5,000 L/h by adding parallel processing modules, not by replacing the base system. This matters for capital planning. Your initial investment in processing equipment’s does not become obsolete when volumes grow the processing equipment’s scale with the business. Heat exchange modules are designed for tool free plate removal, which cuts maintenance labour by roughly 40% compared with welded frame alternatives. The same processing machinery platform that runs at 1,000 L/h today is the same one that runs at 4,000 L/h after a module addition same PLC, same CIP skid, same operator interface." 
     },
-    {
-      title: "Modular Design Logic",
-      paragraphs: [
-        "Our processing machinery uses a skid based modular architecture. A pilot scale 500 L/h unit can be upgraded to 5,000 L/h by adding parallel processing modules, not by replacing the base system. This matters for capital planning. Your initial investment in processing equipment’s does not become obsolete when volumes grow the processing equipment’s scale with the business.",
-        "Heat exchange modules are designed for tool free plate removal, which cuts maintenance labour by roughly 40% compared with welded frame alternatives. The same processing machinery platform that runs at 1,000 L/h today is the same one that runs at 4,000 L/h after a module addition same PLC, same CIP skid, same operator interface."
-      ],
-      image1: img3.src,
-      reverse: true
-    },
-    {
-      title: "Energy Efficiency",
-      paragraphs: [
-        "Across our installed base, customers running our processing machinery report 18–25% lower energy consumption compared with their previous systems. The gains come from three sources: better insulation on thermal circuits, variable frequency drives on all pump motors, and heat recovery loops that capture and redirect thermal energy between process stages."
-      ],
-      image1: img4.src,
-      reverse: false
+    { 
+      title: "Energy Efficiency", 
+      description: "Across our installed base, customers running our processing machinery report 18–25% lower energy consumption compared with their previous systems. The gains come from three sources: better insulation on thermal circuits, variable frequency drives on all pump motors, and heat recovery loops that capture and redirect thermal energy between process stages." 
     }
   ],
   whyChoose: {

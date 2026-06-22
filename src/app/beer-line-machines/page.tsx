@@ -47,7 +47,7 @@ const pageData: PackagingPageData = {
       title: "Beer Production Process Flow",
       paragraphs: [
         "A functional beer production line follows a defined sequence from the bright beer tank to the palletizer.",
-        "Bright beer tank → deaeration → carbonation → filler → crowner/capper → pasteurizer → labeler → date and batch coder → packer → palletizer → stretch wrapper.",
+        <strong key="flow" className="text-black font-bold block my-4 text-base md:text-lg">Bright beer tank → deaeration → carbonation → filler → crowner/capper → pasteurizer → labeler → date and batch coder → packer → palletizer → stretch wrapper.</strong>,
         "Seppa covers the full scope, including its proprietary KomboPure aseptic filling system for sensitive products requiring sterile barrier environments. The beer bottling line stage is where dissolved oxygen control matters most. Premium lager and ale products typically target less than 10 ppb total package oxygen.",
         "Seppa's beer bottling line achieves this through CO₂ counterpressure filling, nitrogen snifting at the crowner, and inline DO monitoring with closed loop feedback to the filler. No manual intervention is needed between product changeovers.",
         "Servo-driven conveyor timing buffers containers between stations across the beer bottling line, absorbing speed mismatches before they become pile ups or line stops. Container agitation during stoppages is one of the more overlooked causes of CO₂ loss on high speed lines the control architecture here is not incidental."
@@ -63,7 +63,8 @@ const pageData: PackagingPageData = {
         "The Kombo block integrates blowing, rinsing, filling, and capping into a single compact unit, reducing the overall beer line footprint by up to 40% versus conventional standalone configurations. For operators needing validated aseptic processing, KomboPure provides sterile barrier technology within the same modular framework. Seppa also engineers its PET bottles with up to 25% less material weight while improving top-load strength by over 30% a measurable input cost reduction without compromising shelf aesthetics or structural performance."
       ],
       image1: imgD.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     }
   ],
   whyChoose: {
@@ -72,7 +73,8 @@ const pageData: PackagingPageData = {
       "Capital equipment in brewing gets evaluated on three things: initial quality, long term reliability, and what it actually costs to run over a 15 to 20 year horizon.",
       "Seppa's beer production line technology holds up across all three. Electronic filling valves and intelligent CIP integration cut product waste at startup and between cycles. High precision conveyor controls reduce unplanned stops that translate directly into lost production volume. Standardized components across Seppa's equipment families simplify spare parts management and reduce repair downtime relevant in any beer manufacturing plant running multiple shifts.",
       "Seppa provides structured service programs, remote diagnostics, operator training, and upgrade pathways after commissioning. The beer production line is designed to hit specified efficiency rates not just at handover, but five and ten years into production."
-    ]
+    ],
+    image:imgB.src
   },
   methodology: {
     title: "Complete Beer Line Methodology",
