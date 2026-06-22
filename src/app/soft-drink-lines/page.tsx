@@ -1,0 +1,160 @@
+import React from 'react';
+import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import imgA from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
+import imgB from '@/assets/packaging/generated/csd_bottles_closeup_1781701449618.png';
+import imgC from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import imgD from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import imgE from '@/assets/packaging/generated/juice_processing_wide_1781701462502.png';
+import imgF from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
+import imgG from '@/assets/packaging/generated/brewery_line_wide_1781701502517.png';
+import imgH from '@/assets/packaging/generated/glass_bottling_wide_1781701406159.png';
+
+const pageData: PackagingPageData = {
+  title: "Complete Line Solutions for CSD Built by SEPPA",
+  breadcrumbName: "Soft Drink Lines",
+  rootBreadcrumbName: "Complete Lines",
+  rootBreadcrumbPath: "/complete-lines",
+  headerImage: imgA.src,
+  overviewTitle: "Complete Line Solutions for CSD Built by SEPPA",
+  overviewDescription: "Running a carbonated soft drink plant is not simple. You are managing dissolved CO2 under pressure, precise brix levels, high speed filling heads, and hygiene-critical pipework all at the same time, all in sync. When any one of these variables drifts, you do not just lose a batch. You lose shelf life, consumer trust, and often a significant chunk of your line efficiency.",
+  overviewLayout: "stacked",
+  overviewsubDescription: [
+    "That is exactly the problem SEPPA set out to solve. Over more than 50 years and across 7,000+ installations worldwide, SEPPA has engineered complete line solutions from raw water intake through stretch wrap palletizing built around one core idea: a cold drink machine that does not just fill bottles but governs the entire production rhythm. A carbonated soft drink production line is only as reliable as its weakest integration point. Many manufacturers invest heavily in a single piece of equipment a filler, a carbonator, a labeler and then struggle to get consistent output because those machines were never designed to talk to each other.",
+    "SEPPA takes a different approach. Every cold drink machine configuration SEPPA delivers is engineered as a synchronized system, not an assembly of separate vendors. The blending section communicates flow rates to the carbonator. The carbonator feeds pressure data to the isobaric filler. The filler triggers downstream conveyors based on actual throughput, not an estimated cycle time. This closed-loop architecture is what separates a production line that runs from one that runs consistently. SEPPA is recognized as one of the largest manufacturers of CSD lines globally, with installations spanning small regional producers to multinational beverage groups. Whether you are filling 5,000 bottles per hour or 36,000, the engineering logic stays the same every stage of the line is designed around product integrity, not just machine speed."
+  ],
+  overviewImage: imgB.src,
+  overviewImage2: imgC.src,
+  featuresTitle: "Key Components of a CSD Production Plant",
+  featuresSubtitle: "Understanding what goes into a cold drink machine system helps you ask the right questions before you commission one. Here is how SEPPA structures a complete CSD plant:",
+  features: [
+    {
+      title: "Water Treatment",
+      description: "Consistency is required in terms of water hardness, turbidity, and bacteriology. This is why the water treatment solutions offered by SEPPA, such as multilayered sand filtering, activated charcoal filtering, reverse osmosis, and UV sterilization, are designed based on your production rate and not based on size."
+    },
+    {
+      title: "Sugar Dissolving and Syrup Preparation",
+      description: "Brix accuracy at the syrup stage determines everything downstream. SEPPA's in line sugar dissolvers use jacketed vessels with precise temperature control and inline refractometers to confirm brix before syrup moves forward. No guessing, no manual sampling."
+    },
+    {
+      title: "Proportioning and Blending",
+      description: "The proportioner is where water and syrup become a carbonated drink concentrate. SEPPA uses magnetic flow meters with closed loop PLC control to hold blend ratios within +0.05° Brix. This precision is what keeps your product consistent from the first bottle of a shift to the last."
+    },
+    {
+      title: "Carbonation and Chilling",
+      description: "CO2 absorption is a function of temperature and pressure. SEPPA's carbonation modules chill the blended product to between 2°C and 4°C before introducing CO2 in a controlled mixing vessel, achieving volumetric CO2 ratios from 2.5 to 4.5 volumes depending on the product profile. The chilled, carbonated drink then feeds directly into the filling system under back pressure to prevent premature degassing."
+    },
+    {
+      title: "Isobaric Filling",
+      description: "This is where the cold drink machine earns its reputation. SEPPA's isobaric fillers pre-pressurize each bottle with CO2 before liquid entry, equalizing pressure between the vessel and the bottle and eliminating the pressure differential that causes foaming. Electronic filling valves individually controlled per head allow fill levels to be adjusted on the fly without stopping production. The result is consistent fill weight, minimal CO2 loss, and virtually no product waste at the filler."
+    },
+    {
+      title: "Capping, Labeling, and End of Line",
+      description: "SEPPA supplies the complete downstream package: torque controlled cappers, sleeve and wrap around labelers, inkjet date and batch coding, secondary packaging, and robotic palletizers all integrated into the same control architecture as the soft drink machine upstream."
+    }
+  ],
+  contentBlocks: [
+    {
+      title: "Carbonated Soft Drink Manufacturing Process Flow",
+      paragraphs: [
+        "Walk through an actual production run on a SEPPA cold drink machine line and the sequence looks like this:",
+        "Treated water enters the proportioner alongside dissolved syrup. The magnetic flow meters lock in the target brix ratio, and the blended product moves into a plate heat exchanger that drops the temperature to the carbonation range. CO2 is dosed at controlled pressure in the saturation vessel SEPPA's systems maintain CO2 absorption consistency within 0.1 volumetric units across the entire batch.",
+        "The carbonated drink product then holds in a pressurized tank before entering the rotary filler. Each bottle PET, glass, or aluminium can enters the filling carousel under a controlled CO2 atmosphere. The isobaric valve sequence: pre pressurize, fill, shift, release. Caps are applied within seconds of fill completion to lock in the CO2 volume.",
+        "From there, filled bottles pass through an inspection station SEPPA integrates fill level and cap presence sensors as standard before entering labeling, coding, and pack off. The soft drink machine's HMI logs production data, downtime events, and OEE metrics in real time, giving plant managers actual numbers rather than estimated output."
+      ],
+      image1: imgD.src,
+      reverse: true
+    },
+    {
+      title: "Customized CSD Line Solutions for Every Production Capacity",
+      paragraphs: [
+        "Not every plant starts at 20,000 bottles per hour, and not every plant stays at its original capacity. SEPPA builds CSD lines with expansion built in from the start.",
+        "For smaller operations, SEPPA offers standalone configurations a PET blowing machine paired with an R-F-C (Rinse Fill Cap) unit, a labeler, and end of line equipment that deliver full production capability without the capital cost of a fully integrated line. These units are designed so that a Kombo™ or Kombopure™ upgrade is a defined project, not an engineering rebuild.",
+        "The Kombopure™ takes integration further by combining blow, fill, and cap operations in a single hygienic enclosure, with aseptic filling capability for products requiring the highest sterility standards. For high volume producers, SEPPA's modular cold drink machine architecture allows capacity additions extra filling heads, parallel blending circuits, additional carbonation stages without shutting down the existing line.",
+        "Moreover, SEPPA has successfully integrated lightweight PET bottle technology into their blowers. The bottles that are produced using the SEPPA equipment are capable of achieving an average weight reduction by 25% compared to traditional bottles, yet they maintain a top load capacity that is greater than 30% higher than that of traditional bottles."
+      ],
+      image1: imgE.src,
+      reverse: false,
+      bgClass:"bg-light"
+    }
+  ],
+  whyChoose: {
+    title: "Why Choose SEPPA for Complete CSD Lines?",
+    description: "There are many machinery suppliers who can sell you a cold drink machine. Fewer can design the complete process, fabricate to food grade standards, install on your site, validate the carbonation parameters, and commission the line to your speed target. SEPPA does all of it.",
+    reasons: [
+      {
+        id: "energy",
+        title: "Energy efficiency",
+        description: "Plate heat exchangers with heat recovery, variable frequency drives on all major motors, and intelligent CIP (Clean in Place) sequencing reduce utility consumption per unit produced."
+      },
+      {
+        id: "waste",
+        title: "Product waste reduction",
+        description: "Isobaric filling, controlled snifting, and pre pressurized conveyance cut product loss at the filler to under 0.3% in standard conditions."
+      },
+      {
+        id: "hygiene",
+        title: "Hygienic design",
+        description: "All product contact surfaces are 316L stainless steel, with electropolished internal pipe surfaces and zero dead leg fittings that comply with EHEDG and 3-A standards."
+      },
+      {
+        id: "flexible",
+        title: "Flexible bottle handling",
+        description: "The same cold drink machine filler can run PET, rPET, glass, and aluminium cans with format change parts, without full head replacement."
+      },
+      {
+        id: "support",
+        title: "After-sales support",
+        description: "SEPPA backs every carbonated soft drink production line with training programs, OEM spare parts availability, remote diagnostics, and scheduled maintenance agreements."
+      }
+    ]
+  },
+  methodology: {
+    title: "Complete CSD Line Methodology",
+    steps: [
+      {
+        title: "Feasibility Study & CAD Design",
+        description: "SEPPA's process for delivering a CSD line starts well before any equipment is fabricated. This is followed by the feasibility study where things like production quantity, product range, utility availability, physical constraints in the factory and regulations are all planned out even before specifying a single part. Based on these results, SEPPA’s engineers generate a CAD design for their plant layout.",
+        image: imgF.src
+      },
+      {
+        title: "Equipment Fabrication & QA",
+        description: "Equipment fabrication follows a documented QA process. Each soft drink machine module proportioner, carbonator, filler, CIP skid is factory acceptance tested before shipment. SEPPA's factory testing includes full carbonation trials at production speed to verify CO2 volumetric targets before the equipment leaves the facility.",
+        image: imgG.src
+      },
+      {
+        title: "Installation & Commissioning",
+        description: "On-site installation is managed by SEPPA's commissioning engineers, who oversee pipework completion, equipment alignment, and control system integration. The site acceptance test runs the complete carbonated drink line at rated speed for a defined period, with product samples verified against brix, CO2 volume, fill weight, and microbiological targets. Only when those parameters are confirmed does SEPPA hand over the line to the operator.",
+        image: imgH.src
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "How does a cold drink machine prevent CO2 loss during high-speed filling?",
+      answer: "SEPPA's isobaric cold drink machine fillers pre pressurize each container with CO2 before the liquid valve opens. This eliminates the pressure differential that drives foam formation. Combined with a controlled snifting sequence after fill completion, CO2 retention in finished bottles typically exceeds 98% of the dosed volume at production speeds up to 36,000 BPH."
+    },
+    {
+      question: "What causes foam during carbonated drink filling, and how is it managed?",
+      answer: "Foam forms when dissolved CO2 escapes from solution triggered by turbulence, temperature rise, or pressure drop. SEPPA addresses all three: the product is kept below 4°C from carbonation to fill, the isobaric system eliminates pressure drop at the valve, and all liquid transfer lines are designed for laminar flow with no sudden directional changes."
+    },
+    {
+      question: "Can a SEPPA cold drink machine handle both PET and glass bottles on the same line?",
+      answer: "Yes. SEPPA's filling systems are built for multi format operation. Switching between PET, glass, and aluminium requires format-specific change parts gripper heads, centering elements, filling valve adapters which are swapped during a scheduled changeover. The cold drink machine control system stores format recipes, so changeover does not require re programming, just part replacement and recipe recall."
+    },
+    {
+      question: "What is the realistic ROI on an automated CSD production line?",
+      answer: "ROI depends on production volume, current waste rates, and labor costs, but SEPPA customers running at 10,000+ BPH typically recover capital on a full carbonated soft drink production line within 3 to 5 years. The main contributors: reduced product waste from precise fill control, lower labor from automation, reduced utility consumption from heat recovery, and extended bottle run times from SEPPA's lightweight PET technology."
+    },
+    {
+      question: "How does SEPPA's Kombopure™ differ from a standard soft drink machine setup?",
+      answer: "A standard soft drink machine line uses separate blowing, rinsing, filling, and capping machines connected by conveyors. Kombopure™ integrates all four operations inside a single hygienic enclosure under controlled atmospheric conditions. This eliminates open conveyor exposure between blow and fill the highest contamination risk point in any CSD line and is the right choice for products requiring aseptic or near-aseptic filling standards."
+    }
+  ]
+};
+
+const SoftDrinkLinesPage = () => {
+  return <PackagingPageLayout data={pageData} />;
+};
+
+export default SoftDrinkLinesPage;

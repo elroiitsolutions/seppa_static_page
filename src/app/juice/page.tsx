@@ -1,39 +1,112 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
+import imgA from '@/assets/packaging/generated/juice_processing_wide_1781701462502.png';
+import imgB from '@/assets/packaging/generated/juice_bottling_closeup_1781701475686.png';
+import imgC from '@/assets/packaging/generated/sauce_banner.png';
+import imgD from '@/assets/packaging/generated/sauce_overview.png';
+
 const pageData: PackagingPageData = {
-  title: "Juice, Nectars & Soft Drinks",
-  breadcrumbName: "Juice, Nectars & Soft Drinks",
-  rootBreadcrumbName: "Liquid",
-  rootBreadcrumbPath: "/liquid",
-  overviewTitle: "Premium Solutions for Juice, Nectars & Soft Drinks",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Juice, Nectars & Soft Drinks. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  title: "Engineering the Modern Beverage Revolution: Juice, Isotonic, and Tea Processing with Seppa Solutions",
+  breadcrumbName: "Juice",
+  rootBreadcrumbName: "Complete Lines",
+  rootBreadcrumbPath: "/complete-lines",
+  headerImage: imgA.src,
+  overviewTitle: "Juice, Isotonic, Soft Beverages, and Teas Where the Real Growth Is Happening",
+  overviewDescription: "The numbers tell the story plainly. The global fruit juice industry has crossed USD 84 billion, with 100% natural juice accounting for about USD 26 billion roughly 30% of the total category. Worldwide growth is running near 14%, and in markets like India it's climbing even faster. The packaged fruit beverage segment generally breaks into three buckets: fruit drinks, nectars, and 100% juice, separated mostly by pulp content. Fruit drinks still lead by volume, nectars sit comfortably in second, and 100% juice though smaller commands the premium margins everyone wants.",
+  overviewLayout: "stacked",
+  overviewsubDescription: [
+    "Success in natural juices, nectars, isotonic sports drinks, and teas comes down to four things: consistency, quality, production efficiency, and hygiene. Strip away the marketing language and that's what survives. None of it is achievable, however, without a properly engineered juice plant designed around the chemistry of the specific product. A nectar with 40% pulp behaves nothing like a clarified apple juice, and a sugarcane drink behaves nothing like green tea. Every variable viscosity, acidity, oxidation rate, sugar load pushes the juice plant in a different direction.",
+    "High Pressure Pasteurization Quietly Rewriting the Rules",
+    "Picking the right pasteurization technology is one of the bigger decisions a beverage producer ever makes. Go too small on capacity, you'll be ordering a second machine within eighteen months. Go too big, and idle capital eats your margins. Seppa's expandable HPP machines were built specifically to solve that dilemma they scale with your business instead of forcing you to predict it perfectly on day one.",
+    "There are four practical reasons producers keep switching to high pressure pasteurization:",
+    "1. Taste that actually survives the process. HPP uses pressurized cold water nothing else. No heat, no irradiation, no chemicals. The result is a juice that tastes like it was pressed an hour ago, even weeks after bottling. Once shoppers have tasted the difference, they start hunting these products down on the shelf.",
+    "2. Real food safety. Listeria and salmonella headlines have made consumers genuinely cautious. HPP inactivates microorganisms using water pressure alone, with no preservatives required. That's a powerful claim on a label, and it's an honest one.",
+    "3. Longer shelf life with less waste. Retailers love HPP because spoilage drops sharply. Some vacuum packed fresh products now hold their quality for 30 days, which changes the entire economics of distribution.",
+    "4. Sixty years of installed experience. Seppa has commissioned more HPP systems than most of its competitors combined. In a field this specialized, that history matters it shows up in the small engineering decisions that keep a Juice Processing Plant running smoothly year after year."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Juice, Nectars & Soft Drinks Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
-  features: [
+  overviewImage: imgB.src,
+  contentBlocks: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
+      title: "Electric Pulsed Field (EPF) Pasteurization The Gentler Alternative",
+      paragraphs: [
+        "For producers who want microbial cleanliness without any meaningful heat exposure, Seppa supplies industrial EPF systems to the food, beverage, and scientific sectors. These are fully integrated, modular turnkey solutions covering both cell disintegration of solids and microbial inactivation of liquids.",
+        "The technical envelope is wide. Average power runs up to 100 kW, with pulses applied at repetition rates as high as 500 per second so every volume element gets adequately treated. Because it's a continuous short time process with a small footprint, EPF drops neatly into an existing juice line without requiring a full rebuild. Flow, temperature, and energy delivery are measured continuously, which keeps validation paperwork straightforward.",
+        "Applied to fresh juices, raw milk, yoghurt drinks, or whey, EPF inactivates microbial cells while preserving fresh taste, nutritional value, and probiotic activity. It permeabilizes cell membranes of micro organisms in a targeted way, extending shelf life without cooking out the things consumers paid extra for in the first place. For any modern juice making machine strategy that prioritizes nutrient retention, EPF deserves serious evaluation."
+      ],
+      image1: imgC.src,
+      reverse: true
     },
     {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
+      title: "How Seppa Solutions Delivers Advanced Juice Plant Processing",
+      paragraphs: [
+        "From Raw Fruit to Finished Bottle A Continuous Engineering Chain",
+        "Yield economics are won or lost at the extraction stage. Seppa's proprietary juice grinding machine uses hardened, food grade stainless contact surfaces and variable torque cutting geometry that adapts to fruit hardness soft berries one shift, fibrous pineapple the next. In typical installations, this juice grinding machine delivers extraction yields 8–12% higher than conventional crushers, which feeds directly into raw material economics. Uniform particle size also lowers downstream filtration load, so membrane life improves and CIP frequency drops.",
+        "Once extraction is done, the liquid moves into pasteurization. As covered above, Seppa offers both HPP and EPF paths, and the choice depends entirely on product strategy, target shelf life, and packaging format. What's important is that both technologies turn a basic juice making machine into a precision biochemistry tool. Where a legacy juice making machine typically over applies heat and degrades flavour, Seppa's systems balance microbial kill rates against sensory fidelity. Every juice making machine in a Seppa juice line ties back to a centralized SCADA platform, so operators see CIP cycles, pressure curves, and flow rates in real time. That integration is what converts a standalone unit into a coordinated juice line capable of running multiple SKUs with minimal manual changeover.",
+        "Energy optimization runs through everything. Heat recovery loops, regenerative pasteurizers, and variable frequency drives come standard on every Seppa juice plant, typically cutting utility costs by 18–25% against legacy benchmarks. Over a five year horizon those savings are substantial often enough on their own to justify the upgrade decision."
+      ],
+      image1: imgD.src,
+      reverse: false,
+      bgClass: "bg-light"
+    }
+  ],
+  whyChoose: {
+    title: "Why Beverage Manufacturers Choose Seppa Solutions",
+    paragraphs: [
+      "Versatility Across Product Categories: Not many producers stick to just one SKU. In a modern juice plant, they have to switch it up clear apple juice one day, pulpy mango nectar the next, and electrolyte drinks later in the week. Seppa does this with modular lines; homogenizers, deaerators, and aseptic tanks all connect to a standard hygienic setup. For specific products, they simply swap out modules during maintenance. The juice plant stays relevant even as consumer trends keep shifting.",
+      "High viscosity products are where things get genuinely tricky. Pulp rich nectars, coconut based isotonic, and plant protein drinks tend to clog conventional fillers and damage delicate cell structures. Seppa's positive displacement piston fillers and twin screw transfer pumps handle viscosities up to 50,000 cP without shearing the product, holding fill weights tight and preventing pulp settling in the bottle. One Juice Processing Plant can therefore cover everything from thin teas to dense smoothies on the same floor space.",
+      "Specialized Bottling of Sugarcane Juice: Sugarcane juice is, frankly, one of the hardest beverages to commercialize. The sucrose load typically sits between 18–22 °Brix, which is essentially a perfect breeding ground for microbes. Worse, polyphenol oxidase in the cane drives visible browning within minutes of extraction. Traditional bottling of sugarcane juice setups never really solved either problem most end up with a product that lasts hours, not weeks.",
+      "Seppa's approach is different. We combine a low oxygen extraction loop with flash pasteurization and immediate hot fill or aseptic cold fill, depending on the packaging format. The full bottling of sugarcane juice suite includes nitrogen purged headspace control, in line acidulation dosing for pH stabilization, and PET compatible aseptic filling heads rated for high sugar viscosities. Together this bottling of sugarcane juice workflow stretches shelf life from a few hours at ambient to 6–9 months, which finally opens up export markets that were structurally closed before. For producers serious about commercial bottling of sugarcane juice, this engineering depth is what separates a regional brand from a globally distributed one. Seppa's track record in juice plant spans installations across South Asia and the Middle East, with each project tuned to the local cane variety.",
+      "For multi beverage producers, scaling the juice plant to run parallel streams sugarcane on one line, cold pressed citrus on another, isotonic on a third is straightforward when the foundational engineering is sound. That flexibility is the whole point of an integrated Juice Processing Plant, and it's the reason customers keep returning for expansion projects."
+    ],
+    image: imgA.src
+  },
+  methodology: {
+    title: "Methodology: The Seppa Engineering Lifecycle",
+    steps: [
+      {
+        title: "Phase 1: Design",
+        description: "Every project at Seppa moves through four deliberate phases. Phase one is design, where process engineers model mass balance, utility consumption, and product chemistry before a single weld is made. CAD layouts get optimized for footprint, ergonomic flow, and compliance with FSSAI, FDA, and EU directives whichever applies to the customer's target markets.",
+        image: imgB.src
+      },
+      {
+        title: "Phase 2: Hygienic integration",
+        description: "The full Juice Processing Plant is constructed in 316L stainless with 3-A sanitary fittings and crevice free welds. CIP and SIP circuits are zoned carefully so flavor cross-contamination between SKUs becomes a non issue.",
+        image: imgC.src
+      },
+      {
+        title: "Phase 3: Commissioning",
+        description: "Each juice making machine and juice grinding machine gets performance validated against contractual KPIs yield percentage, microbial reduction logs, energy draw, and OEE. Operator training happens on-site, so the juice line runs at design capacity from the very first shift, not three months later.",
+        image: imgD.src
+      },
+      {
+        title: "Phase 4: Long-term optimization",
+        description: "Service contracts include predictive maintenance dashboards, pre positioned spares, and quarterly performance audits. This is the phase customers tend to underestimate, and it's also why producers commissioning a greenfield juice plant or expanding an existing juice plant facility typically come back to Seppa for their second and third projects.",
+        image: imgA.src
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "How does Seppa extend shelf life without using preservatives?",
+      answer: "By combining HPP and EPF technologies, Seppa inactivates spoilage organisms without thermal damage. HPP treated juices held under refrigeration typically reach 30–45 days. EPF treated products filled aseptically into PET can stretch to 6–9 months at ambient temperature all preservative free."
     },
     {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
+      question: "How is nutrient retention validated inside a Seppa juice plant?",
+      answer: "Every Seppa juice plant is commissioned with third party laboratory verification covering vitamin retention, polyphenol activity, and colour stability over time. Non thermal pasteurization typically preserves 90–95% of heat sensitive vitamins, versus 60–70% in legacy thermal lines."
     },
     {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      question: "What CIP protocols are recommended for sugar-rich beverages?",
+      answer: "Seppa's automated CIP skids complete this cycle in 35–45 minutes, which matters enormously for any Juice Processing Plant running multiple sugar heavy SKUs or commercial juice line operations."
+    },
+    {
+      question: "What's the typical ROI on a greenfield juice plant?",
+      answer: "A well designed greenfield juice plant generally pays back within 3–4 years, depending on product mix, pricing strategy, and capacity utilization. Premium segments cold pressed juice and sugarcane in particular tend to recover capital faster, often inside 24–30 months when brand positioning holds the price."
+    },
+    {
+      question: "Can a single juice grinding machine handle multiple fruit types?",
+      answer: "Seppa's juice grinding machine has adjustable rotor geometry and interchangeable screen sizes. So, one unit processes citrus, stone fruits, berries, and fibrous tropical, needing about a 15 minute switch between each type."
     }
   ]
 };

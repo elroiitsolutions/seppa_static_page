@@ -37,17 +37,19 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Dynamic header classes - sticky behavior only on desktop
-  const headerClass = `top-0 left-0 w-full z-50 transition-all duration-300 absolute lg:fixed ${
-    scrolled 
-      ? 'bg-transparent lg:bg-[#101934]/95 lg:backdrop-blur-md pt-4 lg:pt-3 lg:pb-0 lg:shadow-lg' 
+  // Dynamic header classes - sticky behavior across all viewports
+  // NOTE: Using fully opaque bg-seppa-blue instead of bg-seppa-blue/95 + backdrop-blur-md
+  // because Chrome composites semi-transparent backgrounds over blurred content differently
+  // than Edge, causing a brownish/maroon tint instead of the intended dark navy.
+  const headerClass = `top-0 left-0 w-full z-50 transition-all duration-300 fixed ${scrolled
+      ? 'bg-seppa-blue pt-3 pb-3 lg:pb-0 shadow-lg'
       : 'bg-transparent pt-4 lg:pt-8'
-  }`;
+    }`;
 
   const linkClass = "font-medium hover:text-gold transition flex items-center gap-1 py-2 text-white";
 
   const dropdownClass = "absolute top-full left-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
-  const dropdownItemClass = "px-6 py-2.5 hover:text-dark transition-colors block w-full text-left";
+  const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left";
 
   return (
     <header className={headerClass}>
@@ -119,7 +121,7 @@ const Header: React.FC = () => {
                   <Link href="/flavored-vitaminized-water" className={dropdownItemClass}>Flavored Vitaminized Water</Link>
                 </div>
               </div>
-              <Link href="/soft-drink-line-machines" className={dropdownItemClass}>Soft Drink / Beverages</Link>
+              <Link href="/soft-drinks" className={dropdownItemClass}>Soft Drink / Beverages</Link>
               <div className="relative group/sub">
                 <Link href="/juice" className="px-6 py-2.5 hover:text-dark transition-colors w-full flex items-center justify-between gap-2 group/link">
                   <span className="leading-snug">Juices & Nectars</span>
@@ -160,10 +162,10 @@ const Header: React.FC = () => {
             <div className={dropdownClass}>
               <Link href="/complete-lines" className={dropdownItemClass}>Complete Lines</Link>
               <Link href="/liquid" className={dropdownItemClass}>Water Lines</Link>
-              <Link href="/soft-drink-line-machines" className={dropdownItemClass}>Soft Drink & Beverages Lines</Link>
+              <Link href="/soft-drink-lines" className={dropdownItemClass}>Soft Drink & Beverages Lines</Link>
               <Link href="/juice-line-machines" className={dropdownItemClass}>Juice & Nectars Lines</Link>
               <Link href="/beer-line-machines" className={dropdownItemClass}>Beer Lines</Link>
-              <Link href="/wine-me" className={dropdownItemClass}>Wine & Mead Lines</Link>
+              <Link href="/wine-mead-lines" className={dropdownItemClass}>Wine & Mead Lines</Link>
               <Link href="/liquor-spirits-line-machines" className={dropdownItemClass}>Liquor & Spirits Lines</Link>
               <Link href="/dairy-product-line-machines" className={dropdownItemClass}>Liquid  Dairy Products</Link>
               <Link href="/ketchup-sauce-filling-line-machines" className={dropdownItemClass}>Ketchups & Sauces </Link>
@@ -173,7 +175,7 @@ const Header: React.FC = () => {
             <button className={linkClass}>
               Equipments<FiChevronDown className="text-sm opacity-70" />
             </button>
-            <div className="absolute top-full -left-64 mt-2 w-[90vw] lg:w-[900px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-3 grid grid-rows-6 grid-flow-col">
+            <div className="absolute top-full -left-54 mt-2 w-[90vw] lg:w-[850px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-6 grid grid-cols-2 lg:grid-cols-4 gap-y-2">
               {/* Column 1 */}
               <Link href="/processing" className={dropdownItemClass}>Processing</Link>
               <Link href="/blowing" className={dropdownItemClass}>Blowing</Link>
@@ -224,13 +226,13 @@ const Header: React.FC = () => {
         <div className="hidden lg:flex items-center gap-2 group cursor-pointer">
           <Link
             href="/contact-us"
-            className="px-6 py-3 rounded-full font-bold transition duration-300 bg-[#101934] text-white group-hover:bg-seppa-red tracking-wide"
+            className="px-6 py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white group-hover:bg-seppa-red tracking-wide"
           >
             Contact Us
           </Link>
           <Link
             href="/contact-us"
-            className="w-12 h-12 rounded-full bg-seppa-red group-hover:bg-[#101934] transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
+            className="w-12 h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
           >
             <svg className="transform transition-transform duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
           </Link>
@@ -247,79 +249,9 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Content */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-[#101934] z-40 pt-24 pb-8 px-6 overflow-y-auto shadow-2xl animate-in slide-in-from-right duration-300">
+        <div className="lg:hidden fixed inset-0 bg-seppa-blue z-40 pt-24 pb-8 px-6 overflow-y-auto shadow-2xl animate-in slide-in-from-right duration-300">
           <div className="flex flex-col space-y-4 text-lg pb-10">
             <Link href="/" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-            
-            {/* Products */}
-            <details className="group border-b border-white/10 pb-2">
-              <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                Products <FiChevronDown className="transition-transform group-open:rotate-180" />
-              </summary>
-              <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
-                <Link href="/complete-lines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Complete Lines</span>
-                </Link>
-                
-                <div className="font-medium text-seppa-red">Bottling</div>
-                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Soft Drinks / Carbonated Beverages</span>
-                </Link>
-                <Link href="/juice-line-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Juice / Non-Carbonated Beverages</span>
-                </Link>
-                <Link href="/beer-line-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Beer</span>
-                </Link>
-                <Link href="/dairy-product-line-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Dairy</span>
-                </Link>
-                <Link href="/ketchup-sauce-filling-line-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Ketchup / Sauce</span>
-                </Link>
-                <Link href="/water-bottle-filling-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Water</span>
-                </Link>
-                
-                <div className="font-medium text-seppa-red pt-2">Filling Technologies</div>
-                <Link href="/rinsing-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Rinsers</span>
-                </Link>
-                <Link href="/capping-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Cappers</span>
-                </Link>
-                <Link href="/labeling-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Labellers</span>
-                </Link>
-                <Link href="/bottle-handling-systems" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Bottle Handling Systems</span>
-                </Link>
-                <Link href="/conveyors" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Conveyors</span>
-                </Link>
-                <Link href="/kombination-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Kombination Machines (Rinser-Filler-Capper)</span>
-                </Link>
-                <Link href="/monobloc-filling-machines" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Monobloc Filling Machines</span>
-                </Link>
-              </div>
-            </details>
-
             {/* Packaging */}
             <details className="group border-b border-white/10 pb-2">
               <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
@@ -401,12 +333,12 @@ const Header: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Flavored Vitaminized Water</span>
                 </Link>
-                
-                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+
+                <Link href="/soft-drinks" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Soft Drink / Beverages</span>
                 </Link>
-                
+
                 <div className="font-medium text-seppa-red pt-2">Juices & Nectars</div>
                 <Link href="/juice" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
@@ -499,7 +431,7 @@ const Header: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Water Lines</span>
                 </Link>
-                <Link href="/soft-drink-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/soft-drinks" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Soft Drink & Beverages Lines</span>
                 </Link>
@@ -511,7 +443,7 @@ const Header: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Beer Lines</span>
                 </Link>
-                <Link href="/wine-me" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/wine-mead-lines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Wine & Mead Lines</span>
                 </Link>
@@ -573,7 +505,7 @@ const Header: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Carton Handling</span>
                 </Link>
-                
+
                 <div className="font-medium text-seppa-red pt-2">Labelling & Packaging</div>
                 <Link href="/labelling" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
@@ -595,7 +527,7 @@ const Header: React.FC = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Stretch Wrapping</span>
                 </Link>
-                
+
                 <div className="font-medium text-seppa-red pt-2">Ancillary & Others</div>
                 <Link href="/crate-stacker" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>

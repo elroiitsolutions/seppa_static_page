@@ -13,7 +13,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, breadcrumbs, bgImage }) 
   const backgroundUrl = bgImage || "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/page-header-bg.jpg";
   
   return (
-    <section className="pt-52 pb-28 relative overflow-hidden">
+    <section className="pt-32 lg:pt-52 pb-16 lg:pb-28 relative overflow-hidden">
       {/* Background Image with Animation */}
       <motion.div 
         className="absolute inset-0 bg-cover bg-center"

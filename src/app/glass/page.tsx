@@ -1,14 +1,17 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import top from '@/assets/packaging/gable/gabletop1.jpg';
-import machine from '@/assets/packaging/brick/machine.jpg';
-import packag from '@/assets/packaging/brick/package.webp';
-import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
-import brickAvif from '@/assets/packaging/brick/brickcarton.avif';
+import top from '@/assets/packaging/generated/glass_bottles_closeup_1781701419649.png';
+import machine from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import packag from '@/assets/packaging/generated/wine_bottles_closeup_1781701540385.png';
+import brickCarton from '@/assets/packaging/generated/beer_bottling_closeup_1781701513819.png';
+import brickAvif from '@/assets/packaging/generated/premium_spirits_closeup_1781701569217.png';
+import fillingImg from '@/assets/packaging/generated/glass_bottling_wide_1781701406159.png';
+import pouchMachine from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
 
 const pageData: PackagingPageData = {
   title: "Glass Bottle Filling & Packaging",
   breadcrumbName: "Glass",
+  headerImage: fillingImg.src,
   overviewTitle: "What’s timeless, classic, and beautiful to look at? The answer is Water, Juice, Dairy, Liquor, CSD, Beer, Wine, Pharma, Cosmetic etc products in glass packaging.",
   overviewDescription: "",
   overviewsubDescription: [
@@ -49,7 +52,9 @@ const pageData: PackagingPageData = {
         "This high barrier means that your product is less likely to become contaminated, and it will stay fresh for longer.",
         "The world is full of health scares and terrifying food contamination stories. Don’t let your brand become another news story. Keep your customers safe and healthy so they’ll keep coming back for years to come."
       ],
-      image1: machine.src
+      image1: machine.src,
+      image2: fillingImg.src,
+      layout: "stacked"
     },
     {
       title: "SURFACE VALUE: BEAUTIFUL, ATTRACTIVE DAIRY PRODUCTS IN GLASS CONTAINERS",
@@ -71,7 +76,7 @@ const pageData: PackagingPageData = {
         "This can cause issues when your customers are trying to get the last little bit out, or trying to scoop the product out.",
         "Glass always stays the same. It’s solid and will not lose its shape regardless of how much you try to bend it or twist it. When it’s time to get down to the last little bit, it’s easy to get around because the container won’t move. Solid glass manufacture ensures lasting structural integrity."
       ],
-      image1: top.src
+      image1: fillingImg.src
     },
     {
       title: "ENVIRONMENTAL BENEFITS FROM GLASS PRODUCT PACKAGING",
@@ -84,9 +89,10 @@ const pageData: PackagingPageData = {
         "SEPPA offers a wide range of Glass bottle Washing/Rinsing, Filling and Capping equipment’s, Semi automatic to Fully automatic, Low speed as well as high speed lines to service the needs of various industries and products.",
         "SEPPA also offers complete line solutions for Glass bottle. This includes Crate washers, Glass bottle washers, Rinse filler Cappers, Date and Batch Coders, Tunnel Pasteurizers/Coolers, Multiple Shrink/Carton packaging equipment’s, Palletizers and Stretch wrappers. SEPPA offers complete Glass bottle line solutions for CSD, Beer, RTD’s, Liquor, Milk, Juice and Wine."
       ],
-      image1: machine.src,
+      image1: pouchMachine.src,
       bgClass: "bg-white",
-      reverse: true
+      reverse: true,
+      layout: "stacked"
     }
   ],
   faqTitle: "Frequently Asked Questions",
@@ -111,7 +117,8 @@ const pageData: PackagingPageData = {
       question: "What makes glass manufacture so durable?",
       answer: "Industrial glass manufacture involves melting raw materials at extremely high temperatures, resulting in incredible strength. Any established glass making company will ensure robust walls and bases. By selecting top glass manufacturers near me or global glass manufacturing companies, you receive containers built via expert glass manufacture that resist warping, utilizing the best glass manufacture practices. Reliable glass manufacture is key. Reviewing local glass manufacturers near me helps verify this."
     }
-  ]
+  ],
+  hideWhyChoose:true
 };
 
 const GlassPage = () => {

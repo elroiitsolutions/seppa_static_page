@@ -17,19 +17,19 @@ const testimonials = [
   {
     name: "Rajesh Vardhan",
     quote: "Seppa's Kombo Pure monobloc system cut our floor footprint by 40% while maintaining absolute sterility. Their turnkey water line engineering is unmatched.",
-    image: "pics/Rajesh.jpg",
+    image: "/pics/Rajesh.jpg",
     rating: 5
   },
   {
     name: "Marcus Vance",
     quote: "Their high-speed RFC filling system and four-axis automated palletizer completely streamlined our CSD production, halving our end-of-line logistics costs.",
-    image: "pics/Marcus.jpg",
+    image: "/pics/Marcus.jpg",
     rating: 5
   },
   {
     name: "Amara Al-Jamil",
     quote: "The combination of Non-Thermal Pasteurization and Aseptic Non-Contact Fillers extended our juice shelf life perfectly with zero contamination risks.",
-    image: "pics/Amara.jpg",
+    image: "/pics/Amara.jpg",
     rating: 5
   }
 ];

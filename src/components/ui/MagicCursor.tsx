@@ -51,6 +51,7 @@ const MagicCursor: React.FC = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line
     setIsMounted(true);
   }, []);
 
@@ -64,9 +65,9 @@ const MagicCursor: React.FC = () => {
 
   return (
     <div className="pointer-events-none fixed inset-0 z-[9999]" style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
-      {/* Inner delayed dot */}
+      {/* Inner delayed dot — no mix-blend-mode for cross-browser consistency */}
       <motion.div 
-        className="fixed top-0 left-0 w-2 h-2 bg-seppa-red rounded-full mix-blend-difference"
+        className="fixed top-0 left-0 w-2 h-2 bg-seppa-red rounded-full"
         style={{
           x: springX,
           y: springY,

@@ -37,7 +37,7 @@ const SingleService: React.FC = () => {
     'sparkling-water': 'Liquid',
     'structured-water': 'Liquid',
     'flavored-vitaminized-water': 'Liquid',
-    'soft-drink-line-machines': 'Liquid',
+    'soft-drinks': 'Liquid',
     'juice': 'Liquid',
     'isotonics': 'Liquid',
     'teas': 'Liquid',
