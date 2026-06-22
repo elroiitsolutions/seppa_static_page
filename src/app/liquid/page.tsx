@@ -1,13 +1,13 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import bannerImg from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
-import overviewImg from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
-import img1 from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import bannerImg from '@/assets/packaging/generated/mineral_banner_1781682222147.png';
+import overviewImg from '@/assets/packaging/generated/mineral_overview_1781682238039.png';
+import img1 from '@/assets/packaging/generated/mineral_m1_1781682252112.png';
 import img2 from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
-import img3 from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
-import meth1 from '@/assets/packaging/pouch/moderm.webp';
-import meth2 from '@/assets/packaging/can/commissing.webp';
-import meth3 from '@/assets/packaging/can/install.webp';
+import img3 from '@/assets/packaging/generated/mineral_m2_1781682264072.png';
+import meth1 from '@/assets/packaging/generated/mineral_m3_1781682280126.png';
+import meth2 from '@/assets/packaging/generated/mineral_overview_1781682238039.png';
+import meth3 from '@/assets/packaging/generated/mineral_banner_1781682222147.png';
 
 const pageData: PackagingPageData = {
   title: "Complete Water and Sparkling Water Production Line Solutions",

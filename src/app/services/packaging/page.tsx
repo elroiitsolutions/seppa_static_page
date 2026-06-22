@@ -1,16 +1,16 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
-import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
-import overviewImg from '@/assets/blowing/generated/blowing_overview_1781759662496.png';
-import img1 from '@/assets/processing/generated/processing_cb1_1781759122683.png';
-import img2 from '@/assets/processing/generated/processing_cb2_1781759136791.png';
-import over from '@/assets/processing/generated/processing_whychoose_1781759182691.png';
+import bannerImg from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import overviewImg from '@/assets/packaging/can/overview.jpg';
+import img1 from '@/assets/packaging/can/Can-Filling-Packaging-Line.webp';
+import img2 from '@/assets/packaging/can/filling.png';
+import over from '@/assets/packaging/can/gtl-packaging-filling-line-scheme.webp';
 
-import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.png';
-import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
-import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
-import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
+import meth1 from '@/assets/packaging/can/commissing.jpeg';
+import meth2 from '@/assets/packaging/can/install.webp';
+import meth3 from '@/assets/packaging/can/training.webp';
+import meth4 from '@/assets/packaging/can/overview.jpg';
 
 const pageData: PackagingPageData = {
   title: "Packaging",
@@ -45,7 +45,7 @@ const pageData: PackagingPageData = {
       ],
       image1: img2.src,
       reverse: false,
-      bgClass:"bg-light"
+      bgClass: "bg-light"
     },
     {
       title: "What automation actually buys a manufacturer",
