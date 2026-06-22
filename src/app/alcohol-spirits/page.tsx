@@ -1,40 +1,125 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import top from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
+import bannerImg from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
+import overviewImg from '@/assets/packaging/generated/premium_spirits_closeup_1781701569217.png';
+import wineProd from '@/assets/packaging/generated/wine_production_wide_1781701527332.png';
 
 const pageData: PackagingPageData = {
-  title: "Alcohol & Spirits",
+  title: "Alcohol & Spirits Processing Solutions",
   breadcrumbName: "Alcohol & Spirits",
-  rootBreadcrumbName: "Liquid",
-  rootBreadcrumbPath: "/liquid",
-  overviewTitle: "Premium Solutions for Alcohol & Spirits",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Alcohol & Spirits. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  rootBreadcrumbName: "Services",
+  rootBreadcrumbPath: "/services",
+  headerImage: bannerImg.src,
+  overviewTitle: "Alcohol & Spirits Processing Solutions for Modern Production",
+  overviewDescription: "The production of premium alcohol spirits requires a sophisticated infrastructure that seamlessly balances industrial scale throughput with the delicate artisanal requirements of high quality liquids. In contemporary beverage operations, the margin for error is effectively zero. Every single drop must represent absolute chemical purity, rigorous molecular consistency, and strict adherence to uncompromising safety compliance.",
+  overviewsubDescription: [
+    "As an expert distillation engineer and process architect, I understand intimately that the complex thermodynamics of high proof spirit processing dictate incredibly stringent design parameters. Vapor liquid equilibrium must be maintained flawlessly across the system to separate volatile heads, desirable hearts, and heavy tails with surgical precision.",
+    "To engineer these liquids safely, modern alcohol manufacturing demands robust architectures. The turnkey manufacturing lines developed by Seppa Solutions function in dangerous, EX classed conditions while providing stable and pure alcoholic fluids."
   ],
-  overviewImage: top.src,
-  featuresTitle: "Key Features of Our Alcohol & Spirits Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
+  overviewImage: overviewImg.src,
+  featuresTitle: "Key Applications of Alcohol & Spirits Processing Systems",
+  featuresSubtitle: "At the core of the engineering behind exceptional alcohol spirits are the unforgiving mechanics of fluid dynamics and thermal exchange.",
   features: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
+      title: "High Efficiency Distillation Columns",
+      description: "Engineered for precise ethanol cut points, utilizing meticulously calculated column reflux ratios to ensure unparalleled molecular fractionation. These state of the art fractionation systems actively strip away undesirable congeners and heavy fusel oils."
     },
     {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
+      title: "Multi-Stage Filtration Systems",
+      description: "The complete facility architecture requires multi stage filtration systems that guarantee absolute clarity and a flawless polish before the liquid reaches the bottling line. These advanced modules utilize specialized media to facilitate critical heavy metals removal."
     },
     {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
+      title: "Modular, Scalable Architecture",
+      description: "Modern alcohol manufacturing demands a modular, scalable architecture to accommodate multi tiered processes efficiently. By leveraging Seppa Solutions' technology, producers transition seamlessly from high proof concentration to dilution, utilizing automated proof control."
+    }
+  ],
+  whyChoose: {
+    title: "Why Choose Seppa Solutions for Alcohol & Spirits Processing?",
+    description: "Seppa Solutions stands proudly as the premier, authoritative engineering partner for the global distillery sector.",
+    image: wineProd.src,
+    paragraphs: [
+      "Major international distillers explicitly trust our highly integrated systems for alcohol production because of our unyielding expertise in the complex scientific nuances of distilled spirits processing. We do not simply build standard machines; we architect complete, highly optimized thermodynamic environments. Our proven track record in designing and delivering robust, high performance hardware for industrial alcohol manufacturing is completely unparalleled in the industry.",
+      "Our senior process engineers specifically design distillation columns that definitively maximize internal reflux efficiency while simultaneously maintaining the lowest possible energy footprint. Furthermore, our specialized filtering systems ensure that each drop of liquid processed by us exceeds the highest international regulations in relation to heavy metal filtration and complete purity of the substance. Every turnkey project we undertake involves complete dedication to ensuring safety at the facility, incorporating explosion proof technology and hygienic isolation made of stainless steel as part of the fundamental design."
+    ]
+  },
+  methodology: {
+    title: "Methodology of Alcohol & Spirits Manufacturing and Processing",
+    subtitle: "The complex engineering journey of alcohol spirits processing follows a rigorous, sequential scientific methodology.",
+    steps: [
+      {
+        title: "Feedstock Fermentation Management",
+        description: "The process begins with the raw biological conversion. Automated fermentation vessels control the metabolic rate of the yeast, preventing the formation of undesired fusel alcohols. This early stage control is essential for producing high quality alcohol spirits.",
+        image: wineProd.src
+      },
+      {
+        title: "Precision Management of Distillation Columns",
+        description: "This is the core of the operation. By utilizing specialized continuous distillation columns equipped with high resolution thermal sensors, we execute incredibly precise fractionating cuts. This separates the harsh foreshots from the clean, pure ethanol.",
+        image: bannerImg.src
+      },
+      {
+        title: "Post-Distillation Refinement & Polishing",
+        description: "The raw distilled spirits undergo a rigorous, multi stage filtering sequence to eliminate any final trace impurities, ensuring the end liquid meets the strictest regulatory purity requirements.",
+        image: overviewImg.src
+      },
+      {
+        title: "Automated, Explosion-Proof Bottling",
+        description: "The finished alcohol is then transferred to our specialized, ATEX certified bottling lines. These systems handle the highly volatile liquid in a completely safe, inert environment, guaranteeing absolute safety and perfect volumetric accuracy.",
+        image: wineProd.src
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "How do Seppa’s distillation columns optimize yield in large scale alcohol production?",
+      answer: "Our proprietary distillation columns are meticulously engineered using advanced computational fluid dynamics to definitively maximize vapor liquid contact. By digitally controlling the crucial column reflux ratios and primary thermal inputs, the system ensures maximum volumetric ethanol extraction from the wash, dramatically optimizing the overall commercial yield of your continuous alcohol production runs."
     },
     {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      question: "Why is multi stage processing with filtration systems critical for premium alcohol spirits?",
+      answer: "Premium alcohol spirits fundamentally require absolute visual perfection and total chemical purity. Our heavy duty, multi stage filtration systems systematically and automatically execute precision heavy metals removal, harsh lipid reduction, and microscopic particulate extraction. This progressive refinement guarantees that the final liquid is exceptionally smooth, highly shelf stable, and entirely free of haze inducing compounds."
+    },
+    {
+      question: "Why does facility safety require specialized, EX rated protocols?",
+      answer: "The core creation of high proof ethanol inherently involves handling highly volatile, pressurized vapours. The production facility must absolutely adhere to uncompromising safety standards. Seppa integrates advanced explosion proof sensor integration, heavily shielded intrinsically safe wiring, and robust ventilation protocols to entirely eliminate dangerous ignition risks within these high pressure environments."
+    },
+    {
+      question: "How does Seppa maintain the molecular consistency of complex distilled spirits?",
+      answer: "Through the relentless deployment of automated, electronic proof control and highly precision driven thermal management, our integrated systems continuously monitor the chemical composition of the fluid flow. This precise engineering ensures that the delicate congeners uniquely defining premium distilled spirits are meticulously preserved, resulting in absolute batch to batch flavour stability."
+    },
+    {
+      question: "Why is Seppa Solutions considered the benchmark for alcohol spirits technology?",
+      answer: "We uniquely master massive industrial scale throughput alongside the extremely delicate precision required for award winning liquids. From initial raw feedstock handling passing through our advanced thermal systems and robust polishing units, to final explosion proof bottling operations, Seppa’s meticulously engineered lines define the modern global standard for highly safe processing and exceptionally pure alcohol spirits processing."
+    }
+  ],
+  applicationsTitle: "Types of Alcohol & Spirits Produced Using Advanced Processing Lines",
+  applicationsSubtitle: "The operational versatility of a well engineered processing plant dictates both its functional lifespan and its overall profitability.",
+  applications: [
+    {
+      title: "Clear, Unaged Spirits",
+      description: "For clear, unaged alcohol spirits, the engineering goal is absolute chemical neutrality; the system must aggressively strip micro impurities."
+    },
+    {
+      title: "Aged Dark Spirits",
+      description: "When producing aged dark spirits like whiskey or rum, the processing line must intentionally preserve specific flavour bearing congeners that actively contribute to spirit maturation dynamics during prolonged barrel aging."
+    },
+    {
+      title: "Botanical Infusions & Diverse Distillates",
+      description: "From high proof vodka to complex, botanical infused gins, Seppa’s systems manage the unique chemical requirements of wildly diverse distilled spirits without sacrificing quality."
+    },
+    {
+      title: "Adaptable Operational Versatility",
+      description: "Our advanced processing lines adapt to these distinct thermodynamic requirements through programmable logic controllers and dynamic valve routing, allowing ambitious producers to rapidly expand their portfolio."
+    }
+  ],
+  contentBlocks: [
+    {
+      title: "Benefits of Automated Alcohol & Spirits Production Lines",
+      image1: bannerImg.src,
+      paragraphs: [
+        "The strategic transition from basic manual oversight to a fully automated line for alcohol spirits is absolutely essential for long term market competitiveness. The primary operational advantage is absolute consistency in the final flavour profile. Automated processing systems completely eliminate human error when making critical chemical cuts between volatile heads, pristine hearts, and oil laden tails. Furthermore, automated alcohol production yields a highly significant reduction in hazardous biological waste by perfectly optimizing the thermal efficiency of the facility's reboilers and condensers.",
+        "Real time proof monitoring via sophisticated electronic proof control allows for instantaneous micro adjustments, entirely preventing the costly over dilution or under proofing of incredibly valuable distilled spirits. Automation of the thermodynamic processes that underlie the production of high proof alcohol makes permanent improvements to the safety system of the factory. Overall, the mechanical reliability of an automated production line of alcohol spirits offers a very tangible return on investment to the producer. The overarching, long term benefits to modern alcohol manufacturing include maximally optimized yield, drastically minimized energy consumption, and an uncompromising standard of final product purity."
+      ],
+      layout: "stacked"
     }
   ]
 };
