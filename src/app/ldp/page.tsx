@@ -1,45 +1,86 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import bannerImg from '@/assets/packaging/generated/dairy_banner.png';
+import overviewImg from '@/assets/packaging/generated/dairy_overview.png';
 
 const pageData: PackagingPageData = {
-  title: "Liquid Dairy Products (LDP)",
-  breadcrumbName: "Liquid Dairy Products (LDP)",
+  title: "Liquid Dairy Products Processing | Seppa Solutions",
+  breadcrumbName: "Liquid Dairy Products",
   rootBreadcrumbName: "Liquid",
   rootBreadcrumbPath: "/liquid",
-  overviewTitle: "Premium Solutions for Liquid Dairy Products (LDP)",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Liquid Dairy Products (LDP). Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  headerImage: bannerImg.src,
+  overviewTitle: "Liquid Dairy Products We Process",
+  overviewDescription: "Running a dairy processing plant today means handling a far wider product range than it did twenty years ago. White pasteurized milk is still the backbone, but the product list has grown. Flavoured milk, drinking yoghurt, sweetened condensed milk, lactic acid beverages, infant formula, and ESL cream all share the same production floor and each one brings different thermal, sterile, and homogenization requirements with it.",
+  overviewsubDescription: [
+    "Seppa Solutions designs and commissions equipment for this full product range. Standard HTST pasteurized milk for regional distribution, UHT milk for export or hot climate markets, fortified milk drinks, probiotic dairy blends a plant handling this variety cannot run on single purpose machinery. It needs modular, reconfigurable lines built to food grade standards from the ground up.",
+    "Global consumption of white milk and liquid dairy products is forecast to reach 350 billion litres annually, up from 270 billion litres in 2010. Asia Pacific alone accounts for more than the rest of the world combined. India the world's largest milk consumer is shifting steadily from loose milk to packaged formats. About 55% of white milk sold in developing markets was packaged by 2014, trending toward 70%. Those numbers are not just market statistics. They define the engineering requirements every dairy plant manufacturer has to meet."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Liquid Dairy Products (LDP) Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
+  overviewImage: overviewImg.src,
+  featuresTitle: "Advanced Dairy Processing Equipment and Technology",
+  featuresSubtitle: "Producing safe, nutritionally consistent liquid dairy milk at scale depends on three things: precise thermal processing, effective separation, and contamination free filling. Seppa Solutions provides dairy processing equipment that covers all three.",
   features: [
+    { title: "Homogenization", description: "Homogenization breaks fat globules in raw milk down to a uniform size, preventing cream separation and improving mouthfeel. Our high pressure homogenizers operate consistently across a wide viscosity range important when the same line handles full fat milk in the morning and flavoured dairy drinks in the afternoon." },
+    { title: "UHT Sterilization", description: "UHT (Ultra-High Temperature) sterilization holds product at 135–145°C for two to four seconds, eliminating all pathogenic and spoilage micro organisms. The result is a liquid dairy milk product with a shelf life of six to twelve months without refrigeration critical for markets in South Asia, Southeast Asia, and parts of Africa where cold chain infrastructure is still developing. UHT systems in our dairy processing plant configurations use regenerative heat exchangers that recover up to 85% of the thermal energy, reducing both energy costs and steam load." },
+    { title: "Separation Systems", description: "Separation systems remove bacteria, somatic cells, and spores at the clarification stage before pasteurization, which directly improves the consistency of the downstream process. For ESL products specifically, separator efficiency at this stage is what separates a 30 day shelf life from a 60 day one." },
+    { title: "Comprehensive Solutions", description: "Our dairy processing range includes everything needed to support efficient, high quality production, from cream standardization units and inline CIP systems to aseptic buffer tanks and automated dosing equipment for vitamins and other nutritional additives." }
+  ],
+  applicationsTitle: "Key Benefits of a Modern Dairy Processing Plant",
+  applicationsSubtitle: "The business case for investing in properly designed dairy processing equipment goes beyond capacity. Here is what a well engineered production facility actually delivers:",
+  applications: [
+    { title: "Operational Efficiency", description: "Automated flow control, real time PLC monitoring, and properly sized buffer tanks keep line utilization above 90% during production runs. A milk processing plant losing 15% of available time to product changeover or unplanned downtime is a plant that needs a process audit, not just new equipment." },
+    { title: "Waste Reduction", description: "Inline standardization at the separator means less product loss at the start and end of each run. For a mid scale milk product factory producing 50,000 litres of liquid dairy milk per day, reducing product waste by 1% saves roughly 500 litres daily. That adds up." },
+    { title: "Food Safety Compliance", description: "Every dairy processing plant we commission is validated against the relevant FSSAI (India), FDA (US), or EU dairy hygiene directives. CIP validation, swab testing of all product contact surfaces, and allergen rinse verification are part of standard commissioning. Dairy processing equipment that passes validation the first time saves weeks of delay at the most expensive point in the project." },
+    { title: "Packaging Flexibility", description: "Glass bottles, PET, multi layer pouches, plastic cups the final packaging format affects line design significantly. A dairy processing plant configured for aseptic carton filling runs very differently from one using blow fill seal PET. Seppa helps clients select the packaging format that matches their market and their processing constraints before the line is designed." }
+  ],
+  whyChoose: {
+    title: "Why Dairy Manufacturers Choose Seppa Solutions",
+    description: "Most dairy plant manufacturers will give you equipment. Fewer understand how that equipment has to work inside a functioning milk product factory under real production pressure.",
+    paragraphs: [
+      "Seppa has been involved in dairy processing plant projects across India and export markets. We know what breaks. We know which process steps create the most downtime. And we know that the difference between a milk processing plant that meets capacity targets and one that doesn't often comes down to decisions made during layout design, not equipment selection.",
+      "Sanitary design is where most problems start at the design stage. Dead legs in pipework, incorrect slope angles on drain lines, surface finishes that allow biofilm buildup these are design failures, not equipment failures. Seppa Solutions applies hygienic engineering principles at every stage, from P&ID development through to final weld inspection.",
+      "Energy recovery matters more now than it did a decade ago. Dairy processing is energy intensive by nature. A UHT line in a large dairy processing plant can consume 1.5 to 2 MW of thermal energy per hour. Our systems use multi stage plate heat exchangers and heat recovery circuits that cut that load by 70–85%, which meaningfully changes the operating economics of the dairy processing plant over its working life.",
+      "Nutritional integrity is a non-negotiable requirement for infant formula and fortified milk product lines. Every degree of overprocessing destroys heat sensitive vitamins. Seppa's thermal processing systems maintain narrow temperature tolerances +0.5°C across the holding tube to ensure the product that enters the filler is the product the formulation specified."
+    ],
+    image: overviewImg.src
+  },
+  methodology: {
+    title: "How Seppa Solutions Delivers Advanced Dairy Processing Plants",
+    subtitle: "Seppa works as a turnkey supplier, which means we take responsibility from process design through to production ready commissioning not just equipment delivery.",
+    steps: [
+      { title: "Phase 1: Engineering Feasibility Study", description: "We do not sell equipment out of a catalogue. Every facility Seppa delivers starts with an engineering feasibility study that defines the product range, capacity, utility requirements, and site constraints.", image: overviewImg.src },
+      { title: "Phase 2: Layout Optimization", description: "Layout optimization comes next. A milk processing plant layout that forces product to travel 150 meters between processing steps is a layout that creates risk and cost. We use process flow simulation to minimize transfer distances, reduce the number of connections, and identify the points in the process where temperature or contamination risk is highest.", image: bannerImg.src },
+      { title: "Phase 3: Equipment Sourcing and Fabrication", description: "Equipment sourcing and fabrication follow the approved P&ID. Seppa manufactures core processing equipment tanks, heat exchangers, homogenizers, separators in house and sources specialist components like aseptic fillers and automated dosing systems from certified OEM partners.", image: overviewImg.src },
+      { title: "Phase 4: Installation and Validation", description: "Installation and validation are managed by Seppa site engineers. FAT (Factory Acceptance Testing) and SAT (Site Acceptance Testing) are standard for every plant we build. Validation documentation is prepared to meet the requirements of the applicable regulatory authority.", image: bannerImg.src },
+      { title: "Phase 5: Training", description: "Training is the final step. A milk product factory that depends entirely on the supplier for troubleshooting is a liability.", image: overviewImg.src }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
+      question: "What pasteurization efficiency can we expect from a Seppa HTST system?",
+      answer: "Our HTST pasteurizers are designed to help dairy producers meet strict milk safety standards with confidence. They achieve the 5 log reduction in Listeria monocytogenes required for Class A drinking milk, ensuring effective and reliable pasteurization."
     },
     {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
+      question: "What hygienic standards do Seppa dairy processing plant systems meet?",
+      answer: "All product contact equipment is designed to 3-A Sanitary Standards and EHEDG Category I guidelines. Surface roughness on product contact stainless steel is Ra ≤ 0.8 µm, and all welds are internally polished and videos coped before commissioning."
     },
     {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
+      question: "How do you scale production in a milk product factory as demand grows?",
+      answer: "Seppa designs dairy processing plants with modular architecture. Adding a second separator, extending the UHT holding capacity, or adding a second filler can be done without taking the existing line down for more than a planned maintenance window. We document future expansion provisions in the original P&ID."
     },
     {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      question: "What is the expected ROI on a new plant?",
+      answer: "It depends on the market, product mix, and current production losses. For clients converting from loose milk distribution to packaged liquid dairy milk in UHT cartons, the margin uplift typically recovers the equipment investment within 3 to 5 years. Energy recovery systems alone often show ROI within 18 months in high-fuel-cost markets. A competent dairy plant manufacturer will help you model these numbers before you commit to a line design."
+    },
+    {
+      question: "Can Seppa handle small and mid-scale milk processing plant projects, or only large installations?",
+      answer: "We work across scales. Our smallest plant configurations handle 5,000 litres of liquid dairy milk per day. Our largest commissioned projects have exceeded 200,000 litres per day. As a dairy plant manufacturer with experience at both ends of the scale, our engineering methodology stays consistent the difference is in the equipment sizing, not the standards we apply."
     }
   ]
 };
 
-const Page = () => {
+const LdpPage = () => {
   return <PackagingPageLayout data={pageData} />;
 };
 
-export default Page;
+export default LdpPage;

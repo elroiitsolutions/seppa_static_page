@@ -1,5 +1,6 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import top from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
 
 const pageData: PackagingPageData = {
   title: "Alcohol & Spirits",
@@ -15,7 +16,7 @@ const pageData: PackagingPageData = {
     "Advanced automation and real-time monitoring",
     "Eco-friendly and energy-saving technology"
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
+  overviewImage: top.src,
   featuresTitle: "Key Features of Our Alcohol & Spirits Systems",
   featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
   features: [

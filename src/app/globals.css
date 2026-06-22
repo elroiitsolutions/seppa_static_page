@@ -1,36 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
+@source "../**/*.{js,ts,jsx,tsx,mdx}";
 
 @theme {
   --color-gold: #D6A848;
   --color-dark: #1a1a1a;
   --color-light: #ffffff;
   --color-seppa-red: #E30D28;
+  --color-seppa-blue: #101934;
   
   --font-sans: 'Poppins', sans-serif;
   --font-heading: 'Cal Sans', sans-serif;
 }
 
+/* Self-hosted Cal Sans font — avoids CORS issues across browsers */
+@font-face {
+	font-family: 'Cal Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url('/fonts/CalSans-SemiBold.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cal Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/CalSans-Bold.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* Fallback: map weight 400 to SemiBold so existing code with font-weight:normal still works */
 @font-face {
 	font-family: 'Cal Sans';
 	font-style: normal;
 	font-weight: 400;
-	src: url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/CalSans-Regular.woff2') format('woff2'),
-		 url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/CalSans-Regular.woff') format('woff');
+	src: url('/fonts/CalSans-SemiBold.woff2') format('woff2');
 	font-display: swap;
 }
 
 @layer base {
+  /* Cross-browser color scheme consistency */
+  html {
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   body {
-    @apply font-sans bg-light text-dark antialiased;
+    @apply font-sans bg-light text-dark;
+    overflow-x: hidden;
+    width: 100%;
+    /* Ensure consistent text rendering across browsers */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-bold;
   }
+
+  /* Cross-browser backdrop-filter support */
+  .backdrop-blur-md {
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .backdrop-blur-sm {
+    -webkit-backdrop-filter: blur(4px);
+  }
+}
+
+/* Hero Video Layout — standard CSS media queries for cross-browser consistency */
+.hero-video-wrapper {
+  padding: 0;
+}
+.hero-video-inner {
+  border-radius: 0;
+}
+@media (min-width: 1024px) {
+  .hero-video-wrapper {
+    padding: 12px;
+  }
+  .hero-video-inner {
+    border-radius: 1rem;
+  }
 }
 
 /* Custom Swiper Pagination Styles */
+
 .swiper {
   padding-bottom: 40px !important;
 }

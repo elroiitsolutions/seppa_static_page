@@ -50,10 +50,41 @@ const defaultReasons = [
 export interface PackagingWhyChooseUsProps {
   title?: string;
   description?: string;
-  paragraphs?: string[];
+  paragraphs?: (string | React.ReactNode)[];
   reasons?: { id?: number | string; icon?: React.ReactNode; title: string; description: string }[];
   imageSrc?: string;
 }
+
+const ReasonItem = ({ reason }: { reason: { icon?: React.ReactNode; title: string; description: string; id?: string | number } }) => {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+  const maxLength = 120;
+  
+  const text = reason.description || "";
+  const isLongText = text.length > maxLength;
+  const displayText = isExpanded ? text : (isLongText ? text.slice(0, maxLength) + "..." : text);
+
+  return (
+    <div className="flex gap-4">
+      <div className="flex-shrink-0 w-14 h-14 bg-light rounded-xl flex items-center justify-center text-seppa-red text-2xl shadow-sm">
+        {reason.icon || <FiCheckCircle />}
+      </div>
+      <div>
+        <h4 className="text-xl font-bold font-heading text-dark mb-2">{reason.title}</h4>
+        <p className="text-gray-600 text-sm leading-relaxed">
+          {displayText}
+          {isLongText && (
+            <button 
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-seppa-red ml-1 font-medium hover:underline focus:outline-none text-xs inline-block"
+            >
+              {isExpanded ? "Read Less" : "Read More"}
+            </button>
+          )}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, description, paragraphs, reasons, imageSrc }) => {
   const displayTitle = title || "Elevating Your Brand with Superior Automation";
@@ -62,11 +93,11 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
   const displayReasons = reasons && reasons.length > 0 ? reasons : defaultReasons;
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
-          <motion.div 
+
+          <motion.div
             className="w-full lg:w-5/12"
             initial="hidden"
             whileInView="visible"
@@ -74,16 +105,16 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
             variants={fadeInUp}
           >
             <div className="rounded-[2rem] overflow-hidden h-[400px] md:h-[500px] lg:h-[750px] w-full shadow-lg relative bg-light">
-              <img 
-                src={displayImage} 
-                alt="Packaging Quality" 
+              <img
+                src={displayImage}
+                alt="Packaging Quality"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-dark/20 mix-blend-multiply"></div>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="w-full lg:w-7/12 lg:pl-8"
             initial="hidden"
             whileInView="visible"
@@ -94,35 +125,31 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
               <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
               <span className="text-sm font-medium text-dark uppercase tracking-wider">Why Choose SEPPA</span>
             </motion.div>
-            
-            <AnimatedHeading 
-              text={displayTitle} 
-              elementType="h2" 
-              className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6" 
+
+            <AnimatedHeading
+              text={displayTitle}
+              elementType="h2"
+              className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6"
             />
-            
-            <motion.p variants={fadeInUp} className="text-lg text-gray-500 mb-10 leading-relaxed">
+
+            <motion.p variants={fadeInUp} className="text-base md:text-lg text-gray-500 mb-10 leading-relaxed">
               {displayDesc}
             </motion.p>
 
             {paragraphs && paragraphs.length > 0 ? (
               <motion.div variants={fadeInUp} className="space-y-6">
                 {paragraphs.map((p, idx) => (
-                  <p key={idx} className="text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
+                  typeof p === 'string' ? (
+                    <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
+                  ) : (
+                    <React.Fragment key={idx}>{p}</React.Fragment>
+                  )
                 ))}
               </motion.div>
             ) : (
-              <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+              <motion.div variants={fadeInUp} className="grid grid-cols-1 gap-y-8">
                 {displayReasons.map((reason, index) => (
-                  <div key={reason.id || index} className="flex gap-4">
-                    <div className="flex-shrink-0 w-14 h-14 bg-light rounded-xl flex items-center justify-center text-seppa-red text-2xl shadow-sm">
-                      {reason.icon || <FiCheckCircle />}
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold font-heading text-dark mb-2">{reason.title}</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">{reason.description}</p>
-                    </div>
-                  </div>
+                  <ReasonItem key={reason.id || index} reason={reason} />
                 ))}
               </motion.div>
             )}
