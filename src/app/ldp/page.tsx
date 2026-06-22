@@ -16,6 +16,22 @@ const pageData: PackagingPageData = {
     "Global consumption of white milk and liquid dairy products is forecast to reach 350 billion litres annually, up from 270 billion litres in 2010. Asia Pacific alone accounts for more than the rest of the world combined. India the world's largest milk consumer is shifting steadily from loose milk to packaged formats. About 55% of white milk sold in developing markets was packaged by 2014, trending toward 70%. Those numbers are not just market statistics. They define the engineering requirements every dairy plant manufacturer has to meet."
   ],
   overviewImage: overviewImg.src,
+  contentBlocks: [
+    {
+      title: "How Seppa Solutions Delivers Advanced Dairy Processing Plants",
+      paragraphs: [
+        "Seppa works as a turnkey supplier, which means we take responsibility from process design through to production ready commissioning not just equipment delivery.",
+        "A typical milk processing plant project with Seppa follows this flow:",
+        "The process starts with raw milk receiving. Silos, agitators, and temperature management before the first process step determine the quality of everything downstream. Our receiving systems cover this stage with insulated storage tanks and automated temperature logging.",
+        "Milk enters the separator at the clarification stage. Bactofugation removes 99.9% of spore-forming bacteria from raw milk before pasteurization a step often skipped by lower spec suppliers that has a measurable effect on final product shelf life.",
+        "HTST or UHT processing follows, with regenerative heating and cooling sections sized specifically to the product and the target throughput of the milk product factory. Automated holding tube timing and temperature verification are built into the control logic, not added as an afterthought.",
+        "Aseptic filling lines connect directly to the UHT system via sterile jacketed transfer lines. Seppa integrates filling equipment from established OEMs including rotary cup fillers, linear sachet lines, and aseptic carton fillers into a unified line with a single SCADA interface.",
+        "CIP circuits are designed with dedicated chemical preparation and dosing units. Every CIP sequence is validated, logged, and retrievable for audit purposes. In a modern dairy processing plant, clean in place is not a maintenance procedure it is a production step with its own parameters and documentation."
+      ],
+      image1: bannerImg.src,
+      reverse: true
+    }
+  ],
   featuresTitle: "Advanced Dairy Processing Equipment and Technology",
   featuresSubtitle: "Producing safe, nutritionally consistent liquid dairy milk at scale depends on three things: precise thermal processing, effective separation, and contamination free filling. Seppa Solutions provides dairy processing equipment that covers all three.",
   features: [
@@ -44,8 +60,8 @@ const pageData: PackagingPageData = {
     image: overviewImg.src
   },
   methodology: {
-    title: "How Seppa Solutions Delivers Advanced Dairy Processing Plants",
-    subtitle: "Seppa works as a turnkey supplier, which means we take responsibility from process design through to production ready commissioning not just equipment delivery.",
+    title: "Methodology: The Seppa Engineering Lifecycle",
+    subtitle: "Every facility Seppa delivers is engineered to meet precise capacity and hygiene targets. Here is our project approach:",
     steps: [
       { title: "Phase 1: Engineering Feasibility Study", description: "We do not sell equipment out of a catalogue. Every facility Seppa delivers starts with an engineering feasibility study that defines the product range, capacity, utility requirements, and site constraints.", image: overviewImg.src },
       { title: "Phase 2: Layout Optimization", description: "Layout optimization comes next. A milk processing plant layout that forces product to travel 150 meters between processing steps is a layout that creates risk and cost. We use process flow simulation to minimize transfer distances, reduce the number of connections, and identify the points in the process where temperature or contamination risk is highest.", image: bannerImg.src },

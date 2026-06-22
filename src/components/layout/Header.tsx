@@ -46,7 +46,7 @@ const Header: React.FC = () => {
       : 'bg-transparent pt-4 lg:pt-8'
     }`;
 
-  const linkClass = "font-medium hover:text-gold transition flex items-center gap-1 py-2 text-white";
+  const linkClass = "font-medium text-sm 2xl:text-base hover:text-gold transition flex items-center gap-1 py-2 text-white";
 
   const dropdownClass = "absolute top-full left-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
   const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left";
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden xl:flex items-center space-x-3 xl:space-x-4 2xl:space-x-8">
           <div className="relative group">
             <Link href="/" className={linkClass}>
               Home
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
                   <FiChevronRight className="text-sm opacity-70 shrink-0" />
                 </Link>
                 <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
-                  <Link href="/juice" className={dropdownItemClass}>Juice , Nectars soft drinks</Link>
+                  <Link href="/juice&nectars" className={dropdownItemClass}>Juice , Nectars soft drinks</Link>
                   <Link href="/isotonics" className={dropdownItemClass}>Isotonics</Link>
                   <Link href="/teas" className={dropdownItemClass}>Teas (JNSDIT)</Link>
                 </div>
@@ -175,7 +175,7 @@ const Header: React.FC = () => {
             <button className={linkClass}>
               Equipments<FiChevronDown className="text-sm opacity-70" />
             </button>
-            <div className="absolute top-full -left-54 mt-2 w-[90vw] lg:w-[850px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-6 grid grid-cols-2 lg:grid-cols-4 gap-y-2">
+            <div className="absolute top-full -left-54 mt-2 w-[90vw] lg:w-[750px] xl:w-[850px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-4 lg:p-6 grid grid-cols-2 lg:grid-cols-4 gap-y-2 lg:gap-x-4">
               {/* Column 1 */}
               <Link href="/processing" className={dropdownItemClass}>Processing</Link>
               <Link href="/blowing" className={dropdownItemClass}>Blowing</Link>
@@ -223,24 +223,24 @@ const Header: React.FC = () => {
         </nav>
 
         {/* CTA Button */}
-        <div className="hidden lg:flex items-center gap-2 group cursor-pointer">
+        <div className="hidden xl:flex items-center gap-1 2xl:gap-2 group cursor-pointer">
           <Link
             href="/contact-us"
-            className="px-6 py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white group-hover:bg-seppa-red tracking-wide"
+            className="px-4 2xl:px-6 py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white group-hover:bg-seppa-red tracking-wide text-sm 2xl:text-base"
           >
             Contact Us
           </Link>
           <Link
             href="/contact-us"
-            className="w-12 h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
+            className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
           >
-            <svg className="transform transition-transform duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
+            <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[16px] h-[16px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
           </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className={`lg:hidden text-2xl z-50 relative text-white`}
+          className={`xl:hidden text-2xl z-50 relative text-white`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <FiX /> : <FiMenu />}
@@ -249,7 +249,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Content */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-seppa-blue z-40 pt-24 pb-8 px-6 overflow-y-auto shadow-2xl animate-in slide-in-from-right duration-300">
+        <div className="xl:hidden fixed inset-0 bg-seppa-blue z-40 pt-24 pb-8 px-6 overflow-y-auto shadow-2xl animate-in slide-in-from-right duration-300">
           <div className="flex flex-col space-y-4 text-lg pb-10">
             <Link href="/" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
             {/* Packaging */}
@@ -340,7 +340,7 @@ const Header: React.FC = () => {
                 </Link>
 
                 <div className="font-medium text-seppa-red pt-2">Juices & Nectars</div>
-                <Link href="/juice" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="/juice&nectars" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
                   <span>Juice , Nectars soft drinks</span>
                 </Link>

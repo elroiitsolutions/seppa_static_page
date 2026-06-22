@@ -42,7 +42,8 @@ const pageData: PackagingPageData = {
         "Filtration at the reception stage removes physical debris but does not touch microbial load that is the job of what comes next."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Pasteurization and Homogenization",
@@ -67,7 +68,8 @@ const pageData: PackagingPageData = {
         "Stretch wrapping and palletizing close out the line. SEPPA's pallet patterns are optimized by product and transport mode refrigerated truck loads are configured differently from ambient container loads."
       ],
       image1: img1.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     }
   ],
   whyChoose: {
@@ -94,7 +96,8 @@ const pageData: PackagingPageData = {
         title: "Long term support",
         description: "SEPPA maintains spare parts availability for more than 15 years after installation. For a dairy processing plant with a capital cost in the millions, that is not a minor consideration."
       }
-    ]
+    ],
+    image:img2.src
   },
   methodology: {
     title: "Methodology: How SEPPA Designs and Builds Your Dairy Processing Line",

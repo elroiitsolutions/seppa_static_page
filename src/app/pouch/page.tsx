@@ -27,6 +27,16 @@ const pageData: PackagingPageData = {
       ],
       image1: img1.src,
       image2: img2.src
+    },
+    {
+      title: "Benefits of High Barrier and Recyclable Pouch Packaging",
+      paragraphs: [
+        "Barrier performance determines shelf life and shelf life determines commercial viability. Most food grade flexible packaging pouches use a multi layer structure: a print layer (PET or OPP), a barrier layer (aluminium foil, EVOH, or metallized film), and a sealant layer (PE or CPP). A high barrier EVOH core brings oxygen transmission below 1 cc/m²/day versus 5,000 cc/m²/day for standard polyethylene months of additional shelf life for coffee, nuts, or cured meats without preservatives. pouch packaging machine also weigh 70% to 90% less than rigid containers, which means more units per truck and lower carbon emissions per case shipped.",
+        "On sustainability, mono material PE pouches are recyclable in standard film streams. Unilever, Nestlé, and P&G have committed to 100% recyclable packaging by 2030. The flexible packaging solutions Seppa supplies are compatible with those laminate structures, and we validate APR and RecyClass compliance as part of every project specification not as an afterthought. Manufacturing scrap on our lines runs below 1.5%, and a 1% film waste reduction on a 10 million pouch per month line pays back precision tension control within months"
+      ],
+      image1: pouch.src,
+      reverse: true,
+      bgClass:"bg-light"
     }
   ],
    applicationsTitle: "Types of Custom Pouch Packaging for Different Product Applications",

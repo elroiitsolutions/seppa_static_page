@@ -93,7 +93,9 @@ const pageData: PackagingPageData = {
         </div>
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light",
+      layout:"stacked"
     }
   ],
   whyChoose: {
@@ -103,7 +105,8 @@ const pageData: PackagingPageData = {
       "SEPPA has been designing and manufacturing complete lines for over 50 years. More than 7,000 installations globally. The systems we build today incorporate SCADA based automation, servo controlled filling, and integrated vision inspection that most conventional tomato operations have not yet adopted.",
       "For the tomato sauce production line, that means continuous pasteurizer temperature logging with automatic diversion on deviation. For bulk paste operations, it means aseptic drum filling with a validated sterility assurance level.",
       "Companies transitioning from dairy plant environments appreciate that the engineering logic is the same: control the thermal profile, eliminate contamination risk, and measure everything continuously. Whether the output is a tomato sauce production line for retail jars or bulk aseptic paste, SEPPA applies that same discipline at scale."
-    ]
+    ],
+    image: meth1.src
   },
   methodology: {
     title: "How SEPPA Designs and Builds Your Tomato Processing Plant",

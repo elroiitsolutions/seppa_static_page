@@ -58,7 +58,7 @@ const HomeHero = () => {
         Using responsive Tailwind containers to ensure proper scaling across 
         1366x768, 1440p, 1080p, 4K, and Ultrawide monitors.
       */}
-      <div className="container mx-auto 2xl:max-w-screen-2xl px-4 relative z-10 flex-1 flex flex-col justify-center pt-20 lg:pt-36 pb-8">
+      <div className="container mx-auto 2xl:max-w-screen-2xl px-4 relative z-10 flex-1 flex flex-col justify-center pt-24 lg:pt-24 xl:pt-32 2xl:pt-36 pb-8">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -80,18 +80,18 @@ const HomeHero = () => {
           {/* Main Heading */}
           <motion.h1
             variants={fadeInUp}
-            className="text-3xl md:text-5xl lg:text-[52px] font-heading font-bold text-white leading-[1.2] md:leading-[1.1] mb-4 md:mb-6"
+            className="text-3xl md:text-5xl lg:text-4xl xl:text-[40px] 2xl:text-[52px] font-heading font-bold text-white leading-[1.2] md:leading-[1.1] mb-4 md:mb-6"
           >
             Global Leader in Processing & Packaging Technology
           </motion.h1>
           
           {/* Subtitle */}
-          <motion.p variants={fadeInUp} className="text-base md:text-xl text-gray-300 mb-8 md:mb-10 max-w-2xl leading-relaxed">
+          <motion.p variants={fadeInUp} className="text-base md:text-lg 2xl:text-xl text-gray-300 mb-6 xl:mb-8 2xl:mb-10 max-w-2xl leading-relaxed">
             Engineering high-efficiency, fully automated lines for Water, Soft Drinks, Juices, Beer, Spirits, and Liquid Dairy. Powered by 50 years of manufacturing excellence across the India, USA, and Middle East markets.
           </motion.p>
           
           {/* Buttons */}
-          <motion.div variants={fadeInUp} className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
+          <motion.div variants={fadeInUp} className="flex flex-col lg:flex-row items-start lg:items-center gap-4 xl:gap-10">
             <div className="flex items-center gap-2 md:gap-3 group cursor-pointer">
               <Link href="/contact-us" className="inline-flex bg-seppa-blue text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
                 Book Consultation
@@ -130,7 +130,7 @@ const HomeHero = () => {
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            className="flex flex-col lg:flex-row lg:flex-wrap justify-start items-start lg:items-center gap-x-12 gap-y-3 w-fit"
+            className="flex flex-col lg:flex-row lg:flex-wrap justify-start items-start lg:items-center gap-x-6 2xl:gap-x-12 gap-y-3 w-fit"
           >
             {[
               "Eco-Friendly Dyeing Processes",
