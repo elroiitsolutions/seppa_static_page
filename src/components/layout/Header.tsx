@@ -41,9 +41,9 @@ const Header: React.FC = () => {
   // NOTE: Using fully opaque bg-seppa-blue instead of bg-seppa-blue/95 + backdrop-blur-md
   // because Chrome composites semi-transparent backgrounds over blurred content differently
   // than Edge, causing a brownish/maroon tint instead of the intended dark navy.
-  const headerClass = `top-0 left-0 w-full z-50 transition-all duration-300 fixed ${scrolled
-      ? 'bg-seppa-blue pt-3 pb-3 lg:pb-0 shadow-lg'
-      : 'bg-transparent pt-4 lg:pt-8'
+  const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-4 lg:px-8 ${scrolled
+      ? 'w-full top-0 bg-seppa-blue shadow-lg py-3 lg:py-4 rounded-none'
+      : 'w-full xl:max-w-[1700px] xl:w-[96%] top-0 xl:top-[30px] 2xl:top-[40px] xl:rounded-[30px] bg-transparent py-4 lg:py-5'
     }`;
 
   const linkClass = "font-medium text-sm 2xl:text-base hover:text-gold transition flex items-center gap-1 py-2 text-white";
@@ -52,10 +52,11 @@ const Header: React.FC = () => {
   const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left";
 
   return (
-    <header className={headerClass}>
-      <div className={`container mx-auto px-4 flex justify-between items-center pb-4 lg:pb-6 border-b transition-colors duration-300 ${scrolled ? 'border-transparent' : 'border-white/20'}`}>
-        {/* Logo */}
-        <div className="logo z-50 relative">
+    <>
+      <header className={headerClass}>
+        <div className="w-full flex justify-between items-center transition-colors duration-300">
+        {/* Left: Logo */}
+        <div className="flex-1 flex justify-start items-center z-50 relative">
           <Link href="/">
             <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-2'>
               <img
@@ -67,8 +68,8 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        {/* Desktop Menu */}
-        <nav className="hidden xl:flex items-center space-x-3 xl:space-x-4 2xl:space-x-8">
+        {/* Center: Desktop Menu */}
+        <nav className="hidden xl:flex flex-none justify-center items-center gap-6 2xl:gap-8">
           <div className="relative group">
             <Link href="/" className={linkClass}>
               Home
@@ -108,7 +109,7 @@ const Header: React.FC = () => {
             </button>
             <div className={dropdownClass}>
               <div className="relative group/sub">
-                <Link href="/mineral-water-line-machines" className="px-6 py-2.5 hover:text-dark transition-colors w-full flex items-center justify-between gap-2 group/link">
+                <Link href="/mineral-water-line-machines" className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">Mineral Water Line Machines</span>
                   <FiChevronRight className="text-sm opacity-70 shrink-0" />
                 </Link>
@@ -123,7 +124,7 @@ const Header: React.FC = () => {
               </div>
               <Link href="/soft-drinks" className={dropdownItemClass}>Soft Drink / Beverages</Link>
               <div className="relative group/sub">
-                <Link href="/juice" className="px-6 py-2.5 hover:text-dark transition-colors w-full flex items-center justify-between gap-2 group/link">
+                <Link href="/juice" className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">Juices & Nectars</span>
                   <FiChevronRight className="text-sm opacity-70 shrink-0" />
                 </Link>
@@ -222,30 +223,37 @@ const Header: React.FC = () => {
           <Link href="/video-gallery" className={linkClass}>Videos</Link>
         </nav>
 
-        {/* CTA Button */}
-        <div className="hidden xl:flex items-center gap-1 2xl:gap-2 group cursor-pointer">
-          <Link
-            href="/contact-us"
-            className="px-4 2xl:px-6 py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white group-hover:bg-seppa-red tracking-wide text-sm 2xl:text-base"
-          >
-            Contact Us
-          </Link>
-          <Link
-            href="/contact-us"
-            className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
-          >
-            <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[16px] h-[16px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
-          </Link>
+        {/* Right: CTA Button */}
+        <div className="flex-1 hidden xl:flex justify-end items-center group cursor-pointer">
+          <div className="flex items-center gap-1 2xl:gap-2">
+            <Link
+              href="/contact-us"
+              className="px-5 2xl:px-6 py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red tracking-wide text-sm 2xl:text-base flex items-center justify-center"
+            >
+              Contact Us
+            </Link>
+            <Link
+              href="/contact-us"
+              className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
+            >
+              <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[16px] h-[16px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
+            </Link>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button
-          className={`xl:hidden text-2xl z-50 relative text-white`}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <FiX /> : <FiMenu />}
-        </button>
+        <div className="flex-1 flex xl:hidden justify-end">
+          <button
+            suppressHydrationWarning
+            className={`text-2xl z-50 relative text-white`}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <FiX /> : <FiMenu />}
+          </button>
+        </div>
       </div>
+
+      </header>
 
       {/* Mobile Menu Content */}
       {isMobileMenuOpen && (
@@ -604,7 +612,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 };
 

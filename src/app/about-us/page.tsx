@@ -1,211 +1,219 @@
 "use client";
 import React from 'react';
 import PageHeader from '@/components/layout/PageHeader';
-import { motion } from 'framer-motion';
-import Link from "next/link";
-import { FiCheckCircle, FiPlay, FiTarget, FiEye } from 'react-icons/fi';
+import OverviewSection from '@/components/packaging/OverviewSection';
+import ContentBlock from '@/components/ui/ContentBlock';
+import FeaturesSection from '@/components/packaging/FeaturesSection';
+import PackagingWhyChooseUs from '@/components/packaging/PackagingWhyChooseUs';
+import Accordion from '@/components/ui/Accordion';
+import AnimatedHeading from '@/components/ui/AnimatedHeading';
+import bgPattern from '@/assets/bg/bg-section-bg-image.png';
+import { motion, Variants } from 'framer-motion';
 
-const fadeInUp = {
+import headerImg from '@/assets/about-us/generated/header.png';
+import whoWeAreImg from '@/assets/about-us/generated/who_we_are.png';
+import whatWeBuildImg from '@/assets/about-us/generated/what_we_build.png';
+import whyChooseImg from '@/assets/about-us/generated/why_choose.png';
+
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+  visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const AboutUs: React.FC = () => {
+const AboutUsPage = () => {
+  const faqs = [
+    {
+      question: "What types of beverage processing equipment does SEPPA supply?",
+      answer: "Processing systems, PET blowing machines, rinser filler capper units, liquid filling machine configurations, labelling systems, batch coders, shrink wrappers, carton handlers, pallet equipment, and complete integrated production line packages."
+    },
+    {
+      question: "Can packaging solutions be customized to our facility?",
+      answer: "Every project is different. We design packaging solutions around your capacity targets, product specs, facility dimensions, and operational requirements."
+    },
+    {
+      question: "Do you handle international plant installations?",
+      answer: "Yes. We provide project management, on site support, and technical assistance for operations across multiple countries and regions."
+    },
+    {
+      question: "How does SEPPA approach food safety in equipment design?",
+      answer: "Stainless steel contact surfaces, CIP compatibility, automated cleaning, and sealed drive assemblies where required. These are engineering requirements built into every project, not optional additions."
+    },
+    {
+      question: "Why choose a turnkey approach over sourcing equipment separately?",
+      answer: "Single vendor turnkey delivery removes integration risk. Every machine is configured to work with the next one. Sourcing equipment separately puts the integration burden on the client and integration failures are expensive to fix after the fact."
+    }
+  ];
+
+  const equipmentFeatures = [
+    {
+      title: "Processing Systems",
+      description: "Heat exchangers, blenders, carbonation units, homogenizers, filtration systems, and CIP circuits. The core of any beverage manufacturing plant."
+    },
+    {
+      title: "Liquid Filling Machine Configurations",
+      description: "We supply liquid filling machine setups for still water, carbonated beverages, juices, spirits, dairy, and wine. Each is matched to the product's viscosity, carbonation level, container type, and required fill accuracy not just selected from a chart."
+    },
+    {
+      title: "PET Blowing Machines",
+      description: "Automatic and semi automatic PET blowers for standard bottles, wide mouth formats, and large containers. Our PET jar blowing machines handle wider-neck formats used in water dispensing and food packaging."
+    },
+    {
+      title: "Rinser Filler Capper Systems",
+      description: "Monoblock rinser filler capper units engineered for high speed, hygienic operation across still and carbonated products. Configurations vary based on output speed and cap type."
+    },
+    {
+      title: "Packaging Solutions",
+      description: "Labelling systems, shrink wrappers, carton handlers, stretch wrappers, crate stackers, and pallet equipment selected and configured to match line speed, output format, and facility layout."
+    },
+    {
+      title: "Bottling Line Equipment",
+      description: "Complete bottling line equipment packages for water, CSD, juice, beer, wine, and spirits. We configure multi SKU setups where lines handle more than one product or container size."
+    }
+  ];
+
+  const industryFeatures = [
+    {
+      title: "Water Production",
+      description: "Still, mineral, alkaline, sparkling, structured, and flavoured vitamin water. Lines are sized by fill rate and container format from small PET to 19 liter jars."
+    },
+    {
+      title: "Carbonated Soft Drinks",
+      description: "CSD complete lines with carbonation, syrup dosing, mixing, and high speed filling. Matched to output targets and container type."
+    },
+    {
+      title: "Juice, Nectars & Isotonics",
+      description: "Hot fill and cold fill systems for juice, nectar, isotonic beverages, and teas. Pasteurization and aseptic options available depending on shelf life requirements."
+    },
+    {
+      title: "Beer & Brewing",
+      description: "Brewing, fermentation, filtration, tunnel pasteurization, and complete beer bottling line equipment. Built for craft and commercial scale."
+    },
+    {
+      title: "Wine, Spirits & RTDs",
+      description: "Processing and packaging solutions for wine, mead, spirits, RTD beverages, and hard seltzers. Glass, PET, and can formats supported."
+    },
+    {
+      title: "Dairy Products",
+      description: "Liquid dairy processing and filling systems for milk, flavoured dairy drinks, and UHT formats."
+    },
+    {
+      title: "Sauces & Ketchup",
+      description: "Filling systems for tomato based products, ketchup, and pourable sauces with viscosity appropriate valve configurations."
+    }
+  ];
+
   return (
     <div className="overflow-hidden">
-      <PageHeader 
-        title="About us" 
-        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'About Us' }]} 
+      {/* Banner/Hero Section */}
+      <PageHeader
+        title="About SEPPA Solutions"
+        bgImage={headerImg.src}
+        breadcrumbs={[
+          { name: 'Home', path: '/' },
+          { name: 'About Us' }
+        ]}
       />
-      
-      {/* About Our Industriesss */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-            <motion.div 
-              className="w-full lg:w-1/2"
+
+      {/* Who We Are */}
+      <OverviewSection
+        title="Who We Are"
+        description="SEPPA Solutions supplies beverage processing equipment and complete production systems for liquid manufacturers across the globe. We help businesses build plants that run well, not just ones that look good on paper."
+        subDescription={[
+          "Our clients operate in mineral water, carbonated soft drinks, juices, dairy, beer, wine, spirits, and ready to drink sectors. Some arrive with detailed engineering plans. Others have a product and an empty floor. Either way, we put the right systems in place and stay involved until they work the way they should.",
+          "What actually separates us from equipment vendors is accountability. Our team handles consultation, plant engineering, manufacturing, installation, commissioning, and technical support. There is always one team responsible for the whole thing which is not something most suppliers offer."
+        ]}
+        imageSrc={whoWeAreImg.src}
+        layout="side-by-side"
+      />
+
+      {/* What We Build */}
+      <ContentBlock
+        title="What We Build"
+        paragraphs={[
+          "The international beverages processing industry market surpassed the USD 29 billion mark in 2025. This industry growth has been supported due to an increase in the number of packaged beverages, growing demand for automation, and increasing food safety regulations across the globe.",
+          "At SEPPA, we build production systems for two situations: manufacturers starting from scratch and those expanding an existing operation. The output looks different in each case. The engineering approach is the same. We look at your production targets, product mix, and facility constraints then build around those specifics, not around a standard catalogue offering.",
+          "Our systems cover multiple container formats. PET bottles, cans, glass, pouches, brick cartons, gable tops, aseptic drums each format has its own filling sequence, hygiene requirements, and downstream packaging solutions configuration. We design complete systems for all of them."
+        ]}
+        image1={whatWeBuildImg.src}
+        reverse={true}
+        bgClass={'bg-light'}
+      />
+
+      {/* Equipment We Supply */}
+      <FeaturesSection
+        badge="Equipment"
+        title="Equipment We Supply"
+        subtitle="From precise filling to efficient packaging, we engineer components for every stage of your production line."
+        features={equipmentFeatures}
+        columns={3}
+        bgClass="bg-[#fdfbf6] m-3 rounded-2xl relative"
+      />
+
+      {/* Industries We Serve */}
+      <FeaturesSection
+        badge="Industries"
+        title="Industries We Serve"
+        subtitle="Solutions built to handle the unique demands of each beverage sector."
+        features={industryFeatures}
+        columns={4}
+        centerLastRow={true}
+        bgClass="bg-white"
+      />
+
+      {/* Why Manufacturers Choose SEPPA */}
+      <PackagingWhyChooseUs
+        title="Why Manufacturers Choose SEPPA"
+        description="There is no shortage of beverage processing equipment suppliers in this sector. The reason manufacturers come back and refer others comes down to a few consistent things."
+        paragraphs={[
+          "We do not push standard configurations. Every line we deliver is engineered around the client's product, output volume, and facility not around what we happen to stock. The difference between a line running at 85% efficiency and one running at 95% is usually in the engineering details: machine sequencing, buffer zones, CIP integration, operator interface design. Those details require engineering judgment, not catalogue selection.",
+          "We handle complexity well. Multi format plants, multi product lines, simultaneous liquid and carton output, phased construction projects we manage the complexity so our clients do not have to.",
+          "We stay reachable. International projects, regional support, spare parts logistics our team is structured to support production operations wherever they operate."
+        ]}
+        imageSrc={whyChooseImg.src}
+      />
+
+      {/* FAQ Section */}
+      <section className="py-12 lg:py-24 bg-[#fdfbf6] relative overflow-hidden m-3 rounded-2xl">
+        <div className="absolute inset-0 pointer-events-none bg-repeat opacity-100" style={{ backgroundImage: `url(${bgPattern.src})`, backgroundSize: 'auto' }}></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-col lg:flex-row gap-16 items-start">
+            <motion.div
+              className="w-full lg:w-5/12 lg:sticky lg:top-24"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, amount: 0.1 }}
               variants={staggerContainer}
             >
-              <motion.h3 variants={fadeInUp} className="text-gold font-medium uppercase tracking-wider mb-2">
-                About Our Industries
-              </motion.h3>
-              <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-8">
-                We are dedicated to crafting high quality textiles for diverse global industrial applications worldwide
-              </motion.h2>
-
-              <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-                <div className="flex flex-col gap-4 p-8 bg-light rounded-2xl shadow-sm hover:shadow-md transition">
-                  <div className="text-gold text-4xl">
-                    <FiTarget />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold font-heading text-dark mb-2">Our Mission</h4>
-                    <p className="text-gray-600">We are source, advanced manufacturing.</p>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4 p-8 bg-light rounded-2xl shadow-sm hover:shadow-md transition">
-                  <div className="text-gold text-4xl">
-                    <FiEye />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold font-heading text-dark mb-2">Our Vision</h4>
-                    <p className="text-gray-600">We are source, advanced manufacturing.</p>
-                  </div>
-                </div>
+              <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
+                <span className="text-sm font-medium text-[#101934] uppercase tracking-wider">Frequently Asked Questions.</span>
               </motion.div>
-            </motion.div>
-
-            <motion.div 
-              className="w-full lg:w-1/2"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <img 
-                src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/approach-image.jpg" 
-                alt="Approach" 
-                className="w-full rounded-3xl shadow-xl object-cover"
+              <AnimatedHeading
+                text="Common Questions"
+                elementType="h2"
+                className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#101934] leading-tight mb-6 max-w-[400px]"
               />
+            </motion.div>
+            <motion.div
+              className="w-full lg:w-7/12"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.1 }}
+              variants={fadeInUp}
+            >
+              <Accordion items={faqs} defaultOpenIndex={0} />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Our Approach */}
-      <section className="py-20 lg:py-28 bg-light">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-            <motion.div 
-              className="w-full lg:w-1/2 order-2 lg:order-1 relative mb-12 lg:mb-0"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <img 
-                src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/industries-image-1.jpg" 
-                alt="Industries" 
-                className="w-[85%] rounded-3xl shadow-xl object-cover"
-              />
-              <img 
-                src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/industries-image-2.jpg" 
-                alt="Industries Details" 
-                className="w-[50%] absolute -bottom-10 -right-4 border-[10px] border-light rounded-3xl shadow-2xl object-cover z-10"
-              />
-            </motion.div>
-
-            <motion.div 
-              className="w-full lg:w-1/2 order-1 lg:order-2"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={staggerContainer}
-            >
-              <motion.h3 variants={fadeInUp} className="text-gold font-medium uppercase tracking-wider mb-2">
-                Our Approach
-              </motion.h3>
-              <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6">
-                Our strategic approach to textile excellence
-              </motion.h2>
-              <motion.p variants={fadeInUp} className="text-gray-600 text-lg mb-8 leading-relaxed">
-                From responsible material sourcing and advanced techniques to strict quality control and continuous improvement.
-              </motion.p>
-              
-              <motion.div variants={fadeInUp}>
-                <Link href="/contact-us" className="inline-block bg-dark text-white px-8 py-4 rounded-full font-medium hover:bg-white hover:text-dark transition duration-300">
-                  Book Consultation
-                </Link>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Industries */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-16">
-            <motion.div 
-              className="w-full lg:w-1/3"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={staggerContainer}
-            >
-              <motion.h3 variants={fadeInUp} className="text-gold font-medium uppercase tracking-wider mb-2">
-                Our Industries
-              </motion.h3>
-              <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6">
-                Serving diverse industries with quality textiles
-              </motion.h2>
-              <motion.p variants={fadeInUp} className="text-gray-600 text-lg mb-8 leading-relaxed">
-                We provide high-quality textile solutions designed to meet the unique, ensuring durability, performance, and consistency across every application.
-              </motion.p>
-              
-              <motion.div variants={fadeInUp}>
-                <Link href="/contact-us" className="inline-block bg-dark text-white px-8 py-4 rounded-full font-medium hover:bg-white hover:text-dark transition duration-300">
-                  Get A Quote
-                </Link>
-              </motion.div>
-              
-              <motion.div variants={fadeInUp} className="mt-8 flex items-center gap-4 p-6 bg-light rounded-2xl border-l-4 border-gold">
-                <div className="text-gold text-3xl">📞</div>
-                <div>
-                  <h4 className="text-lg font-bold font-heading text-dark">Need Any Help?</h4>
-                  <p className="text-gray-600 font-medium">+(123) 456-789</p>
-                </div>
-              </motion.div>
-            </motion.div>
-
-            <motion.div 
-              className="w-full lg:w-2/3"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={staggerContainer}
-            >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {['Automotive & Transportation', 'Construction & Infrastructure', 'Hospitality & Home Furnishing', 'Industrial Safety Applications'].map((industry, index) => (
-                  <motion.div 
-                    key={index}
-                    variants={fadeInUp}
-                    className="p-8 bg-light rounded-2xl flex items-center gap-4 hover:shadow-md transition group"
-                  >
-                    <div className="text-gold text-2xl group-hover:scale-110 transition">
-                      <FiCheckCircle />
-                    </div>
-                    <p className="font-heading font-bold text-dark text-lg">{industry}</p>
-                  </motion.div>
-                ))}
-              </div>
-
-              <motion.div variants={fadeInUp} className="mt-10 p-10 bg-dark rounded-3xl relative overflow-hidden group">
-                <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 text-white">
-                  <div>
-                    <h3 className="text-2xl font-bold font-heading mb-2">Watch Our industries Video</h3>
-                    <p className="text-gray-300">Discover how our industry advanced processes, and commitment to quality come together in action.</p>
-                  </div>
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-white shrink-0 shadow-[0_0_15px_rgba(214,168,72,0.5)] cursor-pointer group-hover:scale-110 transition">
-                    <FiPlay className="ml-1 text-2xl" />
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-[url('https://demo.awaikenthemes.com/yarnex/wp-content/themes/yarnexhttps://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/pattern.png')] opacity-10"></div>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
 
-export default AboutUs;
+export default AboutUsPage;

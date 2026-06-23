@@ -22,7 +22,7 @@ const staggerContainer = {
 
 const HomeHero = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex flex-col" style={{ minHeight: '100dvh' }}>
+    <section className="relative min-h-[100dvh] lg:h-[100dvh] w-full overflow-hidden flex flex-col">
       {/* Background Video Wrapper - uses hero-video-wrapper class defined in globals.css */}
       <div className="hero-video-wrapper absolute inset-0 z-0 pointer-events-none">
         <div className="relative w-full h-full bg-dark overflow-hidden pointer-events-auto hero-video-inner">
@@ -40,7 +40,7 @@ const HomeHero = () => {
         </video>
 
         {/* Using inline rgba() for cross-browser gradient consistency */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(26,26,26,0.90), rgba(26,26,26,0.10))' }}></div>
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, rgba(0,0,0,0.65), rgba(0,0,0,0.35))' }}></div>
 
         {/* Diagonal Lines */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -58,19 +58,19 @@ const HomeHero = () => {
         Using responsive Tailwind containers to ensure proper scaling across 
         1366x768, 1440p, 1080p, 4K, and Ultrawide monitors.
       */}
-      <div className="container mx-auto 2xl:max-w-screen-2xl px-4 relative z-10 flex-1 flex flex-col justify-center pt-24 lg:pt-24 xl:pt-32 2xl:pt-36 pb-8">
+      <div className="container mx-auto 2xl:max-w-screen-2xl px-6 md:px-12 lg:px-24 relative z-10 flex-1 flex flex-col justify-center pt-28 pb-4 lg:pt-32 lg:pb-8">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="max-w-4xl flex flex-col items-start text-left"
+          className="flex flex-col items-start text-left w-full max-w-[700px]"
         >
           {/* Top avatars and subtitle */}
-          <motion.div variants={fadeInUp} className="flex flex-row items-center justify-start gap-3 md:gap-4 mb-4 md:mb-6">
+          <motion.div variants={fadeInUp} className="flex flex-row items-center justify-start gap-3 md:gap-4 mb-4">
             <div className="flex -space-x-2 md:-space-x-3">
-              <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
-              <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
-              <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="Avatar" className="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-dark" />
+              <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="Avatar" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
+              <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="Avatar" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
+              <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="Avatar" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
             </div>
             <span className="text-white font-medium text-sm md:text-base tracking-wide">
               Crafting quality machinery for global industries
@@ -80,19 +80,21 @@ const HomeHero = () => {
           {/* Main Heading */}
           <motion.h1
             variants={fadeInUp}
-            className="text-3xl md:text-5xl lg:text-4xl xl:text-[40px] 2xl:text-[52px] font-heading font-bold text-white leading-[1.2] md:leading-[1.1] mb-4 md:mb-6"
+            className="font-heading font-bold text-white"
+            style={{ fontSize: 'clamp(32px, 3.5vw, 60px)', lineHeight: '1.1' }}
           >
             Global Leader in Processing & Packaging Technology
           </motion.h1>
           
           {/* Subtitle */}
-          <motion.p variants={fadeInUp} className="text-base md:text-lg 2xl:text-xl text-gray-300 mb-6 xl:mb-8 2xl:mb-10 max-w-2xl leading-relaxed">
+          <motion.p variants={fadeInUp} className="text-base md:text-lg 2xl:text-xl text-gray-300 leading-relaxed max-w-[650px] mt-4 lg:mt-6">
             Engineering high-efficiency, fully automated lines for Water, Soft Drinks, Juices, Beer, Spirits, and Liquid Dairy. Powered by 50 years of manufacturing excellence across the India, USA, and Middle East markets.
           </motion.p>
           
           {/* Buttons */}
-          <motion.div variants={fadeInUp} className="flex flex-col lg:flex-row items-start lg:items-center gap-4 xl:gap-10">
-            <div className="flex items-center gap-2 md:gap-3 group cursor-pointer">
+          <motion.div variants={fadeInUp} className="flex flex-col md:flex-row items-start md:items-center mt-6 lg:mt-10 gap-4 lg:gap-6">
+            {/* Primary CTA */}
+            <div className="flex items-center gap-2 md:gap-3 group cursor-pointer shrink-0">
               <Link href="/contact-us" className="inline-flex bg-seppa-blue text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
                 Book Consultation
               </Link>
@@ -101,31 +103,29 @@ const HomeHero = () => {
               </Link>
             </div>
             
-            {/* Watch Video */}
+            {/* Secondary CTA / Watch Video */}
             <a 
               href="#about-industries" 
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('about-industries')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="flex items-center gap-4 cursor-pointer group"
+              className="flex items-center gap-4 cursor-pointer group shrink-0"
             >
-              <div className="w-[72px] h-[72px] rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 backdrop-blur-sm">
-                <div className="w-[56px] h-[56px] rounded-full bg-black/40 flex items-center justify-center">
-                  <div className="w-11 h-11 rounded-full bg-seppa-blue flex items-center justify-center text-white pl-1 shadow-lg group-hover:bg-seppa-red transition-colors duration-300">
-                    <FiPlay size={18} fill="currentColor" />
-                  </div>
+              <div className="w-12 h-12 md:w-[60px] md:h-[60px] rounded-full bg-white/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-seppa-red flex items-center justify-center text-white pl-1">
+                  <FiPlay size={18} fill="currentColor" />
                 </div>
               </div>
-              <span className="text-white font-bold text-xl tracking-wide group-hover:text-seppa-red transition-colors duration-300">Watch Video to know us</span>
+              <span className="text-white font-bold text-base md:text-lg tracking-wide group-hover:text-seppa-red transition-colors duration-300">Watch Video to know us</span>
             </a>
           </motion.div>
         </motion.div>
       </div>
 
       {/* Bottom Checklists */}
-      <div className="relative w-full to-transparent pt-4 pb-8 z-10 mt-auto">
-        <div className="container mx-auto 2xl:max-w-screen-2xl px-4 pb-6 lg:pb-10">
+      <div className="relative w-full to-transparent pt-4 pb-4 lg:pt-5 lg:pb-6 z-10 mt-auto border-t border-white/10">
+        <div className="container mx-auto 2xl:max-w-screen-2xl px-6 md:px-12 lg:px-24">
           <motion.div 
             initial="hidden"
             animate="visible"
