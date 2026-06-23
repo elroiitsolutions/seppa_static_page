@@ -46,7 +46,8 @@ const pageData: PackagingPageData = {
         "Lines that switch from belt driven elevators to pneumatic systems typically see a noticeable drop in unplanned stops attributable to cap feed faults. Service intervals extend significantly because there is no contact surface degrading with each cycle."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Applications Across Industries",

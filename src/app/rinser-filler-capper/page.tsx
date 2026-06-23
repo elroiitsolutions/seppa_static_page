@@ -48,7 +48,8 @@ const pageData: PackagingPageData = {
         "Changeover & Hygienic Design: The rinsing filling capping machine's stainless draining base and neck handling system reduce changeover time between formats. A centralized level adjustment means one operator intervention point, not three. No dead zones or wells inside the valve body. The shutter is sealed by a membrane rather than a dynamic gasket, which protects the filling mechanism from contamination without adding maintenance complexity."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Applications Across Industries",

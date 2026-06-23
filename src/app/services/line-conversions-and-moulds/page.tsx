@@ -1,0 +1,138 @@
+import React from 'react';
+import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+
+import headerImg from '@/assets/line-conversions/header.png';
+import overviewImg from '@/assets/line-conversions/overview.png';
+// Using fallback images for methodology and other sections
+import meth1 from '@/assets/packaging/can/commissing.jpeg';
+import meth2 from '@/assets/packaging/can/install.webp';
+import meth3 from '@/assets/packaging/can/training.webp';
+import meth4 from '@/assets/packaging/can/overview.jpg';
+
+const pageData: PackagingPageData = {
+  title: "Line Conversions & Moulds",
+  breadcrumbName: "Line Conversions & Moulds",
+  rootBreadcrumbName: "Services",
+  rootBreadcrumbPath: "/services",
+  headerImage: headerImg.src,
+  overviewTitle: "Line Conversions & Mould Solutions for Modern Manufacturing",
+  overviewDescription: "If you're still running the same mould tooling you commissioned five years ago, you're almost certainly leaving yield on the table. Markets shift. Bottle weights drop. Retail buyers demand new formats. The cost of standing still eventually becomes harder to justify than the cost of upgrading. That’s where line conversions come in not as a last resort, but as a deliberate engineering strategy for manufacturers who want to adapt existing infrastructure without walking away from their capital investment.",
+  overviewsubDescription: [
+    "Line conversions are the process of reconfiguring or upgrading existing blow moulding, filling, or labelling equipment to handle new bottle geometries, lighter PET weights, or different production volumes. The alternative a full line replacement is often unnecessary and almost always expensive.",
+    "A well executed upgrade preserves the mechanical core of your equipment while replacing the tooling that determines output quality: the pet bottle moulds, mould carriers, neck ring assemblies, and synchronisation interfaces. Done right, you get most of the performance of a new line at a fraction of the capital cost.",
+    "This kind of project is not a shortcut. It requires precise baseline data, tooling designed to micron level tolerances, and a process that accounts for the full dynamics of your existing machine preform geometry, blow pressure profiles, conveyor synchronisation, everything. Seppa Solutions approaches every engagement as an engineering problem first, and a procurement transaction second."
+  ],
+  overviewImage: overviewImg.src,
+  featuresTitle: "Key Features of Our Line Conversion & Mould Solutions",
+  featuresSubtitle: "Precision engineering tailored for maximum output and quality.",
+  features: [
+    { 
+      title: "CNC Precision Pet Bottle Moulds", 
+      description: "Every set of pet bottle moulds manufactured at Seppa Solutions starts with a full 3D simulation of the stretch blow dynamics preform stretch ratios, wall distribution targets, and cooling requirements before a single tool path is cut. Mould cavities are machined on 5 axis CNC centres to tolerances of +0.005 mm." 
+    },
+    { 
+      title: "Thermal Optimised Cooling Channels", 
+      description: "Cooling accounts for roughly 60–70% of total blow mould cycle time. Our blow moulds use high thermal conductivity aluminium alloys with conformal cooling channels that track cavity geometry rather than taking straight line conversions shortcuts, producing more uniform temperature distribution and fewer rejects." 
+    },
+    { 
+      title: "Interchangeable Neck Ring and Base Assemblies", 
+      description: "For manufacturers running multiple bottle formats on the same line, the ability to change neck-ring assemblies in under 15 minutes without recalibrating the entire mould is a genuine operational advantage. Our preform injection moulds are built to the same quick change philosophy." 
+    }
+  ],
+  applicationsTitle: "Applications Across Industries",
+  applicationsSubtitle: "The industries that benefit most from line conversions run diverse product portfolios on shared infrastructure.",
+  applications: [
+    {
+      title: "Beverage",
+      description: "Beverage lines producing still water, CSD, juice, or isotonic drinks frequently need to alternate between bottle sizes and formats within the same production window. Blow moulds and conversion kits designed for rapid format change make that work."
+    },
+    {
+      title: "Dairy Packaging",
+      description: "Dairy packaging introduces aseptic or hot fill requirements. Our dairy specific tooling features hot fill rated mould bases, reinforced neck ring assemblies, and materials selected for CIP chemical resistance."
+    },
+    {
+      title: "Food & Chemical Packaging",
+      description: "Sauces, oils, condiments require injection moulds engineered for asymmetric stretch paths. Industrial moulds for chemicals are built to different material standards entirely, with high solvent resistance."
+    }
+  ],
+  contentBlocks: [
+    {
+      title: "Benefits of Production Line Conversion and Mould Upgrades",
+      paragraphs: [
+        "Full line replacement projects regularly run into multi year payback periods. Line conversions particularly those involving targeted tooling upgrades to pet bottle moulds and conversion kits typically return investment inside 12 to 18 months. That’s a function of what the upgrade delivers: reduced scrap, faster cycle times, and extended mould life.",
+        "PET lightweighting demands tooling engineered to tighter dimensional tolerances than legacy equipment can hold. Seppa’s programmes include full tooling re engineering for lightweight bottle specifications, with updated preform ratios and recalibrated blow pressure curves. And when a new SKU hits the line conversions, rapid change geometry standardised carrier interfaces, modular neck-ring systems, pre validated mould assemblies means the format switch takes hours, not shifts."
+      ],
+      image1: meth2.src,
+      reverse: true,
+      bgClass: "bg-light"
+    }
+  ],
+  methodology: {
+    title: "Mould Conversion Methodology: From Assessment to Implementation",
+    steps: [
+      {
+        title: "Baseline Audit",
+        description: "Cycle time distribution, reject rates by cavity position, blow pressure variability, preform temperature profiles. We work from actual performance data, not assumptions.",
+        image: meth1.src
+      },
+      {
+        title: "Tooling Design",
+        description: "Our engineers design updated pet bottle moulds and conversion hardware based on audit findings. Every design goes through FEA analysis and thermal simulation.",
+        image: meth2.src
+      },
+      {
+        title: "Simulation",
+        description: "Full blow moulding process simulations using the new tooling parameters validate the design before cutting metal catching problems early.",
+        image: meth3.src
+      },
+      {
+        title: "Installation and Synchronisation",
+        description: "Onsite commissioning covers conveyor timing, blow station calibration, and preform handling alignment. We prove the line runs at target output.",
+        image: meth4.src
+      },
+      {
+        title: "Performance Validation",
+        description: "Structured validation protocols typically 24 to 48 hours of monitored production confirm that the line conversions have delivered the specified output quality.",
+        image: meth1.src
+      }
+    ]
+  },
+  whyChoose: {
+    title: "Why Choose Seppa Solutions for Line Conversions & Moulds",
+    description: "There are plenty of tooling manufacturers who can produce pet bottle moulds to a drawing. What’s harder to find is a partner who understands how the tooling interacts with the machine, the preform, and the downstream process and who takes accountability for the full outcome.",
+    paragraphs: [
+      "Seppa Solutions has been building and converting mould tooling for high output FMCG lines for over two decades. Our industrial moulds run in beverage, food, dairy, and chemical plants across Southeast Asia, the Middle East, and Africa. We’ve executed line conversions on platforms from Sidel, Krones, Nissei, and SMF.",
+      "Our blow moulds are built to hold dimensional tolerances across their rated production life 3 to 5 million cycles for aluminium, 8 to 10 million for beryllium copper with cavity measurement reports at production intervals so you can plan maintenance proactively."
+    ],
+    image: overviewImg.src
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "How do I know when my line needs a conversion rather than a full replacement?",
+      answer: "If the core mechanical systems the blow station, the injection unit, the conveyor and timing mechanisms are in serviceable condition, a conversion is usually the right call. Full replacement makes sense when the machine can no longer achieve the cycle rates or process pressures your specs require. Conversions are most cost effective when the bottleneck is in the tooling and format hardware."
+    },
+    {
+      question: "What’s the production lifespan of high quality blow moulds?",
+      answer: "Aluminium blow moulds built to commercial beverage tolerances typically reach 3–5 million cycles before cavity dimensions drift. Beryllium copper moulds run longer 8–10 million cycles and are worth the higher upfront cost for line conversions running continuously. Both types benefit from regular cavity measurement and scheduled polishing."
+    },
+    {
+      question: "How does Seppa ensure that injection moulds are interchangeable across lines?",
+      answer: "We use standardised cavity plate interfaces and mounting dimensions across our injection mould product range, aligned to the most common preform machine platforms. Hot runner systems are also standardised to simplify temperature controller compatibility across different production sites."
+    },
+    {
+      question: "What impact do upgraded industrial moulds have on production speed?",
+      answer: "If the bottleneck is cooling time, optimised conformal channels in the new industrial moulds can reduce cycle time by 10–20%. If it’s changeover time, quick change tooling systems can cut format switch time from 4–6 hours to under 30 minutes."
+    },
+    {
+      question: "Why do major FMCG manufacturers choose Seppa Solutions for their line conversions?",
+      answer: "Because we treat line conversions as complete projects rather than tooling sales. Our clients want a line that hits target OEE once the project closes not tooling that meets a spec in isolation. That requires understanding the machine, the process, and the product simultaneously. It’s the capability that’s taken us the longest to build and the one that’s hardest to replicate."
+    }
+  ]
+};
+
+const LineConversionsPage = () => {
+  return <PackagingPageLayout data={pageData} />;
+};
+
+export default LineConversionsPage;

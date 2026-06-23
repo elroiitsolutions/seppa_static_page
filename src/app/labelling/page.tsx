@@ -48,7 +48,8 @@ const pageData: PackagingPageData = {
         "Cold Glue and Hot Glue Labeling Machines: Paper labels on glass bottles typically require glue based application for the adhesive permanence and wet look finish. Cold glue systems run continuously without adhesive warming cycles; hot melt systems offer faster bond tack on high speed lines."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Benefits of Automated Labeling for Production Lines",

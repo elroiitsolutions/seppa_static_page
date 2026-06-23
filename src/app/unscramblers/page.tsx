@@ -46,7 +46,8 @@ const pageData: PackagingPageData = {
         "The BUS-100 handles containers up to 2 litres. The BUS-300 covers a broader size range. For outputs between 400 and 500 containers per minute, the BUS-400 and BUS-500 are available on request, with hopper volumes up to 13 cubic meters. Accessory options inversion stations for asymmetric bottle shapes, vacuum belt conveyors, and variable-size bottle bins extend compatibility further without requiring a different base machine."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Benefits of an Automatic Bottle Unscrambler",

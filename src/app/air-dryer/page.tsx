@@ -55,7 +55,8 @@ const pageData: PackagingPageData = {
         </div>
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Keeping the System Running: Maintenance That Actually Matters",
@@ -75,7 +76,8 @@ const pageData: PackagingPageData = {
         "For an RFC machine integrated with a water bottle filling machine, we typically size dryers with 15 to 20 percent headroom above calculated demand to account for line expansion and seasonal variation."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     }
   ],
   applicationsTitle: "Where High Purity Air Becomes Non Negotiable",

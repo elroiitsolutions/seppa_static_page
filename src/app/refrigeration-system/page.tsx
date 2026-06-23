@@ -45,7 +45,8 @@ const pageData: PackagingPageData = {
         "Water Cooled Scroll Chiller: Providing a dedicated cooling capacity range from 17.5 kW to 462 kW, Seppa’s Water Cooled Scroll Chillers are built with shell and tube condensers and evaporators which ensure high efficiencies and trouble free operation. Redundancy models are made available in chillers of capacities 10 TR and upwards to eliminate single points of failure."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Energy Efficient & Smart Screw Chillers",

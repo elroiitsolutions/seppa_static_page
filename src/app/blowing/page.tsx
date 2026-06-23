@@ -46,7 +46,8 @@ const pageData: PackagingPageData = {
         "Control Interface and Recipe Management: Seppa's control platform stores full recipe sets per SKU. Operators call up preform dimensions, oven heating profiles, blowing pressure curves, and stretch rod timing from a single touchscreen interface. Format changeovers that once required half a shift now take under an hour when the recipe is stored correctly."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     },
     {
       title: "Selection Methodology",
