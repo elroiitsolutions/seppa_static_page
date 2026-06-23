@@ -45,7 +45,8 @@ const pageData: PackagingPageData = {
         "Carton Sealing Machine: Handles both upper and lower flap closure on filled cases. Side driven belts transport cases through at controlled speed; injectors apply adhesive strips; a presser plate holds the flaps under compression until the adhesive sets."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Benefits of Automated Carton Handling",

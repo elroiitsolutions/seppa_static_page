@@ -81,7 +81,8 @@ const pageData: PackagingPageData = {
         </div>
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Types of Bottles Compatible with the Washing System",
@@ -101,7 +102,8 @@ const pageData: PackagingPageData = {
         "Steam and water consumption are minimized through energy regeneration and stage by stage water recycling, yielding a highly eco efficient platform. Optional automatic caustic measuring and dosing is available."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     }
   ],
   featuresTitle: "Key Features and Technical Specifications",

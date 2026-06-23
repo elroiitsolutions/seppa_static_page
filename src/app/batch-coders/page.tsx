@@ -45,7 +45,8 @@ const pageData: PackagingPageData = {
         "Cosmetics lines use the automatic batch coding machine on curved tube bodies and cap surfaces, where a 0.1 mm positional error shows. Electronics manufacturers mark cable sheaths, PCB surfaces, and ABS housings."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Types of Information Printed Using Batch Coders",

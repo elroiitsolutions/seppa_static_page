@@ -47,7 +47,8 @@ const pageData: PackagingPageData = {
         "The efficiency case is less obvious but equally real. A pet preform making machine integrated within an aseptic line that sterilizes in line eliminates the logistics cost of pre sterilized container procurement, the cold chain requirements for sterile packaging, and the inventory complexity that comes with both. Plants running SEPPA systems fill from raw preform to sealed ambient bottle in a continuous, uninterrupted sequence."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     }
   ],
   whyChoose: {
