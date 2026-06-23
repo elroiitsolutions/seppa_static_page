@@ -1,5 +1,6 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import { FiDownload } from 'react-icons/fi';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
 import overviewImg from '@/assets/blowing/generated/blowing_overview_1781759662496.png';
@@ -85,25 +86,123 @@ const pageData: PackagingPageData = {
       bgClass: "bg-light"
     },
     {
+      title: "How the Glass Bottle Washer Machine Improves Production Efficiency",
+      paragraphs: [
+        <div key="efficiency" className="space-y-4">
+          <p className="text-base md:text-lg text-gray-600 mb-4">
+            High speed bottling lines operate on tightly choreographed timing. Any deviation upstream propagates into filler starvation or downstream jams. Seppa's industrial bottle washer integrates through:
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                <strong className="text-[#101934] font-bold">Synchronized infeed via automatic auto loader</strong>, ensuring bottles enter the carrier chain at exact pitch.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                <strong className="text-[#101934] font-bold">CAM system outfeed</strong>, providing controlled discharge timing matched to the downstream filler.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                <strong className="text-[#101934] font-bold">Continuous carrier chain movement</strong>, eliminating the start stop cycles that erode throughput.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                <strong className="text-[#101934] font-bold">Rapid changeover tooling</strong>, allowing format changes between bottle sizes in minutes rather than hours.
+              </span>
+            </li>
+          </ul>
+          <p className="text-base md:text-lg text-[#101934] font-bold mt-4">
+            The result is an industrial bottle washer capable of supporting annual throughput KPIs measured in tens of millions of bottles, with uptime exceeding 95% on properly maintained installations.
+          </p>
+        </div>
+      ],
+      image1: meth1.src,
+      reverse: true
+    },
+    {
       title: "Types of Bottles Compatible with the Washing System",
       paragraphs: [
-        "Mechanical adaptability is central to Seppa's design philosophy. The bottle washing machine accommodates containers from miniature cosmetic vials (50 ml) to large-format spirits bottles (up to 1 litre on the Rita SRM 130/140/150 platforms).",
-        "It gracefully handles varied neck finishes including crown, screw, swing top, and cork; glass thicknesses from lightweight non returnable to heavy returnable; and mixed soil profiles from fresh line new glass to heavily soiled returnable inventory.",
-        "This adaptability allows a single industrial bottle washer to support multiple SKUs without sacrificing throughput or cleaning efficacy."
+        <div key="types" className="space-y-4">
+          <p className="text-base md:text-lg text-gray-600 mb-4">
+            Mechanical adaptability is central to Seppa's design philosophy. The bottle washing machine accommodates:
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                Containers from miniature cosmetic vials (50 ml) to large-format spirits bottles (up to 1 litre on the Rita SRM 130/140/150 platforms)
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                Varied neck finishes including crown, screw, swing top, and cork
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                Glass thicknesses from lightweight non returnable to heavy returnable
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <span className="text-base md:text-lg text-gray-600">
+                Mixed soil profiles from fresh line new glass to heavily soiled returnable inventory
+              </span>
+            </li>
+          </ul>
+          <p className="text-base md:text-lg text-[#101934] mt-4">
+            This adaptability allows a single industrial bottle washer to support multiple SKUs without sacrificing throughput or cleaning efficacy.
+          </p>
+        </div>
       ],
       image1: img1.src,
-      reverse: true
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Seppa's Rita SRM Series: Single Soak and Multi Soak Variants",
       paragraphs: [
-        "The Rita SRM series is available in two principal configurations. The Single Soak Variant is engineered for the brewery, dairy, distillery, juices, soft drinks, and ketchup sectors. Larger soaking and spraying cycles ensure thorough washing of recycled dirty bottles without pre washing. Label separators remove labels and foils completely. Machines are supplied ready for commissioning.",
-        "The Multi Soak Variant (SRM 130/140/150) is designed for high outputs and heavily soiled bottles with labels and foils. Three to four multi soak tanks deliver intensive soaking plus high pressure internal and external spraying. Continuous carrier chain motion maximizes soak time.",
-        "Steam and water consumption are minimized through energy regeneration and stage by stage water recycling, yielding a highly eco efficient platform. Optional automatic caustic measuring and dosing is available."
+        <div key="variants" className="space-y-4">
+          <p className="text-base md:text-lg text-gray-600 mb-4">
+            The Rita SRM series is available in two principal configurations:
+          </p>
+          <ul className="space-y-6">
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <div className="text-base md:text-lg text-gray-600 flex-1">
+                <p>
+                  <strong className="text-[#101934] font-bold">Single Soak Variant:</strong> engineered for the brewery, dairy, distillery, juices, soft drinks, and ketchup sectors. Larger soaking and spraying cycles ensure thorough washing of recycled dirty bottles without pre washing. Label separators remove labels and foils completely. Machines are supplied ready for commissioning.
+                </p>
+                <a href="/pdf/glass-bottle-washer/SINGLE-SOAK.pdf" download target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 px-6 py-2.5 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red text-sm shadow-sm hover:shadow-md">
+                  <FiDownload /> Download Brochure
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-2 h-2 rounded-full bg-seppa-red mt-2 flex-shrink-0"></span>
+              <div className="text-base md:text-lg text-gray-600 flex-1">
+                <p>
+                  <strong className="text-[#101934] font-bold">Multi Soak Variant (SRM 130/140/150):</strong> designed for high outputs and heavily soiled bottles with labels and foils. Three to four multi soak tanks deliver intensive soaking plus high pressure internal and external spraying. Continuous carrier chain motion maximizes soak time. Steam and water consumption are minimized through energy regeneration and stage by stage water recycling, yielding a highly eco efficient platform. Optional automatic caustic measuring and dosing is available.
+                </p>
+                <a href="/pdf/glass-bottle-washer/MULTI-SOAK.pdf" download target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 px-6 py-2.5 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red text-sm shadow-sm hover:shadow-md">
+                  <FiDownload /> Download Brochure
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       ],
       image1: img2.src,
-      reverse: false,
-      bgClass: "bg-light"
+      reverse: true
     }
   ],
   featuresTitle: "Key Features and Technical Specifications",
