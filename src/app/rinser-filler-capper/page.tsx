@@ -32,34 +32,73 @@ const pageData: PackagingPageData = {
     {
       title: "Key Components of the RFC Machine",
       paragraphs: [
-        "Rotary Rinsing Carousel: The rinsing stage inverts PET or glass bottles and flushes them before filling. In SEPPA's design, neck handling carries the bottle through the rinsing arc without a gripping change. This preserves the sterile integrity of the bottle interior if you're switching grippers between stations, you're also introducing contact points. The EVATS 1000 avoids this.",
-        "Gravity and Volumetric Filling Valves: SEPPA offers two valve configurations for the rfc machine: gravity filling (EVATS 1000 GT) for cold and hot non carbonated products, and contact less volumetric filling for aseptic and high hygiene applications. The contact less variant uses magnetic flow meters to control fill volume. There are no mechanical parts dipping into the product during the fill cycle, which reduces both contamination pathways and wear.",
-        "The HR variant of the valve handles pulp up to 3 mm in diameter and 10 mm in length, with constant recirculation to prevent pulp settling during stops. If you're filling a juice product with visible pulp and you don't have controlled recirculation, you get inconsistent product distribution and blockages in the valves.",
-        "Capping and Closure Module: The capping stage in a rinser filler capper applies consistent torque across every closure. Torque variation is one of the most common quality complaints on bottling lines too loose means leaks and tamper evidence failure, too tight means consumer difficulty opening. SEPPA's pick and place and magnetic capping heads are calibrated for torque consistency, not just cap placement."
+        <div key="key-components" className="space-y-6 text-base md:text-lg text-gray-600">
+          <p>The rfc machine or bottle filling machine in monoblock format breaks into three functional modules, though they share a common mechanical backbone.</p>
+          
+          <div className="space-y-2">
+            <h4 className="text-xl font-bold text-[#101934]">Rotary Rinsing Carousel</h4>
+            <p>The rinsing stage inverts PET or glass bottles and flushes them before filling. In SEPPA's design, neck handling carries the bottle through the rinsing arc without a gripping change. This preserves the sterile integrity of the bottle interior if you're switching grippers between stations, you're also introducing contact points. The EVATS 1000 avoids this.</p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="text-xl font-bold text-[#101934]">Gravity and Volumetric Filling Valves</h4>
+            <p>SEPPA offers two valve configurations for the rfc machine: gravity filling (EVATS 1000 GT) for cold and hot non carbonated products, and contact less volumetric filling for aseptic and high hygiene applications. The contact less variant uses magnetic flow meters to control fill volume. There are no mechanical parts dipping into the product during the fill cycle, which reduces both contamination pathways and wear. Fill temperatures run from 0°C to 95°C depending on the configuration cold fill for water and spirits, hot fill for juices, milk, and RTD tea.</p>
+            <p>The HR variant of the valve handles pulp up to 3 mm in diameter and 10 mm in length, with constant recirculation to prevent pulp settling during stops. This isn't a minor spec detail. If you're filling a juice product with visible pulp and you don't have controlled recirculation, you get inconsistent product distribution and blockages in the valves.</p>
+          </div>
+
+          <div className="space-y-2">
+            <h4 className="text-xl font-bold text-[#101934]">Capping and Closure Module</h4>
+            <p>The capping stage in a rinser filler capper applies consistent torque across every closure. Torque variation is one of the most common quality complaints on bottling lines too loose means leaks and tamper evidence failure, too tight means consumer difficulty opening. SEPPA's pick and place and magnetic capping heads are calibrated for torque consistency, not just cap placement.</p>
+          </div>
+        </div>
       ],
       image1: img1.src,
+      image2: img2.src,
       reverse: true
+    }
+  ],
+  featuresTitle: "Features of the Rinser Filler Capper Machine",
+  featuresSubtitle: "The EVATS-1000 RFC is designed for operational teams who have to run it across shifts, not just engineers who configured it once.",
+  features: [
+    {
+      title: "CIP Integration",
+      description: "The machine supports high temperature Clean in Place cycles. Dummy bottles engage for sanitation automatically as an option using a bayonet connection that keeps operators from touching the fill valves directly. There are no dynamic gaskets in contact with the product, which means fewer wear parts and simpler CIP validation."
     },
     {
-      title: "Features of the Rinser Filler Capper Machine",
-      paragraphs: [
-        "CIP Integration: The machine supports high temperature Clean in Place cycles. Dummy bottles engage for sanitation automatically as an option using a bayonet connection that keeps operators from touching the fill valves directly. There are no dynamic gaskets in contact with the product, which means fewer wear parts and simpler CIP validation.",
-        "No Bottle No Fill: The rinser filler capper runs entirely mechanical 'no bottle, no fill' logic. No electronics required. If a bottle isn't present, the valve doesn't open. This reduces product waste and avoids flooding the drip tray during infeed gaps.",
-        "Changeover & Hygienic Design: The rinsing filling capping machine's stainless draining base and neck handling system reduce changeover time between formats. A centralized level adjustment means one operator intervention point, not three. No dead zones or wells inside the valve body. The shutter is sealed by a membrane rather than a dynamic gasket, which protects the filling mechanism from contamination without adding maintenance complexity."
-      ],
-      image1: img2.src,
-      reverse: false,
-      bgClass: "bg-light"
+      title: "No Bottle No Fill",
+      description: "The rinser filler capper runs entirely mechanical \"no bottle, no fill\" logic. No electronics required. If a bottle isn't present, the valve doesn't open. This reduces product waste and avoids flooding the drip tray during infeed gaps."
     },
     {
-      title: "Applications Across Industries",
-      paragraphs: [
-        "Water and Beverages: Cold fill, gravity valves, high speed output to 50,000 bottles per hour. The rinser machine stage is doing light contamination removal here the main case is throughput and format flexibility.",
-        "Juices and RTD Tea: Hot fill up to 95°C. The EVATS 1000 GT HF adds a pneumatic recirculation valve, a rotating manifold, and an external recovery tank for recycled product. For pulp containing juices, the HR valve variant with 3 mm pulp clearance handles what standard gravity valves can't.",
-        "Dairy, Spirits, and Carbonated Beverages: Dairy requires temperature controlled contact less filling. Spirits and Wine use EVATS 1000 GT in cold fill mode, with fill to brim capability. Carbonated Beverages and Beer require isobaric counter pressure to prevent CO₂ loss during filling."
-      ],
-      image1: img3.src,
-      reverse: true
+      title: "Changeover",
+      description: "The rinsing filling capping machine's stainless draining base and neck handling system reduce changeover time between formats. A centralized level adjustment means one operator intervention point, not three."
+    },
+    {
+      title: "Hygienic Design",
+      description: "No dead zones or wells inside the valve body. The shutter is sealed by a membrane rather than a dynamic gasket, which protects the filling mechanism from contamination without adding maintenance complexity. The rinsing filling capping machine is also available with a microbiological isolator (ISO 7) enclosure for ultra clean or aseptic applications."
+    }
+  ],
+  applicationsTitle: "Applications Across Industries",
+  applicationsSubtitle: "The bottle filling machine configuration changes depending on the product, but the rinser machine stage serves the same function across all of them: clean bottles before filling, without adding contamination. What stays constant is the monoblock architecture.",
+  applications: [
+    {
+      title: "Water and Beverages",
+      description: "Cold fill, gravity valves, high speed output to 50,000 bottles per hour. The rinser machine stage is doing light contamination removal here the main case is throughput and format flexibility."
+    },
+    {
+      title: "Juices and RTD Tea",
+      description: "Hot fill up to 95°C. The EVATS 1000 GT HF adds a pneumatic recirculation valve, a rotating manifold, and an external recovery tank for recycled product. For pulp containing juices, the HR valve variant with 3 mm pulp clearance handles what standard gravity valves can't."
+    },
+    {
+      title: "Dairy",
+      description: "Milk and milk based products require temperature controlled filling and tight hygiene standards. The contact less filling system applies here, keeping metal parts away from the product surface."
+    },
+    {
+      title: "Spirits and Wine",
+      description: "The EVATS 1000 GT handles spirits and wine in cold fill mode, with fill to brim capability via the HR valve configuration. Accurate fill volumes matter for both regulatory compliance and presentation."
+    },
+    {
+      title: "Carbonated Beverages and Beer",
+      description: "The bottle filling machine has a variant for carbonated fill. This requires isobaric counter pressure to prevent CO₂ loss during filling standard gravity valves don't work here."
     }
   ],
   whyChoose: {
