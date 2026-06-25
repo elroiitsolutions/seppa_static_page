@@ -22,6 +22,7 @@ export interface EnquiryPageData {
   formTitle: string;
   formFields: FormField[];
   submitButtonText?: string;
+  bgImage?: string;
 }
 
 interface EnquiryPageLayoutProps {
@@ -48,6 +49,7 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
           { name: 'Enquiry', path: '/product-enquiry' },
           { name: data.breadcrumbName }
         ]} 
+        bgImage={data.bgImage}
       />
       
       <section className="py-20 lg:py-28 bg-white relative">
