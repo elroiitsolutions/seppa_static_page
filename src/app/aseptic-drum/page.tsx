@@ -1,17 +1,23 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import top from '@/assets/packaging/gable/gabletop1.jpg';
-import machine from '@/assets/packaging/brick/machine.jpg';
-import packag from '@/assets/packaging/brick/package.webp';
-import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
-import brickAvif from '@/assets/packaging/brick/brickcarton.avif';
-import drumBanner from '@/assets/packaging/aseptric-drum/drum.png';
+import top from '@/assets/packaging/generated/aseptic_drum_closeup_1781701609871.png';
+import machine from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import packag from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import brickCarton from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
+import brickAvif from '@/assets/packaging/generated/juice_processing_wide_1781701462502.png';
+import drumBanner from '@/assets/packaging/generated/aseptic_drum_filler_1781701596612.png';
+import meth1 from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
+import meth2 from '@/assets/packaging/generated/wine_production_wide_1781701527332.png';
+import meth3 from '@/assets/packaging/generated/brewery_line_wide_1781701502517.png';
+import meth4 from '@/assets/packaging/generated/csd_bottles_closeup_1781701449618.png';
+import meth5 from '@/assets/packaging/generated/glass_bottling_wide_1781701406159.png';
 
 const pageData: PackagingPageData = {
   title: "The Definitive Guide to Aseptic Drum Filling: Engineering Sterility at Industrial Scale",
   breadcrumbName: "Aseptic Drum",
   headerImage: drumBanner.src,
   overviewTitle: "Introduction to Aseptic Drum Systems",
+  overviewLayout: "stacked",
   overviewDescription: "",
   overviewsubDescription: [
     "Producing a pasteurized product that stays shelf stable at ambient temperature without refrigeration, without preservatives, and without losing its character comes down to one thing: proper aseptic packaging. And this is where the technology parts ways with traditional canning. Instead of cooking the product inside its container, the containers themselves are pre sterilized, then filled with cold product inside a cold, commercially sterile environment, and finally sealed in a zone that stays completely sterile from start to finish. A modern aseptic filling machine handles all of this inside a sealed enclosure, with built in sterilization circuits that prepare the packaging just moments before filling begins. Most of these systems rely on hydrogen peroxide carried through a warm air stream, which essentially scrubs the filling chamber of any lingering microbes. Before the first drum is ever filled, the aseptic filling machine runs through a full conditioning cycle disinfecting every contact surface, flushing the cleaning loops, and bringing the entire sterilization train up to spec all of it aimed at knocking down the initial bioburden to negligible levels.",
@@ -24,7 +30,8 @@ const pageData: PackagingPageData = {
       paragraphs: [
         "Because aseptic processing applies heat for short, precisely controlled bursts, the product never gets cooked into submission. The flavours, vitamins, and texture keep much better than stuff from a retort line. Plus, there are no need for chemical preservatives. Transport costs are way lower compared to IQF, and cold storage fees nearly disappear. So, the benefits really pile up fast!"
       ],
-      image1: brickCarton.src
+      image1: brickCarton.src,
+      image2: brickCarton.src
     },
     {
       title: "Aseptic Containers",
@@ -39,11 +46,14 @@ const pageData: PackagingPageData = {
       title: "Applications of Aseptic Drum Filling Across Industries",
       paragraphs: [
         "The flexibility built into today's aseptic filling equipment has turned bag in drum technology into something close to essential across a whole spread of industries. The SEPPA aseptic filling machine, in particular, was engineered to handle the demands of very different markets everything from catering kitchens to high throughput ingredient plants that never really shut down.",
-        "Food service and catering operations lean heavily on low acid products: spinach leaves, whole peas, strips of peppers, diced onion, precooked meals all of which sit firmly in the danger zone for spoilage and demand airtight sterility control. Fruit processors trust aseptic filling to protect peach, apricot, strawberry, pear, apple, and tropical fruit pieces, along with the pulps, purees, and concentrates that show up in everything from baby food to smoothie chains. Tomato product manufacturers routinely ship diced tomatoes and concentrated pastes around the world in 200 liter drums filled aseptically right at the source.",
-        "The story doesn't end with food. Dairy concentrate producers use bulk aseptic packaging to move cream bases, condensed milk, and whey concentrates around the globe without ever touching a refrigerated container. Pharmaceutical and nutraceutical companies depend on sterile drum filling for buffer solutions, fermentation feedstocks, and active liquid intermediates where even a single colony-forming unit can scrap a batch. Beverage ingredient suppliers think natural extracts, coffee concentrates, brewed tea bases have largely settled on drum filling as the default standard for B2B liquid transport.",
-        "SEPPA designs and builds both Bag in Drum and Bag in Box type aseptic fillers. Double head configurations are on the menu too, with filling nozzles of either 1 or 2 inches chosen based on how viscous the product is and whether it carries particulates. The aseptic filling machine works with preformed, pre sterilized bags from 5 to 200 liters, including linked bag formats running 5 to 20 liters for smaller volume jobs."
+        <p key="p1" className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12"><strong className="text-black font-semibold">Food service and catering operations</strong> lean heavily on low acid products: spinach leaves, whole peas, strips of peppers, diced onion, precooked meals all of which sit firmly in the danger zone for spoilage and demand airtight sterility control. <strong className="text-black font-semibold">Fruit processors</strong> trust aseptic filling to protect peach, apricot, strawberry, pear, apple, and tropical fruit pieces, along with the pulps, purees, and concentrates that show up in everything from baby food to smoothie chains. <strong className="text-black font-semibold">Tomato product manufacturers</strong> routinely ship diced tomatoes and concentrated pastes around the world in 200 liter drums filled aseptically right at the source.</p>,
+        <p key="p2" className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">The story doesn't end with food. <strong className="text-black font-semibold">Dairy concentrate producers</strong> use bulk aseptic packaging to move cream bases, condensed milk, and whey concentrates around the globe without ever touching a refrigerated container. <strong className="text-black font-semibold">Pharmaceutical and nutraceutical companies</strong> depend on sterile drum filling for buffer solutions, fermentation feedstocks, and active liquid intermediates where even a single colony-forming unit can scrap a batch. <strong className="text-black font-semibold">Beverage ingredient suppliers</strong> think natural extracts, coffee concentrates, brewed tea bases have largely settled on drum filling as the default standard for B2B liquid transport.</p>,
+        <p key="p3" className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">SEPPA designs and builds both <strong className="text-black font-semibold">Bag in Drum</strong> and <strong className="text-black font-semibold">Bag in Box</strong> type aseptic fillers. Double head configurations are on the menu too, with filling nozzles of either 1 or 2 inches chosen based on how viscous the product is and whether it carries particulates. The aseptic filling machine works with preformed, pre sterilized bags from 5 to 200 liters, including linked bag formats running 5 to 20 liters for smaller volume jobs.</p>
       ],
-      image1: machine.src
+      image1: machine.src,
+      image2: brickCarton.src,
+      layout: "stacked",
+      bgClass:"bg-white"
     }
   ],
   featuresTitle: "Choosing the Right Aseptic Drum Filling Solution for Your Production Line",
@@ -57,9 +67,9 @@ const pageData: PackagingPageData = {
   whyChoose: {
     title: "How Seppa Solutions Delivers Advanced Aseptic Drum Filling Systems",
     paragraphs: [
-      "Everything in the Seppa Solutions aseptic filling machine platform comes back to one design conviction: sterility you can trust, on equipment your operators actually want to run. Every unit is built on a 316L stainless steel frame with crevice free welds, sloped surfaces that drain completely, and sanitary tri clamp fittings running the full length of the product path.",
-      "Our aseptic valve technology uses a double seat sterile barrier with steam blocked interspaces which effectively kills any risk of cross contamination when the valve cycles. Sitting above that is a HEPA filtered laminar flow hood right over the filling nozzle, holding ISO Class 5 conditions during the moment that matters most: when the cap comes off the bag.",
-      "Bag handling cap removal, fill, re cap happens automatically and stays under a continuous steam barrier from start to finish. The PLC driven HMI manages full traceability, recipe management, and real time monitoring of all critical control points. Add electronic weigh filling and servo driven nozzle positioning to the mix, and you get an aseptic filling machine that meets commercial sterility goals at top industrial speeds, no sweat."
+      <p key="p1" className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Everything in the Seppa Solutions aseptic filling machine platform comes back to one design conviction: <strong className="text-black font-semibold">sterility you can trust, on equipment your operators actually want to run</strong>. Every unit is built on a 316L stainless steel frame with crevice free welds, sloped surfaces that drain completely, and sanitary tri clamp fittings running the full length of the product path.</p>,
+      <p key="p2" className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Our <strong className="text-black font-semibold">aseptic valve technology</strong> uses a double seat sterile barrier with steam blocked interspaces which effectively kills any risk of cross contamination when the valve cycles. Sitting above that is a HEPA filtered laminar flow hood right over the filling nozzle, holding ISO Class 5 conditions during the moment that matters most: when the cap comes off the bag.</p>,
+      <p key="p3" className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Bag handling cap removal, fill, re cap happens automatically and stays under a continuous steam barrier from start to finish. The PLC driven HMI manages full traceability, recipe management, and real time monitoring of all critical control points. Add electronic weigh filling and servo driven nozzle positioning to the mix, and you get an aseptic filling machine that meets commercial sterility goals at top industrial speeds, no sweat.</p>
     ],
     image: brickAvif.src
   },
@@ -67,11 +77,11 @@ const pageData: PackagingPageData = {
     title: "Methodology: From Site Audit to Validation",
     subtitle: "Installing an aseptic filling machine isn't a simple plug and play deal. Seppa Solutions follows a five phase engineering process, refined over decades, for every setup.",
     steps: [
-      { title: "Site Audit & Process Mapping", description: "Our engineers walk the plant floor, take stock of utilities, look at product characteristics, pin down throughput targets, and map every connection point to upstream sterilizers and downstream palletizers.", image: top.src },
-      { title: "Custom System Design", description: "A bespoke layout gets built in 3D CAD, backed by full P&ID documentation and FEA validated sanitary piping.", image: brickAvif.src },
-      { title: "Precision Integration", description: "The aseptic filling equipment is fabricated, put through factory acceptance testing (FAT), and shipped in pre assembled modules so on site work stays minimal.", image: machine.src },
-      { title: "Commissioning & Start Up", description: "Our team handles installation, utility hookup, and the first round of sterility qualification right alongside your crew.", image: brickCarton.src },
-      { title: "Validation Support", description: "Full IQ/OQ/PQ documentation, microbiological challenge testing, and regulatory dossiers are delivered to back you up during FDA, EFSA, or local agency audits.", image: packag.src }
+      { title: "Site Audit & Process Mapping", description: "Our engineers walk the plant floor, take stock of utilities, look at product characteristics, pin down throughput targets, and map every connection point to upstream sterilizers and downstream palletizers.", image: meth1.src },
+      { title: "Custom System Design", description: "A bespoke layout gets built in 3D CAD, backed by full P&ID documentation and FEA validated sanitary piping.", image: meth2.src },
+      { title: "Precision Integration", description: "The aseptic filling equipment is fabricated, put through factory acceptance testing (FAT), and shipped in pre assembled modules so on site work stays minimal.", image: meth3.src },
+      { title: "Commissioning & Start Up", description: "Our team handles installation, utility hookup, and the first round of sterility qualification right alongside your crew.", image: meth4.src },
+      { title: "Validation Support", description: "Full IQ/OQ/PQ documentation, microbiological challenge testing, and regulatory dossiers are delivered to back you up during FDA, EFSA, or local agency audits.", image: meth5.src }
     ]
   },
   faqTitle: "Frequently Asked Questions",

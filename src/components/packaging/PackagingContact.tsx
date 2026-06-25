@@ -85,6 +85,7 @@ const PackagingContact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <input 
+                      suppressHydrationWarning
                       type="text" 
                       placeholder="Your Name" 
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
@@ -92,6 +93,7 @@ const PackagingContact = () => {
                   </div>
                   <div>
                     <input 
+                      suppressHydrationWarning
                       type="email" 
                       placeholder="Email Address" 
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
@@ -101,6 +103,7 @@ const PackagingContact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <input 
+                      suppressHydrationWarning
                       type="tel" 
                       placeholder="Phone Number" 
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
@@ -108,6 +111,7 @@ const PackagingContact = () => {
                   </div>
                   <div>
                     <input 
+                      suppressHydrationWarning
                       type="text" 
                       placeholder="Packaging Type" 
                       defaultValue="Packaging Inquiry"
@@ -117,12 +121,14 @@ const PackagingContact = () => {
                 </div>
                 <div>
                   <textarea 
+                    suppressHydrationWarning
                     rows={5} 
                     placeholder="Tell us about your packaging requirements..." 
                     className="w-full px-6 py-4 rounded-3xl bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm resize-none"
                   ></textarea>
                 </div>
                 <button 
+                  suppressHydrationWarning
                   type="submit" 
                   className="bg-[#101934] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-seppa-red transition duration-300 w-auto inline-block"
                 >

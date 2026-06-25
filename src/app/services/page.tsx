@@ -3,6 +3,13 @@ import React from 'react';
 import PageHeader from '@/components/layout/PageHeader';
 import { motion } from 'framer-motion';
 import Link from "next/link";
+import banner1 from '@/assets/processing/generated/processing_banner_1781759101340.png';
+import banner2 from '@/assets/blowing/generated/blowing_overview_1781759662496.png';
+import banner3 from '@/assets/processing/generated/processing_cb1_1781759122683.png';
+import banner4 from '@/assets/processing/generated/processing_cb2_1781759136791.png';
+import banner5 from '@/assets/blowing/generated/blowing_cb3_1781759707330.png';
+import banner6 from '@/assets/processing/generated/processing_whychoose_1781759182691.png';
+import banner7 from '@/assets/processing/generated/processing_meth1_1781759196548.png';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -16,13 +23,13 @@ const staggerContainer = {
 
 const Services: React.FC = () => {
   const services = [
-    { title: 'Packaging', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg', link: '/services/packaging' },
-    { title: 'Spare parts & Logistics Training', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg', link: '/services/spare-parts-and-logistics-training' },
-    { title: 'Maintenance', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg', link: '/services/maintenance' },
-    { title: 'Line Improvement', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-4.jpg', link: '/services/line-improvement' },
-    { title: 'Line Conversions & Moulds', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-5.jpg', link: '/services/line-conversions-and-moulds' },
-    { title: 'Audits', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-6.jpg', link: '/services/audits' },
-    { title: 'Training', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg', link: '/services/training' },
+    { title: 'Processing', image: banner1.src, link: '/processing' },
+    { title: 'Blowing', image: banner2.src, link: '/blowing' },
+    { title: 'PET', image: banner3.src, link: '/pet' },
+    { title: 'PET Jars', image: banner4.src, link: '/pet-jars' },
+    { title: 'Rinser / Filler / Capper', image: banner5.src, link: '/rinser-filler-capper' },
+    { title: 'Labelling', image: banner6.src, link: '/labelling' },
+    { title: 'Refrigeration System', image: banner7.src, link: '/refrigeration-system' },
   ];
 
   const steps = [
@@ -37,6 +44,7 @@ const Services: React.FC = () => {
       <PageHeader 
         title="Our services" 
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Services' }]} 
+        bgImage={banner1.src}
       />
       
       {/* Services Grid */}

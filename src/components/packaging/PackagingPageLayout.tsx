@@ -36,10 +36,12 @@ export interface PackagingPageData {
   rootBreadcrumbPath?: string;
   headerImage?: string;
   overviewTitle: string;
-  overviewDescription: string;
-  overviewsubDescription?: string[];
+  overviewDescription: string | React.ReactNode;
+  overviewsubDescription?: (string | React.ReactNode)[];
   overviewBenefits?: string[];
   overviewImage: string;
+  overviewImage2?: string;
+  overviewLayout?: 'side-by-side' | 'stacked';
   contentBlocks?: ContentBlockProps[];
   applicationsTitle?: string;
   applicationsSubtitle?: string;
@@ -50,7 +52,7 @@ export interface PackagingPageData {
   whyChoose?: {
     title?: string;
     description?: string;
-    paragraphs?: string[];
+    paragraphs?: (string | React.ReactNode)[];
     reasons?: { id?: number | string; icon?: React.ReactNode; title: string; description: string }[];
     image?: string;
   };
@@ -65,6 +67,7 @@ export interface PackagingPageData {
   faqTitle?: string;
   faqSubtitle?: string;
   cta?: CTAProps;
+  hideWhyChoose?: boolean;
 }
 
 interface PackagingPageLayoutProps {
@@ -75,23 +78,25 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
   return (
     <div className="overflow-hidden">
       {/* Banner/Hero Section */}
-      <PageHeader 
-        title={data.title} 
+      <PageHeader
+        title={data.title}
         bgImage={data.headerImage}
         breadcrumbs={[
           { name: 'Home', path: '/' },
           { name: data.rootBreadcrumbName || 'Packaging', path: data.rootBreadcrumbPath || '/services/packaging' },
           { name: data.breadcrumbName }
-        ]} 
+        ]}
       />
 
       {/* Overview Section */}
-      <OverviewSection 
+      <OverviewSection
         title={data.overviewTitle}
         description={data.overviewDescription}
         benefits={data.overviewBenefits}
         subDescription={data.overviewsubDescription}
         imageSrc={data.overviewImage}
+        imageSrc2={data.overviewImage2}
+        layout={data.overviewLayout}
       />
 
       {/* Dynamic Content Blocks */}
@@ -101,41 +106,45 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
 
       {/* Applications Section */}
       {data.applications && data.applications.length > 0 && (
-        <FeaturesSection 
+        <FeaturesSection
           badge="Applications"
           title={data.applicationsTitle || "Applications"}
           subtitle={data.applicationsSubtitle}
           features={data.applications}
-          columns={4}
+          columns={data.applications.length === 4 ? 4 : 3}
+          centerLastRow={true}
         />
       )}
 
       {/* Features & Advantages */}
       {data.features && data.features.length > 0 && (
-        <FeaturesSection 
+        <FeaturesSection
           title={data.featuresTitle || "Features & Advantages"}
           subtitle={data.featuresSubtitle}
           features={data.features}
+          columns={data.features.length === 4 ? 4 : 3}
           centerLastRow={true}
           bgClass="bg-[#fdfbf6] m-3 rounded-2xl relative"
         />
       )}
 
       {/* Why Choose SEPPA */}
-      <PackagingWhyChooseUs 
-        title={data.whyChoose?.title}
-        description={data.whyChoose?.description}
-        paragraphs={data.whyChoose?.paragraphs}
-        reasons={data.whyChoose?.reasons}
-        imageSrc={data.whyChoose?.image}
-      />
+      {!data.hideWhyChoose && (
+        <PackagingWhyChooseUs
+          title={data.whyChoose?.title}
+          description={data.whyChoose?.description}
+          paragraphs={data.whyChoose?.paragraphs}
+          reasons={data.whyChoose?.reasons}
+          imageSrc={data.whyChoose?.image}
+        />
+      )}
 
       {/* Methodology Section */}
       {data.methodology && (
         <MethodologySection {...data.methodology} />
       )}
 
-      
+
 
       {/* FAQ Section */}
       {data.faqs ? (
@@ -143,7 +152,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
           <div className="absolute inset-0 pointer-events-none bg-repeat opacity-100" style={{ backgroundImage: `url(${bgPattern.src})`, backgroundSize: 'auto' }}></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col lg:flex-row gap-16 items-start">
-              <motion.div 
+              <motion.div
                 className="w-full lg:w-5/12 lg:sticky lg:top-24"
                 initial="hidden"
                 whileInView="visible"
@@ -154,10 +163,10 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
                   <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
                   <span className="text-sm font-medium text-[#101934] uppercase tracking-wider">Frequently Asked Questions.</span>
                 </motion.div>
-                <AnimatedHeading 
-                  text={data.faqTitle || "Common Questions"} 
-                  elementType="h2" 
-                  className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#101934] leading-tight mb-6 max-w-[400px]" 
+                <AnimatedHeading
+                  text={data.faqTitle || "Common Questions"}
+                  elementType="h2"
+                  className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#101934] leading-tight mb-6 max-w-[400px]"
                 />
                 {data.faqSubtitle && (
                   <motion.p variants={fadeInUp} className="text-gray-600 mb-8">
@@ -165,7 +174,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
                   </motion.p>
                 )}
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="w-full lg:w-7/12"
                 initial="hidden"
                 whileInView="visible"
@@ -183,7 +192,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
 
       {/* Call to Action */}
       {data.cta && (
-        <CallToAction 
+        <CallToAction
           title={data.cta.title}
           description={data.cta.description}
           buttonText={data.cta.buttonText}

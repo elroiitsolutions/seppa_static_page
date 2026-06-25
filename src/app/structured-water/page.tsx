@@ -1,45 +1,101 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
+// Using generated and placeholder images
+import bannerImg from '@/assets/services/generated/training_banner_1782102515585.png'; // fallback
+import overviewImg from '@/assets/pet/generated/pet_overview_1782103229961.png';
+import img1 from '@/assets/pet/generated/pet_cb1_1782103242917.png';
+import over from '@/assets/pet/generated/pet_whychoose_1782103256501.png';
+
+import meth1 from '@/assets/pet/generated/pet_meth1_1782103277774.png';
+import meth2 from '@/assets/pet/generated/pet_meth2_1782103291753.png';
+import meth3 from '@/assets/pet/generated/pet_meth3_1782103305856.png';
+import meth4 from '@/assets/pet/generated/pet_meth4_1782103318966.png';
+
 const pageData: PackagingPageData = {
-  title: "Structured Water",
+  title: "Structured Water Production Lines",
   breadcrumbName: "Structured Water",
   rootBreadcrumbName: "Liquid",
   rootBreadcrumbPath: "/liquid",
-  overviewTitle: "Premium Solutions for Structured Water",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Structured Water. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  headerImage: bannerImg.src,
+  overviewTitle: "What Is Structured Water and How Does It Work?",
+  overviewDescription: "Water, at the molecular level, is not a passive medium. The way its molecules orient and cluster relative to each other changes how the fluid behaves biologically. Structured Water is a term for water wherein the molecules of H₂O are formed into geometrically arranged clusters of molecules instead of having a structure characterized by a networked formation of molecules, such as those found in tap water or water flowing for years along straight and pressured pipelines.",
+  overviewsubDescription: [
+    "This phenomenon is based on decades of studies in the field of biophysics, particularly on the exclusion zone (EZ) layer that forms beside hydrophilic surfaces wherein the water molecules form a hexagonal lattice formation.",
+    "The treatment process that produces Structured Water mimics conditions found in fast moving mountain streams. Water is passed through precision engineered vortex chambers where kinetic energy is transferred into the fluid in a controlled spiral pattern. This motion disrupts large disordered molecular clusters and induces are alignment of dipole moments at the sub molecular scale.",
+    "The result is water with measurably reduced surface tension, altered pH buffering behaviour, and altered magnetic susceptibility. No chemical addition is involved. The entire process is physical and non-invasive."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Structured Water Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
-  features: [
+  overviewImage: overviewImg.src,
+  contentBlocks: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
-    },
-    {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
-    },
-    {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
-    },
-    {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      title: "Benefits of Structured Water for Hydration and Wellness",
+      paragraphs: [
+        "The biological case for structured water benefits rests primarily on the interface between the water molecule and cell membrane aquaporin channels. Aquaporins are protein channels that facilitate water passage into and out of cells. Their internal diameter selects for specific molecular configurations. Water in a more ordered, lower cluster size state passes through these channels with less energy expenditure which is what researchers generally mean when they refer to improved cellular absorption.",
+        "Reduced surface tension is the second major argument. Conventional municipal water typically exhibits surface tension in the range of 72–74 mN/m. Vortex treated water can test as low as 65–68 mN/m. Lower surface tension correlates with better emulsification in the digestive tract and faster absorption across epithelial barriers. Those aren't abstract wellness claims they're measurable outputs that can be put on a product specification sheet and backed by laboratory data."
+      ],
+      image1: img1.src,
+      reverse: true
     }
+  ],
+  featuresTitle: "Key Features of Our Structured Water Processing Solutions",
+  featuresSubtitle: "An industrial structured water system is not simply a vortex pipe with a label on it. The engineering is considerably more involved. Seppa Solutions designs production lines built around four core components.",
+  features: [
+    { title: "Multi stage vortex induction module", description: "Water enters a series of geometrically engineered flow chambers where rotational velocity is precisely modulated. Turbulence is controlled, not random. Each chamber is designed to maximize laminar to vortical transition at specific Reynolds number thresholds." },
+    { title: "Mineral frequency resonance chamber", description: "Certain dissolved mineral ions silica and magnesium in particular act as scaffolding for ordered molecular clusters. This chamber maintains optimal ionic concentration and supplements it where the source water falls short, before the fluid enters the treatment stage." },
+    { title: "Non contact flow stabilization unit", description: "After vortex treatment, Structured Water is highly susceptible to molecular rebound a return toward disordered clustering when exposed to shear stress. Seppa's stabilization unit uses low pressure laminar channels fabricated in food grade PTFE, preserving the molecular arrangement." }
+  ],
+  applicationsTitle: "Applications of Structured Water Across Consumer and Commercial Markets",
+  applicationsSubtitle: "Seppa Solutions designs equipment for two distinct production models, and the structured water system is the same in both.",
+  applications: [
+    { title: "High Capacity Industrial Lines", description: "Serve sustainable water solutions brands operating at 10,000–50,000 bottles per hour. Our proprietary feedback control system controls the levels of dissolved oxygen, surface tension, and flow speed to ensure the parameters of the process are maintained." },
+    { title: "Small Batch Artisan Lines", description: "Serve producers for whom the structured water bottle is itself the product experience. Typically run 500–2,000 bottles per hour, using glass or ultra pure BPA free PET. Every bottle meets the same molecular treatment specification as the high volume format." }
+  ],
+  whyChoose: {
+    title: "Why Choose Seppa Solutions for Structured Water Production Equipment?",
+    description: "Seppa Solutions has engineered liquid processing lines across more than 14 countries. Our experience in premium bottled water production, specialty beverage processing, and functional water treatment gives us a reference base most equipment vendors lack.",
+    paragraphs: [
+      "We are not a general purpose machinery company that bolted a vortex module onto an existing catalogue. Structured Water processing required specialized hardware we built specifically for this application.",
+      "Our team consists of process engineers with experience in fluid mechanics, colloids, and process automation. This is important when designing a water structure system where you have to maintain molecular treatment parameters of 30,000 bottles per hour. Vortex geometry off by a few degrees produces output water indistinguishable from the tap feed. The structured water benefits your brand is making claims about depend entirely on that geometry being correct. There's no way to correct that problem downstream."
+    ],
+    image: over.src
+  },
+  methodology: {
+    title: "Methodology: Our Approach to Structured Water Processing and Plant Design",
+    steps: [
+      {
+        title: "Input Water Characterisation",
+        description: "Source water is sampled and analyzed for total dissolved solids, mineral ion profile, surface tension, microbial load, and baseline cluster size via dynamic light scattering.",
+        image: meth1.src
+      },
+      {
+        title: "Pre Treatment & Vortex Cycle",
+        description: "Pre conditioning is applied if needed. Water then passes through the primary vortex induction module, resonance chamber, and stabilisation with a dwell time of 4–8 seconds.",
+        image: meth2.src
+      },
+      {
+        title: "Sterile Filling & Packaging",
+        description: "Treated water enters a Class 100 cleanroom filling environment. Bottles are capped, labelled, and coded in line without manual handling.",
+        image: meth3.src
+      },
+      {
+        title: "QC Validation",
+        description: "Every batch is tested against a defined product specification: surface tension, pH, TDS, microbial count, dissolved oxygen. Full batch documentation is generated.",
+        image: meth4.src
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    { question: "How long does Structured Water retain its molecular properties after bottling?", answer: "Post bottling stability depends on container material, headspace oxygen level, and storage temperature. Glass bottles with minimal headspace, stored below 20°C, hold surface tension and cluster parameters within specification for 18–24 months." },
+    { question: "What structured water benefits do consumers actually look for?", answer: "The three most cited by health beverage category buyers are hydration speed, taste, and digestive comfort. Taste improvement correlates directly with lower cluster size and reduced surface tension." },
+    { question: "How does Seppa's structured water system differ from off the shelf vortex units?", answer: "Most off the shelf units are single pass devices with no downstream stabilisation. Without that stage, molecular rebound occurs within seconds. Our system integrates treatment, stabilisation, and filling as a single platform." },
+    { question: "How does Seppa approach sustainable water solutions in its production lines?", answer: "Our lines operate at under 0.18 kWh per 1,000 liters. Water recovery exceeds 98%. The process uses no chemical treatment reagents, eliminating consumable waste streams. Equipment is specified for a 20 year service life minimum." },
+    { question: "How does Seppa ensure each structured water bottle product meets regulatory requirements?", answer: "Every line is commissioned with a full validation package: equipment qualification (IQ/OQ/PQ), process validation protocols, and product specification documentation. We support clients through local regulatory submissions." }
   ]
 };
 
-const Page = () => {
+const StructuredWaterPage = () => {
   return <PackagingPageLayout data={pageData} />;
 };
 
-export default Page;
+export default StructuredWaterPage;

@@ -2,38 +2,114 @@ import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 const pageData: PackagingPageData = {
-  title: "Isotonics",
+  title: "Isotonic Drink Processing Systems",
   breadcrumbName: "Isotonics",
-  rootBreadcrumbName: "Liquid",
-  rootBreadcrumbPath: "/liquid",
-  overviewTitle: "Premium Solutions for Isotonics",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Isotonics. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  rootBreadcrumbName: "Services",
+  rootBreadcrumbPath: "/services",
+  headerImage: "/images/isotonic_header_1782124547528.png",
+  overviewTitle: "What Is an isotonic drink and How Does It Support Hydration?",
+  overviewDescription: "If you’ve ever wondered what actually separates a high performance isotonic drink from a bottle of flavoured water, you aren't alone. As a beverage process engineer, I spend most of my time obsessing over the invisible science of fluid dynamics. In the fast paced world of sports nutrition, hitting the mark isn't about marketing it’s about cold, hard chemical precision.",
+  overviewsubDescription: [
+    "To put it simply, an isotonic drink is designed to mirror the osmotic pressure of your own blood plasma (roughly 280–300 mOsm/kg). This is the 'sweet spot.' When a drink is perfectly balanced this way, your body doesn't have to work to process it. Instead, the fluid, loaded with a precise ratio of electrolytes and carbohydrates, crosses your intestinal wall almost instantly, right when your body is desperate for a rapid refill.",
+    "Unlike hypertonic drinks that are too thick, or hypotonic ones that are too weak, a well made isotonic beverage triggers lightning fast gastric emptying. We spend months dialling in that carbohydrate concentration usually between 6% and 8%. At that specific level, the liquid acts as a highly efficient fuel source, maximizing your fluid uptake without leaving your stomach feeling like a lead weight during a race."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Isotonics Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
+  overviewImage: "/images/isotonic_drink_line_1782122017310.png",
+  featuresTitle: "Key Features of Seppa Solutions' isotonic drink Processing Systems",
+  featuresSubtitle: "At Seppa Solutions, my team and I don't just build machines; we are architects of performance.",
   features: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
+      title: "Bulletproof Aseptic Processing",
+      description: "Because this nutrient dense isotonic drink matrix is basically a buffet for microbes, our aseptic processing protocols have to be absolutely bulletproof. We don't just build tanks; we guard the integrity of your formula."
     },
     {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
+      title: "Electronic Weight Based Blending",
+      description: "These systems keep that 6% to 8% carbohydrate balance within sub gram accuracy. We use automated electrolyte dosing to inject exactly the right amount of sodium, magnesium, and potassium, ensuring every batch hits that vital 290 mOsm/kg target."
     },
     {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
+      title: "Rapid Dissolution & High Shear Mixers",
+      description: "We equip our rapid dissolution tanks with high shear mixers because even a microscopic, undissolved speck of powder can ruin the specific gravity and destabilize a sensitive isotonic energy drink."
     },
     {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      title: "Advanced Aseptic Valve Isolation",
+      description: "We map out every second of the pasteurization process to keep the fluid safe without nuking the vitamins. We utilize the finest quality 316L stainless steel, and the Clean In Place and Sterilize In Place technologies are seamlessly integrated."
+    }
+  ],
+  whyChoose: {
+    title: "Why Choose Seppa Solutions for isotonic beverage Production Lines?",
+    description: "There’s a reason big brands in the cutthroat sports nutrition world trust us. We don't just sell hardware; we bridge the gap between complex food science and heavy duty mechanical engineering.",
+    image: "/images/isotonic_why_choose_1782124560326.png",
+    paragraphs: [
+      "Making a stable isotonic sports drink is all about consistency making sure the bottle the athlete buys today is identical to the one they bought six months ago. Our track record shows we can build reliable, high speed lines for any isotonic drink you can imagine.",
+      "We really 'get' the fluid dynamics behind these sensitive formulas. Partnering with Seppa means you get our automated dosing arrays, our aseptic valve systems, and the precision liquid handling that stops batch variations in their tracks. We treat your brand's unique isotonic formula like a high performance tool. We work hard to protect your quality and your efficiency when you're processing an isotonic beverage. Our goal is simple: empower your team, cut your waste, and give you the tools to dominate the sports nutrition market."
+    ]
+  },
+  methodology: {
+    title: "Methodology for isotonic drink Manufacturing and Processing",
+     subtitle: "",
+    steps: [
+      {
+        title: "Water Preparation & UV Sterilization",
+        description: "Making a premium isotonic drink is basically a high speed symphony of thermodynamics. Everything starts with the water. We use multi stage reverse osmosis and UV sterilization to turn tap water into a chemically neutral canvas. If the water has even a hint of trace alkalinity, it will cause precipitation and ruin the batch before it even gets moving.",
+        image: "/images/isotonic_header_1782124547528.png"
+      },
+      {
+        title: "High Precision Blending",
+        description: "Once the water is perfect, it flows into our high precision blending phase. Our electronic systems carefully add the carbs and minerals, while we precisely regulate the temperature to ensure total solubility this is how we get a beautifully uniform isotonic energy drink. We use inline digital refractometers and osmometers to check the math in real time, confirming that the fluid matches the specs every single millisecond.",
+        image: "/images/isotonic_why_choose_1782124560326.png"
+      },
+      {
+        title: "Thermal Stabilization & Chill",
+        description: "Once that liquid is validated, we move to the thermal stabilization phase. Since a premium isotonic beverage is delicate, we use UHT processing and a rapid, controlled chill to lock it in.",
+        image: "/images/isotonic_drink_line_1782122017310.png"
+      },
+      {
+        title: "High Speed Aseptic Filling",
+        description: "Finally, the perfected isotonic drink is sent to our high speed aseptic filling blocs. It’s bottled in a cleanroom that’s essentially a sterile fortress. We run final lab tests to guarantee everything is ready for the athlete.",
+        image: "/images/rtd_content_block_1782124674023.png"
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "What is the actual metabolic difference between an isotonic drink and plain water?",
+      answer: "Let’s be real: plain water is hypotonic. It doesn’t have the minerals your body loses during hard work. An engineered isotonic drink matches your body’s plasma levels. This mirroring allows for better fluid retention, faster energy use, and, most importantly, keeps the threat of hyponatremia at bay during long, gruelling training sessions."
+    },
+    {
+      question: "Why is fluid osmolarity such a big deal in an isotonic energy drink?",
+      answer: "Osmolarity is the gatekeeper. If the carbohydrate levels are wrong, the drink becomes hypertonic, which does the exact opposite of what you want it pulls water out of your body and into your gut, causing cramps. Precise engineering prevents this nightmare, ensuring your isotonic energy drink works exactly like it's supposed to."
+    },
+    {
+      question: "How does Seppa Solutions guarantee the shelf stability of an isotonic beverage?",
+      answer: "It’s a mix of mechanical force and thermal accuracy. We use high shear dissolution tanks paired with UHT processing to lock the ingredients together. This stops ingredients from settling and prevents the pH drift that ruins lower quality products, keeping your isotonic beverage stable and effective for months."
+    },
+    {
+      question: "Why does high level sports nutrition strictly rely on precision manufacturing?",
+      answer: "Because elite athletes don't have room for error on race day. Even a tiny deviation in the formula can hurt performance. Our automated electrolyte dosing ensures that every single bottle of your isotonic sports drink matches the original lab prototype perfectly."
+    },
+    {
+      question: "What makes Seppa Solutions the top choice for an isotonic production setup?",
+      answer: "We develop turnkey systems integrating both aseptic isolation and strict control. If you take sports nutrition seriously, then you must team up with a company that knows both the science behind it and its technical aspects. We provide you with the necessary infrastructure to manufacture your super isotonic sports drinks with high speed and efficiency."
+    }
+  ],
+  applicationsTitle: "Benefits of an isotonic drink for Sports Performance and Recovery",
+  applicationsSubtitle: "The demand for high end sports nutrition is through the roof, and for good reason athletes today are smarter than ever about what they put in their bodies.",
+  applications: [
+    {
+      title: "Combat Muscular Decline",
+      description: "When you're pushing your limits, your body is essentially bleeding fluids and electrolytes. That familiar, sinking feeling of muscular decline, cramping, and mental fog? That is exactly what a high quality isotonic sports drink is built to combat."
+    },
+    {
+      title: "Lightning Fast Absorption",
+      description: "The biggest win here is speed. Because our liquid matrix mimics your blood plasma, your stomach absorbs it almost as fast as you can drink it, without pulling extra water from your tissues."
+    },
+    {
+      title: "Immediate Influx of Carbohydrates",
+      description: "A professional grade isotonic energy drink provides a steady, immediate influx of dual source carbohydrates, which can boost your energy oxidation rates to about 1.2 grams per minute. For a marathon runner or a pro cyclist, that fuel is the literal difference between hitting 'the wall' and sprinting through it."
+    },
+    {
+      title: "Vital Electrolyte Supply",
+      description: "On top of that, an optimized isotonic beverage is packed with the sodium and potassium your nerves need to keep firing. We see this every day: pro teams rely on a true isotonic drink to repair the biological chaos that heavy training causes."
     }
   ]
 };

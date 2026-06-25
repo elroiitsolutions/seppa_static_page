@@ -12,7 +12,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen max-w-[100vw] overflow-x-hidden" style={{ minHeight: '100dvh' }}>
       <FloatingActions />
       <div className="flex flex-col flex-grow">
         <MagicCursor />
