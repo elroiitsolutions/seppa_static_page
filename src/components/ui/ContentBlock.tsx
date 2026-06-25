@@ -175,7 +175,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             {/* Images */}
             <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px] order-1 lg:order-2">
               <motion.div 
-                className="absolute top-0 right-0 w-[85%] h-[80%] rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10"
+                className={`absolute top-0 right-0 ${image2 ? 'w-[85%] h-[80%]' : 'w-full h-full'} rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.1 }}
