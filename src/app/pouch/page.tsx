@@ -13,7 +13,8 @@ const pageData: PackagingPageData = {
   headerImage: pouchBanner.src,
   overviewTitle: "Water, Beverage and Milk in a Pouch",
   overviewDescription: "In several countries, the drinking Water, Beverage and Dairy industry is also using pouch packaging for milk. Made from Polypropylene, this pouch is reusable, easy to pour and produces 75% less waste than conventional milk packaging. Plastic packaging is commercially feasible and stabilizes the cost of raw materials, making it easy and practical to execute.",
-    overviewsubDescription:["It replaces the high cost of other types of packaging reducing the cost of the final product.","SEPPA offers a wide range of Pouch Sterilizing, Filling and Sealing equipment’s fully automatic, low speed and high speed lines for Water, Milk, Beverage, Oil, and petroleum products. This includes Pouch Sterilizer, Filler and Sealer, Date and Batch Coders, Shrink/Carton packaging equipment, Palletizers and Stretch Wrappers.", "The global flexible packaging market crossed $260 billion in 2023 and continues growing at 4.5% annually (Mordor Intelligence, 2024). Brand owners are switching from rigid containers to flexible packaging pouches because they weigh less, ship more efficiently, and use up to 70% less material per unit. For anyone running a filling line today, the choice of pouch packaging machine is one of the most commercially significant equipment decisions on the table."],
+  overviewLayout: "stacked",
+  overviewsubDescription:["It replaces the high cost of other types of packaging reducing the cost of the final product.","SEPPA offers a wide range of Pouch Sterilizing, Filling and Sealing equipment’s fully automatic, low speed and high speed lines for Water, Milk, Beverage, Oil, and petroleum products. This includes Pouch Sterilizer, Filler and Sealer, Date and Batch Coders, Shrink/Carton packaging equipment, Palletizers and Stretch Wrappers.", "The global flexible packaging market crossed $260 billion in 2023 and continues growing at 4.5% annually (Mordor Intelligence, 2024). Brand owners are switching from rigid containers to flexible packaging pouches because they weigh less, ship more efficiently, and use up to 70% less material per unit. For anyone running a filling line today, the choice of pouch packaging machine is one of the most commercially significant equipment decisions on the table."],
   overviewImage: pouchBanner.src,
    contentBlocks: [
     {
@@ -26,6 +27,16 @@ const pageData: PackagingPageData = {
       ],
       image1: img1.src,
       image2: img2.src
+    },
+    {
+      title: "Benefits of High Barrier and Recyclable Pouch Packaging",
+      paragraphs: [
+        "Barrier performance determines shelf life and shelf life determines commercial viability. Most food grade flexible packaging pouches use a multi layer structure: a print layer (PET or OPP), a barrier layer (aluminium foil, EVOH, or metallized film), and a sealant layer (PE or CPP). A high barrier EVOH core brings oxygen transmission below 1 cc/m²/day versus 5,000 cc/m²/day for standard polyethylene months of additional shelf life for coffee, nuts, or cured meats without preservatives. pouch packaging machine also weigh 70% to 90% less than rigid containers, which means more units per truck and lower carbon emissions per case shipped.",
+        "On sustainability, mono material PE pouches are recyclable in standard film streams. Unilever, Nestlé, and P&G have committed to 100% recyclable packaging by 2030. The flexible packaging solutions Seppa supplies are compatible with those laminate structures, and we validate APR and RecyClass compliance as part of every project specification not as an afterthought. Manufacturing scrap on our lines runs below 1.5%, and a 1% film waste reduction on a 10 million pouch per month line pays back precision tension control within months"
+      ],
+      image1: pouch.src,
+      reverse: true,
+      bgClass:"bg-light"
     }
   ],
    applicationsTitle: "Types of Custom Pouch Packaging for Different Product Applications",

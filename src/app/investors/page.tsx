@@ -1,8 +1,10 @@
 import EnquiryPageLayout, { EnquiryPageData } from '@/components/enquiry/EnquiryPageLayout';
+import bannerImg from '@/assets/about-us/generated/header.png';
 
 const pageData: EnquiryPageData = {
   title: "Investors",
   breadcrumbName: "Investors",
+  bgImage: bannerImg.src,
   heading: "Investor Relations",
   subheading: "Seppa Solutions is at the forefront of innovation in the filling and packaging industry. We welcome strategic investors who share our vision for growth and technological advancement.",
   formTitle: "Investment Inquiry",

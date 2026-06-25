@@ -1,9 +1,11 @@
 import React from 'react';
 import EnquiryPageLayout, { EnquiryPageData } from '@/components/enquiry/EnquiryPageLayout';
+import bannerImg from '@/assets/about-us/generated/header.png';
 
 const pageData: EnquiryPageData = {
   title: "Product Enquiry",
   breadcrumbName: "Product Enquiry",
+  bgImage: bannerImg.src,
   heading: "Have a project in mind?",
   subheading: "Fill out the form below to let us know about your project requirements. Our team of experts will get back to you with the best solutions tailored to your needs.",
   formTitle: "Send us an Enquiry",

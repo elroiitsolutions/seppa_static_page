@@ -1,47 +1,147 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import imgA from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import imgB from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import imgD from '@/assets/packaging/generated/csd_bottles_closeup_1781701449618.png';
+import imgE from '@/assets/packaging/generated/softdrink_banner.png';
+import imgF from '@/assets/packaging/generated/softdrink_overview.png';
+import imgG from '@/assets/packaging/generated/mineral_banner.png';
+import imgH from '@/assets/packaging/generated/mineral_overview.png';
+import imgI from '@/assets/packaging/generated/softdrink_execute.png';
 
 const pageData: PackagingPageData = {
-  title: "Automatic PET Stretch Blow Moulding Machine",
+  title: "AUTOMATIC PET BLOWING MACHINE",
   breadcrumbName: "Automatic",
-  overviewTitle: "High-Speed Automatic PET Blow Moulding",
-  overviewDescription: "Our Automatic PET Stretch Blow Moulding machines are engineered for high-volume production with precision and reliability. Designed to manufacture perfect PET bottles for water, CSD, juice, and more, these machines integrate advanced heating and blowing technology to ensure uniform wall thickness and exceptional clarity.",
-  overviewBenefits: [
-    "High production speed and efficiency",
-    "Energy-saving servo-driven operations",
-    "Consistent bottle quality and clarity",
-    "Fully automated preform feeding and bottle discharge",
-    "User-friendly PLC interface for easy operation"
-  ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Advanced Automation Features",
-  featuresSubtitle: "Built for performance, our automatic machines provide state-of-the-art capabilities for your production line.",
-  features: [
+  overviewTitle: "Automatic PET Blowing Machine Complete Bottle Line Solutions by Seppa Solutions",
+  overviewDescription: "SEPPA offers complete PET line solutions for Water, Sparkling Water, CSD, Juice, Milk, Beer, Liquor and Wine. With over 25 years of experience in manufacturing PET blowing machines and designing solutions for the packaging industry, Seppa has been pronounced as an industry leader. The technological advancement in Seppa's blowers is the result of continuous efforts focusing on customer needs and the implementation of solutions that make production processes efficient and environmentally friendly. SEPPA does not only offer a wide range of modern PET bottle blowing machines it also designs, builds, and manufactures complete new bottling and packaging lines for glass, PET and aluminium cans, along with full customer support at every stage of the project. Thanks to the trust based partner relations with our customers, we develop and achieve success together.",
+  overviewImage: imgA.src,
+  
+  contentBlocks: [
     {
-      title: "Servo Motor Driven",
-      description: "Utilizes advanced servo motors for mold clamping, stretching, and transfer, ensuring high speed, precision, and lower energy consumption."
+      title: "How an Automatic PET Blowing Machine Streamlines Bottle Production",
+      paragraphs: [
+        "Not long ago, bottle manufacturing relied on manual preform handling, inconsistent heating, and operators making judgment calls on cavity pressure. Output was limited. Reject rates were a known cost of doing business. The shift to fully automated stretch blow moulding changed that equation.",
+        "Today's automatic pet blowing machine uses a two stage process: preforms are first injection moulded (or sourced separately), reheated using infrared lamps, then stretched axially with a rod before radial air pressure forms the final bottle shape. The full cycle from preform loading to finished bottle ejection takes between 1.8 and 2.5 seconds per cavity depending on bottle volume and wall spec. At eight or twelve cavities per machine, that throughput adds up fast.",
+        "The global PET packaging market was valued at approximately USD 31 billion in 2023 and continues to expand across beverage, pharma, and personal care categories. That growth has driven demand for pet blowing machine manufacturers who have moved well beyond basic pneumatic systems into fully integrated, data monitored production lines. Not all of them have kept pace.",
+        "Choosing from the right pool of pet blowing machine manufacturers ones with genuine engineering depth, not just assembled components is one of the more consequential decisions a packaging facility will make."
+      ],
+      image1: imgB.src,
+      reverse: true
     },
+
     {
-      title: "Infrared Heating System",
-      description: "Optimized infrared heating lamps provide uniform heat distribution to preforms, resulting in flawless stretch blow moulding."
-    },
-    {
-      title: "Air Recovery System",
-      description: "An integrated air recovery system reuses high-pressure blowing air for machine movements, significantly reducing energy costs."
-    },
-    {
-      title: "Quick Mold Changeover",
-      description: "Designed with a drawer-type mold structure, allowing operators to change bottle molds quickly and efficiently with minimal downtime."
-    },
-    {
-      title: "Intelligent Fault Diagnosis",
-      description: "The advanced PLC system continuously monitors machine operations and instantly displays fault diagnostics for quick troubleshooting."
-    },
-    {
-      title: "Compact Footprint",
-      description: "The streamlined, enclosed design maximizes your factory floor space while maintaining high accessibility for maintenance."
+      title: "Production Performance and Efficiency Advantages",
+      paragraphs: [
+        <div key="b1">
+          <strong className="text-black font-bold block mb-3 text-lg">Lightweighting Without Compromise</strong>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify mb-4">The packaging industry's push toward lightweighting reducing gram weight per bottle while maintaining structural integrity puts serious demands on blow moulding precision. A 0.5 gram reduction in a 500ml water bottle preform sounds minor. Across 50 million bottles per year, that's 25 tonnes of PET resin saved. At current resin prices, the material cost reduction is worth calculating carefully.</p>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Achieving lightweighting reliably requires consistent wall thickness, which comes back to heating uniformity and stretch rod control. This is where pet blowing machine manufacturers who invest in servo technology and oven design separate themselves from competitors chasing lower capital cost with older pneumatic platforms.</p>
+        </div>,
+        <div key="b2">
+          <strong className="text-black font-bold block mb-3 text-lg">Cycle Time and Output</strong>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify mb-4">Seppa's water blower machine lineup covers outputs from 2,000 to 28,000 bottles per hour, depending on configuration and cavity count. Fast cycle times come from eliminating dead time in the mould open/close sequence, preform transfer, and blow/exhaust phases not from pushing mechanics past design limits. Seppa's engineering team has optimised each of these phases without sacrificing bottle quality.</p>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Compared to what many pet blowing machine manufacturers offer at equivalent cavity counts, Seppa's cycle time advantage is measurable during factory acceptance testing. Customers are encouraged to run side by side output comparisons before committing.</p>
+        </div>,
+        <div key="b3">
+          <strong className="text-black font-bold block mb-3 text-lg">Energy Efficiency in Blow Moulding</strong>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify mb-4">Energy consumption in blow moulding is dominated by two systems: the IR oven and the high pressure air compressor. Seppa addresses both. The oven uses efficient IR lamp arrays with reflector geometry that concentrates heat on the preform rather than the surrounding air.</p>
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">For facilities with sustainability targets or rising energy costs, this is part of the business case. A Seppa water blower machine running air recovery at 12,000 bottles per hour uses measurably less compressed air energy than equivalently specified machines without recovery. It's also why specifying from quality pet blowing machine manufacturers rather than the lowest cost option produces a different five year operating cost.</p>
+        </div>
+      ],
+      image1: imgD.src,
+      reverse: false,
+      bgClass:"bg-light",
+      layout:"stacked"
     }
-  ]
+  ],
+
+  featuresTitle: "Key Features of Seppa Solutions Automatic PET Blowing Machines",
+  featuresSubtitle: "Seppa's machines are built around a clear engineering philosophy: reduce the variables operators can't control, and give full visibility into the ones they can.",
+  features: [
+    { title: "Infrared Heating with Zone by Zone Control", description: "The preform oven on a Seppa pet machine uses segmented IR lamps with individual power control per zone. Wall thickness in the finished bottle depends directly on how heat is distributed through the preform body. A bottle with a heavier base requires different heating than a lightweight 500ml water bottle. This is one area where Seppa stands apart from pet blowing machine manufacturers who use older fixed lamp oven designs. Zone control gives process engineers actual leverage over quality, not just temperature setpoints." },
+    { title: "High Precision Servo Drive Systems", description: "Servo controlled blow arms, stretch rods, and mould clamping replace pneumatic actuation where precision matters most. The result is smoother motion, lower mechanical stress on tooling, and programmable speed profiles for different bottle formats without changing physical components. Customers sourcing the best pet blowing machine for multi SKU production consistently cite servo architecture as the deciding factor over pneumatic alternatives." },
+    { title: "Rapid Mould Change Architecture", description: "Downtime for mould changeovers used to run 4–6 hours on older blow moulding systems. Seppa's quick change mould carriers reduce that to under 45 minutes for a full cavity set swap. For facilities running multiple pack sizes across one line, this is a real operational advantage one that compounds across the production calendar." },
+    { title: "Integrated HMI and Data Logging", description: "Every Seppa machine includes a touchscreen HMI with recipe storage, production counters, and fault logging. Alarm conditions are categorised by severity and logged with timestamps. Historical production data exports cleanly for maintenance scheduling or process review." }
+  ],
+
+  applicationsTitle: "Applications Across Industries",
+  applications: [
+    {
+      title: "Beverages: Water, CSD, and Juice",
+      description: "The beverage sector drives the majority of global PET bottle demand. Seppa's hot blower machine configured for carbonated drinks handles the specific requirements of CSD production higher blow pressures, tighter base geometry, and bottles designed to hold internal pressure through distribution. For still water lines, the water blower machine configuration prioritises lightweight output, high cavitation, and smooth synchronisation with downstream filling. Seppa's complete line approach means the blower and filler are matched from the start no retrofitting, no speed mismatch buffers degrading throughput."
+    },
+    {
+      title: "Home Care and Cleaning Products",
+      description: "Detergent and cleaning product bottles tend to carry more complex geometry handles, grip zones, non round cross sections. Seppa works with customers in this category to develop mould designs that work within the machine's stretch ratio range while producing packaging that differentiates on shelf."
+    },
+    {
+      title: "Personal Care",
+      description: "Shampoo, conditioner, and body wash bottles require accurate wall thickness in grip areas and consistent neck finish for pump fitment. The precision Seppa's servo systems provide at the stretch rod and blow pressure stages directly affects these outcomes, which is why personal care producers looking for the best pet blowing machine for their application consistently shortlist Seppa."
+    }
+  ],
+  
+  methodology: {
+    title: "Methodology",
+    steps: [
+      {
+        title: "Design and Engineering",
+        description: "Each machine is configured to the customer's bottle portfolio. Heating profiles, stretch ratios, blow pressures, and cycle timing are validated in factory testing using actual customer preforms. By the time the machine reaches the site, the critical process parameters are already established.",
+        image:imgF.src
+      },
+      {
+        title: "Installation and Commissioning",
+        description: "Seppa's installation team handles mechanical assembly, electrical connection, and compressed air integration on site. Commissioning follows a structured qualification protocol: dry runs to verify mechanical function, then production runs with preforms to confirm bottle quality at target output rates.",
+        image:imgG.src
+      },
+      {
+        title: "Operator Training",
+        description: "Operators are trained on machine controls, recipe management, fault diagnosis, and routine maintenance. Training is conducted in the customer's local language where possible. The goal is a team that can run the machine independently not one that needs a support call for every alarm category.",
+        image:imgH.src
+      },
+      {
+        title: "After-Sales Support",
+        description: "Seppa maintains a parts inventory for all active machine models and offers remote diagnostic capability for software faults. Planned maintenance intervals are documented in the machine manual. Seppa's service team is available for scheduled preventive visits or unplanned breakdowns. This support infrastructure is what separates serious pet blowing machine manufacturers from equipment importers who treat handover as the end of the relationship.",
+        image:imgI.src
+      }
+    ]
+  },
+  faqTitle: "Expert answers to automatic pet blowing machine questions",
+  faqs: [
+    {
+      question: "How much energy does a Seppa PET machine consume per 1,000 bottles?",
+      answer: "Energy consumption varies by bottle weight, cavity count, and line speed. Seppa's machines with air recovery systems typically consume 0.08–0.14 kWh per 1,000 bottles on standard 500ml formats. Detailed energy profiles are available from Seppa's engineering team for specific line configurations. Pet blowing machine manufacturers who don't offer this data upfront make it harder to evaluate true operating cost."
+    },
+    {
+      question: "Are Seppa blowing machines compatible with moulds from other suppliers?",
+      answer: "Seppa's mould carrier system follows standard pitch and bolt pattern specifications used widely across the industry. Most moulds designed for comparable cavity pitch can be adapted for use on Seppa machines. Seppa recommends factory validation before purchasing tooling from an outside supplier a step that's quick and avoids compatibility issues on site."
+    },
+    {
+      question: "What is the expected ROI timeline for a Seppa automatic pet blowing machine?",
+      answer: "ROI depends on current production costs, line speed targets, and resin pricing. Customers switching from manual or semi automatic methods typically recover machine investment within 18–30 months through labour reduction, lower reject rates, and material savings from lightweighting. To build an accurate ROI model, Seppa's team needs your current output rate, bottle portfolio, and energy tariff. The best pet blowing machine specification for your facility flows from that analysis."
+    },
+    {
+      question: "How often does a PET blowing machine require scheduled maintenance?",
+      answer: "Seppa recommends daily checks on lubrication and filter status, weekly inspection of IR lamps and reflector condition, monthly review of servo drive parameters and mould wear, and a full annual service covering bearings, seals, and electrical terminations and the most common gap Seppa's service team finds when customers report premature wear on machines that came from other pet blowing machine manufacturers. If you're evaluating the best pet blowing machine for your facility."
+    },
+    {
+      question: "Can Seppa's hot blower machine handle both hot-fill and cold-fill production?",
+      answer: "Hot fill and cold fill bottles require different preform designs and process parameters primarily around crystallisation oven usage and mould temperature control. Seppa's hot blower machine models are configured for hot fill production. Some customers run changeover between hot fill and cold fill formats using separate mould sets and saved HMI recipes."
+    }
+  ],
+  hideWhyChoose: false,
+  whyChoose: {
+    title: "How Seppa Solutions Delivers Advanced Automatic PET Blowing Machine Solutions",
+    paragraphs: [
+      <p key="p1" className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Most pet blowing machine manufacturers sell machines. Seppa builds production systems.</p>,
+      <p key="p2" className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">A machine delivered without proper consideration of facility layout, utility supply, downstream synchronisation, and operator capability will underperform its specifications consistently. Seppa's role as a turnkey engineering partner means those variables get addressed before the machine ships, not through field troubleshooting after it arrives.</p>,
+      <div key="p3" className="mt-4 mb-4">
+        <strong className="text-black font-bold block mb-2 text-lg">What Turnkey Means in Practice</strong>
+        <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">When a customer engages Seppa for a new line, the process starts with facility review. Seppa's engineers assess compressor room location, electrical supply capacity, preform logistics, and downstream equipment to build a layout that supports the target output without bottlenecks. This planning phase is where the best pet blowing machine specification gets finalised cavity count, configuration, integration points.</p>
+      </div>,
+      <p key="p4" className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Facilities that have worked with other pet blowing machine manufacturers and then moved to Seppa consistently point to this commissioning process as the difference. Getting to steady state production in days rather than weeks matters when every hour of commissioning is dead line time.</p>
+    ],
+    image: imgE.src
+  }
 };
 
 const AutomaticPage = () => {

@@ -62,7 +62,7 @@ const HowItWorks = () => {
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(1); // Default center card is active
 
   return (
-    <section className="py-24 bg-[#101934] relative overflow-hidden m-3 rounded-2xl">
+    <section className="py-12 lg:py-24 bg-[#101934] relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none bg-no-repeat bg-center bg-cover opacity-15" style={{ backgroundImage: `url(${bgPattern.src})` }}></div>
 

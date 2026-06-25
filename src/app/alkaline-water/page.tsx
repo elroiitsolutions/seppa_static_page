@@ -1,45 +1,102 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
+// Using generated and placeholder images
+import bannerImg from '@/assets/services/generated/training_banner_1782102515585.png'; // fallback
+import overviewImg from '@/assets/pet/generated/pet_overview_1782103229961.png';
+import img1 from '@/assets/pet/generated/pet_cb1_1782103242917.png';
+import over from '@/assets/pet/generated/pet_whychoose_1782103256501.png';
+
+import meth1 from '@/assets/pet/generated/pet_meth1_1782103277774.png';
+import meth2 from '@/assets/pet/generated/pet_meth2_1782103291753.png';
+import meth3 from '@/assets/pet/generated/pet_meth3_1782103305856.png';
+import meth4 from '@/assets/pet/generated/pet_meth4_1782103318966.png';
+
 const pageData: PackagingPageData = {
-  title: "Alkaline Water",
+  title: "Alkaline Water Production Lines",
   breadcrumbName: "Alkaline Water",
   rootBreadcrumbName: "Liquid",
   rootBreadcrumbPath: "/liquid",
-  overviewTitle: "Premium Solutions for Alkaline Water",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Alkaline Water. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  headerImage: bannerImg.src,
+  overviewTitle: "What Is Alkaline Water?",
+  overviewDescription: "Alkaline water is water that has been engineered to hold a pH above 7.0 typically between 8.0 and 9.5 either by running it through an electrolytic ionization chamber or by dosing it with food grade mineral salts. That's the short version. The longer version involves a lot more chemistry, a lot more engineering, and a surprising number of ways for a production line to get it wrong.",
+  overviewsubDescription: [
+    "Tap water is close to neutral, usually pH 6.5 to 7.5 depending on the source. Consumer demand particularly from sports nutrition, wellness retail, and hospital nutrition programs has pushed hard toward water with elevated hydroxide ion concentration, measurably negative ORP, and a documented mineral profile. That demand is real, it's growing, and it has real engineering consequences.",
+    "Two production routes handle the bulk of industrial output. Electrolytic ionization splits water molecules using direct current across a semipermeable membrane, pushing hydroxide ions to the cathode side and producing alkaline water on one end, acidic water on the other."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Alkaline Water Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
-  features: [
+  overviewImage: overviewImg.src,
+  contentBlocks: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
-    },
-    {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
-    },
-    {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
-    },
-    {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      title: "Benefits of Drinking Alkaline Water",
+      paragraphs: [
+        "The functional beverage market has largely moved past vague wellness claims. Alkaline water benefits that have been studied include acid buffering capacity during high intensity exercise relevant for athletes generating significant lactic acid load and improved hydration markers linked to smaller water cluster size. Whether every claim in the wellness space holds up to scrutiny is a different debate.",
+        "But those benefits only exist in the bottle if the pH held. A product that left the facility at pH 9.0 and arrived at retail at 7.4 didn't deliver alkaline water benefits to anyone. The consumer won't know why. They'll just stop buying it. That's not a marketing problem. The fix lives on the production floor."
+      ],
+      image1: img1.src,
+      reverse: true
     }
+  ],
+  featuresTitle: "Key Features of Alkaline Water Production Lines",
+  featuresSubtitle: "Achieving the target pH is the easy step. Holding it stable through filling is where lines fail.",
+  features: [
+    { title: "Ionic Stabilization and pH Control Loops", description: "pH drops when temperature rises, when ambient CO₂ dissolves, or when it contacts the wrong grade of steel. A production line needs inline pH sensors positioned throughout, not just at the end. Closed loop PID control can correct pH in real time within +0.05 units." },
+    { title: "Material Selection for High pH Chemistry", description: "Alkaline drinking water at pH 9.5 is chemically active and causes rapid corrosion of 304 stainless steel. All wetted parts must be made of 316L stainless steel with PTFE lined valves and sanitary clamps." },
+    { title: "ORP Monitoring", description: "Natural alkaline water created through electrolysis has an ORP of -100mV to -400mV. Monitoring ORP in line requires platinum electrode sensors operating in narrow temperature bands to verify the antioxidant claim." }
+  ],
+  applicationsTitle: "Applications of Alkaline Water Across Industries",
+  applicationsSubtitle: "Different industries have distinct demands for alkaline water formats and pH levels.",
+  applications: [
+    { title: "Sports and Athletic Nutrition", description: "Need alkaline water between pH 8.5 and 9.0 with electrolytes. Lines operate on long term campaigns necessitating CIP systems designed for high pH products." },
+    { title: "Wellness Retail", description: "Runs at higher pH targets 9.0 to 9.5 in smaller batch sizes, with more packaging format variation like glass and aluminum." },
+    { title: "Hospitality and Food Service", description: "Hotels buy alkaline drinking water in bulk multi liter formats, targeting pH 8.0 to 8.5. Batch to batch consistency is non negotiable." },
+    { title: "Medical and Clinical Nutrition", description: "Natural alkaline water for clinical hydration requires full mineral panel certification, ORP verification per batch, and filling environments closer to pharmaceutical cleanliness standards." }
+  ],
+  whyChoose: {
+    title: "Why Choose Seppa Solutions for Alkaline Water Solutions?",
+    description: "Seppa Solutions builds full production lines for alkaline water raw water pretreatment through palletized finished goods. We've built both electrolytic and mineral injection systems, at a range of throughputs, and we treat the method choice as a technical question with a right answer for each specific situation, not a default.",
+    paragraphs: [
+      "Our lines for alkaline mineral water include CIP systems designed for high pH chemistry from the ground up. This matters more than it sounds. Generic beverage filling equipment often lacks the chemical resistance and cycle validation that sustained alkaline chemistry requires.",
+      "We specify 316L stainless and PTFE throughout the wetted path. pH and ORP control documentation goes into the regulatory file."
+    ],
+    image: over.src
+  },
+  methodology: {
+    title: "Methodology: From Source Water to Sealed Bottle",
+    steps: [
+      {
+        title: "Source Water Analysis",
+        description: "We run a full panel covering TDS, total hardness, alkalinity, iron, manganese, and microbial load before touching any equipment specification.",
+        image: meth1.src
+      },
+      {
+        title: "Custom System Sizing",
+        description: "What's in the incoming water determines everything downstream how much treatment capacity is needed, and what the buffer tank residence time needs to be.",
+        image: meth2.src
+      },
+      {
+        title: "Buffer & Stabilization",
+        description: "Treated alkaline mineral water holds in jacketed buffer tanks while temperature and pH stabilize before the filler engages.",
+        image: meth3.src
+      },
+      {
+        title: "Inline Control Loops",
+        description: "Continuous monitoring using multiple inline sensors to guarantee pH and ORP parameters are locked precisely at the target levels.",
+        image: meth4.src
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions About Alkaline Water",
+  faqs: [
+    { question: "How stable is alkaline water after bottling?", answer: "It depends on container material, headspace gas management, and the carbonate buffer concentration. PET with nitrogen flushed headspace holds pH reliably for 12 to 18 months under normal storage conditions. Glass performs better for products above pH 9.2." },
+    { question: "What is the difference between industrial and small scale premium alkaline water production?", answer: "Industrially produced alkaline water is designed for efficient production through the use of control loops, while premium alkaline water is designed for efficient production in small batches. The control loop design, size of the dosing pump, and fill system are completely different." },
+    { question: "How does Seppa ensure alkaline water benefits reach the retail consumer?", answer: "Through ORP control, CO₂ exclusion, and verified shelf life data. Nitrogen blanketing during filling, sealed headspace design, and post fill ORP gate checks protect the product's oxidation reduction profile." },
+    { question: "Is natural alkaline water production safe at scale?", answer: "Natural alkaline water produced through food grade mineral injection or electrolysis has a clean safety profile when the equipment is correctly specified and maintained. Seppa lines include validated CIP and COP protocols." },
+    { question: "Why does Seppa Solutions lead in functional beverage packaging innovation?", answer: "For alkaline drinking water, the chemistry and the filling process interact in ways that matter for product quality. We build them together from the design phase. Material compatibility, ORP monitoring, and pH loop integration go into the system spec from day one." }
   ]
 };
 
-const Page = () => {
+const AlkalineWaterPage = () => {
   return <PackagingPageLayout data={pageData} />;
 };
 
-export default Page;
+export default AlkalineWaterPage;

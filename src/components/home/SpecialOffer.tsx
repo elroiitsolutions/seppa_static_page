@@ -47,7 +47,7 @@ const reports = [
 
 const SpecialOffer = () => {
   return (
-    <section className="py-24 bg-seppa-red relative overflow-hidden m-3 rounded-2xl">
+    <section className="py-12 lg:py-24 bg-seppa-red relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern Overlay (Optional subtle texture) */}
       <div className="absolute inset-0 pointer-events-none bg-no-repeat bg-center bg-cover opacity-15" style={{ backgroundImage: `url(${bgPattern.src})` }}></div>
 

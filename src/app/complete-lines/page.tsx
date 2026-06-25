@@ -1,45 +1,123 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import bannerImg from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import overviewImg from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import img1 from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
+import img2 from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import img3 from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import meth1 from '@/assets/packaging/pouch/moderm.webp';
+import meth2 from '@/assets/packaging/can/commissing.webp';
+import meth3 from '@/assets/packaging/can/install.webp';
+import meth4 from '@/assets/packaging/can/training.webp';
+import over from '@/assets/packaging/generated/wine_overview.png';
 
 const pageData: PackagingPageData = {
-  title: "Complete Lines / Packaging",
-  breadcrumbName: "Complete Lines / Packaging",
+  title: "Complete Line Solutions for Modern Industrial Production",
+  breadcrumbName: "Complete Lines",
   rootBreadcrumbName: "Services",
   rootBreadcrumbPath: "/services",
-  overviewTitle: "Premium Solutions for Complete Lines / Packaging",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Complete Lines / Packaging. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
+  headerImage: bannerImg.src,
+  overviewTitle: "Complete Line Solutions for Modern Industrial Production",
+  overviewDescription: "50 years ago, SEPPA started with a single question: why do manufacturers keep buying equipment from five different vendors and then spend months trying to make it all work together? The answer, still relevant today, was that nobody was taking ownership of the whole operation. SEPPA did. That decision shaped everything since more than 1,000 rinsing, filling, and capping lines installed worldwide, across beverage, food, and liquid product categories.",
+  overviewsubDescription: [
+    "A complete line is not simply a collection of machines. It is an engineered sequence where each stage intake, processing, filling, packaging, palletizing is matched for throughput, calibrated for hygiene, and wired into unified processing systems for control. When that sequence breaks at any point, the whole operation stalls. SEPPA's work over five decades has been about removing those break points."
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Complete Lines / Packaging Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
-  features: [
+  overviewImage: overviewImg.src,
+  contentBlocks: [
     {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
+      title: "Key Components of a Complete Production Line",
+      paragraphs: [
+        "The performance of any production line depends on how tightly its components talk to each other. A fast filler paired with a slow capper creates a bottleneck. A capper paired with a labeler running at different speeds creates another. Line balancing matching the rated output of every machine in the sequence is one of the harder engineering problems in beverage and food manufacturing, and it is where a lot of \"complete line\" claims fall apart on the factory floor.",
+        "SEPPA designs from intake to output as a single flow problem. Raw material handling and buffer zones are sized for the target line speed. Conveyors are not an afterthought they are part of the processing systems architecture, specified to maintain product integrity between stations. The filling and capping block is built around SEPPA's neck-handling RFC system, which lets the same line run bottles of different shapes and lower grammage without a full changeover. For manufacturers who need to launch new packaging types without building a new line, that flexibility matters. Choosing the right processing equipment manufacturer at the design stage one who owns the full line scope is what makes that flexibility available.",
+        "The RFC handles both hot fill (up to 80°C) and cold fill (down to 0°C), which means a single complete line can run carbonated soft drinks, juices, water, beer, and temperature sensitive products on the same platform. Shrink wrapping, carton handling, and stretch wrapping are integrated at the packaging end, with pasteurizer equipment available for product lines that require it."
+      ],
+      image1: img1.src,
+      reverse: true
     },
     {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
+      title: "Automated Processing and Control Systems",
+      paragraphs: [
+        "A processing plant running at industrial scale generates data continuously temperatures, pressures, fill volumes, reject rates, OEE percentages. The value of that data depends entirely on whether there is a control system capable of acting on it in time to matter. SEPPA's processing systems use centralized SCADA integration with machine-level PLCs, so operators see the whole complete line in one interface rather than checking individual HMIs at each station.",
+        "Sanitation is where a lot of food and beverage lines lose time. A line shut down for manual cleaning is a line not producing. SEPPA's CIP system Clean in Place eliminates the need to disassemble product-contact components for routine cleaning. It runs on a trolley mounted unit with integrated electrical heating, cycling hot caustic and acid solutions through all product contact paths in a closed loop. Special detergent and sterilization agents supplement the acid alkali chemistry to ensure the hygiene standard required in a food processing plant. The cyclic loop design cuts chemical consumption by around 85% compared to single pass cleaning, which is a meaningful operational saving on a high frequency cleaning schedule.",
+        "That unit integrates directly with the complete line control architecture, so cleaning cycles can be scheduled, logged, and verified without relying on manual records. For food safety audits, that traceability is worth more than the chemical savings."
+      ],
+      image1: img2.src,
+      reverse: false,
+      bgClass:"bg-white"
     },
     {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
+      title: "Integrated Filling and Packaging Solutions",
+      paragraphs: [
+        "The interface between liquid processing and packaging is where product integrity is most at risk. Pressure variations, temperature drift, and timing mismatches at the filler can produce fill weight deviations, carbonation loss, or contamination events all of which are expensive. In a properly integrated complete line, the filler receives product within a defined temperature and pressure band maintained by the upstream processing equipment, and the downstream capper and labeler operate at exactly the line speed the filler sets.",
+        "SEPPA builds that integration from a single engineering scope. There is no interface document between a filler supplier and a capper supplier, because both come from the same processing equipment manufacturer. This is not a small thing. Multi vendor lines spend real engineering time negotiating machine interfaces, and those interfaces are often where problems live years after installation.",
+        "Packaging options within a complete line include shrink wrapped multipacks, carton trays, and stretch wrapped pallet loads, depending on the distribution format. Each format is integrated at the line design stage, not retrofitted later."
+      ],
+      image1: img3.src,
+      reverse: true
+    }
+  ],
+  whyChoose: {
+    title: "Why Manufacturers Choose Seppa Solutions",
+    description: "SEPPA operates as a processing equipment manufacturer that takes responsibility for the full scope not just the equipment, but the line performance.",
+    paragraphs: [
+      "That responsibility runs from the initial site evaluation through commissioning and into post installation support. Manufacturers who have worked with multi vendor lines know what it costs when nobody will own a cross machine problem. With SEPPA as the single processing equipment manufacturer across the complete line, that situation does not arise.",
+      "The hardware is built for the conditions inside an industrial processing plant: continuous duty cycles, aggressive cleaning chemistry, and the operational demands of a food processing plant environment. The processing systems are specified for the product range and line speed, not for a generic benchmark. And the CIP system is not a separate purchase it is part of the line design.",
+      "Fifty years of line installations across beverage, dairy, pharmaceutical, and food categories has produced a body of engineering knowledge that is difficult to replicate. SEPPA's engineers have seen failure modes that only appear after thousands of operating hours, and they design around them. That experience shows up in mean time between failures, not in a brochure."
+    ],
+    image:over.src
+  },
+  methodology: {
+    title: "Methodology: End to End Engineering Lifecycle",
+    steps: [
+      {
+        title: "Site Evaluation & Design",
+        description: "SEPPA's process for a new complete line starts with a site evaluation actual production floor dimensions, utility supply, throughput targets, product range, and any constraints on changeover time. The conceptual design phase produces a line layout with throughput modelling, not a generic proposal adapted from a template.",
+        image: meth1.src
+      },
+      {
+        title: "Fabrication & Acceptance",
+        description: "Fabrication happens at SEPPA's own facility, with Factory Acceptance Testing completed before shipment. Installation is followed by Site Acceptance Testing against the agreed throughput and quality parameters.",
+        image: meth2.src
+      },
+      {
+        title: "Commissioning & Training",
+        description: "Commissioning for a food processing plant follows sterile startup procedures and documentation for regulatory compliance. Staff training covers both normal operation and troubleshooting, with attention to the CIP system and changeover procedures that most affect production efficiency.",
+        image: meth3.src
+      },
+      {
+        title: "Ongoing Support",
+        description: "Once a processing plant is live, SEPPA provides ongoing support for the processing systems, including spare parts availability and remote diagnostics where the control architecture supports it. The line is not finished at handover it is a long term operational relationship.",
+        image: meth4.src
+      }
+    ]
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "Can a complete line be scaled after installation?",
+      answer: "Yes. SEPPA designs with modularity in mind. Processing plant capacity can be increased by adding buffer zones, upgrading the filler block, or extending the packaging end without replacing the full line. The control architecture is specified to accommodate additional stations. The specific scope depends on the original complete line design, which is why SEPPA documents each installation in detail."
     },
     {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
+      question: "How does a CIP system contribute to food safety compliance?",
+      answer: "A CIP system that logs every cleaning cycle temperatures reached, chemical concentrations, contact time gives a food processing plant an auditable sanitation record. Regulatory frameworks in most markets require documented cleaning procedures for product contact surfaces. SEPPA's clean in place unit produces that documentation automatically, removing the risk of manual record gaps. The closed loop design also ensures consistent chemical contact across the full internal surface of the processing equipment, which spot cleaning cannot guarantee."
+    },
+    {
+      question: "What is the typical ROI period for a new processing plant investment?",
+      answer: "This varies by production volume, product margin, and what the new line is replacing. In SEPPA's experience across food and beverage installations, manufacturers upgrading from multi-vendor lines to an integrated complete line typically see payback within 24 to 36 months, driven by reduced downtime, lower chemical costs from automated sanitation, reduced labour on cleaning and changeovers, and improved fill accuracy. Higher volume plants in competitive categories see shorter payback periods because every percentage point of OEE improvement translates to more product reaching the market."
+    },
+    {
+      question: "What technical advantages does Seppa Solutions offer as a processing equipment manufacturer?",
+      answer: "The primary advantage is single source engineering accountability across the complete line. Beyond that, the neck handling RFC technology provides genuine flexibility for packaging format changes without full changeovers. The clean in place unit is integrated into the line control architecture rather than operating independently. And SEPPA's equipment is specified for the actual product and line speed requirements of each installation, not adapted from a cataloge configuration. For manufacturers running temperature sensitive or carbonated products, the fill range from 0°C to 80°C within the same line platform is operationally significant."
+    },
+    {
+      question: "How does Seppa Solutions handle installations outside of standard configurations?",
+      answer: "Most industrial food processing plant installations have at least one non standard requirement an unusual building footprint, a product with atypical viscosity, a regulatory constraint in the destination market. SEPPA's engineering process starts with the site and product data, not with a standard model. The complete line is designed around the actual operating conditions, which is why SEPPA's installations consistently perform to the agreed throughput specifications rather than requiring post-commissioning modifications."
     }
   ]
 };
 
-const Page = () => {
+const CompleteLinesPage = () => {
   return <PackagingPageLayout data={pageData} />;
 };
 
-export default Page;
+export default CompleteLinesPage;
