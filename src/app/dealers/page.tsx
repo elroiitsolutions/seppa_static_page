@@ -1,9 +1,11 @@
 import React from 'react';
 import EnquiryPageLayout, { EnquiryPageData } from '@/components/enquiry/EnquiryPageLayout';
+import bannerImg from '@/assets/about-us/generated/header.png';
 
 const pageData: EnquiryPageData = {
   title: "Dealers",
   breadcrumbName: "Dealers",
+  bgImage: bannerImg.src,
   heading: "Partner With Us",
   subheading: "Join our global network of authorized dealers. We provide industry-leading filling and packaging solutions. Fill out the form below to apply to become a Seppa dealer in your region.",
   formTitle: "Dealer Application",

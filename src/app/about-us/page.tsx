@@ -9,6 +9,10 @@ import Accordion from '@/components/ui/Accordion';
 import AnimatedHeading from '@/components/ui/AnimatedHeading';
 import bgPattern from '@/assets/bg/bg-section-bg-image.png';
 import { motion, Variants } from 'framer-motion';
+import Clients from '@/components/home/Clients';
+import Partners from '@/components/home/Partners';
+import Awards from '@/components/home/Awards';
+import LatestBlogs from '@/components/home/LatestBlogs';
 
 import headerImg from '@/assets/about-us/generated/header.png';
 import whoWeAreImg from '@/assets/about-us/generated/who_we_are.png';
@@ -211,6 +215,11 @@ const AboutUsPage = () => {
           </div>
         </div>
       </section>
+
+      <Clients />
+      <Partners />
+      <Awards />
+      <LatestBlogs />
 
     </div>
   );

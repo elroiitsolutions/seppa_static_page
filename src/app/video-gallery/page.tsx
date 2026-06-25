@@ -3,6 +3,7 @@ import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react'
 import PageHeader from '@/components/layout/PageHeader';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiPlay, FiSearch, FiX, FiGrid, FiFilter, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import bannerImg from '@/assets/about-us/generated/header.png';
 
 /* ──────────────────────── Video Data ──────────────────────── */
 
@@ -216,6 +217,7 @@ const VideoGallery: React.FC = () => {
       <PageHeader
         title="Video Gallery"
         breadcrumbs={[{ name: "Home", path: "/" }, { name: "Video Gallery" }]}
+        bgImage={bannerImg.src}
       />
 
       {/* ──── Main Content Section ──── */}

@@ -75,7 +75,6 @@ const Footer: React.FC = () => {
               <ul className="space-y-4 text-gray-300 font-medium">
                 <li><Link href="/" className="hover:text-seppa-red transition">Home</Link></li>
                 <li><Link href="/about-us" className="hover:text-seppa-red transition">About Us</Link></li>
-                <li><Link href="/projects" className="hover:text-seppa-red transition">Our Projects</Link></li>
                 <li><Link href="/blog" className="hover:text-seppa-red transition">Our Blog</Link></li>
                 <li><Link href="/contact-us" className="hover:text-seppa-red transition">Contact Us</Link></li>
               </ul>
