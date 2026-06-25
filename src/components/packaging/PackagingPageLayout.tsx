@@ -36,8 +36,8 @@ export interface PackagingPageData {
   rootBreadcrumbPath?: string;
   headerImage?: string;
   overviewTitle: string;
-  overviewDescription: string;
-  overviewsubDescription?: string[];
+  overviewDescription: string | React.ReactNode;
+  overviewsubDescription?: (string | React.ReactNode)[];
   overviewBenefits?: string[];
   overviewImage: string;
   overviewImage2?: string;
@@ -52,7 +52,7 @@ export interface PackagingPageData {
   whyChoose?: {
     title?: string;
     description?: string;
-    paragraphs?: string[];
+    paragraphs?: (string | React.ReactNode)[];
     reasons?: { id?: number | string; icon?: React.ReactNode; title: string; description: string }[];
     image?: string;
   };

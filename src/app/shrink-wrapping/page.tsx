@@ -45,7 +45,8 @@ const pageData: PackagingPageData = {
         "The output is uniform film contraction. Not tighter on one face consistent shrink that holds dimensional tolerance through the cooling zone. Every bundle leaving the wrapping machine matches the one before it structurally. This consistency is what separates a production grade shrink film wrapping machine from a commodity unit."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Applications Across Industries",

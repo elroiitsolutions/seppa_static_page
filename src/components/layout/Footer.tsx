@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none bg-no-repeat bg-center bg-cover opacity-15" style={{ backgroundImage: `url(${bgPattern.src})` }}></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
         
         {/* Top Section: Logo & Newsletter */}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-16 pb-12 border-b border-white/10">
@@ -31,12 +31,14 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-heading font-bold">Subscribe Our Newsletter's</h3>
             <form className="flex w-full sm:w-auto">
               <input 
+                suppressHydrationWarning
                 type="email" 
                 placeholder="Enter Email Address *" 
                 required
                 className="bg-white/10 backdrop-blur-sm text-white px-6 py-4 rounded-l-lg w-full sm:w-[300px] focus:outline-none border border-white/20 border-r-0 placeholder-gray-400"
               />
               <button 
+                suppressHydrationWarning
                 type="submit" 
                 className="bg-seppa-red text-white px-6 py-4 rounded-r-lg hover:bg-white hover:text-[#101934] transition flex items-center justify-center"
               >
@@ -55,10 +57,10 @@ const Footer: React.FC = () => {
               Let’s engineer high-performance packaging lines together
             </h2>
             <div className="flex items-center gap-3 group cursor-pointer w-max">
-              <button onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
+              <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
                 Get In Touch
               </button>
-              <button onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
+              <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
                 <FiArrowUpRight className="transform transition-transform duration-300 group-hover:rotate-45" size={22} strokeWidth={2.5} />
               </button>
             </div>
@@ -73,7 +75,6 @@ const Footer: React.FC = () => {
               <ul className="space-y-4 text-gray-300 font-medium">
                 <li><Link href="/" className="hover:text-seppa-red transition">Home</Link></li>
                 <li><Link href="/about-us" className="hover:text-seppa-red transition">About Us</Link></li>
-                <li><Link href="/projects" className="hover:text-seppa-red transition">Our Projects</Link></li>
                 <li><Link href="/blog" className="hover:text-seppa-red transition">Our Blog</Link></li>
                 <li><Link href="/contact-us" className="hover:text-seppa-red transition">Contact Us</Link></li>
               </ul>

@@ -45,7 +45,8 @@ const pageData: PackagingPageData = {
         "Conversely, the parameters of a juice pasteurizer machine must handle complex enzymatic requirements, such as pectinesterase inactivation, alongside acid tolerant mold spores. Because fruit juices contain natural sugars and heat sensitive vitamins, our specialized juice pasteurizer machine options safeguard nutrients while neutralizing potential pathogens."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Key Features of SEPPA Tunnel Pasteurizers",

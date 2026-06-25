@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
@@ -11,6 +12,8 @@ import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.
 import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
 import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
 import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
+import { span } from 'framer-motion/client';
+import Link from 'next/link';
 
 const pageData: PackagingPageData = {
   title: "Modern Refrigeration System Design",
@@ -30,10 +33,11 @@ const pageData: PackagingPageData = {
     {
       title: "Seppa’s Advanced Engineering: Oil Chillers",
       paragraphs: [
-        "Engineered specifically for machinery maintenance and fluid integrity, our oil chillers feature a cooling capacity range from 1.75 kW to 35 kW. Seppa’s Air Cooled Chillers are a perfect solution for any application requiring a reliable industrial chiller. They are split into specialized configurations to maintain optimal fluid viscosity:",
-        "A) Hydraulic Oil Chiller: Prevents the thermal degradation of hydraulic fluids under heavy mechanical cycles.",
-        "B) Coolant Chiller: Formulated to regulate cutting fluids and cooling liquids in heavy machining applications.",
-        "C) Coolant Chiller I Dip: Designed for direct immersion applications where fluids must be cooled within an active reservoir without external loop piping."
+        <>Engineered specifically for machinery maintenance and fluid integrity, our oil chillers feature a cooling capacity range from 1.75 kW to 35 kW. Seppa’s Air Cooled Chillers are a perfect solution for any application requiring a reliable industrial chiller. They are split into specialized configurations to maintain optimal fluid viscosity:<Link href='/equipments/oil-chillers' className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More</Link><br />
+          <span className="font-bold"><span className='text-seppa-red text-xl'> • </span> Hydraulic Oil Chiller:</span> Prevents the thermal degradation of hydraulic fluids under heavy mechanical cycles <Link href="/equipments/hydraulic-chillers" className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More.</Link><br />
+          <span className="font-bold"><span className='text-seppa-red text-xl'> • </span> Coolant Chiller:</span> Formulated to regulate cutting fluids and cooling liquids in heavy machining applications.<Link href="/equipments/coolant-chillers" className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More.</Link><br />
+          <span className="font-bold"><span className='text-seppa-red text-xl'> • </span> Coolant Chiller I Dip:</span> Designed for direct immersion applications where fluids must be cooled within an active reservoir without external loop piping.<Link href="/equipments/coolant-chiller-ip" className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More.</Link><br />
+        </>
       ],
       image1: img1.src,
       reverse: true
@@ -45,7 +49,8 @@ const pageData: PackagingPageData = {
         "Water Cooled Scroll Chiller: Providing a dedicated cooling capacity range from 17.5 kW to 462 kW, Seppa’s Water Cooled Scroll Chillers are built with shell and tube condensers and evaporators which ensure high efficiencies and trouble free operation. Redundancy models are made available in chillers of capacities 10 TR and upwards to eliminate single points of failure."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Energy Efficient & Smart Screw Chillers",

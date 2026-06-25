@@ -3,6 +3,7 @@ import React from 'react';
 import PageHeader from '@/components/layout/PageHeader';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin, FiGlobe, FiChevronDown, FiChevronUp, FiCheck } from 'react-icons/fi';
+import bannerImg from '@/assets/about-us/generated/header.png';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -130,6 +131,7 @@ const ContactUs: React.FC = () => {
       <PageHeader 
         title="Contact Us" 
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact Us' }]} 
+        bgImage={bannerImg.src}
       />
       
       {/* Main Contact Section */}

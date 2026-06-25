@@ -30,6 +30,7 @@ const Accordion: React.FC<AccordionProps> = ({ items, defaultOpenIndex = 0 }) =>
             className="rounded-2xl transition-all duration-300 overflow-hidden bg-white mb-4 shadow-md border border-gray-100 hover:shadow-lg"
           >
             <button
+              suppressHydrationWarning
               onClick={() => toggleItem(index)}
               className="w-full text-left px-6 md:px-8 py-5 md:py-6 flex items-center justify-between gap-6"
               aria-expanded={isOpen}

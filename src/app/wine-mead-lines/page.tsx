@@ -2,13 +2,13 @@ import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 import bannerImg from '@/assets/packaging/generated/wine_production_wide_1781701527332.png';
 import overviewImg from '@/assets/packaging/generated/wine_bottles_closeup_1781701540385.png';
-import img1 from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
-import img2 from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
+import img1 from '@/assets/packaging/generated/wine_banner_1781681260889.png';
+import img2 from '@/assets/packaging/generated/wine_overview_1781681274439.png';
 import img3 from '@/assets/packaging/generated/wine_production_wide_1781701527332.png';
-import meth1 from '@/assets/packaging/pouch/moderm.webp';
-import meth2 from '@/assets/packaging/can/commissing.webp';
-import meth3 from '@/assets/packaging/can/install.webp';
-import meth4 from '@/assets/packaging/can/training.webp';
+import meth1 from '@/assets/packaging/generated/wine_banner_1781681260889.png';
+import meth2 from '@/assets/packaging/generated/wine_overview_1781681274439.png';
+import meth3 from '@/assets/packaging/generated/wine_production_wide_1781701527332.png';
+import meth4 from '@/assets/packaging/generated/wine_bottles_closeup_1781701540385.png';
 
 const pageData: PackagingPageData = {
   title: "Complete Wine Line Solutions | SEPPA Solutions",
@@ -44,7 +44,8 @@ const pageData: PackagingPageData = {
         "The wine bottling equipment at the labelling stage is built to handle paper, synthetic, and film labels with equal accuracy. Shrink sleeve application, neck foil, and back label modules are available as integrated add ons, all controlled from a single HMI interface."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     },
     {
       title: "Custom Winery Solutions for Different Wine Types",
@@ -66,7 +67,8 @@ const pageData: PackagingPageData = {
         "SEPPA's engineering team stays involved through the production ramp-up phase, not just the installation. This is where most line efficiency problems surface and where early intervention avoids the kind of process variability that shows up in finished product quality."
       ],
       image1: img1.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     },
     {
       title: "Benefits of a Complete Wine Production Line",
@@ -86,7 +88,8 @@ const pageData: PackagingPageData = {
       "SEPPA's track record across 7,000+ installations in more than 50 countries is a starting point but what matters more to a winery evaluating equipment is whether the system will work for their specific product, volume, and facility constraints.",
       "SEPPA constructs the Wine on line using modular designs to be incorporated with existing infrastructure wherever feasible, and replacement will only be advised if the engineering justifies doing so. This has firsthand knowledge of the engineering aspects involved in making wine: oxygen free filling, material compatibility with sulfites, controlled temperatures during conveyance for sparkling wine, among others.",
       "A complete wine on line from SEPPA is not a catalogue sale. It is a specified, installed, and validated system, backed by service infrastructure that outlasts the installation team's visit."
-    ]
+    ],
+    image:img1.src
   },
   methodology: {
     title: "Wine Production Line Methodology",

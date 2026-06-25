@@ -1,13 +1,13 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import bannerImg from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
-import overviewImg from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
-import img1 from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
+import bannerImg from '@/assets/packaging/generated/mineral_banner_1781682222147.png';
+import overviewImg from '@/assets/packaging/generated/mineral_overview_1781682238039.png';
+import img1 from '@/assets/packaging/generated/mineral_m1_1781682252112.png';
 import img2 from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
-import img3 from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
-import meth1 from '@/assets/packaging/pouch/moderm.webp';
-import meth2 from '@/assets/packaging/can/commissing.webp';
-import meth3 from '@/assets/packaging/can/install.webp';
+import img3 from '@/assets/packaging/generated/mineral_m2_1781682264072.png';
+import meth1 from '@/assets/packaging/generated/mineral_m3_1781682280126.png';
+import meth2 from '@/assets/packaging/generated/mineral_overview_1781682238039.png';
+import meth3 from '@/assets/packaging/generated/mineral_banner_1781682222147.png';
 
 const pageData: PackagingPageData = {
   title: "Complete Water and Sparkling Water Production Line Solutions",
@@ -43,7 +43,8 @@ const pageData: PackagingPageData = {
         "For still water, the water line from treatment through to filling runs under laminar flow or full aseptic conditions depending on shelf life requirements and target market specifications. The Kombopure system closes that circuit completely, integrating blow, fill, and cap in one enclosed unit so atmospheric exposure is essentially eliminated."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     },
     {
       title: "Applications of Water Bottling Plants",
@@ -66,7 +67,8 @@ const pageData: PackagingPageData = {
       "The engineering behind every SEPPA water processing plant line follows hygienic design principles that go beyond compliance: minimal dead legs, 3-A or EHEDG compliant contact surfaces, CIP compatible circuit layouts, and access panels that are actually reachable during maintenance. The gap between \"technically compliant\" and \"easy to keep clean\" matters every single day the line is running.",
       "The Kombo and Kombopure platforms give water line customers a genuine range of integration options, from simpler standalone configurations to fully enclosed aseptic blow fill cap systems. For any water processing plant where microbiological integrity is the primary specification concern, Kombopure removes the largest variable in the process: atmospheric exposure at the fill point.",
       "Water line replacement within an existing SEPPA installation is designed to be a straightforward upgrade. New innovations are built for backward compatibility where possible, so a targeted water line replacement swapping a filling section, adding a new labeler does not require rebuilding the line around it. That matters when you are running a water processing plant that cannot afford a six week shutdown every time regulations shift or a new pack format is required."
-    ]
+    ],
+    image: img1.src
   },
   methodology: {
     title: "Our Methodology: How SEPPA Engineers a Complete Line",

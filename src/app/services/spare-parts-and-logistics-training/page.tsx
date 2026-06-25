@@ -43,7 +43,8 @@ const pageData: PackagingPageData = {
         "Then there are packaging machine spare parts, which keep output consistent at the end of the line: forming components, sealing elements, sensors, and the wear items inside servo driven stations. Tracking packaging machine spare parts wear on a fixed schedule is part of what keeps that end of line consistency from slipping."
       ],
       image1: img1.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     }
   ],
   featuresTitle: "Engineering standards behind the parts",

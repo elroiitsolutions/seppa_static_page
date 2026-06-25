@@ -45,7 +45,8 @@ const pageData: PackagingPageData = {
         "Accumulation table sizing matters more than most people budget for. A mass flow accumulation table positioned between the filler and labeller absorbs speed mismatches and gives the filler time to run through minor downstream interruptions without stopping."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Applications Across Industries",

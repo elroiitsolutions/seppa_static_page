@@ -47,7 +47,8 @@ const pageData: PackagingPageData = {
         "Hygiene is maintained via a positive pressure HEPA filtration enclosure that isolates the filling and capping zones. This ensures that the system performs as a cleanroom grade automatic bottle filling machine, driving microbial contamination risk down to absolute zero. Additionally, the integration of contactless, electromagnetic flow meters guarantees real time volume verification with an accuracy of +0.2%."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
       title: "Benefits of Combining Blowing, Filling, and Capping",
@@ -67,7 +68,8 @@ const pageData: PackagingPageData = {
         "The structural safety provided by a high performance blow fill seal machine allows brands to down gauge their PET usage, cutting plastic consumption and enhancing their corporate sustainability metrics. Every milligram of plastic saved per bottle translates directly into thousands of dollars saved annually."
       ],
       image1: img4.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     }
   ],
   whyChoose: {

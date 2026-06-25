@@ -39,39 +39,56 @@ const pageData: PackagingPageData = {
       reverse: true
     },
     {
-      title: "Materials and Surface Standards",
+      title: "Automation and Process Control Integration",
       paragraphs: [
-        "Every wetted surface in our liquid processing equipment is fabricated from AISI 316L stainless steel with electropolished Ra ≤ 0.8 µm finishes. That is not an aesthetic choice. Surface roughness at that level prevents biofilm formation in a measurable way meaning your CIP cycles work as designed, rather than fighting contamination that should not exist.",
-        "All gaskets and seals are FDA-compliant EPDM or PTFE, rated for steam-in-place (SIP) temperatures up to 140°C. The complete processing line from inlet to discharge is designed with no dead legs, no horizontal pipe runs without drainage gradient, and no internal crevices where product residue can pool."
+        "SEPPA integrates Siemens S7 and Allen Bradley PLC platforms as standard, with open OPC-UA protocols for connectivity to any SCADA or MES layer the customer already runs. Our liquid processing equipment ships with pre configured PID loops for temperature, flow, and pressure tested and tuned before installation, not during commissioning.",
+        "The HMI shows real time trends for every process variable, with configurable alarm thresholds and automatic batch records stored in a SQL database. Regulatory compliance FDA 21 CFR Part 11, for example is handled through audit trail logging and electronic signature workflows built into the software.",
+        "Predictive maintenance is not a marketing phrase in our processing equipment's. Vibration sensors on all pump housings and CIP skids feed into a condition monitoring module that flags bearing wear 3–6 weeks before failure, based on frequency domain analysis. On average, customers using this feature see unplanned downtime drop by 60–70% within the first year. That alone changes the economics of running complex liquid processing equipment at scale."
       ],
-      image1: img2.src,
-      reverse: false
+      image1: over.src,
+      reverse: false,
+      bgClass: "bg-light"
     },
     {
-      title: "Modular Design Logic",
+      title: "Quality, Hygiene, and Safety Standards",
       paragraphs: [
-        "Our processing machinery uses a skid based modular architecture. A pilot scale 500 L/h unit can be upgraded to 5,000 L/h by adding parallel processing modules, not by replacing the base system. This matters for capital planning. Your initial investment in processing equipment’s does not become obsolete when volumes grow the processing equipment’s scale with the business.",
-        "Heat exchange modules are designed for tool free plate removal, which cuts maintenance labour by roughly 40% compared with welded frame alternatives. The same processing machinery platform that runs at 1,000 L/h today is the same one that runs at 4,000 L/h after a module addition same PLC, same CIP skid, same operator interface."
+        "Our food processing equipment is designed to EHEDG Type EL Asept Class I and 3 A Sanitary Standards both of which specify geometry, surface finish, and drainage criteria that prevent contamination under real production conditions, not just in test labs.",
+        "CIP circuits are fully automated and validated. Cleaning cycles are documented with conductivity and temperature logging, so every clean is auditable. This matters if you are supplying retailers or food service customers who require FSSC 22000 or BRC certification the evidence comes out of the system automatically.",
+        "Pressure relief devices, interlocked access panels, and ATEX rated electrical components in solvent handling zones are standard. The complete processing system is CE marked and comes with full technical documentation for IQ and OQ protocols. Processing equipment's of this specification do not just protect the product they protect the people operating them."
       ],
-      image1: img3.src,
-      reverse: true
+      image1: img1.src,
+      reverse: true,
+      bgClass: "bg-white"
+    }
+  ],
+  featuresTitle: "Key Features of Our Processing Systems",
+  featuresSubtitle: "",
+  features: [
+    { 
+      title: "Materials and Surface Standards", 
+      description: "Every wetted surface in our liquid processing equipment is fabricated from AISI 316L stainless steel with electropolished Ra ≤ 0.8 µm finishes. That is not an aesthetic choice. Surface roughness at that level prevents biofilm formation in a measurable way meaning your CIP cycles work as designed, rather than fighting contamination that should not exist. All gaskets and seals are FDA-compliant EPDM or PTFE, rated for steam-in-place (SIP) temperatures up to 140°C. The complete processing line from inlet to discharge is designed with no dead legs, no horizontal pipe runs without drainage gradient, and no internal crevices where product residue can pool." 
+    },
+    { 
+      title: "Modular Design Logic", 
+      description: "Our processing machinery uses a skid based modular architecture. A pilot scale 500 L/h unit can be upgraded to 5,000 L/h by adding parallel processing modules, not by replacing the base system. This matters for capital planning. Your initial investment in processing equipment’s does not become obsolete when volumes grow the processing equipment’s scale with the business. Heat exchange modules are designed for tool free plate removal, which cuts maintenance labour by roughly 40% compared with welded frame alternatives. The same processing machinery platform that runs at 1,000 L/h today is the same one that runs at 4,000 L/h after a module addition same PLC, same CIP skid, same operator interface." 
+    },
+    { 
+      title: "Energy Efficiency", 
+      description: "Across our installed base, customers running our processing machinery report 18–25% lower energy consumption compared with their previous systems. The gains come from three sources: better insulation on thermal circuits, variable frequency drives on all pump motors, and heat recovery loops that capture and redirect thermal energy between process stages." 
     },
     {
-      title: "Energy Efficiency",
-      paragraphs: [
-        "Across our installed base, customers running our processing machinery report 18–25% lower energy consumption compared with their previous systems. The gains come from three sources: better insulation on thermal circuits, variable frequency drives on all pump motors, and heat recovery loops that capture and redirect thermal energy between process stages."
-      ],
-      image1: img4.src,
-      reverse: false
+      title:"Water & Water Sparkling",
+      description: "SEPPA's processing equipment includes carbonators, saturators, and deaerators rated for capacities from 1,000 L/h through 30,000 L/h. These are not aquarium grade systems. They run on carbon dioxide pressures up to 10 bar, with jacketed stainless steel vessels and integrated refrigeration loops to ensure stable dissolution regardless of inlet water temperature fluctuations. The controls platform allows you to preset T CO₂ setpoints and flow rates: water quality can vary, but the final carbonation level won't.",
+      link: "/processing/water-sparkling"
     }
   ],
   whyChoose: {
-    title: "Automation, Quality, and Control Integration",
-    description: "SEPPA integrates Siemens S7 and Allen Bradley PLC platforms as standard, with open OPC-UA protocols for connectivity to any SCADA or MES layer the customer already runs.",
+    title: "Why Choose SEPPA Solutions for Processing Equipment?",
+    description: "SEPPA Solutions delivers end-to-end processing systems engineered for absolute reliability, maximum yield, and uncompromised hygiene.",
     paragraphs: [
-      "Our liquid processing equipment ships with pre configured PID loops for temperature, flow, and pressure tested and tuned before installation, not during commissioning. The HMI shows real time trends for every process variable, with configurable alarm thresholds and automatic batch records stored in a SQL database. Regulatory compliance FDA 21 CFR Part 11, for example is handled through audit trail logging and electronic signature workflows built into the software.",
-      "Predictive maintenance is not a marketing phrase in our processing equipment’s. Vibration sensors on all pump housings and CIP skids feed into a condition monitoring module that flags bearing wear 3–6 weeks before failure, based on frequency domain analysis. On average, customers using this feature see unplanned downtime drop by 60–70% within the first year. That alone changes the economics of running complex liquid processing equipment at scale.",
-      "Our food processing equipment is designed to EHEDG Type EL Asept Class I and 3 A Sanitary Standards both of which specify geometry, surface finish, and drainage criteria that prevent contamination under real production conditions, not just in test labs. CIP circuits are fully automated and validated. Cleaning cycles are documented with conductivity and temperature logging, so every clean is auditable. The complete processing system is CE marked and comes with full technical documentation for IQ and OQ protocols."
+      "We do not supply off-the-shelf catalog units. Every processing line—from thermal treatment to filtration—is custom-engineered following a rigorous site audit. We account for your specific raw materials, utility constraints, and throughput targets to guarantee performance before metal is even cut.",
+      "Our systems are built on a foundation of industrial-grade durability and modularity. By integrating top-tier components and an open-architecture automation framework, we ensure that your initial capital investment scales seamlessly alongside your business growth, eliminating premature obsolescence.",
+      "Post-installation support is integrated directly into our supply model. With comprehensive IQ/OQ documentation, on-site sterile commissioning, and advanced remote diagnostic capabilities, we ensure your processing plant operates at peak Overall Equipment Effectiveness (OEE) from day one."
     ],
     image: over.src
   },

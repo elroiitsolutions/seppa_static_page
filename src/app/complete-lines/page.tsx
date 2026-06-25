@@ -42,7 +42,8 @@ const pageData: PackagingPageData = {
         "That unit integrates directly with the complete line control architecture, so cleaning cycles can be scheduled, logged, and verified without relying on manual records. For food safety audits, that traceability is worth more than the chemical savings."
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-white"
     },
     {
       title: "Integrated Filling and Packaging Solutions",

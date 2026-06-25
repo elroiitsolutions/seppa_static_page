@@ -44,7 +44,7 @@ const HomeFAQs = () => {
     <section className="py-12 lg:py-24 bg-[#fdfbf6] relative overflow-hidden m-3 rounded-2xl">
       <div className="absolute inset-0 pointer-events-none bg-repeat opacity-100" style={{ backgroundImage: `url(${bgPattern.src})`, backgroundSize: 'auto' }}></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           
           {/* Left Content */}
