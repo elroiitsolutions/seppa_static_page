@@ -4,6 +4,7 @@ import { motion, Variants, AnimatePresence } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { FiStar, FiX } from 'react-icons/fi';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -18,6 +19,7 @@ const staggerContainer = {
 export interface FeatureItem {
   title: string;
   description: string;
+  link?: string;
 }
 
 interface FeaturesSectionProps {
@@ -98,7 +100,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
 
       {/* Modal Overlay */}
       <AnimatePresence>
-        {selectedFeature && (
+        {selectedFeature && !selectedFeature.link && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">
             {/* Backdrop */}
             <motion.div 
@@ -136,7 +138,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
                 </h3>
               </div>
               
-              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed whitespace-pre-wrap">
                 {selectedFeature.description}
               </p>
             </motion.div>
@@ -166,12 +168,18 @@ const FeatureCard: React.FC<{ feature: FeatureItem; itemClass: string; onReadMor
       <p className="text-gray-600 leading-relaxed transition-all duration-300">
         {needsTruncation ? `${feature.description.substring(0, maxLength).trim()}... ` : feature.description}
         {needsTruncation && (
-          <button 
-            onClick={onReadMore}
-            className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline"
-          >
-            Read More
-          </button>
+          feature.link ? (
+            <Link href={feature.link} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline">
+              READ MORE
+            </Link>
+          ) : (
+            <button 
+              onClick={onReadMore}
+              className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline focus:outline-none"
+            >
+              READ MORE
+            </button>
+          )
         )}
       </p>
     </motion.div>
