@@ -43,7 +43,8 @@ const pageData: PackagingPageData = {
         "Maybe the most underrated benefit, though you can grow capacity without building a whole new plant. A well targeted production efficiency improvement project, done through modular upgrades, can often double effective output for a fraction of greenfield cost."
       ],
       image1: img1.src,
-      reverse: false
+      reverse: false,
+      bgClass:"bg-light"
     }
   ],
   featuresTitle: "Key Features and Capabilities of Automated Production Lines",

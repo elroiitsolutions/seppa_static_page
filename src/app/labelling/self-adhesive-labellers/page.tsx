@@ -1,0 +1,146 @@
+import React from 'react';
+import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+
+// Using generic images for the layout
+import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
+import overviewImg from '@/assets/blowing/generated/blowing_overview_1781759662496.png';
+import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.png';
+import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
+import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
+import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
+import over from '@/assets/processing/generated/processing_whychoose_1781759182691.png';
+
+const pageData: PackagingPageData = {
+  title: "Self Adhesive Labellers",
+  breadcrumbName: "Self Adhesive Labellers",
+  rootBreadcrumbName: "Labelling",
+  rootBreadcrumbPath: "/labelling",
+  headerImage: bannerImg.src,
+  overviewTitle: "Self Adhesive Labellers: Precision Technology for High Speed Production Lines",
+  overviewDescription: "If you've ever watched a bottle move through a production line and wondered how that label gets on perfectly straight every single time that's self adhesive labellers doing what they do best. No glue pots, no mess, no manual alignment. Just clean, repeatable accuracy at throughput rates that would have seemed ambitious two decades ago.",
+  overviewsubDescription: [
+    <div key="overview-sub" className="space-y-4">
+      <p className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">
+        At Seppa Solutions, we build these systems for FMCG manufacturers who can't afford label errors at production scale. This page covers the technology, the engineering decisions that actually matter, and why getting the right automatic labeling machine specified from the start saves significant money downstream.
+      </p>
+      <h3 className="text-2xl font-bold text-dark mt-8 mb-4">What Are Self Adhesive Labellers?</h3>
+      <p className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">
+        Self adhesive labellers are automated dispensing systems that apply pre-cut, pressure-sensitive labels to containers without liquid adhesives. The label stock sits on a silicone-release liner; the machine peels each label at a calibrated peel angle and transfers it directly to the product surface.
+      </p>
+      <p className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">
+        The industry shift away from wet-glue systems wasn't arbitrary. Self adhesive labellers eliminated glue tank maintenance, reduced SKU changeover time, and removed the inconsistency that comes from adhesive viscosity changing with temperature. Cold storage facilities particularly benefited — wet glue never performed reliably near 4°C, but pressure-sensitive adhesives handle it without issue. From a compliance perspective, the cleaner process profile also simplifies documentation in pharmaceutical and food-grade environments.
+      </p>
+    </div>
+  ],
+  overviewImage: overviewImg.src,
+  featuresTitle: "Key Features of a Precision Self Adhesive Labeling Machine",
+  features: [
+    {
+      title: "Servo Controlled Web Drive",
+      description: "The core of any precision self adhesive labeling machine is the web drive system. Older DC motor setups worked but lagged behind conveyor speed changes, which caused dispense timing drift at high throughput. Servo-driven systems respond in milliseconds. The dispense head and conveyor stay synchronized even through acceleration and deceleration ramps — critical when running 400+ containers per minute. Seppa's automatic labeling machine platforms use closed-loop servo control with position feedback from the liner encoder. Label pitch is stored in the PLC recipe. On a product changeover, the operator loads a new recipe and the machine recalibrates automatically. No mechanical sprocket adjustments, no production holds."
+    },
+    {
+      title: "Sensor Accuracy and Label Registration",
+      description: "Label placement accuracy on a Seppa packaging labeling machine is held to ±0.5 mm under normal production conditions. Achieving this requires non-contact sensors that detect label leading edges and product reference points without touching either. We use retroreflective fiber optic sensors rated for contaminated environments. Product detection triggers the dispense countdown. Timing between detection and dispense is set at the PLC recipe level, not mechanically, which means the same automatic sticker labeling machine can handle a 500 ml round bottle in one recipe and a rectangular carton in the next."
+    },
+    {
+      title: "Web Tension Management",
+      description: "Label wrinkling and bubbling almost always trace back to liner tension problems. If tension is too low, the label feeds inconsistently. Too high, and the pressure-sensitive adhesive activates before the peel plate, creating pre-lamination defects. Seppa's self adhesive labelling machine designs use active dancer arm systems with pneumatic back-pressure control, maintaining constant liner tension as the reel diameter decreases through the roll."
+    }
+  ],
+  applicationsTitle: "Applications Across Industries: Where Self Adhesive Labellers Are Used",
+  applications: [
+    {
+      title: "Beverage Lines — High-Speed Bottle Labeling Machine Applications",
+      description: "Beverage facilities run fast and run cold. A bottle labeling machine in a carbonated drinks plant might apply front, back, and neck labels simultaneously in a single inline pass. Seppa's multi-head bottle labeling machine configurations handle this with independent servo-driven dispensing units, each with its own web drive and registration sensor. Throughput on still water lines regularly exceeds 600 bottles per minute. Wrap-around application for cylindrical containers requires precise angular synchronization between bottle rotation and label dispense rate."
+    },
+    {
+      title: "Pharmaceutical Labeling",
+      description: "Pharma carries different requirements. Our automatic sticker labeling machine systems for this sector include integrated vision inspection — cameras that verify label presence, orientation, and barcode readability before the container exits the station. Rejects are diverted automatically via pneumatic diverters, with fault events logged to the batch record. These builds also support serialization systems, where each label's unique identifier is read, verified, and uploaded to a compliance database in real time."
+    },
+    {
+      title: "Cosmetics and Personal Care",
+      description: "Cosmetic containers frequently have curved or tapered geometry. A standard labeling system with fixed-angle application heads struggles here because the label can't conform evenly to a curved surface. Seppa addresses this with air-brush application heads that tack the label's leading edge via controlled air flow, then guide the remainder onto the surface with a compliant foam roller — no localized pressure that could deform lightweight packaging."
+    }
+  ],
+  methodology: {
+    title: "Methodology: How the Self Adhesive Labelling Process Works Step by Step",
+    steps: [
+      {
+        title: "Product in-feed",
+        description: "Containers arrive from upstream at defined spacing. Consistent pitch between containers is required for the dispense cycle to sync correctly.",
+        image: meth1.src
+      },
+      {
+        title: "Detection",
+        description: "A fiber optic sensor detects the container's leading edge. The PLC timestamps the detection and initiates the dispense countdown per the stored recipe.",
+        image: meth2.src
+      },
+      {
+        title: "Label peel",
+        description: "The liner runs over the peel plate at 25°–35° depending on stock characteristics. The label separates from the liner and extends off the peel plate tip, held briefly by an air-assist jet.",
+        image: meth3.src
+      },
+      {
+        title: "Application",
+        description: "The packaging labeling machine transfers the label to the container via roller pressure or air-brush, depending on the head configuration.",
+        image: meth4.src
+      },
+      {
+        title: "Inspection and reject logic",
+        description: "A downstream vision sensor verifies label presence and position on every unit. Failed containers are ejected automatically, and the event is logged with timestamp, container count, and fault code.",
+        image: meth1.src
+      }
+    ]
+  },
+  contentBlocks: [
+    {
+      title: "Benefits of Automated Self Adhesive Labeling",
+      paragraphs: [
+        "The numbers are straightforward. Labor for manual or semi-automatic labeling on a medium-scale facility typically runs four to six operators per shift. A fully automatic labeling machine reduces this to one operator managing multiple lines from a central control station.",
+        "The larger gain is OEE. Self adhesive labellers running Seppa's servo architecture regularly achieve labeling station availability above 98% during planned production windows. Label mis-application waste drops below 0.2% at calibrated throughput. For a facility running 8 million units monthly, that's a real saving — not a theoretical one.",
+        "The usual objection is capital cost. The counter-argument is always the same: add up your current defect rate, rework labor, jam stoppages, and batch rejection incidents. Payback tends to close faster than finance teams expect."
+      ],
+      image1: meth2.src,
+      reverse: false
+    }
+  ],
+  whyChoose: {
+    title: "Why Choose Seppa Solutions for Self Adhesive Labellers",
+    paragraphs: [
+      "We don't sell catalogue systems. Every self adhesive labellers project at Seppa begins with a process audit — existing line layout, product range, label substrates, throughput targets, regulatory requirements. The machine configuration follows from that audit, not from a product brochure.",
+      "Our engineers have worked across beverage, pharma, agrochemical, personal care, and food packaging sectors. When a customer with an unusual bottle geometry comes to us for a self adhesive labelling machine, we've solved similar substrate problems before. Post-commissioning, Seppa's systems are supported with documented preventive maintenance schedules, application-specific spare parts kits, and remote diagnostic access where customers permit it.",
+      "The benchmark we hold: our self adhesive labellers should run 30 consecutive days of production without unplanned stops from the labeling station. Not testing days. Production days."
+    ],
+    image: over.src
+  },
+  faqTitle: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "1. How often does an automatic sticker labeling machine need maintenance?",
+      answer: "Preventive maintenance intervals on Seppa's automatic sticker labeling machine platforms are set at every 750 production hours. This covers peel plate inspection, dancer arm pneumatics, servo drive diagnostics, and sensor cleaning. Most tasks complete in under four hours on planned downtime. Unplanned labeling station stoppages, when PM is followed, run under 0.5% of production hours annually."
+    },
+    {
+      question: "2. How does Seppa ensure accuracy on an automatic labeling machine?",
+      answer: "Our automatic labeling machine builds use closed-loop servo web control to synchronize dispense timing with conveyor speed in real time. Vision cameras verify label position on every unit downstream. PLC recipe management means accuracy parameters travel with the product SKU, not with operator skill. Standard spec: ±0.5 mm under normal production conditions."
+    },
+    {
+      question: "3. What's the difference between standard and high-speed self adhesive labelling machine configurations?",
+      answer: "A standard self adhesive labeling machine runs one dispensing head with a single inspection sensor. A high-speed self adhesive labeling machine runs multiple coordinated heads on independent servo drives, synchronized via a master motion controller, with multi-camera vision inspection. Throughput thresholds vary by sector — roughly 400 bpm in beverages, 200 bpm in pharma."
+    },
+    {
+      question: "4. Why do Seppa's self adhesive labellers outperform semi-automatic methods?",
+      answer: "Semi-automatic machines require operators to position each container before the label dispenses. Consistency depends on technique, fatigue, and shift variation. Fully automated systems remove operator handling from the application step entirely. Mechanical registration holds tighter tolerances than human hands, and throughput scales without proportional headcount increases."
+    },
+    {
+      question: "5. Can Seppa's packaging labeling machine handle multiple label types in one run?",
+      answer: "Yes. Multi-head packaging labeling machine configurations from Seppa apply different label types — front, back, neck band, tamper-evident — in a single inline pass, each from an independent dispensing unit. Label stocks, adhesive types, and application parameters are set per head at the recipe level. Changeover between label combinations takes minutes, not hours."
+    }
+  ]
+};
+
+const SelfAdhesiveLabellersPage = () => {
+  return <PackagingPageLayout data={pageData} />;
+};
+
+export default SelfAdhesiveLabellersPage;

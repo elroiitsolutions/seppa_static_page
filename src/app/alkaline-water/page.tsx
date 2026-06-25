@@ -1,84 +1,102 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import overview from '@/assets/packaging/can/overview.jpg';
-import execute from '@/assets/packaging/can/execute.webp';
-import install from '@/assets/packaging/can/install.webp';
-import commissing from '@/assets/packaging/can/commissing.jpeg';
-import training from '@/assets/packaging/can/training.webp';
+
+// Using generated and placeholder images
+import bannerImg from '@/assets/services/generated/training_banner_1782102515585.png'; // fallback
+import overviewImg from '@/assets/pet/generated/pet_overview_1782103229961.png';
+import img1 from '@/assets/pet/generated/pet_cb1_1782103242917.png';
+import over from '@/assets/pet/generated/pet_whychoose_1782103256501.png';
+
+import meth1 from '@/assets/pet/generated/pet_meth1_1782103277774.png';
+import meth2 from '@/assets/pet/generated/pet_meth2_1782103291753.png';
+import meth3 from '@/assets/pet/generated/pet_meth3_1782103305856.png';
+import meth4 from '@/assets/pet/generated/pet_meth4_1782103318966.png';
 
 const pageData: PackagingPageData = {
-  title: "Liquid Sparkling Water: Complete Processing and Packaging Solutions",
+  title: "Alkaline Water Production Lines",
   breadcrumbName: "Alkaline Water",
   rootBreadcrumbName: "Liquid",
   rootBreadcrumbPath: "/liquid",
-  headerImage: overview.src,
-  overviewTitle: "Introduction: Why the Right Mineral Water Plant Changes Everything",
-  overviewDescription: "Water's gotta be the most crucial resource out there more important than oil or gold. We simply can't live without it, and now, with more people and bigger cities popping up everywhere, making sure everyone gets clean and cheap water has become a massive issue. Plus, folks are changing what they drink. They're ditching those sugary beverages for healthier stuff, and it's not just because companies say so surveys prove it. So, plain water and bottled water are quickly becoming everybody's choice. Starting a new bottled water business now puts you right where the action is, leading the charge instead of trying to catch up.",
+  headerImage: bannerImg.src,
+  overviewTitle: "What Is Alkaline Water?",
+  overviewDescription: "Alkaline water is water that has been engineered to hold a pH above 7.0 typically between 8.0 and 9.5 either by running it through an electrolytic ionization chamber or by dosing it with food grade mineral salts. That's the short version. The longer version involves a lot more chemistry, a lot more engineering, and a surprising number of ways for a production line to get it wrong.",
   overviewsubDescription: [
-    "The numbers back this up. The global bottled water market was estimated at 170 billion USD in 2014 and grew at 8.5% annually between 2018 and 2022, crossing 300 billion USD and that growth hasn't stopped. A well run packaged drinking water plant or water bottling plant isn't just viable in this environment. It's one of the more defensible businesses you can build, because demand for clean, packaged water doesn't disappear in a downturn.",
-    "Success in this market, though, comes down to three things: consistency, hygiene, and production efficiency. A natural sparkling water that can't hold tight fill tolerances, or a line that generates contamination risk during packaging, doesn't survive long term regardless of how strong the brand is. Seppa Solutions was built around solving exactly that. Our processing and packaging equipment, combined with strong design engineering and end to end service support, gives producers the tools to run a mineral water plant that actually performs at commercial scale.",
-    "PET is the packaging format of the present and the near future. Seppa helps you design, build, and deliver an optimized water bottling plant from bottle aesthetics to the production line itself with a compact footprint, low plant cost, and the kind of throughput that makes a packaged mineral water plant commercially viable from day one. We also bring real market experience to every project. Consumer needs change, regulations tighten, and new product categories create both opportunity and new technical requirements. We've worked across enough mineral water plant installations to recognize those shifts before they reach your production floor."
+    "Tap water is close to neutral, usually pH 6.5 to 7.5 depending on the source. Consumer demand particularly from sports nutrition, wellness retail, and hospital nutrition programs has pushed hard toward water with elevated hydroxide ion concentration, measurably negative ORP, and a documented mineral profile. That demand is real, it's growing, and it has real engineering consequences.",
+    "Two production routes handle the bulk of industrial output. Electrolytic ionization splits water molecules using direct current across a semipermeable membrane, pushing hydroxide ions to the cathode side and producing alkaline water on one end, acidic water on the other."
   ],
-  overviewLayout:"stacked",
-  overviewImage: overview.src,
-  applicationsTitle: "Types of Bottled Water We Support",
-  applicationsSubtitle: "Not every mineral water plant produces the same product. Each water type has its own treatment requirements, regulatory profile, and quality benchmarks. Here's a quick breakdown of the categories Seppa's lines are engineered to handle:",
-  applications: [
-    { title: "Spring Water / Mountain Spring Water", description: "Derived from an underground formation where water flows naturally to the surface. Spring water must be collected at the spring itself or via a borehole tapping the same underground stratum. Physical properties and composition must be preserved before treatment which means the mineral water plant design has to protect the water's natural character at every stage." },
-    { title: "Packaged Drinking Water / Purified Water / Still Water", description: "Produced through distillation, deionisation, reverse osmosis, or similar processes. This is the most common output for a packaged drinking water plant in the Indian market, and also where the highest production volumes typically run. Our water filling machine technology is optimized for high speed still water formats in this category." },
-    { title: "Natural Mineral Water", description: "Contains a minimum of 250 ppm Total Dissolved Solids, with constant mineral composition at the point of emergence. No minerals can be added which makes source water selection and upstream treatment in a mineral water plant especially critical. The water has to arrive at the filling stage with its natural profile intact." },
-    { title: "Sparkling Bottled Water", description: "Water that retains or has replaced the CO₂ it contained at the source. This is the most technically demanding category a water bottling plant can produce. Carbonation volume, fill temperature, and oxygen pickup all have to be managed precisely. Our water filling machine systems are purpose-built for counter pressure filling in natural sparkling water production, not adapted from still-water equipment." },
-    { title: "Artesian / Well Water", description: "Sourced from confined aquifers or drilled wells tapping underground water bearing formations. Treatment requirements depend heavily on the mineral content and contamination profile of the specific aquifer." },
-    { title: "Alkaline Water", description: "pH above 7, achieved through controlled mineral dosing or electrolysis. Requires precise hydrogen concentration management in the natural sparkling water process stream. pH scale runs from 0 to 14 human blood sits at 7.4, and most alkaline water products target a range between 8 and 9.5." },
-    { title: "Structured Water", description: "Sometimes called magnetized or hexagonal water. Produced through vortexing, UV or infrared light exposure, or similar processes. Proponents associate it with improved hydration and a range of health benefits. Processing requirements are specific and need to be factored into the mineral water plant design from the start." },
-    { title: "Vitaminised Water", description: "Water infused with water soluble vitamins C, B6, B12, folate and trace minerals like copper, iodine, and zinc. Since fat soluble vitamins accumulate in the body rather than being excreted, vitaminised water products typically use only water soluble micronutrients. Dosing integration downstream of the water filling machine stage requires clean, calibrated injection systems to maintain label accuracy batch to batch." }
+  overviewImage: overviewImg.src,
+  contentBlocks: [
+    {
+      title: "Benefits of Drinking Alkaline Water",
+      paragraphs: [
+        "The functional beverage market has largely moved past vague wellness claims. Alkaline water benefits that have been studied include acid buffering capacity during high intensity exercise relevant for athletes generating significant lactic acid load and improved hydration markers linked to smaller water cluster size. Whether every claim in the wellness space holds up to scrutiny is a different debate.",
+        "But those benefits only exist in the bottle if the pH held. A product that left the facility at pH 9.0 and arrived at retail at 7.4 didn't deliver alkaline water benefits to anyone. The consumer won't know why. They'll just stop buying it. That's not a marketing problem. The fix lives on the production floor."
+      ],
+      image1: img1.src,
+      reverse: true
+    }
   ],
-  featuresTitle: "How Seppa Solutions Delivers Complete Sparkling Water Processing and Packaging Lines",
-  featuresSubtitle: "Delivering fully integrated processing and packaging lines that perform reliably.",
+  featuresTitle: "Key Features of Alkaline Water Production Lines",
+  featuresSubtitle: "Achieving the target pH is the easy step. Holding it stable through filling is where lines fail.",
   features: [
-    { title: "Water Purification: Quality Starts at the Source", description: "Every mineral water plant begins with treating the raw water feed. Source chemistry varies significantly borewell, municipal supply, spring so treatment stages are configured to match. The standard train for most packaged drinking water plant setups runs multimedia pre filtration into RO, with UV sterilization added as a final pathogen barrier. For producers targeting authentic natural sparkling water, a remineralization step post RO allows precise control over calcium, magnesium, and bicarbonate ratios." },
-    { title: "Carbonation: Where Most Lines Either Succeed or Fail", description: "Dissolving CO₂ into water at consistent carbonation volumes (typically 3.5–6.5 volumes depending on product spec) requires water pre chilled to 2–4°C, counter pressure carbonation vessels with precise injection control, and very low dissolved oxygen entering the system. Excess O₂ shortens shelf life and degrades taste. Our carbonation systems use inline Coriolis flow meters for +0.05 volume accuracy across production runs a spec that shows up directly in QC data and customer experience." },
-    { title: "Water Filling Machine Integration", description: "Counter pressure filling is non negotiable for sparkling formats. Our water filling machine pre pressurizes each bottle with CO₂ before liquid contact, fills against back pressure to prevent foam and gas loss, and applies caps in a controlled nitrogen atmosphere. O₂ pickup during filling stays below 0.02 ppm. Line speeds run from 6,000 BPH for glass and premium PET up to 36,000 BPH for high volume PET production, with fill accuracy at +1.5ml on 500ml formats. These specs hold in real operating water bottling plant environments, not just on spec sheets." },
-    { title: "Downstream Packaging", description: "Capping, labelling, and case packing are selected to match upstream line speed. Sourcing these from multiple vendors is a common integration failure point. Seppa supplies the full downstream sequence as a matched system." }
+    { title: "Ionic Stabilization and pH Control Loops", description: "pH drops when temperature rises, when ambient CO₂ dissolves, or when it contacts the wrong grade of steel. A production line needs inline pH sensors positioned throughout, not just at the end. Closed loop PID control can correct pH in real time within +0.05 units." },
+    { title: "Material Selection for High pH Chemistry", description: "Alkaline drinking water at pH 9.5 is chemically active and causes rapid corrosion of 304 stainless steel. All wetted parts must be made of 316L stainless steel with PTFE lined valves and sanitary clamps." },
+    { title: "ORP Monitoring", description: "Natural alkaline water created through electrolysis has an ORP of -100mV to -400mV. Monitoring ORP in line requires platinum electrode sensors operating in narrow temperature bands to verify the antioxidant claim." }
   ],
+  applicationsTitle: "Applications of Alkaline Water Across Industries",
+  applicationsSubtitle: "Different industries have distinct demands for alkaline water formats and pH levels.",
+  applications: [
+    { title: "Sports and Athletic Nutrition", description: "Need alkaline water between pH 8.5 and 9.0 with electrolytes. Lines operate on long term campaigns necessitating CIP systems designed for high pH products." },
+    { title: "Wellness Retail", description: "Runs at higher pH targets 9.0 to 9.5 in smaller batch sizes, with more packaging format variation like glass and aluminum." },
+    { title: "Hospitality and Food Service", description: "Hotels buy alkaline drinking water in bulk multi liter formats, targeting pH 8.0 to 8.5. Batch to batch consistency is non negotiable." },
+    { title: "Medical and Clinical Nutrition", description: "Natural alkaline water for clinical hydration requires full mineral panel certification, ORP verification per batch, and filling environments closer to pharmaceutical cleanliness standards." }
+  ],
+  whyChoose: {
+    title: "Why Choose Seppa Solutions for Alkaline Water Solutions?",
+    description: "Seppa Solutions builds full production lines for alkaline water raw water pretreatment through palletized finished goods. We've built both electrolytic and mineral injection systems, at a range of throughputs, and we treat the method choice as a technical question with a right answer for each specific situation, not a default.",
+    paragraphs: [
+      "Our lines for alkaline mineral water include CIP systems designed for high pH chemistry from the ground up. This matters more than it sounds. Generic beverage filling equipment often lacks the chemical resistance and cycle validation that sustained alkaline chemistry requires.",
+      "We specify 316L stainless and PTFE throughout the wetted path. pH and ORP control documentation goes into the regulatory file."
+    ],
+    image: over.src
+  },
   methodology: {
-    title: "Methodology: Engineering Lifecycle from Feasibility to Full Production",
+    title: "Methodology: From Source Water to Sealed Bottle",
     steps: [
       {
-        title: "Phase 1: Feasibility and Plant Design",
-        description: "Source water analysis, target capacity, product format, regulatory requirements, and site utilities all of this gets documented before a single machine is specified. The output is a detailed plant layout and capital estimate built around your actual project, not a standard template.",
-        image: execute.src
+        title: "Source Water Analysis",
+        description: "We run a full panel covering TDS, total hardness, alkalinity, iron, manganese, and microbial load before touching any equipment specification.",
+        image: meth1.src
       },
       {
-        title: "Phase 2: Machinery Selection and Customization",
-        description: "A packaged drinking water plant on coastal brackish groundwater needs a different treatment train than a facility drawing from a certified mineral spring. Equipment is specified after the water chemistry and product targets are defined, not before.",
-        image: install.src
+        title: "Custom System Sizing",
+        description: "What's in the incoming water determines everything downstream how much treatment capacity is needed, and what the buffer tank residence time needs to be.",
+        image: meth2.src
       },
       {
-        title: "Phase 3: Installation and Commissioning",
-        description: "Installation teams work in parallel with civil contractors to compress the timeline. Commissioning follows a structured protocol: water quality validation, carbonation calibration, fill accuracy testing across formats, and CIP cycle sign off.",
-        image: commissing.src
+        title: "Buffer & Stabilization",
+        description: "Treated alkaline mineral water holds in jacketed buffer tanks while temperature and pH stabilize before the filler engages.",
+        image: meth3.src
       },
       {
-        title: "Phase 4: Training and Handover",
-        description: "Operators receive hands on training covering equipment operation, sanitation, QC sampling, and fault diagnosis. Line specific maintenance documentation and remote monitoring support are provided through the first months of production.",
-        image: training.src
+        title: "Inline Control Loops",
+        description: "Continuous monitoring using multiple inline sensors to guarantee pH and ORP parameters are locked precisely at the target levels.",
+        image: meth4.src
       }
     ]
   },
-  faqTitle: "",
+  faqTitle: "Frequently Asked Questions About Alkaline Water",
   faqs: [
-    { question: "What treatment stages does a mineral water plant need for sparkling production?", answer: "Pre filtration, RO, UV sterilization, a de oxygenation step, and a process chiller before carbonation. For natural sparkling water with controlled mineral content, add a remineralization dosing unit after RO." },
-    { question: "How is carbonation pressure controlled during filling?", answer: "Our mineral water plant systems pre pressurize each bottle with CO₂ before the fill valve opens, then fill against that back pressure. Inline sensors monitor pressure continuously and adjust based on product temperature." },
-    { question: "How energy intensive is a sparkling water line?", answer: "A mid scale drinking water plant running at 12,000 BPH typically draws 80–120 kW, depending on format and ambient temperature. Utility load estimates are provided during the feasibility phase." },
-    { question: "What compliance standards apply?", answer: "In India: IS 13428 and FSSAI. For export: Codex Alimentarius 108, EU Directive 2009/54/EC, and FDA CFR Title 21 Part 165 for US markets. Our mineral water plant designs are built to meet all applicable standards with documentation support for licensing." },
-    { question: "Can an existing still water plant be upgraded for sparkling?", answer: "Usually the RO and filtration stages carry over. The carbonation skid, chiller, and mineral water plant almost always need replacement or significant modification. We assess existing water bottling plant facilities before recommending any capital path." }
-  ],
-  hideWhyChoose: true
+    { question: "How stable is alkaline water after bottling?", answer: "It depends on container material, headspace gas management, and the carbonate buffer concentration. PET with nitrogen flushed headspace holds pH reliably for 12 to 18 months under normal storage conditions. Glass performs better for products above pH 9.2." },
+    { question: "What is the difference between industrial and small scale premium alkaline water production?", answer: "Industrially produced alkaline water is designed for efficient production through the use of control loops, while premium alkaline water is designed for efficient production in small batches. The control loop design, size of the dosing pump, and fill system are completely different." },
+    { question: "How does Seppa ensure alkaline water benefits reach the retail consumer?", answer: "Through ORP control, CO₂ exclusion, and verified shelf life data. Nitrogen blanketing during filling, sealed headspace design, and post fill ORP gate checks protect the product's oxidation reduction profile." },
+    { question: "Is natural alkaline water production safe at scale?", answer: "Natural alkaline water produced through food grade mineral injection or electrolysis has a clean safety profile when the equipment is correctly specified and maintained. Seppa lines include validated CIP and COP protocols." },
+    { question: "Why does Seppa Solutions lead in functional beverage packaging innovation?", answer: "For alkaline drinking water, the chemistry and the filling process interact in ways that matter for product quality. We build them together from the design phase. Material compatibility, ORP monitoring, and pH loop integration go into the system spec from day one." }
+  ]
 };
 
-const Page = () => {
+const AlkalineWaterPage = () => {
   return <PackagingPageLayout data={pageData} />;
 };
 
-export default Page;
+export default AlkalineWaterPage;

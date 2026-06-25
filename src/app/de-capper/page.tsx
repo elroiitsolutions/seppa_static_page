@@ -72,7 +72,8 @@ const pageData: PackagingPageData = {
         </div>
       ],
       image1: img2.src,
-      reverse: false
+      reverse: false,
+      bgClass: "bg-light"
     }
   ],
   featuresTitle: "Key Features of Advanced Decapping Engineering",

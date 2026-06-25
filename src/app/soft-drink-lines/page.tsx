@@ -106,7 +106,8 @@ const pageData: PackagingPageData = {
         title: "After-sales support",
         description: "SEPPA backs every carbonated soft drink production line with training programs, OEM spare parts availability, remote diagnostics, and scheduled maintenance agreements."
       }
-    ]
+    ],
+    image: imgB.src
   },
   methodology: {
     title: "Complete CSD Line Methodology",
