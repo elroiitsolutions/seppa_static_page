@@ -129,6 +129,7 @@ const OurIndustries = () => {
               {tabsData.map((tab) => (
                 <button
                   key={tab.id}
+                  suppressHydrationWarning
                   onClick={() => setActiveTab(tab)}
                   className={`text-lg lg:text-xl font-bold font-heading relative pb-4 lg:pb-5 transition-colors duration-300 ${
                     activeTab.id === tab.id ? 'text-dark' : 'text-gray-400 hover:text-dark'
