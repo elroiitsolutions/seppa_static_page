@@ -12,7 +12,7 @@ import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.
 import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
 import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
 import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
-import { span } from 'framer-motion/client';
+import { a, span } from 'framer-motion/client';
 import Link from 'next/link';
 
 const pageData: PackagingPageData = {
@@ -45,8 +45,10 @@ const pageData: PackagingPageData = {
     {
       title: "Air Cooled & Water Cooled Scroll Chillers",
       paragraphs: [
-        "Air Cooled Scroll Chiller: With a versatile cooling capacity range from 1.75 kW to 1050 kW, Seppa’s cooled scroll chillers are distributed over four distinct series. These are broadly categorized based on the water quality used for the process and the ambient temperatures under which they are made to operate. All these chillers are made to be compatible for both indoor and outdoor installation.",
-        "Water Cooled Scroll Chiller: Providing a dedicated cooling capacity range from 17.5 kW to 462 kW, Seppa’s Water Cooled Scroll Chillers are built with shell and tube condensers and evaporators which ensure high efficiencies and trouble free operation. Redundancy models are made available in chillers of capacities 10 TR and upwards to eliminate single points of failure."
+        <>
+        <span className="font-bold"><span className='text-seppa-red text-xl'> • </span>Air Cooled Scroll Chiller:</span> With a versatile cooling capacity range from 1.75 kW to 1050 kW, Seppa’s cooled scroll chillers are distributed over four distinct series. These are broadly categorized based on the water quality used for the process and the ambient temperatures under which they are made to operate. All these chillers are made to be compatible for both indoor and outdoor installation.<Link href='/equipments/air-cooled-scroll-chillers' className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More</Link><br/>
+        <span className="font-bold"><span className='text-seppa-red text-xl'> • </span>Water Cooled Scroll Chiller:</span> Providing a dedicated cooling capacity range from 17.5 kW to 462 kW, Seppa’s Water Cooled Scroll Chillers are built with shell and tube condensers and evaporators which ensure high efficiencies and trouble free operation. Redundancy models are made available in chillers of capacities 10 TR and upwards to eliminate single points of failure.<Link href='/equipments/water-cooled-scroll-chillers' className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More</Link><br/>
+        </>
       ],
       image1: img2.src,
       reverse: false,
@@ -55,8 +57,10 @@ const pageData: PackagingPageData = {
     {
       title: "Energy Efficient & Smart Screw Chillers",
       paragraphs: [
-        "Energy Efficient Chillers: Seppa has designed and built cooling systems and components that avoid excess energy consumption, thus cutting down operating expenses for the buyers who use our products. Seppa’s energy efficient models utilize modulating technology to scale output in real time, matching the heat load linearly.",
-        "Smart Screw Chiller Series: For heavy duty manufacturing tasks, our smart screw series delivers a cooling capacity range from 140 kW to 875 kW. These units feature a highly efficient and proven Bitzer compressor operating seamlessly with eco friendly refrigerants like R134a, R407C, and R404A. A built in sub cooler is integrated to enhance performance during high ambient conditions."
+        <>
+        <span className="font-bold"><span className='text-seppa-red text-xl'> • </span>Energy Efficient Chillers:</span> Seppa has designed and built cooling systems and components that avoid excess energy consumption, thus cutting down operating expenses for the buyers who use our products. Seppa’s energy efficient models utilize modulating technology to scale output in real time, matching the heat load linearly.<Link href='/equipments/energy-efficient-chillers' className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More</Link><br/>
+        <span className="font-bold"><span className='text-seppa-red text-xl'> • </span>Smart Screw Chiller Series:</span> For heavy duty manufacturing tasks, our smart screw series delivers a cooling capacity range from 140 kW to 875 kW. These units feature a highly efficient and proven Bitzer compressor operating seamlessly with eco friendly refrigerants like R134a, R407C, and R404A. A built in sub cooler is integrated to enhance performance during high ambient conditions.<Link href='/equipments/smart-screw-chillers' className='text-seppa-red hover:border-b hover:border-seppa-red'>Learn More</Link><br/>
+        </>
       ],
       image1: img1.src,
       reverse: true

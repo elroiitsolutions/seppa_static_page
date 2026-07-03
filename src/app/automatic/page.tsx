@@ -8,10 +8,12 @@ import imgF from '@/assets/packaging/generated/softdrink_overview.png';
 import imgG from '@/assets/packaging/generated/mineral_banner.png';
 import imgH from '@/assets/packaging/generated/mineral_overview.png';
 import imgI from '@/assets/packaging/generated/softdrink_execute.png';
+import bannerImg from '@/assets/packaging/generated/banner_automatic_pet.png';
 
 const pageData: PackagingPageData = {
   title: "AUTOMATIC PET BLOWING MACHINE",
   breadcrumbName: "Automatic",
+  headerImage: bannerImg.src,
   overviewTitle: "Automatic PET Blowing Machine Complete Bottle Line Solutions by Seppa Solutions",
   overviewDescription: "SEPPA offers complete PET line solutions for Water, Sparkling Water, CSD, Juice, Milk, Beer, Liquor and Wine. With over 25 years of experience in manufacturing PET blowing machines and designing solutions for the packaging industry, Seppa has been pronounced as an industry leader. The technological advancement in Seppa's blowers is the result of continuous efforts focusing on customer needs and the implementation of solutions that make production processes efficient and environmentally friendly. SEPPA does not only offer a wide range of modern PET bottle blowing machines it also designs, builds, and manufactures complete new bottling and packaging lines for glass, PET and aluminium cans, along with full customer support at every stage of the project. Thanks to the trust based partner relations with our customers, we develop and achieve success together.",
   overviewImage: imgA.src,
