@@ -40,13 +40,13 @@ const PackagingContact = () => {
             </motion.p>
 
             <motion.div variants={fadeInUp} className="space-y-6">
-              <a href="tel:123456789" className="flex items-center gap-6 p-6 bg-white rounded-2xl hover:shadow-md transition group">
+              <a href="tel:+91 9384806105" className="flex items-center gap-6 p-6 bg-white rounded-2xl hover:shadow-md transition group">
                 <div className="w-16 h-16 bg-light text-seppa-red rounded-full flex items-center justify-center text-2xl shrink-0 group-hover:bg-seppa-red hover:text-dark group-hover:text-white transition shadow-sm">
                   <FiPhoneCall />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold font-heading text-dark mb-1">Call Us:</h3>
-                  <p className="text-gray-600">+(123) 456-789</p>
+                  <p className="text-gray-600">+91 93848 06105</p>
                 </div>
               </a>
 
@@ -56,7 +56,7 @@ const PackagingContact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold font-heading text-dark mb-1">Email Us:</h3>
-                  <p className="text-gray-600">packaging@seppa.com</p>
+                  <p className="text-gray-600"> info@seppasolutions.com</p>
                 </div>
               </a>
 
@@ -66,7 +66,7 @@ const PackagingContact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold font-heading text-dark mb-1">Location:</h3>
-                  <p className="text-gray-600">Global Headquarters</p>
+                  <p className="text-gray-600">No. 7, Parivakkam Road , Chennai - 600 056, Tamilnadu, India.</p>
                 </div>
               </div>
             </motion.div>
