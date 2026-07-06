@@ -10,10 +10,12 @@ import imgF from '@/assets/packaging/generated/dairy_banner.png';
 import imgG from '@/assets/packaging/generated/dairy_overview.png';
 import imgH from '@/assets/packaging/generated/aseptic_drum_filler_1781701596612.png';
 import imgI from '@/assets/packaging/generated/softdrink_whychoose.png';
+import bannerImg from '@/assets/packaging/generated/banner_semi_automatic_pet.png';
 
 const pageData: PackagingPageData = {
   title: "Semi Automatic Blowing Machine for PET Bottles: Complete Guide to Seppa Solutions' SSB Series",
   breadcrumbName: "Semi-Automatic",
+  headerImage: bannerImg.src,
   overviewTitle: "Why Small Manufacturers Are Choosing a Semi Automatic Blowing Machine",
   overviewDescription: "Most small bottle manufacturers hit the same wall. They outgrow manual production but can't justify a fully automated line yet. The gap between \"too slow\" and \"too expensive\" is exactly where a semi automatic blowing machine earns its place.",
   overviewImage: imgA.src,

@@ -3,8 +3,8 @@ import "./globals.css";
 import MainLayout from "../layouts/MainLayout";
 
 export const metadata: Metadata = {
-  title: "Yarnex - Textile Manufacturing",
-  description: "Crafting quality textiles for global industries",
+  title: "seppa solutions.com",
+  description: "Seppa Solutions",
 };
 
 export default function RootLayout({
