@@ -32,7 +32,7 @@ const offices = [
   },
   {
     city: "Bengaluru",
-    address: "137/34, 10th Floor, HM Ambassador Towers, Residency Road, Bangalore - 560025",
+    address: "4th Floor, Novel office, Begaum Mahal, Yellappachetty Layout, Bengaluru- 560042",
     phone: ["+91-9483525500"],
     email: "info@seppasolutions.com",
     country: "India"
