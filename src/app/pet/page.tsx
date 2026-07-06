@@ -1,9 +1,11 @@
 import React from 'react';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+import bannerImg from '@/assets/packaging/generated/banner_pet_jar.png';
 
 const pageData: PackagingPageData = {
   title: "PET Jar Blowing Machine",
   breadcrumbName: "PET Jars Machine",
+  headerImage: bannerImg.src,
   overviewTitle: "Wide-Mouth PET Jar Blow Moulding",
   overviewDescription: "The PET Jar Blowing Machine is specifically designed to produce wide-mouth PET containers and jars. Perfect for packaging cosmetics, dry foods, pickles, and confectionery, this machine utilizes specialized heating and stretching technology to handle large neck diameters with unparalleled precision.",
   overviewBenefits: [
