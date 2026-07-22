@@ -1,0 +1,102 @@
+{
+  "title": "معرض الفيديو",
+  "breadcrumbName": "معرض الفيديو",
+  "searchPlaceholder": "بحث في الفيديوهات...",
+  "categoriesHeading": "الفئات",
+  "noVideos": "لم يتم العثور على مقاطع فيديو تطابق معايير البحث الخاصة بك.",
+  "closeVideo": "إغلاق الفيديو",
+  "readyTitle": "جاهز للبدء؟",
+  "readyHeading": "شاهد آلاتنا تعمل في منشأتك",
+  "readyText": "من نفخ زجاجات PET إلى حلول الخطوط الكاملة، تقدم سيبا هندسة عالمية المستوى. اتصل بخبرائنا للحصول على استشارة مخصصة.",
+  "productEnquiry": "استفسار عن منتج",
+  "contactUs": "اتصل بنا",
+  "categories": {
+    "All": "الكل",
+    "PET Blowing Machines": "آلات نفخ عبوات PET",
+    "Complete Line Equipment": "معدات الخطوط المتكاملة",
+    "Industrial Solutions": "الحلول الصناعية",
+    "Packaging & Processing": "التعبئة والتغليف والمعالجة"
+  },
+  "videoList": [
+    {
+      "id": "v1",
+      "title": "آلة نفخ عبوات PET أوتوماتيكية - تجويف واحد",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v2",
+      "title": "آلة نفخ عبوات PET أوتوماتيكية بالكامل - تجويفين",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v3",
+      "title": "آلة نفخ عبوات PET أوتوماتيكية / نصف أوتوماتيكية - 3 تجاويف",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v4",
+      "title": "آلة نفخ عبوات PET أوتوماتيكية - 4 تجاويف",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v5",
+      "title": "آلة نفخ زجاجات PET أوتوماتيكية بالكامل - 6 تجاويف",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v6",
+      "title": "آلة تنظيف الزجاجات | غسالة الزجاجات",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v7",
+      "title": "آلة ترتيب وتوجيه زجاجات PET",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v8",
+      "title": "آلة نفخ برطمانات PET",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v9",
+      "title": "آلة نفخ زجاجات أوتوماتيكية بالكامل 8 تجاويف — SSB SLE 80",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v10",
+      "title": "أنظمة تحلية مياه البحر داخل حاويات",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v11",
+      "title": "محطة المياه المعدنية — محطة معالجة المياه الصناعية — فوسترز",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v12",
+      "title": "آلة تعبئة الصودا والمشروبات الغازية",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v13",
+      "title": "آلة التغليف بالانكماش | آلة التعبئة والتغليف الثانوي",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v14",
+      "title": "بلو آر أو — محطة تنقية وتحلية المياه - محطة RO",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v15",
+      "title": "بلو آر أو — محطة التناضح العكسي المنزلية للمنازل",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v16",
+      "title": "آلة الشطف والتعبئة والتغطية — 200 زجاجة في الدقيقة",
+      "category": "Packaging & Processing"
+    }
+  ]
+}

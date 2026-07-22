@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import { motion } from 'framer-motion';
 
 interface PageHeaderProps {
@@ -32,7 +32,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, breadcrumbs, bgImage }) 
           transition={{ duration: 0.6 }}
           className="mb-4 relative inline-block"
         >
-          <h1 className="text-5xl md:text-[64px] font-heading font-bold text-white text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-heading font-bold text-white text-left break-words whitespace-normal">
             {title}
           </h1>
         </motion.div>
@@ -41,11 +41,11 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, breadcrumbs, bgImage }) 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="flex items-center justify-start space-x-2 text-white font-medium text-lg"
+          className="flex flex-wrap items-center justify-start gap-y-1 text-white font-medium text-sm md:text-lg whitespace-normal break-words"
         >
           {breadcrumbs.map((crumb, index) => (
             <React.Fragment key={index}>
-              {index > 0 && <span className="text-white mx-2">/</span>}
+              {index > 0 && <span className="text-white mx-1 md:mx-2 shrink-0">/</span>}
               {crumb.path ? (
                 <Link href={crumb.path} className="hover:text-gold transition duration-300">
                   {crumb.name}

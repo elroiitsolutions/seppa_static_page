@@ -1,45 +1,20 @@
-import React from 'react';
-import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+"use client";
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-const pageData: PackagingPageData = {
-  title: "Glass Bottle Filler Capper",
-  breadcrumbName: "Glass Bottle Filler Capper",
-  rootBreadcrumbName: "Equipments",
-  rootBreadcrumbPath: "#",
-  overviewTitle: "Premium Solutions for Glass Bottle Filler Capper",
-  overviewDescription: "We provide comprehensive, high-quality, and state-of-the-art solutions tailored for Glass Bottle Filler Capper. Our systems are designed for maximum efficiency, precision, and durability, ensuring your production lines operate flawlessly.",
-  overviewBenefits: [
-    "High efficiency and operational speed",
-    "Robust and hygienic design",
-    "Low maintenance and downtime",
-    "Advanced automation and real-time monitoring",
-    "Eco-friendly and energy-saving technology"
-  ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
-  featuresTitle: "Key Features of Our Glass Bottle Filler Capper Systems",
-  featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
-  features: [
-    {
-      title: "Advanced Technology",
-      description: "Incorporates the latest technological advancements to deliver superior performance and reliability."
-    },
-    {
-      title: "Customizable Configurations",
-      description: "Our solutions can be tailored to meet the specific requirements and scale of your operations."
-    },
-    {
-      title: "Seamless Integration",
-      description: "Designed to easily integrate with existing production lines and systems without major disruptions."
-    },
-    {
-      title: "Quality Assurance",
-      description: "Built with premium materials to meet rigorous international quality and safety standards."
-    }
-  ]
-};
+export default function GlassBottleFillerCapperRedirectPage() {
+  const router = useRouter();
 
-const Page = () => {
-  return <PackagingPageLayout data={pageData} />;
-};
+  useEffect(() => {
+    const lang = typeof navigator !== 'undefined' ? navigator.language : 'en';
+    const detectedLang = lang?.startsWith('ar') ? 'ar' : lang?.startsWith('de') ? 'de' : 'en';
+    router.replace(`/${detectedLang}/glass-bottle-filler-capper`);
+  }, [router]);
 
-export default Page;
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0d162a] text-white">
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#cda262]"></div>
+      <p className="mt-4 text-lg font-medium opacity-80 animate-pulse">Redirecting...</p>
+    </div>
+  );
+}

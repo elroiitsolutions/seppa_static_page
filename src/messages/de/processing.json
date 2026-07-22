@@ -1,0 +1,126 @@
+{
+  "title": "SEPPA Prozessanlagen: Entwickelt für industrielle Produktionsleistungen",
+  "breadcrumbName": "Prozessanlagen",
+  "rootBreadcrumbName": "",
+  "rootBreadcrumbPath": "",
+  "overviewTitle": "Prozessanlagen für konstante Qualität und maximale Effizienz",
+  "overviewDescription": "In der Getränke- und Lebensmittelproduktion entstehen Qualitätsverluste häufig nicht durch Bedienfehler oder Rohstoffschwankungen, sondern durch unzureichend ausgelegte Prozessanlagen. Schwankende Ausbeuten, ungeplante Stillstände und Produkte außerhalb der Spezifikation entstehen oft schleichend – verursacht durch die Technik selbst.",
+  "overviewsubDescription": [
+    "SEPPA Solutions entwickelt industrielle Prozessanlagen mit einem klaren Ansatz: Die technischen Entscheidungen in der Planungsphase bestimmen die Leistungsfähigkeit der gesamten Produktion. Temperaturgenauigkeit, hygienisches Design und intelligente Steuerungskonzepte sind keine Detailfragen, sondern die Grundlage für stabile Produktionsqualität.",
+    "Moderne Prozessanlagen von SEPPA ermöglichen reproduzierbare Produktmerkmale, transparente Prozesskontrolle und langfristige Betriebssicherheit. Unternehmen investieren damit nicht nur in Edelstahl und Maschinenkomponenten, sondern in eine Produktionsplattform, die auch nach Jahren zuverlässig arbeitet."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Arten von Prozessanlagen von SEPPA",
+      "paragraphs": [
+        "SEPPA bietet komplette Lösungen entlang der gesamten Prozesskette – von Extraktion und Wärmebehandlung bis zu Konzentration, Filtration und Entgasung.",
+        "Für die Flüssigverarbeitung liefert SEPPA Zentrifugal- und Membranfiltrationssysteme für Produkte von leichten Getränken bis zu hochviskosen Fruchtkonzentraten.",
+        "Thermische Behandlungssysteme wie Plattenwärmetauscher und Rohrpasteurisierer erreichen eine temperaturgenauigkeit von ±0,5 °C bei kontinuierlichen Durchflussmengen bis zu 50.000 Litern pro Stunde.",
+        "Die Konzentrationsanlagen arbeiten mit Fallfilmverdampfern und Mehrfacheffekt-Technologie. Dadurch kann ein großer Teil der thermischen Energie zurückgewonnen und effizient genutzt werden.",
+        "Je nach Produktanforderung stehen Extraktionssysteme in Gegenstrom- oder Gleichstromausführung zur Verfügung.",
+        "Das Ergebnis ist eine vollständig integrierte Prozesslösung für: Fruchtsäfte und Konzentrate, Milchprodukte, Pflanzen- und Kräuterextrakte, fermentierte Getränke, Lebensmittelprodukte mit komplexen Rezepturen.",
+        "Zusätzlich entwickelt SEPPA Lebensmittelverarbeitungstechnik für Fest-Flüssig-Trennung, Homogenisierung und Entgasung – Prozesse, die entscheidend für Haltbarkeit, Textur und mikrobiologische Stabilität sind."
+      ]
+    },
+    {
+      "title": "Automatisierung und Prozesssteuerung",
+      "paragraphs": [
+        "SEPPA integriert standardmäßig Siemens S7- und Allen-Bradley-PLC-Systeme mit offenen OPC-UA-Schnittstellen für die Verbindung mit bestehenden SCADA- und MES-Systemen.",
+        "Die Flüssigverarbeitungsanlagen werden mit vorkonfigurierten PID-Regelkreisen für Temperatur, Durchfluss und Druck geliefert. Die Systeme werden bereits vor der Installation geprüft und optimiert.",
+        "Die HMI-Oberfläche zeigt Prozessdaten in Echtzeit und speichert automatische Chargenprotokolle in einer SQL-Datenbank.",
+        "Auch regulatorische Anforderungen wie FDA 21 CFR Part 11 können durch digitale Audit-Trails und elektronische Signaturen umgesetzt werden.",
+        "Die integrierte Zustandsüberwachung nutzt Vibrationssensoren an Pumpen und CIP-Systemen. Dadurch können Verschleißerscheinungen frühzeitig erkannt werden.",
+        "Viele Betreiber reduzieren ungeplante Stillstandszeiten durch diese vorausschauende Wartung deutlich."
+      ]
+    },
+    {
+      "title": "Qualität, Hygiene und Sicherheit",
+      "paragraphs": [
+        "SEPPA-Lebensmittelverarbeitungsanlagen werden nach anerkannten Hygienestandards wie EHEDG Type EL Asept Class I und 3-A Sanitary Standards entwickelt.",
+        "Dabei stehen optimale Geometrien, hochwertige Oberflächen und sichere Entwässerung im Mittelpunkt.",
+        "Automatisierte CIP-Systeme werden vollständig validiert. Reinigungszyklen werden mit Temperatur- und Leitfähigkeitsdaten dokumentiert und stehen für Qualitätsprüfungen jederzeit zur Verfügung.",
+        "Dies ist besonders wichtig für Hersteller mit Anforderungen wie FSSC 22000 oder BRC-Zertifizierung.",
+        "Sicherheitskomponenten wie Druckentlastungssysteme, verriegelte Zugangselemente und ATEX-konforme elektrische Komponenten gehören ebenfalls zum Anlagenkonzept.",
+        "Jede Prozessanlage wird mit CE-Kennzeichnung und vollständiger technischer Dokumentation für IQ- und OQ-Protokolle geliefert."
+      ]
+    }
+  ],
+  "featuresTitle": "Technische Merkmale unserer Prozesssysteme",
+  "featuresSubtitle": "",
+  "features": [
+    {
+      "title": "Werkstoffe und Oberflächenqualität",
+      "description": "Alle produktberührenden Bereiche der Flüssigverarbeitungsanlagen werden aus AISI 316L Edelstahl gefertigt und verfügen über elektropolierte Oberflächen mit einer Rauheit von Ra ≤ 0,8 µm. Diese Oberflächenqualität reduziert die Bildung von Biofilmen und verbessert die Wirksamkeit automatisierter CIP-Reinigungsprozesse. Dichtungen und Ventile bestehen aus FDA-konformen EPDM- oder PTFE-Materialien und sind für SIP-Temperaturen bis 140 °C ausgelegt. Die komplette Prozessanlage wird ohne hygienische Schwachstellen konstruiert: keine Toträume, keine schlecht entwässerbaren Rohrabschnitte, keine Bereiche für Produktablagerungen."
+    },
+    {
+      "title": "Modulares Anlagenkonzept",
+      "description": "SEPPA-Prozessanlagen basieren auf einer modularen Skid-Bauweise. Eine Pilotanlage mit 500 l/h kann durch zusätzliche Module auf 5.000 l/h erweitert werden, ohne die Grundanlage vollständig ersetzen zu müssen. Dadurch wächst die Prozessanlage mit dem Produktionsbedarf. Wärmetauschermodule ermöglichen eine einfache Wartung und reduzieren den Arbeitsaufwand im Vergleich zu herkömmlichen Konstruktionen. Die gleiche Steuerungsplattform, das gleiche CIP-System und dieselbe Bedienoberfläche können auch nach Kapazitätserweiterungen genutzt werden."
+    },
+    {
+      "title": "Energieeffizienz",
+      "description": "Viele SEPPA-Kunden erreichen durch optimierte Prozessanlagen deutliche Energieeinsparungen. Die Efffizienzsteigerung basiert auf: verbesserter Isolierung thermischer Kreisläufe, frequenzgeregelten Pumpenantrieben, Wärmerückgewinnung zwischen einzelnen Prozessstufen. Dadurch sinken Betriebskosten und Ressourcenverbrauch."
+    },
+    {
+      "title": "Wasser & Karbonisierung",
+      "description": "Die Prozessanlagen von SEPPA umfassen Karbonisierer, Sättigungsanlagen und Entgaser für Leistungen von 1.000 l/h bis 30.000 l/h. Diese arbeiten mit CO₂-Drücken bis zu 10 bar, mantelgekühlten Edelstahlbehältern und integrierten Kältekreisläufen, um eine stabile CO₂-Lösung unabhängig von Schwankungen der Wassertemperatur zu gewährleisten. Über die Steuerung lassen sich CO₂-Gehalt und Durchflussmengen präzise einstellen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA für Prozessanlagen?",
+    "description": "SEPPA Solutions liefert schlüsselfertige Prozesssysteme, die für absolute Zuverlässigkeit, maximale Ausbeute und kompromisslose Hygiene ausgelegt sind.",
+    "paragraphs": [
+      "Wir liefern keine Standard-Kataloggeräte. Jede Prozesslinie – von der thermischen Behandlung bis zur Filtration – wird nach einer sorgfältigen Werksanalyse individuell geplant. Wir berücksichtigen Ihre spezifischen Rohstoffe, Medienanschlüsse und Durchflussmengen, um eine garantierte Leistung zu gewährleisten.",
+      "Unsere Anlagen basieren auf industrieller Haltbarkeit und modularer Bauweise. Durch die Integration hochwertiger Komponenten und eine offene Automatisierung bleibt Ihre Investition zukunftssicher und wächst mit Ihrem Unternehmen.",
+      "Der Service nach der Installation ist direkt in unser Lieferkonzept integriert. Mit vollständiger IQ/OQ-Dokumentation, Inbetriebnahme vor Ort und modernen Ferndiagnosemöglichkeiten sorgen wir dafür, dass Ihre Prozessanlage ab dem ersten Tag die maximale Effizienz (OEE) erreicht."
+    ]
+  },
+  "methodology": {
+    "title": "Entwicklung und Fertigung von SEPPA Prozessanlagen",
+    "steps": [
+      {
+        "title": "Werksanalyse",
+        "description": "Der Projektablauf beginnt mit einer detaillierten Standortanalyse. Dabei prüfen SEPPA-Ingenieure verfügbare Medien wie Dampf, Kühlwasser, Druckluft und Entwässerung sowie Rohstoffdaten und bestehende Produktionskennzahlen."
+      },
+      {
+        "title": "Modellierung & Design",
+        "description": "Anschließend werden Prozessfließbilder und Rohrleitungs- und Instrumentierungsdiagramme (P&ID) erstellt und vor Produktionsbeginn freigegeben. Alle Prozessanlagen werden in 3D-CAD geplant. Kritische Schweißverbindungen werden bereits vor der Fertigung technisch bewertet."
+      },
+      {
+        "title": "Fertigung & Abnahme",
+        "description": "Die Herstellung erfolgt in ISO 9001:2015-zertifizierten Produktionsstätten. Nach Druckprüfungen durchläuft jede Anlage einen Factory Acceptance Test (FAT) mit Wasser oder Produktsimulation."
+      },
+      {
+        "title": "Installation & Inbetriebnahme",
+        "description": "Erst nach erfolgreicher Prüfung wird die Anlage ausgeliefert. Nach der Installation folgen Site Acceptance Tests (SAT), Inbetriebnahme und – falls erforderlich – sterile Qualifizierungen. Die Bedienerschulung erfolgt direkt während der Inbetriebnahme. Die vollständige Übergabe umfasst validierte IQ/OQ-Dokumentation und eine zwölfmonatige Inbetriebnahmegarantie."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Können SEPPA Prozessanlagen bei steigenden Produktionsmengen erweitert werden?",
+      "answer": "Ja. Die modulare Bauweise ermöglicht Kapazitätserweiterungen ohne vollständigen Austausch der Grundanlage. Erweiterungen werden bereits in der ursprünglichen Engineering-Planung berücksichtigt."
+    },
+    {
+      "question": "Wie unterscheiden sich SEPPA Lebensmittelverarbeitungsanlagen von älteren Systemen?",
+      "answer": "Moderne SEPPA-Anlagen automatisieren CIP-Prozesse vollständig, reduzieren Reinigungsmittelverbrauch und verbessern Energieeffizienz durch intelligente Antriebstechnik und Wärmerückgewinnung."
+    },
+    {
+      "question": "Wie schnell amortisiert sich eine moderne Prozessanlage?",
+      "answer": "Die Amortisationszeit hängt von Anwendung und Produktionsdaten ab. Bei der Modernisierung älterer Anlagen sind durch höhere Ausbeute, Energieeinsparungen und weniger Ausschuss häufig Rücklaufzeiten von 18 bis 30 Monaten möglich."
+    },
+    {
+      "question": "Was umfasst eine komplette Prozessanlagen-Installation von SEPPA?",
+      "answer": "Ein Komplettprojekt beinhaltet Standortanalyse, Prozessengineering, P&ID-Planung, Fertigung, FAT, Installation, SAT, Bedienerschulung und zwölf Monate Inbetriebnahmegarantie."
+    },
+    {
+      "question": "Warum SEPPA statt regionaler Anbieter für Flüssigverarbeitungstechnik?",
+      "answer": "SEPPA entwickelt Anlagen nach internationalen Standards wie EHEDG, 3-A und CE bereits in der Konzeptphase. Zusätzlich verfügt das Unternehmen über eigene Prozessingenieure, die Planung und Inbetriebnahme aus einer Hand begleiten."
+    }
+  ],
+  "outro": [
+    "Ihre Lösung für industrielle Prozessverarbeitung",
+    "SEPPA entwickelt Prozessanlagen für Unternehmen, die höchste Anforderungen an Hygiene, Automatisierung und Produktionssicherheit stellen.",
+    "Von Flüssigverarbeitung über Wärmebehandlung bis Filtration und Konzentration entstehen integrierte Systeme, die langfristig stabile Qualität und effiziente Produktion ermöglichen."
+  ]
+}

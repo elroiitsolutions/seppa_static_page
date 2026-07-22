@@ -4,7 +4,7 @@ import { motion, Variants, AnimatePresence } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { FiStar, FiX } from 'react-icons/fi';
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -151,7 +151,8 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
 
 const FeatureCard: React.FC<{ feature: FeatureItem; itemClass: string; onReadMore: () => void }> = ({ feature, itemClass, onReadMore }) => {
   const maxLength = 120;
-  const needsTruncation = feature.description.length > maxLength;
+  const description = feature.description || "";
+  const needsTruncation = description.length > maxLength;
 
   return (
     <motion.div 
@@ -166,7 +167,7 @@ const FeatureCard: React.FC<{ feature: FeatureItem; itemClass: string; onReadMor
       </div>
       <h3 className="text-xl font-bold font-heading text-dark mb-4">{feature.title}</h3>
       <p className="text-gray-600 leading-relaxed transition-all duration-300">
-        {needsTruncation ? `${feature.description.substring(0, maxLength).trim()}... ` : feature.description}
+        {needsTruncation ? `${description.substring(0, maxLength).trim()}... ` : description}
         {needsTruncation && (
           feature.link ? (
             <Link href={feature.link} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline">

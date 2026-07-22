@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion , Variants } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import bgPattern from '@/assets/bg/black-line-1.png';
 
@@ -14,38 +14,48 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const reports = [
-  {
-    title: 'MINERAL WATER HIGH GROWTH AND HIGH PROFITABILITY',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
-  },
-  {
-    title: 'MICROBREWERY ENHANCED EXPERIENCE - HUGE PROFIT',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
-  },
-  {
-    title: 'PET THE FUTURE OF PACKAGING MULTIPLE FOLD REQUIREMENT',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
-  },
-  {
-    title: 'COLD PRESS JUICE GROWING EXPONENTIALLY',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
-  },
-  {
-    title: 'TOMATO PROCESS : CONSISTENCY GROWTH ENDLESS DEMAND',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
-  },
-  {
-    title: 'RECYCLE GLASS BOTTLE WASHER INFINITY DEMAND / REVENUE',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
-  },
-  {
-    title: 'COMMERCIAL BREWERY GROWING MARKET SPIRALLING VOLUME OF BEER',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
-  }
-];
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
 
 const SpecialOffer = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const isArabic = locale === 'ar';
+  const isDe = locale === 'de';
+
+  const getT = (key: string) => isDe ? ((enHome as any).SpecialOffer?.[key] || key) : t(`SpecialOffer.${key}`);
+
+  const reports = [
+    {
+      title: getT('report1'),
+      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
+    },
+    {
+      title: getT('report2'),
+      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
+    },
+    {
+      title: getT('report3'),
+      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
+    },
+    {
+      title: getT('report4'),
+      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
+    },
+    {
+      title: getT('report5'),
+      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
+    },
+    {
+      title: getT('report6'),
+      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
+    },
+    {
+      title: getT('report7'),
+      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
+    }
+  ];
+
   return (
     <section className="py-12 lg:py-24 bg-seppa-red relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern Overlay (Optional subtle texture) */}
@@ -63,12 +73,14 @@ const SpecialOffer = () => {
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-[#1c1c1c] mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
-            <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Special Offer</span>
+            <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">
+              {getT('tag')}
+            </span>
           </motion.div>
           
           <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
             <AnimatedHeading 
-              text="Get Your Free Copy Of Project Reports" 
+              text={getT('heading')} 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-white leading-tight [&>span]:justify-center" 
             />
