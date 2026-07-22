@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion , Variants} from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { FiCalendar, FiArrowUpRight } from 'react-icons/fi';
 import AnimatedHeading from '../ui/AnimatedHeading';
+
 
 const fadeInUp:Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -14,25 +15,29 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const blogs = [
-  {
-    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
-    date: "February 14, 2026",
-    image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
-  },
-  {
-    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
-    date: "March 11, 2026",
-    image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
-  },
-  {
-    title: "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
-    date: "April 04, 2026",
-    image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
-  }
-];
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
+import { usePathname } from 'next/navigation';
 
-const LatestBlogs = () => {
+const LatestBlogsContent = ({ getT, isArabic }: { getT: (key: string) => string; isArabic: boolean }) => {
+  const blogs = [
+    {
+      title: getT('blog1Title'),
+      date: getT('blog1Date'),
+      image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
+    },
+    {
+      title: getT('blog2Title'),
+      date: getT('blog2Date'),
+      image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
+    },
+    {
+      title: getT('blog3Title'),
+      date: getT('blog3Date'),
+      image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg"
+    }
+  ];
+
   return (
     <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
@@ -47,11 +52,13 @@ const LatestBlogs = () => {
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-            <span className="text-sm font-medium text-dark uppercase tracking-wider">Latest Blogs</span>
+            <span className="text-sm font-medium text-dark uppercase tracking-wider">
+              {getT('tag')}
+            </span>
           </motion.div>
           
           <AnimatedHeading 
-            text="Informing you with industry focused updates" 
+            text={getT('heading')} 
             elementType="h2" 
             className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight [&>span]:justify-center" 
           />
@@ -80,7 +87,7 @@ const LatestBlogs = () => {
               
               <div className="p-8 pt-4">
                 <h3 className="text-2xl font-bold font-heading text-dark mb-6 leading-snug group-hover:text-[seppa-red] transition-colors duration-300">
-                  <Link href="/blog">
+                  <Link href={"/blog"}>
                     {blog.title}
                   </Link>
                 </h3>
@@ -91,8 +98,8 @@ const LatestBlogs = () => {
                     <span>{blog.date}</span>
                   </div>
                   
-                  <Link href="/blog" className="flex items-center gap-2 text-dark font-bold hover:text-gold transition-colors duration-300 text-sm">
-                    Read More
+                  <Link href={"/blog"} className="flex items-center gap-2 text-dark font-bold hover:text-gold transition-colors duration-300 text-sm">
+                    {getT('readMore')}
                     <span className="w-6 h-6 rounded-full bg-[seppa-red] text-white flex items-center justify-center">
                       <FiArrowUpRight size={14} />
                     </span>
@@ -107,6 +114,28 @@ const LatestBlogs = () => {
       </div>
     </section>
   );
+};
+
+const LocalizedLatestBlogs = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const isArabic = locale === 'ar';
+  const isDe = locale === 'de';
+  const getT = (key: string) => isDe ? ((enHome as any).LatestBlogs?.[key] || key) : t(`LatestBlogs.${key}`);
+  return <LatestBlogsContent getT={getT} isArabic={isArabic} />;
+};
+
+const StaticLatestBlogs = () => {
+  const pathname = usePathname() || '';
+  const isArabic = pathname.startsWith('/ar') || pathname.startsWith('/ar/');
+  const getT = (key: string) => ((enHome as any).LatestBlogs?.[key] || key);
+  return <LatestBlogsContent getT={getT} isArabic={isArabic} />;
+};
+
+const LatestBlogs = () => {
+  const pathname = usePathname() || '';
+  const isLocalized = pathname.startsWith('/ar') || pathname.startsWith('/en') || pathname.startsWith('/de');
+  return isLocalized ? <LocalizedLatestBlogs /> : <StaticLatestBlogs />;
 };
 
 export default LatestBlogs;

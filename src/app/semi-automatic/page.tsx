@@ -1,185 +1,20 @@
-import React from 'react';
-import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+"use client";
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-import imgA from '@/assets/packaging/generated/mineral_m1.png';
-import imgB from '@/assets/packaging/generated/mineral_m2.png';
-import imgC from '@/assets/packaging/generated/mineral_m3.png';
-import imgD from '@/assets/packaging/generated/juice_processing_wide_1781701462502.png';
-import imgE from '@/assets/packaging/generated/juice_bottling_closeup_1781701475686.png';
-import imgF from '@/assets/packaging/generated/dairy_banner.png';
-import imgG from '@/assets/packaging/generated/dairy_overview.png';
-import imgH from '@/assets/packaging/generated/aseptic_drum_filler_1781701596612.png';
-import imgI from '@/assets/packaging/generated/softdrink_whychoose.png';
-import bannerImg from '@/assets/packaging/generated/banner_semi_automatic_pet.png';
+export default function SemiAutomaticRedirectPage() {
+  const router = useRouter();
 
-const pageData: PackagingPageData = {
-  title: "Semi Automatic Blowing Machine for PET Bottles: Complete Guide to Seppa Solutions' SSB Series",
-  breadcrumbName: "Semi-Automatic",
-  headerImage: bannerImg.src,
-  overviewTitle: "Why Small Manufacturers Are Choosing a Semi Automatic Blowing Machine",
-  overviewDescription: "Most small bottle manufacturers hit the same wall. They outgrow manual production but can't justify a fully automated line yet. The gap between \"too slow\" and \"too expensive\" is exactly where a semi automatic blowing machine earns its place.",
-  overviewImage: imgA.src,
+  useEffect(() => {
+    const lang = typeof navigator !== 'undefined' ? navigator.language : 'en';
+    const detectedLang = lang?.startsWith('ar') ? 'ar' : lang?.startsWith('de') ? 'de' : 'en';
+    router.replace(`/${detectedLang}/semi-automatic`);
+  }, [router]);
 
-  contentBlocks: [
-    {
-      title: "SEPPA's SSB Series: Built for Real Production, Not Just Brochures",
-      paragraphs: [
-        "SEPPA has spent years engineering practical, low cost PET blowing machines specifically for small and medium speed production. The focus isn't on impressive specs sheets it's on sustainable bottle output, reduced investment, and the kind of uptime that actually matters on the factory floor.",
-        "SEPPA's semi automatic pet blow moldings machine range covers bottles from 100 ml up to 20 litres. The product line breaks into four series SSB-05A, B, C, and the latest SSB-D each designed with a specific production scale in mind.",
-        "The SSB-05 and SSB-20C series require more hands-on operator involvement. The SSB-D series changes that significantly. By integrating an optimized auto drop system with optional preform unscrambler and auto preform loader into the heating system, SEPPA cut human dependency by roughly 90%. That's not a marketing figure it translates directly to faster cycle times, better consistency, and lower per bottle cost.",
-        <div key="b1">
-          <strong className="text-black font-bold block mb-3 text-lg">SSB-A, B, C, and D Series at a glance:</strong>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify mb-4">This series of semi auto bottle blower machines handles key production functions using geared motors and pneumatics. An IR based heating system, recuperation system, special air collectors, and blowing blocks allow stable production even from ultra light preforms. The SSB 05A and B handle 90 ml to 2,500 ml bottles. The SSB-2D-AT, SEPPA's most widely recognized machine, runs at 1,200 to 1,800 bottles per hour for 500 ml and 1,000 to 1,400 per hour for 1,500 ml. Mould format changes take under 15 minutes. Bottle seam visibility is minimized. Blowout pressure control is standard.</p>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">This is a semi automatic blowing machine built for manufacturers who need real output, not a pilot-scale toy.</p>
-        </div>
-      ],
-      image1: imgB.src,
-      reverse: true
-    },
-    {
-      title: "Benefits of Choosing a Semi Automatic PET Blowing Machine for Growing Businesses",
-      paragraphs: [
-        <div key="b1">
-          <strong className="text-black font-bold block mb-3 text-lg">Lower Capital Expenditure</strong>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">A fully automatic pet blowing machine with rotary blowing, integrated preform feeder, and automatic downstream handling can run from ₹40 lakhs to well over ₹1 crore depending on output and brand. SEPPA's semi automatic blowing machine range comes in at a fraction of that. For a startup manufacturer targeting 500,000 to 1,000,000 bottles per month, the capital math simply works better on a semi-auto.</p>
-        </div>,
-        <div key="b2">
-          <strong className="text-black font-bold block mb-3 text-lg">Operational Flexibility</strong>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">One machine, multiple bottle formats. That's the pitch and it holds up in practice. Because the semi automatic pet blow moldings machine uses interchangeable moulds and adjustable heating profiles, a single SSB unit can run water bottles in the morning and cosmetic containers in the afternoon. Fully automatic lines require much longer changeover windows and, often, dedicated tooling sets per SKU.</p>
-        </div>,
-        <div key="b3">
-          <strong className="text-black font-bold block mb-3 text-lg">Minimal Maintenance Footprint</strong>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">The mechanical simplicity of a semi auto bottle blower is an advantage here. Pneumatic actuators, IR lamps, and a PLC aren't exotic components. A plant maintenance technician with basic pneumatics training can handle most routine servicing. Lamp replacements, pressure adjustments, and seal checks are all within reach without calling in a specialized engineer.</p>
-        </div>,
-        <div key="b4">
-          <strong className="text-black font-bold block mb-3 text-lg">ROI Timeline</strong>
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">A semi automatic blowing machine typically pays back its capital cost faster than a full auto line simply because the initial investment is lower. For a manufacturer selling at ₹3–5 per bottle with a material cost of ₹1.5–2.5, the margin per bottle across 800 bottles/hour is straightforward to model. At those numbers, most operators recover the machine cost within 12–18 months of consistent production.</p>
-        </div>
-      ],
-      image1: imgC.src,
-      reverse: false,
-      bgClass:"bg-white"
-    }
-  ],
-
-  featuresTitle: "Key Features of Seppa Solutions' Semi Automatic Blowing Machine",
-  featuresSubtitle: "Not all semi automatic blowing machines are built the same. Here's what makes SEPPA's SSB series different from generic imports.",
-  features: [
-    {
-      title: "Infrared Preform Heating Zones",
-      description: "SEPPA uses a zoned IR heating configuration. Each zone can be tuned independently, which matters when switching between bottle sizes or preform weights. A 500 ml water bottle preform needs a different heat profile than a 5 litre carboy preform. The ability to adjust zone by zone means operators spend less time dialling in a new run and more time actually producing."
-    },
-    {
-      title: "Clamping Force and Mould Precision",
-      description: "The clamping system on SEPPA's semi auto bottle blower machines is built for repeatability. Inconsistent clamping pressure creates mould parting line defects those visible seams on the bottle side. SEPPA's design minimizes this through precise pneumatic clamping with controlled force curves. The result: bottles with reduced seam visibility and cleaner aesthetics."
-    },
-    {
-      title: "PLC Based Control Interface",
-      description: "The control panel uses a PLC (programmable logic controller) with a touchscreen HMI. Operators can store and recall production recipes for different bottle types, which is genuinely useful when a plant runs three or four SKUs on the same machine across different shifts. No manual recalibration from scratch every time."
-    },
-    {
-      title: "Safety Sensor Integration",
-      description: "SEPPA integrates door guards, pressure relief sensors, and mould protection systems as standard on the SSB series. This isn't a luxury it's practical. A mould crash from an improperly loaded preform can damage tooling worth more than the machine's monthly depreciation. Sensor interlocks prevent that class of error."
-    }
-  ],
-
-  applicationsTitle: "Applications of Semi Automatic PET Blowing Machines Across Industries",
-  applications: [
-    {
-      title: "Local Water Bottling Units",
-      description: "This is probably the most common application for a semi automatic blowing machine in India. Small scale mineral water and packaged drinking water plants running on Bureau of Indian Standards (BIS) licenses typically don't need 10,000 bottles per hour. They need 800–1,500 clean, consistent bottles per hour at a cost structure that doesn't eat their margin. The SSB-D hits that window reliably."
-    },
-    {
-      title: "Artisanal Juice and Beverage Production",
-      description: "Small juice brands, regional cold press operations, and regional soft drink manufacturers all share the same constraint: variable SKU sizes and seasonal demand spikes. A semi automatic bottle blowing machine lets them blow bottles on demand rather than stockpiling pre blown inventory, which reduces warehousing cost and eliminates the risk of bottles sitting in the heat for months before use."
-    },
-    {
-      title: "Cosmetic and Personal Care Packaging",
-      description: "Shampoo, lotion, hair oil, and liquid soap containers require precise neck finishes and consistent wall thickness. A pet blowing machine with adjustable heat profiling can accommodate the narrower tolerances cosmetic brands demand. SEPPA's mould precision and clamping consistency make it a practical choice here."
-    },
-    {
-      title: "Chemical and Household Product Refill Packaging",
-      description: "Disinfectants, cleaning concentrates, and agricultural chemicals often require HDPE or PET containers with specific chemical resistance profiles. The semi automatic pet blow moldings machine can be configured with moulds designed for square, round, or custom profile bottles suited to these applications."
-    }
-  ],
-
-  methodology: {
-    title: "Methodology: From Consultation to Commissioned Production Line",
-    subtitle: "Buying a semi automatic blowing machine isn't a one call transaction or it shouldn't be. Here's how SEPPA structures the process:",
-    steps: [
-      {
-        title: "Production Consultation",
-        description: "SEPPA's team reviews bottle specifications (volume, neck finish, wall thickness targets), required output rate, preform supplier details, and site infrastructure (power, compressed air, space). This determines which SSB model fits.",
-        image: imgE.src,
-      },
-      {
-        title: "Machine Selection",
-        description: "Based on the consultation, SEPPA recommends the appropriate SSB variant. If output requirements are near the boundary between two models, SEPPA maps the cost per bottle economics of each option so the customer can make the call with actual numbers.",
-        image: imgF.src,
-      },
-      {
-        title: "Mould Design and Fabrication",
-        description: "If the customer needs a non standard bottle geometry, SEPPA handles mould design and fabrication in house. Standard moulds for common bottle sizes are available from inventory.",
-        image: imgG.src,
-      },
-      {
-        title: "Factory Acceptance Testing",
-        description: "Before dispatch, each semi automatic pet blow molding machine undergoes production testing with customer specified preforms. Wall thickness measurements, visual inspection of bottle clarity, and output rate verification are documented.",
-        image: imgH.src,
-      },
-      {
-        title: "Installation and Commissioning",
-        description: "SEPPA's commissioning team handles on site installation, utility connections, and initial production runs. They stay until the machine is producing to spec.",
-        image: imgI.src,
-      }
-    ]
-  },
-  faqTitle: "Frequently Asked Questions",
-  faqSubtitle: "Common Questions About Seppa's Semi Automatic Blowing Machines",
-  faqs: [
-    {
-      question: "What is the output capacity of Seppa's semi automatic blowing machine for 500 ml bottles?",
-      answer: "The SSB-2D-AT produces 1,200 to 1,800 units per hour for 500 ml bottles. Entry level SSB-05A and B models run at 1,000 to 1,200 per hour. Actual output depends on preform quality, operator efficiency, and ambient temperature. SEPPA provides verified output figures from factory testing, not theoretical maximums."
-    },
-    {
-      question: "How energy-efficient is a semi automatic pet blow moldings machine compared to manual production?",
-      answer: "SEPPA's recuperation system recovers radiated heat from the IR oven, reducing energy consumption per bottle by roughly 15–20% versus conventional IR heating setups. Compared to manual blow moulding methods, the semi automatic blowing machine reduces direct labour costs significantly while maintaining consistent energy draw per cycle."
-    },
-    {
-      question: "Can I run multiple bottle sizes on the same semi automatic bottle blowing machine?",
-      answer: "Yes. The SSB series is designed for mould interchangeability. Mould changes complete in under 15 minutes. The oven heating profiles for each bottle format can be stored as recipes in the PLC. Most operators run 3–6 different bottle formats on a single machine with minimal production interruption between runs."
-    },
-    {
-      question: "What maintenance does a semi auto bottle blower require?",
-      answer: "Routine maintenance includes IR lamp inspection and replacement (typically every 6–12 months depending on operating hours), pneumatic seal checks, and filter cleaning on the compressed air circuits. SEPPA provides a maintenance schedule at commissioning and keeps common spare parts in stock for quick dispatch."
-    },
-    {
-      question: "Is operator skill a limiting factor for output on a semi automatic blowing machine?",
-      answer: "The preform transfer step moving the heated preform from oven to mould is where operator rhythm directly affects output rate. Most operators reach consistent production speed within 3–5 days of training. SEPPA's commissioning team includes on site operator training as standard, which meaningfully shortens the learning curve on new installations."
-    }
-  ],
-  whyChoose: {
-    title: "Why Manufacturers Choose Seppa Solutions for Semi Automatic Blowing Machines",
-    paragraphs: [
-      <div key="b1">
-        <strong className="text-black font-bold block mb-3 text-lg">Engineering Depth, Not Just Assembly</strong>
-        <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">SEPPA doesn't import and rebadge generic machinery. The SSB series reflects in house design decisions across the heating system, mould clamping geometry, and pneumatic sequencing. When a customer reports a specific issue say, uneven wall distribution on a 2 litre bottle at 38°C ambient SEPPA's engineering team can diagnose and modify at the component level, not just swap parts.</p>
-      </div>,
-      <div key="b2" className="mt-4">
-        <strong className="text-black font-bold block mb-3 text-lg">Durability Under Indian Operating Conditions</strong>
-        <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">Most PET blowing machine failures in Indian plants trace back to inconsistent power supply, dusty environments, and inconsistent operator training rather than fundamental machine failure. SEPPA designs for that reality: surge tolerant electrical components, sealed control panels, and simple enough mechanisms that operators can troubleshoot most issues without a service call.</p>
-      </div>,
-      <div key="b3" className="mt-4">
-        <strong className="text-black font-bold block mb-3 text-lg">Post-Sale Support That's Actually There</strong>
-        <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">SEPPA maintains a support team that handles commissioning, operator training, and field service. For a manufacturer running a single semi automatic blowing machine as their primary production asset, downtime is expensive. Fast response matters. SEPPA's service network is designed around that constraint.</p>
-      </div>
-    ],
-    image: imgD.src
-  }
-};
-
-const SemiAutomaticPage = () => {
-  return <PackagingPageLayout data={pageData} />;
-};
-
-export default SemiAutomaticPage;
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0d162a] text-white">
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#cda262]"></div>
+      <p className="mt-4 text-lg font-medium opacity-80 animate-pulse">Redirecting...</p>
+    </div>
+  );
+}

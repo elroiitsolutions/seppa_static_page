@@ -1,0 +1,137 @@
+{
+  "title": "Rinser Filler Capper Maschine: Der Monoblock-Standard für moderne Abfülllinien",
+  "breadcrumbName": "Rinser Filler Capper",
+  "rootBreadcrumbName": "",
+  "rootBreadcrumbPath": "",
+  "overviewTitle": "Was ist eine Rinser Filler Capper Maschine?",
+  "overviewDescription": "Viele Probleme in Hochgeschwindigkeits-Abfüllanlagen entstehen nicht innerhalb einzelner Maschinen, sondern an den Übergabepunkten zwischen den Prozessschritten.",
+  "overviewsubDescription": [
+    "Eine Flasche verlässt die Spülstation, wartet auf dem Transportweg, kommt mit Umgebungsluft in Kontakt und erreicht anschließend die Füllstation. Schon wenige Millisekunden Abweichung können zu Unterfüllungen, erhöhtem Kontaminationsrisiko oder schwankenden Verschlussmomenten führen.",
+    "Genau hier liegt der technische Vorteil einer Rinser Filler Capper Maschine im Monoblock-Design: Sie eliminiert die Zwischenräume zwischen Spülen, Füllen und Verschließen.",
+    "Eine RFC-Monoblockanlage kombiniert alle drei Prozesse auf einer gemeinsamen rotierenden Plattform. Spülen, Befüllen und Verschließen erfolgen synchronisiert innerhalb eines geschlossenen Maschinenrahmens. Dadurch entstehen keine Transportzonen zwischen den Stationen, keine Geschwindigkeitsabweichungen zwischen mehreren Steuerungen und deutlich weniger Hygienerisiken.",
+    "Die SEPPA EVATS-1000 RFC wurde nach diesem Prinzip entwickelt. Der Monoblock ist keine Komfortfunktion, sondern eine technische Lösung für konstante Produktionsqualität bei Leistungen bis zu 50.000 Flaschen pro Stunde."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Hauptkomponenten der RFC Maschine",
+      "paragraphs": [],
+      "hasCustomContent": true,
+      "components": [
+        {
+          "title": "Rotierende Spülstation",
+          "description": "Die Spülstation dreht PET- oder Glasflaschen um und reinigt den Innenraum vor dem Füllprozess. Bei SEPPA erfolgt der Transport über eine kontinuierliche Halsführung ohne zusätzlichen Greiferwechsel. Dadurch bleibt die hygienische Integrität der Flasche erhalten, da zusätzliche Kontaktpunkte vermieden werden."
+        },
+        {
+          "title": "Schwerkraft- und volumetrische Füllventile",
+          "description": "SEPPA bietet verschiedene Ventiltechnologien für die Rinser Filler Capper Maschine. Die EVATS-1000 GT Variante verwendet Schwerkraftfüllventile für kalte und heiße, nicht karbonisierte Produkte. Für aseptische und besonders hygienische Anwendungen steht eine berührungslose volumetrische Befüllung zur Verfügung. Magnetische Durchflussmesser kontrollieren die Füllmenge präzise, ohne mechanische Komponenten im Produktstrom. Je nach Ausführung sind Fülltemperaturen von 0 °C bis 95 °C möglich: Kaltabfüllung für Wasser und Spirituosen, Heißabfüllung für Säfte, Milchprodukte und Ready-to-Drink-Tee.",
+          "description2": "Die HR-Ventilvariante verarbeitet Fruchtstücke und Fruchtfleisch bis zu 3 mm Durchmesser und 10 mm Länge. Eine kontinuierliche Produktrezirkulation verhindert Ablagerungen und ungleichmäßige Verteilung während Produktionsstopps."
+        },
+        {
+          "title": "Verschließmodul",
+          "description": "Das Verschließsystem einer Rinser Filler Capper Maschine sorgt für konstante Verschlussmomente bei jedem Behälter. Ein zu geringer Drehmomentwert kann zu Undichtigkeiten führen, während ein zu hoher Wert die Verbraucheröffnung erschwert. SEPPA Pick-and-Place- sowie Magnetverschließköpfe sind auf präzise Drehmomentregelung ausgelegt und nicht nur auf die reine Kappenpositionierung."
+        }
+      ]
+    }
+  ],
+  "featuresTitle": "Technische Vorteile der Rinser Filler Capper Maschine",
+  "featuresSubtitle": "",
+  "features": [
+    {
+      "title": "CIP-Integration",
+      "description": "Die EVATS-1000 RFC unterstützt automatische Clean-in-Place-Prozesse bei hohen Temperaturen. Optional können Dummy-Flaschen für die Reinigung automatisch eingesetzt werden. Eine Bajonettverbindung verhindert direkten Bedienerkontakt mit den Füllventilen. Da keine dynamischen Dichtungen mit dem Produkt in Kontakt stehen, reduziert sich der Wartungsaufwand und die CIP-Validierung wird vereinfacht."
+    },
+    {
+      "title": "No Bottle No Fill Funktion",
+      "description": "Die Rinser Filler Capper Maschine nutzt eine mechanische Keine-Flasche-keine-Füllung-Logik. Wenn keine Flasche vorhanden ist, öffnet das Ventil nicht. Dadurch werden Produktverluste vermieden und Auffangbereiche vor unnötiger Befüllung geschützt."
+    },
+    {
+      "title": "Schnelle Formatwechsel",
+      "description": "Die Edelstahl-Bodenwanne mit integrierter Entwässerung und das Halsführungssystem reduzieren die Umrüstzeiten zwischen verschiedenen Flaschenformaten. Eine zentrale Höhenverstellung ersetzt mehrere separate Einstellpunkte."
+    },
+    {
+      "title": "Hygienisches Maschinendesign",
+      "description": "Die Füllventile verfügen über keine Toträume oder Produktansammlungsbereiche. Eine Membrandichtung schützt den Mechanismus vor Kontamination, ohne zusätzliche Wartungskomplexität zu erzeugen. Für besonders anspruchsvolle Anwendungen ist die Rinser Filler Capper Maschine mit mikrobiologischem Isolator der ISO-7-Klasse erhältlich."
+    }
+  ],
+  "applicationsTitle": "Anwendungen der Rinser Filler Capper Technologie",
+  "applicationsSubtitle": "",
+  "applications": [
+    {
+      "title": "Wasser und Getränke",
+      "description": "Für Wasser und alkoholfreie Getränke bietet die RFC Maschine hohe Geschwindigkeit, flexible Formate und Leistungen bis zu 50.000 Flaschen pro Stunde. Die Spülstation entfernt leichte Verunreinigungen und unterstützt einen stabilen Hochgeschwindigkeitsbetrieb."
+    },
+    {
+      "title": "Säfte und Ready-to-Drink-Tee",
+      "description": "Die EVATS-1000 GT HF Konfiguration ermöglicht Heißabfüllung bis 95 °C. Eine pneumatische Rezirkulationsfunktion, ein rotierender Verteiler und ein externes Rückgewinnungssystem ermöglichen effiziente Verarbeitung. Für Produkte mit Fruchtfleisch steht die HR-Ventiltechnik zur Verfügung."
+    },
+    {
+      "title": "Molkereiprodukte",
+      "description": "Milch und Milchprodukte benötigen kontrollierte Temperaturen und höchste Hygienestandards. Das berührungslose Füllsystem reduziert den Kontakt zwischen Metallkomponenten und Produktoberfläche."
+    },
+    {
+      "title": "Spirituosen und Wein",
+      "description": "Die EVATS-1000 GT verarbeitet Spirituosen und Wein im Kaltfüllverfahren mit präziser Volumensteuerung."
+    },
+    {
+      "title": "Kohlensäurehaltige Getränke und Bier",
+      "description": "Für karbonisierte Produkte ist eine spezielle Ausführung mit Gegendruckfüllung verfügbar. Diese verhindert CO₂-Verluste während des Füllprozesses."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Rinser Filler Capper Maschinen?",
+    "description": "SEPPA entwickelt seit über 50 Jahren Abfüllsysteme und verfügt über mehr als 7.000 installierte Anlagen weltweit.",
+    "paragraphs": [
+      "Diese Erfahrung basiert auf realen Produktionsdaten aus Lebensmittel-, Getränke-, Milch- und Spirituosenindustrien.",
+      "Die EVATS-1000 RFC basiert auf technischen Lösungen für typische Produktionsprobleme: AISI 316L Edelstahl-Kontaktflächen, membrangedichtete Ventile und präzise Halsführungssysteme.",
+      "Zusätzlich bietet SEPPA Kombopure-Technologie für leichte PET-Flaschen. Das System arbeitet mit der RFC-Halsführung zusammen und ermöglicht die Verarbeitung besonders gewichtsoptimierter Behälter."
+    ]
+  },
+  "methodology": {
+    "title": "Projektierung und Umsetzung einer RFC Maschine",
+    "steps": [
+      {
+        "title": "Produktionsflussanalyse",
+        "description": "Jedes SEPPA Projekt beginnt mit einer Analyse des Produktionsflusses. Die richtige Dimensionierung der Rinser Filler Capper Maschine entscheidet bereits vor der Fertigung über Ventilanzahl, Sternradgeometrie und Antriebskonzept."
+      },
+      {
+        "title": "Präzisionsfertigung",
+        "description": "Nach der Konstruktion folgen: Präzisionsfertigung in AISI 304/316/316L Edelstahl, Werksabnahmeprüfung (FAT), Installation vor Ort, Validierung der Produktionsleistung."
+      },
+      {
+        "title": "Validierung & Übergabe",
+        "description": "Vor der Übergabe überprüft SEPPA Füllgenauigkeit, CIP-Effektivität und Verschlussdrehmoment."
+      },
+      {
+        "title": "Modulare Erweiterung",
+        "description": "Die TRI BLOCK Konfiguration erweitert die RFC-Technologie durch eine integrierte Spül-, Füll- und Verschließeinheit auf einem modularen Rahmen."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Wie häufig benötigt eine Hochgeschwindigkeits-Abfüllmaschine Wartung?",
+      "answer": "Die Wartungsintervalle hängen von Produkt, Laufzeit und Produktionsbedingungen ab. Ventile ohne dynamische Produktdichtungen besitzen geringere Verschleißraten. SEPPA empfiehlt regelmäßige CIP-Validierung, Membranprüfung und Drehmomentkontrollen."
+    },
+    {
+      "question": "Welche Vorteile bietet eine integrierte Spülstation gegenüber einer separaten Rinser Maschine?",
+      "answer": "Der wichtigste Vorteil ist die verbesserte Hygienekontrolle. Bei Einzelmaschinen entsteht zwischen Spülen und Füllen eine offene Transportstrecke. Bei der Monoblock-Technologie erfolgt die Übergabe direkt und kontrolliert über die Halsführung."
+    },
+    {
+      "question": "Wie unterscheidet sich eine RFC Maschine von getrennten Einzelanlagen?",
+      "answer": "Separate Maschinen können theoretisch dieselbe Geschwindigkeit erreichen. In der Praxis entstehen jedoch Synchronisationsprobleme zwischen mehreren Antrieben. Eine RFC Maschine arbeitet mit einer gemeinsamen Steuerung und reduziert Platzbedarf, Bedienaufwand und Reinigungsprozesse."
+    },
+    {
+      "question": "Kann die Kapazität einer Rinser Filler Capper Maschine später erweitert werden?",
+      "answer": "Ja. Die EVATS-1000 RFC ist modular aufgebaut. SEPPA plant Erweiterungsmöglichkeiten bereits während der Projektierung."
+    },
+    {
+      "question": "Kann dieselbe Rinser Filler Capper Maschine Heiß- und Kaltabfüllung durchführen?",
+      "answer": "Ja. Die GT HF Konfiguration ermöglicht sowohl Heiß- als auch Kaltfüllprozesse mit entsprechenden Ventil- und Rezirkulationsmodulen."
+    }
+  ],
+  "outro": [
+    "Fazit",
+    "Eine moderne Rinser Filler Capper Maschine verbindet Spülen, Füllen und Verschließen in einer synchronisierten Monoblock-Lösung. SEPPA RFC-Systeme bieten hohe Produktionsgeschwindigkeit, hygienisches Design und flexible Verarbeitung verschiedener Getränke- und Lebensmittelprodukte – entwickelt für zuverlässige industrielle Abfüllprozesse."
+  ]
+}

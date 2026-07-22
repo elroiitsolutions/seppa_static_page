@@ -1,0 +1,144 @@
+{
+  "title": "About SEPPA Solutions | Beverage Processing Equipment & Turnkey Integrated Production Lines",
+  "breadcrumbName": "About Us",
+  "whoWeAre": {
+    "title": "Who We Are",
+    "description": "SEPPA Solutions supplies beverage processing equipment and complete production systems for liquid manufacturers across the globe. We help businesses build plants that run well, not just ones that look good on paper.",
+    "subDescription": [
+      "Our clients operate in mineral water, carbonated soft drinks, juices, dairy, beer, wine, spirits, and ready to drink sectors. Some arrive with detailed engineering plans. Others have a product and an empty floor. Either way, we put the right systems in place and stay involved until they work the way they should.",
+      "What actually separates us from equipment vendors is accountability. Our team handles consultation, plant engineering, manufacturing, installation, commissioning, and technical support. There is always one team responsible for the whole thing which is not something most suppliers offer."
+    ]
+  },
+  "whatWeBuild": {
+    "title": "What We Build",
+    "paragraphs": [
+      "The international beverages processing industry market surpassed the USD 29 billion mark in 2025. This industry growth has been supported due to an increase in the number of packaged beverages, growing demand for automation, and increasing food safety regulations across the globe.",
+      "At SEPPA, we build production systems for two situations: manufacturers starting from scratch and those expanding an existing operation. The output looks different in each case. The engineering approach is the same. We look at your production targets, product mix, and facility constraints then build around those specifics, not around a standard catalogue offering.",
+      "Our systems cover multiple container formats. PET bottles, cans, glass, pouches, brick cartons, gable tops, aseptic drums each format has its own filling sequence, hygiene requirements, and downstream packaging solutions configuration. We design complete systems for all of them."
+    ]
+  },
+  "expertise": {
+    "title": "Our Expertise in Beverage Processing Solutions",
+    "paragraphs": [
+      "When a client asks us to design juice production lines, the first thing we ask about is the pulp percentage in the product, because this number completely determines the type of pumps and the diameter of the piping. We have worked on juice production lines handling concentrates and others that are fresh and minimally processed, and the technical difference between the two cases is very large, even though the final product looks very similar on the shelf.",
+      "In a completely different aspect, we designed beer production lines that require a totally different level of precision, as we must control the carbon dioxide ratio and maintain the filling temperature within a very narrow margin. Any slight deviation in beer production lines could affect the foam or the shelf life, which is why we use control units capable of adjusting the speed instantaneously based on sensor readings.",
+      "The beverage processing equipment we manufacture does not work in isolation, but is an interconnected system. Liquid filling machines connect directly to blowing units, and here comes the role of the PET bottle blowing machines we developed to reduce the transition time between different bottle sizes. Some of our clients produce five different container sizes on the same day, and traditional PET bottle blowing machines consumed a long time in resetting, while our design shortens this time to a few minutes.",
+      "Industrial automation is an essential part of our identity. We use programmable PLC systems that monitor every stage, from washing to final filling, and send immediate alerts upon any deviation from pre-defined standards. This approach has made our beverage processing equipment more predictable, reducing unplanned downtimes that cost factories significant losses.",
+      "In a recent project for one of our clients, the factory requested the integration of three separate lines—juice, water, and carbonated drink—under a single central control panel. It took months of reprogramming the controllers, but the result was beverage production lines working in harmony without the need for three separate operating teams, which saved significant labor costs in the long run."
+    ]
+  },
+  "equipment": {
+    "title": "Equipment We Supply",
+    "subtitle": "From precise filling to efficient packaging, we engineer components for every stage of your production line.",
+    "features": [
+      {
+        "title": "Processing Systems",
+        "description": "Heat exchangers, blenders, carbonation units, homogenizers, filtration systems, and CIP circuits. The core of any beverage manufacturing plant."
+      },
+      {
+        "title": "Liquid Filling Machine Configurations",
+        "description": "We supply liquid filling machine setups for still water, carbonated beverages, juices, spirits, dairy, and wine. Each is matched to the product's viscosity, carbonation level, container type, and required fill accuracy not just selected from a chart."
+      },
+      {
+        "title": "PET Blowing Machines",
+        "description": "Automatic and semi automatic PET blowers for standard bottles, wide mouth formats, and large containers. Our PET jar blowing machines handle wider-neck formats used in water dispensing and food packaging."
+      },
+      {
+        "title": "Rinser Filler Capper Systems",
+        "description": "Monoblock rinser filler capper units engineered for high speed, hygienic operation across still and carbonated products. Configurations vary based on output speed and cap type."
+      },
+      {
+        "title": "Packaging Solutions",
+        "description": "Labelling systems, shrink wrappers, carton handlers, stretch wrappers, crate stackers, and pallet equipment selected and configured to match line speed, output format, and facility layout."
+      },
+      {
+        "title": "Bottling Line Equipment",
+        "description": "Complete bottling line equipment packages for water, CSD, juice, beer, wine, and spirits. We configure multi SKU setups where lines handle more than one product or container size."
+      }
+    ]
+  },
+  "industriesText": {
+    "title": "Industries We Serve",
+    "paragraphs": [
+      "The needs of each sector differ fundamentally, which is what we learned from direct work with diverse clients. In the water sector, the priority is speed and sterilization, while in the dairy sector, microbiological cleanliness becomes the main focus for the design of liquid filling machines. In carbonated beverages, the challenge lies in maintaining pressure and gas without leakage throughout the production cycle.",
+      "We served factories specialized in sports drink production lines and functional beverages containing vitamins, and these products require high accuracy in the doses added before filling. We also worked with wineries and spirits plants that need completely different treatment, especially in the filtration and final filling stages.",
+      "The beverage processing equipment we supply to these sectors is designed with enough flexibility to expand later. A client who started with a single production line three years ago has now added three other lines without needing to demolish the old infrastructure, because we designed the initial layout taking into account the possibility of future expansion.",
+      "Another sector we serve increasingly is functional beverages and liquid supplements, where the requirements of traditional juice production lines overlap completely with precise dosing standards closer to the pharmaceutical industry. This intersection makes each project in this sector a different engineering challenge from the previous one, which actually motivates us to develop new solutions instead of sufficing with what succeeded previously."
+    ]
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "subtitle": "Solutions built to handle the unique demands of each beverage sector.",
+    "features": [
+      {
+        "title": "Water Production",
+        "description": "Still, mineral, alkaline, sparkling, structured, and flavoured vitamin water. Lines are sized by fill rate and container format from small PET to 19 liter jars."
+      },
+      {
+        "title": "Carbonated Soft Drinks",
+        "description": "CSD complete lines with carbonation, syrup dosing, mixing, and high speed filling. Matched to output targets and container type."
+      },
+      {
+        "title": "Juice, Nectars & Isotonics",
+        "description": "Hot fill and cold fill systems for juice, nectar, isotonic beverages, and teas. Pasteurization and aseptic options available depending on shelf life requirements."
+      },
+      {
+        "title": "Beer & Brewing",
+        "description": "Brewing, fermentation, filtration, tunnel pasteurization, and complete beer bottling line equipment. Built for craft and commercial scale."
+      },
+      {
+        "title": "Wine, Spirits & RTDs",
+        "description": "Processing and packaging solutions for wine, mead, spirits, RTD beverages, and hard seltzers. Glass, PET, and can formats supported."
+      },
+      {
+        "title": "Dairy Products",
+        "description": "Liquid dairy processing and filling systems for milk, flavoured dairy drinks, and UHT formats."
+      },
+      {
+        "title": "Sauces & Ketchup",
+        "description": "Filling systems for tomato based products, ketchup, and pourable sauces with viscosity appropriate valve configurations."
+      }
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Manufacturers Choose SEPPA",
+    "description": "There is no shortage of beverage processing equipment suppliers in this sector. The reason manufacturers come back and refer others comes down to a few consistent things.",
+    "paragraphs": [
+      "We do not push standard configurations. Every line we deliver is engineered around the client's product, output volume, and facility not around what we happen to stock. The difference between a line running at 85% efficiency and one running at 95% is usually in the engineering details: machine sequencing, buffer zones, CIP integration, operator interface design. Those details require engineering judgment, not catalogue selection.",
+      "We handle complexity well. Multi format plants, multi product lines, simultaneous liquid and carton output, phased construction projects we manage the complexity so our clients do not have to.",
+      "We stay reachable. International projects, regional support, spare parts logistics our team is structured to support production operations wherever they operate."
+    ]
+  },
+  "whyChooseText": {
+    "title": "Why Choose SEPPA Solutions?",
+    "paragraphs": [
+      "Technical support after delivery is what really distinguishes us from many suppliers. We have a team available to answer parts inquiries within a few hours, because we know that stopping a single production line for one day can cost the client much more than the price of the spare part itself. We maintain an inventory of essential parts for our most popular models, including the most demanded components of PET bottle blowing machines.",
+      "Innovation for us is not a marketing slogan, but an ongoing process in which we review our designs every year based on actual customer feedback from the factory floor. When we noticed that some juice production line clients face filter clogging with high viscosity juices, we developed a self cleaning system that significantly reduces the need for manual intervention.",
+      "Energy efficiency is a topic we take seriously more than many competitors, because the electricity bill in large beverage factories represents a large part of the annual operational cost. The beer production lines we designed recently consume significantly less energy compared to the previous generation of machines, thanks to saving motors and a better design of the cooling cycle.",
+      "Flexibility in manufacturing is another point we are proud of really, not just in form. When a client requests a modification in the design of beverage production lines two months after signing the contract, we do not handle the request as a burden, but as a natural part of the manufacturing process, as long as the modification does not violate basic safety standards. This flexibility sometimes cost us extra time in manufacturing, but it built long term relationships with clients who return to us at each new expansion."
+    ]
+  },
+  "faqTitle": "Common Questions",
+  "faqs": [
+    {
+      "question": "What types of beverage processing equipment does SEPPA supply?",
+      "answer": "Processing systems, PET blowing machines, rinser filler capper units, liquid filling machine configurations, labelling systems, batch coders, shrink wrappers, carton handlers, pallet equipment, and complete integrated production line packages."
+    },
+    {
+      "question": "Can packaging solutions be customized to our facility?",
+      "answer": "Every project is different. We design packaging solutions around your capacity targets, product specs, facility dimensions, and operational requirements."
+    },
+    {
+      "question": "Do you handle international plant installations?",
+      "answer": "Yes. We provide project management, on site support, and technical assistance for operations across multiple countries and regions."
+    },
+    {
+      "question": "How does SEPPA approach food safety in equipment design?",
+      "answer": "Stainless steel contact surfaces, CIP compatibility, automated cleaning, and sealed drive assemblies where required. These are engineering requirements built into every project, not optional additions."
+    },
+    {
+      "question": "Why choose a turnkey approach over sourcing equipment separately?",
+      "answer": "Single vendor turnkey delivery removes integration risk. Every machine is configured to work with the next one. Sourcing equipment separately puts the integration burden on the client and integration failures are expensive to fix after the fact."
+    }
+  ]
+}

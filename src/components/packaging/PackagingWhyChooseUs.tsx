@@ -138,13 +138,37 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
 
             {paragraphs && paragraphs.length > 0 ? (
               <motion.div variants={fadeInUp} className="space-y-6">
-                {paragraphs.map((p, idx) => (
-                  typeof p === 'string' ? (
-                    <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">{p}</p>
-                  ) : (
-                    <React.Fragment key={idx}>{p}</React.Fragment>
-                  )
-                ))}
+                {paragraphs.map((content, idx) => {
+                  let isListItem = false;
+                  let title = "";
+                  let desc = "";
+                  
+                  if (typeof content === 'string') {
+                    const match = content.match(/^([^:]+):\s+(.*)$/);
+                    if (match && match[1].split(' ').length <= 10 && !match[1].includes('.')) {
+                      isListItem = true;
+                      title = match[1];
+                      desc = match[2];
+                    }
+                  }
+
+                  return (
+                    <React.Fragment key={idx}>
+                      {isListItem ? (
+                        <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
+                          <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
+                          <strong>{title}:</strong> {desc}
+                        </p>
+                      ) : typeof content === 'string' ? (
+                        <p className="text-base md:text-lg text-gray-600 leading-relaxed text-justify">
+                          {content}
+                        </p>
+                      ) : (
+                        content
+                      )}
+                    </React.Fragment>
+                  );
+                })}
               </motion.div>
             ) : (
               <motion.div variants={fadeInUp} className="grid grid-cols-1 gap-y-8">

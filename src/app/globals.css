@@ -59,6 +59,10 @@
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-bold;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
   }
 
   /* Cross-browser backdrop-filter support */

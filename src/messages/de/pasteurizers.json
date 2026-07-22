@@ -1,0 +1,126 @@
+{
+  "title": "Tunnelpasteur: Moderne Pasteurisierungstechnologie für maximale Produktsicherheit",
+  "breadcrumbName": "Tunnelpasteurisierer",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Was ist ein Tunnelpasteur?",
+  "overviewDescription": "In der Getränke- und Lebensmittelindustrie ist die mikrobiologische Stabilität entscheidend für Produktsicherheit, Haltbarkeit und gleichbleibende Qualität. Ein Tunnelpasteur übernimmt dabei eine zentrale Aufgabe: Er gewährleistet eine kontinuierliche thermische Behandlung abgefüllter Produkte und schützt sie zuverlässig vor Verderb und mikrobiologischer Belastung.",
+  "overviewsubDescription": [
+    "Durch exakt gesteuerte Temperaturprofile werden Hefen, Schimmelpilze und vegetative Bakterien sicher inaktiviert, ohne Geschmack, Nährstoffe oder die optische Qualität des Produkts zu beeinträchtigen. Für Hersteller mit hohen Produktionskapazitäten stellt ein automatisierter Tunnelpasteurisierer die wirtschaftlichste Lösung für eine kontinuierliche und reproduzierbare Pasteurisierung dar.",
+    "Die Tunnelpasteurisierer von Seppa Solutions gewährleisten eine gleichmäßige Behandlung jeder einzelnen Flasche oder Dose und sorgen dafür, dass sämtliche Produkte die Anlage mit identischer Qualität und maximaler Produktsicherheit verlassen."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Wie funktioniert ein Tunnelpasteur?",
+      "paragraphs": [
+        "Ein Tunnelpasteur arbeitet mit mehreren aufeinander abgestimmten Temperaturzonen. Die bereits verschlossenen Behälter werden kontinuierlich über ein robustes Fördersystem durch verschiedene Heiz-, Halte- und Kühlbereiche transportiert.",
+        "Leistungsstarke Pumpen fördern Wasser zu speziell entwickelten Sprühsystemen, die jeden Behälter gleichmäßig umspülen und eine homogene Wärmeübertragung sicherstellen. Gleichzeitig werden Temperaturschwankungen minimiert und thermische Belastungen der Verpackung reduziert.",
+        "Ein wesentlicher Parameter ist dabei die Steuerung der Pasteurisation Units (PU). Für Bier entspricht eine PU einer Minute bei einer Produkttemperatur von 60 °C, während für andere Getränke produktspezifische Referenzwerte gelten. Sensoren überwachen kontinuierlich die Kerntemperatur der Gebinde. Ändert sich die Produktionsgeschwindigkeit, passt die Anlagensteuerung automatisch die Temperaturführung an. Dadurch werden sowohl Unterpasteurisierung als auch Überpasteurisierung vermieden. Die Kombination aus intelligenter Temperaturregelung und optimierter Wasserverteilung gewährleistet eine gleichmäßige Wärmebehandlung aller Flaschen und Dosen."
+      ]
+    },
+    {
+      "title": "Einsatzbereiche von Tunnelpasteurisierern",
+      "paragraphs": [
+        "Die kontinuierliche Tunnelpasteurisierung bildet heute einen festen Bestandteil moderner Getränkeproduktionen. Unterschiedliche Produkte stellen dabei jeweils spezifische Anforderungen an Temperaturführung und Verweilzeit.",
+        "Bei der Bierpasteurisierung müssen unter anderem Kohlensäuregehalt, Sauerstoffeintrag und Aromaentwicklung berücksichtigt werden. Eine zu hohe thermische Belastung kann Trübungen, Fehlaromen oder erhöhten Innendruck verursachen. Die Bierpasteurisierer von Seppa Solutions arbeiten deshalb mit präziser PU-Berechnung, um Hopfenaromen, Malzcharakter und Produktsicherheit optimal miteinander zu verbinden.",
+        "Auch Fruchtsäfte stellen besondere Anforderungen. Neben der Inaktivierung hitzeresistenter Mikroorganismen müssen Enzyme wie Pektinesterase zuverlässig deaktiviert werden. Gleichzeitig gilt es, Vitamine, Farbe und natürliche Aromastoffe bestmöglich zu erhalten.",
+        "Darüber hinaus eignen sich die Anlagen für zahlreiche weitere Produkte wie: Mineralwasser, Erfrischungsgetränke, Milch, Bier, Fruchtsäfte, Spirituosen, Wein, Ketchup und andere viskose Lebensmittel. Dank ihrer flexiblen Auslegung können sowohl Flaschen als auch Dosen unterschiedlichster Formate verarbeitet werden."
+      ]
+    },
+    {
+      "title": "Technische Merkmale der SEPPA Tunnelpasteurisierer",
+      "paragraphs": [
+        "In technischer Zusammenarbeit mit M/s. Rita Bottling Machines Private Limited entwickelt SEPPA-Rita leistungsstarke Tunnelpasteurisierer auf Basis deutscher Ingenieurstechnologie.",
+        "Die Anlagen wurden speziell für kontinuierliche Hochleistungsproduktionen konzipiert und verbinden maximale Produktsicherheit mit hoher Energieeffizienz."
+      ]
+    }
+  ],
+  "featuresTitle": "Single-Deck-Serie",
+  "featuresSubtitle": "Die Single-Deck-Serie zeichnet sich durch ihre robuste Konstruktion und optimierte Energienutzung aus. Zu den wichtigsten technischen Merkmalen gehören:",
+  "features": [
+    {
+      "title": "Schnellaufheizende Super-Heat-Zone",
+      "description": "Die spezielle Vorheizzone sorgt für eine schnelle und gleichmäßige Erwärmung der Produkte. Dadurch wird die Zeit in kritischen Temperaturbereichen deutlich reduziert."
+    },
+    {
+      "title": "Präzise Pasteurisation Units",
+      "description": "Eine moderne SPS-Steuerung überwacht kontinuierlich die erreichten PU-Werte und gewährleistet eine exakte Einhaltung der definierten Pasteurisierungsparameter."
+    },
+    {
+      "title": "Geringer Wasser- und Dampfverbrauch",
+      "description": "Regenerative Wärmerückgewinnungssysteme übertragen Wärmeenergie aus den Kühlzonen auf die Vorwärmbereiche. Dadurch werden Wasser-, Dampf- und Energieverbrauch deutlich reduziert."
+    },
+    {
+      "title": "Hochleistungs-Fördersystem",
+      "description": "Ein robuster Edelstahl-Ein- und Auslauf sowie ein besonders belastbares Flachgliederband ermöglichen einen sicheren Transport auch bei hohen Produktionsgeschwindigkeiten."
+    },
+    {
+      "title": "Verstopfungsfreie Edelstahl-Sprühwannen",
+      "description": "Optimierte Sprühwannen gewährleisten eine gleichmäßige Wasserverteilung ohne Düsenverstopfungen und sorgen für eine konstante Wärmeübertragung über die gesamte Anlagenbreite."
+    },
+    {
+      "title": "Vollautomatische Temperaturregelung",
+      "description": "Digitale Steuerungen mit Fernüberwachung und kontinuierlicher Datenerfassung ermöglichen eine präzise Prozesskontrolle auch im 24/7-Dauerbetrieb."
+    },
+    {
+      "title": "Leistungsstarke Pumpentechnik",
+      "description": "Moderne Hochleistungspumpen gewährleisten konstante Wassermengen und stabile Druckverhältnisse in sämtlichen Temperaturzonen. Dadurch werden Kaltstellen zuverlässig vermieden."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions?",
+    "description": "SEPPA-Rita zählt zu den führenden Herstellern industrieller Tunnelpasteurisierer in Indien und internationalen Märkten. Zahlreiche Brauereien und Getränkehersteller vertrauen auf die leistungsfähigen Pasteurisierungssysteme aufgrund ihrer Energieeffizienz, hohen Betriebssicherheit und langlebigen Konstruktion.",
+    "paragraphs": [
+      "Die speziell entwickelten Saftpasteurisierer gewährleisten eine optimale Erhaltung von Farbe, Vitaminen und natürlichen Inhaltsstoffen. Gleichzeitig sorgen die Bierpasteurisierer für stabile Aromaprofile und eine verlängerte Haltbarkeit ohne Qualitätseinbußen.",
+      "Von der Anlagenplanung über Installation und Inbetriebnahme bis hin zum technischen Service begleitet Seppa Solutions seine Kunden während des gesamten Anlagenlebenszyklus. Ziel ist eine sichere Haltbarmachung der Produkte ohne den Einsatz zusätzlicher Konservierungsstoffe und bei gleichzeitigem Erhalt der natürlichen Produktqualität."
+    ]
+  },
+  "methodology": {
+    "title": "Die Pasteurisierungsmethodik von SEPPA",
+    "steps": [
+      {
+        "title": "Thermische Auslegung",
+        "description": "Eine produktspezifische thermische Auslegung sowie individuelle Konfiguration der Heiz-, Halte- und Kühlzonen gewährleisten einen optimalen Prozess."
+      },
+      {
+        "title": "Regenerative Wärmerückgewinnung",
+        "description": "Durch den Einsatz hocheffizienter Plattenwärmetauscher wird Wärmeenergie zwischen Kühl- und Heizzonen übertragen. Dieses regenerative Verfahren reduziert den Energiebedarf erheblich."
+      },
+      {
+        "title": "Kontinuierlicher Produktionsfluss",
+        "description": "Im Gegensatz zu einem Batch-Pasteurisierer erfolgt die Verarbeitung kontinuierlich innerhalb einer geschlossenen Produktionslinie, was für industrielle Anwendungen entscheidende Vorteile bietet."
+      },
+      {
+        "title": "Validierung der PU-Werte",
+        "description": "Eine präzise Validierung der erforderlichen Pasteurisation Units sichert eine gleichmäßige Temperaturverteilung und konstante Produktsicherheit bei geringerem Personalaufwand."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Welche Wartungsarbeiten sind bei einem Tunnelpasteurisierer erforderlich?",
+      "answer": "Zur regelmäßigen Wartung gehören die Kontrolle der Sprühbilder, die Reinigung der verstopfungsfreien Edelstahl-Sprühwannen sowie die Überprüfung der Förderbandspannung. Zusätzlich sollten Temperatursensoren und SPS-Steuerung regelmäßig kalibriert werden, um eine konstante Einhaltung der definierten Pasteurisation Units sicherzustellen."
+    },
+    {
+      "question": "2. Wie hoch ist das Energieeinsparpotenzial moderner Tunnelpasteurisierer?",
+      "answer": "Durch regenerative Wärmerückgewinnungssysteme können Dampf- und Kühlwasserverbrauch gegenüber konventionellen Anlagen um bis zu 60–70 % reduziert werden."
+    },
+    {
+      "question": "3. Wie wird ein Bierpasteurisierer an unterschiedliche Gebinde angepasst?",
+      "answer": "Die Anpassung erfolgt über die Steuerung der Fördergeschwindigkeit sowie produktspezifische Temperaturprofile innerhalb der SPS. Unterschiedliche Wärmeleitfähigkeiten von Glasflaschen und Aluminiumdosen werden automatisch berücksichtigt, sodass unabhängig vom Verpackungstyp identische PU-Werte erreicht werden."
+    },
+    {
+      "question": "4. Welche Faktoren bestimmen die Leistung eines Saftpasteurisierers?",
+      "answer": "Die Anlagenleistung wird durch die Tunnelabmessungen, den Behälterdurchmesser, die notwendige Verweilzeit zur Enzyminaktivierung sowie die Wärmeübertragung des Produkts bestimmt. Optimierte Sprühsysteme ermöglichen hohe Produktionsgeschwindigkeiten bei gleichbleibender Prozesssicherheit."
+    },
+    {
+      "question": "5. Wann ist ein Tunnelpasteur einem Batch-Pasteurisierer vorzuziehen?",
+      "answer": "Für Produktionslinien mit hohen Stückzahlen und kontinuierlichem Betrieb ist ein Tunnelpasteur die wirtschaftlichere Lösung. Batch-Pasteurisierer eignen sich hauptsächlich für kleinere Chargen und saisonale Produktionen. Bei industriellen Abfülllinien bietet die kontinuierliche Tunnelpasteurisierung eine höhere Effizienz, bessere Energieausnutzung und eine konstante Produktqualität."
+    }
+  ],
+  "outro": [
+    "Fazit",
+    "Die Tunnelpasteurisierer von Seppa Solutions verbinden moderne Thermoprozesstechnik mit energieeffizientem Anlagenbau und präziser Prozesssteuerung. Dank intelligenter PU-Regelung, regenerativer Wärmerückgewinnung und robuster Edelstahlkonstruktion gewährleisten sie höchste Produktsicherheit bei gleichzeitig geringerem Energieverbrauch. Ob Bier, Fruchtsäfte, Milch oder Erfrischungsgetränke – die Tunnelpasteurisierung bietet eine zuverlässige Lösung für industrielle Hochleistungsproduktionen mit höchsten Qualitäts- und Hygienestandards."
+  ]
+}

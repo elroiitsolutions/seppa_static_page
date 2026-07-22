@@ -3,6 +3,10 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
 
+import { usePathname } from 'next/navigation';
+import enEnquiry from '@/messages/en/enquiry.json';
+import arEnquiry from '@/messages/ar/enquiry.json';
+
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -14,10 +18,23 @@ const staggerContainer = {
 };
 
 const PackagingContact = () => {
+  const pathname = usePathname();
+  const isArabic = pathname.startsWith('/ar');
+  const isDe = pathname.startsWith('/de');
+
+  const getT = (key: string) => {
+    const keys = key.split('.');
+    let val: any = isArabic ? arEnquiry : enEnquiry;
+    for (const k of keys) {
+      val = val?.[k];
+    }
+    return val || key;
+  };
+
   return (
     <section className="py-20 lg:py-28 bg-light overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-16" style={{ direction: isArabic ? 'rtl' : 'ltr' }}>
           
           <motion.div 
             className="lg:w-1/3"
@@ -28,15 +45,17 @@ const PackagingContact = () => {
           >
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-              <span className="text-sm font-medium text-dark uppercase tracking-wider">Contact Us</span>
+              <span className="text-sm font-medium text-dark uppercase tracking-wider">{getT('getInTouch')}</span>
             </motion.div>
             
             <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-8">
-              Let&apos;s Discuss Your Packaging Needs
+              {isArabic ? "دعنا نناقش احتياجات التعبئة والتغليف الخاصة بك" : "Let's Discuss Your Packaging Needs"}
             </motion.h2>
             
             <motion.p variants={fadeInUp} className="text-gray-600 mb-8">
-              Reach out to our experts to find the perfect packaging solutions tailored for your business. We are here to help you succeed.
+              {isArabic 
+                ? "تواصل مع خبرائنا للعثور على حلول التعبئة والتغليف المثالية المخصصة لعملك. نحن هنا لمساعدتك على النجاح."
+                : "Reach out to our experts to find the perfect packaging solutions tailored for your business. We are here to help you succeed."}
             </motion.p>
 
             <motion.div variants={fadeInUp} className="space-y-6">
@@ -45,7 +64,7 @@ const PackagingContact = () => {
                   <FiPhoneCall />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold font-heading text-dark mb-1">Call Us:</h3>
+                  <h3 className="text-xl font-bold font-heading text-dark mb-1">{getT('callUs')}</h3>
                   <p className="text-gray-600">+91 93848 06105</p>
                 </div>
               </a>
@@ -55,7 +74,7 @@ const PackagingContact = () => {
                   <FiMail />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold font-heading text-dark mb-1">Email Us:</h3>
+                  <h3 className="text-xl font-bold font-heading text-dark mb-1">{getT('emailUs')}</h3>
                   <p className="text-gray-600"> info@seppasolutions.com</p>
                 </div>
               </a>
@@ -65,7 +84,7 @@ const PackagingContact = () => {
                   <FiMapPin />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold font-heading text-dark mb-1">Location:</h3>
+                  <h3 className="text-xl font-bold font-heading text-dark mb-1">{isArabic ? "الموقع:" : "Location:"}</h3>
                   <p className="text-gray-600">No. 7, Parivakkam Road , Chennai - 600 056, Tamilnadu, India.</p>
                 </div>
               </div>
@@ -80,14 +99,14 @@ const PackagingContact = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="bg-white p-10 lg:p-14 rounded-[2rem] h-full shadow-lg border border-gray-100">
-              <h3 className="text-3xl font-bold font-heading text-dark mb-8">Request a Quote</h3>
+              <h3 className="text-3xl font-bold font-heading text-dark mb-8">{isArabic ? "طلب تسعيرة" : "Request a Quote"}</h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <input 
                       suppressHydrationWarning
                       type="text" 
-                      placeholder="Your Name" 
+                      placeholder={getT('fields.namePlaceholder')} 
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
                     />
                   </div>
@@ -95,7 +114,7 @@ const PackagingContact = () => {
                     <input 
                       suppressHydrationWarning
                       type="email" 
-                      placeholder="Email Address" 
+                      placeholder={getT('fields.emailPlaceholder')} 
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
                     />
                   </div>
@@ -105,7 +124,7 @@ const PackagingContact = () => {
                     <input 
                       suppressHydrationWarning
                       type="tel" 
-                      placeholder="Phone Number" 
+                      placeholder={getT('fields.phonePlaceholder')} 
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
                     />
                   </div>
@@ -113,8 +132,8 @@ const PackagingContact = () => {
                     <input 
                       suppressHydrationWarning
                       type="text" 
-                      placeholder="Packaging Type" 
-                      defaultValue="Packaging Inquiry"
+                      placeholder={isArabic ? "نوع التعبئة والتغليف" : "Packaging Type"} 
+                      defaultValue={isArabic ? "استفسار عن التعبئة والتغليف" : "Packaging Inquiry"}
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
                     />
                   </div>
@@ -123,7 +142,7 @@ const PackagingContact = () => {
                   <textarea 
                     suppressHydrationWarning
                     rows={5} 
-                    placeholder="Tell us about your packaging requirements..." 
+                    placeholder={isArabic ? "أخبرنا عن متطلبات التعبئة والتغليف الخاصة بك..." : "Tell us about your packaging requirements..."} 
                     className="w-full px-6 py-4 rounded-3xl bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm resize-none"
                   ></textarea>
                 </div>
@@ -132,7 +151,7 @@ const PackagingContact = () => {
                   type="submit" 
                   className="bg-[#101934] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-seppa-red transition duration-300 w-auto inline-block"
                 >
-                  Send Inquiry
+                  {getT('submitButtonText')}
                 </button>
               </form>
             </div>

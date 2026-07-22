@@ -1,128 +1,20 @@
-import React from 'react';
-import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
-import top from '@/assets/packaging/generated/glass_bottles_closeup_1781701419649.png';
-import machine from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
-import packag from '@/assets/packaging/generated/wine_bottles_closeup_1781701540385.png';
-import brickCarton from '@/assets/packaging/generated/beer_bottling_closeup_1781701513819.png';
-import brickAvif from '@/assets/packaging/generated/premium_spirits_closeup_1781701569217.png';
-import fillingImg from '@/assets/packaging/generated/glass_bottling_wide_1781701406159.png';
-import pouchMachine from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
+"use client";
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-const pageData: PackagingPageData = {
-  title: "Glass Bottle Filling & Packaging",
-  breadcrumbName: "Glass",
-  headerImage: fillingImg.src,
-  overviewTitle: "What’s timeless, classic, and beautiful to look at? The answer is Water, Juice, Dairy, Liquor, CSD, Beer, Wine, Pharma, Cosmetic etc products in glass packaging.",
-  overviewDescription: "",
-  overviewsubDescription: [
-    "There’s just something so much better about using glass. Whether it’s glass bottles, jars, or square containers, there are so many advantages to this material. Superior glass manufacture guarantees these distinct benefits.",
-    "Here are the key advantages of glass packaging you’ll have when you package your products in glass containers."
-  ],
-  overviewImage: top.src,
-  contentBlocks: [
-    {
-      title: "THE HIDDEN ADVANTAGE OF GLASS PACKAGING",
-      paragraphs: [
-        "You put so much effort into making your brand look and taste perfect, so why would you risk that? Seeking out glass manufacturers near me ensures optimal local sourcing.",
-        "We all want our products to be the best that they can be. But it’s just as important to make sure the outside of the product matches the quality on the inside. The right packaging can make a significant difference for all around experience on all ends of the spectrum.",
-        "Protect your brand and keep your consumers happy by choosing glass packaging for all your products. Water, Juice, Beer, CSD, Liquor, Wine, Milk, Yogurt, Cottage Cheese anything goes in glass."
-      ],
-      image1: brickCarton.src
-    },
-    {
-      title: "DELICIOUS TASTE COMES FROM GLASS BOTTLES",
-      paragraphs: [
-        "Glass bottles preserve the flavour of your dairy product much longer than other types of packaging. This is because the material is less likely to allow contents to mix with air or other possible chemicals. High quality glass manufacture avoids this completely.",
-        "Moisture is also less likely to get in the container, keeping your food safe from molds or going stale faster than you’d like it to.",
-        "While plastic erodes over time, glass has to physically break to become contaminated. This protects your product and keeps your consumers coming back for more delicious taste.",
-        "80 percent of consumers in a survey said that they believe that glass containers maintain the quality of the product better than other packaging. Since consumers are aware that glass is better for taste, they’re more likely to keep buying your product in glass.",
-        "This is the ideal system for the economical production, of quality bottles. Sourcing from a reliable glass making company makes this highly efficient."
-      ],
-      image1: packag.src,
-      bgClass: "bg-white",
-      reverse: true
-    },
-    {
-      title: "GLASS PACKAGING IS HEALTHIER AND SAFER FOR CONSUMERS AND THEIR FAMILIES",
-      paragraphs: [
-        "Glass is always a safe choice to use for packaging products. Plastic can melt, and there are risks of chemicals leaking into your food. Certain plastics aren’t even safe for food production.",
-        "Plastic containers are at risk for high levels of BPA, which is a compound that is used to make certain types of plastic. BPA can seep in through the food containers and contaminate the product within that container.",
-        "BPA has serious health consequences when ingested, especially for children and babies. It can affect hormone levels, brain function, and prostate function.",
-        "There’s a reason people trust glass. It’s made from basic earth-mined materials, not reactive chemicals. It’s inert, meaning it keeps your product exactly as you intended without leaching anything into it. It’s so clean, in fact, that it’s the only packaging the FDA considers fully safe. For brands that want to guarantee their product stays pristine from the factory to the consumer, glass is the gold standard. There is a high barrier between different chemicals and substances. Dedicated glass manufacturing companies maintain this purity.",
-        "This high barrier means that your product is less likely to become contaminated, and it will stay fresh for longer.",
-        "The world is full of health scares and terrifying food contamination stories. Don’t let your brand become another news story. Keep your customers safe and healthy so they’ll keep coming back for years to come."
-      ],
-      image1: machine.src,
-      image2: fillingImg.src,
-      layout: "stacked"
-    },
-    {
-      title: "SURFACE VALUE: BEAUTIFUL, ATTRACTIVE DAIRY PRODUCTS IN GLASS CONTAINERS",
-      paragraphs: [
-        "One of the most obvious benefits that comes from putting your dairy products in glass containers is the visual appeal. It’s much more sophisticated than plastic or paperboard and can really make a shelf look great. This reflects premium glass manufacture.",
-        "Glass bottles are attractive to customers because they have a classic look. They never get old or boring. They stay simple and never go out of style. A creative glass making company elevates this.",
-        "Many people also choose to keep and repurpose their glass containers once they’re done using the product. There’s a reason they don’t do this with plastic jugs they don’t look very nice.",
-        "You have the opportunity to create a beautiful, colourful label while keeping the bottle simple and traditional. It’s not confusing and your customers will know exactly what they’re getting.",
-        "Simplicity is key when people are buying food products because they want to be able to find what they’re looking for on the package. The majority of today’s consumers read the label of a product, and if they don’t find what they’re looking for they won’t buy it. Finding reputable glass manufacturers near me aids this."
-      ],
-      image1: brickAvif.src,
-      bgClass: "bg-white",
-      reverse: true
-    },
-    {
-      title: "EASIER CONSUMER EXPERIENCE WITH GLASS",
-      paragraphs: [
-        "When a plastic product is used over time, the plastic becomes distorted. It gets bent inward on certain sides, or shifts its shape to an inconvenient form.",
-        "This can cause issues when your customers are trying to get the last little bit out, or trying to scoop the product out.",
-        "Glass always stays the same. It’s solid and will not lose its shape regardless of how much you try to bend it or twist it. When it’s time to get down to the last little bit, it’s easy to get around because the container won’t move. Solid glass manufacture ensures lasting structural integrity."
-      ],
-      image1: fillingImg.src
-    },
-    {
-      title: "ENVIRONMENTAL BENEFITS FROM GLASS PRODUCT PACKAGING",
-      paragraphs: [
-        "Let’s not forget how beneficial glass packaging is for the environment. In today’s world, environmental consciousness is a huge deal and a big selling factor for many consumers.",
-        "Glass is completely recyclable, and it can be used over and over again as many times as necessary. It is the only packaging product on the market that has an endless recycling life. Forward thinking glass manufacturing companies champion this.",
-        "It also has one of the fastest turnover times when it’s recycled. A glass bottle can go from the recycling bin, through the recycling process, and be made into a new bottle ready for use within 30 days. Advanced glass manufacture streamlines this eco friendly loop.",
-        "Many companies will also collect those containers when you’re done with the product and take them back to reuse again. For example, with home milk delivery in glass bottles, the delivery company will take back the empty bottles and replace them with new, full ones.",
-        "Consumers can also reuse the glass bottles or containers as many times as they wish. There are many crafts and decorations that people can do using glass bottles.",
-        "SEPPA offers a wide range of Glass bottle Washing/Rinsing, Filling and Capping equipment’s, Semi automatic to Fully automatic, Low speed as well as high speed lines to service the needs of various industries and products.",
-        "SEPPA also offers complete line solutions for Glass bottle. This includes Crate washers, Glass bottle washers, Rinse filler Cappers, Date and Batch Coders, Tunnel Pasteurizers/Coolers, Multiple Shrink/Carton packaging equipment’s, Palletizers and Stretch wrappers. SEPPA offers complete Glass bottle line solutions for CSD, Beer, RTD’s, Liquor, Milk, Juice and Wine."
-      ],
-      image1: pouchMachine.src,
-      bgClass: "bg-white",
-      reverse: true,
-      layout: "stacked"
-    }
-  ],
-  faqTitle: "Frequently Asked Questions",
-  faqs: [
-    {
-      question: "Why is glass manufacture important for product safety?",
-      answer: "Proper glass manufacture uses natural materials to create an inert surface. Unlike plastics, excellent glass packaging guarantees that no harmful chemicals leach into your food. Leading glass manufacturing companies rigorously test their products, and any reputable glass making company prioritizing safe glass manufacture will meet strict FDA standards."
-    },
-    {
-      question: "How do I find top glass manufacturers near me?",
-      answer: "Searching online directories for glass manufacturers near me is the best starting point. Localizing your supply chain with a nearby glass making company reduces transport emissions. Many glass manufacturing companies offer facility tours so you can witness their precise glass manufacture process firsthand, ensuring the glass packaging meets your standards."
-    },
-    {
-      question: "Can a glass making company customize my brand's containers?",
-      answer: "Absolutely. A specialized glass making company provides extensive customization. From embossing to unique shapes, bespoke glass manufacture elevates your brand's presence. When you collaborate with glass manufacturers near me, communication is easier. Skilled glass manufacturing companies use advanced glass manufacture techniques to match your vision seamlessly."
-    },
-    {
-      question: "Is sustainable glass manufacture truly beneficial for the environment?",
-      answer: "Yes, eco friendly glass manufacture significantly reduces carbon footprints. Progressive glass manufacturing companies rely heavily on recycled cullet. By partnering with a green glass making company, you support a circular economy. Searching for sustainable glass manufacturers near me ensures your chosen glass manufacturing companies utilize energy efficient glass manufacture."
-    },
-    {
-      question: "What makes glass manufacture so durable?",
-      answer: "Industrial glass manufacture involves melting raw materials at extremely high temperatures, resulting in incredible strength. Any established glass making company will ensure robust walls and bases. By selecting top glass manufacturers near me or global glass manufacturing companies, you receive containers built via expert glass manufacture that resist warping, utilizing the best glass manufacture practices. Reliable glass manufacture is key. Reviewing local glass manufacturers near me helps verify this."
-    }
-  ],
-  hideWhyChoose:true
-};
+export default function GlassRedirectPage() {
+  const router = useRouter();
 
-const GlassPage = () => {
-  return <PackagingPageLayout data={pageData} />;
-};
+  useEffect(() => {
+    const lang = typeof navigator !== 'undefined' ? navigator.language : 'en';
+    const detectedLang = lang?.startsWith('ar') ? 'ar' : lang?.startsWith('de') ? 'de' : 'en';
+    router.replace(`/${detectedLang}/glass`);
+  }, [router]);
 
-export default GlassPage;
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0d162a] text-white">
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#cda262]"></div>
+      <p className="mt-4 text-lg font-medium opacity-80 animate-pulse">Redirecting...</p>
+    </div>
+  );
+}
