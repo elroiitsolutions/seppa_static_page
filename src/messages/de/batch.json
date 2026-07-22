@@ -1,0 +1,91 @@
+{
+  "title": "Industrielle Chargencodiermaschine",
+  "breadcrumbName": "Chargencodierung",
+  "rootBreadcrumbName": "Ausrüstung",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Was ist eine Chargencodiermaschine und wie funktioniert sie?",
+  "overviewDescription": "Jedes Produkt, das eine Produktionslinie verlässt, trägt Daten, auf die sich Aufsichtsbehörden, Händler und Endverbraucher verlassen. Das System, das diese Daten korrekt, schnell und ohne Unterbrechung der Linie aufbringt, ist die Chargencodiermaschine.",
+  "overviewsubDescription": [
+    "Eine Chargencodiermaschine bringt variable Informationen direkt auf Produktoberflächen auf, während diese sich auf einem Förderband bewegen. Im Inneren drückt eine Zahnradpumpe oder externes komprimiertes Gas Tinte durch Präzisionsdüsen und erzeugt geladene Tröpfchen, die durch ein elektrisches Feld abgelenkt und an genauen Koordinaten auf dem Substrat abgelagert werden. Der Druckkopf berührt die Oberfläche nie. Das ist wichtig, wenn Sie Glasflaschen mit 200 Einheiten pro Minute betreiben oder flexible Beutel, die ein Kontaktdrucker verformen würde.",
+    "Moderne Systeme verbinden sich direkt mit SPS- und MES-Netzwerken. Die Chargencodiermaschine ruft Live-Produktionsdaten (Chargennummern, Schichtcodes, Zeitstempel) ab und aktualisiert den Druckinhalt automatisch, wenn sich eine Charge ändert. Kein Bedienereingriff. Keine Ausfallzeiten für Neudrucke. Die Kennzeichnung auf dem Produkt stimmt mit dem Datensatz im System überein, was genau das ist, was ein Rückverfolgbarkeitsaudit erfordert."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Hauptmerkmale unserer industriellen Chargencodiermaschinen",
+      "paragraphs": [
+        "Schnelltrocknende Tintenoptionen: Tinte, die nicht schnell genug trocknet, verschmiert. Tinte, die für das falsche Substrat formuliert ist, blättert ab. Die automatische Chargencodiermaschine von Seppa verwendet lösungsmittelbasierte, schnelltrocknende Tinten, die auf die Substratkompatibilität abgestimmt sind: Auf PET und Glas verbindet sich die Tinte innerhalb von Sekunden auf molekularer Ebene; auf Papier und Karton fixiert die kapillare Absorption die Kennzeichnung.",
+        "Touchscreen-HMI: Schriftgröße, Zeichenhöhe, Zeilenanzahl und Druckposition sind alle über die Touchscreen-Schnittstelle konfigurierbar. Die Codiermaschine unterstützt einzeilige Datumsstempel und komplexe mehrfeldige Nachrichten (Seriennummern, Barcodes, Chargencodes) in derselben Vorlagenbibliothek. Bediener wechseln in weniger als zehn Sekunden zwischen gespeicherten Vorlagen.",
+        "Druckkopfgehäuse für Fabrikbedingungen: Der industrielle Tintenstrahldrucker von Seppa arbeitet in Umgebungen, die heiß, feucht und manchmal chemisch aggressiv sind. Der Druckkopf befindet sich in einem IP-geschützten Gehäuse mit einem Edelstahlgehäuse. Reinigungsprozesse beeinträchtigen weder Dichtungen noch Elektronik."
+      ]
+    },
+    {
+      "title": "Branchenübergreifende Anwendungen",
+      "paragraphs": [
+        "In der pharmazeutischen Verpackung erhalten Blisterpackungen und Kartons Chargennummern und Verfallsdaten bei Geschwindigkeiten von über 300 Einheiten pro Minute. Die Codiermaschine behält die Druckregistrierung während des gesamten Laufs ohne Neukalibrierung bei.",
+        "In der Lebensmittel- und Getränkeindustrie kennzeichnet dieselbe Maschine PET-Wasserflaschen, Glassaftbehälter, Metalldosen und Folienbeutel. Kondensation ist ein ständiges Problem in Getränkelinien - der industrielle Tintenstrahldrucker trägt dem Rechnung, indem er adhäsionsoptimierte Tinten verwendet, die sich verbinden, bevor Feuchtigkeit stört.",
+        "Kosmetiklinien verwenden die automatische Chargencodiermaschine auf gekrümmten Tubenkörpern und Kappenoberflächen, wo sich ein Positionsfehler von 0,1 mm bemerkbar macht. Elektronikhersteller kennzeichnen Kabelmäntel, Leiterplattenoberflächen und ABS-Gehäuse."
+      ]
+    },
+    {
+      "title": "Typen von mit Chargencodierern gedruckten Informationen",
+      "paragraphs": [
+        "Chargennummern: Eine Chargennummer isoliert einen Qualitätsvorfall. Wenn ein Rückruf herausgegeben wird, identifiziert die Nummer den genauen Produktionslauf - kein ungefähres Datumsfenster, sondern die spezifische Charge.",
+        "Herstellungs- und Verfallsdaten: Datumscodes geben internen Qualitätsteams die Möglichkeit, ein fertiges Produkt auf eine Schicht oder eine Rohstoffcharge zurückzuführen. Der Tintenstrahl-Codierdrucker bringt Verfallsdaten direkt auf der Primärverpackung auf und hält der fluoreszierenden Beleuchtung im Einzelhandel und der Kühllagerung stand.",
+        "Barcodes und QR-Codes: Der Tintenstrahl-Codierdrucker erzeugt 1D- und 2D-Codes in Auflösungen, die Scannerprüfungen im Einzelhandel bestehen. QR-Codes, die mit Chargen- und Seriendaten bedruckt sind, ermöglichen es Verbrauchern, die Authentizität des Produkts mit einem Telefonscan zu überprüfen."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für Chargencodiermaschinen wählen?",
+    "description": "Seppa baut Codiermaschinensysteme basierend auf der Realität, dass Produktionshallen kontinuierlich laufen und Codierfehler Linien stoppen.",
+    "paragraphs": [
+      "Die Hardware spiegelt dies wider: Aus Deutschland importierte Pumpen, präzisionsgefertigte Druckköpfe und für den 24/7-Betrieb ausgelegte Netzteile in Luftfahrtqualität.",
+      "Die industriellen Tintenstrahldruckerplattformen, die Seppa liefert, verarbeiten mehrere Substrattypen innerhalb einer einzigen Installation. Eine Linie, auf der morgens PET und nachmittags Glas läuft, erfordert keinen Hardwarewechsel - Bediener wechseln die Substratprofile am HMI. Der industrielle Tintenstrahldrucker behält die gleiche Druckauflösung und Kennzeichnungsbeständigkeit über beide Läufe bei.",
+      "Namhafte Hersteller in der Lebensmittel-, Pharma- und Kosmetikindustrie vertrauen auf die Chargencodiermaschinen-Hardware von Seppa, weil die Druckqualität über lange Produktionsläufe hinweg stabil bleibt. Die Kennzeichnung in Stunde acht einer Schicht ist dieselbe wie in Stunde eins."
+    ]
+  },
+  "methodology": {
+    "title": "Methodik: Unser Ansatz zur Integration der Chargencodierung",
+    "steps": [
+      {
+        "title": "Standortanalyse",
+        "description": "Ingenieure bewerten Substratmaterialien, Liniengeschwindigkeiten, Umweltbedingungen (Temperatur, Feuchtigkeit, chemische Belastung) und die vorhandene SPS-Architektur."
+      },
+      {
+        "title": "Montage & Tintenauswahl",
+        "description": "Die Chargencodiermaschine wird an der identifizierten Druckstation am Förderband montiert. Die Tintenauswahl wird auf das Substrat abgestimmt: lösungsmittelbasiert für nicht-poröse Oberflächen wie Glas und PET, wasserbasiert für Papier und Karton."
+      },
+      {
+        "title": "Kalibrierung",
+        "description": "Das System wird für Druckposition und Tröpfchengröße kalibriert. Kompatibilitätstests zwischen Substrat und Tinte werden vor dem eigentlichen Produktionsdruck durchgeführt."
+      },
+      {
+        "title": "Inbetriebnahme & Support",
+        "description": "Die Inbetriebnahme umfasst den HMI-Betrieb, die Einrichtung von Nachrichtenvorlagen und Wartungsverfahren. Seppa bietet in den ersten 90 Tagen nach der Übergabe Remote-Diagnose-Support."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQs)",
+  "faqs": [
+    {
+      "question": "Welche Wartung erfordert ein Tintenstrahl-Codierdrucker auf einer kontinuierlichen Produktionslinie?",
+      "answer": "Automatische Spül- und Kappenzyklen erledigen die meiste Druckkopfwartung ohne Bedienerunterstützung. Manuelle Aufgaben beschränken sich auf das Nachfüllen von Tinte und Lösungsmittel sowie den Filterwechsel alle 500 bis 1.000 Betriebsstunden."
+    },
+    {
+      "question": "Wie druckt eine Codiermaschine präzise auf gekrümmten oder unregelmäßigen Oberflächen?",
+      "answer": "Der Druckkopf der Codiermaschine ist an einer verstellbaren Halterung montiert. Die Einstellung des korrekten Abstands für die Substratgeometrie - ob runde Flasche, ovale Tube oder verjüngte Dose - ist der wichtigste Kalibrierungsschritt."
+    },
+    {
+      "question": "Warum ist eine automatische Chargencodiermaschine für die Einhaltung gesetzlicher Vorschriften erforderlich?",
+      "answer": "Vorschriften verlangen eine lesbare, dokumentierte Chargenidentifikation auf jeder Primärverpackung. Eine automatische Chargencodiermaschine bringt diese Identifikation mit Liniengeschwindigkeit konsistent auf und zeichnet jedes Druckereignis mit einem Zeitstempel auf."
+    },
+    {
+      "question": "Was macht den industriellen Tintenstrahldrucker von Seppa schneller als Konkurrenzsysteme?",
+      "answer": "Die Druckkopftechnologie, lösungsmittelbeständige, schnelltrocknende Tinten und die direkte SPS-Integration arbeiten zusammen. Der industrielle Tintenstrahldrucker von Seppa behält die Druckqualität bei Geschwindigkeiten von über 300 Einheiten pro Minute ohne Leistungseinbußen über lange Produktionsläufe bei."
+    },
+    {
+      "question": "Kann die Chargencodiermaschine sowohl Etiketten und Sekundärverpackungen als auch Primärbehälter kennzeichnen?",
+      "answer": "Ja. Die Hardware der Chargencodiermaschine ändert sich nicht - das Substratprofil tut es. Etiketten, Kartonagen, schrumpfverpackte Multipacks und Sekundärtrays aus Kunststoff können alle mit derselben Installation codiert werden."
+    }
+  ]
+}

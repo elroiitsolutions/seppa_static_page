@@ -1,0 +1,102 @@
+{
+  "title": "SEPPA SSB-SL-10 PET Bottle Blowing Machine",
+  "breadcrumbName": "SSB-SL-10",
+  "rootBreadcrumbName": "Pneumatic",
+  "rootBreadcrumbPath": "/blowing/pneumatic",
+  "overviewTitle": "Overview of SEPPA SSB-SL-10 PET Bottle Blowing Machine",
+  "overviewDescription": "Linear stretch blow molding remains the backbone of small to medium PET container manufacturing, and the SEPPA SSB-SL-10 is built for that tier of operation. Unlike rotary systems built for massive output runs, this linear pet blowing machine gives operators direct visibility into every station of the process, from preform loading to final ejection. When a plastic bottle production machine hides its intermediate stages behind sealed rotary drums, diagnosing a wall thickness deviation becomes guesswork. On the SSB-SL-10, each station is accessible and independently tunable, which is exactly what a facility needs from a plastic bottle production machine running mixed SKUs.",
+  "overviewsubDescription": [
+    "For a facility scaling up from manual filling or outsourced blow molding, the SSB-SL-10 is an entry point into serious production without the capital burden of a fully automated rotary line. It is a plastic bottle production machine sized for real world small batch runs: mineral water bottles, edible oil containers, condiment jars, and specialty PET packaging where flexibility outweighs raw throughput."
+  ],
+  "featuresTitle": "Key Features of the SEPPA SSB-SL-10",
+  "features": [
+    {
+      "title": "Infrared Preform Conditioning",
+      "description": "The machine uses zoned infrared lamp banks along the preform's travel path. Each zone tunes independently, letting an operator correct wall thickness variation in the preform before it reaches the mold. PET only stretches properly within a narrow band above its glass transition point; heat it unevenly and the bottle shows thin spots, haze, or stress whitening at the base. Because this is a linear pet blowing machine, lamp output on each zone can be adjusted in isolation, and the effect on the next preform is visible within seconds rather than after a full rotary cycle. As a plastic bottle production machine, the SSB-SL-10 depends on this preform heating consistency for saleable output."
+    },
+    {
+      "title": "Mold Cooling Channels",
+      "description": "Cycle time on any plastic bottle production machine is dictated less by the blow itself than by how fast the mold pulls heat out of the container. The SSB-SL-10 uses conformal style cooling channels machined close to the cavity surface, shortening the dwell time before the mold can open without deforming the bottle. Faster, more even cooling also reduces internal stress in the PET, which lowers the odds of top load failure or panel collapse after filling. For a mineral water production machine running long shifts, that cooling consistency directly affects daily output."
+    },
+    {
+      "title": "Tool Less Mold Changeover",
+      "description": "Format changes are where linear blowing machine designs earn their reputation. The SSB-SL-10's mold clamping system is built for changeover without a full tooling kit, keeping downtime between SKUs to hours rather than a full shift. For a contract packager running five or six bottle shapes through the same line, this feature alone can determine whether the machine pays for itself in year one. It's a big part of why a linear blowing machine still gets specified for mixed SKU operations, even with newer rotary options on the market."
+    },
+    {
+      "title": "Compact Footprint, Consistent Output",
+      "description": "At roughly the floor space of a mid size delivery van, the SSB-SL-10 fits into facilities that could never house a rotary system. Output per hour is naturally lower than a rotary machine, but as a linear pet blowing machine it holds tighter shot to shot consistency because each cavity goes through an identical, repeatable sequence rather than sharing a single rotating turret with dozens of others. Facilities that need a plastic bottle production machine without a rotary scale footprint tend to land on the SSB-SL-10 for exactly this reason."
+    }
+  ],
+  "applicationsTitle": "Applications Across Industries",
+  "applicationsSubtitle": "Water bottling is the most common entry point, and the SSB-SL-10 works well as a mineral water production machine for operators filling 330ml to 1.5L bottles.",
+  "applications": [
+    {
+      "title": "Water Bottling",
+      "description": "Mineral water production machine for operators filling 330ml to 1.5L bottles."
+    },
+    {
+      "title": "Condiment Packaging",
+      "description": "Condiment producers use it for sauce and dressing jars where neck finish precision matters for cap sealing."
+    },
+    {
+      "title": "Edible Oils",
+      "description": "Edible oil packagers rely on the thicker base geometry it can produce for stability on retail shelves."
+    },
+    {
+      "title": "Customized Capabilities",
+      "description": "Because it is a linear blowing machine rather than a dedicated single format unit, the SSB-SL-10 adapts to bottle shapes that would require a custom rotary mold turret elsewhere. Regional bottlers setting up a mineral water production machine for the first time also appreciate that the SSB-SL-10 doesn't demand compressed air infrastructure sized for industrial scale rotary output; a smaller compressor and receiver tank handle the load. Seppa configures each mineral water production machine to the client's specific bottle weight and neck finish before shipment, which shortens commissioning time on-site."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions?",
+    "description": "Seppa Solutions has built its reputation on turnkey PET packaging lines rather than standalone equipment sales.",
+    "paragraphs": [
+      "When a client installs a mineral water production machine from Seppa, they receive layout planning, utility sizing guidance, and commissioning support alongside the machine itself, which matters for a first time buyer who has never sized a chiller loop or balanced compressed air demand.",
+      "Every plastic bottle production machine Seppa ships goes through a pre dispatch trial run using the client's actual preform specification, not a generic sample, which catches thermal conditioning mismatches before the machine reaches the customer's floor. For operators comparing pet bottle manufacturing plant cost across vendors, that willingness to test against real preforms before shipment is one of the clearer differentiators."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the SEPPA SSB-SL-10 Works",
+    "subtitle": "Preforms load into the infrared conditioning zone, where lamp intensity and rotation speed are set to reach a uniform surface temperature just above PET's glass transition point. A mechanical transfer arm then moves the conditioned preform into the mold cavity.",
+    "steps": [
+      {
+        "title": "Low pressure pre blow",
+        "description": "A low pressure pre blow pushes the preform toward the cavity wall using the stretch rod for axial elongation."
+      },
+      {
+        "title": "High pressure final blow",
+        "description": "A high pressure final blow forces the PET fully into the mold detail, ensuring high definition bottle geometry."
+      },
+      {
+        "title": "Ejection",
+        "description": "Once the high pressure hold time completes, the mold opens and the finished bottle ejects onto a takeaway conveyor."
+      }
+    ],
+    "outro": [
+      "This staged approach is what separates a properly engineered plastic bottle production machine from a single shot blow system. Two stage blowing reduces the risk of preform rupture and gives more even material distribution across the container wall."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How much maintenance does a linear pet blowing machine need?",
+      "answer": "Mostly the IR lamp array, pneumatic seals, and mold cooling lines. Lamps get replaced on a rotating schedule rather than all at once. Seal wear is the most common cause of a slow pressure drop, and it's usually the first thing a technician should check."
+    },
+    {
+      "question": "How does the SSB-SL-10 achieve uniform wall thickness?",
+      "answer": "Zoned IR heating, controlled preform rotation, and the two stage blow sequence all play a part, and each adjusts independently. That's harder on rotary systems, where every cavity shares the same heating and blow timing."
+    },
+    {
+      "question": "Why does Seppa's plastic bottle production machine outperform older linear designs?",
+      "answer": "Older linear machines lean on fixed zone heating and single stage blow, which is fine until a preform batch varies. The SSB-SL-10's tunable IR zones and two stage blow give operators room to correct for that without adding cycle time."
+    },
+    {
+      "question": "How does pet bottle manufacturing plant cost compare to a rotary setup?",
+      "answer": "Lower, usually by a wide margin. A linear blowing machine like the SSB-SL-10 costs a fraction of a comparable output rotary system, and its lighter air and cooling demands mean less supporting infrastructure to install in the first place."
+    },
+    {
+      "question": "What makes Seppa Solutions a reliable long term partner?",
+      "answer": "It's less about any single feature and more about what happens after the sale. Commissioning support, spare parts availability, and pre dispatch trials against the client's actual preform lower the risk of putting a new plastic bottle production machine into an unfamiliar facility, and it's why repeat buyers keep coming back to the same plastic bottle production machine supplier."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "title": "SEPPA SSB-SL-20 PET Bottle Blowing Machine",
+  "breadcrumbName": "SSB-SL-20",
+  "rootBreadcrumbName": "Pneumatic",
+  "rootBreadcrumbPath": "/blowing/pneumatic",
+  "overviewTitle": "Overview of the SEPPA SSB-SL-20 PET Bottle Blowing Machine",
+  "overviewDescription": "Small batch producers need consistent wall thickness and clarity from short production runs, without the footprint and utility load of a full scale line. The SEPPA SSB-SL-20 was built around that problem. It is a linear pet packaging machine for operations that need repeatable container quality at modest volumes rather than continuous, high speed output. Linear systems like this pet packaging machine trade raw speed for control, and that trade off is the point for a specialty producer.",
+  "overviewsubDescription": [
+    "Where rotary systems are optimized for long runs and single format production, this pet packaging machine gives operators direct control over each stage of container formation. Preform loading, infrared conditioning, mold transfer, and blowing all happen as discrete, observable steps. If a batch drifts off spec, an operator can catch it mid cycle rather than after a pallet is already wrapped.",
+    "Seppa built the SSB-SL-20 as a small packaging machine in the truest sense: not a scaled down rotary unit, but a design that treats low-to-moderate volume as the primary use case rather than an afterthought."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications",
+  "features": [
+    {
+      "title": "Infrared Heating Bank",
+      "description": "A pet packaging machine built for niche production has to earn its keep on precision rather than speed. The SSB-SL-20's infrared heating bank uses zoned lamp control, letting technicians dial intensity independently across a preform's body, shoulder, and base. PET does not heat evenly; thicker wall sections retain heat differently than thinner ones, and a flat heating profile produces uneven stretch ratios. Zoned IR management corrects for that before the preform reaches the mold station."
+    },
+    {
+      "title": "Mold Cooling Geometry",
+      "description": "Mold cooling is the other half of the equation. The machine's cooling channels are sized for the range of PET viscosities and additive blends common in condiment and beverage packaging, from clear resin to tinted or barrier enhanced formulations. Cycle time depends heavily on how fast heat leaves the mold wall, so channel geometry here isn't a cosmetic detail. It's the thing that keeps a small packaging machine competitive on throughput despite the compact size. This same cooling design is a core part of the blow moulding technology that lets the machine hold tight tolerances across mixed format runs."
+    },
+    {
+      "title": "Pneumatic Air System",
+      "description": "On the pneumatic side, this pet packaging machine runs a two stage air system: a lower pressure pre-blow that shapes the preform into the mold cavity, followed by a high pressure final blow that pushes material into fine mold detail and corners. Tuning that transition is one of the more technical parts of commissioning, and where Seppa's engineers spend most of their time."
+    },
+    {
+      "title": "Compact footprint plus repeatable output",
+      "description": "The unit suits facilities that cannot dedicate a full bay to a single machine. A modern pet packaging machine aimed at specialty producers has to fit into tight floor plans without giving up mold closure repeatability, and the SSB-SL-20's frame and clamping unit are sized accordingly. Compact footprint plus repeatable output is the actual test of a well engineered small packaging machine, not just a shrunk down industrial one."
+    }
+  ],
+  "applicationsTitle": "Bottle Types and Industrial Applications",
+  "applicationsSubtitle": "The SSB-SL-20's flexibility shows up most clearly in format changeovers.",
+  "applications": [
+    {
+      "title": "Condiment & Spice Jars",
+      "description": "A single shift might run small condiment jars in the morning and switch to a different neck finish by afternoon, which is a routine expectation for a spice packing machine serving multiple SKUs."
+    },
+    {
+      "title": "Dry Goods Packaging",
+      "description": "For dry goods packagers, moisture control is the priority. A salt packaging machine has to produce containers with tight seal surfaces and consistent wall density, since minor thickness variation can create a weak point for moisture."
+    },
+    {
+      "title": "Beverage & Food Jars",
+      "description": "Beverage and condiment producers use the same blow moulding technology for clear PET jars and bottles where optical clarity matters."
+    },
+    {
+      "title": "Customized Capabilities",
+      "description": "Mold sets change without extensive retooling, and IR zone settings can be saved and recalled per format. For plants running mixed spice lines, that recall feature often makes the difference between a spice packing machine keeping pace with a fragmented order book and falling behind. The SSB-SL-20's cooling and pressure controls hold that consistency across a full production run, not just the first batch. The same zoned IR system that protects a salt packaging machine's seal integrity also protects a beverage producer's shelf appearance."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions?",
+    "description": "Seppa Solutions builds turnkey pet packaging machine systems for FMCG producers who need reliability more than raw speed.",
+    "paragraphs": [
+      "Our engineers work through thermal conditioning curves with every customer running a spice packing machine configuration, since spice adjacent PET formulations often carry additives that change how they absorb IR energy. Getting that curve wrong is the single most common mistake we see on a first time spice packing machine order.",
+      "We have also built infrastructure for high output salt packaging machine facilities where seal consistency is a food safety requirement, not just a quality preference, and the same discipline applies to any salt packaging machine line we commission. That experience shapes how we set cooling channel geometry and pressure staging on every SSB-SL-20 we build, regardless of the end product.",
+      "Customers choosing Seppa get more than equipment. They get a commissioning process built around their actual production mix, and support from engineers who have tuned this specific blow moulding technology across dozens of bottle geometries."
+    ]
+  },
+  "methodology": {
+    "title": "How the SEPPA SSB-SL-20 Works",
+    "subtitle": "As a pet packaging machine, production on the SSB-SL-20 follows a defined sequence. Preforms are loaded manually or through a semi automatic feed, depending on the configuration a customer selects.",
+    "steps": [
+      {
+        "title": "Thermal Conditioning",
+        "description": "Preforms move into the IR heating station, where zoned lamps bring the material to its target stretch temperature without over softening the neck finish."
+      },
+      {
+        "title": "Transfer & Clamping",
+        "description": "Heated preforms transfer to the mold station, where the clamping unit closes with enough repeatable force to prevent flash or misalignment."
+      },
+      {
+        "title": "Dual Stage Blow & Stabilize",
+        "description": "The machine executes the dual stage blow: pre blow to establish shape, then high pressure final blow to set wall thickness and surface detail. Compressed air holds the container against the mold wall briefly for dimensional stability before ejection."
+      }
+    ],
+    "outro": [
+      "This is a slower cycle than a rotary system, deliberately. Each stage can be observed and adjusted, which is what a small packaging machine needs when running short batches of several bottle formats in the same week. It is also what makes this pet packaging machine practical to troubleshoot on the shop floor instead of pulling apart a sealed rotary carousel."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How often does this pet packaging machine need maintenance?",
+      "answer": "IR lamp banks should be inspected monthly for output drift, and mold cooling channels benefit from a quarterly flush to prevent mineral buildup."
+    },
+    {
+      "question": "How do I get uniform wall thickness on specialized shapes?",
+      "answer": "Match zoned IR intensity to the geometry of your preform and mold. Seppa's team profiles this for each new format rather than relying on generic heating presets."
+    },
+    {
+      "question": "Why does Seppa's blow moulding technology outperform older linear designs?",
+      "answer": "Older linear machines typically run a single zone heating bank and fixed pre blow pressure. The SSB-SL-20's zoned IR and two stage pneumatic system give operators more variables to correct for on non standard bottle shapes."
+    },
+    {
+      "question": "Can this pet packaging machine run a full spice packing machine product line?",
+      "answer": "Yes. Most spice and condiment producers run several small formats through the same SSB-SL-20, switching molds between shifts rather than dedicating a separate machine to each SKU."
+    },
+    {
+      "question": "Why do salt packaging machine operators specifically choose Seppa?",
+      "answer": "Seal integrity is non negotiable for salt and other moisture sensitive dry goods. Seppa tunes cooling and pressure staging to hold consistent wall density, which is what keeps seal surfaces reliable batch after batch."
+    }
+  ]
+}

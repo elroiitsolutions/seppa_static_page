@@ -1,9 +1,12 @@
 "use client";
 import { useState, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { FiCheckCircle, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import AnimatedHeading from '../ui/AnimatedHeading';
+
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -15,37 +18,45 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
 
-const tabsData = [
-  {
-    id: 'organic',
-    title: 'Juices, Drinks & Isotonics',
-    image: 'pics/pexels-photo-17559580.jpg',
-    description: "Juices, nectars, soft drinks, isotonics and teas (JNSDIT) are one of the fastest growing beverage segments worldwide.",
-    link: "/juice"
-  },
-  {
-    id: 'fresh',
-    title: 'Carbonated Soft Drinks',
-    image: 'pics/c4ee15bc22fa3a63fce34fd4017026e4.jpg',
-    description: "Carbonated soft drinks remain one of the world's most valuable beverage categories, outsold only by bottled water.",
-    link: "/liquid"
-  },
-  {
-    id: 'delivery',
-    title: 'Liquid Dairy Products',
-    image: 'pics/large.jpg',
-    description: "Liquid dairy products remain a nutritious part of daily life, and with growing consumer emphasis on healthier living...",
-    link: "/dairy-product-line-machines"
-  },
-  {
-    id: 'beer',
-    title: 'Beer',
-    image: 'pics/a-beermovie.jpg',
-    description: "More than 5 billion litres of beer was packaged in PET. The switch to PET was seen a few decades ago with carbonated soft drinks.",
-    link: "/beer"
-  }
-];
 const OurIndustries = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const isArabic = locale === 'ar';
+  const isDe = locale === 'de';
+
+  const getT = (key: string) => isDe ? ((enHome as any).OurIndustries?.[key] || key) : t(`OurIndustries.${key}`);
+
+  const tabsData = [
+    {
+      id: 'organic',
+      title: getT('tab1Title'),
+      image: 'pics/pexels-photo-17559580.jpg',
+      description: getT('tab1Desc'),
+      link: "/juice"
+    },
+    {
+      id: 'fresh',
+      title: getT('tab2Title'),
+      image: 'pics/c4ee15bc22fa3a63fce34fd4017026e4.jpg',
+      description: getT('tab2Desc'),
+      link: "/liquid"
+    },
+    {
+      id: 'delivery',
+      title: getT('tab3Title'),
+      image: 'pics/large.jpg',
+      description: getT('tab3Desc'),
+      link: "/dairy-product-line-machines"
+    },
+    {
+      id: 'beer',
+      title: getT('tab4Title'),
+      image: 'pics/a-beermovie.jpg',
+      description: getT('tab4Desc'),
+      link: "/beer"
+    }
+  ];
+
   const [activeTab, setActiveTab] = useState(tabsData[0]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -72,17 +83,19 @@ const OurIndustries = () => {
           <motion.div variants={fadeInUp} className="text-center max-w-4xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-              <span className="text-sm font-medium text-dark uppercase tracking-wider">The Seppa Advantage</span>
+              <span className="text-sm font-medium text-dark uppercase tracking-wider">
+                {getT('tag')}
+              </span>
             </div>
         
             <AnimatedHeading 
-              text="WHY SEPPA SOLUTIONS? An Uncompromising Operational Efficiency, Engineered Internationally" 
+              text={getT('heading')} 
               elementType="h2" 
               className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-6 text-center" 
             />
             
             <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
-              Decades of specialized liquid engineering allows Seppa to deliver reliable, highly adaptable multi-product systems. We build machinery that meets strict global safety standards while ensuring rapid ROI for modern bottling plants.
+              {getT('description')}
             </p>
           </motion.div>
 
@@ -122,24 +135,32 @@ const OurIndustries = () => {
               <FiChevronLeft className="text-2xl" />
             </button> */}
 
+            {/* Tabs List */}
             <div 
               ref={scrollContainerRef}
-              className="flex items-center md:justify-center gap-8 relative overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] w-full px-2 lg:px-8"
+              className="flex overflow-x-auto w-full border-none scrollbar-hide py-2 md:justify-center gap-4 md:gap-8 px-4"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {tabsData.map((tab) => (
                 <button
                   key={tab.id}
-                  suppressHydrationWarning
-                  onClick={() => setActiveTab(tab)}
-                  className={`text-lg lg:text-xl font-bold font-heading relative pb-4 lg:pb-5 transition-colors duration-300 ${
-                    activeTab.id === tab.id ? 'text-dark' : 'text-gray-400 hover:text-dark'
+                  id={`tab-${tab.id}`}
+                  className={`relative pb-4 text-base md:text-[17px] font-bold font-heading transition-all duration-300 whitespace-nowrap cursor-pointer ${
+                    activeTab.id === tab.id 
+                      ? 'text-seppa-red font-extrabold' 
+                      : 'text-[#101934]/70 hover:text-seppa-red'
                   }`}
+                  onClick={() => {
+                    const tabObject = tabsData.find(t => t.id === tab.id);
+                    if (tabObject) setActiveTab(tabObject);
+                  }}
                 >
                   {tab.title}
                   {activeTab.id === tab.id && (
                     <motion.div 
-                      layoutId="activeTabIndicator"
-                      className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-seppa-red"
+                      layoutId="activeTabBorder"
+                      className="absolute bottom-0 left-0 right-0 h-[3px] bg-seppa-red rounded-full"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
                 </button>
@@ -157,18 +178,24 @@ const OurIndustries = () => {
 
           </motion.div>
 
-          {/* Tab Content */}
-          <motion.div variants={fadeInUp} className="w-full max-w-6xl mx-auto min-h-[350px]">
+          {/* Dynamic Content Card */}
+          <motion.div 
+            className="w-full max-w-5xl mx-auto bg-[#f9f8f4] rounded-[2rem] p-6 md:p-12 shadow-sm min-h-[400px] flex items-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab.id}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -15 }}
-                transition={{ duration: 0.4 }}
-                className="flex flex-col lg:flex-row gap-12 items-center bg-white rounded-[2.5rem] p-6 lg:p-10 shadow-sm border border-gray-100"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+                className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full"
               >
-                <div className="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-sm aspect-[4/3] lg:aspect-auto lg:h-[400px] relative group cursor-pointer">
+                <div className="w-full lg:w-1/2 relative group overflow-hidden rounded-2xl shadow-md aspect-[4/3] max-h-[300px]">
                   <img 
                     src={activeTab.image} 
                     alt={activeTab.title} 
@@ -187,7 +214,7 @@ const OurIndustries = () => {
                   <p className="text-gray-700 text-lg leading-relaxed mb-8">
                     {activeTab.description}{" "}
                     <Link href={activeTab.link} className="text-seppa-red hover:underline font-medium ml-1">
-                      more.
+                      {getT('more')}
                     </Link>
                   </p>
                 </div>
@@ -197,9 +224,9 @@ const OurIndustries = () => {
 
           {/* Button */}
           <motion.div variants={fadeInUp} className="mt-16 text-center">
-            <Link href="/about-us" className="inline-flex items-center gap-3 group cursor-pointer">
+            <Link href={isArabic ? "/contact-us" : "/contact-us"} className="inline-flex items-center gap-3 group cursor-pointer">
               <span className="inline-flex bg-[#101934] text-white px-6 md:px-8 py-4 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
-                Schedule a Technical Consultation
+                {getT('consultation')}
               </span>
               <span className="w-14 h-14 md:w-[60px] md:h-[60px] flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-[#101934] transition duration-300 shadow-md">
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-5 h-5 md:w-[22px] md:h-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>

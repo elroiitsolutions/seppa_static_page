@@ -1,13 +1,29 @@
 "use client";
 import React from 'react';
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FiFacebook, FiInstagram, FiArrowUpRight } from 'react-icons/fi';
 import { FaYoutube } from 'react-icons/fa';
 import logoImg from '@/assets/logo/logo.png';
 import bgPattern from '@/assets/bg/black-line-1.png';
 
+import enFooter from '@/messages/en/footer.json';
+import arFooter from '@/messages/ar/footer.json';
+import deFooter from '@/messages/de/footer.json';
 
 const Footer: React.FC = () => {
+  const pathname = usePathname();
+  const isArabic = pathname.startsWith('/ar');
+  const isGerman = pathname.startsWith('/de');
+  
+  const f = isArabic ? arFooter : isGerman ? deFooter : enFooter;
+
+  const getLink = (path: string) => {
+    if (path === '/') return isArabic ? '/ar' : isGerman ? '/de' : '/en';
+    const prefix = isArabic ? '/ar' : isGerman ? '/de' : '/en';
+    return `${prefix}${path}`;
+  };
+
   return (
     <footer className="bg-[#101934] text-white pt-20 pb-8 mt-12 lg:mt-20 relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern */}
@@ -28,12 +44,12 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-            <h3 className="text-xl font-heading font-bold">Subscribe Our Newsletter's</h3>
+            <h3 className="text-xl font-heading font-bold">{f.subscribeNewsletter}</h3>
             <form className="flex w-full sm:w-auto">
               <input 
                 suppressHydrationWarning
                 type="email" 
-                placeholder="Enter Email Address *" 
+                placeholder={f.enterEmail} 
                 required
                 className="bg-white/10 backdrop-blur-sm text-white px-6 py-4 rounded-l-lg w-full sm:w-[300px] focus:outline-none border border-white/20 border-r-0 placeholder-gray-400"
               />
@@ -54,11 +70,11 @@ const Footer: React.FC = () => {
           {/* Left Column: Heading & Button */}
           <div className="w-full lg:w-5/12">
             <h2 className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold leading-tight mb-10 pr-8">
-              Let’s engineer high-performance packaging lines together
+              {f.engineerTogether}
             </h2>
             <div className="flex items-center gap-3 group cursor-pointer w-max">
               <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
-                Get In Touch
+                {f.getInTouch}
               </button>
               <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
                 <FiArrowUpRight className="transform transition-transform duration-300 group-hover:rotate-45" size={22} strokeWidth={2.5} />
@@ -71,32 +87,32 @@ const Footer: React.FC = () => {
             
             {/* Quick Links */}
             <div>
-              <h3 className="text-xl font-heading font-bold mb-8">Quick Links</h3>
+              <h3 className="text-xl font-heading font-bold mb-8">{f.quickLinks}</h3>
               <ul className="space-y-4 text-gray-300 font-medium">
-                <li><Link href="/" className="hover:text-seppa-red transition">Home</Link></li>
-                <li><Link href="/about-us" className="hover:text-seppa-red transition">About Us</Link></li>
-                <li><Link href="/blog" className="hover:text-seppa-red transition">Our Blog</Link></li>
-                <li><Link href="/contact-us" className="hover:text-seppa-red transition">Contact Us</Link></li>
+                <li><Link href="/" className="hover:text-seppa-red transition">{f.home}</Link></li>
+                <li><Link href={getLink("/about-us")} className="hover:text-seppa-red transition">{f.aboutUs}</Link></li>
+                <li><Link href={getLink("/blog")} className="hover:text-seppa-red transition">{f.ourBlog}</Link></li>
+                <li><Link href={getLink("/contact-us")} className="hover:text-seppa-red transition">{f.contactUs}</Link></li>
               </ul>
             </div>
 
             {/* Our Services */}
             <div>
-              <h3 className="text-xl font-heading font-bold mb-8">Our Services</h3>
+              <h3 className="text-xl font-heading font-bold mb-8">{f.ourServices}</h3>
               <ul className="space-y-4 text-gray-300 font-medium">
-                <li><Link href="/services/packaging" className="hover:text-seppa-red transition">Packaging</Link></li>
-                <li><Link href="/services/spare-parts" className="hover:text-seppa-red transition">Spare parts & Logistics Training</Link></li>
-                <li><Link href="/services/maintenance" className="hover:text-seppa-red transition">Maintenance</Link></li>
-                <li><Link href="/services/improvement" className="hover:text-seppa-red transition">Line Improvement</Link></li>
-                <li><Link href="/services/conversions" className="hover:text-seppa-red transition">Line Conversions & Moulds</Link></li>
-                <li><Link href="/services/audits" className="hover:text-seppa-red transition">Audits</Link></li>
-                <li><Link href="/services/training" className="hover:text-seppa-red transition">Training</Link></li>
+                <li><Link href={getLink("/services/packaging")} className="hover:text-seppa-red transition">{f.packaging}</Link></li>
+                <li><Link href={getLink("/services/spare-parts")} className="hover:text-seppa-red transition">{f.spareParts}</Link></li>
+                <li><Link href={getLink("/services/maintenance")} className="hover:text-seppa-red transition">{f.maintenance}</Link></li>
+                <li><Link href={getLink("/services/improvement")} className="hover:text-seppa-red transition">{f.lineImprovement}</Link></li>
+                <li><Link href={getLink("/services/conversions")} className="hover:text-seppa-red transition">{f.lineConversions}</Link></li>
+                <li><Link href={getLink("/services/audits")} className="hover:text-seppa-red transition">{f.audits}</Link></li>
+                <li><Link href={getLink("/services/training")} className="hover:text-seppa-red transition">{f.training}</Link></li>
               </ul>
             </div>
 
             {/* Contact Information */}
             <div>
-              <h3 className="text-xl font-heading font-bold mb-8">Contact Information</h3>
+              <h3 className="text-xl font-heading font-bold mb-8">{f.contactInformation}</h3>
               <ul className="space-y-6 text-gray-300 font-medium">
                 <li className="flex items-start gap-4">
                   <div className="text-seppa-red mt-1 shrink-0">
@@ -114,7 +130,7 @@ const Footer: React.FC = () => {
                   <div className="text-seppa-red mt-1 shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                   </div>
-                  <span>712 Shivai Plaza, Andheri (East), Mumbai-400059, India</span>
+                  <span>{f.address}</span>
                 </li>
               </ul>
             </div>
@@ -125,7 +141,11 @@ const Footer: React.FC = () => {
         {/* Bottom Footer Area */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 font-medium text-sm md:text-base">
-            Copyright © 2021 <span className="text-white hover:text-seppa-red transition cursor-pointer"><Link href="/">Seppa Solutions</Link></span>. All rights reserved.
+            {f.copyright}{' '}
+            <span className="text-white hover:text-seppa-red transition cursor-pointer">
+              <Link href="/">{f.seppaSolutions}</Link>
+            </span>
+            . {f.allRightsReserved}
           </div>
           <div className="flex gap-2">
             <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">

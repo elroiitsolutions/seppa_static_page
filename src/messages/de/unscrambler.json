@@ -1,0 +1,100 @@
+{
+  "title": "Automatische Flaschenentsortierer Maschine für industrielle Abfülllinien",
+  "breadcrumbName": "Flaschenentsortierer",
+  "rootBreadcrumbName": "Ausrüstung",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Was ist eine Flaschenentsortierer Maschine?",
+  "overviewDescription": "Jede Hochgeschwindigkeits-Abfüllanlage besitzt einen kritischen Prozessschritt, der bei der Projektplanung häufig unterschätzt wird: die korrekte Ausrichtung der Behälter. Flaschen kommen als Schüttgut ungeordnet, verdreht und in zufälliger Position an. Die Abfüllmaschine benötigt jedoch stehende Flaschen mit korrekt ausgerichtetem Flaschenhals und gleichmäßigem Abstand.",
+  "overviewsubDescription": [
+    "Genau diese Aufgabe übernimmt eine automatische Flaschenentsortierer Maschine.",
+    "Im Kern nimmt ein Flaschenentsortierer lose Behälter aus einem Sammeltrichter auf und führt sie mit industrieller Geschwindigkeit in einer definierten, aufrechten Position an die Förderstrecke weiter. In Getränke- und Molkereianwendungen übernimmt die Maschine häufig zusätzliche Funktionen als integrierte Vorbehandlungsstation.",
+    "Die SEPPA BUS-200 kann beispielsweise optional mit einer Entionisierungs-Luftspülung ausgestattet werden. Dadurch kombiniert sie die Funktionen einer Flaschenreinigungsmaschine für Milchflaschen mit einer präzisen Orientierungseinheit innerhalb einer einzigen Maschinenplattform. Bei Molkerei-Abfülllinien entfällt dadurch eine zusätzliche Übergabestation, wodurch Platzbedarf, Formatwechselkomponenten und potenzielle Kontaminationsstellen reduziert werden.",
+    "Aus diesem Grund betrachten professionelle Betreiber bei der Auswahl einer Entsortiermaschine nicht nur die Geschwindigkeit, sondern auch Funktionen wie die Reinigung und Vorbereitung der Flaschen vor dem Füllprozess."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Hauptmerkmale der SEPPA Flaschenentsortierer Maschinen",
+      "paragraphs": [
+        "Centrifugalscheiben- und Rotationsschalen-Technologie: SEPPA Flaschenentsortierer arbeiten abhängig von Ausbringungsleistung und Behältergeometrie mit Zentrifugalscheiben- oder Rotationsschalen-Systemen. Bei der Zentrifugaltechnologie erzeugt die rotierende Scheibe eine kontrollierte Bewegung der Schüttgutflaschen nach außen. Führungsschienen nutzen die unterschiedliche Gewichtsverteilung des Behälters, um jede Flasche automatisch in die richtige Position zu bringen.",
+        "Rotationsschalen-Systeme führen die Behälter über eine flachere Bewegungsbahn. Durch die Veränderung des Schwerpunktes gelangen die Flaschen automatisch in definierte Aufnahmebereiche und werden korrekt ausgerichtet.",
+        "Beide Technologien sind mit einer variablen Geschwindigkeitsregelung verbunden. Die Ausgabeleistung passt sich automatisch an die Nachfrage der nachfolgenden Abfüllmaschine an. Dadurch werden Staus auf dem Einlaufband verhindert und empfindliche PET-Flaschen vor Beschädigungen geschützt.",
+        "SPS-Steuerung und Auslaufkontrolle: Jede SEPPA BUS-Serie verfügt über eine SPS-basierte Kontrolle der Behälterausrichtung am Ausgang des Orientierungssystems. Sensoren überprüfen kontinuierlich die Flaschenhalsposition, bevor der Behälter auf das Auslaufband übergeben wird. Falsch ausgerichtete oder umgefallene Flaschen werden automatisch ausgeschleust, bevor sie die Hauptlinie erreichen.",
+        "Bei der BUS-300 erfolgt diese Prüfung kontinuierlich bei Geschwindigkeiten von bis zu 350 Flaschen pro Minute ohne manuelle Überwachung.",
+        "Hygienische Konstruktion und schnelle Formatwechsel: Die Maschinenrahmen werden vollständig aus Edelstahl 304 gefertigt. Alle produktnahen Kontaktflächen entsprechen den Anforderungen der Lebensmittel- und Getränkeindustrie. Die BUS-200 ermöglicht einen vollständigen Formatwechsel in weniger als zehn Minuten mit nur drei Wechselteilen. Diese kurze Umrüstzeit ist speziell für Produktionsbetriebe mit mehreren SKUs und häufigen Formatänderungen entwickelt."
+      ]
+    },
+    {
+      "title": "Behälterkompatibilität",
+      "paragraphs": [
+        "Die SEPPA BUS-Serie verarbeitet Behälter von 50 ml bis 5 Liter aus PET, HDPE, PP und Glas innerhalb der jeweiligen Leistungsklasse. Die gleiche Orientierungstechnologie kann beispielsweise eine 1-Liter-HDPE-Milchflasche für eine Flaschenreinigungsmaschine ausrichten, aber auch 250-ml-PET-Wasserflaschen, 500-ml-HDPE-Behälter oder 3-Liter-PP-Kanister verarbeiten.",
+        "Die BUS-100 eignet sich für Behälter bis 2 Liter. Die BUS-300 bietet einen erweiterten Größenbereich. Für Produktionsleistungen zwischen 400 und 500 Flaschen pro Minute stehen BUS-400 und BUS-500 Modelle mit Trichtervolumen bis zu 13 m³ zur Verfügung.",
+        "Zusätzliche Optionen wie Wendeeinheiten für asymmetrische Flaschenformen, Vakuumbandförderer und variable Behälterbehälter erweitern die Einsatzmöglichkeiten."
+      ]
+    },
+    {
+      "title": "Vorteile eines automatischen Flaschenentsortierers",
+      "paragraphs": [
+        "Eine manuelle Zuführung bei Abfülllinien mit 150 Flaschen pro Minute oder mehr ist langfristig nicht wirtschaftlich. Ein Bediener erreicht dauerhaft nur etwa 20–30 Behälter pro Minute. Eine automatische Flaschenentsortierer Maschine arbeitet dagegen kontinuierlich mit gleichbleibender Geschwindigkeit ohne Ermüdungseffekte.",
+        "Besonders leichte PET-Flaschen profitieren von einer schonenden Behälterführung. Beschädigte Flaschenhälse oder deformierte Behälter verursachen Ausschuss, bevor sie überhaupt die Abfüllstation erreichen. Die SEPPA BUS-Serie reduziert dieses Risiko durch optimierte Führungsschienen, geringe Geräuschemissionen und kontrollierte Geschwindigkeit. Die Maschinengeometrie wurde entwickelt, um mechanische Belastungen während der Orientierung zu minimieren.",
+        "Auch ungeplante Stillstände beeinflussen die Wirtschaftlichkeit erheblich. Verschleißteile sind bei SEPPA Maschinen leicht zugänglich, die Bedienung über das HMI ist standardisiert und Formatwechsel bleiben unter zehn Minuten."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Flaschenentsortierer Maschinen?",
+    "description": "SEPPA entwickelt Entsortermaschinen mit direkter Integration in RFC-Systeme (Rinse Fill Cap). Die Synchronisation zwischen Entsorter, Luftförderung und Abfüllmaschine wird bereits während der Konstruktion berücksichtigt.",
+    "paragraphs": [
+      "Für Produktionslinien mit Milchflaschen-Reinigung, PET-Flaschenverarbeitung oder Getränkeabfüllung bedeutet dies: Der Übergang zwischen den Maschinen wird geplant und nicht erst während der Inbetriebnahme gelöst.",
+      "Die BUS-Serie deckt Standardleistungen von 100 bis 300 Flaschen pro Minute ab. BUS-400 und BUS-500 erweitern diese Leistung auf bis zu 500 Behälter pro Minute.",
+      "Geringe Geräuschemissionen, schonende Behälterführung und schnelle Formatwechsel gehören bei allen Modellen zur Standardausstattung. Für moderne Produktionsanlagen mit mehreren Behälterformaten ist ein PET-Flaschenentsortierer keine einfache Standardkomponente. Die SEPPA BUS-Serie wurde für hohe Geschwindigkeit, flexible Formate, niedrige Wartungskosten und direkte Integration in nachgeschaltete Abfüllsysteme entwickelt."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise des Flaschenentsortierungsprozesses",
+    "steps": [
+      {
+        "title": "Bulk-Zuführung",
+        "description": "Die Behälter werden entweder manuell über den separaten Trichter der BUS-100 oder automatisch über ein Zuführsystem bei BUS-200 und BUS-300 in die Maschine eingebracht."
+      },
+      {
+        "title": "Orientierung",
+        "description": "Anschließend gelangen sie in den Bereich der Zentrifugalscheibe oder Rotationsschale. Mechanische Führung und kontrollierte Rotationskräfte bringen die Flaschen in eine vertikale Position."
+      },
+      {
+        "title": "Verifikation & Reinigung",
+        "description": "Die korrekt ausgerichteten Behälter laufen über Führungsschienen zur Ausgangsstation. Sensoren prüfen dort erneut die Flaschenposition. Bei BUS-200 Varianten mit Entionisierungs-Luftspülung erfolgt direkt anschließend die Reinigung der Flaschen. Dadurch arbeitet die Maschine gleichzeitig als Flaschenreinigungsmaschine für Milchflaschen und als Orientierungssystem."
+      },
+      {
+        "title": "Übergabe an die Hauptlinie",
+        "description": "Die Übergabe an die Hauptfördertechnik erfolgt über Luftförderung mit automatischer Geschwindigkeitsanpassung an die Abfüllanlage. Eine Hochgeschwindigkeits-Flaschenentsortierer Maschine mit 300 Flaschen pro Minute stellt alle 0,2 Sekunden einen korrekt positionierten Behälter bereit – eine Leistung, die manuell nicht reproduzierbar ist."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Welche Leistung erreicht eine automatische Flaschenentsortierer Maschine?",
+      "answer": "Die BUS-100 erreicht bis zu 150 Flaschen pro Minute. Die BUS-200 verarbeitet bis zu 200 Flaschen pro Minute und die BUS-300 bis zu 350 Flaschen pro Minute. Für höhere Anforderungen erreichen BUS-400 und BUS-500 auf Anfrage bis zu 500 Behälter pro Minute."
+    },
+    {
+      "question": "2. Welche Wartung benötigt ein Flaschenentsortierer?",
+      "answer": "Die wichtigsten Wartungspunkte sind Führungsschienen, Verschleißflächen und Sensorkalibrierung. Verschleißteile können ohne umfangreiche Demontage gewechselt werden. Bei der BUS-200 bleibt ein kompletter Formatwechsel unter zehn Minuten."
+    },
+    {
+      "question": "3. Warum eignet sich ein PET-Flaschenentsortierer für leichte PET-Behälter?",
+      "answer": "Leichte PET-Flaschen reagieren empfindlich auf mechanische Belastungen. SEPPA Flaschenentsortierer nutzen spezielle Führungssysteme und variable Geschwindigkeitsregelung, um Verformungen und Beschädigungen während der Zuführung zu vermeiden."
+    },
+    {
+      "question": "4. Wie schnell amortisiert sich ein Hochgeschwindigkeits-Flaschenentsortierer?",
+      "answer": "Durch den Ersatz manueller Zuführung, geringere Ausschussraten und weniger Stillstände kann sich die Investition besonders bei Mehrschichtproduktion häufig innerhalb kurzer Zeit amortisieren."
+    },
+    {
+      "question": "5. Kann ein SEPPA Flaschenentsortierer auch als Milchflaschen-Reinigungsmaschine eingesetzt werden?",
+      "answer": "Ja. Bei BUS-200 Konfigurationen mit Entionisierungs-Luftspülung werden Orientierung und Reinigung in einem einzigen Prozessschritt kombiniert. Dadurch entfällt eine separate Spülstation vor der Abfüllung."
+    }
+  ],
+  "outro": [
+    "Fazit",
+    "SEPPA Flaschenentsortierer Maschinen verbinden präzise Behälterausrichtung, hygienische Konstruktion und flexible Integration in moderne Getränke- und Molkerei-Abfüllanlagen. Durch hohe Geschwindigkeit, schnelle Formatwechsel und optionale Reinigungsfunktionen entstehen zuverlässige Produktionslösungen für anspruchsvolle industrielle Anwendungen."
+  ]
+}

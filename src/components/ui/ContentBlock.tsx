@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from './AnimatedHeading';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { FiArrowUpRight, FiCheckCircle } from 'react-icons/fi';
 import { FaPhoneAlt } from 'react-icons/fa';
 
@@ -33,8 +33,160 @@ const imageVariants: Variants = {
   visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
+const getLinkPathForTitle = (title: string): string => {
+  const cleanTitle = title.trim().toLowerCase().replace(/:$/, '');
+  if (
+    cleanTitle === "oil chillers" || 
+    cleanTitle === "مبردات الزيت الصناعية" ||
+    cleanTitle.includes("oil chillers") ||
+    cleanTitle.includes("مبردات الزيت")
+  ) {
+    return "/equipments/oil-chillers";
+  }
+  if (
+    cleanTitle === "hydraulic oil chiller" || 
+    cleanTitle === "hydraulic oil chillers" || 
+    cleanTitle === "مبرد الزيت الهيدروليكي" ||
+    cleanTitle.includes("hydraulic oil") ||
+    cleanTitle.includes("الهيدروليكي")
+  ) {
+    return "/equipments/hydraulic-chillers";
+  }
+  if (
+    cleanTitle === "coolant chiller" || 
+    cleanTitle === "coolant chillers" || 
+    cleanTitle === "مبرد سوائل التبريد" ||
+    cleanTitle.includes("coolant chiller") ||
+    cleanTitle.includes("سوائل التبريد")
+  ) {
+    if (cleanTitle.includes("i dip") || cleanTitle.includes("ip") || cleanTitle.includes("الغمر")) {
+      return "/equipments/coolant-chiller-ip";
+    }
+    return "/equipments/coolant-chillers";
+  }
+  if (
+    cleanTitle === "coolant chiller i dip" || 
+    cleanTitle === "coolant chiller ip" || 
+    cleanTitle === "مبرد الغمر المباشر" ||
+    cleanTitle.includes("i dip") ||
+    cleanTitle.includes("الغمر المباشر")
+  ) {
+    return "/equipments/coolant-chiller-ip";
+  }
+  if (
+    cleanTitle === "air cooled scroll chiller" || 
+    cleanTitle === "air cooled scroll chillers" || 
+    cleanTitle === "مبرد حلزوني مبرد بالهواء" ||
+    cleanTitle.includes("air cooled scroll") ||
+    cleanTitle.includes("مبرد بالهواء")
+  ) {
+    return "/equipments/air-cooled-scroll-chillers";
+  }
+  if (
+    cleanTitle === "water cooled scroll chiller" || 
+    cleanTitle === "water cooled scroll chillers" || 
+    cleanTitle === "مبرد حلزوني مبرد بالماء" ||
+    cleanTitle.includes("water cooled scroll") ||
+    cleanTitle.includes("مبرد بالماء")
+  ) {
+    return "/equipments/water-cooled-scroll-chillers";
+  }
+  if (
+    cleanTitle === "smart screw chiller series" || 
+    cleanTitle === "smart screw chillers" || 
+    cleanTitle === "مبردات لولبية ذكية" ||
+    cleanTitle === "سلسلة المبردات اللولبية الذكية" ||
+    cleanTitle.includes("smart screw") ||
+    cleanTitle.includes("لولبية")
+  ) {
+    return "/equipments/smart-screw-chillers";
+  }
+  if (
+    cleanTitle === "energy efficient chillers" || 
+    cleanTitle === "مبردات مياه صناعية موفرة للطاقة" ||
+    cleanTitle === "مبردات موفرة للطاقة" ||
+    cleanTitle.includes("energy efficient chiller") ||
+    cleanTitle.includes("موفرة للطاقة")
+  ) {
+    return "/equipments/energy-efficient-chillers";
+  }
+  if (
+    cleanTitle === "semi automatic pet blowing machine" || 
+    cleanTitle === "ماكينة نفخ زجاجات pet نصف الأوتوماتيكية" ||
+    cleanTitle === "ماكينة نصف آلية لـ pet" ||
+    cleanTitle.includes("semi automatic pet") ||
+    cleanTitle.includes("نصف الأوتوماتيكية")
+  ) {
+    return "/blowing/semi-automatic-units";
+  }
+  if (
+    cleanTitle === "mineral water & soft drink pet bottle machine" || 
+    cleanTitle === "ماكينة تصنيع زجاجات pet للمياه المعدنية والمشروبات الغازية" ||
+    cleanTitle.includes("soft drink pet") ||
+    cleanTitle.includes("للمياه المعدنية والمشروبات الغازية")
+  ) {
+    return "/soft-drink-pet-blowing";
+  }
+  if (
+    cleanTitle === "milk / juice pet bottle machine" ||
+    cleanTitle === "آلة تعبئة زجاجات عصير pet" ||
+    cleanTitle === "ماكينة تصنيع زجاجات pet للعصائر" ||
+    cleanTitle.includes("milk / juice pet") ||
+    cleanTitle.includes("عصير pet") ||
+    cleanTitle.includes("زجاجات pet للعصائر")
+  ) {
+    return "/milk-juice-pet-blowing";
+  }
+  if (
+    cleanTitle === "bottle machines for household cleaning products" ||
+    cleanTitle === "ماكينة تصنيع عبوات منتجات التنظيف المنزلية" ||
+    cleanTitle.includes("household cleaning") ||
+    cleanTitle.includes("منتجات التنظيف")
+  ) {
+    return "/household-cleaning-pet-blowing";
+  }
+  if (
+    cleanTitle.includes("oil, vinegar & ketchup") ||
+    cleanTitle.includes("oil, vinegar") ||
+    cleanTitle.includes("عبوات الزيت من مادة pet") ||
+    cleanTitle.includes("زجاجات pet للزيت") ||
+    cleanTitle.includes("تعبئة الزيوت والخل")
+  ) {
+    return "/oil-ketchup-pet-blowing";
+  }
+  if (
+    cleanTitle.includes("large pet bottle") ||
+    cleanTitle.includes("3 to 20") ||
+    cleanTitle.includes("زجاجة pet كبيرة") ||
+    cleanTitle.includes("3 إلى 20 لتر") ||
+    cleanTitle.includes("زجاجات pet كبيرة السعة")
+  ) {
+    return "/large-pet-blowing";
+  }
+  if (
+    cleanTitle.includes("electric pet") ||
+    cleanTitle.includes("كهربائية لـ pet") ||
+    cleanTitle.includes("كهربائية لنفخ عبوات pet")
+  ) {
+    return "/electric-pet-blowing";
+  }
+  if (
+    cleanTitle.includes("rotary") ||
+    cleanTitle.includes("الدوارة") ||
+    cleanTitle.includes("rotary high speed")
+  ) {
+    return "/blowing/rotary-high-speed-systems";
+  }
+  return "";
+};
+
 const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, features, image1, image2, bgClass = "bg-[#fdfbf6] m-3 rounded-2xl", reverse = false, layout = 'side-by-side' }) => {
   const hasImages = image1 || image2;
+  const [isMounted, setIsMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <section className={`py-16 lg:py-24 ${bgClass} overflow-hidden relative`}>
@@ -92,22 +244,49 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
               </div>
             )}
 
-            <div className="space-y-6 text-left w-full">
-              {paragraphs.map((content, idx) => (
-                <motion.div key={idx} variants={fadeInUp}>
-                  {typeof content === 'string' ? (
-                    <p className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">
-                      {content}
-                    </p>
-                  ) : (
-                    content
-                  )}
-                </motion.div>
-              ))}
+            <div className="space-y-6 text-start w-full">
+              {paragraphs.map((content, idx) => {
+                let isListItem = false;
+                let title = "";
+                let desc = "";
+                
+                if (typeof content === 'string') {
+                  const match = content.match(/^([^:]+):\s+(.*)$/);
+                  if (match && match[1].split(' ').length <= 10 && !match[1].includes('.')) {
+                    isListItem = true;
+                    title = match[1];
+                    desc = match[2];
+                  }
+                }
+
+                const linkPath = getLinkPathForTitle(title);
+
+                return (
+                  <motion.div key={idx} variants={fadeInUp}>
+                    {isListItem ? (
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                        <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
+                        <strong>{title}:</strong> {desc}
+                        {linkPath && isMounted && (
+                          <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
+                            Read More <FiArrowUpRight className="text-xs" />
+                          </Link>
+                        )}
+                      </p>
+                    ) : typeof content === 'string' ? (
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12">
+                        {content}
+                      </p>
+                    ) : (
+                      content
+                    )}
+                  </motion.div>
+                );
+              })}
             </div>
 
             {features && features.length > 0 && (
-              <motion.div variants={fadeInUp} className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 w-full text-left">
+              <motion.div variants={fadeInUp} className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 w-full text-start">
                 {features.map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-seppa-red/10 flex items-center justify-center text-seppa-red flex-shrink-0">
@@ -145,17 +324,44 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
               )}
               
               <div className="space-y-4 mb-10">
-                {paragraphs.map((content, idx) => (
-                  <motion.div key={idx} variants={fadeInUp}>
-                    {typeof content === 'string' ? (
-                      <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                        {content}
-                      </p>
-                    ) : (
-                      content
-                    )}
-                  </motion.div>
-                ))}
+                {paragraphs.map((content, idx) => {
+                  let isListItem = false;
+                  let title = "";
+                  let desc = "";
+                  
+                  if (typeof content === 'string') {
+                    const match = content.match(/^([^:]+):\s+(.*)$/);
+                    if (match && match[1].split(' ').length <= 10 && !match[1].includes('.')) {
+                      isListItem = true;
+                      title = match[1];
+                      desc = match[2];
+                    }
+                  }
+
+                  const linkPath = getLinkPathForTitle(title);
+
+                  return (
+                    <motion.div key={idx} variants={fadeInUp}>
+                      {isListItem ? (
+                        <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                          <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
+                          <strong>{title}:</strong> {desc}
+                          {linkPath && isMounted && (
+                            <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
+                              Read More <FiArrowUpRight className="text-xs" />
+                            </Link>
+                          )}
+                        </p>
+                      ) : typeof content === 'string' ? (
+                        <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                          {content}
+                        </p>
+                      ) : (
+                        content
+                      )}
+                    </motion.div>
+                  );
+                })}
               </div>
 
               {features && features.length > 0 && (
@@ -234,11 +440,46 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             )}
 
             <div className="space-y-6">
-              {paragraphs.map((text, idx) => (
-                <motion.p key={idx} variants={fadeInUp} className="text-base md:text-lg text-gray-600 leading-relaxed">
-                  {text}
-                </motion.p>
-              ))}
+              {paragraphs.map((content, idx) => {
+                let isListItem = false;
+                let title = "";
+                let desc = "";
+                
+                if (typeof content === 'string') {
+                  const match = content.match(/^([^:]+):\s+(.*)$/);
+                  if (match && match[1].split(' ').length <= 10 && !match[1].includes('.')) {
+                    isListItem = true;
+                    title = match[1];
+                    desc = match[2];
+                  }
+                }
+
+                 const linkPath = getLinkPathForTitle(title);
+
+                 return (
+                  <motion.div key={idx} variants={fadeInUp}>
+                    {isListItem ? (
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
+                        <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
+                        <strong>{title}:</strong> {desc}
+                        {linkPath && isMounted && (
+                          <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
+                            Read More <FiArrowUpRight className="text-xs" />
+                          </Link>
+                        )}
+                      </p>
+                    ) : typeof content === 'string' ? (
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                        {content}
+                      </p>
+                    ) : (
+                      <div className="text-base md:text-lg text-gray-600 leading-relaxed">
+                        {content}
+                      </div>
+                    )}
+                  </motion.div>
+                );
+              })}
             </div>
           </motion.div>
         )}

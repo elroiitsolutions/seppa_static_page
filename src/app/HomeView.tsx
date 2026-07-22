@@ -10,7 +10,7 @@ import Projects from '@/components/home/Projects';
 import HowItWorks from '@/components/home/HowItWorks';
 import HomeFAQs from '@/components/home/HomeFAQs';
 import ContactMap from '@/components/home/ContactMap';
-import Testimonials from '@/components/home/Testimonials';
+// import Testimonials from '@/components/home/Testimonials';
 import LatestBlogs from '@/components/home/LatestBlogs';
 import PetTechnology from '@/components/home/PetTechnology';
 import Clients from '@/components/home/Clients';
@@ -33,7 +33,7 @@ export default function HomeView() {
       <HowItWorks />
       <SpecialOffer />
       <Clients />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Partners />
       <ContactMap />
       <HomeFAQs />

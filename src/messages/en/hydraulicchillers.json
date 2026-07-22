@@ -1,0 +1,112 @@
+{
+  "title": "Hydraulic Oil Chiller Systems for Industrial Machinery",
+  "breadcrumbName": "Hydraulic Chillers",
+  "rootBreadcrumbName": "",
+  "rootBreadcrumbPath": "",
+  "overviewTitle": "Hydraulic Oil Chiller Systems",
+  "overviewDescription": "Most plant engineers don't think about their hydraulic oil until something goes wrong. A press starts drifting. A moulding line cycles inconsistently. A CNC machine loses positional accuracy mid shift. And nine times out of ten, it's not the pump or the valve block that's failed. It's the oil temperature.",
+  "overviewsubDescription": [
+    "By the time the symptoms are obvious, the fluid's been degrading for hours sometimes longer.",
+    "A correctly specified hydraulic oil chiller stops that problem before it starts."
+  ],
+  "contentBlocks": [
+    {
+      "title": "The Theory Behind Hydraulic Oil Chillers",
+      "paragraphs": [
+        "The theory is simple. The hydraulic oil chiller extracts heat from the hydraulic oil flow and sends the oil back to an optimum operating temperature, which is often within 35°C to 55°C, depending upon the type of oil and the pressure in the system. Why does it even matter? There is constant generation of heat in hydraulic equipment. Due to inefficiencies in the pump and losses due to the valve drop and actuator friction, the heat builds up in the system much faster than it dissipates by itself.",
+        "Thinner oil means thinner films across pump faces, valve spools, and cylinder seals the parts that are expensive and time consuming to replace. Seppa's I-HOC (Industrial Hydraulic Oil Chiller) is built around internal gear pumps and plate heat exchangers. It handles oils from 32 to 68 CST viscosity, which covers the full range of ISO VG 32 through VG 68 hydraulic fluids in common industrial use.",
+        "The gear pump choice isn't arbitrary internal gear designs run quieter than external gear alternatives and handle mid viscosity oils more cleanly at the flow rates these systems require."
+      ]
+    }
+  ],
+  "featuresTitle": "Benefits of Hydraulic Oil Temperature Control in Industrial Systems",
+  "featuresSubtitle": "The operational case for a hydraulic oil cooling unit isn't complicated. It comes down to four things that show up in maintenance records.",
+  "features": [
+    {
+      "title": "Fluid Life Extension",
+      "description": "Hydraulic oil cooler oxidises faster at elevated temperatures, roughly doubling in degradation rate for every 10°C above 60°C. Holding oil at 45°C instead of 70°C can double or triple drain intervals."
+    },
+    {
+      "title": "Seal and Actuator Protection",
+      "description": "Seals are designed for a viscosity range. Run oil too hot, and you're running undersized films across the sealing surfaces. Premature leaks follow, causing expensive downtime."
+    },
+    {
+      "title": "Stable Machine Accuracy",
+      "description": "Thermal expansion changes dimensions in valve bodies, cylinders, and manifold blocks. A stable hydraulic cooling system keeps the machine at its calibrated condition throughout a shift."
+    },
+    {
+      "title": "Rebuild Cost Prevention",
+      "description": "A hydraulic pump rebuild costs more than a year of chiller operating costs. That's before counting production losses. The arithmetic isn't difficult."
+    }
+  ],
+  "applicationsTitle": "Industrial Applications Across Various Industries",
+  "applicationsSubtitle": "Industries that routinely specify a hydraulic oil cooling unit.",
+  "applications": [
+    {
+      "title": "Injection Moulding & Die Casting",
+      "description": "Any process where hydraulic circuits run long hours under high duty cycles is a candidate for active chilling."
+    },
+    {
+      "title": "Press Lines & CNC Machining",
+      "description": "Essential for maintaining positional accuracy and consistent cycle times in press lines and CNC machining centres."
+    },
+    {
+      "title": "Rubber Processing & Automated Packaging",
+      "description": "Routinely specified to ensure reliable continuous operations under demanding conditions."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for Reliable Hydraulic Oil Chillers",
+    "description": "Seppa builds hydraulic oil chillers as complete, self contained units designed exclusively to survive the most punishing production cycles.",
+    "paragraphs": [
+      "Seppa builds hydraulic oil chillers as complete, self contained units. The pump, heat exchanger, refrigerant circuit, and control system are sized to work together.",
+      "The engineering starts with the oil, not the catalogue. Selecting heat exchanger geometry for a given viscosity, matching pump flow to peak heat load, and specifying robust controls.",
+      "Seppa's installed base runs across injection moulding operations, press shops, die casting facilities, and automated manufacturing lines."
+    ]
+  },
+  "methodology": {
+    "title": "Working Methodology & Cooling Process for Temperature Control",
+    "subtitle": "Process Sequence and Logic",
+    "steps": [
+      {
+        "title": "Hot Oil Entry",
+        "description": "Return line oil typically 10 to 20°C above target after a full production run enters the chiller's oil side inlet."
+      },
+      {
+        "title": "Heat Exchange",
+        "description": "Hydraulic oil cooler fluid flows across one side of the plates. Chilled refrigerant circulates on the other, transferring heat."
+      },
+      {
+        "title": "Heat Rejection",
+        "description": "The absorbed heat moves through the refrigerant circuit to the condenser and is rejected to atmosphere or a cooling tower."
+      },
+      {
+        "title": "Feedback Modulation",
+        "description": "The controller reads the oil outlet temperature and modulates the compressor speed dynamically, requiring no manual intervention."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How do I size a hydraulic oil chiller correctly?",
+      "answer": "Sizing is based on heat load typically 20 to 30% of total hydraulic power input in continuous duty systems, though servo intensive circuits run higher. You need pump flow rate, system pressure, and duty cycle to calculate it."
+    },
+    {
+      "question": "Does a hydraulic oil cooler reduce energy use?",
+      "answer": "Indirectly, yes. The oil with proper viscosity ensures that the hydraulic pump works at optimum efficiency, preventing excessive internal slippage."
+    },
+    {
+      "question": "What maintenance does a hydraulic oil cooling system need?",
+      "answer": "Annual refrigerant circuit checks, plate heat exchanger cleaning, and filter element replacement on the oil side circuit."
+    },
+    {
+      "question": "Air cooled versus water cooled hydraulic cooling systems which is right?",
+      "answer": "Air cooling models are easier to install and suitable for environments up to 35°C. Water cooled models are more energy efficient in hot environments with high heat load, but require cooling towers."
+    },
+    {
+      "question": "What viscosity range does Seppa's hydraulic oil chiller handle?",
+      "answer": "The I-HOC handles oils from 32 to 68 CST covering ISO VG 32, VG 46, and VG 68 hydraulic fluids. That's the operating range for the large majority of industrial hydraulic systems."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "title": "Komplette Lösungen für Tomatenverarbeitungslinien von SEPPA",
+  "breadcrumbName": "Ketchup & Saucen",
+  "rootBreadcrumbName": "Komplette Linien",
+  "rootBreadcrumbPath": "/complete-lines",
+  "overviewTitle": "Industrielle Tomatenverarbeitung mit integrierten Produktionsanlagen",
+  "overviewDescription": "Die industrielle Tomatenverarbeitung stellt höchste Anforderungen an Prozesskontrolle und Anlagenqualität. Farbe, Viskosität und mikrobiologische Stabilität können nur erhalten werden, wenn jeder Verarbeitungsschritt exakt zum richtigen Zeitpunkt erfolgt.",
+  "overviewsubDescription": [
+    "Eine Tomatenlinie mit einer Leistung von beispielsweise 20 Tonnen pro Stunde muss eine konstante Enzyminaktivierung, stabile Verdampfungsprozesse und sichere aseptische Bedingungen gewährleisten. Jeder Prozessschritt beeinflusst den nächsten.",
+    "SEPPA entwickelt komplette Tomatenverarbeitungsanlagen nach denselben Prinzipien wie moderne Molkereianlagen: höchste Hygieneanforderungen, präzise Temperaturführung und gleichbleibende Produktqualität stehen im Mittelpunkt.",
+    "Mit über 7.000 installierten Anlagen weltweit und mehr als 50 Jahren Erfahrung im Anlagenbau realisiert SEPPA integrierte Produktionslinien – von der Annahme frischer Tomaten bis zur aseptischen Abfüllung in Beutel oder Flaschen.",
+    "SEPPA liefert keine Einzelmaschinen, sondern komplette Engineering-Lösungen inklusive Machbarkeitsanalyse, Prozessplanung, Fertigung, Installation und Inbetriebnahme nach höchsten Hygienestandards."
+  ],
+  "featuresTitle": "Schlüsselkomponenten einer Tomatenverarbeitungsanlage",
+  "featuresSubtitle": "Die Leistung jeder Tomatenlinie hängt wesentlich von der Genauigkeit der thermischen und mechanischen Komponenten ab. SEPPA fertigt Anlagen aus Edelstahl 304 und 316L nach Hygienestandards, wie sie auch in der Lebensmittel- und Milchverarbeitung eingesetzt werden.",
+  "features": [
+    {
+      "title": "Hot-Break- und Cold-Break-Systeme",
+      "description": "Der Break-Prozess bestimmt maßgeblich die Eigenschaften des Endprodukts. SEPPA-Wärmetauscher ermöglichen eine schnelle und gleichmäßige Enzyminaktivierung für unterschiedliche Anforderungen. Bei Cold-Break-Anwendungen werden Temperaturen von etwa 68–70 °C verwendet, während Hot-Break-Systeme typischerweise bei 88–95 °C arbeiten. Die Temperaturverteilung im Produkt wird mit einer Genauigkeit von ±1 °C kontrolliert und entspricht den Präzisionsanforderungen moderner Pasteurisierungsanlagen."
+    },
+    {
+      "title": "Mehrstufe Vakuumverdampfer",
+      "description": "Die Konzentration ohne Qualitätsverlust ist ein zentraler Prozessschritt bei der Herstellung von Tomatenmark. SEPPA-Fallfilmverdampfer arbeiten unter Vakuum bei Temperaturen von etwa 45–55 °C. Dadurch bleiben Farbe, Aroma und Lycopin-Stabilität erhalten. Mehrfach-Effekt-Verdampfer können den Dampfverbrauch gegenüber einstufigen Systemen deutlich reduzieren und verbessern die Wirtschaftlichkeit der Produktion."
+    },
+    {
+      "title": "Aseptische Abfüll- und Verpackungslinien",
+      "description": "Für Tomatensaucen-, Ketchup- und Markanlagen integriert SEPPA aseptische Abfüllsysteme für Bag-in-Box, Beutel und PET-Flaschen. Die Flaschenlösungen kombinieren geringeren Materialeinsatz mit hoher Stabilität. SEPPA reduziert das Flaschengewicht und verbessert gleichzeitig die Belastbarkeit für Transport und Lagerung."
+    },
+    {
+      "title": "CIP-Systeme und hygienische Transferpumpen",
+      "description": "Eine zuverlässige Reinigung ist entscheidend für jede Lebensmittelproduktionsanlage. SEPPA installiert zentrale oder dezentrale CIP-Systeme mit Leitfähigkeitsüberwachung sowie Temperatur- und Zeitaufzeichnung. Diese Hygienekonzepte entsprechen den Standards moderner Molkereitechnik und gewährleisten reproduzierbare Reinigungsergebnisse."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Anwendungen von Tomatenverarbeitungslinien",
+      "paragraphs": [
+        "Die Vielseitigkeit moderner Tomatenlinien macht sie wirtschaftlich attraktiv, aber auch technisch anspruchsvoll. Tomatenmark mit 28–30 °Brix stellt völlig andere Anforderungen als eine Ketchup-Produktionslinie mit definiertem Salz-, Zucker- und Säuregehalt.",
+        "Auch eine Tomatensaucenlinie für den Einzelhandel benötigt andere Temperaturprofile, Viskositätskontrollen und Verpackungslösungen als eine Anlage für aseptische Großgebinde.",
+        "SEPPA entwickelt komplette Tomatenverarbeitungsanlagen für: Cold-Break-Tomatenmark (68–75 °C) für bessere Lycopin-Erhaltung und intensive Farbe, Hot-Break-Tomatenmark (85–95 °C) für höhere Viskosität und Pektinaktivierung, Geschälte und gewürfelte Tomaten mit Blanchier- und Soletechnik, Tomatensaucenlinien für Glas- und PET-Verpackungen, Ketchup-Produktionslinien mit Inline-Brix-, pH- und Viskositätskontrolle, Aseptische Großabfüllung für industrielle Lebensmittelhersteller.",
+        "Die Integration gemeinsamer CIP-Systeme, Versorgungseinheiten und einer zentralen SCADA-Steuerung ermöglicht eine effiziente Gesamtanlage mit hoher Prozesssicherheit."
+      ]
+    },
+    {
+      "title": "Prozessablauf: Von der frischen Tomate zum fertigen Produkt",
+      "paragraphs": [
+        "Schritt 1: Annahme und Sortierung - Frische Tomaten gelangen über hydraulische Flurkanäle in die Tomatenlinie. Optische Sortierer und Rollensortierer entfernen beschädigte, unreife oder verunreinigte Früchte. Die Qualität der Rohware beeinflusst direkt den späteren Brix-Wert und die Ausbeute im Verdampfungsprozess.",
+        "Schritt 2: Waschen und Blanchieren - Mehrstufige Trommelwaschanlagen entfernen Erde, Rückstände und Oberflächenkeime. Anschließend gelangen die Tomaten direkt in die Break-Einheit. Die gewählte Temperatur bestimmt die späteren Produkteigenschaften.",
+        "Schritt 3: Break-Prozess und Pulper-System - SEPPA-Pulper- und Finisher-Systeme trennen Saft und Fruchtfleisch von Schalen und Kernen. Mehrere Siebstufen mit unterschiedlichen Lochgrößen optimieren die Extraktion und erhöhen die Ausbeute an verwertbaren Feststoffen.",
+        "Schritt 4: Verdampfung und Konzentration - Der geklärte Tomatensaft wird im Vakuumverdampfer konzentriert. Bei der Herstellung von Tomatenmark mit 28–30 °Brix sorgen mehrstufige Verdampfer für effiziente Wasserentfernung bei gleichzeitigem Schutz temperaturempfindlicher Inhaltsstoffe.",
+        "Schritt 5: Rezepturherstellung für Ketchup und Saucen - Bei Ketchup- und Saucenlinien werden Konzentrate mit Zucker, Essig, Salz, Stärke und Gewürzen in Edelstahl-Mischtanks verarbeitet. Inline-Sensoren messen kontinuierlich Brix-Wert, pH-Wert und Viskosität. Die SCADA-Steuerung kann Prozessparameter automatisch anpassen.",
+        "Schritt 6: Pasteurisierung und aseptische Abfüllung - Das fertige Produkt wird über Rohr- oder Schabewärmetauscher pasteurisiert und anschließend in die sterile Zone geführt. SEPPA integriert aseptische Füllsysteme für Bag-in-Box, Großgebinde, Beutel und PET-Flaschen. Alle produktberührenden Komponenten werden nach hygienischen Konstruktionsprinzipien ausgelegt."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA für Tomatenverarbeitungslinien?",
+    "paragraphs": [
+      "Unternehmen mit Erfahrung aus der Milchverarbeitung erkennen bei SEPPA sofort die gleiche konsequente Hygienestruktur und profitieren gleichzeitig von moderner Automatisierung.",
+      "SEPPA entwickelt seit über 50 Jahren komplette Produktionslinien. Die Systeme verfügen über SCADA-basierte Steuerungen, servo-gesteuerte Abfülltechnik und integrierte Qualitätskontrolle.",
+      "Bei Ketchup- und Saucenanlagen bedeutet dies beispielsweise eine kontinuierliche Temperaturüberwachung mit automatischer Produktumleitung bei Abweichungen.",
+      "Für aseptische Tomatenmarkproduktion ermöglicht SEPPA validierte Sterilitätssicherheit bei Großabfüllungen.",
+      "Die technische Philosophie bleibt immer gleich: Temperaturprofile kontrollieren, Kontaminationsrisiken vermeiden und Produktionsdaten kontinuierlich erfassen."
+    ]
+  },
+  "methodology": {
+    "title": "Entwicklung und Bau Ihrer Tomatenverarbeitungsanlage",
+    "steps": [
+      {
+        "title": "Phase 1: Machbarkeit und Prozessplanung",
+        "description": "Jedes Projekt beginnt mit einer Analyse von Rohwarenqualität, gewünschter Produktionsmenge, Zielprodukt und Verpackungsformat. Daraus erstellt SEPPA die Massen- und Energiebilanz."
+      },
+      {
+        "title": "Phase 2: CAD-Layout und Engineering",
+        "description": "Die komplette Anlagenplanung erfolgt mittels 3D-CAD-Modellen. Rohrleitungen, Behälter, CIP-Systeme und Steuerungskomponenten werden vor der Fertigung optimiert."
+      },
+      {
+        "title": "Phase 3: Fertigung",
+        "description": "Behälter, Verdampfer und Rohrleitungen werden aus Edelstahl 304/316L gefertigt. Jede Komponente wird geprüft, passiviert und auf Druckbeständigkeit getestet."
+      },
+      {
+        "title": "Phase 4: Installation und Inbetriebnahme",
+        "description": "SEPPA übernimmt mechanische Installation, Prozessverrohrung und elektrische Integration. Vor der Übergabe erfolgen vollständige Qualifizierungen nach IQ-, OQ- und PQ-Protokollen."
+      },
+      {
+        "title": "Phase 5: Service und Ersatzteilversorgung",
+        "description": "Weltweite Ersatzteilversorgung, Ferndiagnose über SCADA und technische Betreuung sichern langfristige Anlagenverfügbarkeit."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Kann eine Tomatenverarbeitungsanlage von 5 bis 50 Tonnen pro Stunde erweitert werden?",
+      "answer": "Ja. SEPPA entwickelt modulare Anlagenkonzepte. Kapazitätserweiterungen können beispielsweise durch zusätzliche Verdampferstufen, weitere Finisher oder leistungsfähigere Abfüllsysteme umgesetzt werden."
+    },
+    {
+      "question": "Erfüllt eine SEPPA-Tomatenlinie dieselben Hygienestandards wie Molkereitechnik?",
+      "answer": "Ja. Die Anlagen werden nach hygienischen Konstruktionsprinzipien mit optimierten Oberflächen, reduzierten Toträumen und validierten CIP-Prozessen ausgeführt."
+    },
+    {
+      "question": "Wie automatisiert ist eine moderne Ketchup-Produktionslinie?",
+      "answer": "SEPPA-Ketchuplinien nutzen Inline-Messungen für Brix, pH, Viskosität und Farbe mit automatisierter SCADA-Regelung. Dadurch wird manuelle Prozesskontrolle deutlich reduziert."
+    },
+    {
+      "question": "Wie schnell amortisiert sich eine eigene Tomatenverarbeitungsanlage?",
+      "answer": "Die Amortisationszeit hängt von Produktionsvolumen, Rohwarenverfügbarkeit und Anlagenkonzept ab. Bei industriellen Hot-Break-Linien sind häufig Amortisationszeiten von etwa drei bis fünf Jahren erreichbar."
+    },
+    {
+      "question": "Wie unterstützt SEPPA Kunden außerhalb Indiens?",
+      "answer": "SEPPA bietet regionale Serviceunterstützung, Ersatzteilverfügbarkeit und Fernzugriff über SCADA-Systeme zur schnellen Fehleranalyse und Parameteroptimierung."
+    }
+  ],
+  "outro": [
+    "Ihre Lösung für industrielle Tomatenverarbeitung",
+    "SEPPA entwickelt komplette Tomatenverarbeitungslinien für Hersteller, die höchste Anforderungen an Qualität, Hygiene und Effizienz stellen.",
+    "Von der Rohwarenannahme bis zur aseptischen Abfüllung erhalten Kunden eine vollständig integrierte Produktionslösung mit moderner Automatisierung und langfristigem technischen Support."
+  ]
+}

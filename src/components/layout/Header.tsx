@@ -1,15 +1,49 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FiMenu, FiX, FiChevronDown, FiChevronRight } from 'react-icons/fi';
 
 import logoImg from '@/assets/logo/logo.png';
+import enHeader from '@/messages/en/header.json';
+import arHeader from '@/messages/ar/header.json';
+import deHeader from '@/messages/de/header.json';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  const isArabic = pathname.startsWith('/ar');
+  const isGerman = pathname.startsWith('/de');
+
+  const menu = isArabic ? arHeader : isGerman ? deHeader : enHeader;
+
+  const getLink = (path: string) => {
+    if (path === '/') {
+      return isArabic ? '/ar' : isGerman ? '/de' : '/en';
+    }
+    const prefix = isArabic ? '/ar' : isGerman ? '/de' : '/en';
+    return `${prefix}${path}`;
+  };
+
+  const currentLocale = isArabic ? 'ar' : isGerman ? 'de' : 'en';
+
+  const getLocaleLabel = (loc: string) => {
+    switch (loc) {
+      case 'ar': return 'العربية';
+      case 'de': return 'Deutsch';
+      default: return 'English';
+    }
+  };
+
+  const changeLanguage = (newLocale: string) => {
+    if (newLocale === currentLocale) return;
+    const prefix = currentLocale === 'en' ? '/en' : currentLocale === 'ar' ? '/ar' : '/de';
+    const targetPrefix = newLocale === 'en' ? '/en' : newLocale === 'ar' ? '/ar' : '/de';
+    router.replace(pathname.replace(prefix, targetPrefix));
+  };
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -23,6 +57,13 @@ const Header: React.FC = () => {
     };
   }, [isMobileMenuOpen]);
 
+  // Sync HTML lang and dir attributes based on current language
+  useEffect(() => {
+    const lang = isArabic ? 'ar' : isGerman ? 'de' : 'en';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+  }, [isArabic, isGerman]);
+
   // Handle scroll event for sticky header
   useEffect(() => {
     const handleScroll = () => {
@@ -33,20 +74,20 @@ const Header: React.FC = () => {
       }
     };
 
+    // Check scroll position immediately on mount (handles page refresh when already scrolled)
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Dynamic header classes - sticky behavior across all viewports
-  // NOTE: Using fully opaque bg-seppa-blue instead of bg-seppa-blue/95 + backdrop-blur-md
-  // because Chrome composites semi-transparent backgrounds over blurred content differently
-  // than Edge, causing a brownish/maroon tint instead of the intended dark navy.
   const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-4 lg:px-8 ${scrolled
       ? 'w-full top-0 bg-seppa-blue shadow-lg py-3 lg:py-4 rounded-none'
       : 'w-full xl:max-w-[1700px] xl:w-[96%] top-0 xl:top-[30px] 2xl:top-[40px] xl:rounded-[30px] bg-transparent py-4 lg:py-5'
     }`;
 
-  const linkClass = "font-medium text-sm 2xl:text-base hover:text-gold transition flex items-center gap-1 py-2 text-white";
+  const linkClass = `font-medium hover:text-gold transition flex items-center gap-1 py-2 text-white ${isGerman ? 'text-xs 2xl:text-base' : 'text-sm 2xl:text-base'}`;
 
   const dropdownClass = "absolute top-full left-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
   const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left";
@@ -56,193 +97,212 @@ const Header: React.FC = () => {
       <header className={headerClass}>
         <div className="w-full flex justify-between items-center transition-colors duration-300">
         {/* Left: Logo */}
-        <div className="flex-1 flex justify-start items-center z-50 relative">
-          <Link href="/">
-            <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-2'>
+        <div className="shrink-0 flex justify-start items-center z-50 relative mr-4 rtl:ml-4">
+          <Link href="/" className="shrink-0">
+            <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-2 shrink-0'>
               <img
                 src={logoImg.src}
                 alt="Seppa Solutions Logo"
-                className="h-10 md:h-10 transition-all duration-300 "
+                className="h-10 md:h-10 w-auto transition-all duration-300 shrink-0"
               />
             </div>
           </Link>
         </div>
 
         {/* Center: Desktop Menu */}
-        <nav className="hidden xl:flex flex-none justify-center items-center gap-6 2xl:gap-8">
+        <nav className={`hidden xl:flex flex-none justify-center items-center ${isGerman ? 'gap-3 2xl:gap-6' : 'gap-6 2xl:gap-8'}`}>
           <div className="relative group">
-            <Link href="/" className={linkClass}>
-              Home
+            <Link href={getLink("/")} className={linkClass}>
+              {menu.home}
             </Link>
           </div>
           <div className="relative group">
             <button className={linkClass}>
-              Packaging <FiChevronDown className="text-sm opacity-70" />
+              {menu.packaging} <FiChevronDown className="text-sm opacity-70" />
             </button>
             <div className={dropdownClass}>
 
               <div className="relative group/sub">
                 <div className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
-                  <span className="leading-snug">Pet Blowers</span>
+                  <span className="leading-snug">{menu.petBlowers}</span>
                   <FiChevronRight className="text-sm opacity-70 shrink-0" />
                 </div>
                 <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
-                  <Link href="/automatic" className={dropdownItemClass}>Automatic Pet Blowers</Link>
-                  <Link href="/semi-automatic" className={dropdownItemClass}>Semi Automatic Pet Blowers</Link>
-                  <Link href="/pet-jars" className={dropdownItemClass}>Pet Jar Blowing Machine</Link>
+                  <Link href={getLink("/automatic")} className={dropdownItemClass}>{menu.automaticPetBlowers}</Link>
+                  <Link href={getLink("/semi-automatic")} className={dropdownItemClass}>{menu.semiAutomaticPetBlowers}</Link>
+                  <Link href={getLink("/pet-jars")} className={dropdownItemClass}>{menu.petJarBlowing}</Link>
                 </div>
               </div>
-              <Link href="/pet" className={dropdownItemClass}>Pet</Link>
-              <Link href="/can" className={dropdownItemClass}>Can</Link>
-              <Link href="/glass" className={dropdownItemClass}>Glass</Link>
-              <Link href="/pouch" className={dropdownItemClass}>Pouch</Link>
-              <Link href="/brick-carton" className={dropdownItemClass}>Brick Carton</Link>
-              <Link href="/gable-top-carton" className={dropdownItemClass}>Gable Top Carton</Link>
-              <Link href="/aseptic-drum" className={dropdownItemClass}>Aseptic Drum</Link>
+              <Link href={getLink("/pet")} className={dropdownItemClass}>{menu.pet}</Link>
+              <Link href={getLink("/can")} className={dropdownItemClass}>{menu.can}</Link>
+              <Link href={getLink("/glass")} className={dropdownItemClass}>{menu.glass}</Link>
+              <Link href={getLink("/pouch")} className={dropdownItemClass}>{menu.pouch}</Link>
+              <Link href={getLink("/brick-carton")} className={dropdownItemClass}>{menu.brickCarton}</Link>
+              <Link href={getLink("/gable-top-carton")} className={dropdownItemClass}>{menu.gableTopCarton}</Link>
+              <Link href={getLink("/aseptic-drum")} className={dropdownItemClass}>{menu.asepticDrum}</Link>
 
 
             </div>
           </div>
           <div className="relative group">
             <button className={linkClass}>
-              Liquid <FiChevronDown className="text-sm opacity-70" />
+              {menu.liquid} <FiChevronDown className="text-sm opacity-70" />
             </button>
             <div className={dropdownClass}>
               <div className="relative group/sub">
-                <Link href="/mineral-water-line-machines" className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
-                  <span className="leading-snug">Mineral Water Line Machines</span>
+                <Link href={getLink("/mineral-water-line-machines")} className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
+                  <span className="leading-snug">{menu.mineralWaterLine}</span>
                   <FiChevronRight className="text-sm opacity-70 shrink-0" />
                 </Link>
                 <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
-                  <Link href="/still-water" className={dropdownItemClass}>Still Water</Link>
-                  <Link href="/mineral-water" className={dropdownItemClass}>Mineral Water</Link>
-                  <Link href="/alkaline-water" className={dropdownItemClass}>Alkaline Water</Link>
-                  <Link href="/sparkling-water" className={dropdownItemClass}>Sparkling Water</Link>
-                  <Link href="/structured-water" className={dropdownItemClass}>Structured Water</Link>
-                  <Link href="/flavored-vitaminized-water" className={dropdownItemClass}>Flavored Vitaminized Water</Link>
+                  <Link href={getLink("/still-water")} className={dropdownItemClass}>{menu.stillWater}</Link>
+                  <Link href={getLink("/mineral-water")} className={dropdownItemClass}>{menu.mineralWater}</Link>
+                  <Link href={getLink("/alkaline-water")} className={dropdownItemClass}>{menu.alkalineWater}</Link>
+                  <Link href={getLink("/sparkling-water")} className={dropdownItemClass}>{menu.sparklingWater}</Link>
+                  <Link href={getLink("/structured-water")} className={dropdownItemClass}>{menu.structuredWater}</Link>
+                  <Link href={getLink("/flavored-vitaminized-water")} className={dropdownItemClass}>{menu.flavoredWater}</Link>
                 </div>
               </div>
-              <Link href="/soft-drinks" className={dropdownItemClass}>Soft Drink / Beverages</Link>
+              <Link href={getLink("/soft-drinks")} className={dropdownItemClass}>{menu.softDrinks}</Link>
               <div className="relative group/sub">
-                <Link href="/juice" className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
-                  <span className="leading-snug">Juices & Nectars</span>
+                <Link href={getLink("/juice")} className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
+                  <span className="leading-snug">{menu.juicesNectars}</span>
                   <FiChevronRight className="text-sm opacity-70 shrink-0" />
                 </Link>
                 <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
-                  <Link href="/juice&nectars" className={dropdownItemClass}>Juice , Nectars soft drinks</Link>
-                  <Link href="/isotonics" className={dropdownItemClass}>Isotonics</Link>
-                  <Link href="/teas" className={dropdownItemClass}>Teas (JNSDIT)</Link>
+                  <Link href={getLink("/juice&nectars")} className={dropdownItemClass}>{menu.juiceNectarsSoftDrinks}</Link>
+                  <Link href={getLink("/isotonics")} className={dropdownItemClass}>{menu.isotonics}</Link>
+                  <Link href={getLink("/teas")} className={dropdownItemClass}>{menu.teas}</Link>
                 </div>
               </div>
-              <Link href="/beer" className={dropdownItemClass}>Beer</Link>
-              <Link href="/alcohol-spirits" className={dropdownItemClass}>Alcohol & Spirits</Link>
-              <Link href="/wine-mead" className={dropdownItemClass}>Wine & Mead</Link>
-              <Link href="/rt" className={dropdownItemClass}>RTD's & Seltzers</Link>
-              <Link href="/ldp" className={dropdownItemClass}>LDP (Liquid Dairy Products)</Link>
-              <Link href="/ketchups-sauces" className={dropdownItemClass}>Tomato & Ketchups</Link>
+              <Link href={getLink("/beer")} className={dropdownItemClass}>{menu.beer}</Link>
+              <Link href={getLink("/alcohol-spirits")} className={dropdownItemClass}>{menu.alcoholSpirits}</Link>
+              <Link href={getLink("/wine-mead")} className={dropdownItemClass}>{menu.wineMead}</Link>
+              <Link href={getLink("/rt")} className={dropdownItemClass}>{menu.rtdsSeltzers}</Link>
+              <Link href={getLink("/ldp")} className={dropdownItemClass}>{menu.ldp}</Link>
+              <Link href={getLink("/ketchups-sauces")} className={dropdownItemClass}>{menu.tomatoKetchups}</Link>
             </div>
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              Services <FiChevronDown className="text-sm opacity-70" />
+              {menu.services} <FiChevronDown className="text-sm opacity-70" />
             </button>
             <div className={dropdownClass}>
-              <Link href="/services/packaging" className={dropdownItemClass}>Packaging</Link>
-              <Link href="/services/spare-parts-and-logistics-training" className={dropdownItemClass}>Spare parts & Logistics Training</Link>
-              <Link href="/services/maintenance" className={dropdownItemClass}>Maintenance</Link>
-              <Link href="/services/line-improvement" className={dropdownItemClass}>Line Improvement</Link>
-              <Link href="/services/line-conversions-and-moulds" className={dropdownItemClass}>Line Conversions & Moulds</Link>
-              <Link href="/services/audits" className={dropdownItemClass}>Audits</Link>
-              <Link href="/services/training" className={dropdownItemClass}>Training</Link>
+              <Link href={getLink("/services/packaging")} className={dropdownItemClass}>{menu.packaging}</Link>
+              <Link href={getLink("/services/spare-parts-and-logistics-training")} className={dropdownItemClass}>{menu.spareParts}</Link>
+              <Link href={getLink("/services/maintenance")} className={dropdownItemClass}>{menu.maintenance}</Link>
+              <Link href={getLink("/services/line-improvement")} className={dropdownItemClass}>{menu.lineImprovement}</Link>
+              <Link href={getLink("/services/line-conversions-and-moulds")} className={dropdownItemClass}>{menu.lineConversions}</Link>
+              <Link href={getLink("/services/audits")} className={dropdownItemClass}>{menu.audits}</Link>
+              <Link href={getLink("/services/training")} className={dropdownItemClass}>{menu.training}</Link>
             </div>
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              Complete Lines  <FiChevronDown className="text-sm opacity-70" />
+              {menu.completeLines}  <FiChevronDown className="text-sm opacity-70" />
             </button>
             <div className={dropdownClass}>
-              <Link href="/complete-lines" className={dropdownItemClass}>Complete Lines</Link>
-              <Link href="/liquid" className={dropdownItemClass}>Water Lines</Link>
-              <Link href="/soft-drink-lines" className={dropdownItemClass}>Soft Drink & Beverages Lines</Link>
-              <Link href="/juice-line-machines" className={dropdownItemClass}>Juice & Nectars Lines</Link>
-              <Link href="/beer-line-machines" className={dropdownItemClass}>Beer Lines</Link>
-              <Link href="/wine-mead-lines" className={dropdownItemClass}>Wine & Mead Lines</Link>
-              <Link href="/liquor-spirits-line-machines" className={dropdownItemClass}>Liquor & Spirits Lines</Link>
-              <Link href="/dairy-product-line-machines" className={dropdownItemClass}>Liquid  Dairy Products</Link>
-              <Link href="/ketchup-sauce-filling-line-machines" className={dropdownItemClass}>Ketchups & Sauces </Link>
+              <Link href={getLink("/complete-lines")} className={dropdownItemClass}>{menu.completeLines}</Link>
+              <Link href={getLink("/liquid")} className={dropdownItemClass}>{menu.waterLines}</Link>
+              <Link href={getLink("/soft-drink-lines")} className={dropdownItemClass}>{menu.softDrinkLines}</Link>
+              <Link href={getLink("/juice-line-machines")} className={dropdownItemClass}>{menu.juiceLines}</Link>
+              <Link href={getLink("/beer-line-machines")} className={dropdownItemClass}>{menu.beerLines}</Link>
+              <Link href={getLink("/wine-mead-lines")} className={dropdownItemClass}>{menu.wineLines}</Link>
+              <Link href={getLink("/liquor-spirits-line-machines")} className={dropdownItemClass}>{menu.liquorLines}</Link>
+              <Link href={getLink("/dairy-product-line-machines")} className={dropdownItemClass}>{menu.dairyLines}</Link>
+              <Link href={getLink("/ketchup-sauce-filling-line-machines")} className={dropdownItemClass}>{menu.ketchupsSauces}</Link>
             </div>
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              Equipments<FiChevronDown className="text-sm opacity-70" />
+              {menu.equipments}<FiChevronDown className="text-sm opacity-70" />
             </button>
             <div className="absolute top-full -left-54 mt-2 w-[90vw] lg:w-[750px] xl:w-[850px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-4 lg:p-6 grid grid-cols-2 lg:grid-cols-4 gap-y-2 lg:gap-x-4">
               {/* Column 1 */}
-              <Link href="/processing" className={dropdownItemClass}>Processing</Link>
-              <Link href="/blowing" className={dropdownItemClass}>Blowing</Link>
-              <Link href="/pre-form-sterilization" className={dropdownItemClass}>Pre Form Sterlization</Link>
-              <Link href="/unscramblers" className={dropdownItemClass}>Unscramblers</Link>
-              <Link href="/rinser-filler-capper" className={dropdownItemClass}>Rinser Filler Capper</Link>
-              <Link href="/kombo" className={dropdownItemClass}>Kombo</Link>
+              <Link href={getLink("/processing")} className={dropdownItemClass}>{menu.processing}</Link>
+              <Link href={getLink("/blowing")} className={dropdownItemClass}>{menu.blowing}</Link>
+              <Link href={getLink("/pre-form-sterilization")} className={dropdownItemClass}>{menu.preFormSterilization}</Link>
+              <Link href={getLink("/unscramblers")} className={dropdownItemClass}>{menu.unscramblers}</Link>
+              <Link href={getLink("/rinser-filler-capper")} className={dropdownItemClass}>{menu.rinserFillerCapper}</Link>
+              <Link href={getLink("/kombo")} className={dropdownItemClass}>{menu.kombo}</Link>
 
               {/* Column 2 */}
-              <Link href="/elevators" className={dropdownItemClass}>Elevators</Link>
-              <Link href="/labelling" className={dropdownItemClass}>Labelling</Link>
-              <Link href="/batch-coders" className={dropdownItemClass}>Batch Coders</Link>
-              <Link href="/bottle-handling-systems" className={dropdownItemClass}>Bottle Handling</Link>
-              <Link href="/shrink-wrapping" className={dropdownItemClass}>Shrink Wrapping</Link>
-              <Link href="/carton-handling" className={dropdownItemClass}>Carton Handling</Link>
+              <Link href={getLink("/elevators")} className={dropdownItemClass}>{menu.elevators}</Link>
+              <Link href={getLink("/labelling")} className={dropdownItemClass}>{menu.labelling}</Link>
+              <Link href={getLink("/batch-coders")} className={dropdownItemClass}>{menu.batchCoders}</Link>
+              <Link href={getLink("/bottle-handling-systems")} className={dropdownItemClass}>{menu.bottleHandling}</Link>
+              <Link href={getLink("/shrink-wrapping")} className={dropdownItemClass}>{menu.shrinkWrapping}</Link>
+              <Link href={getLink("/carton-handling")} className={dropdownItemClass}>{menu.cartonHandling}</Link>
 
               {/* Column 3 */}
-              <Link href="/pallet-equipment" className={dropdownItemClass}>Pallet Equipment</Link>
-              <Link href="/stretch-wrapping" className={dropdownItemClass}>Stretch Wrapping</Link>
-              <Link href="/crate-stacker" className={dropdownItemClass}>Crate Stacker</Link>
-              <Link href="/refrigeration-system" className={dropdownItemClass}>Refrigeration System</Link>
-              <Link href="/air-dryer" className={dropdownItemClass}>Air Dryer</Link>
-              <Link href="/crate-washers" className={dropdownItemClass}>Crate Washers</Link>
+              <Link href={getLink("/pallet-equipment")} className={dropdownItemClass}>{menu.palletEquipment}</Link>
+              <Link href={getLink("/stretch-wrapping")} className={dropdownItemClass}>{menu.stretchWrapping}</Link>
+              <Link href={getLink("/crate-stacker")} className={dropdownItemClass}>{menu.crateStacker}</Link>
+              <Link href={getLink("/refrigeration-system")} className={dropdownItemClass}>{menu.refrigerationSystem}</Link>
+              <Link href={getLink("/air-dryer")} className={dropdownItemClass}>{menu.airDryer}</Link>
+              <Link href={getLink("/crate-washers")} className={dropdownItemClass}>{menu.crateWashers}</Link>
 
               {/* Column 4 */}
-              <Link href="/glass-bottle-washer" className={dropdownItemClass}>Glass Bottle Washer</Link>
-              <Link href="/glass-bottle-filler-capper" className={dropdownItemClass}>Glass Bottle Filler Capper</Link>
-              <Link href="/tunnel-pasteurizers" className={dropdownItemClass}>Tunnel Pasteurizers</Link>
-              <Link href="/tunnel-cooler" className={dropdownItemClass}>Tunnel Cooler</Link>
-              <Link href="/de-capper" className={dropdownItemClass}>De Capper</Link>
-              <Link href="/large-bottle-filler" className={dropdownItemClass}>Large Bottle Filler</Link>
+              <Link href={getLink("/glass-bottle-washer")} className={dropdownItemClass}>{menu.glassBottleWasher}</Link>
+              <Link href={getLink("/glass-bottle-filler-capper")} className={dropdownItemClass}>{menu.glassBottleFillerCapper}</Link>
+              <Link href={getLink("/tunnel-pasteurizers")} className={dropdownItemClass}>{menu.tunnelPasteurizers}</Link>
+              <Link href={getLink("/tunnel-cooler")} className={dropdownItemClass}>{menu.tunnelCooler}</Link>
+              <Link href={getLink("/de-capper")} className={dropdownItemClass}>{menu.deCapper}</Link>
+              <Link href={getLink("/large-bottle-filler")} className={dropdownItemClass}>{menu.largeBottleFiller}</Link>
             </div>
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              Enquiry  <FiChevronDown className="text-sm opacity-70" />
+              {menu.enquiry}  <FiChevronDown className="text-sm opacity-70" />
             </button>
             <div className={dropdownClass}>
-              <Link href="/product-enquiry" className={dropdownItemClass}>Product Enquiry</Link>
-              <Link href="/investors" className={dropdownItemClass}>Investors</Link>
-              <Link href="/dealers" className={dropdownItemClass}>Dealers</Link>
+              <Link href={getLink("/product-enquiry")} className={dropdownItemClass}>{menu.productEnquiry}</Link>
+              <Link href={getLink("/investors")} className={dropdownItemClass}>{menu.investors}</Link>
+              <Link href={getLink("/dealers")} className={dropdownItemClass}>{menu.dealers}</Link>
             </div>
           </div>
-          <Link href="/video-gallery" className={linkClass}>Videos</Link>
+          <Link href={getLink("/video-gallery")} className={linkClass}>{menu.videos}</Link>
         </nav>
 
-        {/* Right: CTA Button */}
-        <div className="flex-1 hidden xl:flex justify-end items-center group cursor-pointer">
+        {/* Right: CTA Button & Language Switcher */}
+        <div className="hidden xl:flex flex-grow justify-end items-center group cursor-pointer gap-4 shrink-0">
           <div className="flex items-center gap-1 2xl:gap-2">
             <Link
-              href="/contact-us"
+              href={getLink("/contact-us")}
               className="px-5 2xl:px-6 py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red tracking-wide text-sm 2xl:text-base flex items-center justify-center"
             >
-              Contact Us
+              {menu.contactUs}
             </Link>
             <Link
-              href="/contact-us"
-              className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0"
+              href={getLink("/contact-us")}
+              className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0 animate-pulse"
             >
               <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[16px] h-[16px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
             </Link>
           </div>
+          <div className="relative group/lang shrink-0">
+            <button
+              className="px-4 py-2.5 rounded-full bg-gold text-[#0d162a] font-bold text-sm shadow-md hover:bg-white transition-all duration-300 flex items-center gap-1.5"
+            >
+              <span>{getLocaleLabel(currentLocale)}</span>
+              <FiChevronDown className="transition-transform group-hover/lang:rotate-180" />
+            </button>
+            <div className="absolute right-0 top-full mt-2 w-32 bg-[#0d162a] border border-gold/20 text-white rounded-md shadow-lg opacity-0 invisible group-hover/lang:opacity-100 group-hover/lang:visible transition-all duration-300 transform translate-y-2 group-hover/lang:translate-y-0 z-50 flex flex-col py-1.5 overflow-hidden">
+              {['en', 'ar', 'de'].map((loc) => (
+                <button
+                  key={loc}
+                  onClick={() => changeLanguage(loc)}
+                  className={`px-4 py-1.5 text-sm text-center hover:bg-gold hover:text-[#0d162a] transition-colors ${currentLocale === loc ? 'text-gold font-bold' : 'text-white'}`}
+                >
+                  {getLocaleLabel(loc)}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="flex-1 flex xl:hidden justify-end">
+        <div className="flex-grow-0 flex xl:hidden justify-end">
           <button
             suppressHydrationWarning
             className={`text-2xl z-50 relative text-white`}
@@ -259,53 +319,53 @@ const Header: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="xl:hidden fixed inset-0 bg-seppa-blue z-40 pt-24 pb-8 px-6 overflow-y-auto shadow-2xl animate-in slide-in-from-right duration-300">
           <div className="flex flex-col space-y-4 text-lg pb-10">
-            <Link href="/" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link href={getLink("/")} className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>{menu.home}</Link>
             {/* Packaging */}
             <details className="group border-b border-white/10 pb-2">
               <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                Packaging <FiChevronDown className="transition-transform group-open:rotate-180" />
+                {menu.packaging} <FiChevronDown className="transition-transform group-open:rotate-180" />
               </summary>
               <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
-                <div className="font-medium text-seppa-red">Pet Blowers</div>
-                <Link href="/automatic" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="font-medium text-seppa-red">{menu.petBlowers}</div>
+                <Link href={getLink("/automatic")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Automatic Pet Blowers</span>
+                  <span>{menu.automaticPetBlowers}</span>
                 </Link>
-                <Link href="/semi-automatic" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/semi-automatic")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Semi Automatic Pet Blowers</span>
+                  <span>{menu.semiAutomaticPetBlowers}</span>
                 </Link>
-                <Link href="/pet-jars" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/pet-jars")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Pet Jar Blowing Machine</span>
+                  <span>{menu.petJarBlowing}</span>
                 </Link>
-                <Link href="/pet" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/pet")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Pet</span>
+                  <span>{menu.pet}</span>
                 </Link>
-                <Link href="/can" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/can")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Can</span>
+                  <span>{menu.can}</span>
                 </Link>
-                <Link href="/glass" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/glass")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Glass</span>
+                  <span>{menu.glass}</span>
                 </Link>
-                <Link href="/pouch" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/pouch")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Pouch</span>
+                  <span>{menu.pouch}</span>
                 </Link>
-                <Link href="/brick-carton" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/brick-carton")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Brick Carton</span>
+                  <span>{menu.brickCarton}</span>
                 </Link>
-                <Link href="/gable-top-carton" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/gable-top-carton")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Gable Top Carton</span>
+                  <span>{menu.gableTopCarton}</span>
                 </Link>
-                <Link href="/aseptic-drum" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/aseptic-drum")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Aseptic Drum</span>
+                  <span>{menu.asepticDrum}</span>
                 </Link>
               </div>
             </details>
@@ -313,77 +373,77 @@ const Header: React.FC = () => {
             {/* Liquid */}
             <details className="group border-b border-white/10 pb-2">
               <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                Liquid <FiChevronDown className="transition-transform group-open:rotate-180" />
+                {menu.liquid} <FiChevronDown className="transition-transform group-open:rotate-180" />
               </summary>
               <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
-                <div className="font-medium text-seppa-red">Mineral Water Line Machines</div>
-                <Link href="/still-water" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="font-medium text-seppa-red">{menu.mineralWaterLine}</div>
+                <Link href={getLink("/still-water")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Still Water</span>
+                  <span>{menu.stillWater}</span>
                 </Link>
-                <Link href="/mineral-water" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/mineral-water")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Mineral Water</span>
+                  <span>{menu.mineralWater}</span>
                 </Link>
-                <Link href="/alkaline-water" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/alkaline-water")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Alkaline Water</span>
+                  <span>{menu.alkalineWater}</span>
                 </Link>
-                <Link href="/sparkling-water" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/sparkling-water")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Sparkling Water</span>
+                  <span>{menu.sparklingWater}</span>
                 </Link>
-                <Link href="/structured-water" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/structured-water")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Structured Water</span>
+                  <span>{menu.structuredWater}</span>
                 </Link>
-                <Link href="/flavored-vitaminized-water" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/flavored-vitaminized-water")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Flavored Vitaminized Water</span>
-                </Link>
-
-                <Link href="/soft-drinks" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Soft Drink / Beverages</span>
+                  <span>{menu.flavoredWater}</span>
                 </Link>
 
-                <div className="font-medium text-seppa-red pt-2">Juices & Nectars</div>
-                <Link href="/juice&nectars" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/soft-drinks")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Juice , Nectars soft drinks</span>
-                </Link>
-                <Link href="/isotonics" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Isotonics</span>
-                </Link>
-                <Link href="/teas" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Teas (JNSDIT)</span>
+                  <span>{menu.softDrinks}</span>
                 </Link>
 
-                <Link href="/beer" className="text-gray-300 hover:text-seppa-red pt-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="font-medium text-seppa-red pt-2">{menu.juicesNectars}</div>
+                <Link href={getLink("/juice&nectars")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Beer</span>
+                  <span>{menu.juiceNectarsSoftDrinks}</span>
                 </Link>
-                <Link href="/alcohol-spirits" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/isotonics")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Alcohol & Spirits</span>
+                  <span>{menu.isotonics}</span>
                 </Link>
-                <Link href="/wine-mead" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/teas")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Wine & Mead</span>
+                  <span>{menu.teas}</span>
                 </Link>
-                <Link href="/rt" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+
+                <Link href={getLink("/beer")} className="text-gray-300 hover:text-seppa-red pt-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>RTD's & Seltzers</span>
+                  <span>{menu.beer}</span>
                 </Link>
-                <Link href="/ldp" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/alcohol-spirits")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>LDP (Liquid Dairy Products)</span>
+                  <span>{menu.alcoholSpirits}</span>
                 </Link>
-                <Link href="/ketchups-sauces" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/wine-mead")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Tomato & Ketchups</span>
+                  <span>{menu.wineMead}</span>
+                </Link>
+                <Link href={getLink("/rt")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.rtdsSeltzers}</span>
+                </Link>
+                <Link href={getLink("/ldp")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.ldp}</span>
+                </Link>
+                <Link href={getLink("/ketchups-sauces")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.tomatoKetchups}</span>
                 </Link>
               </div>
             </details>
@@ -391,36 +451,36 @@ const Header: React.FC = () => {
             {/* Services */}
             <details className="group border-b border-white/10 pb-2">
               <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                Services <FiChevronDown className="transition-transform group-open:rotate-180" />
+                {menu.services} <FiChevronDown className="transition-transform group-open:rotate-180" />
               </summary>
               <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
-                <Link href="/services/packaging" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/services/packaging")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Packaging</span>
+                  <span>{menu.packaging}</span>
                 </Link>
-                <Link href="/services/spare-parts-and-logistics-training" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/services/spare-parts-and-logistics-training")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Spare parts & Logistics Training</span>
+                  <span>{menu.spareParts}</span>
                 </Link>
-                <Link href="/services/maintenance" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/services/maintenance")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Maintenance</span>
+                  <span>{menu.maintenance}</span>
                 </Link>
-                <Link href="/services/line-improvement" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/services/line-improvement")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Line Improvement</span>
+                  <span>{menu.lineImprovement}</span>
                 </Link>
-                <Link href="/services/line-conversions-and-moulds" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/services/line-conversions-and-moulds")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Line Conversions & Moulds</span>
+                  <span>{menu.lineConversions}</span>
                 </Link>
-                <Link href="/services/audits" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/services/audits")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Audits</span>
+                  <span>{menu.audits}</span>
                 </Link>
-                <Link href="/services/training" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/services/training")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Training</span>
+                  <span>{menu.training}</span>
                 </Link>
               </div>
             </details>
@@ -428,44 +488,44 @@ const Header: React.FC = () => {
             {/* Complete Lines */}
             <details className="group border-b border-white/10 pb-2">
               <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                Complete Lines <FiChevronDown className="transition-transform group-open:rotate-180" />
+                {menu.completeLines} <FiChevronDown className="transition-transform group-open:rotate-180" />
               </summary>
               <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
-                <Link href="/complete-lines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/complete-lines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Complete Lines</span>
+                  <span>{menu.completeLines}</span>
                 </Link>
-                <Link href="/liquid" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/liquid")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Water Lines</span>
+                  <span>{menu.waterLines}</span>
                 </Link>
-                <Link href="/soft-drinks" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/soft-drink-lines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Soft Drink & Beverages Lines</span>
+                  <span>{menu.softDrinkLines}</span>
                 </Link>
-                <Link href="/juice-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/juice-line-machines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Juice & Nectars Lines</span>
+                  <span>{menu.juiceLines}</span>
                 </Link>
-                <Link href="/beer-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/beer-line-machines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Beer Lines</span>
+                  <span>{menu.beerLines}</span>
                 </Link>
-                <Link href="/wine-mead-lines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/wine-mead-lines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Wine & Mead Lines</span>
+                  <span>{menu.wineLines}</span>
                 </Link>
-                <Link href="/liquor-spirits-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/liquor-spirits-line-machines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Liquor & Spirits Lines</span>
+                  <span>{menu.liquorLines}</span>
                 </Link>
-                <Link href="/dairy-product-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/dairy-product-line-machines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Liquid Dairy Products</span>
+                  <span>{menu.dairyLines}</span>
                 </Link>
-                <Link href="/ketchup-sauce-filling-line-machines" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/ketchup-sauce-filling-line-machines")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Ketchups & Sauces</span>
+                  <span>{menu.ketchupsSauces}</span>
                 </Link>
               </div>
             </details>
@@ -473,109 +533,109 @@ const Header: React.FC = () => {
             {/* Equipments */}
             <details className="group border-b border-white/10 pb-2">
               <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                Equipments <FiChevronDown className="transition-transform group-open:rotate-180" />
+                {menu.equipments} <FiChevronDown className="transition-transform group-open:rotate-180" />
               </summary>
               <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
-                <div className="font-medium text-seppa-red">Processing & Handling</div>
-                <Link href="/processing" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="font-medium text-seppa-red">{menu.processing}</div>
+                <Link href={getLink("/processing")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Processing</span>
+                  <span>{menu.processing}</span>
                 </Link>
-                <Link href="/blowing" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/blowing")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Blowing</span>
+                  <span>{menu.blowing}</span>
                 </Link>
-                <Link href="/pre-form-sterilization" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/pre-form-sterilization")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Pre Form Sterlization</span>
+                  <span>{menu.preFormSterilization}</span>
                 </Link>
-                <Link href="/unscramblers" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/unscramblers")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Unscramblers</span>
+                  <span>{menu.unscramblers}</span>
                 </Link>
-                <Link href="/rinser-filler-capper" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/rinser-filler-capper")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Rinser Filler Capper</span>
+                  <span>{menu.rinserFillerCapper}</span>
                 </Link>
-                <Link href="/kombo" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/kombo")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Kombo</span>
+                  <span>{menu.kombo}</span>
                 </Link>
-                <Link href="/elevators" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/elevators")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Elevators</span>
+                  <span>{menu.elevators}</span>
                 </Link>
-                <Link href="/bottle-handling-systems" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/bottle-handling-systems")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Bottle Handling</span>
+                  <span>{menu.bottleHandling}</span>
                 </Link>
-                <Link href="/carton-handling" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/carton-handling")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Carton Handling</span>
-                </Link>
-
-                <div className="font-medium text-seppa-red pt-2">Labelling & Packaging</div>
-                <Link href="/labelling" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Labelling</span>
-                </Link>
-                <Link href="/batch-coders" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Batch Coders</span>
-                </Link>
-                <Link href="/shrink-wrapping" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Shrink Wrapping</span>
-                </Link>
-                <Link href="/pallet-equipment" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Pallet Equipment</span>
-                </Link>
-                <Link href="/stretch-wrapping" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Stretch Wrapping</span>
+                  <span>{menu.cartonHandling}</span>
                 </Link>
 
-                <div className="font-medium text-seppa-red pt-2">Ancillary & Others</div>
-                <Link href="/crate-stacker" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="font-medium text-seppa-red pt-2">{menu.labelling}</div>
+                <Link href={getLink("/labelling")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Crate Stacker</span>
+                  <span>{menu.labelling}</span>
                 </Link>
-                <Link href="/refrigeration-system" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/batch-coders")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Refrigeration System</span>
+                  <span>{menu.batchCoders}</span>
                 </Link>
-                <Link href="/air-dryer" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/shrink-wrapping")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Air Dryer</span>
+                  <span>{menu.shrinkWrapping}</span>
                 </Link>
-                <Link href="/crate-washers" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/pallet-equipment")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Crate Washers</span>
+                  <span>{menu.palletEquipment}</span>
                 </Link>
-                <Link href="/glass-bottle-washer" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/stretch-wrapping")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Glass Bottle Washer</span>
+                  <span>{menu.stretchWrapping}</span>
                 </Link>
-                <Link href="/glass-bottle-filler-capper" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+
+                <div className="font-medium text-seppa-red pt-2">{menu.crateStacker}</div>
+                <Link href={getLink("/crate-stacker")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Glass Bottle Filler Capper</span>
+                  <span>{menu.crateStacker}</span>
                 </Link>
-                <Link href="/tunnel-pasteurizers" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/refrigeration-system")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Tunnel Pasteurizers</span>
+                  <span>{menu.refrigerationSystem}</span>
                 </Link>
-                <Link href="/tunnel-cooler" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/air-dryer")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Tunnel Cooler</span>
+                  <span>{menu.airDryer}</span>
                 </Link>
-                <Link href="/de-capper" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/crate-washers")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>De Capper</span>
+                  <span>{menu.crateWashers}</span>
                 </Link>
-                <Link href="/large-bottle-filler" className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/glass-bottle-washer")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Large Bottle Filler</span>
+                  <span>{menu.glassBottleWasher}</span>
+                </Link>
+                <Link href={getLink("/glass-bottle-filler-capper")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.glassBottleFillerCapper}</span>
+                </Link>
+                <Link href={getLink("/tunnel-pasteurizers")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.tunnelPasteurizers}</span>
+                </Link>
+                <Link href={getLink("/tunnel-cooler")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.tunnelCooler}</span>
+                </Link>
+                <Link href={getLink("/de-capper")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.deCapper}</span>
+                </Link>
+                <Link href={getLink("/large-bottle-filler")} className="text-gray-300 hover:text-seppa-red pl-2 flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
+                  <span>{menu.largeBottleFiller}</span>
                 </Link>
               </div>
             </details>
@@ -583,30 +643,40 @@ const Header: React.FC = () => {
             {/* Enquiry */}
             <details className="group border-b border-white/10 pb-2">
               <summary className="flex justify-between items-center text-white font-medium font-heading cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                Enquiry <FiChevronDown className="transition-transform group-open:rotate-180" />
+                {menu.enquiry} <FiChevronDown className="transition-transform group-open:rotate-180" />
               </summary>
               <div className="flex flex-col space-y-3 mt-3 pl-4 text-base">
-                <Link href="/product-enquiry" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/product-enquiry")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Product Enquiry</span>
+                  <span>{menu.productEnquiry}</span>
                 </Link>
-                <Link href="/investors" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/investors")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Investors</span>
+                  <span>{menu.investors}</span>
                 </Link>
-                <Link href="/dealers" className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href={getLink("/dealers")} className="text-gray-300 hover:text-seppa-red flex items-start gap-3 mt-1" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="w-1.5 h-1.5 rounded-full bg-white/40 shrink-0 mt-2"></span>
-                  <span>Dealers</span>
+                  <span>{menu.dealers}</span>
                 </Link>
               </div>
             </details>
 
-            <Link href="/video-gallery" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Videos</Link>
-            {/* <Link href="/contact-us" className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link> */}
-
-            <div className="pt-6 mt-auto">
-              <Link href="/contact-us" className="bg-seppa-red text-white px-6 py-4 rounded-full font-medium hover:bg-white hover:text-[#101934] transition flex items-center justify-center gap-2 w-full text-center shadow-md" onClick={() => setIsMobileMenuOpen(false)}>
-                Contact Us
+            <Link href={getLink("/video-gallery")} className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>{menu.videos}</Link>
+            
+            <div className="pt-6 mt-auto flex flex-col gap-3">
+              <div className="flex justify-around gap-2 bg-[#0d162a]/50 p-2 rounded-xl border border-white/10">
+                {['en', 'ar', 'de'].map((loc) => (
+                  <button
+                    key={loc}
+                    onClick={() => { changeLanguage(loc); setIsMobileMenuOpen(false); }}
+                    className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${currentLocale === loc ? 'bg-gold text-[#0d162a]' : 'text-white hover:text-gold'}`}
+                  >
+                    {getLocaleLabel(loc)}
+                  </button>
+                ))}
+              </div>
+              <Link href={getLink("/contact-us")} className="bg-seppa-red text-white px-6 py-4 rounded-full font-medium hover:bg-white hover:text-[#101934] transition flex items-center justify-center gap-2 w-full text-center shadow-md" onClick={() => setIsMobileMenuOpen(false)}>
+                {menu.contactUs}
               </Link>
             </div>
           </div>
