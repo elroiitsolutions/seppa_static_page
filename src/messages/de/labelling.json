@@ -1,0 +1,130 @@
+{
+  "title": "Automatische Etikettiermaschine",
+  "breadcrumbName": "Etikettieren",
+  "rootBreadcrumbName": "Maschinen",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Automatische Etikettiermaschine für Präzision, Geschwindigkeit und die Integration in moderne Verpackungslinien",
+  "overviewDescription": "Jedes Produkt, das eine Produktionsstätte verlässt, trägt zwei entscheidende Merkmale: seinen Inhalt und seine Kennzeichnung. Das Etikett ist die erste Information, die Händler scannen, Verbraucher lesen und Prüfer in regulierten Branchen kontrollieren. Fehler bei der Etikettierung führen nicht nur zu Nacharbeiten, sondern können Freigaben, Compliance-Anforderungen und im schlimmsten Fall komplette Produktionschargen gefährden.",
+  "overviewsubDescription": [
+    "Eine automatische Etikettiermaschine minimiert diese Risiken. Entscheidend ist jedoch nicht allein der Automatisierungsgrad, sondern die zugrunde liegende Technik: Servoantriebe, präzise Sensorik, SPS-gesteuerte Prozessabläufe sowie eine optimale Abstimmung auf Etikettenmaterialien und Behälteroberflächen. Genau diese Faktoren machen den Unterschied zwischen einem einfachen Etikettenspender und einer leistungsfähigen industriellen Etikettieranlage aus.",
+    "Was ist eine automatische Flaschenetikettiermaschine? Eine automatische Etikettiermaschine bildet den letzten Schritt der Markenkennzeichnung und Produktkennzeichnung, bevor ein Produkt in den Vertrieb gelangt. Jede Verpackung erhält ein exakt positioniertes, faltenfreies Etikett – unabhängig davon, ob Front-, Rück-, Rundum- oder Originalitätssicherungsetiketten verarbeitet werden.",
+    "Insbesondere in der Getränke- und Pharmaindustrie müssen Flaschen verarbeitet werden, die weder exakt rund noch perfekt ausgerichtet sind und oft mit unterschiedlichen Abständen auf dem Förderband transportiert werden. Präzise Positioniersysteme und synchronisierte Fördertechnik gleichen diese Schwankungen aus und ermöglichen Etikettiergenauigkeiten von bis zu ±0,5 mm – selbst bei hohen Produktionsgeschwindigkeiten.",
+    "SEPPA Solutions entwickelt sowohl rotative als auch lineare Etikettiermaschinen sowie Systeme für Selbstklebeetiketten, Schrumpfsleeves, Kaltleim- und Heißleimanwendungen."
+  ],
+  "featuresTitle": "Hauptmerkmale der automatischen Etikettiersysteme von SEPPA",
+  "features": [
+    {
+      "title": "Servogesteuerte Etikettierköpfe",
+      "description": "Der Etikettierkopf entscheidet über die Qualität des Etikettenauftrags. Im Gegensatz zu pneumatischen Systemen ermöglichen Servoantriebe eine frei programmierbare Steuerung von Position, Geschwindigkeit, Anpressdruck und Verweilzeit. Produktparameter werden im HMI gespeichert und können bei Formatwechseln innerhalb weniger Minuten abgerufen werden."
+    },
+    {
+      "title": "Hochauflösende optische Sensoren",
+      "description": "Bereits vor dem Ablösen des Etiketts erkennen hochpräzise Sensoren dessen Vorderkante. Die SPS synchronisiert den Ausgabemoment exakt mit der Position des Behälters. Diese präzise Steuerung sorgt insbesondere bei selbstklebenden Etiketten für eine blasen- und faltenfreie Applikation."
+    },
+    {
+      "title": "Werkzeugloser Formatwechsel",
+      "description": "Moderne Produktionslinien verarbeiten häufig mehrere Produktformate pro Schicht. Deshalb ermöglichen die Anlagen von SEPPA werkzeuglose Einstellungen von Führungen, Etikettenrollen und Etikettierköpfen. Dadurch reduzieren sich Stillstandszeiten erheblich."
+    },
+    {
+      "title": "SPS-Steuerung und HMI-Bedienung",
+      "description": "Etikettenabstände, Förderbandgeschwindigkeiten, Ausschleusungen und Produktionsdaten werden über Siemens- oder Allen-Bradley-SPS mit intuitivem Farb-Touchscreen verwaltet. Automatische Warnmeldungen erkennen Prozessabweichungen frühzeitig und verhindern fehlerhafte Serienproduktionen."
+    }
+  ],
+  "applicationsTitle": "Unterstützte Etikettieranwendungen",
+  "applications": [
+    {
+      "title": "Rotative Etikettiermaschinen",
+      "description": "Rotative Systeme eignen sich für Hochgeschwindigkeitslinien in der Getränkeindustrie, beispielsweise für Wasser, Erfrischungsgetränke oder Spirituosen. Sie unterstützen Rundum-, Vorder-/Rückseiten- und Halsetikettierungen in einem kontinuierlichen Produktionsprozess."
+    },
+    {
+      "title": "Lineare Etikettiermaschinen",
+      "description": "Lineare Systeme bieten maximale Flexibilität bei unterschiedlichen Behälterformen. Quadratische, rechteckige oder ovale Verpackungen lassen sich zuverlässig ausrichten und präzise etikettieren."
+    },
+    {
+      "title": "Selbstklebe-Etikettiermaschinen",
+      "description": "Für druckempfindliche Selbstklebeetiketten bietet SEPPA Lösungen für Fläschchen, Gläser, Dosen und zahlreiche weitere Verpackungsarten. Je nach Anwendung sind Ober-, Seiten-, Front-/Rückseiten- oder Rundumetikettierungen möglich."
+    },
+    {
+      "title": "Schrumpfsleeve-Etikettierung",
+      "description": "Bei Produkten mit vollständiger Rundumgestaltung oder Originalitätsschutz werden Schrumpfsleeves aus PVC oder OPS aufgebracht und anschließend im Schrumpftunnel gleichmäßig verarbeitet. Eine optimierte Luftführung gewährleistet eine homogene Schrumpfung ohne Verzug oder Überhitzung.",
+      "link": "/labelling/self-adhesive-labellers"
+    },
+    {
+      "title": "Kaltleim- und Heißleim-Etikettiermaschinen",
+      "description": "Papieretiketten auf Glasflaschen, beispielsweise für Bier, Saucen oder Premium-Spirituosen, werden häufig mit Kalt- oder Heißleim verarbeitet. Kaltleimsysteme eignen sich für den kontinuierlichen Betrieb ohne Aufheizzeiten, während Heißleimsysteme besonders schnelle Haftung bei Hochgeschwindigkeitslinien bieten.",
+      "link": "/labelling/hot-glue-labelling"
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Vorteile automatisierter Etikettierung in Produktionslinien",
+      "paragraphs": [
+        "Eine automatische Etikettiermaschine verbessert nicht nur die Produktivität, sondern steigert die Gesamtanlageneffektivität (OEE) durch höhere Verfügbarkeit, Leistung und Qualitätsrate.",
+        "Der größte Vorteil liegt in der konstanten Prozessqualität. Jede Verpackung erhält unabhängig von Schichtwechseln oder Produktionsdauer dieselbe exakte Etikettenposition und denselben Anpressdruck.",
+        "Auch die Produktionsgeschwindigkeit steigt deutlich. Je nach Ausführung erreichen lineare Flaschenetikettiermaschinen bis zu 60 Behälter pro Minute, während rotative Systeme mehrere hundert Verpackungen pro Minute verarbeiten können.",
+        "Zusätzlich reduziert eine integrierte Bildverarbeitung Ausschuss erheblich. Fehlende, schiefe oder beschädigte Etiketten werden unmittelbar erkannt und fehlerhafte Produkte automatisch ausgeschleust, bevor sie den Verpackungsbereich erreichen."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions als Hersteller von Etikettiermaschinen?",
+    "paragraphs": [
+      "SEPPA Solutions entwickelt automatische Etikettiermaschinen für die Getränke-, Lebensmittel-, Pharma- und Kosmetikindustrie mit Fokus auf internationale Produktionsstandards.",
+      "Jede Anlage wird individuell anhand von Behältergeometrie, Produktionsleistung, Etikettenmaterial und Oberflächenbeschaffenheit ausgelegt. Bereits während der Konstruktion werden Haftklebstoffe, Trägermaterialien sowie die Geometrie des Etikettierkopfes optimal aufeinander abgestimmt.",
+      "Zum Leistungsumfang gehören außerdem Fernzugriff auf die Maschinensteuerung, professionelle Inbetriebnahme sowie umfassende Bedienerschulungen.",
+      "Fazit: Mit den automatischen Etikettiermaschinen von SEPPA Solutions erhalten Hersteller eine leistungsstarke Lösung für präzise, schnelle und wirtschaftliche Etikettierung. Ob Getränke-, Lebensmittel-, Pharma- oder Kosmetikindustrie – jede Anlage wird individuell an Produktionsanforderungen angepasst und gewährleistet maximale Prozesssicherheit, hohe Linienleistung sowie dauerhaft zuverlässige Kennzeichnung in modernen Verpackungslinien."
+    ]
+  },
+  "methodology": {
+    "title": "So gewährleistet die Etikettiermaschine von SEPPA eine präzise und effiziente Etikettenapplikation",
+    "subtitle": "Der Etikettierprozess besteht aus mehreren exakt abgestimmten Schritten:",
+    "steps": [
+      {
+        "title": "Behältervereinzelung",
+        "description": "Zunächst sorgen Einlaufsterne oder Schneckenförderer für einen gleichmäßigen Behälterabstand. Ohne definierten Abstand kann das Etikettentiming nicht eingehalten werden."
+      },
+      {
+        "title": "Sensorerkennung",
+        "description": "Anschließend erkennt ein Foto- oder Lasersensor die Position jedes Behälters und übermittelt die Daten an die SPS, welche den exakten Ausgabezeitpunkt des Etiketts berechnet."
+      },
+      {
+        "title": "Etikettenablösung und Ausgabe",
+        "description": "Beim Ablösen wird das Etikett über eine Spendeplatte vom Trägermaterial getrennt. Die servogeregelte Bahnspannung gewährleistet unabhängig vom Rollendurchmesser eine konstante Ablösekraft."
+      },
+      {
+        "title": "Synchronisierte Applikation",
+        "description": "Im nächsten Schritt erfolgt die synchronisierte Applikation mittels Andrückrolle oder Luftblas-System. Da Fördergeschwindigkeit und Etikettierkopf exakt synchronisiert sind, entstehen weder Falten noch Materialdehnungen."
+      },
+      {
+        "title": "Kamerabasierte Kontrolle",
+        "description": "Abschließend kontrolliert ein kamerabasiertes Vision-System Position, Ausrichtung und Vollständigkeit jedes Etiketts. Fehlerhafte Produkte werden automatisch über eine Ausschleusstation aus der Produktionslinie entfernt."
+      }
+    ],
+    "outro": [
+      "Dieser Ablauf, der tausendfach pro Stunde zuverlässig ausgeführt wird, macht eine Flaschenetikettiermaschine zu einem echten Produktionsgewinn."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt eine automatische Etikettiermaschine Wartung?",
+      "answer": "Die Wartungsintervalle richten sich nach Produktionsleistung und Etikettenmaterial. In der Regel empfiehlt sich eine tägliche Reinigung von Etikettierkopf und Spendeplatte, eine wöchentliche Kontrolle der Fördertechnik sowie eine vierteljährliche Kalibrierung der Sensorik. SEPPA erstellt für jede Anlage einen individuellen Wartungsplan."
+    },
+    {
+      "question": "2. Wie wähle ich die passende Etikettiermaschine für meine Behälter aus?",
+      "answer": "Entscheidend sind Behälterdurchmesser, Höhe, Etikettenabmessungen, Material und gewünschte Produktionsleistung. Nach einer Analyse Ihrer Behälter empfiehlt SEPPA die optimale Lösung – rotativ für zylindrische Behälter oder linear für eckige und rechteckige Verpackungen."
+    },
+    {
+      "question": "3. Warum ist eine automatische Etikettiermaschine effizienter als manuelle Etikettierung?",
+      "answer": "Manuelle Prozesse verursachen größere Positionsabweichungen, geringere Produktionsgeschwindigkeiten und lassen sich nicht in automatisierte Fertigungslinien integrieren. Automatische Systeme erreichen eine Positioniergenauigkeit von bis zu ±0,5 mm, arbeiten konstant über lange Produktionszyklen und liefern Prozessdaten für eine kontinuierliche Qualitätsüberwachung."
+    },
+    {
+      "question": "4. Welche Etikettenmaterialien können verarbeitet werden?",
+      "answer": "Die Anlagen von SEPPA verarbeiten Papier-, BOPP-, PET- und Folienetiketten sowie PVC- und OPS-Schrumpfsleeves. Darüber hinaus unterstützen sie Kaltleim- und Heißleimanwendungen. Die Materialkompatibilität wird bereits während der Projektplanung geprüft."
+    },
+    {
+      "question": "5. Warum ist SEPPA Solutions ein zuverlässiger Anbieter von Etikettiermaschinen?",
+      "answer": "SEPPA liefert Maschinen nach internationalen Exportstandards mit CE-konformen Schaltschränken, dokumentierter SPS-Programmierung sowie vollständigen Schaltplänen. Zum Lieferumfang gehören außerdem Ersatzteilempfehlungen, Inbetriebnahme und Bedienerschulungen. Diese Kombination aus Engineering-Kompetenz, Fertigungsqualität und technischem Support macht SEPPA Solutions zu einem verlässlichen Partner für industrielle Etikettierlösungen."
+    }
+  ]
+}

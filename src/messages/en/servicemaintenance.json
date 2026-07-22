@@ -1,0 +1,92 @@
+{
+  "title": "Maintenance",
+  "breadcrumbName": "Maintenance",
+  "rootBreadcrumbName": "Services",
+  "rootBreadcrumbPath": "/services",
+  "overviewTitle": "The Engineering Discipline Behind Uninterrupted Production",
+  "overviewDescription": "A bottling line doesn't fail all at once. It fails one bearing, seal, and sensor at a time. Usually, this drift begins months before anyone notices.",
+  "overviewsubDescription": [
+    "The concept of preventive maintenance exists to catch that subtle degradation before it turns into a 3 a.m. phone call. At its core, this discipline is about scheduled inspection, adjustment, and timely replacement of components based on actual condition, rather than waiting for catastrophic breakdown.",
+    "A worn bearing throws off harsh vibration patterns, dragging down a fill line. Applying genuine preventive maintenance interrupts that chain early, ensuring the fix remains a brief lubrication task. Facilities prioritizing annual maintenance witness Mean Time Between Failures climb steadily."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Advanced Diagnostics and Total Asset Care",
+      "paragraphs": [
+        "Fluid analysis and lubrication tracking tells a story about what happens inside a gearbox long before external failure. Routine fluid analysis, intercepting contamination early, extends component life. Implementing thorough preventive maintenance on gear sets is non negotiable.",
+        "Combining fluid analysis with sophisticated vibration analysis and thermal imaging during live electrical inspections yields undeniable results. These advanced diagnostics explain why elite industrial maintenance services catch a loosening connection or misaligned shaft long before it causes downtime.",
+        "At Seppa Solutions, applying a rigid plan is a recipe for failure. This is why a customized annual maintenance strategy is critical; it must evolve alongside aging equipment."
+      ]
+    }
+  ],
+  "featuresTitle": "Key Components of an Effective Program",
+  "featuresSubtitle": "A truly effective program is built on unglamorous but essential pieces engineered to measure equipment health proactively.",
+  "features": [
+    { "title": "Usage-Based Scheduling", "description": "Calendar based scheduling is merely a starting point. Exceptional maintenance services tie intervention intervals directly to runtime hours, cycle counts, or load data." },
+    { "title": "Critical Part Wear Monitoring", "description": "Components like drive belts, seals, and valves deteriorate faster and should dictate the inspection cycle. Tracking these individually separates a proactive strategy from useless paperwork." },
+    { "title": "Standardized Checklists", "description": "Equipment specific checklists eliminate dangerous variability, creating a permanent record that empowers teams to spot anomalies early." }
+  ],
+  "applicationsTitle": "Applications Across Diverse Industries",
+  "applicationsSubtitle": "Mechanical tasks shift depending on the product, but the engineering discipline remains the same.",
+  "applications": [
+    { "title": "High Speed Bottling Lines", "description": "Mechanical tolerances are incredibly tight. Preventive maintenance here is focused on absolute precision: micro-alignment checks and highly sensitive sensor calibration." },
+    { "title": "Heavy Duty Processing Hardware", "description": "Runs at lower speeds but operates under drastically higher mechanical loads, shifting priority toward structural integrity inspections and motor evaluations." },
+    { "title": "Pharmaceutical Packaging", "description": "Continuous validation is paramount. Every action requires rigorous documentation, meaning maintenance services are meticulously built around traceable records." }
+  ],
+  "whyChoose": {
+    "title": "Benefits for Operational Efficiency & Why Choose Seppa",
+    "description": "The business case for preventive maintenance always comes down to financial performance. Professional maintenance services protect your bottom line from compounding financial leaks.",
+    "paragraphs": [
+      "Unscheduled downtime is extraordinarily expensive. A single stoppage can cost a plant several percentage points of its annual OEE. Proactive preventive maintenance services directly attack this hidden drain by converting chaotic failures into scheduled work events.",
+      "Beyond avoiding catastrophic failures, you achieve extended asset life as components wear evenly. You realize significantly lower energy consumption because heavy motors run closer to their original design specifications.",
+      "Seppa Solutions builds dynamic preventive maintenance plans derived directly from equipment-specific operating data, precise vibration baselines, thermal signatures, and runtime logs. We refuse to rely on generic manufacturer defaults. Our elite technicians carry sophisticated diagnostic instrumentation into every visit.",
+      "A fixed annual maintenance contract with Seppa Solutions is never a static checklist repeated quarterly. That powerful adaptability is what managers pay for."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodology",
+    "title": "Our Methodology and Service Process",
+    "subtitle": "A structured implementation path to optimize clean container standards and prevent cross contamination.",
+    "steps": [
+      {
+        "title": "Technical Health Audit",
+        "description": "Measuring baseline vibration, running thermal scans on electrical panels, and extensively reviewing existing historical data."
+      },
+      {
+        "title": "Custom Engineered Roadmap",
+        "description": "Detailing exact interventions and ruthlessly prioritizing critical assets where sudden failure costs the most."
+      },
+      {
+        "title": "Real-time Monitoring",
+        "description": "Continuous program optimization keeps the feedback loop closed, tightening inspection intervals based on actual machinery feedback."
+      },
+      {
+        "title": "Permanent Correction",
+        "description": "Systematically catching and permanently correcting anomalies through dedicated preventive maintenance to eliminate unplanned downtime."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "Is professional intervention worth the cost compared to handling it internally?",
+      "answer": "Yes. Traditional cost comparisons only count internal labour hours, ignoring the devastating financial impact of an unplanned stoppage. Expert care performed on schedule is predictably cheaper than lost production, expedited shipping, and exhausting overtime."
+    },
+    {
+      "question": "How does Seppa customize a schedule for a specific facility?",
+      "answer": "We begin with the absolute truth of our physical audit findings, factored against equipment age, criticality, and condition. We purposefully build the intervention schedule entirely around your actual production calendar."
+    },
+    {
+      "question": "How often does an inspection need to happen?",
+      "answer": "It depends on the specific equipment and exactly how hard it is pushed. Applying fixed monthly intervals across an entire plant rarely makes logical sense."
+    },
+    {
+      "question": "Why do generic approaches miss line specific problems?",
+      "answer": "A basic checklist completely fails to account for how your line actually runs, completely ignoring unique product mixes and specific mechanical wear patterns."
+    },
+    {
+      "question": "What makes Seppa Solutions fundamentally different?",
+      "answer": "Our true differentiator is the profound depth of technical diagnostic work behind every site visit. Vibration analysis and thermal imaging are standard, non negotiable parts of every inspection we conduct."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "title": "Crate Washer Machine",
+  "breadcrumbName": "Crate Washers",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Overview of Crate Washer Machines",
+  "overviewDescription": "A crate washer machine is the critical barrier between the external logistics environment and the controlled production zone. Every returnable crate, tray, or pallet that re-enters a packaging line must arrive in a sterile, dry, and structurally clean condition free from biofilm, allergen residues, and bacterial loads that could compromise downstream products.",
+  "overviewsubDescription": [
+    "Seppa crate washer machine are modularly designed, allowing multiple configurations and adjusting to each specific need. Our crate washers cover a wide range of productions, from 100 to 6,000 crates per hour, and can include options such as rotary filter, screw filter, detergent and/or disinfectant dosing device, steam extractor, different water heating systems, label removal module, blowing and drying module, and more.",
+    "A professionally engineered crate washer machine guarantees that bacterial load reduction exceeds 5 log targets the threshold demanded by HACCP and BRCGS auditors. By integrating pre wash, main wash, rinsing, and drying into a single continuous tunnel, the industrial crate washer removes the variability of manual cleaning and replaces it with measurable, validated hygiene outcomes."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Types of Crates Compatible with the System",
+      "paragraphs": [
+        "Versatility is non negotiable in returnable packaging logistics. A well-engineered plastic crate washer must accommodate diverse geometries without compromising spray coverage.",
+        "Both horizontal and vertical models of Seppa crate washers can be extended with a drying unit or a blow off. Our crate washer machine not only clean crates and pallets they can also be customized to handle drawers, baskets, trays, wagons, or any other similar item.",
+        "Shallow bakery trays: requiring gentle top down spray patterns to avoid lifting",
+        "Deep beverage cases: demanding angled side jets that penetrate full crate depth",
+        "Stackable dairy crates: needing aggressive corner spray to remove milk stone",
+        "Meat and poultry totes: requiring elevated thermal cycles for fat emulsification",
+        "Pharmaceutical totes: lids, buckets, and pans",
+        "We have the crate washer machine that fits every need. Depending on the specific requirements, each tunnel can be customized for washing any type of containers: boxes, pallets, crates, trays, baskets, tubs, buckets, pans, lids, and more. The precision spray patterns of Seppa crate washers ensure that every internal rib, drainage hole, and stacking lug is reached during the wash cycle."
+      ]
+    },
+    {
+      "title": "Benefits of Automated Crate Washing",
+      "paragraphs": [
+        "Manual cleaning is inconsistent, labour intensive, and incapable of meeting modern audit standards. Automated systems transform crate sanitation from a variable cost center into a predictable, validated process.",
+        "Consistent Cleaning Quality: Every crate receives identical impingement force, dwell time, and detergent exposure.",
+        "Labor Cost Reduction: A single operator can supervise throughput equivalent to 15–20 manual washers.",
+        "Regulatory Compliance: Validated cycles satisfy HACCP, IFS, BRCGS, and FDA requirements.",
+        "Water and Energy Efficiency: Closed loop filtration and heat recovery economizers slash utility costs.",
+        "Asset Longevity: Controlled chemistry prevents the plastic degradation caused by harsh manual scrubbing.",
+        "Investing in a high efficiency crate cleaning machine is no longer optional for high throughput operations it is the foundation of a defensible food safety program."
+      ]
+    }
+  ],
+  "featuresTitle": "Key Features of Seppa Crate Washers",
+  "featuresSubtitle": "Every crate washer machine built by Seppa is constructed for one purpose: uncompromising sanitation at industrial throughput. The engineering reflects decades of refinement in spray geometry, water management, and sanitary design.",
+  "features": [
+    { "title": "Stainless Steel Sanitary Construction", "description": "The entire wash tunnel including frames, headers, and conveyors is built from AISI 304 or 316L stainless steel. Robust but lightweight access doors open fully to facilitate cleaning of all internal surfaces. This open frame philosophy ensures the crate cleaning machine itself remains as hygienic as the crates it processes." },
+    { "title": "Modular High-Pressure Nozzle Headers", "description": "Spray nozzle impingement force is the single most important variable in mechanical soil removal. Seppa headers are positioned at calculated angles to generate impingement pressures between 1.5 and 3.0 bar at the crate surface sufficient to dislodge dried dairy proteins, sugar residues, and meat fats without distorting plastic geometry. The jetting system maximizes cleaning performance across every internal cavity." },
+    { "title": "Automated Detergent and Thermal Control", "description": "Detergent concentration is monitored by inline conductivity sensors and dosed automatically to maintain a stable 1–2% caustic concentration. Cleaning solution temperature is thermostatically controlled, holding the main wash stage between 60 °C and 85 °C depending on soil type. This thermal disinfection stage is what separates a true industrial crate washer from a simple rinse tunnel." },
+    { "title": "Filtration and Closed-Loop Water Management", "description": "High specification rotary and screw filters easily accessible from outside the crate washer machine capture particulate down to 200 microns before water is recirculated. Closed loop architecture reduces freshwater consumption by up to 70%, a defining advantage of any modern plastic crate washer." },
+    { "title": "Variable Throughput and Tunnel Geometry", "description": "Conveyor width and tunnel height are sized to suit the specific items being cleaned, with variable output to suit production requirements." }
+  ],
+  "applicationsTitle": "Industries We Serve",
+  "applicationsSubtitle": "Selecting a reputable crate washer manufacturer is the first step toward achieving total plant hygiene. Seppa systems serve a broad spectrum of regulated industries:",
+  "applications": [
+    { "title": "Dairy and Cheese Production", "description": "where milk stone and protein residues demand high temperature alkaline cycles" },
+    { "title": "Meat, Poultry, and Seafood Processing", "description": "where fat emulsification and pathogen control are paramount" },
+    { "title": "Bakery and Confectionery", "description": "where sugar and flour residues require softened pre wash stages" },
+    { "title": "Beverage and Brewing", "description": "where high volume returnable bottle crates demand 6,000+ units/hour throughput" },
+    { "title": "FMCG and Retail Logistics", "description": "where reusable transport items (RTIs) cycle through national distribution networks" },
+    { "title": "Pharmaceutical and Cosmetics", "description": "where validated cleaning protocols are subject to GMP scrutiny" }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for Crate Washers?",
+    "description": "Seppa Solutions is recognized globally as a premier crate washer manufacturer because we design every system around three engineering pillars: hygienic integrity, mechanical reliability, and operational efficiency.",
+    "paragraphs": [
+      "Proven Engineering Pedigree: Decades of installations across Europe, the Americas, and Asia",
+      "Validated Cycle Logic: PLC controlled recipes ensure repeatable, audit ready performance",
+      "Rapid Service Access: Side opening doors and external filters reduce mean time to clean by over 40%",
+      "Custom Modular Builds: Every crate washer machine is configured to the customer's exact throughput, crate geometry, and utility profile",
+      "Lifecycle Support: Full spare parts availability and remote diagnostics",
+      "When major producers select an industrial crate washer, they choose Seppa for the precision of our crate cleaning machine logic and the long term reliability of our builds."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodology",
+    "title": "Methodology: How the Crate Washing Process Works",
+    "subtitle": "Every Seppa crate washer machine follows a disciplined, multi stage sanitation pathway engineered for repeatability.",
+    "steps": [
+      {
+        "title": "Stage 1: Loading",
+        "description": "Manual or automated infeed conveyors transfer crates into the tunnel at controlled spacing, ensuring full spray coverage."
+      },
+      {
+        "title": "Stage 2: Pre Wash",
+        "description": "Low pressure recirculated water at 35–40 °C removes gross soil and chunky debris before they contaminate the main wash tank. This stage protects the chemistry of downstream sections."
+      },
+      {
+        "title": "Stage 3: Main Wash with Detergent",
+        "description": "High pressure nozzles deliver heated alkaline detergent (60–85 °C) at calibrated impingement angles. Dwell time, temperature, and concentration are continuously monitored. This is the core sanitation phase of the industrial crate washer."
+      },
+      {
+        "title": "Stage 4: Freshwater Rinse",
+        "description": "Cascade rinsing with potable water at 50–60 °C removes all detergent residue. The cascade flows backward through the system, conserving water while maintaining final rinse purity."
+      },
+      {
+        "title": "Stage 5: Air Knife Drying",
+        "description": "High velocity ambient or heated air knives strip residual moisture from every surface. Every crate treated by the crate washer machine exits dry, stackable, and ready for immediate reuse eliminating the microbial growth that wet storage encourages."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions (FAQ)",
+  "faqs": [
+    {
+      "question": "What sanitation level can a Seppa crate washer machine achieve?",
+      "answer": "Our systems consistently deliver greater than 5 log reduction in microbial load when operated with validated detergent concentration and thermal parameters meeting or exceeding HACCP, BRCGS, and IFS requirements."
+    },
+    {
+      "question": "Why does a dedicated plastic crate washer outperform dip tanks or manual washing?",
+      "answer": "A plastic crate washer applies controlled impingement force, regulated chemistry, and thermal disinfection in a continuous flow. Dip tanks recirculate contamination, while manual scrubbing produces inconsistent results that fail modern audits."
+    },
+    {
+      "question": "How do I select the right crate washers for my production capacity?",
+      "answer": "Seppa engineers size crate washers based on three inputs: hourly crate volume (100–6,000/hr), crate geometry, and soil profile. We then configure tunnel length, header count, filtration type, and drying modules accordingly."
+    },
+    {
+      "question": "How is water consumption minimized in your industrial crate washer?",
+      "answer": "Closed loop recirculation, cascade rinsing, and high efficiency rotary/screw filtration reduce freshwater intake by up to 70% compared to legacy systems a hallmark of every Seppa industrial crate washer."
+    },
+    {
+      "question": "Why is Seppa Solutions considered a leading crate washer manufacturer?",
+      "answer": "Because we combine sanitary engineering, modular customization, and validated cycle logic in every crate cleaning machine we deliver backed by decades of food industry expertise and global service support."
+    }
+  ]
+}

@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { FiCheckCircle, FiPlay } from 'react-icons/fi';
+
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -21,6 +24,20 @@ const staggerContainer = {
 };
 
 const HomeHero = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const isArabic = locale === 'ar';
+  const isDe = locale === 'de';
+
+  const getT = (key: string) => isDe ? ((enHome as any).HomeHero?.[key] || key) : t(`HomeHero.${key}`);
+
+  const bullets = [
+    getT('bullet1'),
+    getT('bullet2'),
+    getT('bullet3'),
+    getT('bullet4')
+  ];
+
   return (
     <section className="relative min-h-[100dvh] lg:h-[100dvh] w-full overflow-hidden flex flex-col">
       {/* Background Video Wrapper - uses hero-video-wrapper class defined in globals.css */}
@@ -73,7 +90,7 @@ const HomeHero = () => {
               <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="Avatar" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
             </div>
             <span className="text-white font-medium text-sm md:text-base tracking-wide">
-              Crafting quality machinery for global industries
+              {getT('sub')}
             </span>
           </motion.div>
           
@@ -83,22 +100,22 @@ const HomeHero = () => {
             className="font-heading font-bold text-white"
             style={{ fontSize: 'clamp(32px, 3.5vw, 60px)', lineHeight: '1.1' }}
           >
-            Global Leader in Processing & Packaging Technology
+            {getT('heading')}
           </motion.h1>
           
           {/* Subtitle */}
           <motion.p variants={fadeInUp} className="text-base md:text-lg 2xl:text-xl text-gray-300 leading-relaxed max-w-[650px] mt-4 lg:mt-6">
-            Engineering high-efficiency, fully automated lines for Water, Soft Drinks, Juices, Beer, Spirits, and Liquid Dairy. Powered by 50 years of manufacturing excellence across the India, USA, and Middle East markets.
+            {getT('desc')}
           </motion.p>
           
           {/* Buttons */}
           <motion.div variants={fadeInUp} className="flex flex-col md:flex-row items-start md:items-center mt-6 lg:mt-10 gap-4 lg:gap-6">
             {/* Primary CTA */}
             <div className="flex items-center gap-2 md:gap-3 group cursor-pointer shrink-0">
-              <Link href="/contact-us" className="inline-flex bg-seppa-blue text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
-                Book Consultation
+              <Link href={isArabic ? "/contact-us" : "/contact-us"} className="inline-flex bg-seppa-blue text-white px-6 md:px-8 py-3 md:py-[18px] rounded-full font-bold text-base md:text-lg group-hover:bg-seppa-red transition duration-300 tracking-wide text-center">
+                {getT('cta')}
               </Link>
-              <Link href="/contact-us" className="w-12 h-12 md:w-[60px] md:h-[60px] flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-seppa-blue transition duration-300 shadow-md">
+              <Link href={isArabic ? "/contact-us" : "/contact-us"} className="w-12 h-12 md:w-[60px] md:h-[60px] flex-shrink-0 bg-seppa-red flex items-center justify-center text-white rounded-full group-hover:bg-seppa-blue transition duration-300 shadow-md">
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-5 h-5 md:w-[22px] md:h-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
               </Link>
             </div>
@@ -117,7 +134,9 @@ const HomeHero = () => {
                   <FiPlay size={18} fill="currentColor" />
                 </div>
               </div>
-              <span className="text-white font-bold text-base md:text-lg tracking-wide group-hover:text-seppa-red transition-colors duration-300">Watch Video to know us</span>
+              <span className="text-white font-bold text-base md:text-lg tracking-wide group-hover:text-seppa-red transition-colors duration-300">
+                {getT('video')}
+              </span>
             </a>
           </motion.div>
         </motion.div>
@@ -132,12 +151,7 @@ const HomeHero = () => {
             variants={staggerContainer}
             className="flex flex-col lg:flex-row lg:flex-wrap justify-start items-start lg:items-center gap-x-6 2xl:gap-x-12 gap-y-3 w-fit"
           >
-            {[
-              "Eco-Friendly Dyeing Processes",
-              "Aseptic Non-Contact Fillers",
-              "Non-Thermal Pasteurization",
-              "High-Speed Electric PET Blowing"
-            ].map((text, idx) => (
+            {bullets.map((text, idx) => (
               <motion.div key={idx} variants={fadeInUp} className="flex items-center gap-2">
                 <FiCheckCircle className="text-seppa-red text-xl" />
                 <span className="text-white font-medium">{text}</span>

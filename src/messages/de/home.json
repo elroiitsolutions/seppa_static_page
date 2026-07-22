@@ -1,0 +1,156 @@
+{
+  "HomeHero": {
+    "sub": "Herstellung hochwertiger Maschinen für die globale Industrie",
+    "heading": "Weltmarktführer für Verarbeitungs- & Verpackungstechnik",
+    "desc": "Entwicklung hocheffizienter, vollautomatischer Anlagen für Wasser, Erfrischungsgetränke, Säfte, Bier, Spirituosen und flüssige Milchprodukte. Angetrieben von 50 Jahren herausragender Fertigungsqualität in den Märkten Indien, USA und Naher Osten.",
+    "cta": "Beratung buchen",
+    "video": "Video ansehen, um uns kennenzulernen",
+    "bullet1": "Umweltfreundliche Färbeverfahren",
+    "bullet2": "Aseptische kontaktlose Abfüller",
+    "bullet3": "Nicht-thermische Pasteurisierung",
+    "bullet4": "Elektrisches PET-Hochgeschwindigkeitsblasen"
+  },
+  "AboutIndustries": {
+    "tag": "Über unser Unternehmen / Brancheneinfluss",
+    "heading": "Wir widmen uns der Automatisierung hochleistungsfähiger Flüssigkeitsanlagen für verschiedene globale Industrien.",
+    "expertiseTitle": "Bewährtes Fachwissen",
+    "expertiseDesc": "Mit 50 Jahren Erfahrung liefern wir zuverlässige Lösungen mit gleichbleibender Qualität.",
+    "projectsLabel": "Globale Multi-Produkt-Projekte",
+    "factoriesDesc": "1.000+ Fabriken weltweit, die mit Seppa-Systemen laufen.",
+    "learnMore": "Mehr über uns erfahren"
+  },
+  "Services": {
+    "tag": "Unsere Dienstleistungen",
+    "heading": "Umfassende Verarbeitungs- & Verpackungssysteme, denen Sie vertrauen können",
+    "service1": "Komplette Verarbeitungs- und Verpackungsanlagen für Bier/Wein & Met",
+    "service2": "Komplette Verarbeitungs- und Verpackungsanlagen für Spirituosen/RTDs & Seltzer",
+    "service3": "Komplette Verarbeitungs- und Verpackungsanlagen für Mineralwasser/alkalisches Wasser",
+    "service4": "Komplette Verarbeitungs- und Verpackungsanlagen für Erfrischungsgetränke/Saft/Milch"
+  },
+  "OurIndustries": {
+    "tag": "Der Seppa-Vorteil",
+    "heading": "WARUM SEPPA SOLUTIONS? Kompromisslose betriebliche Effizienz, international entwickelt",
+    "description": "Jahrzehntelange Erfahrung in der spezialisierten Flüssigkeitstechnik ermöglicht es Seppa, zuverlässige, hoch anpassungsfähige Multiproduktsysteme zu liefern. Wir bauen Maschinen, die strengen globalen Sicherheitsstandards entsprechen und gleichzeitig einen schnellen ROI für moderne Abfüllanlagen gewährleisten.",
+    "tab1Title": "Säfte, Getränke & Isotonische",
+    "tab1Desc": "Säfte, Nektare, Erfrischungsgetränke, isotonische Getränke und Tees (JNSDIT) gehören weltweit zu den am schnellsten wachsenden Getränkesegmenten.",
+    "tab2Title": "Kohlensäurehaltige Erfrischungsgetränke",
+    "tab2Desc": "Kohlensäurehaltige Erfrischungsgetränke bleiben eine der wertvollsten Getränkekategorien der Welt und werden nur von abgefülltem Wasser übertroffen.",
+    "tab3Title": "Flüssige Milchprodukte",
+    "tab3Desc": "Flüssige Milchprodukte bleiben ein nahrhafter Bestandteil des täglichen Lebens, und mit der wachsenden Bedeutung einer gesünderen Lebensweise bei den Verbrauchern...",
+    "tab4Title": "Bier",
+    "tab4Desc": "Mehr als 5 Milliarden Liter Bier wurden in PET verpackt. Die Umstellung auf PET erfolgte vor einigen Jahrzehnten bei kohlensäurehaltigen Erfrischungsgetränken.",
+    "consultation": "Vereinbaren Sie eine technische Beratung",
+    "more": "mehr."
+  },
+  "Projects": {
+    "tag": "KOMPLETTE LINIENLÖSUNGEN",
+    "heading": "Umfassende Verarbeitungsanlagen für Getränke & Milchprodukte",
+    "project1Title": "PET-BLASMASCHINE",
+    "project1Subtitle": "Komplette Linienlösungen für PET-Blasen.",
+    "project2Title": "PROZESSTECHNIK",
+    "project2Subtitle": "Komplette Linienlösungen für Prozesstechnik.",
+    "project3Title": "PET-ABFÜLLANLAGE",
+    "project3Subtitle": "Komplette Linienlösungen für die PET-Abfüllung.",
+    "project4Title": "GLASABFÜLLANLAGE",
+    "project4Subtitle": "Komplette Linienlösungen für die Glasabfüllung.",
+    "project5Title": "DOSENABFÜLLANLAGE",
+    "project5Subtitle": "Komplette Linienlösungen für die Dosenabfüllung.",
+    "project6Title": "ABFÜLLANLAGE FÜR GROSSE FLASCHEN",
+    "project6Subtitle": "Komplette Linienlösungen für große Flaschen."
+  },
+  "PetTechnology": {
+    "tag": "PET-TECHNOLOGIE",
+    "heading": "Wählen Sie eine SEPPA PET-LÖSUNG, nach der Sie suchen?",
+    "project1": "MINERALWASSER / ERFRISCHUNGSGETRÄNKE PET-FLASCHENMASCHINE",
+    "project2": "MILCH / SAFT PET-FLASCHENMASCHINE",
+    "project3": "PET-HAUSHALTSREINIGUNGSPRODUKTE",
+    "project4": "ÖL / KETCHUP PET-FLASCHENMASCHINE",
+    "project5": "ALKOHOL- UND SPIRITUOSEN-PET-FLASCHE",
+    "project6": "GROSSE PET-FLASCHE FÜR 3 BIS 20 LITER",
+    "project7": "PHARMA- / KOSMETIKFLASCHEN-PET-MASCHINE"
+  },
+  "HowItWorks": {
+    "tag": "SEPPA-Updates",
+    "heading": "Neueste technologische Markteinführungen",
+    "process1Title": "ELEKTRISCHE PET-BLASMASCHINE",
+    "process1Desc": "Eine hochgeschwindigkeits-, servogesteuerte Formlösung, die für eine energieeffiziente, umweltfreundliche und hochpräzise PET-Flaschenherstellung entwickelt wurde.",
+    "process2Title": "NICHT-THERMISCHE PASTEURISATOREN",
+    "process2Desc": "Fortschrittliche Kaltkonservierungssysteme, die die Haltbarkeit von Getränken verlängern und Mikroorganismen ohne Hitzeeinwirkung eliminieren, wodurch natürliche Aromen und Nährstoffe vollständig erhalten bleiben.",
+    "process3Title": "ASEPTISCHE KONTAKTLOSE ABFÜLLER",
+    "process3Desc": "Hochsterile volumetrische Abfüllsysteme, die Kontaminationsrisiken vollständig eliminieren, indem Flüssigkeiten präzise dosiert werden, ohne die Flaschenmündung physisch zu berühren.",
+    "process4Title": "VIER-ACHSEN-PALETTIERER",
+    "process4Desc": "Ein vollautomatisches, robotergestütztes Stapelsystem, das für die schnelle und präzise Konfiguration von Kisten, Kartons und die Verpackungslogistik am Ende der Linie entwickelt wurde.",
+    "process5Title": "KOMBO PURE",
+    "process5Desc": "Ein kompaktes, integriertes Monoblock-System, das Flaschenblasen, kontaktloses Abfüllen und Verschließen in einer einzigen sterilen Umgebung vereint, um die Investitionskosten und die Stellfläche drastisch zu reduzieren.",
+    "process6Title": "KOSTENGÜNSTIGE AUTO-BLASMASCHINE",
+    "process6Desc": "Ein erschwingliches, hocheffizientes automatisches Blasformsystem für Einsteiger, das kleinen Abfüllanlagen eine ertragreiche Automatisierung mit kleinem Budget bietet.",
+    "knowMore": "Mehr erfahren"
+  },
+  "SpecialOffer": {
+    "tag": "Sonderangebot",
+    "heading": "Holen Sie sich Ihr kostenloses Exemplar von Projektberichten",
+    "report1": "MINERALWASSER HOHE WACHSTUMSRATEN UND HOHE RENTABILITÄT",
+    "report2": "MIKROBRAUEREI VERBESSERTES ERLEBNIS - RIESIGER GEWINN",
+    "report3": "PET DIE ZUKUNFT DER VERPACKUNG VIELFACHE ANFORDERUNGEN",
+    "report4": "KALTGEPRESSTER SAFT WÄCHST EXPONENTIELL",
+    "report5": "TOMATENVERARBEITUNG : KONSISTENZ WACHSTUM ENDLOSE NACHFRAGE",
+    "report6": "RECYCLING-GLASFLASCHENWASCHMASCHINE UNENDLICHE NACHFRAGE / EINNAHMEN",
+    "report7": "KOMMERZIELLE BRAUEREI WACHSENDER MARKT SPIRALFÖRMIGES BIERVOLUMEN"
+  },
+  "Clients": {
+    "tag": "Unsere vertrauenswürdigen Kunden",
+    "heading": "Stärkung von Branchenführern weltweit"
+  },
+  "Testimonials": {
+    "tag": "Globales Vertrauen & nachgewiesener Erfolg",
+    "heading": "Was globale Getränkemarken über Seppa-Automatisierung sagen",
+    "name1": "Rajesh Vardhan",
+    "quote1": "Das Kombo Pure Monoblock-System von Seppa reduzierte unseren Platzbedarf um 40 % bei gleichzeitiger Aufrechterhaltung absoluter Sterilität. Ihre schlüsselfertige Wasserlinien-Technik ist unübertroffen.",
+    "name2": "Marcus Vance",
+    "quote2": "Ihr Hochgeschwindigkeits-RFC-Abfüllsystem und ihr vierachsiger, automatisierter Palettierer haben unsere CSD-Produktion komplett rationalisiert und unsere Logistikkosten am Ende der Linie halbiert.",
+    "name3": "Amara Al-Jamil",
+    "quote3": "Die Kombination aus nicht-thermischer Pasteurisierung und aseptischen kontaktlosen Abfüllern hat die Haltbarkeit unseres Saftes ohne jegliches Kontaminationsrisiko perfekt verlängert."
+  },
+  "Partners": {
+    "tag": "Unsere Partner",
+    "heading": "Zusammenarbeit mit den Besten der Branche"
+  },
+  "ContactMap": {
+    "tag": "KONTAKTIEREN SIE UNS",
+    "heading": "Arbeiten Sie mit globalen Spezialisten für Flüssigkeitsverpackungen zusammen",
+    "helpTitle": "Wir sind hier, um Ihnen zu helfen",
+    "helpDesc": "Wir unterstützen Sie in jeder Phase Ihres Projekts, von der anfänglichen schlüsselfertigen Anlagenplanung über die nahtlose Inbetriebnahme der Maschinen bis hin zur lebenslangen Wartung.",
+    "callUs": "Rufen Sie uns jederzeit an"
+  },
+  "HomeFAQs": {
+    "tag": "Häufig gestellte Fragen.",
+    "heading": "Expertenantworten zu Fragen der Flüssigkeitsverpackung und -verarbeitung",
+    "viewAll": "Alle FAQs anzeigen",
+    "q1": "Welche kompletten, schlüsselfertigen Linien und Maschinen stellt Seppa Solutions her?",
+    "a1": "Wir entwerfen und konstruieren vollautomatische End-to-End-Produktionslinien für Mineralwasser, kohlensäurehaltige Erfrischungsgetränke (CSD), Säfte, flüssige Milchprodukte und gewerbliche Brauereianlagen. Unsere proprietären Maschinen umfassen Hochgeschwindigkeits-PET-Streckblasformen, fortschrittliche Rinser-Füller-Verschließer (RFC)-Monoblöcke und intelligente End-of-Line-Palettierungslogistik.",
+    "q2": "Wie verhindern Ihre aseptischen kontaktlosen Abfüller eine Produktkontamination?",
+    "a2": "Unsere aseptischen kontaktlosen Abfüller nutzen hochsterile volumetrische Dosiertechnologie, die Flüssigkeiten präzise abfüllt, ohne die Flaschenmündung jemals physisch zu berühren. Dies eliminiert Kreuzkontaminationsrisiken vollständig und macht es zur perfekten Lösung für empfindliche Getränke wie Säfte, Nektare und Milchprodukte.",
+    "q3": "Was sind die betrieblichen und kostentechnischen Vorteile des Seppa Kombo Pure-Systems?",
+    "a3": "Die Kombo Pure ist eine spezielle Monoblock-Architektur, die Flaschenblasen, steriles Flüssigkeitsabfüllen und Verschließen in einer einzigen geschlossenen Umgebung integriert. Dieses innovative Layout senkt Ihre anfänglichen Investitionsausgaben (CAPEX), reduziert den Platzbedarf in Ihrer Produktionshalle um bis zu 40 % und senkt den täglichen Stromverbrauch erheblich.",
+    "q4": "Bieten Sie kundenspezifische Anlagenplanung und Unterstützung nach der Installation an?",
+    "a4": "Ja. Wir übernehmen den gesamten Projektlebenszyklus, einschließlich kundenspezifischer Fabrikhallenplanung, technischer Machbarkeitsanalyse und Flüssigkeitstests. Nach der Inbetriebnahme der Anlage bieten wir eine strenge Bedienerschulung, lebenslange proaktive technische Audits und eine nahtlose globale Lieferkette für zertifizierte Ersatzteile.",
+    "q5": "Welche internationalen Regionen und Compliance-Standards unterstützen Ihre Systeme?",
+    "a5": "Mit 50 Jahren Erfahrung im Maschinenbau ist Seppa an den wichtigsten Produktionsstandorten in Indien, den USA und im Nahen Osten tätig. Alle unsere Verarbeitungs- und Verpackungslinien sind so gebaut, dass sie die strengen globalen Sicherheits-, Gesundheits- und Umweltvorschriften erfüllen und Marken auf 5 Kontinenten bedienen."
+  },
+  "Awards": {
+    "tag": "Anerkennung",
+    "heading": "Auszeichnungen & Erfolge",
+    "description": "Unser unermüdliches Streben nach Exzellenz und Innovation wurde weltweit anerkannt. Wir sind stolz auf die Meilensteine, die wir auf unserem Weg zur Transformation der Branche erreicht haben."
+  },
+  "LatestBlogs": {
+    "tag": "Neueste Blogs",
+    "heading": "Wir informieren Sie mit branchenspezifischen Updates",
+    "readMore": "Weiterlesen",
+    "blog1Title": "PET vs Glas vs Aluminiumdosen: Auswahl der richtigen Verpackungslösungen für den Erfolg Ihrer Marke",
+    "blog1Date": "14. Februar 2026",
+    "blog2Title": "PET vs Glas vs Aluminiumdosen: Auswahl der richtigen Verpackungslösungen für den Erfolg Ihrer Marke",
+    "blog2Date": "11. März 2026",
+    "blog3Title": "PET vs Glas vs Aluminiumdosen: Auswahl der richtigen Verpackungslösungen für den Erfolg Ihrer Marke",
+    "blog3Date": "04. April 2026"
+  }
+}

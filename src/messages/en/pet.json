@@ -1,0 +1,126 @@
+{
+  "title": "PET Bottle Manufacturing Solutions",
+  "breadcrumbName": "PET Blowers",
+  "overviewTitle": "Overview of PET Bottle Manufacturing Solutions",
+  "overviewDescription": "Count the pet plastic bottles in your own kitchen and you'll probably lose track. Water, oil, sauces, shampoo this format won because it's light, doesn't shatter, and ships cheap. That's why so many entrepreneurs are eyeing this industry right now.",
+  "overviewsubDescription": [
+    "Seppa Solutions builds the machinery behind that supply of pet plastic bottles: blowing systems, mold sets, compressors, chillers, specified as one package rather than sold piecemeal. Buy from three vendors and you'll spend half a year just getting the equipment to talk to itself. Our clients skip that.",
+    "Whether you're a first time plastic bottle maker sizing up your first line, or a plastic bottle factory adding a second shift's worth of capacity, the machine you pick locks in your margins for a decade. Cycle time, energy draw, bottle weight none of that gets fixed later on the shop floor. Skimp on any of it and the extra cost shows up later, buried inside a pet bottle manufacturing plant cost you thought you'd already paid off."
+  ],
+  "overviewBenefits": [
+    "Scalability: Start with a two cavity linear machine, add capacity later.",
+    "Design versatility: Produce pet plastic bottles from 100ml sample sizes up to 5L jerry cans.",
+    "Recycled content processing: Modern machines run preforms made from up to 100% rPET.",
+    "Lower cost per unit over time: Light weighting thinner walls without losing strength cuts resin cost."
+  ],
+  "applicationsTitle": "Types of PET Blowing Machines and Applications",
+  "applicationsSubtitle": "Two architectures dominate: linear and rotary. The choice comes down to volume, not taste.",
+  "applications": [
+    {
+      "title": "Linear Systems",
+      "description": "Linear machines run one or two cavities per cycle, suited to output under roughly 6,000 pet plastic bottles per hour. They're cheaper to buy, take less floor space, and retool fast when you switch bottle shapes. A small plastic bottle maker supplying spice jars or cosmetic containers to local shops usually starts here and honestly, most people typing \"pet bottle factory near me\" into a search bar are hunting for exactly this kind of setup."
+    },
+    {
+      "title": "Rotary Systems",
+      "description": "Rotary machines arrange preform stations around a wheel so heating, stretching, and blowing happen at once instead of one after another. Output can clear 20,000–30,000 pet plastic bottles an hour the technology behind mineral water and carbonated drink lines where a minute of downtime is real money, and increasingly the lines making a share of their output from recycled plastic bottles."
+    }
+  ],
+  "featuresTitle": "Key Features and Performance Benefits of PET Systems",
+  "featuresSubtitle": "Producing pet plastic bottles at scale comes down to cost per bottle, and four engineering choices decide that number.",
+  "features": [
+    {
+      "title": "Precision thermal conditioning",
+      "description": "Preforms need even heat before stretching or you get thin walls and weak spots. Our ovens use zoned infrared lamps with independent control per zone, so a 500ml and a 1.5L preform running together each get the profile they need."
+    },
+    {
+      "title": "Servo driven stretching",
+      "description": "Old pneumatic stretch rods hit a fixed position no matter what. Servo rods adjust speed and position on the fly, cutting waste and letting you run lighter preforms without blowouts."
+    },
+    {
+      "title": "Multi cavity synchronization",
+      "description": "On a rotary machine, every cavity has to clamp, blow, and eject in lockstep. A few milliseconds of drift shows up as dimensional inconsistency across a pallet of bottles."
+    },
+    {
+      "title": "Energy optimized pneumatics",
+      "description": "Compressed air is usually the biggest utility line item in a bottle plant. Our systems recover low pressure air from the blow-and-exhaust cycle instead of venting it, shrinking compressor sizing on a two shift operation."
+    }
+  ],
+  "methodology": {
+    "badge": "Process",
+    "title": "PET Bottle Manufacturing Methodology",
+    "subtitle": "Making pet plastic bottles follows a fixed sequence, and knowing each stage helps you judge machine quality before you buy.",
+    "steps": [
+      {
+        "title": "Preform thermal treatment",
+        "description": "Infrared lamps bring preforms to stretch temperature, typically 95–105°C depending on resin grade."
+      },
+      {
+        "title": "Mold clamping kinetics",
+        "description": "The heated preform enters the mold cavity and clamps shut with enough force to hold against the air pressure coming next, without leaving flash lines."
+      },
+      {
+        "title": "High pressure air injection",
+        "description": "A low pressure pre blow shapes the preform, then a final blow at 30–40 bar pushes plastic into every mold contour, base detail included."
+      },
+      {
+        "title": "Structural cooling",
+        "description": "Chilled water in the mold pulls heat out fast enough that the bottle holds its shape on ejection. Get cooling time wrong and you either eject deformed pet plastic bottles or waste seconds per cycle that add up across a shift."
+      },
+      {
+        "title": "Automated extraction",
+        "description": "Robotic arms pull the finished pet plastic bottles straight to labeling or filling, no manual handling needed."
+      }
+    ],
+    "outro": [
+      "Miss a step undertreated preforms, mistimed clamping, weak air pressure and it shows up as a defect: warping, thin spots, stress cracking under load. Getting this pet bottle manufacturing plant cost right on paper means nothing if the process itself is loose."
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for PET Machinery",
+    "description": "We've installed PET blowing equipment for everyone from single line startups to multi plant beverage groups a plastic bottle factory running one line needs different support than one running twelve.",
+    "paragraphs": [
+      "For a plastic bottle maker still comparing suppliers, mold life data and reference calls tell you more than any brochure."
+    ],
+    "reasons": [
+      {
+        "title": "Turnkey installation",
+        "description": "Our teams handle site prep guidance, commissioning, and on-site training, so you're shipping pet plastic bottles within weeks, not months."
+      },
+      {
+        "title": "Honest plant cost breakdown",
+        "description": "The question we hear most is about pet bottle manufacturing plant cost, and we walk clients through the real numbers: machine price, mold tooling, compressor and chiller sizing, utility upgrades, facility work. Buyers who only budget for the blowing machine get blindsided ancillary equipment often runs 30–40% of total pet bottle manufacturing plant cost."
+      },
+      {
+        "title": "Local support that actually shows up",
+        "description": "Search \"pet bottle factory near me\" and what you actually want is a technician on site fast, not a call center reading a script. That's the whole reason anyone types pet bottle factory near me into Google they want someone close by who can fix things."
+      },
+      {
+        "title": "Parts availability, years out",
+        "description": "We stock mold components, heaters, and servo parts for machines sold years ago, because a plastic bottle factory losing a week over one missing part is a problem we take personally. We also help clients retrofit older lines to run recycled plastic bottles without a full machine replacement."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "Is a plastic bottle factory actually profitable?",
+      "answer": "Depends on utilization and resin cost management. A factory producing pet plastic bottles at high uptime, with a tight energy profile, usually sees payback in two to four years on a mid size line. That's the real question behind most searches for pet bottle factory near me."
+    },
+    {
+      "question": "What do I need to process recycled plastic bottles into new preforms?",
+      "answer": "Drying equipment rated for rPET moisture, consistent flake quality from your recycler, and a machine that can handle the slightly different melt behaviours of recycled plastic bottles compared to virgin resin."
+    },
+    {
+      "question": "Why not just buy the cheapest plastic bottle maker I can find?",
+      "answer": "Cheap machines skimp on thermal control and servo precision, which shows up as higher reject rates and shorter mold life. The lower price often costs more once scrap and downtime enter the picture."
+    },
+    {
+      "question": "What actually goes into pet bottle manufacturing plant cost?",
+      "answer": "Beyond the blowing machine: molds per bottle design, a compressor sized to your cavity count, a chiller, downstream automation, and facility changes like flooring and power upgrades. Anyone quoting pet bottle manufacturing plant cost without these is leaving out most of the bill."
+    },
+    {
+      "question": "How do I actually find a trustworthy pet bottle factory near me?",
+      "answer": "Ask to see maintenance records, check their rPET handling if sustainability matters to your brand, and get sample pet plastic bottles from an active production run before you sign anything."
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import HomeView from './HomeView';
 
 export const metadata = {
   title: "seppa solutions.com",
@@ -7,10 +6,8 @@ export const metadata = {
   keywords: "textile, manufacturing, fabric, sustainable, yarn, custom textiles",
 };
 
+import { redirect } from 'next/navigation';
+
 export default function Page() {
-  return (
-    <>
-      <HomeView />
-    </>
-  );
+  redirect('/en');
 }

@@ -1,0 +1,156 @@
+{
+  "HomeHero": {
+    "sub": "Crafting quality machinery for global industries",
+    "heading": "Global Leader in Processing & Packaging Technology",
+    "desc": "Engineering high-efficiency, fully automated lines for Water, Soft Drinks, Juices, Beer, Spirits, and Liquid Dairy. Powered by 50 years of manufacturing excellence across the India, USA, and Middle East markets.",
+    "cta": "Book Consultation",
+    "video": "Watch Video to know us",
+    "bullet1": "Eco-Friendly Dyeing Processes",
+    "bullet2": "Aseptic Non-Contact Fillers",
+    "bullet3": "Non-Thermal Pasteurization",
+    "bullet4": "High-Speed Electric PET Blowing"
+  },
+  "AboutIndustries": {
+    "tag": "About Our Company / Industry Impact",
+    "heading": "We are dedicated to automating high-performance liquid lines for diverse global industries.",
+    "expertiseTitle": "Trusted Expertise",
+    "expertiseDesc": "Backed by 50 years experience, we deliver reliable solutions with consistent quality.",
+    "projectsLabel": "Global Multi-Product Projects",
+    "factoriesDesc": "1,000+ Factories Globally Running on Seppa Systems.",
+    "learnMore": "Learn More About Us"
+  },
+  "Services": {
+    "tag": "Our Services",
+    "heading": "Comprehensive Processing & Packaging Systems You Can Trust",
+    "service1": "Complete Beer/Wine & Mead processing and packaging lines",
+    "service2": "Complete liquor & spirits/RTDs & seltzers processing and packaging lines",
+    "service3": "Complete mineral water/Alkaline water processing and packaging lines",
+    "service4": "Complete soft drinks/juice/milk processing and packaging lines"
+  },
+  "OurIndustries": {
+    "tag": "The Seppa Advantage",
+    "heading": "WHY SEPPA SOLUTIONS? An Uncompromising Operational Efficiency, Engineered Internationally",
+    "description": "Decades of specialized liquid engineering allows Seppa to deliver reliable, highly adaptable multi-product systems. We build machinery that meets strict global safety standards while ensuring rapid ROI for modern bottling plants.",
+    "tab1Title": "Juices, Drinks & Isotonics",
+    "tab1Desc": "Juices, nectars, soft drinks, isotonics and teas (JNSDIT) are one of the fastest growing beverage segments worldwide.",
+    "tab2Title": "Carbonated Soft Drinks",
+    "tab2Desc": "Carbonated soft drinks remain one of the world's most valuable beverage categories, outsold only by bottled water.",
+    "tab3Title": "Liquid Dairy Products",
+    "tab3Desc": "Liquid dairy products remain a nutritious part of daily life, and with growing consumer emphasis on healthier living...",
+    "tab4Title": "Beer",
+    "tab4Desc": "More than 5 billion litres of beer was packaged in PET. The switch to PET was seen a few decades ago with carbonated soft drinks.",
+    "consultation": "Schedule a Technical Consultation",
+    "more": "more."
+  },
+  "Projects": {
+    "tag": "COMPLETE LINE SOLUTIONS",
+    "heading": "Comprehensive Beverage & Dairy Processing Lines",
+    "project1Title": "PET BLOWER",
+    "project1Subtitle": "Complete Line Solutions for PET Blowing.",
+    "project2Title": "PROCESS TECHNOLOGY",
+    "project2Subtitle": "Complete Line Solutions for Process Technology.",
+    "project3Title": "PET FILLING LINE",
+    "project3Subtitle": "Complete Line Solutions for PET Filling.",
+    "project4Title": "GLASS FILLING LINE",
+    "project4Subtitle": "Complete Line Solutions for Glass Filling.",
+    "project5Title": "CAN FILLING LINE",
+    "project5Subtitle": "Complete Line Solutions for Can Filling.",
+    "project6Title": "LARGE BOTTLE FILLING LINE",
+    "project6Subtitle": "Complete Line Solutions for Large Bottles."
+  },
+  "PetTechnology": {
+    "tag": "PET TECHNOLOGY",
+    "heading": "Select a SEPPA PET SOLUTIONS you are looking for ?",
+    "project1": "MINERAL WATER / SOFT DRINK PET BOTTLE MACHINE",
+    "project2": "MILK / JUICE PET BOTTLE MACHINE",
+    "project3": "PET HOUSEHOLD CLEANING PRODUCTS",
+    "project4": "OIL / KETCHUPS PET BOTTLE MACHINE",
+    "project5": "ALCOHOL AND SPRITS PET BOTTLE",
+    "project6": "LARGE PET BOTTLE FOR 3 TO 20 LITERS",
+    "project7": "PHARMA / COSMETICS BOTTLE PET MACHINE"
+  },
+  "HowItWorks": {
+    "tag": "SEPPA Updates",
+    "heading": "Latest Technological Launches",
+    "process1Title": "ELECTRIC PET BLOWING MACHINE",
+    "process1Desc": "A high-speed, servo-driven molding solution engineered for energy-efficient, eco-friendly, and highly precise PET bottle manufacturing.",
+    "process2Title": "NON THERMAL PASTEURIZERS",
+    "process2Desc": "Advanced cold preservation systems that extend beverage shelf life and eliminate micro-organisms without applying heat, fully preserving natural flavors and nutrients.",
+    "process3Title": "ASEPTIC NON CONTACT FILLERS",
+    "process3Desc": "High-sterility volumetric filling systems that eliminate contamination risks entirely by accurately dispensing liquids without physically touching the bottle mouth.",
+    "process4Title": "FOUR AXIS PALLETIZER",
+    "process4Desc": "A fully automated robotic stacking system designed for high-speed, precise configuration of crates, boxes, and end-of-line packaging logistics.",
+    "process5Title": "KOMBO PURE",
+    "process5Desc": "A compact, integrated monobloc system that fuses bottle-blowing, non-contact filling, and capping into a single sterile environment to drastically slash capex and floor footprint.",
+    "process6Title": "LOW COST AUTO BLOWING MACHINE",
+    "process6Desc": "An affordable, highly efficient entry-level automatic blow molding system tailored to give small-scale bottling plants high-yield automation on a budget.",
+    "knowMore": "Know more"
+  },
+  "SpecialOffer": {
+    "tag": "Special Offer",
+    "heading": "Get Your Free Copy Of Project Reports",
+    "report1": "MINERAL WATER HIGH GROWTH AND HIGH PROFITABILITY",
+    "report2": "MICROBREWERY ENHANCED EXPERIENCE - HUGE PROFIT",
+    "report3": "PET THE FUTURE OF PACKAGING MULTIPLE FOLD REQUIREMENT",
+    "report4": "COLD PRESS JUICE GROWING EXPONENTIALLY",
+    "report5": "TOMATO PROCESS : CONSISTENCY GROWTH ENDLESS DEMAND",
+    "report6": "RECYCLE GLASS BOTTLE WASHER INFINITY DEMAND / REVENUE",
+    "report7": "COMMERCIAL BREWERY GROWING MARKET SPIRALLING VOLUME OF BEER"
+  },
+  "Clients": {
+    "tag": "Our Trusted Clients",
+    "heading": "Empowering Industry Leaders Worldwide"
+  },
+  "Testimonials": {
+    "tag": "Global Trust & Proven Success",
+    "heading": "What Global Beverage Brands Say About Seppa Automation",
+    "name1": "Rajesh Vardhan",
+    "quote1": "Seppa's Kombo Pure monobloc system cut our floor footprint by 40% while maintaining absolute sterility. Their turnkey water line engineering is unmatched.",
+    "name2": "Marcus Vance",
+    "quote2": "Their high-speed RFC filling system and four-axis automated palletizer completely streamlined our CSD production, halving our end-of-line logistics costs.",
+    "name3": "Amara Al-Jamil",
+    "quote3": "The combination of Non-Thermal Pasteurization and Aseptic Non-Contact Fillers extended our juice shelf life perfectly with zero contamination risks."
+  },
+  "Partners": {
+    "tag": "Our Partners",
+    "heading": "Collaborating with the Best in the Industry"
+  },
+  "ContactMap": {
+    "tag": "GET IN TOUCH",
+    "heading": "Partner with global liquid packaging specialists",
+    "helpTitle": "We're Here To Help You",
+    "helpDesc": "We assist you through every stage of your project from initial turnkey plant layout engineering to seamless machinery commissioning and lifetime maintenance.",
+    "callUs": "Call Us Anytime"
+  },
+  "HomeFAQs": {
+    "tag": "Frequently Asked Questions.",
+    "heading": "Expert answers to liquid packaging & processing questions",
+    "viewAll": "View all FAQ's",
+    "q1": "What complete turnkey lines and machinery does Seppa Solutions manufacture?",
+    "a1": "We design and engineer fully automated, end-to-end production lines for mineral water, carbonated soft drinks (CSD), juices, liquid dairy, and commercial brewery plants. Our proprietary machinery covers high-speed PET stretch blow molding, advanced Rinser-Filler-Capper (RFC) monoblocs, and smart end-of-line palletizing logistics.",
+    "q2": "How do your Aseptic Non-Contact Fillers prevent product contamination?",
+    "a2": "Our Aseptic Non-Contact Fillers utilize high-sterility volumetric dispensing tech that fills liquids precisely without ever physically touching the bottle mouth. This eliminates cross-contamination risks entirely, making it the perfect solution for sensitive beverages like juices, nectars, and dairy products.",
+    "q3": "What are the operational and cost benefits of the Seppa Kombo Pure system?",
+    "a3": "The Kombo Pure is a specialized monobloc architecture that integrates bottle blowing, sterile liquid filling, and capping into a single enclosed environment. This innovative layout slashes your initial capital expenditure (CAPEX), reduces your production floor space footprint by up to 40%, and significantly drops daily power consumption.",
+    "q4": "Do you provide custom plant layout engineering and post-installation support?",
+    "a4": "Yes. We handle the entire project lifecycle including custom factory floor layout engineering, technical feasibility analysis, and liquid testing. Following plant commissioning, we provide rigorous operator training, lifetime proactive engineering audits, and a seamless global supply chain for certified spare parts.",
+    "q5": "What international regions and compliance standards do your systems support?",
+    "a5": "Backed by 50 years of engineering experience, Seppa operates across key manufacturing hubs in India, the USA, and the Middle East. All of our processing and packaging lines are built to satisfy strict global safety, health, and environmental compliance regulations, serving brands across 5 continents."
+  },
+  "Awards": {
+    "tag": "Recognition",
+    "heading": "Awards & Achievements",
+    "description": "Our relentless pursuit of excellence and innovation has been recognized globally. We take pride in the milestones we've achieved on our journey to transforming the industry."
+  },
+  "LatestBlogs": {
+    "tag": "Latest Blogs",
+    "heading": "Informing you with industry focused updates",
+    "readMore": "Read More",
+    "blog1Title": "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
+    "blog1Date": "February 14, 2026",
+    "blog2Title": "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
+    "blog2Date": "March 11, 2026",
+    "blog3Title": "PET vs Glass vs Aluminium Cans: Choosing the Right Packaging Solutions for Your Brand's Success",
+    "blog3Date": "April 04, 2026"
+  }
+}

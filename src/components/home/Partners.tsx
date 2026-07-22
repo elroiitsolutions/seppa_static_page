@@ -25,7 +25,11 @@ const partners = [
   { id: 4, image: clear.src, link:'https://www.canadianclear.com/' }
 ];
 
-const Partners = () => {
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
+import { usePathname } from 'next/navigation';
+
+const PartnersContent = ({ getT }: { getT: (key: string) => string }) => {
   return (
     <section>
       <div className="container mx-auto px-4">
@@ -33,19 +37,17 @@ const Partners = () => {
         {/* Header Section */}
         <motion.div 
           className="text-center max-w-[1200px] mx-auto mb-16"
-          // initial="hidden"
-          // whileInView="visible"
-          // viewport={{ once: true, amount: 0.1 }}
-          // variants={staggerContainer}
         >
           <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-            <span className="text-sm font-medium text-dark uppercase tracking-wider">Our Partners</span>
+            <span className="text-sm font-medium text-dark uppercase tracking-wider">
+              {getT('tag')}
+            </span>
           </motion.div>
           
           <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
             <AnimatedHeading 
-              text="Collaborating with the Best in the Industry" 
+              text={getT('heading')} 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight [&>span]:justify-center" 
             />
@@ -84,6 +86,25 @@ const Partners = () => {
       </div>
     </section>
   );
+};
+
+const LocalizedPartners = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const isDe = locale === 'de';
+  const getT = (key: string) => isDe ? ((enHome as any).Partners?.[key] || key) : t(`Partners.${key}`);
+  return <PartnersContent getT={getT} />;
+};
+
+const StaticPartners = () => {
+  const getT = (key: string) => ((enHome as any).Partners?.[key] || key);
+  return <PartnersContent getT={getT} />;
+};
+
+const Partners = () => {
+  const pathname = usePathname() || '';
+  const isLocalized = pathname.startsWith('/ar') || pathname.startsWith('/en') || pathname.startsWith('/de');
+  return isLocalized ? <LocalizedPartners /> : <StaticPartners />;
 };
 
 export default Partners;

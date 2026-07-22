@@ -33,6 +33,16 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({
     offset: ["start 90%", "end 60%"]
   });
 
+  const isArabicText = /[\u0600-\u06FF]/.test(text);
+
+  if (isArabicText) {
+    return (
+      <Element className={className} ref={container as any}>
+        {text}
+      </Element>
+    );
+  }
+
   const words = text.split(" ");
   let charCount = 0;
   const totalChars = words.reduce((acc, word) => acc + word.length, 0);
@@ -54,10 +64,10 @@ const AnimatedHeading: React.FC<AnimatedHeadingProps> = ({
                 
                 return (
                   <Character 
-                    key={j} 
-                    char={char} 
-                    progress={scrollYProgress} 
-                    range={[start, end]} 
+                     key={j} 
+                     char={char} 
+                     progress={scrollYProgress} 
+                     range={[start, end]} 
                   />
                 );
               })}

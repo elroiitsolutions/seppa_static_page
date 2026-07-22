@@ -1,0 +1,98 @@
+{
+  "title": "PET Bottle Blowing Machine",
+  "breadcrumbName": "Blowing",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "What a Modern PET Bottle Blowing Machine Actually Does",
+  "overviewDescription": "Seppa Solutions has been building blow molding equipment for over 25 years. In that time the fundamental physics of stretch blow molding has not changed much, but everything surrounding it preform conditioning, blowing pressure control, line integration has changed substantially. A modern pet bottle blowing machine from Seppa is the throughput ceiling of a beverage line. If it runs well, the rest of the line runs well. If it doesn't, nothing downstream saves you.",
+  "overviewsubDescription": [
+    "Seppa's range covers complete PET line solutions for water, sparkling water, CSD, juice, milk, beer, liquor, and wine. That breadth matters because each category has different container requirements a carbonated soft drink bottle needs high base stability and thick sidewall geometry; a still water bottle needs the opposite. The pet bottle blowing machine has to handle both, often on the same platform when a manufacturer produces multiple SKUs. Technological advancement in Seppa's equipment is the result of years of addressing exactly these production realities, not just chasing headline cavity counts.",
+    "The packaging industry has tightened on three fronts at the same time: material consumption is under pressure from lightweighting mandates, energy cost is a real line item in production economics, and output speeds keep rising because retail customers expect shorter lead times. A well specified plastic bottle blowing machine addresses all three. The question is how."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Types of PET Blowing Machines",
+      "paragraphs": [
+        "Semi Automatic Units: Semi automatic machines suit pilot lines, specialty formats, and operations where output volumes sit below 2,000 bottles per hour. Manual preform loading is the trade off; the upside is lower capital cost and flexibility on neck finish. A semi automatic plastic bottle maker is a reasonable starting point when SKU range is wide and runs are short.",
+        "Linear Automatic Machines: Linear platforms carry two to twelve cavities in a fixed-pitch arrangement. They cover the mid volume range from roughly 2,000 to 12,000 bottles per hour and suit operations with infrequent format changes. As a plastic pet bottle making machine, linear designs have straightforward maintenance access and lower initial tooling cost than rotary equivalents factors that matter when a project is working against a tight pet bottle manufacturing plant cost budget.",
+        "Rotary High speed Systems: Rotary blow molders are where output rates and container quality both peak. Seppa's rotary platforms carry up to 24 cavities on a continuously rotating wheel, achieving outputs above 24,000 bottles per hour on standard 0.5 litre water formats. Preforms move through dedicated infrared oven segments in continuous flow, arrive at blowing stations at precise temperature, and exit as finished containers without interruption."
+      ]
+    },
+    {
+      "title": "Selection Methodology",
+      "paragraphs": [
+        "Capacity Planning: Start from annual production volume. Apply an uptime factor of 85 to 90 percent and back calculate required bottles per hour. That number drives the cavity count decision and determines whether a linear or rotary pet bottle blowing machine platform is appropriate. Getting this calculation wrong in either direction is costly.",
+        "Mold Design Considerations: Mold cost scales with cavity count and container complexity. Heat-set molds for hot-fill applications cost roughly 40% more than standard molds due to internal cooling circuit complexity. Budget mold tooling correctly upfront. Replacing undersized molds at line startup delays commissioning and inflates project cost.",
+        "Site Layout & Installation: A rotary pet bottle blowing machine in a 24 cavity configuration requires approximately 18 metres of linear floor space. Seppa provides full on site commissioning, operator training, and factory acceptance testing. The validation protocol includes a 72 hour production run at rated speed, with bottle samples submitted for testing before handover."
+      ]
+    }
+  ],
+  "featuresTitle": "Key Technical Features",
+  "features": [
+    {
+      "title": "Infrared Heating Architecture",
+      "description": "Most cycle losses originate in the oven, not the blow station. Seppa's oven modules use independently controlled infrared lamp banks across multiple axial zones. Each zone targets a specific preform region neck support ring, body shoulder, sidewall, base and holds temperature within +1°C through the full production run. That granularity is not cosmetic. Uneven heating produces bottles with thin shoulders or base sag regardless of blowing pressure settings."
+    },
+    {
+      "title": "Clamping Systems",
+      "description": "Seppa builds both hydraulic and full electric servo clamping configurations. Hydraulic units deliver high clamping tonnage at lower equipment cost, practical for large-diameter containers where mold closing force requirements are significant. Electric servo clamping reduces energy consumption per cycle by up to 30% compared to hydraulic equivalents and removes hydraulic fluid as a contamination risk in food grade environments."
+    },
+    {
+      "title": "Control Interface and Recipe Management",
+      "description": "Seppa's control platform stores full recipe sets per SKU. Operators call up preform dimensions, oven heating profiles, blowing pressure curves, and stretch rod timing from a single touchscreen interface. Format changeovers that once required half a shift now take under an hour when the recipe is stored correctly."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa PET Blowing Machines?",
+    "description": "Choosing the right pet bottle blowing machine supplier is not just a capital equipment decision it is a production commitment that runs for a decade or more.",
+    "paragraphs": [
+      "Seppa has been designing and manufacturing blow molding equipment for over 25 years, building a track record that generic pet blowing machine manufacturers simply cannot match on experience alone.",
+      "Every plastic pet bottle making machine in Seppa's range is engineered for real production conditions: consistent cycle times under multi shift load, oven heating zones that hold temperature through ambient variation, and clamping systems that do not produce flash after the first 10 million cycles. As a plastic bottle maker built for beverage grade output, Seppa equipment is validated against the same quality benchmarks as the filling lines it feeds.",
+      "Seppa also offers complete line integration a factor that directly reduces your pet bottle manufacturing plant cost by eliminating conveyor infrastructure and unnecessary handling steps. Every plastic bottle manufacturing machine is matched to upstream and downstream modules during the engineering phase, not retrofitted afterward."
+    ]
+  },
+  "methodology": {
+    "title": "PET Bottle Production Process",
+    "steps": [
+      {
+        "title": "Preform Loading & Heating",
+        "description": "Injection moulded PET preforms arrive bulk loaded into the hopper. An unscrambler orients them neck up before the oven conveyor takes over. Preforms pass through the infrared oven at calculated speed. Lamp intensity and conveyor dwell time are set from preform wall thickness and PET intrinsic viscosity."
+      },
+      {
+        "title": "Transfer to Blow Station",
+        "description": "Conditioned preforms move to the mold without delay. Any pause causes temperature decay at the shoulder, which is the most common source of thin wall failures in small neck water bottle formats."
+      },
+      {
+        "title": "Stretch Blow Cycle",
+        "description": "The stretch rod descends at a defined velocity, orienting PET molecular chains axially. High pressure air at 38 bar then inflates the preform radially against the mold wall. This biaxial orientation increases barrier properties and drop impact resistance."
+      },
+      {
+        "title": "Ejection & Inspection",
+        "description": "Pressure exhausts through calibrated vent channels. The finished bottle ejects onto an air conveyor. Inline inspection vision systems check base geometry, neck finish, and wall-thickness distribution. Rejects divert automatically before the filler sees them."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What drives the overall pet bottle manufacturing plant cost for a new PET line?",
+      "answer": "The blow molder typically represents 25 to 35% of total installed line cost. The remainder covers the filler, capper, labeller, conveyors, utilities infrastructure, civil works, and commissioning. Choosing a bloc blow-fill configuration reduces pet bottle manufacturing plant cost by condensing the line footprint and removing conveyor infrastructure."
+    },
+    {
+      "question": "How much energy does a modern plastic pet bottle making machine consume?",
+      "answer": "A current generation electric servo plastic pet bottle making machine running 0.5 litre water bottles at 20,000 bottles per hour consumes approximately 0.08 to 0.12 kWh per 1,000 bottles. Older hydraulic machines on the same format typically consume 0.18 to 0.22 kWh per 1,000 bottles. Over a three shift operation, the difference can represent a six figure annual energy saving."
+    },
+    {
+      "question": "What maintenance does a professional plastic bottle maker require?",
+      "answer": "Daily checks cover oven lamp condition, mold sealing surfaces, and stretch rod alignment. Weekly maintenance includes cam track lubrication and blowing valve seal inspection. Annual overhauls address mold refurbishment, lamp bank replacement, and drive system inspection. Seppa supplies scheduled maintenance kits and remote diagnostic access."
+    },
+    {
+      "question": "What separates top tier pet blowing machine manufacturers from generic suppliers?",
+      "answer": "Three things consistently: heating zone resolution, clamping rigidity, and software depth. Generic manufacturers cut cost on lamp bank count, reducing heating uniformity. Lighter mold plate designs deflect under pressure and produce flash. Software lacking recipe depth forces manual setup. Seppa's engineering addresses all three."
+    },
+    {
+      "question": "Can a Seppa pet bottle blowing machine handle multiple bottle formats?",
+      "answer": "Yes. Mold changeovers on Seppa's linear and rotary platforms use pre aligned mold carriers and stored recipes. A trained two person team can complete a format change in under 45 minutes on most configurations. For manufacturers running seasonal SKU mixes, that changeover speed is the difference between a flexible asset and a bottleneck."
+    }
+  ]
+}

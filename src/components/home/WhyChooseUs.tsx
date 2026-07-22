@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { FiCheckCircle } from 'react-icons/fi';
 import AnimatedHeading from '../ui/AnimatedHeading';
 
