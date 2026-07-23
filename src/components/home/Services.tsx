@@ -26,19 +26,19 @@ const Services = () => {
   const services = [
     {
       title: getT('service1'),
-      image: 'pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg'
+      image: '/pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg'
     },
     {
       title: getT('service2'),
-      image: 'pics/istockphoto-2209086842-612x612.jpg'
+      image: '/pics/istockphoto-2209086842-612x612.jpg'
     },
     {
       title: getT('service3'),
-      image: 'pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg'
+      image: '/pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg'
     },
     {
       title: getT('service4'),
-      image: 'pics/pexels-photo-17559580.jpg'
+      image: '/pics/pexels-photo-17559580.jpg'
     }
   ];
 

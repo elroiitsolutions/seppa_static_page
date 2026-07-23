@@ -37,27 +37,27 @@ const Projects = () => {
     {
       title: getT('project2Title'),
       subtitle: getT('project2Subtitle'),
-      image: 'pics/process-technology.jpg'
+      image: '/pics/process-technology.jpg'
     },
     {
       title: getT('project3Title'),
       subtitle: getT('project3Subtitle'),
-      image: 'pics/pet-filling-machine.jpg'
+      image: '/pics/pet-filling-machine.jpg'
     },
     {
       title: getT('project4Title'),
       subtitle: getT('project4Subtitle'),
-      image: 'pics/glass-filling-machine.jpg'
+      image: '/pics/glass-filling-machine.jpg'
     },
     {
       title: getT('project5Title'),
       subtitle: getT('project5Subtitle'),
-      image: 'pics/can-filling-machine.jpg'
+      image: '/pics/can-filling-machine.jpg'
     },
     {
       title: getT('project6Title'),
       subtitle: getT('project6Subtitle'),
-      image: 'pics/large-bottle-filling-machine.jpg'
+      image: '/pics/large-bottle-filling-machine.jpg'
     }
   ];
 

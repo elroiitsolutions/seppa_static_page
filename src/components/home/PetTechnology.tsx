@@ -34,43 +34,43 @@ const Projects = () => {
         {
             title: getT('project1'),
             subtitle: getT('project1'),
-            image: 'pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg',
+            image: '/pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg',
             link: "/soft-drink-pet-blowing"
         },
         {
             title: getT('project2'),
             subtitle: 'Complete Line Solutions for Process Technology.',
-            image: 'pics/large.jpg',
+            image: '/pics/large.jpg',
             link: "/milk-juice-pet-blowing"
         },
         {
             title: getT('project3'),
             subtitle: 'Complete Line Solutions for PET Filling.',
-            image: 'pics/PET-HOUSEHOLD.png',
+            image: '/pics/PET-HOUSEHOLD.png',
             link: "/household-cleaning-pet-blowing"
         },
         {
             title: getT('project4'),
             subtitle: 'Complete Line Solutions for Glass Filling.',
-            image: 'pics/ar-taste-test-ketchup-hero-01-4x3-691200ff01674e20805c9ed469841597.jpg',
+            image: '/pics/ar-taste-test-ketchup-hero-01-4x3-691200ff01674e20805c9ed469841597.jpg',
             link: "/oil-ketchup-pet-blowing"
         },
         {
             title: getT('project5'),
             subtitle: 'Complete Line Solutions for Can Filling.',
-            image: 'pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg',
+            image: '/pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg',
             link: "/alcohol-spirits-pet-blowing"
         },
         {
             title: getT('project6'),
             subtitle: 'Complete Line Solutions for Large Bottles.',
-            image: 'pics/LARGE-PET-BOTTLE.jpg',
+            image: '/pics/LARGE-PET-BOTTLE.jpg',
             link: "/large-pet-blowing"
         },
         {
             title: getT('project7'),
             subtitle: 'Complete Line Solutions for Large Bottles.',
-            image: 'pics/pharmaceutical-packaging-bottles-134.jpg',
+            image: '/pics/pharmaceutical-packaging-bottles-134.jpg',
             link: "/pharma-cosmetics-pet-blowing"
         }
     ];
