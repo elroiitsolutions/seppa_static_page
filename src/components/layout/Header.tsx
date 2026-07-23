@@ -33,7 +33,7 @@ const Header: React.FC = () => {
   const getLocaleLabel = (loc: string) => {
     switch (loc) {
       case 'ar': return 'العربية';
-      case 'de': return 'Deutsch';
+      case 'de': return 'Germany';
       default: return 'English';
     }
   };
@@ -82,35 +82,35 @@ const Header: React.FC = () => {
   }, []);
 
   // Dynamic header classes - sticky behavior across all viewports
-  const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-4 lg:px-8 ${scrolled
-      ? 'w-full top-0 bg-seppa-blue shadow-lg py-3 lg:py-4 rounded-none'
-      : 'w-full xl:max-w-[1700px] xl:w-[96%] top-0 xl:top-[30px] 2xl:top-[40px] xl:rounded-[30px] bg-transparent py-4 lg:py-5'
+  const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-3 sm:px-6 lg:px-8 ${scrolled
+      ? 'w-full top-0 bg-seppa-blue shadow-lg py-2.5 lg:py-3.5 rounded-none'
+      : 'w-full lg:max-w-[1700px] lg:w-[96%] top-0 lg:top-3 2xl:top-6 lg:rounded-[24px] xl:rounded-[30px] bg-transparent py-3 lg:py-4'
     }`;
 
-  const linkClass = `font-medium hover:text-gold transition flex items-center gap-1 py-2 text-white ${isGerman ? 'text-xs 2xl:text-base' : 'text-sm 2xl:text-base'}`;
+  const linkClass = `font-medium hover:text-gold transition flex items-center gap-0.5 xl:gap-1 py-1.5 text-white ${isGerman ? 'text-[11px] lg:text-xs xl:text-[13px] 2xl:text-base tracking-tight' : 'text-xs xl:text-sm 2xl:text-base'}`;
 
   const dropdownClass = "absolute top-full left-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
-  const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left";
+  const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left text-xs xl:text-sm";
 
   return (
     <>
       <header className={headerClass}>
         <div className="w-full flex justify-between items-center transition-colors duration-300">
         {/* Left: Logo */}
-        <div className="shrink-0 flex justify-start items-center z-50 relative mr-4 rtl:ml-4">
+        <div className="shrink-0 flex justify-start items-center z-50 relative mr-2 lg:mr-3 xl:mr-4 rtl:ml-2 rtl:lg:ml-3 rtl:xl:ml-4">
           <Link href="/" className="shrink-0">
-            <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-2 shrink-0'>
+            <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-1.5 lg:p-2 shrink-0'>
               <img
                 src={logoImg.src}
                 alt="Seppa Solutions Logo"
-                className="h-10 md:h-10 w-auto transition-all duration-300 shrink-0"
+                className="h-7 lg:h-8 xl:h-10 w-auto transition-all duration-300 shrink-0"
               />
             </div>
           </Link>
         </div>
 
         {/* Center: Desktop Menu */}
-        <nav className={`hidden xl:flex flex-none justify-center items-center ${isGerman ? 'gap-3 2xl:gap-6' : 'gap-6 2xl:gap-8'}`}>
+        <nav className={`hidden lg:flex flex-none justify-center items-center ${isGerman ? 'gap-1.5 lg:gap-2 xl:gap-3.5 2xl:gap-6' : 'gap-2.5 lg:gap-3.5 xl:gap-5 2xl:gap-8'}`}>
           <div className="relative group">
             <Link href={getLink("/")} className={linkClass}>
               {menu.home}
@@ -118,7 +118,7 @@ const Header: React.FC = () => {
           </div>
           <div className="relative group">
             <button className={linkClass}>
-              {menu.packaging} <FiChevronDown className="text-sm opacity-70" />
+              {menu.packaging} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
 
@@ -146,7 +146,7 @@ const Header: React.FC = () => {
           </div>
           <div className="relative group">
             <button className={linkClass}>
-              {menu.liquid} <FiChevronDown className="text-sm opacity-70" />
+              {menu.liquid} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <div className="relative group/sub">
@@ -185,7 +185,7 @@ const Header: React.FC = () => {
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              {menu.services} <FiChevronDown className="text-sm opacity-70" />
+              {menu.services} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <Link href={getLink("/services/packaging")} className={dropdownItemClass}>{menu.packaging}</Link>
@@ -199,7 +199,7 @@ const Header: React.FC = () => {
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              {menu.completeLines}  <FiChevronDown className="text-sm opacity-70" />
+              {menu.completeLines}  <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <Link href={getLink("/complete-lines")} className={dropdownItemClass}>{menu.completeLines}</Link>
@@ -215,7 +215,7 @@ const Header: React.FC = () => {
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              {menu.equipments}<FiChevronDown className="text-sm opacity-70" />
+              {menu.equipments}<FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className="absolute top-full -left-54 mt-2 w-[90vw] lg:w-[750px] xl:w-[850px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-4 lg:p-6 grid grid-cols-2 lg:grid-cols-4 gap-y-2 lg:gap-x-4">
               {/* Column 1 */}
@@ -253,7 +253,7 @@ const Header: React.FC = () => {
           </div>
           <div className='relative group'>
             <button className={linkClass}>
-              {menu.enquiry}  <FiChevronDown className="text-sm opacity-70" />
+              {menu.enquiry}  <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <Link href={getLink("/product-enquiry")} className={dropdownItemClass}>{menu.productEnquiry}</Link>
@@ -265,34 +265,34 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Right: CTA Button & Language Switcher */}
-        <div className="hidden xl:flex flex-grow justify-end items-center group cursor-pointer gap-4 shrink-0">
-          <div className="flex items-center gap-1 2xl:gap-2">
+        <div className="hidden lg:flex flex-none justify-end items-center group cursor-pointer gap-2 xl:gap-3 shrink-0 ml-2 lg:ml-3">
+          <div className="flex items-center gap-1 xl:gap-2">
             <Link
               href={getLink("/contact-us")}
-              className="px-5 2xl:px-6 py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red tracking-wide text-sm 2xl:text-base flex items-center justify-center"
+              className="px-3 xl:px-4 2xl:px-6 py-2 xl:py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red tracking-wide text-xs xl:text-sm 2xl:text-base flex items-center justify-center"
             >
               {menu.contactUs}
             </Link>
             <Link
               href={getLink("/contact-us")}
-              className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0 animate-pulse"
+              className="w-8 h-8 xl:w-9 xl:h-9 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0 animate-pulse"
             >
-              <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[16px] h-[16px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
+              <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[14px] h-[14px] xl:w-[15px] xl:h-[15px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
             </Link>
           </div>
           <div className="relative group/lang shrink-0">
             <button
-              className="px-4 py-2.5 rounded-full bg-gold text-[#0d162a] font-bold text-sm shadow-md hover:bg-white transition-all duration-300 flex items-center gap-1.5"
+              className="px-2.5 xl:px-4 py-1.5 xl:py-2.5 rounded-full bg-gold text-[#0d162a] font-bold text-xs xl:text-sm shadow-md hover:bg-white transition-all duration-300 flex items-center gap-1"
             >
               <span>{getLocaleLabel(currentLocale)}</span>
-              <FiChevronDown className="transition-transform group-hover/lang:rotate-180" />
+              <FiChevronDown className="transition-transform group-hover/lang:rotate-180 text-xs" />
             </button>
             <div className="absolute right-0 top-full mt-2 w-32 bg-[#0d162a] border border-gold/20 text-white rounded-md shadow-lg opacity-0 invisible group-hover/lang:opacity-100 group-hover/lang:visible transition-all duration-300 transform translate-y-2 group-hover/lang:translate-y-0 z-50 flex flex-col py-1.5 overflow-hidden">
               {['en', 'ar', 'de'].map((loc) => (
                 <button
                   key={loc}
                   onClick={() => changeLanguage(loc)}
-                  className={`px-4 py-1.5 text-sm text-center hover:bg-gold hover:text-[#0d162a] transition-colors ${currentLocale === loc ? 'text-gold font-bold' : 'text-white'}`}
+                  className={`px-4 py-1.5 text-xs xl:text-sm text-center hover:bg-gold hover:text-[#0d162a] transition-colors ${currentLocale === loc ? 'text-gold font-bold' : 'text-white'}`}
                 >
                   {getLocaleLabel(loc)}
                 </button>
@@ -302,7 +302,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="flex-grow-0 flex xl:hidden justify-end">
+        <div className="flex-grow-0 flex lg:hidden justify-end">
           <button
             suppressHydrationWarning
             className={`text-2xl z-50 relative text-white`}

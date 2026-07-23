@@ -209,7 +209,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             )}
             
             {hasImages && (
-              <div className="relative w-[90%] md:w-[65%] h-[300px] md:h-[400px] mb-20 md:mb-24 mx-auto">
+              <div className="relative w-[90%] md:w-[65%] min-h-[260px] md:min-h-[380px] aspect-[16/10] mb-16 md:mb-20 mx-auto">
                 <motion.div 
                   className={`absolute top-0 left-0 w-full h-full rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10`}
                   initial="hidden"
@@ -379,7 +379,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             </motion.div>
 
             {/* Images */}
-            <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px] order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 relative min-h-[320px] md:min-h-[420px] lg:min-h-[480px] max-h-[550px] aspect-[4/3] order-1 lg:order-2">
               <motion.div 
                 className={`absolute top-0 right-0 ${image2 ? 'w-[85%] h-[80%]' : 'w-full h-full'} rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10`}
                 initial="hidden"

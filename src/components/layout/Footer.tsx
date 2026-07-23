@@ -79,12 +79,12 @@ const Footer: React.FC = () => {
                       setNewsletterEmail(e.target.value);
                       if (newsletterError) setNewsletterError('');
                     }}
-                    className={`bg-white/10 backdrop-blur-sm text-white px-6 py-4 rounded-l-lg w-full sm:w-[300px] focus:outline-none border ${newsletterError ? 'border-red-400' : 'border-white/20'} border-r-0 placeholder-gray-400`}
+                    className={`bg-white/10 backdrop-blur-sm text-white px-5 sm:px-6 py-3.5 sm:py-4 rounded-l-lg w-full sm:w-[260px] md:w-[300px] max-w-full focus:outline-none border ${newsletterError ? 'border-red-400' : 'border-white/20'} border-r-0 placeholder-gray-400 text-sm sm:text-base`}
                   />
                   <button 
                     suppressHydrationWarning
                     type="submit" 
-                    className="bg-seppa-red text-white px-6 py-4 rounded-r-lg hover:bg-white hover:text-[#101934] transition flex items-center justify-center"
+                    className="bg-seppa-red text-white px-5 sm:px-6 py-3.5 sm:py-4 rounded-r-lg hover:bg-white hover:text-[#101934] transition flex items-center justify-center shrink-0"
                   >
                     <FiArrowUpRight size={20} />
                   </button>
@@ -98,18 +98,18 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Main Footer Content */}
-        <div className="flex flex-col lg:flex-row gap-16 mb-16">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16">
           
           {/* Left Column: Heading & Button */}
           <div className="w-full lg:w-5/12">
-            <h2 className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold leading-tight mb-10 pr-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] 2xl:text-[52px] font-heading font-bold leading-tight mb-8 lg:mb-10 pr-0 lg:pr-8">
               {f.engineerTogether}
             </h2>
-            <div className="flex items-center gap-3 group cursor-pointer w-max">
-              <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-8 py-[18px] rounded-full font-bold text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide">
+            <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 group cursor-pointer w-max max-w-full">
+              <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-6 sm:px-8 py-3.5 sm:py-[18px] rounded-full font-bold text-base sm:text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide text-center">
                 {f.getInTouch}
               </button>
-              <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-[60px] h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md">
+              <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-12 h-12 sm:w-[60px] sm:h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md shrink-0">
                 <FiArrowUpRight className="transform transition-transform duration-300 group-hover:rotate-45" size={22} strokeWidth={2.5} />
               </button>
             </div>

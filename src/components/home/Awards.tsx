@@ -64,6 +64,7 @@ const AwardsContent = ({ getT }: { getT: (key: string) => string }) => {
 
         {/* Marquee Slider */}
         <motion.div
+          dir="ltr"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

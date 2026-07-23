@@ -32,7 +32,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
-  const [can, pet, glass, pouch, brick, gable, drum, automatic, semi, mineral, softdrink, beer, wine, beerPage, juice, labelling, ldp, sauce, softdrinkline, completeline, wineline, dairyline, sauceline, processing, blowing, preform, unscrambler, rfc, kombo, elevators, liquid, batch, handling, shrink, carton, pallet, stretch, stacker, refrigeration, dryer, washers, glasswasher, glasscapper, pasteurizers, decapper, largefiller, servicepackaging, servicespareparts, servicemaintenance, servicelineimprovement, serviceaudits, servicetraining, enquiry, videos, home, petjars, stillwater, mineralwater, alkalinewater, sparklingwater, structuredwater, flavoredwater, lineconversions, juicenectars, isotonics, teas, alcoholSpirits, rt, aboutUs, tunnelcooler, selfadhesivelabellers, watersparkling, hotgluelabelling, oilchillers, hydraulicchillers, coolantchillers, coolantchillerip, smartscrew, watercooledscrollchiller, energyefficientchillers, semiautomaticpetblowing, softdrinkpetblowing, milkjuicepetblowing, householdcleaningpetblowing, oilketchuppetblowing, largepetblowing, electricpetblowing, rotarypetblowing, pneumaticpetblowing, ssbsl10, ssbsl20, ssbsl40, ssbsl60] = await Promise.all([
+  const [can, pet, glass, pouch, brick, gable, drum, automatic, semi, mineral, softdrink, beer, wine, beerPage, juice, labelling, ldp, sauce, softdrinkline, completeline, wineline, dairyline, sauceline, processing, blowing, preform, unscrambler, rfc, kombo, elevators, liquid, batch, handling, shrink, carton, pallet, stretch, stacker, refrigeration, dryer, washers, glasswasher, glasscapper, pasteurizers, decapper, largefiller, servicepackaging, servicespareparts, servicemaintenance, servicelineimprovement, serviceaudits, servicetraining, enquiry, videos, home, petjars, stillwater, mineralwater, alkalinewater, sparklingwater, structuredwater, flavoredwater, lineconversions, juicenectars, isotonics, teas, alcoholSpirits, rt, aboutUs, tunnelcooler, selfadhesivelabellers, watersparkling, hotgluelabelling, oilchillers, hydraulicchillers, coolantchillers, coolantchillerip, smartscrew, watercooledscrollchiller, energyefficientchillers, semiautomaticpetblowing, softdrinkpetblowing, milkjuicepetblowing, householdcleaningpetblowing, oilketchuppetblowing, largepetblowing, electricpetblowing, rotarypetblowing, pneumaticpetblowing, ssbsl10, ssbsl20, ssbsl40, ssbsl60, ssbsle40, ssbsle60, ssbsle80, ssbsle100, ssbsle120, ssbsle150] = await Promise.all([
     loadNamespace(locale, 'can'),
     loadNamespace(locale, 'pet'),
     loadNamespace(locale, 'glass'),
@@ -125,7 +125,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
     loadNamespace(locale, 'ssbsl10'),
     loadNamespace(locale, 'ssbsl20'),
     loadNamespace(locale, 'ssbsl40'),
-    loadNamespace(locale, 'ssbsl60')
+    loadNamespace(locale, 'ssbsl60'),
+    loadNamespace(locale, 'ssbsle40'),
+    loadNamespace(locale, 'ssbsle60'),
+    loadNamespace(locale, 'ssbsle80'),
+    loadNamespace(locale, 'ssbsle100'),
+    loadNamespace(locale, 'ssbsle120'),
+    loadNamespace(locale, 'ssbsle150')
   ]);
 
   return {
@@ -223,7 +229,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ssbsl10,
       ssbsl20,
       ssbsl40,
-      ssbsl60
+      ssbsl60,
+      ssbsle40,
+      ssbsle60,
+      ssbsle80,
+      ssbsle100,
+      ssbsle120,
+      ssbsle150
     },
     onError(error) {
       if (error.code === 'MISSING_MESSAGE') {

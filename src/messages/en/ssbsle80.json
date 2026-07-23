@@ -1,0 +1,75 @@
+{
+  "title": "SEPPA SSB-SLE-80 Electric PET Bottle Blowing Machine",
+  "breadcrumbName": "SSB-SLE-80",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Overview of SEPPA SSB-SLE-80 Electric PET Bottle Blowing Machine",
+  "overviewDescription": "The SEPPA SSB-SLE-80 is a high-speed, 8-cavity fully electric stretch blow molding machine designed for maximum energy efficiency and precision. By replacing traditional pneumatic cylinders with servo-driven motors for stretch rod control and mold clamping, the SSB-SLE-80 ensures absolute repeatability and optimal wall thickness distribution bottle after bottle.",
+  "overviewsubDescription": [
+    "Perfect for mineral water, carbonated soft drinks, and sensitive juices, this machine is sized for high-efficiency large-scale production lines looking to minimize operating costs and carbon footprint."
+  ],
+  "featuresTitle": "Key Features of the SEPPA SSB-SLE-80",
+  "features": [
+    {
+      "title": "Full Servo Drive Control",
+      "description": "Servo motor synchronization across clamping, stretching, and transfer axes ensures precise mechanical movement and minimal wear."
+    },
+    {
+      "title": "Energy Recovery System",
+      "description": "Reclaims kinetic energy during deceleration and converts it back into electrical energy, reducing net grid consumption."
+    },
+    {
+      "title": "Advanced Heating Tunnel",
+      "description": "Zoned infrared heating with precise lamp intensity modulation ensures the preform reaches the ideal temperature uniformly."
+    }
+  ],
+  "applicationsTitle": "Applications Across Industries",
+  "applicationsSubtitle": "Designed for versatility, the system runs various beverage and packaging shapes seamlessly.",
+  "applications": [
+    {
+      "title": "Mineral Water",
+      "description": "Ensures high-speed lightweight bottle production with consistent base and neck geometry."
+    },
+    {
+      "title": "Carbonated Drinks",
+      "description": "Maintains high structural rigidity to hold carbonation pressure without deformation."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions?",
+    "description": "With 50 years of engineering leadership, Seppa designs complete line solutions optimized for uptime and lower operational costs.",
+    "paragraphs": [
+      "We test every machine against the customer's actual preforms before shipping.",
+      "Our global support network ensures fast commissioning and spare parts availability."
+    ]
+  },
+  "methodology": {
+    "title": "How it Works",
+    "subtitle": "Process steps for the electric stretch blow molding system:",
+    "steps": [
+      {
+        "title": "Preform Infeed",
+        "description": "Preforms are automatically loaded and oriented before entering the heating zones."
+      },
+      {
+        "title": "Servo Stretching",
+        "description": "Servo-driven stretch rods stretch the preforms axially at precise speeds."
+      },
+      {
+        "title": "Ejection",
+        "description": "Finished containers are rapidly cooled and discharged cleanly onto the outfeed line."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What is the output capacity of the SSB-SLE-80?",
+      "answer": "It delivers up to 12,000 - 16,000 bottles per hour depending on bottle size and geometry."
+    },
+    {
+      "question": "Does it support fast mold changeovers?",
+      "answer": "Yes, it features a tool-less quick-change mold design that reduces changeover times to under 30 minutes."
+    }
+  ]
+}

@@ -113,6 +113,7 @@ const Projects = () => {
                     className="relative group"
                 >
                     <Swiper
+                        dir="ltr"
                         modules={[Pagination, Autoplay, Navigation]}
                         spaceBetween={32}
                         slidesPerView={1}

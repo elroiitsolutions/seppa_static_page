@@ -32,7 +32,7 @@ const Projects = () => {
     {
       title: getT('project1Title'),
       subtitle: getT('project1Subtitle'),
-      image: 'pics/pet-blower.jpg'
+      image: '/pics/pet-blower.jpg'
     },
     {
       title: getT('project2Title'),
@@ -98,6 +98,7 @@ const Projects = () => {
           className="relative group"
         >
           <Swiper
+            dir="ltr"
             modules={[Pagination, Autoplay, Navigation]}
             spaceBetween={32}
             slidesPerView={1}
