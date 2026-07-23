@@ -21,8 +21,8 @@ const CallToAction: React.FC<CTAProps> = ({
       <div className="absolute inset-0 opacity-10 bg-[url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/bg-pattern.png')] bg-repeat" />
       
       {/* Decorative Blur Orbs */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-seppa-red/20 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-seppa-red/20 rounded-full blur-[120px] translate-x-1/2 translate-y-1/2 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] max-w-full bg-seppa-red/20 rounded-full blur-[90px] md:blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] max-w-full bg-seppa-red/20 rounded-full blur-[90px] md:blur-[120px] translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div 

@@ -447,7 +447,7 @@ const ContactUs: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full h-[350px] md:h-[450px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl border-4 lg:border-8 border-gray-50 relative"
+                className="w-full h-[320px] sm:h-[400px] lg:h-[500px] xl:h-[550px] rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl border-4 lg:border-8 border-gray-50 relative"
               >
                 <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm border border-gray-100 font-bold text-[#101934] flex items-center gap-2 max-w-[80%]">
                   <FiMapPin className="text-seppa-red shrink-0" />

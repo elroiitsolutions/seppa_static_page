@@ -61,7 +61,7 @@ const PetWhyChooseUs = () => {
             viewport={{ once: true, amount: 0.1 }}
             variants={fadeInUp}
           >
-            <div className="rounded-[2rem] overflow-hidden h-[400px] md:h-[500px] lg:h-[750px] w-full shadow-lg relative bg-light">
+            <div className="rounded-[2rem] overflow-hidden aspect-[4/5] min-h-[350px] max-h-[620px] w-full shadow-lg relative bg-light">
               {/* Optional Placeholder Image for Packaging */}
               <img 
                 src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg" 

@@ -26,7 +26,7 @@ const ScrollEnquiryModal: React.FC = () => {
   const [hasOpened, setHasOpened] = useState(false);
 
   // Form states
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', country: '', city: '', message: '' });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -112,8 +112,13 @@ const ScrollEnquiryModal: React.FC = () => {
         newErrors.phone = isArabic ? "رقم هاتف غير صحيح (10-15 رقم)" : 'Invalid phone number (10-15 digits)';
       }
     }
-    if (formData.email.trim() && !/\S+@\S+\.\S+/.test(formData.email.trim())) {
-      newErrors.email = isArabic ? "بريد إلكتروني غير صحيح" : 'Invalid email';
+    if (!formData.email.trim()) {
+      newErrors.email = isArabic ? "البريد الإلكتروني مطلوب" : 'Email address is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
+      newErrors.email = isArabic ? "بريد إلكتروني غير صحيح" : 'Invalid email address';
+    }
+    if (!formData.country.trim()) {
+      newErrors.country = isArabic ? "الدولة مطلوبة" : 'Country is required';
     }
     if (!formData.message.trim()) newErrors.message = isArabic ? "الرسالة مطلوبة" : 'Message is required';
 
@@ -127,7 +132,7 @@ const ScrollEnquiryModal: React.FC = () => {
       setIsSubmitting(false);
       setIsOpen(false);
       setShowSuccessModal(true);
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', country: '', city: '', message: '' });
     }, 500);
   };
 
@@ -162,7 +167,7 @@ const ScrollEnquiryModal: React.FC = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ type: "spring", duration: 0.5 }}
-              className="relative w-full max-w-lg bg-[#101934] rounded-3xl shadow-2xl overflow-hidden border border-white/10 my-auto z-10"
+              className="relative w-full max-w-lg bg-[#101934] rounded-3xl shadow-2xl overflow-hidden border border-white/10 my-auto z-10 max-h-[85vh] sm:max-h-[90vh] flex flex-col"
               style={{ direction: isArabic ? 'rtl' : 'ltr' }}
             >
               {/* Close Button */}
@@ -178,7 +183,7 @@ const ScrollEnquiryModal: React.FC = () => {
               <div className="absolute top-0 right-0 w-48 h-48 bg-seppa-red rounded-full mix-blend-multiply filter blur-3xl opacity-30 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#cda262] rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
-              <div className="relative z-10 p-8 sm:p-10 text-start">
+              <div className="relative z-10 p-5 sm:p-8 text-start overflow-y-auto">
                 <h3 className="text-2xl sm:text-3xl font-bold font-heading text-white mb-2">{isArabic ? "طلب تسعيرة" : "Request a Quote"}</h3>
                 <p className="text-gray-300 text-sm mb-6">
                   {isArabic 
@@ -190,38 +195,63 @@ const ScrollEnquiryModal: React.FC = () => {
                   <div>
                     <input 
                       type="text" 
-                      placeholder={getT('fields.namePlaceholder') + ' *'} 
+                      placeholder={isArabic ? "الاسم الكامل *" : "Enter your full name *"} 
                       value={formData.name}
                       onChange={(e) => handleInputChange('name', e.target.value)}
                       className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.name ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition`}
                     />
                     {errors.name && <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{errors.name}</p>}
                   </div>
+
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="w-full sm:w-1/2">
                       <input 
                         type="email" 
-                        placeholder={getT('fields.emailPlaceholder')} 
+                        placeholder={isArabic ? "البريد الإلكتروني *" : "Email Address *"} 
                         value={formData.email}
                         onChange={(e) => handleInputChange('email', e.target.value)}
-                        className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.email ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition`}
+                        className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.email ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition truncate`}
                       />
                       {errors.email && <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{errors.email}</p>}
                     </div>
                     <div className="w-full sm:w-1/2">
                       <input 
                         type="tel" 
-                        placeholder={getT('fields.phonePlaceholder') + ' *'} 
+                        placeholder={isArabic ? "رقم الهاتف *" : "Phone Number *"} 
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.phone ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition`}
+                        className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.phone ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition truncate`}
                       />
                       {errors.phone && <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{errors.phone}</p>}
                     </div>
                   </div>
+
+                  {/* Country (Required) and City (Not Required) */}
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="w-full sm:w-1/2">
+                      <input 
+                        type="text" 
+                        placeholder={isArabic ? "الدولة *" : "Country *"} 
+                        value={formData.country}
+                        onChange={(e) => handleInputChange('country', e.target.value)}
+                        className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.country ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition truncate`}
+                      />
+                      {errors.country && <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{errors.country}</p>}
+                    </div>
+                    <div className="w-full sm:w-1/2">
+                      <input 
+                        type="text" 
+                        placeholder={isArabic ? "المدينة (اختياري)" : "City (Optional)"} 
+                        value={formData.city}
+                        onChange={(e) => handleInputChange('city', e.target.value)}
+                        className="w-full px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition truncate"
+                      />
+                    </div>
+                  </div>
+
                   <div>
                     <textarea 
-                      placeholder={getT('fields.messagePlaceholder') + ' *'} 
+                      placeholder={isArabic ? "أخبرنا عن متطلبات المشروع... *" : "Tell us about your project, capacity requirements, and any specific details... *"} 
                       rows={3}
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
@@ -235,7 +265,7 @@ const ScrollEnquiryModal: React.FC = () => {
                     disabled={isSubmitting}
                     className="w-full py-4 bg-seppa-red hover:bg-white hover:text-seppa-red text-white font-bold rounded-xl transition duration-300 mt-2 disabled:opacity-50"
                   >
-                    {isSubmitting ? (isArabic ? 'جاري الإرسال...' : 'Submitting...') : getT('submitButtonText')}
+                    {isSubmitting ? (isArabic ? 'جاري الإرسال...' : 'Submitting...') : (isArabic ? 'إرسال الطلب' : 'Submit Enquiry')}
                   </button>
                 </form>
               </div>
