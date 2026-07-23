@@ -4,6 +4,7 @@ import PageHeader from '@/components/layout/PageHeader';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin, FiGlobe, FiChevronDown, FiChevronUp, FiCheck } from 'react-icons/fi';
 import bannerImg from '@/assets/about-us/generated/header.png';
+import SuccessModal from '@/components/ui/SuccessModal';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -117,6 +118,67 @@ const ContactUs: React.FC = () => {
   const [activeOffice, setActiveOffice] = React.useState<typeof offices[0]>(offices[0]);
   const [expandedCountries, setExpandedCountries] = React.useState<string[]>(["India"]);
 
+  // Form State
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    phone: '',
+    location: '',
+    message: ''
+  });
+  const [errors, setErrors] = React.useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [showSuccessModal, setShowSuccessModal] = React.useState(false);
+
+  const handleInputChange = (field: string, value: string) => {
+    let sanitizedValue = value;
+    if (field === 'phone') {
+      sanitizedValue = value.replace(/[^0-9+\s-]/g, '');
+    }
+    setFormData(prev => ({ ...prev, [field]: sanitizedValue }));
+    if (errors[field]) {
+      setErrors(prev => {
+        const next = { ...prev };
+        delete next[field];
+        return next;
+      });
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const newErrors: Record<string, string> = {};
+
+    if (!formData.name.trim()) newErrors.name = 'Your name is required';
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email address is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Phone number is required';
+    } else {
+      const digitsOnly = formData.phone.replace(/\D/g, '');
+      if (digitsOnly.length < 10 || digitsOnly.length > 15) {
+        newErrors.phone = 'Please enter a valid phone number (10-15 digits)';
+      }
+    }
+    if (!formData.location.trim()) newErrors.location = 'Location is required';
+    if (!formData.message.trim()) newErrors.message = 'Please enter your message';
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setShowSuccessModal(true);
+      setFormData({ name: '', email: '', phone: '', location: '', message: '' });
+    }, 600);
+  };
+
   const groupedOffices = React.useMemo(() => {
     const groups: Record<string, typeof offices> = {};
     offices.forEach(office => {
@@ -128,6 +190,12 @@ const ContactUs: React.FC = () => {
 
   return (
     <div className="bg-gray-50">
+      <SuccessModal 
+        isOpen={showSuccessModal} 
+        onClose={() => setShowSuccessModal(false)} 
+        title="Thank You for Contacting Us!"
+        message="Your message has been sent successfully. Our support team will get in touch with you shortly."
+      />
       <PageHeader 
         title="Contact Us" 
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact Us' }]} 
@@ -183,8 +251,8 @@ const ContactUs: React.FC = () => {
                     <FiMapPin />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">Corporate Office:</h3>
-                    <p className="text-gray-600 leading-relaxed text-sm">712 Shivai Plaza, Andheri(E),<br/>Mumbai-400059, India</p>
+                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">Registered Office:</h3>
+                    <p className="text-gray-600 text-sm">712 Shivai Plaza, Andheri (East), Mumbai-400059, India</p>
                   </div>
                 </div>
               </motion.div>
@@ -198,28 +266,32 @@ const ContactUs: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="bg-[#101934] p-8 lg:p-14 rounded-3xl h-full shadow-2xl relative overflow-hidden">
+              <div className="bg-[#101934] p-8 lg:p-14 rounded-3xl h-full shadow-2xl relative overflow-hidden flex flex-col justify-center">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-seppa-red rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
                 
                 <div className="relative z-10">
                   <h3 className="text-3xl font-bold font-heading text-white mb-8">Send us a message</h3>
-                  <form className="space-y-6">
+                  <form className="space-y-6" onSubmit={handleSubmit} noValidate>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <input 
                           type="text" 
                           placeholder="Your Name *" 
-                          required
-                          className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm" 
+                          value={formData.name}
+                          onChange={(e) => handleInputChange('name', e.target.value)}
+                          className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.name ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
                         />
+                        {errors.name && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.name}</p>}
                       </div>
                       <div>
                         <input 
                           type="email" 
                           placeholder="Email Address *" 
-                          required
-                          className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm" 
+                          value={formData.email}
+                          onChange={(e) => handleInputChange('email', e.target.value)}
+                          className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.email ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
                         />
+                        {errors.email && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.email}</p>}
                       </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -227,32 +299,39 @@ const ContactUs: React.FC = () => {
                         <input 
                           type="tel" 
                           placeholder="Phone Number *" 
-                          required
-                          className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm" 
+                          value={formData.phone}
+                          onChange={(e) => handleInputChange('phone', e.target.value)}
+                          className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.phone ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
                         />
+                        {errors.phone && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.phone}</p>}
                       </div>
                       <div>
                         <input 
                           type="text" 
                           placeholder="Location *" 
-                          required
-                          className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm" 
+                          value={formData.location}
+                          onChange={(e) => handleInputChange('location', e.target.value)}
+                          className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.location ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
                         />
+                        {errors.location && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.location}</p>}
                       </div>
                     </div>
                     <div>
                       <textarea 
                         rows={5} 
-                        required
                         placeholder="Write Message... *" 
-                        className="w-full px-6 py-4 rounded-3xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition resize-none backdrop-blur-sm"
+                        value={formData.message}
+                        onChange={(e) => handleInputChange('message', e.target.value)}
+                        className={`w-full px-6 py-4 rounded-3xl bg-white/10 border ${errors.message ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition resize-none backdrop-blur-sm`}
                       ></textarea>
+                      {errors.message && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.message}</p>}
                     </div>
                     <button 
                       type="submit" 
-                      className="bg-seppa-red text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-seppa-red transition duration-300 w-full md:w-auto shadow-lg"
+                      disabled={isSubmitting}
+                      className="bg-seppa-red text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-seppa-red transition duration-300 w-full md:w-auto shadow-lg disabled:opacity-50"
                     >
-                      Submit Message
+                      {isSubmitting ? 'Sending...' : 'Submit Message'}
                     </button>
                   </form>
                 </div>
