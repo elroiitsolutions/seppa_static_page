@@ -89,7 +89,7 @@ const Header: React.FC = () => {
 
   const linkClass = `font-medium hover:text-gold transition flex items-center gap-0.5 xl:gap-1 py-1.5 text-white ${isGerman ? 'text-[11px] lg:text-xs xl:text-[13px] 2xl:text-base tracking-tight' : 'text-xs xl:text-sm 2xl:text-base'}`;
 
-  const dropdownClass = "absolute top-full left-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
+  const dropdownClass = "absolute top-full left-0 rtl:left-auto rtl:right-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
   const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left text-xs xl:text-sm";
 
   return (
@@ -125,9 +125,9 @@ const Header: React.FC = () => {
               <div className="relative group/sub">
                 <div className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">{menu.petBlowers}</span>
-                  <FiChevronRight className="text-sm opacity-70 shrink-0" />
+                  <FiChevronRight className="text-sm opacity-70 shrink-0 rtl:rotate-180" />
                 </div>
-                <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
+                <div className="absolute top-0 left-full rtl:left-auto rtl:right-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 rtl:-translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
                   <Link href={getLink("/automatic")} className={dropdownItemClass}>{menu.automaticPetBlowers}</Link>
                   <Link href={getLink("/semi-automatic")} className={dropdownItemClass}>{menu.semiAutomaticPetBlowers}</Link>
                   <Link href={getLink("/pet-jars")} className={dropdownItemClass}>{menu.petJarBlowing}</Link>
@@ -152,9 +152,9 @@ const Header: React.FC = () => {
               <div className="relative group/sub">
                 <Link href={getLink("/mineral-water-line-machines")} className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">{menu.mineralWaterLine}</span>
-                  <FiChevronRight className="text-sm opacity-70 shrink-0" />
+                  <FiChevronRight className="text-sm opacity-70 shrink-0 rtl:rotate-180" />
                 </Link>
-                <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
+                <div className="absolute top-0 left-full rtl:left-auto rtl:right-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 rtl:-translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
                   <Link href={getLink("/still-water")} className={dropdownItemClass}>{menu.stillWater}</Link>
                   <Link href={getLink("/mineral-water")} className={dropdownItemClass}>{menu.mineralWater}</Link>
                   <Link href={getLink("/alkaline-water")} className={dropdownItemClass}>{menu.alkalineWater}</Link>
@@ -167,9 +167,9 @@ const Header: React.FC = () => {
               <div className="relative group/sub">
                 <Link href={getLink("/juice")} className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">{menu.juicesNectars}</span>
-                  <FiChevronRight className="text-sm opacity-70 shrink-0" />
+                  <FiChevronRight className="text-sm opacity-70 shrink-0 rtl:rotate-180" />
                 </Link>
-                <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
+                <div className="absolute top-0 left-full rtl:left-auto rtl:right-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 rtl:-translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
                   <Link href={getLink("/juice&nectars")} className={dropdownItemClass}>{menu.juiceNectarsSoftDrinks}</Link>
                   <Link href={getLink("/isotonics")} className={dropdownItemClass}>{menu.isotonics}</Link>
                   <Link href={getLink("/teas")} className={dropdownItemClass}>{menu.teas}</Link>

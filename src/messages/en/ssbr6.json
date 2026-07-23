@@ -1,0 +1,93 @@
+{
+  "title": "SEPPA SSB-R6: Engineering Continuous-Motion Rotary PET Production",
+  "breadcrumbName": "SSB-R6",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Overview of the SEPPA SSB-R6 Rotary PET Blowing Machine",
+  "overviewDescription": "Cycle time decides whether a PET line pays for itself. Every fraction of a second lost to preform handling, uneven heating, or mold hesitation compounds across a shift. Eliminating that loss is exactly what the SEPPA SSB-R6 rotary blow molding machine is built for. Unlike linear blow moulding equipment, which stops, blows, and restarts in discrete steps, the SSB-R6 keeps preforms moving through the entire process on a continuously rotating carousel, turning stop start interruptions into one motion path.",
+  "overviewsubDescription": [
+    "A rotary blow molding machine does not just move faster on paper; it removes the acceleration and deceleration losses that eat into a linear system's output. Seppa Solutions engineered the SSB-R6 around that principle, pairing a rigid rotary frame with synchronized cam driven cavity actuation so every station hits its precise angular position, cycle after cycle.",
+    "The result is a rotary pet machine that holds tight wall thickness tolerances at output rates a conventional line's structural components would struggle to survive. For bottlers where downtime means lost revenue, that margin is the difference between a machine that lasts a decade and one needing mid life rebuilds. It's the standard Seppa holds itself to as one of the region's established pet blow moulding machine manufacturers."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications of the SSB-R6",
+  "features": [
+    {
+      "title": "Synchronized Rotary Carousel",
+      "description": "A synchronized rotary motion carousel driven by a single master cam track sits at the center of the SSB-R6, keeping preform transfer, heating exposure, and mold closure locked to one mechanical reference instead of several independently timed subsystems. This is what separates a genuinely high performance rotary blowing machine from a rebadged linear design with a circular frame bolted on."
+    },
+    {
+      "title": "Zoned IR Thermal Conditioning",
+      "description": "Thermal conditioning runs through a multi zone infrared oven with individually controlled lamp banks, letting operators tune heat input by preform wall section instead of applying one blanket profile. Because dwell time inside a rotary blow molding machine's heating tunnel is fixed by carousel speed, the SSB-R6 compensates with lamp density mapping and rotating preform spindles that even out surface exposure. Skip this and a rotary pet machine starts producing hazy sidewalls, no matter how good the mold is."
+    },
+    {
+      "title": "Robust Mold Locking & Pneumatics",
+      "description": "Mold locking uses a toggle and hydraulic hybrid rated for repeated high frequency actuation, built to resist the fatigue loading of thousands of clamp and release cycles per hour. Electronic pressure profiling on the stretch blow air circuit independently controls pre blow, high pressure blow, and exhaust phases per cavity, keeping material distribution consistent through a shift. Energy recovery on the pneumatic circuit reclaims exhaust air from the blow phase and redirects it to pre blow functions elsewhere on the carousel. Few rotary blow molding machine platforms in this output class offer that as standard."
+    }
+  ],
+  "applicationsTitle": "Applications Across Beverage and Packaging Industries",
+  "applicationsSubtitle": "Versatility on a rotary platform comes down to how well the rotary blow molding machine tolerates different preform geometries without a full retooling.",
+  "applications": [
+    {
+      "title": "CSD (Carbonated Soft Drinks)",
+      "description": "CSD lines need bottles that hold internal pressure without panel distortion, which demands wall thickness uniformity. This is exactly where a synchronized rotary blowing machine has an edge over shuttle systems prone to thickness drift at speed."
+    },
+    {
+      "title": "Water Bottling",
+      "description": "Water bottling, especially at the ultra high volume end, cares more about raw throughput and light weighting than pressure retention. The SSB-R6 handles both extremes by adjusting heating profiles and blow pressure curves through its control interface rather than mechanical changeover, which is part of why bottlers running mixed SKUs standardize on a single rotary pet machine platform."
+    },
+    {
+      "title": "Juices and Edible Oils",
+      "description": "Beyond water and CSD, the same rotary blow molding machine handles juice, isotonic beverages, and edible oil containers, each with different wall thickness and clarity demands, versatility most fixed format blow moulding equipment can't match. Treating heating, transfer, and blow molding as one system rather than three loosely connected stations is what lets a single machine serve this range without losing consistency between runs."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for PET Blowing Machines?",
+    "description": "Building a rotary blow molding machine that holds tolerance at speed takes more than assembling known components; it takes understanding how rotary motion dynamics compound across dozens of stations running in constant synchronization. Seppa Solutions has built that understanding into every SSB-R6 unit, from the master cam geometry to the pneumatic circuit layout.",
+    "paragraphs": [
+      "Major FMCG bottling operations don't select equipment partners on brochure claims; they audit uptime records, mean time between failure data, and field service response times. Among pet blow moulding machine manufacturers, Seppa's track record on those metrics keeps repeat orders coming from multi line facilities rather than one off buyers.",
+      "That track record extends to turnkey integration. Seppa doesn't just supply a rotary blowing machine and walk away—the team handles conveyor integration, air compressor sizing, and control system commissioning as part of delivery, often the difference between hitting rated output in week one and taking months to stabilize. That full scope approach is what positions Seppa among the pet blow moulding machine manufacturers capable of delivering genuinely high uptime rotary blow molding machine infrastructure."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology of the SSB-R6 PET Bottle Blowing Process",
+    "subtitle": "The process starts with continuous preform infeed, where preforms are picked from a hopper or pre sorted rail and loaded onto carousel spindles without stopping the line. From there:",
+    "steps": [
+      {
+        "title": "Thermal conditioning zone",
+        "description": "Preforms pass through the thermal conditioning zone, where infrared lamp banks and spindle rotation bring the preform wall to its stretch ready temperature window far faster than a static oven could manage."
+      },
+      {
+        "title": "Rotary transfer & Multi stage blowing",
+        "description": "Synchronized rotary transfer moves the heated preform to the blow molding station, timed to the master cam. Pre-blow at lower pressure shapes the preform, and high pressure blowing exceeding 35 bar completes wall formation. Because this happens on a moving carousel rather than a stationary shuttle, the machine runs the sequence without pausing preform flow."
+      },
+      {
+        "title": "Rapid automated discharge",
+        "description": "Finished bottles eject onto a conveyor as the carousel rotates into the next infeed cycle. This continuous approach is structurally different from linear blow moulding equipment, where each stage waits for the previous one to clear before advancing—a dependency that caps throughput."
+      }
+    ],
+    "outro": []
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How often does a rotary pet machine need scheduled maintenance?",
+      "answer": "Intervals depend on shift pattern and bottle format, but the SSB-R6's toggle and hydraulic locking system and reduced vibration profile push service intervals longer than linear blow moulding equipment running comparable volumes. Lubrication points on the master cam track and blow station seals need the closest attention."
+    },
+    {
+      "question": "How does the SSB-R6 maintain structural stability at high rotational speeds?",
+      "answer": "Stability comes from the rigid rotary frame and the single master cam reference that times every station identically, rather than multiple independently controlled drives that can drift out of sync. Cavity locking is rated for repeated high frequency actuation, not adapted from a lower speed design."
+    },
+    {
+      "question": "Why do bottlers choose Seppa as their rotary blowing machine provider?",
+      "answer": "Uptime and total cost of ownership are usually the deciding factors. Seppa's field service data and turnkey integration approach reduce the operational risk that comes with any high speed rotary blow molding machine investment."
+    },
+    {
+      "question": "What's the real difference between rotary and linear blow moulding equipment?",
+      "answer": "Linear systems process bottles in discrete, stop start stages, capping throughput at whatever the slowest station allows. A rotary blow molding machine keeps preforms in continuous motion through heating, transfer, and blow molding, removing the acceleration losses built into shuttle designs."
+    },
+    {
+      "question": "What makes Seppa Solutions a leader in the global rotary market?",
+      "answer": "Seppa's combination of synchronized cavity control, energy recovering pneumatics, and full turnkey commissioning has made its rotary pet machine platforms a reference point among pet blow moulding machine manufacturers serving high volume FMCG bottling operations worldwide."
+    }
+  ]
+}

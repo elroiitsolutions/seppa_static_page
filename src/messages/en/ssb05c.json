@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-05C Semi Automatic PET Blowing Machine: Engineering Precision for Small-to-Medium Scale Production",
+  "breadcrumbName": "SSB-05C",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Overview of the SEPPA SSB-05C Semi Automatic PET Blowing Machine",
+  "overviewDescription": "A PET container only looks simple once it's finished. Before that, it's a preform in an IR oven, softening at a rate that has to match the mold cycle almost to the second, or the wall thickness comes out wrong. The SEPPA SSB-05C was built for that problem: a semi automatic plastic bottle making machine for manufacturers who need repeatable output without a fully automated line before volumes justify it.",
+  "overviewsubDescription": [
+    "Semi automatic operation isn't a compromise. It's a deliberate choice. An operator loads preforms, the machine handles heating, transfer, and blow molding, and that human checkpoint gives small producers quality control that fully automated systems don't always allow at low to mid volumes. For a facility running a few thousand to tens of thousands of bottles a day, this plastic bottle manufacturing machine strikes a balance that larger, fully automatic bottle manufacturing machine lines can't easily replicate.",
+    "What sets the SSB-05C apart isn't one headline feature. It comes down to how the heating, clamping, and stretch blow subsystems are tuned together. Get one out of sync and you'll see it fast: uneven wall thickness, hazing near the neck, a failed drop test."
+  ],
+  "featuresTitle": "Key Features & Technical Advantages",
+  "features": [
+    {
+      "title": "Infrared Heating and Thermal Consistency",
+      "description": "Preform reheat is where most quality problems start, so the SSB-05C uses staged infrared zones with independently adjustable lamp intensity. The lamp banks on this plastic bottle making machine let operators profile the heat curve for different preform weights instead of running every job on one setting."
+    },
+    {
+      "title": "Mold Cooling and Cycle Time",
+      "description": "Cooling channels run through the mold body to pull heat out of the freshly blown container fast enough to hold dimensional accuracy without dragging out the cycle. Faster cooling means less warpage on tall or asymmetric shapes."
+    },
+    {
+      "title": "Pneumatics and Air Efficiency",
+      "description": "The SSB-05C's dual stage system uses a lower pressure pre blow to start the stretch, then switches to high pressure air once the preform is already partway into the mold cavity. This sequencing cuts wasted air compared to single stage systems on a bottle manufacturing machine running near capacity."
+    }
+  ],
+  "applicationsTitle": "Applications Across Industries",
+  "applicationsSubtitle": "Versatility is the whole pitch for a machine at this scale. The SSB-05C is a bottle manufacturing machine that handles multiple applications:",
+  "applications": [
+    {
+      "title": "Packed Drinking Water Bottle Production",
+      "description": "Deals with mineral water and packed drinking water bottle production, with transparency and accuracy of the neck being essential."
+    },
+    {
+      "title": "CSD (Carbonated Soft Drinks)",
+      "description": "Operates equally well in the carbonated soft drinks production line where the container must resist pressure without cracking at the bottom."
+    },
+    {
+      "title": "Cosmetics, Personal Care & Chemicals",
+      "description": "Handles specialized containers such as cosmetic jars, personal care bottles, and light chemicals, which have different wall thickness and transparency than those required for beverages."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions",
+    "description": "Seppa Solutions has spent years refining thermal conditioning curves across preform weights, resin grades, and neck finish standards. That data shows up in how the SSB-05C is tuned out of the box, not left for the customer to find by trial and error.",
+    "paragraphs": [
+      "Every plastic bottle making machine and pet bottle manufacturing machine leaving the Seppa facility runs on infrastructure the company controls end to end—mold fabrication, pneumatics, electronics—instead of assembled third party components.",
+      "On the plastic bottle making machine price question specifically, Seppa positions the SSB-05C for scalable growth: entrepreneurs and mid sized producers get a pet bottle manufacturing machine that doesn't demand automated line capital before volume justifies it, with a clear upgrade path once it does."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the SEPPA SSB-05C Works",
+    "subtitle": "The process starts with manual preform loading, where an operator positions preforms in the heating carousel for even exposure:",
+    "steps": [
+      {
+        "title": "IR Thermal Conditioning",
+        "description": "Preforms pass through staged infrared lamps that bring the PET to its stretch-ready range without overheating the neck finish."
+      },
+      {
+        "title": "Mold Transfer",
+        "description": "The conditioned preform moves into the clamped mold cavity, where positioning accuracy determines whether the finished bottle comes out symmetrical."
+      },
+      {
+        "title": "Dual Stage Blowing & Final Air Shaping",
+        "description": "This plastic bottle making machine applies a low pressure pre blow to stretch the preform axially, then a high pressure final blow into full contact with the mold walls. Sustained high pressure air holds the material against the cooled mold surface long enough to set the shape."
+      }
+    ],
+    "outro": [
+      "Each stage feeds the next. Skip one and the defect shows up downstream, usually where it's hardest to trace."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How do I maintain a plastic bottle manufacturing machine like the SSB-05C?",
+      "answer": "Routine maintenance on this plastic bottle making machine centers on IR lamp inspection, mold cooling channel cleaning, and pneumatic seal checks. Lamps tend to degrade gradually rather than fail outright."
+    },
+    {
+      "question": "How does this plastic bottle making machine achieve uniform wall thickness?",
+      "answer": "It comes down to matching preform reheat profiles to the dual-stage blowing sequence. The pre blow stretches material axially, then the high pressure stage pushes it radially into the mold."
+    },
+    {
+      "question": "Why does Seppa's plastic bottle making machine outperform older, legacy designs?",
+      "answer": "Older single stage designs push all the air pressure in at once. Staging the blow, and pairing it with independently tunable IR zones, gives this plastic bottle making machine finer control over where material actually goes."
+    },
+    {
+      "question": "How does the plastic bottle making machine price reflect its total lifecycle value?",
+      "answer": "Part of what you're paying for is tool less mold changeover, energy efficient pneumatics, and a cooling channel design that cuts cycle time. Those features lower operating cost over years of use."
+    },
+    {
+      "question": "What makes Seppa Solutions the benchmark for bottle manufacturing machine performance?",
+      "answer": "Seppa builds and controls the core subsystems in house instead of sourcing generic components. Producers running a Seppa pet bottle manufacturing machine get thermal conditioning data specific to their resin and preform."
+    }
+  ]
+}

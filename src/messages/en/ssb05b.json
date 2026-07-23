@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-05B Semi Automatic PET Blowing Machine: Precision Engineering for Container Production",
+  "breadcrumbName": "SSB-05B",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Overview of SEPPA SSB-05B Semi Automatic PET Blowing Machine",
+  "overviewDescription": "Small and medium beverage producers face a recurring problem: getting bottle quality that rivals a full automatic line without the capital outlay one demands. The SEPPA SSB-05B answers that directly. Built as a semi automatic plastic bottle seal machine, it puts the operator in control of preform loading and cycle initiation while automating the parts that determine bottle integrity: infrared conditioning, stretch blow timing, and mold side sealing pressure.",
+  "overviewsubDescription": [
+    "A plastic bottle seal machine that leans too heavily on automation strips away the operator's ability to catch a bad preform batch before it becomes forty seconds of wasted mold cycle. The SSB-05B keeps a human in the loop at the loading stage, then hands off to tightly controlled pneumatics for everything downstream.",
+    "The result is a pet packaging machine that small manufacturers can run profitably on modest production volumes, without sacrificing the wall thickness consistency that larger buyers expect from a mineral water bottle making machine."
+  ],
+  "featuresTitle": "Key Features & Technical Specifications",
+  "features": [
+    {
+      "title": "2 Cavity Optimized Output",
+      "description": "The SSB-05B is configured as a 2 cavity pet bottle blowing machine, which means every cycle produces two finished containers instead of one. For operations running 8-12 hour shifts, that cavity count roughly doubles throughput compared to single cavity units without requiring a second machine footprint."
+    },
+    {
+      "title": "Segmented Infrared Conditioning",
+      "description": "Heating is handled through segmented infrared lamp banks arranged around the preform's rotation path. Each zone can be tuned independently, so the shoulder of the preform doesn't overheat while the base is still under-conditioned. Getting this zone control right is what separates quality output from drop-test failures."
+    },
+    {
+      "title": "Integrated Mold Cooling Channels",
+      "description": "Dedicated cooling channels running through the cavity block pull heat out fast enough so the PET resin holds its shape the instant high-pressure air finishes forming it against the mold wall. Compressed air consumption sits in a range most small workshops can support off a standard 7.5HP compressor."
+    }
+  ],
+  "applicationsTitle": "Applications of the SSB-05B PET Blowing Machine",
+  "applicationsSubtitle": "Versatile format handling across multiple container weight requirements and shapes:",
+  "applications": [
+    {
+      "title": "Mineral Water Bottle Production",
+      "description": "Standard 200ml to 2L water bottles run at consistent cycle times with minimal mold changeover, delivering reliable base and shoulder thickness."
+    },
+    {
+      "title": "Beverage & Food Containers",
+      "description": "Edible oil bottles, condiment jars, and carbonated soft drink containers with heavier wall requirements run on the same platform with mold and heating profile adjustments."
+    },
+    {
+      "title": "Flexible SKU Scheduling",
+      "description": "Tool-less mold changeover keeps the switch between applications fast enough that a single machine can serve mixed SKUs without dedicating separate lines to every shape."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions?",
+    "description": "Seppa Solutions has spent years refining the thermal conditioning curves that make a mineral water bottle making machine produce consistent bottles instead of a mixed batch of good and marginal ones.",
+    "paragraphs": [
+      "IR curve tuning is the biggest variable separating a reliable plastic bottle seal machine from one that needs constant operator babysitting, and it's the part we treat with maximum engineering focus.",
+      "FMCG bottlers who've scaled past their first machine tend to come back to Seppa for their second and third units because the pet packaging machine they bought years ago still runs the same wall thickness tolerances today."
+    ]
+  },
+  "methodology": {
+    "title": "Working Methodology of SEPPA SSB-05B",
+    "subtitle": "The blow molding process follows a clean, mechanical cycle with operator feedback:",
+    "steps": [
+      {
+        "title": "Manual Preform Inspection & Load",
+        "description": "The operator seats the preform into the heating carousel by hand, allowing a visual check for flash, contamination, or defects before it enters the working cycle."
+      },
+      {
+        "title": "Zoned IR Softening Tunnel",
+        "description": "The preform moves through the IR thermal conditioning zone where lamp intensity and rotation speed match the resin's crystallinity profile so the material softens evenly."
+      },
+      {
+        "title": "Biaxial Orientation & High Pressure Blow",
+        "description": "Mold transfer clamps the preform. Low pressure pre-blow stretches the preform axially, then high pressure air (30-38 bar) forces the PET against the mold walls to lock in the final shape and neck thread parameters."
+      }
+    ],
+    "outro": [
+      "This balanced approach combines human visual quality control with automatic high-pressure mechanical execution."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "Is a 2 cavity pet bottle blowing machine worth it over a single cavity plastic bottle seal machine?",
+      "answer": "For most multi shift operations, yes. The throughput gain covers the price difference within a year, and the footprint stays nearly identical to a single cavity unit."
+    },
+    {
+      "question": "How often does a 2 cavity pet bottle blowing machine need maintenance?",
+      "answer": "Mold cavities should be inspected for scoring or buildup roughly every 50,000-70,000 cycles, and IR lamps typically need replacement every 3,000-4,000 hours."
+    },
+    {
+      "question": "How do you get uniform wall thickness on a plastic bottle seal machine?",
+      "answer": "It comes down to matching pre blow air pressure and timing to the specific preform's crystallinity and wall profile."
+    },
+    {
+      "question": "Why does Seppa's blow moulding equipment outperform older designs?",
+      "answer": "Segmented IR heating zones and dedicated mold cooling channels are the two upgrades that matter most in any modern pet packaging machine."
+    },
+    {
+      "question": "How important is thermal conditioning for a mineral water bottle making machine?",
+      "answer": "It's arguably the single most important variable. Under-conditioned PET won't stretch evenly; over-conditioned PET can crystallize and turn cloudy."
+    }
+  ]
+}

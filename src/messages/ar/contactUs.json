@@ -1,0 +1,118 @@
+{
+  "breadcrumbsHome": "الرئيسية",
+  "breadcrumbsContact": "اتصل بنا",
+  "title": "اتصل بنا",
+  "headquarters": "المقر الرئيسي",
+  "getInTouch": "تواصل معنا",
+  "subtitle": "تواصل مع مقر شركتنا أو استكشف مكاتبنا الفرعية العالمية للتواصل مع ممثل قريب منك.",
+  "tollFree": "الرقم المجاني:",
+  "quickEmail": "البريد الإلكتروني السريع:",
+  "registeredOffice": "المكتب المسجل:",
+  "sendMessage": "أرسل لنا رسالة",
+  "placeholderName": "اسمك *",
+  "placeholderEmail": "عنوان البريد الإلكتروني *",
+  "placeholderPhone": "رقم الهاتف *",
+  "placeholderLocation": "الموقع *",
+  "placeholderMessage": "اكتب رسالة... *",
+  "btnSubmit": "إرسال الرسالة",
+  "btnSending": "جاري الإرسال...",
+  "network": "شبكتنا",
+  "branchOffices": "الفروع العالمية",
+  "selectOffice": "حدد مكتباً أدناه لعرض موقعه على الخريطة.",
+  "showing": "عرض:",
+  "errName": "الاسم مطلوب",
+  "errEmailRequired": "البريد الإلكتروني مطلوب",
+  "errEmailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+  "errPhoneRequired": "رقم الهاتف مطلوب",
+  "errPhoneInvalid": "يرجى إدخال رقم هاتف صحيح (10-15 رقماً)",
+  "errLocation": "الموقع مطلوب",
+  "errMessage": "يرجى كتابة رسالتك",
+  "successTitle": "شكراً لتواصلك معنا!",
+  "successMsg": "تم إرسال رسالتك بنجاح. سيتصل بك فريق الدعم في أقرب وقت ممكن.",
+  "offices": [
+    {
+      "city": "مومباي (المكتب الرئيسي)",
+      "address": "٧١٢ شيفاي بلازا، أنديري (شرق)، مومباي-٤٠٠٠٥٩، الهند",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "الهند"
+    },
+    {
+      "city": "تشيناي",
+      "address": "عقار فاتسالا إيشواران، رقم ٧، طريق باريفاكام، تشيناي - ٦٠٠٠٥٦، تاميل نادو، الهند",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "dgmw@canadiancrystalline.net",
+      "country": "الهند"
+    },
+    {
+      "city": "بنغالور",
+      "address": "الطابق الرابع، مكتب نوفيل، بيجوم محل، ييلاباتشيتي لايوت، بنغالور- ٥٦٠٠٤٢",
+      "phone": ["+91-9483525500"],
+      "email": "info@seppasolutions.com",
+      "country": "الهند"
+    },
+    {
+      "city": "نيودلهي",
+      "address": "رقم ١٣٠٥، الطابق ١٣، أبراج فيكرام، مبنى رقم ١٦، راجندرا بليس، نيودلهي - ١١٠٠٠٨",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "الهند"
+    },
+    {
+      "city": "حيدر آباد",
+      "address": "منطقة حيدر آباد",
+      "phone": ["+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "الهند"
+    },
+    {
+      "city": "الولايات المتحدة الأمريكية",
+      "address": "٤٣٩ طريق إن بريري، منطقة بيري الصناعية، إيرفينغ، تكساس",
+      "phone": ["الرقم المجاني: 1-(888)-270-2217", "+1 267 7339 732"],
+      "email": "mail@seppasolutions.com",
+      "country": "الولايات المتحدة الأمريكية"
+    },
+    {
+      "city": "كندا (إدمونتون)",
+      "address": "منطقة ألبرتا",
+      "phone": ["+1-(403)-469-4015"],
+      "email": "ccw@canadianclear.com",
+      "country": "كندا"
+    },
+    {
+      "city": "الإمارات العربية المتحدة",
+      "address": "منطقة عجمان الحرة، الإمارات العربية المتحدة",
+      "phone": ["+971507726933"],
+      "email": "mail@seppasolutions.com",
+      "country": "الإمارات العربية المتحدة"
+    },
+    {
+      "city": "المملكة المتحدة",
+      "address": "منطقة المملكة المتحدة",
+      "phone": ["+44 20300 27711"],
+      "email": "mail@seppasolutions.com",
+      "country": "المملكة المتحدة"
+    },
+    {
+      "city": "ألمانيا وبلجيكا",
+      "address": "منطقة بروكسل",
+      "phone": ["+4917622913101"],
+      "email": "ccw@canadianclear.com",
+      "country": "أوروبا"
+    },
+    {
+      "city": "أستراليا",
+      "address": "منطقة أستراليا",
+      "phone": ["+61363877084"],
+      "email": "mail@seppasolutions.com",
+      "country": "أستراليا"
+    },
+    {
+      "city": "أرمينيا",
+      "address": "منطقة أرمينيا",
+      "phone": ["+37494890965"],
+      "email": "mail@seppasolutions.com",
+      "country": "أرمينيا"
+    }
+  ]
+}

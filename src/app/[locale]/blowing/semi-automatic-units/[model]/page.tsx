@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
-import overviewImg from '@/assets/blowing/generated/blowing_overview_1781759662496.png';
+import overviewImg from '@/assets/processing/generated/processing_overview_1781759112202.png';
 import img1 from '@/assets/processing/generated/processing_cb1_1781759122683.png';
 import img2 from '@/assets/processing/generated/processing_cb2_1781759136791.png';
 import over from '@/assets/processing/generated/processing_whychoose_1781759182691.png';
@@ -14,7 +14,7 @@ import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.
 import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
 import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
 
-const models = ['ssb-sle-40', 'ssb-sle-60', 'ssb-sle-80', 'ssb-sle-100', 'ssb-sle-120', 'ssb-sle-150'];
+const models = ['ssb-05a', 'ssb-05b', 'ssb-05c', 'ssb-20c', 'ssb-2d', 'ssb-2d-at', 'ssb-2dat', 'ssb-4d', 'ssb-4d-at', 'ssb-4dat'];
 
 export function generateStaticParams() {
   const locales = routing.locales;
@@ -31,13 +31,12 @@ interface PageProps {
   params: Promise<{ locale: string; model: string }>;
 }
 
-export default async function ElectricSsbSleModelPage({ params }: PageProps) {
+export default async function SemiAutoModelPage({ params }: PageProps) {
   const { locale, model } = await params;
   setRequestLocale(locale);
 
-  // Normalize model param to namespace e.g. "ssb-sle-40" -> "ssbsle40", "ssb-sle-15-" -> "ssbsle150"
-  const modelClean = model.replace(/-/g, '');
-  const namespace = modelClean === 'ssbsle15' ? 'ssbsle150' : modelClean;
+  // Normalize model param to namespace e.g. "ssb-05a" -> "ssb05a", "ssb-2d-at" -> "ssb2dat"
+  const namespace = model.replace(/-/g, '');
 
   const t = await getTranslations({ locale, namespace });
   const messages = await getMessages({ locale });

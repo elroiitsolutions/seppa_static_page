@@ -116,11 +116,13 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
                   className="w-full lg:w-1/2 group relative"
                 >
                   <div className="rounded-[2rem] overflow-hidden aspect-[4/3] shadow-2xl relative">
-                    <img 
-                      src={step.image} 
-                      alt={step.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                    />
+                    {step.image ? (
+                      <img 
+                        src={step.image} 
+                        alt={step.title} 
+                        className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                      />
+                    ) : null}
                     <div className="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500"></div>
                   </div>
                 </motion.div>
