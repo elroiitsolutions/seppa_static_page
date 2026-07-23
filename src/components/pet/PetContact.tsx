@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
+import SuccessModal from '@/components/ui/SuccessModal';
 
 import { usePathname } from 'next/navigation';
 import enEnquiry from '@/messages/en/enquiry.json';
@@ -22,6 +23,71 @@ const PetContact = () => {
   const isArabic = pathname.startsWith('/ar');
   const isDe = pathname.startsWith('/de');
 
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    phone: '',
+    packagingType: isArabic ? "استفسار عن التعبئة والتغليف" : "Packaging Inquiry",
+    message: ''
+  });
+  const [errors, setErrors] = React.useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [showSuccessModal, setShowSuccessModal] = React.useState(false);
+
+  const handleInputChange = (field: string, value: string) => {
+    let sanitizedValue = value;
+    if (field === 'phone') {
+      sanitizedValue = value.replace(/[^0-9+\s-]/g, '');
+    }
+    setFormData(prev => ({ ...prev, [field]: sanitizedValue }));
+    if (errors[field]) {
+      setErrors(prev => {
+        const next = { ...prev };
+        delete next[field];
+        return next;
+      });
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const newErrors: Record<string, string> = {};
+
+    if (!formData.name.trim()) newErrors.name = isArabic ? "الاسم مطلوب" : 'Name is required';
+    if (!formData.email.trim()) {
+      newErrors.email = isArabic ? "البريد الإلكتروني مطلوب" : 'Email address is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
+      newErrors.email = isArabic ? "يرجى إدخال بريد إلكتروني صحيح" : 'Please enter a valid email address';
+    }
+    if (!formData.phone.trim()) {
+      newErrors.phone = isArabic ? "رقم الهاتف مطلوب" : 'Phone number is required';
+    } else {
+      const digitsOnly = formData.phone.replace(/\D/g, '');
+      if (digitsOnly.length < 10 || digitsOnly.length > 15) {
+        newErrors.phone = isArabic ? "يرجى إدخال رقم هاتف صحيح (10-15 رقم)" : 'Please enter a valid phone number (10-15 digits)';
+      }
+    }
+    if (!formData.message.trim()) newErrors.message = isArabic ? "الرسالة مطلوبة" : 'Message is required';
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setShowSuccessModal(true);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        packagingType: isArabic ? "استفسار عن التعبئة والتغليف" : "Packaging Inquiry",
+        message: ''
+      });
+    }, 600);
+  };
+
   const getT = (key: string) => {
     const keys = key.split('.');
     let val: any = isArabic ? arEnquiry : enEnquiry;
@@ -33,6 +99,12 @@ const PetContact = () => {
 
   return (
     <section className="py-20 lg:py-28 bg-light overflow-hidden">
+      <SuccessModal 
+        isOpen={showSuccessModal} 
+        onClose={() => setShowSuccessModal(false)} 
+        title={isArabic ? "شكراً لاستفسارك!" : "Thank You for Your Enquiry!"}
+        message={isArabic ? "تم استلام استفسارك بنجاح. سيتواصل معك فريقنا في أقرب وقت." : "Your quote request has been received. Our specialists will reach out to you shortly."}
+      />
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16" style={{ direction: isArabic ? 'rtl' : 'ltr' }}>
           
@@ -100,25 +172,31 @@ const PetContact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-white p-10 lg:p-14 rounded-[2rem] h-full shadow-lg border border-gray-100">
+            <div className="bg-white p-10 lg:p-14 rounded-[2rem] h-full shadow-lg border border-gray-100 flex flex-col justify-center">
               <h3 className="text-3xl font-bold font-heading text-dark mb-8">{isArabic ? "طلب تسعيرة" : "Request a Quote"}</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit} noValidate>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <input 
                       suppressHydrationWarning
                       type="text" 
                       placeholder={getT('fields.namePlaceholder')} 
-                      className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
+                      value={formData.name}
+                      onChange={(e) => handleInputChange('name', e.target.value)}
+                      className={`w-full px-6 py-4 rounded-full bg-light border ${errors.name ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm`} 
                     />
+                    {errors.name && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.name}</p>}
                   </div>
                   <div>
                     <input 
                       suppressHydrationWarning
                       type="email" 
                       placeholder={getT('fields.emailPlaceholder')} 
-                      className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
+                      value={formData.email}
+                      onChange={(e) => handleInputChange('email', e.target.value)}
+                      className={`w-full px-6 py-4 rounded-full bg-light border ${errors.email ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm`} 
                     />
+                    {errors.email && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.email}</p>}
                   </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -127,15 +205,19 @@ const PetContact = () => {
                       suppressHydrationWarning
                       type="tel" 
                       placeholder={getT('fields.phonePlaceholder')} 
-                      className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange('phone', e.target.value)}
+                      className={`w-full px-6 py-4 rounded-full bg-light border ${errors.phone ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm`} 
                     />
+                    {errors.phone && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.phone}</p>}
                   </div>
                   <div>
                     <input 
                       suppressHydrationWarning
                       type="text" 
                       placeholder={isArabic ? "نوع التعبئة والتغليف" : "Packaging Type"} 
-                      defaultValue={isArabic ? "استفسار عن التعبئة والتغليف" : "Packaging Inquiry"}
+                      value={formData.packagingType}
+                      onChange={(e) => handleInputChange('packagingType', e.target.value)}
                       className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
                     />
                   </div>
@@ -145,15 +227,19 @@ const PetContact = () => {
                     suppressHydrationWarning
                     rows={5} 
                     placeholder={isArabic ? "أخبرنا عن متطلبات التعبئة والتغليف الخاصة بك..." : "Tell us about your packaging requirements..."} 
-                    className="w-full px-6 py-4 rounded-3xl bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm resize-none"
+                    value={formData.message}
+                    onChange={(e) => handleInputChange('message', e.target.value)}
+                    className={`w-full px-6 py-4 rounded-3xl bg-light border ${errors.message ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm resize-none`}
                   ></textarea>
+                  {errors.message && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.message}</p>}
                 </div>
                 <button 
                   suppressHydrationWarning
                   type="submit" 
-                  className="bg-[#101934] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-seppa-red transition duration-300 w-auto inline-block"
+                  disabled={isSubmitting}
+                  className="bg-[#101934] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-seppa-red transition duration-300 w-auto inline-block disabled:opacity-50"
                 >
-                  {getT('submitButtonText')}
+                  {isSubmitting ? (isArabic ? 'جاري الإرسال...' : 'Submitting...') : getT('submitButtonText')}
                 </button>
               </form>
             </div>

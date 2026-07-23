@@ -18,6 +18,24 @@ const Footer: React.FC = () => {
   
   const f = isArabic ? arFooter : isGerman ? deFooter : enFooter;
 
+  const [newsletterEmail, setNewsletterEmail] = React.useState('');
+  const [newsletterSubscribed, setNewsletterSubscribed] = React.useState(false);
+  const [newsletterError, setNewsletterError] = React.useState('');
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newsletterEmail.trim() || !/\S+@\S+\.\S+/.test(newsletterEmail.trim())) {
+      setNewsletterError(isArabic ? 'يرجى إدخال بريد إلكتروني صحيح' : 'Please enter a valid email');
+      return;
+    }
+    setNewsletterError('');
+    setNewsletterSubscribed(true);
+    setNewsletterEmail('');
+    setTimeout(() => {
+      setNewsletterSubscribed(false);
+    }, 4000);
+  };
+
   const getLink = (path: string) => {
     if (path === '/') return isArabic ? '/ar' : isGerman ? '/de' : '/en';
     const prefix = isArabic ? '/ar' : isGerman ? '/de' : '/en';
@@ -45,22 +63,37 @@ const Footer: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <h3 className="text-xl font-heading font-bold">{f.subscribeNewsletter}</h3>
-            <form className="flex w-full sm:w-auto">
-              <input 
-                suppressHydrationWarning
-                type="email" 
-                placeholder={f.enterEmail} 
-                required
-                className="bg-white/10 backdrop-blur-sm text-white px-6 py-4 rounded-l-lg w-full sm:w-[300px] focus:outline-none border border-white/20 border-r-0 placeholder-gray-400"
-              />
-              <button 
-                suppressHydrationWarning
-                type="submit" 
-                className="bg-seppa-red text-white px-6 py-4 rounded-r-lg hover:bg-white hover:text-[#101934] transition flex items-center justify-center"
-              >
-                <FiArrowUpRight size={20} />
-              </button>
-            </form>
+            {newsletterSubscribed ? (
+              <div className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-6 py-3 rounded-lg text-sm font-medium">
+                ✓ {isArabic ? 'تم الاشتراك بنجاح!' : 'Subscribed successfully!'}
+              </div>
+            ) : (
+              <div className="flex flex-col">
+                <form className="flex w-full sm:w-auto" onSubmit={handleNewsletterSubmit} noValidate>
+                  <input 
+                    suppressHydrationWarning
+                    type="email" 
+                    placeholder={f.enterEmail} 
+                    value={newsletterEmail}
+                    onChange={(e) => {
+                      setNewsletterEmail(e.target.value);
+                      if (newsletterError) setNewsletterError('');
+                    }}
+                    className={`bg-white/10 backdrop-blur-sm text-white px-6 py-4 rounded-l-lg w-full sm:w-[300px] focus:outline-none border ${newsletterError ? 'border-red-400' : 'border-white/20'} border-r-0 placeholder-gray-400`}
+                  />
+                  <button 
+                    suppressHydrationWarning
+                    type="submit" 
+                    className="bg-seppa-red text-white px-6 py-4 rounded-r-lg hover:bg-white hover:text-[#101934] transition flex items-center justify-center"
+                  >
+                    <FiArrowUpRight size={20} />
+                  </button>
+                </form>
+                {newsletterError && (
+                  <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{newsletterError}</p>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
