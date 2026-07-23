@@ -86,7 +86,7 @@ const ContactMap = () => {
               
               <div className="rounded-2xl overflow-hidden mb-8 shadow-sm">
                 <img 
-                  src="pics/customer.jpg" 
+                  src="/pics/customer.jpg" 
                   alt="Customer Support" 
                   className="w-full h-auto object-cover"
                 />
@@ -133,7 +133,7 @@ const ContactMap = () => {
             {/* Using an SVG or image for the map background */}
             <div className="relative w-full opacity-60">
               <img 
-                src="pics/cta-map-image.png" 
+                src="/pics/cta-map-image.png" 
                 alt="World Map" 
                 className="w-full h-auto"
                 onError={(e) => {

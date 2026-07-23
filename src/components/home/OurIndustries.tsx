@@ -30,28 +30,28 @@ const OurIndustries = () => {
     {
       id: 'organic',
       title: getT('tab1Title'),
-      image: 'pics/pexels-photo-17559580.jpg',
+      image: '/pics/pexels-photo-17559580.jpg',
       description: getT('tab1Desc'),
       link: "/juice"
     },
     {
       id: 'fresh',
       title: getT('tab2Title'),
-      image: 'pics/c4ee15bc22fa3a63fce34fd4017026e4.jpg',
+      image: '/pics/c4ee15bc22fa3a63fce34fd4017026e4.jpg',
       description: getT('tab2Desc'),
       link: "/liquid"
     },
     {
       id: 'delivery',
       title: getT('tab3Title'),
-      image: 'pics/large.jpg',
+      image: '/pics/large.jpg',
       description: getT('tab3Desc'),
       link: "/dairy-product-line-machines"
     },
     {
       id: 'beer',
       title: getT('tab4Title'),
-      image: 'pics/a-beermovie.jpg',
+      image: '/pics/a-beermovie.jpg',
       description: getT('tab4Desc'),
       link: "/beer"
     }
@@ -109,14 +109,14 @@ const OurIndustries = () => {
           >
             <div className="w-full md:w-[85%] mx-auto relative group overflow-hidden rounded-[2rem] shadow-xl aspect-[16/9] md:aspect-[21/9] cursor-pointer">
               <img 
-                src="pics/corporate.jpg" 
+                src="/pics/corporate.jpg" 
                 alt="Factory machinery" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
               />
               <div className="shine-overlay" />
             </div>
             <img 
-              src="pics/seppa logo.png" 
+              src="/pics/seppa logo.png" 
               alt="Seppa logo" 
               className="w-[45%] md:w-[35%] max-w-[200px] absolute -bottom-10 left-8 md:left-[10%] border-[6px] md:border-[8px] border-[#f9f8f4] rounded-2xl shadow-xl object-cover z-10 bg-white"
             />
