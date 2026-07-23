@@ -1,0 +1,20 @@
+{
+  "title": "Dealers",
+  "breadcrumbName": "Dealers",
+  "heading": "Partner With Us",
+  "subheading": "Join our global network of authorized dealers. We provide industry-leading filling and packaging solutions. Fill out the form below to apply to become a Seppa dealer in your region.",
+  "formTitle": "Dealer Application",
+  "submitButtonText": "Apply Now",
+  "name": "Full Name",
+  "namePlaceholder": "Your full name",
+  "company": "Company Name / Individual",
+  "companyPlaceholder": "Your company name",
+  "email": "Email Address",
+  "emailPlaceholder": "Business email",
+  "phone": "Phone Number",
+  "phonePlaceholder": "Contact number",
+  "region": "Proposed Dealership Region",
+  "regionPlaceholder": "City, State, or Country",
+  "message": "Business Proposal",
+  "messagePlaceholder": "Tell us about your current business, network, and why you want to partner with us..."
+}

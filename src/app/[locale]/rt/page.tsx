@@ -49,7 +49,8 @@ export default async function RtPage({ params }: PageProps) {
         const images = [
           "/images/rtd_mix_1782124623101.png", 
           "/images/rtd_fill_1782124584288.png", 
-          "/images/rtd_can_1782124513134.png"
+          "/images/rtd_can_1782124513134.png",
+          "/images/rtd_content_block_1782124674023.png"
         ];
         return { ...step, image: images[index] || "" };
       }),

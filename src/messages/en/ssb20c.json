@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-20C: Engineering High Output PET Bottle Blowing for Serious Production Lines",
+  "breadcrumbName": "SSB-20C",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Overview of the SEPPA SSB-20C PET Bottle Blowing Machine",
+  "overviewDescription": "Walk onto any bottling floor running below capacity and the problem is rarely the resin. It's the thermal profile, the mold transfer timing, or a blowing station that can't keep pace with the rest of the line. The SEPPA SSB-20C was built to remove those bottlenecks. It's a high capacity linear stretch blow molding system designed for plants that treat pet container manufacturing as a throughput problem first and a packaging problem second.",
+  "overviewsubDescription": [
+    "What separates the SSB-20C from a generic blower is control at the preform level. Wall thickness variance, base clarity, and neck finish consistency are all decided in the two seconds before a preform ever reaches the mold, and this machine treats that window as the most important part of pet container manufacturing rather than an afterthought.",
+    "Multi zone infrared lamp banks with independent power modulation let operators dial in heat distribution per preform geometry, so a 500ml water bottle and a 1.5L CSD container don't fight for the same thermal recipe. That level of precision is why plants scaling their pet container manufacturing output keep coming back to this platform instead of retrofitting older single stage units."
+  ],
+  "featuresTitle": "Key Advantages of the SEPPA SSB-20C",
+  "features": [
+    {
+      "title": "Energy Recovering Pneumatic Circuit",
+      "description": "The IR heating system on the SSB-20C recovers a meaningful share of compressed air energy through a two tier pressure recovery circuit: exhaust air from the high pressure blow stage gets redirected into the pre blow stage instead of venting straight to atmosphere. Over a full production shift, that adds up to real savings on compressor load."
+    },
+    {
+      "title": "Toggle Lock Clamping Mechanism",
+      "description": "Mold clamping uses a toggle lock mechanism rated for sustained high pressure cycling without drift, which matters because a clamp that loosens over months of continuous duty is how you end up with flash lines and rejected batches."
+    },
+    {
+      "title": "Tool-Less Format Changeover",
+      "description": "Format changeover is tool less on the mold side, so a trained crew can swap from a 1L bottle mold to a 2L mold in under 30 minutes rather than losing half a shift. This minimizes mechanical downtime and maximizes production uptime."
+    }
+  ],
+  "applicationsTitle": "Applications of the SSB-20C PET Bottle Blowing Machine",
+  "applicationsSubtitle": "The SSB-20C doesn't specialize in one bottle type—it specializes in switching between them fast:",
+  "applications": [
+    {
+      "title": "Still & Sparkling Mineral Water",
+      "description": "Handles the tight tolerance demands of mineral water lines, where minor wall thickness drift shows up fast in drop test failures, delivering maximum output on lightweight preforms."
+    },
+    {
+      "title": "Carbonated Soft Drinks (CSD)",
+      "description": "CSD lines require higher biaxial orientation ratios to survive internal carbonation pressure without warping or base panel deformation."
+    },
+    {
+      "title": "Household Cleaners & Personal Care",
+      "description": "Thick base sections and heavy wall packaging run on the same platform with mold and heating profile adjustments to resist chemical stress cracking."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions for PET Bottle Blowing Machines?",
+    "description": "Seppa has spent years building integrated systems for beverage manufacturers who can't afford unplanned downtime: CSD bottlers, mineral water plants, dairy processors, and packaging operations.",
+    "paragraphs": [
+      "The SSB-20C isn't a standalone unit sold in isolation; it is designed for seamless integration with downstream rinser filler capper systems and labelling equipment on a shared control backbone.",
+      "Seppa's field service network and parts availability are built around 24/7 industrial production realities, with documentation designed for fast fault isolation rather than a guessing game."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the SSB-20C PET Bottle Blowing Machine Works",
+    "subtitle": "Every stage is engineered to maximize throughput while preserving material integrity:",
+    "steps": [
+      {
+        "title": "High Speed Preform Loading & Thermal Conditioning",
+        "description": "A rotary sorter feeds preforms neck up into the heating tunnel. Multi-zone IR thermal conditioning brings preform walls to their optimal stretch temperature without overheating the neck finish."
+      },
+      {
+        "title": "Servo Driven Mold Transfer",
+        "description": "A servo driven arm positions the conditioned preform inside the mold cavity with sub millimeter repeatability, preventing uneven stretching and rejected containers."
+      },
+      {
+        "title": "Dual Stage High Pressure blowing",
+        "description": "A low pressure pre blow stretches the preform axially using the stretch rod, then high pressure air (35-40 bar) completes radial expansion against the mold wall, followed by automated ejection."
+      }
+    ],
+    "outro": [
+      "This two-stage approach is what gives Seppa containers their industry leading wall thickness consistency."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What does routine maintenance on the SSB-20C actually involve?",
+      "answer": "Scheduled maintenance centers on IR lamp inspection, mold cavity cleaning, and pneumatic seal checks. Seppa provides a maintenance schedule tuned to shift patterns."
+    },
+    {
+      "question": "How is Seppa different from other pet bottle blowing machine supplier options in the market?",
+      "answer": "Seppa engineers the SSB-20C as part of a broader pet container manufacturing line, which means fewer integration headaches when connecting it to fillers, cappers, and labellers."
+    },
+    {
+      "question": "Is the pet bottle manufacturing plant cost of the SSB-20C justified by its energy profile?",
+      "answer": "Yes. The compressed air recovery system typically pays back its share of the cost within the first 18-24 months through reduced compressor load alone."
+    },
+    {
+      "question": "How should I weigh pet bottle making machine price against long-term output?",
+      "answer": "Run the comparison on cost per thousand bottles, not sticker price. A cheaper, slower machine costs more per bottle once labor, scrap, and downtime are counted."
+    },
+    {
+      "question": "Why do plants scaling pet container manufacturing trust Seppa's cooling protocols specifically?",
+      "answer": "The SSB-20C's mold cooling channels are designed around resin specific flow rates rather than a one size fits all cooling loop, keeping cycle times consistent."
+    }
+  ]
+}

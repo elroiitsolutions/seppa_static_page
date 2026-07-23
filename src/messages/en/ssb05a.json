@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-05A PET Blowing Machine: Precision Stretch Blow Molding for Flexible Production",
+  "breadcrumbName": "SSB-05A",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Overview of the SEPPA SSB-05A PET Blowing Machine",
+  "overviewDescription": "Small and mid sized bottlers need output quality that matches large scale operations without the floor space or capital those operations demand. The SEPPA SSB-05A pet stretch blow molding machine was built around that constraint, packing preform heating, stretch rod actuation, and blow molding into a compact frame with tight thermal and dimensional tolerances.",
+  "overviewsubDescription": [
+    "Most entry level bottle blowing machine designs force a trade off between footprint and repeatability. Shrink the machine and thermal stability usually suffers, and it shows up later as wall thickness variation in the finished container. The SSB-05A gets around that through zoned infrared conditioning and a clamping system built for consistent mold closure force, run after run. For a lean production of pet bottles, that's the difference between predictable scrap rates and a line that needs constant babysitting.",
+    "As a pet bottle manufacturing machine, the SSB-05A suits businesses needing real flexibility: mold changeovers without a half day shutdown, and a control system that doesn't require a dedicated process engineer on every shift. It's a compact pet stretch blow molding machine built so smaller operations can compete on quality without the footprint of a full pet bottle production line."
+  ],
+  "featuresTitle": "Key Features and Benefits of the SEPPA SSB-05A PET Blowing Machine",
+  "features": [
+    {
+      "title": "Energy Efficient Segmented IR Heating",
+      "description": "The heating modules use segmented lamp banks, so zones that don't need full output for a given wall thickness dial back instead of running at a fixed maximum. This cuts electricity draw compared to systems where every lamp runs at the same intensity regardless of what the preform actually needs."
+    },
+    {
+      "title": "High Durability Clamping Units",
+      "description": "Clamping units hold tolerance through extended runs, which matters because clamp wear is a common cause of dimensional drift in older bottle blowing machine designs. As the mechanism wears, parting line flash increases gradually."
+    },
+    {
+      "title": "Tool-Less Mold Changeover & Saved Recipes",
+      "description": "Mold swaps that took most of a shift on older equipment come down to a fraction of that time, since the clamping and alignment system needs no manual torque wrench adjustment to reseat tooling. The PLC interface stores preform specific heating and pressure profiles, reducing changeover scrap."
+    }
+  ],
+  "applicationsTitle": "Applications of the SEPPA SSB-05A PET Blowing Machine",
+  "applicationsSubtitle": "The SSB-05A's versatility comes from adjustable heating profiles and interchangeable mold tooling rather than from running several dedicated machines.",
+  "applications": [
+    {
+      "title": "Mineral Water & Carbonated Beverages",
+      "description": "Different wall thickness distributions are handled easily. Carbonated products need more material at the base and shoulder to resist pressure, while still water containers run lighter. The same machine handles both by adjusting heating output and blow pressure timing."
+    },
+    {
+      "title": "Specialized Containers & Cosmetics",
+      "description": "Handles specialized containers such as cosmetic jars and wide mouth packaging where geometry departs from standard cylindrical bottles. These shapes demand stretch rod speed tuning via the PLC parameters."
+    },
+    {
+      "title": "Turnkey Line Integration",
+      "description": "The SSB-05A's conveyor, ejection timing, and control interface sync with upstream preform handling and downstream filling or labeling equipment to expand existing production lines."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions for PET Blowing Machines?",
+    "description": "SEPPA Solutions designs and builds integrated pet stretch blow molding machine systems, not standalone units bolted onto a customer's existing setup as an afterthought. Heating, mold engineering, and pneumatic sequencing all interact.",
+    "paragraphs": [
+      "Our engineering team works through PET behaviour at the material level: how wall thickness distributes under a given stretch rod speed profile, how blow pressure staging affects clarity, and how preform design interacts with a specific machine's heating geometry.",
+      "SEPPA's track record covers the full range of the production of pet bottles, from single line operations on one pet bottle manufacturing machine to multi line facilities juggling mixed formats across shifts."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the SEPPA SSB-05A PET Blowing Machine Works",
+    "subtitle": "The automated sequence on the pet bottle manufacturing machine removes the variability of human reaction time over a long shift:",
+    "steps": [
+      {
+        "title": "Preform Loading & Thermal Conditioning",
+        "description": "Preforms index into the heating carriage for uniform exposure, passing through multiple IR thermal conditioning zones to reach thermal equilibrium before entering the mold."
+      },
+      {
+        "title": "High Precision Clamping & Multi-Stage Blowing",
+        "description": "High precision mold clamping locks the halves with force calibrated to the projected blow pressure. Low pressure air moves the stretch rod to stretch the preform axially, followed by high pressure air stretching the material radially."
+      },
+      {
+        "title": "Automatic Ejection",
+        "description": "Once the material has cooled enough to hold its shape, the mold opens, ejects the finished bottle, and resets for the next preform automatically."
+      }
+    ],
+    "outro": [
+      "This process ensures a repeatable and stable production of PET containers with minimum scrap rates."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What routine maintenance does the SSB-05A pet bottle making machine require?",
+      "answer": "Check lamp bank condition, pneumatic line pressure, and clamping alignment before each shift. Stretch rod guides and mold slide surfaces need weekly lubrication."
+    },
+    {
+      "question": "How does the machine maintain structural consistency in the production of pet bottles?",
+      "answer": "Consistency comes from zoned IR heating that brings every preform to thermal equilibrium plus multi stage air injection that stretches material in a repeatable sequence. Electronic monitoring flags any zone drifting."
+    },
+    {
+      "question": "Why is this pet stretch blow molding machine more efficient than a standard bottle blowing machine?",
+      "answer": "The segmented heating system only draws power where a given preform needs it, and tool less mold changeover eliminates hours of downtime between SKU runs."
+    },
+    {
+      "question": "Can the SSB-05A integrate into a larger pet bottle production line?",
+      "answer": "Yes. Its output conveyor and control interface sync with upstream preform feeding and downstream filling, capping, or labelling equipment already in place."
+    },
+    {
+      "question": "Why does SEPPA Solutions lead in the pet bottle manufacturing machine market?",
+      "answer": "SEPPA treats heating, clamping, and pneumatics as one integrated system tuned to actual PET behaviour rather than three subsystems assembled together."
+    }
+  ]
+}

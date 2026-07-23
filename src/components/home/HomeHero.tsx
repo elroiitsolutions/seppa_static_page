@@ -44,32 +44,32 @@ const HomeHero = () => {
       <div className="hero-video-wrapper absolute inset-0 z-0 pointer-events-none">
         <div className="relative w-full h-full bg-dark overflow-hidden pointer-events-auto hero-video-inner">
           <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source
-            src="/videos/stock-footage-shop-for-the-production-of-drinking-water-on-the-conveyor-moving-water-bottles-production-of.mp4"
-            type="video/mp4"
-          />
-        </video>
-
-        {/* Using inline rgba() for cross-browser gradient consistency */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, rgba(0,0,0,0.65), rgba(0,0,0,0.35))' }}></div>
-
-        {/* Diagonal Lines */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[15, 35, 55, 75, 95].map((pos, idx) => (
-            <div
-              key={idx}
-              style={{ left: `${pos}%` }}
-              className="absolute top-[-50%] bottom-[-50%] w-px bg-white/10 rotate-[20deg] hidden md:block"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source
+              src="/videos/stock-footage-shop-for-the-production-of-drinking-water-on-the-conveyor-moving-water-bottles-production-of.mp4"
+              type="video/mp4"
             />
-          ))}
+          </video>
+
+          {/* Using inline rgba() for cross-browser gradient consistency */}
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, rgba(0,0,0,0.65), rgba(0,0,0,0.35))' }}></div>
+
+          {/* Diagonal Lines */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {[15, 35, 55, 75, 95].map((pos, idx) => (
+              <div
+                key={idx}
+                style={{ left: `${pos}%` }}
+                className="absolute top-[-50%] bottom-[-50%] w-px bg-white/10 rotate-[20deg] hidden md:block"
+              />
+            ))}
+          </div>
         </div>
-      </div>
       </div>
       {/* 
         Using responsive Tailwind containers to ensure proper scaling across 
@@ -93,7 +93,7 @@ const HomeHero = () => {
               {getT('sub')}
             </span>
           </motion.div>
-          
+
           {/* Main Heading */}
           <motion.h1
             variants={fadeInUp}
@@ -101,12 +101,12 @@ const HomeHero = () => {
           >
             {getT('heading')}
           </motion.h1>
-          
+
           {/* Subtitle */}
           <motion.p variants={fadeInUp} className="text-sm sm:text-base md:text-lg 2xl:text-xl text-gray-300 leading-relaxed max-w-[650px] mt-3 sm:mt-4 lg:mt-6">
             {getT('desc')}
           </motion.p>
-          
+
           {/* Buttons */}
           <motion.div variants={fadeInUp} className="flex flex-wrap sm:flex-nowrap items-center mt-5 sm:mt-6 lg:mt-10 gap-3 sm:gap-4 lg:gap-6">
             {/* Primary CTA */}
@@ -118,10 +118,10 @@ const HomeHero = () => {
                 <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-4 h-4 sm:w-5 sm:h-5 md:w-[22px] md:h-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
               </Link>
             </div>
-            
+
             {/* Secondary CTA / Watch Video */}
-            <a 
-              href="#about-industries" 
+            <a
+              href="#about-industries"
               onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('about-industries')?.scrollIntoView({ behavior: 'smooth' });
@@ -144,7 +144,7 @@ const HomeHero = () => {
       {/* Bottom Checklists */}
       <div className="relative w-full to-transparent pt-3 pb-3 lg:pt-4 lg:pb-5 z-10 mt-auto border-t border-white/10">
         <div className="container mx-auto 2xl:max-w-screen-2xl px-4 sm:px-6 md:px-12 lg:px-24">
-          <motion.div 
+          <motion.div
             initial="hidden"
             animate="visible"
             variants={staggerContainer}

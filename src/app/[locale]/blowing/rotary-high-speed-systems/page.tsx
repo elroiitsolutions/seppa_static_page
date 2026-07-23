@@ -15,6 +15,8 @@ import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.
 import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
 import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
 
+import Link from 'next/link';
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -72,7 +74,61 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-        <PackagingPageLayout data={pageData} locale={locale} />
+        <PackagingPageLayout data={pageData} locale={locale}>
+          <section className="py-16 bg-white relative">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-16">
+                <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
+                  <span className="text-xs font-semibold text-[#101934] uppercase tracking-wider">
+                    {locale === 'ar' ? 'موديلات الأنظمة الدوارة' : 'ROTARY SYSTEM MODELS'}
+                  </span>
+                </div>
+                <h2 className="text-3xl md:text-5xl font-bold text-[#101934] leading-tight max-w-4xl mx-auto">
+                  {locale === 'ar' ? 'سلسلة ماكينات نفخ زجاجات PET الدوارة' : 'Rotary PET Bottle Blowing Machine Series'}
+                </h2>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
+                {[
+                  {
+                    title: "Seppa SSB-R6",
+                    img: img1.src,
+                    link: locale === 'ar' ? "/ar/blowing/rotary-high-speed-systems/ssb-r6" : "/en/blowing/rotary-high-speed-systems/ssb-r6"
+                  },
+                  {
+                    title: "Seppa SSB-R8",
+                    img: meth1.src,
+                    link: locale === 'ar' ? "/ar/blowing/rotary-high-speed-systems/ssb-r8" : "/en/blowing/rotary-high-speed-systems/ssb-r8"
+                  },
+                  {
+                    title: "Seppa SSB-R10",
+                    img: meth2.src,
+                    link: locale === 'ar' ? "/ar/blowing/rotary-high-speed-systems/ssb-r10" : "/en/blowing/rotary-high-speed-systems/ssb-r10"
+                  },
+                  {
+                    title: "Seppa SSB-R12",
+                    img: meth3.src,
+                    link: locale === 'ar' ? "/ar/blowing/rotary-high-speed-systems/ssb-r12" : "/en/blowing/rotary-high-speed-systems/ssb-r12"
+                  },
+                  {
+                    title: "Seppa SSB-R16",
+                    img: img2.src,
+                    link: locale === 'ar' ? "/ar/blowing/rotary-high-speed-systems/ssb-r16" : "/en/blowing/rotary-high-speed-systems/ssb-r16"
+                  }
+                ].map((item, idx) => (
+                  <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[370px]">
+                    <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <h3 className="text-white font-bold text-lg md:text-xl font-heading tracking-wide uppercase">{item.title}</h3>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        </PackagingPageLayout>
       </div>
     </NextIntlClientProvider>
   );

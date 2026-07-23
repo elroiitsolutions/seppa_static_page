@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-2D-AT: Semi Automatic PET Bottle Blower Machine",
+  "breadcrumbName": "SSB-2D-AT",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Overview of the SEPPA SSB-2D-AT Semi Automatic PET Blowing Machine",
+  "overviewDescription": "Manufacturers rarely get to choose between speed and precision. The SEPPA SSB-2D-AT resolves that trade off by keeping an operator in the loop where judgment still beats automation. It's a two cavity, semi automatic pet bottle blower machine built for facilities that switch between bottle shapes, neck finishes, or resin grades more often than a fully automated line would tolerate.",
+  "overviewsubDescription": [
+    "What sets this pet bottle blower machine apart is how it handles the gap between mineral water bottles and pharmaceutical containers. A water bottle needs to be light and cheap. A pharmaceutical vial needs wall thickness inside a tight tolerance band, batch after batch, because dosing accuracy depends on it. Manual preform loading gives operators direct control over cycle pacing, which matters when one facility runs both product types in the same week.",
+    "As a pet packaging machine, the SSB-2D-AT serves mid-volume producers who need flexibility more than raw throughput. Below the volume where full automation pays off, a bottle blowing machine that lets a trained operator intervene between cycles is often the more economical pet bottle manufacturing machine, and it's the one Seppa Solutions builds this unit around."
+  ],
+  "featuresTitle": "Key Features and Technical Advantages of the SSB-2D-AT",
+  "features": [
+    {
+      "title": "Zoned IR Heating Modules",
+      "description": "Preform wall temperature has to sit inside a narrow band before stretch blow begins. The SSB-2D-AT uses zoned infrared lamps with independent power control per zone, so preforms of different weights get a temperature curve suited to their own geometry. That zoning is what separates a serious pet bottle blower machine from a generic one."
+    },
+    {
+      "title": "Hardened Steel Clamping Assembly",
+      "description": "Seppa uses hardened steel clamp assemblies rated for continuous duty cycling. A clamp that flexes under high pressure blow air introduces flash at the parting line, and flash means rejected bottles. Every plastic bottle making machine eventually reveals its clamping weaknesses under sustained production; the SSB-2D-AT is built not to."
+    },
+    {
+      "title": "Auto-Drop Transfer Mechanism",
+      "description": "The auto drop pet blowing machine mechanism handles preform transfer from the heating carousel to the blow mold without manual handling at that step. It removes a repetitive task from the operator's cycle and keeps preform orientation consistent into the mold."
+    }
+  ],
+  "applicationsTitle": "Applications Across Water, Beverage, Edible Oil, Chemical, and Pharmaceutical Industries",
+  "applicationsSubtitle": "Diverse industrial application coverage thanks to multi-resin thermal styling capabilities:",
+  "applications": [
+    {
+      "title": "Mineral Water & CSD Beverages",
+      "description": "Mineral water and CSD bottles are the highest volume application, where the priority is material efficiency: thin walls, low weight, fast cycles, minimal cost per unit. The SSB-2D-AT handles lightweight preforms without scorching or uneven stretch."
+    },
+    {
+      "title": "Edible Oil & Chemical Packaging",
+      "description": "Edible oil containers need to resist plasticizing effects over time, so wall thickness and crystallinity matter. Chemical packaging requires high environmental stress cracking resistance, which comes from how evenly the blow molding process distributes material around the wall."
+    },
+    {
+      "title": "Pharmaceutical Applications",
+      "description": "High purity containers need consistent wall thickness for dosing accuracy and low contamination risk throughout the cycle. The SSB-2D-AT's clean cycle design and minimal manual handling make it pharmaceutical-grade ready."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for PET Bottle Blowing Machines?",
+    "description": "Seppa Solutions has spent years working with FMCG manufacturers and smaller specialty producers who need the same reliability but different production profiles. That range shapes how the company designs a pet bottle blower machine: not for one use case, but for a plant that might run water bottles on Monday and chemical containers by Thursday.",
+    "paragraphs": [
+      "Heating curve optimization is where Seppa's process experience shows up. Resin grades vary in melt behaviour, moisture sensitivity, and response to IR wavelength, and getting the thermal profile wrong on any variable shows up as a defect downstream.",
+      "Seppa tunes each pet bottle manufacturing machine installation to the resins a client actually runs, rather than shipping a default profile. Our reputation rests on consistency across long runs, not cycle time numbers alone."
+    ]
+  },
+  "methodology": {
+    "title": "How the SEPPA SSB-2D-AT PET Bottle Blowing Process Works",
+    "subtitle": "A controlled multi-stage mechanical sequence ensures repeatable tolerances:",
+    "steps": [
+      {
+        "title": "Manual Preform Load & Zoned Heating",
+        "description": "Every cycle starts with manual preform loading into the heating carousel. IR lamps bring each preform to its target thermal profile, calibrated against resin type and wall thickness."
+      },
+      {
+        "title": "Automated Transfer & Stretch Blow",
+        "description": "The auto drop pet blowing machine mechanism transfers the conditioned preform into the mold cavity, where the stretch rod extends and high pressure air forces the material against the mold walls."
+      },
+      {
+        "title": "Internal Mold Cooling & Auto Ejection",
+        "description": "Mold side cooling channels pull heat out fast enough to hold dimensional stability without slowing the cycle, preventing warpage or base rocker. After cooling, the mold opens and the bottle ejects automatically."
+      }
+    ],
+    "outro": [
+      "This process allows Seppa Solutions to deliver high quality bottles with minimal operator overhead."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How often does a pet bottle blower machine need preventive maintenance?",
+      "answer": "Clamp assemblies, IR lamp arrays, and pneumatic seals should be inspected on a schedule tied to cycle count. Seppa recommends a full inspection every 250,000 to 300,000 cycles, with lamp checks more often."
+    },
+    {
+      "question": "How do you ensure chemical compatibility in pet packaging machine output?",
+      "answer": "Wall thickness and crystallinity control both affect how well a bottle resists stress cracking. Seppa's setups adjust thermal profiling and blow pressure staging per resin to hit the material properties needed."
+    },
+    {
+      "question": "Why is Seppa's bottle blowing machine suited to pharmaceutical applications?",
+      "answer": "Minimal manual handling at the transfer stage, tight tolerances, and a clean cycle mold design reduce contamination risk and dosing variability, both of which matter in pharma packaging."
+    },
+    {
+      "question": "Why does thermal conditioning matter so much for a plastic bottle making machine?",
+      "answer": "Uneven preform heating is the root cause of most stretch blow defects, from thin spots to warpage, and it's the first thing Seppa checks when a machine starts drifting out of spec."
+    },
+    {
+      "question": "What makes Seppa's auto drop pet blowing machine technology different?",
+      "answer": "The transfer mechanism keeps preform orientation consistent between heating and molding on every pet bottle blower machine Seppa builds."
+    }
+  ]
+}
