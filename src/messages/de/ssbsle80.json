@@ -1,0 +1,108 @@
+{
+  "title": "SEPPA SSB-SLE-80: Servoelektrische lineare PET-Streckblasmaschine für hohe Produktionsleistungen",
+  "breadcrumbName": "SSB-SLE-80",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Überblick über die SEPPA SSB-SLE-80 PET-Streckblasmaschine",
+  "overviewDescription": "Viele Produktionsbetriebe mit älteren pneumatischen Blasmaschinen kennen die typischen Herausforderungen: dauerhaft laufende Kompressoren, schwankende Positionierungen der Streckstangen und ein hoher Wartungsaufwand aufgrund von Druckluftverlusten. Die SEPPA SSB-SLE-80 wurde entwickelt, um genau diese Schwachstellen zu beseitigen.",
+  "overviewsubDescription": [
+    "SEPPA Solutions hat diese lineare PET-Streckblasmaschine konsequent als servoelektrisches System entwickelt und nicht lediglich bestehende Pneumatiktechnik ergänzt. Jede Streckstangenbewegung wird von einem Servomotor mit kontinuierlicher Positionsrückmeldung gesteuert. Dadurch bleibt die Bewegungsgenauigkeit über jeden Produktionszyklus hinweg konstant und unabhängig von Druckluftschwankungen.",
+    "Für Hersteller, die ihre PET-Flaschenproduktion erweitern möchten, ohne zusätzliche Schichten oder erhöhten Wartungsaufwand einzuplanen, bietet die SSB-SLE-80 eine zuverlässige und wirtschaftliche Lösung.",
+    "Im Gegensatz zu Rotationsmaschinen transportiert die lineare Bauweise die Preforms auf einer geradlinigen Strecke vom Einlauf bis zum Flaschenauswurf. Das vereinfacht den Maschinenaufbau, verbessert die Zugänglichkeit aller Stationen und erleichtert Wartungs- sowie Servicearbeiten erheblich."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Eigenschaften",
+  "features": [
+    {
+      "title": "Servoelektrische Streckstangensteuerung",
+      "description": "Jede Streckstation verfügt über einen leistungsstarken Servoantrieb. Anstelle eines mechanischen Endanschlags folgt die Streckstange einem individuell programmierbaren Bewegungsprofil. Geschwindigkeit, Hub und Haltezeiten können exakt auf Wandstärke, Flaschengeometrie und PET-Material abgestimmt werden. Produktwechsel erfolgen softwarebasiert."
+    },
+    {
+      "title": "Elektronisch geregelte Schließkraft",
+      "description": "Die SSB-SLE-80 verwendet eine servogesteuerte Schließeinheit mit nockenprofilierter Kraftregelung. Die Schließkraft wird individuell an jede Blasform angepasst. Das sorgt für geringere Gratbildung, reduzierten Verschleiß, hohe Produktqualität und niedrigeren Materialverbrauch."
+    },
+    {
+      "title": "Mehrzonen-Infrarot-Heizsystem",
+      "description": "Mehrere unabhängig regelbare Infrarot-Heizzonen gewährleisten eine gleichmäßige Erwärmung jedes einzelnen Preforms. Gerade bei leichten Flaschen sichert das die präzise Temperaturführung, die Materialverteilung und Formstabilität."
+    },
+    {
+      "title": "Konstante Zykluszeiten und hohe Ausbringung",
+      "description": "Ein wesentlicher Vorteil der servoelektrischen Konstruktion liegt in der dauerhaft konstanten Zykluszeit. Während pneumatische Systeme mit steigender Betriebstemperatur an Leistung verlieren können, hält die SSB-SLE-80 ihre Produktionsgeschwindigkeit über komplette Schichten hinweg stabil."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche in der Getränke- und Verpackungsindustrie",
+  "applicationsSubtitle": "Die SEPPA SSB-SLE-80 verarbeitet unterschiedliche PET-Materialien und Flaschengeometrien mit hoher Prozessstabilität.",
+  "applications": [
+    {
+      "title": "Mineralwasser & Softdrinks",
+      "description": "Herstellung von Leichtgewichtflaschen und druckstabilen kohlensäurehaltigen Behältern."
+    },
+    {
+      "title": "Fruchtsäfte & Speiseöle",
+      "description": "Gleichmäßige Wandstärkenergebnisse bei anspruchsvollen, dickwandigeren Preforms für viskose Medien."
+    },
+    {
+      "title": "Körperpflege & Haushaltschemie",
+      "description": "Zuverlässige Rüstzeiten ermöglichen kleine Losgrößen und häufig wechselnde Behälterformate."
+    },
+    {
+      "title": "Turnkey-Integration",
+      "description": "Die Blasmaschine kann problemlos mit einer halbautomatischen Flaschenfüllmaschine sowie weiteren Verpackungsanlagen der Linie synchronisiert werden."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Streckblasmaschinen wählen?",
+    "description": "SEPPA Solutions entwickelt komplette Turnkey-Lösungen für Hersteller aus der Getränke-, Lebensmittel- und FMCG-Industrie.",
+    "paragraphs": [
+      "Die Entwicklung der SSB-SLE-80 basiert auf langjähriger Erfahrung in den Bereichen Servoantriebstechnik, Prozesssynchronisation und PET-Streckblasverfahren. Dieses Know-how zeigt sich in der hohen Anlagenverfügbarkeit im industriellen Dauereinsatz.",
+      "Darüber hinaus unterstützt SEPPA Solutions Kunden bei der vollständigen Integration der Blasmaschine in bestehende Produktionslinien, was die Inbetriebnahmezeiten vor Ort deutlich verkürzt."
+    ]
+  },
+  "methodology": {
+    "title": "Prozessablauf der SEPPA SSB-SLE-80",
+    "subtitle": "Die Preforms durchlaufen sämtliche Prozessschritte auf einer geradlinigen Produktionsstrecke:",
+    "steps": [
+      {
+        "title": "Thermische Konditionierung",
+        "description": "Die Preforms werden im mehrzonigen Ofen gleichmäßig auf Verarbeitungstemperatur gebracht, individuell angepasst an Materialeigenschaften."
+      },
+      {
+        "title": "Servoelektrisches Schließen der Form",
+        "description": "Die Formhälften schließen mit elektronisch geregelter Schließkraft, was Formwerkzeuge schont."
+      },
+      {
+        "title": "Synchronisierter Streckblasprozess",
+        "description": "Die servoelektrische Streckstange dehnt den Preform axial, während Vorblasen und Hochdruckblasluft die endgültige Flaschengeometrie ausformen."
+      },
+      {
+        "title": "Auswurf",
+        "description": "Nach Abschluss des Blasprozesses werden die Flaschen automatisch auf das Förderband übergeben, bereit für die nachgelagerte Abfüllung."
+      }
+    ],
+    "outro": [
+      "Servomotoren benötigen elektrische Leistung ausschließlich während der Bewegung. Dadurch sinken die Energiekosten bereits kurz nach der Inbetriebnahme spürbar."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie hoch ist der Wartungsaufwand der SEPPA SSB-SLE-80?",
+      "answer": "Im Vergleich zu pneumatischen Blasmaschinen fällt der Wartungsaufwand deutlich geringer aus, da keine hydraulischen Systeme und wesentlich weniger pneumatische Komponenten vorhanden sind."
+    },
+    {
+      "question": "2. Kann die SSB-SLE-80 mit einer halbautomatischen Flaschenfüllmaschine kombiniert werden?",
+      "answer": "Ja. Fördertechnik und Taktzeiten sind auf die Integration mit nachgeschalteten Füllanlagen ausgelegt."
+    },
+    {
+      "question": "3. Warum eignet sich die SSB-SLE-80 besonders für moderne PET-Flaschenhersteller?",
+      "answer": "Die Kombination aus hoher Anlagenverfügbarkeit, kurzen Werkzeugwechselzeiten und servoelektrischer Präzision ermöglicht eine wirtschaftliche Produktion auch bei häufig wechselnden Formaten."
+    },
+    {
+      "question": "4. Wie unterstützt die Maschine eine nachhaltige PET-Produktion?",
+      "answer": "Die servoelektrische Antriebstechnik reduziert den Energieverbrauch. Gleichzeitig sorgen präzise Schließ- und Streckprozesse für geringeren Materialverbrauch."
+    },
+    {
+      "question": "5. Warum entscheiden sich viele Hersteller für PET-Streckblasmaschinen von SEPPA Solutions?",
+      "answer": "Aufgrund der langjährigen Projekterfahrung in der Turnkey-Entwicklung. Kunden erhalten eine zuverlässige Investition mit vollem technischen Support."
+    }
+  ]
+}

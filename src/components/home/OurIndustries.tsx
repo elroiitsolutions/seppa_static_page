@@ -145,6 +145,7 @@ const OurIndustries = () => {
                 <button
                   key={tab.id}
                   id={`tab-${tab.id}`}
+                  suppressHydrationWarning
                   className={`relative pb-4 text-base md:text-[17px] font-bold font-heading transition-all duration-300 whitespace-nowrap cursor-pointer ${
                     activeTab.id === tab.id 
                       ? 'text-seppa-red font-extrabold' 

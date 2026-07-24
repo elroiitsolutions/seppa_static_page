@@ -39,6 +39,8 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
     overviewDescription: t('overviewDescription'),
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
+    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
+    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
     contentBlocks: (t.raw('contentBlocks') as any[] || []).map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,

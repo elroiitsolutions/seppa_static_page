@@ -1,0 +1,99 @@
+{
+  "title": "Kühlmittelkühler mit Shell-and-Coil-Technologie für industrielle Präzisionsanwendungen",
+  "breadcrumbName": "Kühlmittel-Kühler",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Coolant Chiller mit Shell-and-Coil-Wärmetauscher – Übersicht und Funktionsprinzip",
+  "overviewDescription": "Moderne Werkzeugmaschinen sind auf stabile Kühlkreisläufe angewiesen, um Schneidzonen, Spindeln und Werkstücke vor Überhitzung zu schützen. Das verwendete Kühlmedium – wasser- oder ölbasierte Flüssigkeiten – beeinflusst direkt die Maßhaltigkeit, Werkzeugstandzeit und Prozesssicherheit. Ein industrieller Kühlmittelkühler übernimmt dabei eine zentrale Aufgabe: Er entzieht dem erwärmten Prozessmedium kontinuierlich die aufgenommene Wärmeenergie, reduziert die Temperatur auf einen definiertem Sollwert und führt das gekühlte Medium wieder in den Maschinenkreislauf zurück.",
+  "overviewsubDescription": [
+    "Bei hohen und dauerhaft anfallenden Wärmelasten ist ein Shell-and-Coil-Wärmetauscher eine besonders zuverlässige Lösung. Bei dieser Bauweise strömt das Prozessmedium durch eine spiralförmige Rohrschlange innerhalb eines druckfesten Gehäuses. Das Kältemittel umströmt die Rohrleitung auf der Mantelseite und nimmt die Wärme über die Rohrwand auf.",
+    "Die spiralförmige Geometrie erhöht die Kontaktzeit zwischen Medium und Wärmetauscherfläche. Gleichzeitig entstehen turbulente Strömungsverhältnisse, wodurch die Wärmeübertragung auch bei kontinuierlichem Industrieeinsatz stabil bleibt. Im Vergleich zu empfindlicheren Plattenwärmetauschern bietet diese Konstruktion eine hohe Beständigkeit gegenüber verschmutzten Kühlkreisläufen.",
+    "Ein produktionsbereiter Kühlmittelkühler von Seppa Solutions fördert gefiltertes Kühlmedium über eine integrierte Pumpe durch den Rohrschlangen-Wärmetauscher, überträgt die Wärme an den Kältemittelkreislauf und führt das temperierte Medium wieder zur Maschine zurück."
+  ],
+  "featuresTitle": "Technische Merkmale und Leistungsvorteile für effiziente Kühlung",
+  "features": [
+    {
+      "title": "Optimierte Rohrmaterialien",
+      "description": "Kupfer bietet eine sehr hohe Wärmeleitfähigkeit von etwa 390 W/m·K (für wasserbasierte Anwendungen). Edelstahl erreicht zwar ca. 16 W/m·K, bietet jedoch eine deutlich höhere Beständigkeit gegenüber aggressiven Kühlschmierstoffen und chemischen Belastungen."
+    },
+    {
+      "title": "Helikale Rohrgeometrie",
+      "description": "Die spiralförmige Rohrführung verbessert die verfügbare Austauschfläche. Durch die gekrümmte Strömung entstehen Dean-Wirbel, welche die thermische Grenzschicht an der Rohrwand reduzieren und den Druckverlust senken."
+    },
+    {
+      "title": "Präzise Temperaturregelung",
+      "description": "Moderne Kühlwasser-Kühlsysteme von Seppa Solutions überwachen kontinuierlich Vorlauf-, Rücklauftemperatur und Durchfluss. Eine PID-basierte Regelung hält die Temperaturabweichung innerhalb von ±0,5 °C."
+    }
+  ],
+  "applicationsTitle": "Industrielle Anwendungen und Einsatzbereiche",
+  "applicationsSubtitle": "Für anspruchsvolle Fertigungsprozesse, bei denen Verschmutzungsresistenz und höchste Präzision erforderlich sind.",
+  "applications": [
+    {
+      "title": "CNC-Bearbeitungszentren",
+      "description": "Spindellager und Motorwicklungen erzeugen kontinuierlich Wärme, die für eine präzise Bearbeitung kontrolliert abgeführt werden muss."
+    },
+    {
+      "title": "Laserschneidanlagen",
+      "description": "Die Temperaturstabilität beeinflusst die Qualität des Laserstrahls und die Schnittgenauigkeit direkt (Abweichungen unter 1 °C)."
+    },
+    {
+      "title": "Erodiermaschinen (EDM)",
+      "description": "Das Dielektrikum nimmt Wärme auf. Die Shell-and-Coil-Technik eignet sich hervorragend, da sie verschmutzungsresistent ist."
+    },
+    {
+      "title": "Kunststoffverarbeitung",
+      "description": "In Spritzgießanlagen unterstützt ein präzise dimensionierter Kühlmittelkühler eine schnelle Wärmeabfuhr aus den Werkzeugen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions für zuverlässige industrielle Kühlsysteme wählen?",
+    "description": "Seppa Solutions entwickelt industrielle Wasserkühler speziell für Werkzeugmaschinen und Produktionsanlagen von 0,5 TR bis 60 TR.",
+    "paragraphs": [
+      "Jede Anlage wird mit abgestimmter Kältemittelfüllung, geprüfter Steuerungstechnik, dokumentierter PLC-Schnittstelle und vollständigem Belastungstest vor Auslieferung bereitgestellt.",
+      "Alle Shell-and-Coil-Wärmetauscher verfügen über dokumentierte Materialnachweise für Rohrmaterial, Wandstärke, Druckprüfung und Lötqualität zur Erfüllung anspruchsvoller Qualitätsstandards."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der Shell-and-Coil-Kühltechnologie",
+    "steps": [
+      {
+        "title": "Aufnahme & Durchfluss",
+        "description": "Das Kühlmedium verlässt die Bearbeitungszone typischerweise 3–8 °C über dem Sollwert und wird durch die integrierte Pumpe in die spiralförmige Rohrleitung des Wärmetauschers geführt."
+      },
+      {
+        "title": "Gegenstrom-Wärmeübertragung",
+        "description": "Das Medium strömt durch die Rohrschlange, während das verdampfende Kältemittel auf der Außenseite die Wärmeenergie aufnimmt. Die Gegenstromführung hält die Temperaturdifferenz konstant."
+      },
+      {
+        "title": "PID-Leistungsregelung",
+        "description": "Der Kältekreislauf gibt die Wärme über den Kondensator ab. Die Steuerung überwacht die Austrittstemperatur und regelt die Verdichterleistung für eine Stabilität von ±0,5 °C."
+      }
+    ],
+    "outro": [
+      "Das temperierte Kühlmedium wird über einen Puffertank zurück zur Maschine geführt und stellt konstante Prozessbedingungen sicher."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen zu Kühlmittelkühlern",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt ein Shell-and-Coil-Wärmetauscher Wartung?",
+      "answer": "Shell-and-Coil-Systeme benötigen aufgrund der offenen Rohrgeometrie meist weniger Wartung als Plattenwärmetauscher. Eine jährliche Kontrolle des Kühlmediums und eine interne Prüfung alle zwei Jahre sind meist ausreichend."
+    },
+    {
+      "question": "2. Was unterscheidet einen Standard-Wasserkühler von einem Präzisions-Kühlmittelkühler?",
+      "answer": "Ein Standardgerät ist für allgemeine Kühlaufgaben ausgelegt. Ein Präzisions-Kühlmittelkühler verfügt über eine exakt abgestimmte Temperaturregelung, Puffertanks und angepasste Pumpentechnik für Werkzeugmaschinen."
+    },
+    {
+      "question": "3. Warum ist Wasserqualität bei einem industriellen Wasserkühler wichtig?",
+      "answer": "Kalkablagerungen reduzieren die Wärmeübertragung spürbar. Bereits 1 mm Kalk kann die Effizienz deutlich verringern. Bei hartem Wasser wird eine Wasseraufbereitung empfohlen."
+    },
+    {
+      "question": "4. Wie verbessern Kühlmittelkühler die Bearbeitungsgenauigkeit?",
+      "answer": "Sie verhindern die thermische Ausdehnung kritischer Spindel- und Maschinenkomponenten (Stahl dehnt sich mit ca. 12 µm/m·°C aus) und sichern so konstante Toleranzen."
+    },
+    {
+      "question": "5. Warum setzen Hersteller auf Seppa Kühlwasser-Kühlsysteme?",
+      "answer": "Seppa entwickelt jedes System passgenau zur realen Anwendung – abgestimmt auf Kühlmedium, Wärmelast, Umgebungstemperatur und Strömungsverhältnisse."
+    }
+  ]
+}

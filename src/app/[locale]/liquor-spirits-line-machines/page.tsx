@@ -18,7 +18,7 @@ interface PageProps {
 export default async function LiquorSpiritsLineMachinesPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'alcohol-spirits' });
+  const t = await getTranslations({ locale, namespace: 'liquor-spirits-line-machines' });
 
   const getArray = (val: any): any[] => {
     if (Array.isArray(val)) return val;
