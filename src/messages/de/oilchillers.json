@@ -1,0 +1,94 @@
+{
+  "title": "Präzises Thermomanagement mit leistungsstarken Industrie-Ölkühlern",
+  "breadcrumbName": "Ölkühler",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Präzision durch intelligente Kühltechnik",
+  "overviewDescription": "Die anspruchsvollen Bedingungen in der Schwerindustrie und Präzisionsbearbeitung erfordern eine zuverlässige Temperaturkontrolle als wesentlichen Bestandteil moderner Fertigung. Industrie-Ölkühler übernehmen dabei eine zentrale Aufgabe: Sie schützen Hydraulikflüssigkeiten und Schmierstoffe vor thermischer Überlastung und sichern stabile Maschinenprozesse.",
+  "overviewsubDescription": [
+    "Bei automatisierten Anlagen entstehen durch hohe Geschwindigkeiten und kontinuierliche Belastung erhebliche Wärmemengen. Ohne effektive Kühlung verändern sich Viskosität und Schmierfilmstabilität, wodurch die Lebensdauer von Komponenten und die Bearbeitungsgenauigkeit beeinträchtigt werden können.",
+    "Seppa Solutions entwickelt industrielle Kühlsysteme, die exakt auf die thermischen Anforderungen moderner Produktionsanlagen abgestimmt sind. Ob für Hydraulikpressen, CNC-Bearbeitungszentren oder industrielle Antriebssysteme – ein professionell ausgelegter Industrie-Ölkühler hält Maschinen innerhalb optimaler Betriebsparameter und verbessert langfristig die Prozesssicherheit."
+  ],
+  "featuresTitle": "Leistungsmerkmale und fortschrittliche Kühlleistung",
+  "features": [
+    {
+      "title": "Mikrokanal-Wärmetauscher",
+      "description": "Unsere Industrie-Ölkühler verfügen über hocheffiziente Mikrokanal-Wärmetauscher, die eine maximale Wärmeübertragung bei kompakter Bauweise ermöglichen. Durch die optimierte Oberfläche wird die Wärmeabfuhr verbessert, während der Platzbedarf der Anlage reduziert bleibt."
+    },
+    {
+      "title": "Intelligente PID-Temperaturregelung",
+      "description": "Das Herzstück jedes industriellen Kühlsystems bildet eine intelligente PID-Temperaturregelung. Diese ermöglicht eine Temperaturstabilität mit einer Genauigkeit von ±0,5 °C. Dadurch werden unerwünschte Viskositätsschwankungen verhindert."
+    },
+    {
+      "title": "Adaptive Kühlkreisläufe",
+      "description": "Seppa Prozesskühler integrieren robuste Pumpensysteme und adaptive Kühlkreisläufe, die sich automatisch an wechselnde thermische Lasten anpassen. Die langlebige Verdampfertechnik und optimierte Kältemittelsteuerung gewährleisten eine schnelle Wärmeübertragung."
+    }
+  ],
+  "applicationsTitle": "Anwendungen industrieller Ölkühler",
+  "applicationsSubtitle": "Die Thermomanagement-Lösungen von Seppa Solutions kommen in zahlreichen Industriebereichen zum Einsatz, in denen konstante Temperaturen entscheidend sind.",
+  "applications": [
+    {
+      "title": "CNC-Maschinen und Präzisionsbearbeitung",
+      "description": "Hochgeschwindigkeits-CNC-Maschinen erzeugen durch Reibung und Bewegung erhebliche Wärme. Besonders Spindeln reagieren empfindlich auf thermische Ausdehnung."
+    },
+    {
+      "title": "Spindelkühler von Seppa Solutions",
+      "description": "Speziell konfigurierte Spindelkühler von Seppa Solutions halten die Temperatur kritischer Komponenten konstant. Durch kontinuierliche Umwälzung des Kühlmediums wird überschüssige Wärme zuverlässig abgeführt."
+    },
+    {
+      "title": "Hydraulikanlagen und Pressenlinien",
+      "description": "Hydraulikpressen, Getriebe und Energieanlagen benötigen stabile Öltemperaturen, um dauerhaft zuverlässig zu arbeiten und die mechanische Struktur zu schützen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions für Industrie-Ölkühler wählen?",
+    "description": "Globale Industrieunternehmen und Präzisionsfertiger setzen auf Seppa Solutions, weil unsere Kühlsysteme nicht aus Standardkomponenten zusammengesetzt werden, sondern als vollständig integrierte technische Lösungen entwickelt werden.",
+    "paragraphs": [
+      "Unsere Ingenieure berücksichtigen die komplexen Zusammenhänge zwischen Fluiddynamik, Wärmeübertragung und Maschinenleistung. Dadurch entstehen Prozesskühler, die speziell für anspruchsvolle industrielle Anwendungen ausgelegt sind.",
+      "Der Fokus liegt auf maximierter Maschinenverfügbarkeit, stabiler Ölqualität, energieeffizientem Betrieb, langer Komponentenlebensdauer und zuverlässiger Temperaturregelung."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise eines Industrie-Ölkühlers",
+    "steps": [
+      {
+        "title": "Aufnahme & Filtration",
+        "description": "Der Kühlprozess beginnt mit der Aufnahme des erwärmten Öls. Das heiße Medium wird durch ein Filtersystem geführt, das Metallpartikel und Ablagerungen entfernt, welche die Wärmeübertragung beeinträchtigen könnten."
+      },
+      {
+        "title": "Wärmeübertragung im Wärmetauscher",
+        "description": "Das gereinigte Öl gelangt in den Wärmetauscher des Ölkühlsystems. Dort wird die gespeicherte Wärme über wärmeleitende Metallflächen an das Kältemittel übertragen."
+      },
+      {
+        "title": "PID-Steuerung & Rückführung",
+        "description": "Digitale Temperatursensoren überwachen kontinuierlich die Betriebswerte. Die PID-Steuerung des Prozesskühlers passt die Kühlleistung automatisch an. Das temperaturstabilisierte Öl wird mit konstantem Druck zurückgeführt."
+      }
+    ],
+    "outro": [
+      "Dieses geschlossene Kühlsystem sorgt für maximale Wärmeabfuhr und verlängert die Lebensdauer industrieller Anlagen."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen zu Industrie-Ölkühlern",
+  "faqs": [
+    {
+      "question": "1. Welche Wartung benötigen Hochleistungs-Ölkühler?",
+      "answer": "Die Wartung umfasst regelmäßige Prüfungen der Mikrokanal-Wärmetauscher, die Kontrolle des Kältemittelfüllstands sowie die Überprüfung der Pumpen und mechanischen Komponenten. Eine saubere Wärmeübertragung ist entscheidend für die langfristige Kühlleistung."
+    },
+    {
+      "question": "2. Was unterscheidet einen Industrie-Prozesskühler von einer normalen Kühleinheit?",
+      "answer": "Normale Klimasysteme regulieren hauptsächlich die Umgebungsluft. Ein Prozesskühler ist dagegen speziell für industrielle Flüssigkeiten entwickelt und arbeitet mit leistungsfähigen Wärmetauschern sowie präziser Temperaturregelung für hohe thermische Belastungen."
+    },
+    {
+      "question": "3. Warum ist die Sauberkeit des Öls im Kühlsystem wichtig?",
+      "answer": "Verunreinigungen reduzieren die Wärmeübertragung und können den schützenden Schmierfilm beschädigen. Ein sauberes Ölkühlsystem verbessert die Effizienz und schützt empfindliche Maschinenkomponenten."
+    },
+    {
+      "question": "4. Wie verbessern Industrie-Ölkühler die Bearbeitungsgenauigkeit?",
+      "answer": "Durch die Vermeidung thermischer Ausdehnung kritischer Komponenten wie Spindeln und Getriebe bleiben Maschinenabmessungen stabil. Dadurch können CNC-Anlagen auch bei langen Produktionszeiten hohe Genauigkeiten erreichen."
+    },
+    {
+      "question": "5. Warum ist Seppa Solutions ein zuverlässiger Partner für industrielle Kühlsysteme?",
+      "answer": "Seppa Solutions liefert vollständig integrierte Thermomanagement-Systeme, die unter realen Produktionsbedingungen geprüft werden. Jede Anlage wird auf Wärmeleistung, Belastbarkeit und Energieeffizienz ausgelegt, um maximale Betriebssicherheit zu gewährleisten."
+    }
+  ]
+}

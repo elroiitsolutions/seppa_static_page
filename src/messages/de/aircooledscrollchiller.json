@@ -1,0 +1,98 @@
+{
+  "title": "Luftgekühlte Scroll-Kältemaschinen: Intelligente Prozesskühlung für industrielle Anwendungen",
+  "breadcrumbName": "Luftgekühlte Scroll-Kühler",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Air Cooled Scroll Chillers: Die effiziente Lösung zur Kontrolle industrieller Prozesswärme",
+  "overviewDescription": "Viele Betreiber industrieller Anlagen kennen die Herausforderungen wassergekühlter Systeme: Wasseraufbereitung, Kühlturmwartung, Ablagerungen in Kondensatorrohren und regelmäßige biologische Kontrollen verursachen einen hohen Betriebsaufwand. Für zahlreiche Produktionsumgebungen ist diese zusätzliche Komplexität nicht wirtschaftlich. Hier bieten luftgekühlte Kältemaschinen eine effiziente Alternative. Durch den Verzicht auf Kühlwasserkreisläufe wird die Wärme über forcierte Luftabgabe abgeführt. Das Ergebnis ist eine einfachere Installation, geringerer Wartungsaufwand und eine flexible Aufstellung der Anlage.",
+  "overviewsubDescription": [
+    "In Kombination mit moderner Scroll-Verdichtertechnologie entstehen industrielle Kühlsysteme mit niedriger Geräuschentwicklung, hoher Teillasteffizienz und weniger mechanischen Verschleißteilen als herkömmliche Kolbenverdichterlösungen.",
+    "Seppa Solutions entwickelt luftgekühlte Kaltwassersätze für Produktionsumgebungen, in denen konstante Temperaturführung, hohe Verfügbarkeit und zuverlässiger Betrieb entscheidend sind."
+  ],
+  "featuresTitle": "Technische Merkmale und Vorteile von Scroll-Kältemaschinen",
+  "features": [
+    {
+      "title": "Hermetische Scroll-Verdichter",
+      "description": "Zwei spiralförmige Verdichtereinheiten verdichten das Kältemittel kontinuierlich ohne oszillierende Bewegungen, was Vibrationen und Geräusche drastisch reduziert. Die Teillasteffizienz bleibt auch bei 50 % Leistung hoch (volumetrisch 85-92 %)."
+    },
+    {
+      "title": "Mikrokanal-Kondensatoren",
+      "description": "Optimierte Kondensatorspulen mit angepasster Lamellenstruktur maximieren die Wärmeübertragungsfläche und reduzieren den Energiebedarf für die Wärmeabgabe."
+    },
+    {
+      "title": "Frequenzgeregelte Lüftersteuerung",
+      "description": "Dank frequenzgeregelter Lüfterantriebe und elektronischer Expansionsventile wird die Lüfterleistung bedarfsgerecht an die Außentemperatur angepasst, was den Teillast-Stromverbrauch senkt."
+    }
+  ],
+  "applicationsTitle": "Anwendungen in verschiedenen Industriebereichen",
+  "applicationsSubtitle": "Die optimale Wahl für Anwendungen, bei denen einfache Installation, geringe Wartung und zuverlässige Prozesskühlung gefragt sind.",
+  "applications": [
+    {
+      "title": "Halbleiter- und Reinraumtechnik",
+      "description": "Vermeidet Wasserleckagen im Reinraum durch Platzierung des luftgekühlten Kaltwassersatzes im Außenbereich."
+    },
+    {
+      "title": "Automobilindustrie & Fertigung",
+      "description": "Kühlt Schweißanlagen und Lackierlinien zuverlässig ohne den Wartungsaufwand von Kühltürmen."
+    },
+    {
+      "title": "Rechenzentren & Serverräume",
+      "description": "Ermöglicht eine flexible Außenaufstellung und eine einfache Anbindung an die interne Kühlungs-Infrastruktur."
+    },
+    {
+      "title": "Lebensmittel- & Pharmaindustrie",
+      "description": "Hält den Kältekreislauf hygienisch sauber außerhalb sensibler Produktionszonen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions für industrielle Kältemaschinen?",
+    "description": "Seppa Solutions entwickelt industrielle Kältemaschinen als individuell ausgelegte Prozesssysteme.",
+    "paragraphs": [
+      "Die Auslegung basiert auf der tatsächlichen Wärmelast, lokalen Klimadaten, verfügbaren Stellflächen und akustischen Anforderungen. Korrosionsbeständige Beschichtungen verlängern die Lebensdauer der Kondensatorspulen spürbar.",
+      "Durch integrierte Modbus- und BACnet-Schnittstellen lassen sich die Anlagen problemlos in bestehende Gebäudeleitsysteme einbinden. Das Ergebnis ist eine hohe Zuverlässigkeit im Dauerbetrieb."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise einer luftgekühlten Scroll-Kältemaschine",
+    "steps": [
+      {
+        "title": "Wärmeaufnahme im Verdampfer",
+        "description": "Erwärmtes Prozesswasser aus der Produktion gelangt in den Verdampfer. Das Kältemittel nimmt die Wärme auf und verdampft."
+      },
+      {
+        "title": "Verdichtung & Luft-Kondensation",
+        "description": "Der Scroll-Verdichter erhöht Druck und Temperatur. Ein Axiallüfter führt Umgebungsluft über die Kondensatorlamellen, um die Wärme abzugeben."
+      },
+      {
+        "title": "Expansionsventil & Rücklauf",
+        "description": "Das Expansionsventil reduziert den Druck des verflüssigten Kältemittels. Das gekühlte Wasser (Sollwert 7 bis 12 °C) strömt zurück zur Produktion."
+      }
+    ],
+    "outro": [
+      "Die Regelung steuert beide Kreisläufe und passt die Verdichterleistung kontinuierlich an die tatsächliche thermische Last an."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie hoch ist der Wartungsaufwand einer luftgekühlten Kältemaschine?",
+      "answer": "Die Wartung umfasst die Reinigung der Spulen, die Kontrolle der Drücke und elektrische Prüfungen. Die komplette Kühlturmwartung entfällt jedoch gänzlich."
+    },
+    {
+      "question": "2. Wie beeinflusst die Umgebungstemperatur die Leistung?",
+      "answer": "Steigt die Umgebungstemperatur über den Auslegungswert, kann sich die Kühlleistung verringern. Seppa berücksichtigt lokale Spitzenbedingungen bei der Dimensionierung."
+    },
+    {
+      "question": "3. Warum sind geregelte AC-Lüfter wichtig?",
+      "answer": "Frequenzgeregelte Lüfter passen sich der aktuellen Kühllast an und sparen im Teillast- oder Nachtbetrieb erhebliche Strommengen ein."
+    },
+    {
+      "question": "4. Wie wird die richtige Scroll-Kältemaschine bestimmt?",
+      "answer": "Die Auswahl basiert auf der maximalen Wärmelast des Prozesses, einer Sicherheitsreserve und den sommerlichen Maximaltemperaturen des Standorts."
+    },
+    {
+      "question": "5. Was unterscheidet Seppa Solutions von anderen Herstellern?",
+      "answer": "Seppa betrachtet Kältemaschinen als integrierte Prozessausrüstung. Jede Anlage wird individuell auf die realen Betriebsbedingungen vor Ort optimiert."
+    }
+  ]
+}

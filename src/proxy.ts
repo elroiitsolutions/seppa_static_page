@@ -6,6 +6,7 @@ const intlMiddleware = createMiddleware(routing);
 
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+  
   // Handle only localized pages to avoid affecting other static routes.
   if (
     pathname === '/can' || pathname.startsWith('/en/can') || pathname.startsWith('/ar/can') ||
@@ -20,14 +21,15 @@ export function proxy(request: NextRequest) {
     pathname === '/mineral-water-line-machines' || pathname.startsWith('/en/mineral-water-line-machines') || pathname.startsWith('/ar/mineral-water-line-machines') ||
     pathname === '/soft-drinks' || pathname.startsWith('/en/soft-drinks') || pathname.startsWith('/ar/soft-drinks') ||
     pathname === '/beer-line-machines' || pathname.startsWith('/en/beer-line-machines') || pathname.startsWith('/ar/beer-line-machines') ||
-    pathname === '/wine-mead' || pathname.startsWith('/en/wine-mead') || pathname.startsWith('/ar/wine-mead')
+    pathname === '/wine-mead' || pathname.startsWith('/en/wine-mead') || pathname.startsWith('/ar/wine-mead') ||
+    pathname === '/services' || pathname.startsWith('/en/services') || pathname.startsWith('/ar/services') || pathname.startsWith('/de/services')
   ) {
     return intlMiddleware(request);
   }
 }
 
 export const config = {
-  // Only trigger proxy execution for the targeted internationalized paths
+  // Trigger proxy execution for the targeted internationalized paths
   matcher: [
     '/can', '/en/can', '/ar/can',
     '/pet', '/en/pet', '/ar/pet',
@@ -41,6 +43,7 @@ export const config = {
     '/mineral-water-line-machines', '/en/mineral-water-line-machines', '/ar/mineral-water-line-machines',
     '/soft-drinks', '/en/soft-drinks', '/ar/soft-drinks',
     '/beer-line-machines', '/en/beer-line-machines', '/ar/beer-line-machines',
-    '/wine-mead', '/en/wine-mead', '/ar/wine-mead'
+    '/wine-mead', '/en/wine-mead', '/ar/wine-mead',
+    '/services', '/en/services/:path*', '/ar/services/:path*', '/de/services/:path*'
   ]
 };

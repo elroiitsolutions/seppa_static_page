@@ -97,7 +97,7 @@ const HomeHero = () => {
           {/* Main Heading */}
           <motion.h1
             variants={fadeInUp}
-            className="font-heading font-bold text-white text-fluid-hero"
+            className="font-heading font-semibold text-white text-fluid-hero"
           >
             {getT('heading')}
           </motion.h1>
