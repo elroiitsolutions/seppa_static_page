@@ -34,6 +34,12 @@ export default async function JuicePage({ params }: PageProps) {
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewLayout: "stacked",
     overviewImage: imgB.src,
+    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : "",
+    featuresSubtitle: t.has('featuresSubtitle') ? t('featuresSubtitle') : "",
+    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
+    applicationsTitle: t.has('applicationsTitle') ? t('applicationsTitle') : "",
+    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : "",
+    applications: t.has('applications') ? t.raw('applications') : undefined,
     contentBlocks: (() => {
       try {
         const raw = t.raw('contentBlocks');
@@ -42,8 +48,7 @@ export default async function JuicePage({ params }: PageProps) {
             title: block.title,
             paragraphs: block.paragraphs,
             image1: [imgC.src, imgD.src][index] || imgC.src,
-            reverse: [true, false][index] || false,
-            bgClass: [undefined, "bg-light"][index]
+            layout: "stacked",
           }));
         }
       } catch (e) {}
@@ -52,6 +57,7 @@ export default async function JuicePage({ params }: PageProps) {
     whyChoose: {
       title: t('whyChoose.title'),
       image: imgA.src,
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: (() => {
         try {
           const raw = t.raw('whyChoose.paragraphs');
@@ -71,11 +77,13 @@ export default async function JuicePage({ params }: PageProps) {
     },
     methodology: {
       title: t('methodology.title'),
+      subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : "",
       steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
         title: step.title,
         description: step.description,
         image: [imgB.src, imgC.src, imgD.src, imgA.src][index] || imgB.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')

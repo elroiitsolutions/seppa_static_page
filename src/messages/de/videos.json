@@ -1,1 +1,102 @@
-{}
+{
+  "title": "Videogalerie",
+  "breadcrumbName": "Videogalerie",
+  "searchPlaceholder": "Videos suchen...",
+  "categoriesHeading": "Kategorien",
+  "noVideos": "Keine Videos gefunden, die Ihren Kriterien entsprechen.",
+  "closeVideo": "Video schließen",
+  "readyTitle": "Bereit für den Start?",
+  "readyHeading": "Erleben Sie unsere Maschinen in Ihrer Praxis",
+  "readyText": "Von der PET-Blasformung bis hin zu kompletten Anlagenlösungen bietet Seppa erstklassige Ingenieurleistungen. Kontaktieren Sie unsere Experten für eine persönliche Beratung.",
+  "productEnquiry": "Produktanfrage",
+  "contactUs": "Kontaktieren Sie uns",
+  "categories": {
+    "All": "Alle",
+    "PET Blowing Machines": "PET-Blasmaschinen",
+    "Complete Line Equipment": "Komplette Linien & Ausrüstung",
+    "Industrial Solutions": "Industrielle Lösungen",
+    "Packaging & Processing": "Verpackung & Verarbeitung"
+  },
+  "videoList": [
+    {
+      "id": "v1",
+      "title": "Automatische PET-Blasmaschine 1 Kavität",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v2",
+      "title": "Vollautomatische PET-Blasmaschine 2 Kavitäten",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v3",
+      "title": "Voll- / Halbautomatische PET-Blasmaschine 3 Kavitäten",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v4",
+      "title": "Automatische PET-Blasmaschine 4 Kavitäten",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v5",
+      "title": "Vollautomatische PET-Flaschenblasmaschine 6 Kavitäten",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v6",
+      "title": "Glasflaschenreinigungsmaschine | Glasflaschenwascher",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v7",
+      "title": "PET-Flaschen-Unscrambler (Sortierer)",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v8",
+      "title": "Jar-Blasmaschine (Weithalsbehälter)",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v9",
+      "title": "8-Kavitäten Vollautomatische PET-Flaschenblasmaschine — SSB SLE 80",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v10",
+      "title": "Containerisierte Meerwasserentsalzungsanlagen",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v11",
+      "title": "Mineralwasseranlage — Industrielle Wasseraufbereitungsanlage — Fosters",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v12",
+      "title": "Soda-Abfüllmaschine",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v13",
+      "title": "Schrumpfverpackungsmaschine | Tertiäre Verpackungsmaschine",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v14",
+      "title": "BLUE RO — Wasserreinigungsanlage — RO-Anlage",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v15",
+      "title": "BLUE RO — Private Umkehrosmoseanlage — RO-Anlage für Wohngebäude",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v16",
+      "title": "Rinser-Filler-Capper-Maschine — 200 Flaschen pro Minute",
+      "category": "Packaging & Processing"
+    }
+  ]
+}

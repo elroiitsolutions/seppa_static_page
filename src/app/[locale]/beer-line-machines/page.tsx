@@ -59,7 +59,8 @@ export default async function BeerLineMachinesPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [imgE.src, imgF.src, imgG.src, imgH.src, meth4.src][index] || imgE.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')

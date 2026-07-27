@@ -61,7 +61,8 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []

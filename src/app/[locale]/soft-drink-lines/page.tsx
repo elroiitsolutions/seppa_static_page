@@ -62,7 +62,8 @@ export default async function SoftDrinkLinesPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [imgF.src, imgG.src, imgH.src][index] || imgF.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')

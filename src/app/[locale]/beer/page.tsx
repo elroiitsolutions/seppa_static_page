@@ -58,7 +58,8 @@ export default async function BeerPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [overviewImg.src, bannerImg.src, overviewImg.src, bannerImg.src][index] || overviewImg.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')

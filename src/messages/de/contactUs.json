@@ -1,24 +1,24 @@
 {
   "breadcrumbsHome": "Startseite",
   "breadcrumbsContact": "Kontakt",
-  "title": "Kontaktieren Sie uns",
+  "title": "Kontakt",
   "headquarters": "Hauptsitz",
-  "getInTouch": "In Kontakt treten",
-  "subtitle": "Wenden Sie sich an unseren Hauptsitz oder erkunden Sie unsere weltweiten Niederlassungen, um Kontakt mit einem Vertreter in Ihrer Nähe aufzunehmen.",
+  "getInTouch": "Kontakt aufnehmen",
+  "subtitle": "Wenden Sie sich an unseren Hauptsitz oder erkunden Sie unsere weltweiten Niederlassungen, um einen Ansprechpartner in Ihrer Nähe zu finden.",
   "tollFree": "Gebührenfrei:",
-  "quickEmail": "Schnelle E-Mail:",
-  "registeredOffice": "Eingetragener Sitz:",
-  "sendMessage": "Schreiben Sie uns eine Nachricht",
+  "quickEmail": "E-Mail:",
+  "registeredOffice": "Eingetragener Firmensitz:",
+  "sendMessage": "Nachricht senden",
   "placeholderName": "Ihr Name *",
   "placeholderEmail": "E-Mail-Adresse *",
   "placeholderPhone": "Telefonnummer *",
   "placeholderLocation": "Standort *",
   "placeholderMessage": "Nachricht schreiben... *",
-  "btnSubmit": "Nachricht senden",
+  "btnSubmit": "Nachricht absenden",
   "btnSending": "Wird gesendet...",
   "network": "Unser Netzwerk",
-  "branchOffices": "Globale Niederlassungen",
-  "selectOffice": "Wählen Sie unten eine Niederlassung aus, um deren Standort auf der Karte anzuzeigen.",
+  "branchOffices": "Weltweite Niederlassungen",
+  "selectOffice": "Wählen Sie eine Niederlassung aus, um den Standort auf der Karte anzuzeigen.",
   "showing": "Angezeigt:",
   "errName": "Ihr Name ist erforderlich",
   "errEmailRequired": "E-Mail-Adresse ist erforderlich",
@@ -28,10 +28,10 @@
   "errLocation": "Standort ist erforderlich",
   "errMessage": "Bitte geben Sie Ihre Nachricht ein",
   "successTitle": "Vielen Dank für Ihre Kontaktaufnahme!",
-  "successMsg": "Ihre Nachricht wurde erfolgreich gesendet. Unser Support-Team wird sich in Kürze mit Ihnen in Verbindung setzen.",
+  "successMsg": "Ihre Nachricht wurde erfolgreich gesendet. Unser Support-Team wird sich in Kürze bei Ihnen melden.",
   "offices": [
     {
-      "city": "Mumbai (Hauptsitz)",
+      "city": "Mumbai (Hauptgeschäftsstelle)",
       "address": "712 Shivai Plaza, Andheri (East), Mumbai-400059, Indien",
       "phone": ["1-800-425-20000", "+91-9384806105"],
       "email": "info@seppasolutions.com",
@@ -46,14 +46,14 @@
     },
     {
       "city": "Bengaluru",
-      "address": "4. Stock, Novel Office, Begaum Mahal, Yellappachetty Layout, Bengaluru- 560042",
+      "address": "4th Floor, Novel office, Begaum Mahal, Yellappachetty Layout, Bengaluru- 560042",
       "phone": ["+91-9483525500"],
       "email": "info@seppasolutions.com",
       "country": "Indien"
     },
     {
       "city": "Neu-Delhi",
-      "address": "Nr. 1305, 13. Stock, Vikram Towers, Gebäude Nr. 16, Rajendra Place, Neu-Delhi - 110008",
+      "address": "No.1305, 13th Floor, Vikram Towers, Building no-16, Rajendra place, New Delhi - 110008",
       "phone": ["1-800-425-20000", "+91-9384806105"],
       "email": "info@seppasolutions.com",
       "country": "Indien"
@@ -81,17 +81,17 @@
     },
     {
       "city": "VAE",
-      "address": "Freihandelszone Ajman, V.A.E.",
+      "address": "Ajman Free Zone, V.A.E.",
       "phone": ["+971507726933"],
       "email": "mail@seppasolutions.com",
       "country": "VAE"
     },
     {
       "city": "Vereinigtes Königreich",
-      "address": "Region Großbritannien",
+      "address": "Region Vereinigtes Königreich",
       "phone": ["+44 20300 27711"],
       "email": "mail@seppasolutions.com",
-      "country": "Großbritannien"
+      "country": "Vereinigtes Königreich"
     },
     {
       "city": "Deutschland & Belgien",

@@ -1,25 +1,16 @@
 {
-  "title": "Strukturiertes Wasser",
+  "title": "Strukturiertes Wasser: Moderne Produktionstechnologie für hochwertige Functional-Water-Produkte",
   "breadcrumbName": "Strukturiertes Wasser",
   "rootBreadcrumbName": "Flüssigkeiten",
   "rootBreadcrumbPath": "/liquid",
   "overviewTitle": "Was ist strukturiertes Wasser und wie funktioniert die Verarbeitung?",
   "overviewDescription": "Strukturiertes Wasser bezeichnet Wasser, das mithilfe spezieller physikalischer Verfahren behandelt wird, um die Strömungs- und Prozessbedingungen während der Herstellung gezielt zu beeinflussen. Je nach Technologie kommen unter anderem Vortex- oder Wirbelkammern zum Einsatz, die natürliche Strömungsbewegungen nachbilden. Anbieter solcher Verfahren gehen davon aus, dass sich dadurch bestimmte physikalische Eigenschaften des Wassers verändern können. Die wissenschaftliche Bewertung dieser Effekte ist weiterhin Gegenstand der Forschung.",
   "overviewsubDescription": [
-    "Für Hersteller funktioneller Getränke bedeutet dies vor allem eines: Der gesamte Produktionsprozess muss reproduzierbar, hygienisch und präzise kontrolliert werden. Unabhängig vom eingesetzten Verfahren sind eine konstante Wasserqualität, eine zuverlässige Prozessführung und eine sterile Abfüllung entscheidend für eine gleichbleibende Produktqualität."
-  ],
-  "contentBlocks": [
-    {
-      "title": "Vorteile moderner Produktionssysteme",
-      "paragraphs": [
-        "Unabhängig von der jeweiligen Wassertechnologie profitieren Hersteller vor allem von einer hochpräzisen Prozesskontrolle. Die Produktionslinien von Seppa Solutions bieten:",
-        "• reproduzierbare Prozessparameter\n• automatisierte Qualitätsüberwachung\n• hygienisches Anlagendesign nach Lebensmittelstandard\n• hohe Produktionssicherheit\n• flexible Anpassung an unterschiedliche Flaschenformate\n• geringe Betriebskosten durch energieeffiziente Komponenten",
-        "Geschlossene Prozessführung und automatisierte Steuerung reduzieren gleichzeitig das Risiko von Verunreinigungen und gewährleisten eine gleichbleibende Produktqualität."
-      ]
-    }
+    "Für Hersteller funktioneller Getränke bedeutet dies vor allem eines: Der gesamte Produktionsprozess muss reproduzierbar, hygienisch und präzise kontrolliert werden. Unabhängig vom eingesetzten Verfahren sind eine konstante Wasserqualität, eine zuverlässige Prozessführung und eine sterile Abfüllung entscheidend für eine gleichbleibende Produktqualität.",
+    "Eine industrielle Anlage für strukturiertes Wasser besteht aus weit mehr als einer einzelnen Vortex-Einheit. Seppa Solutions entwickelt komplette Produktionslinien, die alle relevanten Prozessschritte miteinander verbinden."
   ],
   "featuresTitle": "Hauptmerkmale unserer Produktionslösungen für strukturiertes Wasser",
-  "featuresSubtitle": "Eine industrielle Anlage für strukturiertes Wasser besteht aus weit mehr als einer einzelnen Vortex-Einheit. Seppa Solutions entwickelt komplette Produktionslinien, die alle relevanten Prozessschritte miteinander verbinden.",
+  "featuresSubtitle": "Die technische Umsetzung erfordert eine sorgfältig abgestimmte Abfolge von Filtration, physikalischer Konditionierung und mechanischer Stabilisierung.",
   "features": [
     {
       "title": "Mehrstufiges Vortex-Behandlungssystem",
@@ -35,7 +26,7 @@
     }
   ],
   "applicationsTitle": "Einsatzbereiche strukturierter Wasserprodukte",
-  "applicationsSubtitle": "Produktionsanlagen für strukturiertes Wasser kommen in verschiedenen Marktsegmenten zum Einsatz.",
+  "applicationsSubtitle": "Unsere Produktionsanlagen sind für unterschiedliche Kapazitätsanforderungen und Betriebsgrößen ausgelegt.",
   "applications": [
     {
       "title": "Industrielle Großproduktion",
@@ -48,9 +39,9 @@
   ],
   "whyChoose": {
     "title": "Warum Seppa Solutions für Produktionsanlagen für strukturiertes Wasser?",
-    "description": "Seppa Solutions verfügt über umfassende Erfahrung im Anlagenbau für Premiumwasser, funktionelle Getränke und Spezialanwendungen der Flüssigkeitsverarbeitung. Unsere Lösungen basieren auf fundierter Verfahrenstechnik, moderner Automatisierung und hygienischem Maschinenbau.",
+    "description": "Seppa Solutions verfügt über umfassende Erfahrung im Anlagenbau für Premiumwasser, funktionelle Getränke und Spezialanwendungen der Flüssigkeitsverarbeitung.",
     "paragraphs": [
-      "Unsere Engineering-Teams kombinieren Fachwissen aus Strömungsmechanik, Prozessautomatisierung und Lebensmitteltechnik. Jede Anlage wird individuell auf die Eigenschaften des Rohwassers sowie die Produktionsziele des Kunden ausgelegt.",
+      "Unsere Lösungen basieren auf fundierter Verfahrenstechnik, moderner Automatisierung und hygienischem Maschinenbau. Unsere Engineering-Teams kombinieren Fachwissen aus Strömungsmechanik, Prozessautomatisierung und Lebensmitteltechnik. Jede Anlage wird individuell auf die Eigenschaften des Rohwassers sowie die Produktionsziele des Kunden ausgelegt.",
       "Durch präzise ausgelegte Prozessmodule, integrierte Qualitätskontrolle und validierte Hygienekonzepte entstehen Produktionslinien, die hohe Produktqualität mit wirtschaftlicher Effizienz verbinden."
     ]
   },
@@ -58,29 +49,28 @@
     "title": "Unsere Methodik für die Planung von Produktionsanlagen",
     "steps": [
       {
-        "title": "1. Analyse des Rohwassers",
+        "title": "Analyse des Rohwassers",
         "description": "Zu Beginn werden Gesamtmineralisierung (TDS), Mineralstoffprofil, mikrobiologische Parameter sowie weitere Qualitätsmerkmale analysiert. Diese Daten bilden die Grundlage für die gesamte Anlagenplanung."
       },
       {
-        "title": "2. Wasseraufbereitung",
+        "title": "Wasseraufbereitung",
         "description": "Je nach Rohwasserqualität erfolgt eine angepasste Vorbehandlung. Hierzu können Filtration, Aktivkohle, Enthärtung oder Remineralisierung gehören, um definierte Eingangswerte für den Produktionsprozess sicherzustellen."
       },
       {
-        "title": "3. Prozessbehandlung",
+        "title": "Prozessbehandlung",
         "description": "Das Wasser durchläuft anschließend die vorgesehenen Prozessmodule einschließlich Vortex-Technologie, Strömungsstabilisierung und weiterer anwendungsspezifischer Verfahrensschritte."
       },
       {
-        "title": "4. Hygienische Abfüllung",
-        "description": "Die Abfüllung erfolgt unter kontrollierten Hygienebedingungen. Je nach Verpackungsart kommen geeignete Füllsysteme für Glas-, PET- oder HDPE-Flaschen zum Einsatz. Sämtliche produktberührenden Komponenten bestehen aus Edelstahl AISI 316L oder lebensmitteltauglichen PTFE-Werkstoffen."
+        "title": "Hygienische Abfüllung, Verschließen und Verpacken",
+        "description": "Die Abfüllung erfolgt unter kontrollierten Hygienebedingungen. Je nach Verpackungsart kommen geeignete Füllsysteme für Glas-, PET- oder HDPE-Flaschen zum Einsatz. Sämtliche produktberührenden Komponenten bestehen aus Edelstahl AISI 316L oder lebensmitteltauglichen PTFE-Werkstoffen. Die Flaschen werden automatisch verschlossen, etikettiert und codiert. Der gesamte Prozess erfolgt ohne manuelle Eingriffe im offenen Produktbereich."
       },
       {
-        "title": "5. Verschließen und Verpacken",
-        "description": "Die Flaschen werden automatisch verschlossen, etikettiert und codiert. Der gesamte Prozess erfolgt ohne manuelle Eingriffe im offenen Produktbereich."
-      },
-      {
-        "title": "6. Qualitätsvalidierung",
+        "title": "Qualitätsvalidierung",
         "description": "Jede Produktionscharge wird hinsichtlich mikrobiologischer Qualität, pH-Wert, TDS, gelöstem Sauerstoff sowie weiterer definierter Qualitätsparameter geprüft. Die vollständige Chargendokumentation unterstützt sowohl regulatorische Anforderungen als auch interne Qualitätssicherung."
       }
+    ],
+    "outro": [
+      "Fazit: Die Herstellung funktioneller Wasserprodukte stellt hohe Anforderungen an Verfahrenstechnik, Hygiene und Prozesskontrolle. Mit maßgeschneiderten Produktionsanlagen, präziser Automatisierung und umfassender Engineering-Kompetenz entwickelt Seppa Solutions leistungsfähige Lösungen für Hersteller hochwertiger Functional-Water-Produkte. Von der Rohwasseranalyse bis zur validierten Abfülllinie begleiten wir unsere Kunden bei der Realisierung effizienter, zuverlässiger und zukunftssicherer Produktionsprozesse."
     ]
   },
   "faqTitle": "Häufig gestellte Fragen (FAQ)",
@@ -105,8 +95,5 @@
       "question": "5. Wie unterstützt Seppa Solutions bei regulatorischen Anforderungen?",
       "answer": "Jede Anlage wird mit vollständiger Dokumentation einschließlich IQ/OQ/PQ, Validierungsunterlagen und Prozessnachweisen ausgeliefert. Darüber hinaus unterstützen wir unsere Kunden bei der Qualifizierung ihrer Produktionslinien und der Einhaltung nationaler sowie internationaler Lebensmittelstandards."
     }
-  ],
-  "outro": [
-    "Die Herstellung funktioneller Wasserprodukte stellt hohe Anforderungen an Verfahrenstechnik, Hygiene und Prozesskontrolle. Mit maßgeschneiderten Produktionsanlagen, präziser Automatisierung und umfassender Engineering-Kompetenz entwickelt Seppa Solutions leistungsfähige Lösungen für Hersteller hochwertiger Functional-Water-Produkte. Von der Rohwasseranalyse bis zur validierten Abfülllinie begleiten wir unsere Kunden bei der Realisierung effizienter, zuverlässiger und zukunftssicherer Produktionsprozesse."
   ]
 }
