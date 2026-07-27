@@ -105,7 +105,8 @@ export default async function CoolantChillerIpPage({ params }: PageProps) {
           }
         } catch (e) {}
         return [];
-      })()
+      })(),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: (() => {

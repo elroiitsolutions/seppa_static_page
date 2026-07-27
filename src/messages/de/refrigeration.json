@@ -1,1 +1,134 @@
-{}
+{
+  "title": "Moderne industrielle Kälteanlagen für präzise Prozesskühlung",
+  "breadcrumbName": "Kälteanlage",
+  "rootBreadcrumbName": "Ausrüstung",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Was ist eine industrielle Kälteanlage?",
+  "overviewDescription": "Moderne Produktionsanlagen sind auf zuverlässige Kühlsysteme angewiesen, um stabile Fertigungsprozesse sicherzustellen. Eine industrielle Kälteanlage bildet dabei das thermische Rückgrat vieler Branchen – von präzisen chemischen Prozessen bis zur Tiefkühlung in der Lebensmittelindustrie.",
+  "overviewsubDescription": [
+    "Die Aufgabe eines industriellen Kühlsystems besteht darin, kontinuierlich Wärme aus einem Prozessmedium abzuführen und kontrolliert an die Umgebung abzugeben. Eine leistungsfähige Kälteanlage beeinflusst direkt: Produktqualität, Prozesssicherheit, Produktionsgeschwindigkeit und Energieverbrauch.",
+    "Technisch basiert eine industrielle Kälteanlage auf einem präzise gesteuerten Dampfkompressionskreislauf. Entscheidend sind stabile Kältemittelströme, optimierte Druckverhältnisse und eine hohe Wärmeübertragung während der Verdampfungs- und Kühlphase."
+  ],
+  "contentBlocks": [
+    {
+      "title": "SEPPA Engineering: Kälteanlagen und Chiller-Lösungen",
+      "paragraphs": [
+        "Öl-Chiller: SEPPA Öl-Chiller wurden speziell für Maschinenkühlung und stabile Flüssigkeitseigenschaften entwickelt. Die Kühlleistungen reichen von 1,75 kW bis 35 kW. Anwendungsbereiche:",
+        "Hydrauliköl-Kühler: Verhindert thermische Alterung von Hydraulikflüssigkeiten bei hohen mechanischen Belastungen.",
+        "Kühlmittel-Chiller: Reguliert Prozessflüssigkeiten und Kühlschmierstoffe in der Zerspanung.",
+        "Coolant Chiller I Dip: Geeignet für direkte Tauchkühlung, bei der Flüssigkeiten innerhalb eines Behälters gekühlt werden."
+      ]
+    },
+    {
+      "title": "Luft- und wassergekühlte Scroll-Chiller",
+      "paragraphs": [
+        "Luftgekühlte Scroll-Chiller: SEPPA luftgekühlte Scroll-Chiller bieten Kühlleistungen von 1,75 kW bis 1.050 kW. Die Systeme sind für Innen- und Außenaufstellung geeignet und verfügen über robuste Gehäuse sowie leistungsfähige Kondensatorlüfter für anspruchsvolle Umgebungen.",
+        "Wassergekühlte Scroll-Chiller: Wassergekühlte Scroll-Chiller von SEPPA decken einen Leistungsbereich von 17,5 kW bis 462 kW ab. Durch Rohrbündelverdampfer und -kondensatoren erreichen die Anlagen hohe Effizienz und zuverlässigen Dauerbetrieb. Für höhere Leistungen stehen redundante Modelle zur Verfügung. Mehrere Kompressoren mit automatischer Lastverteilung sorgen für gleichmäßige Auslastung und längere Lebensdauer."
+      ]
+    },
+    {
+      "title": "Energieeffiziente Chiller-Systeme",
+      "paragraphs": [
+        "Energieeffiziente Chiller-Systeme: Herkömmliche Chiller reagieren oft nur durch Ein- und Ausschalten auf Temperaturschwankungen. Dies führt zu Energiespitzen und mechanischer Belastung. SEPPA energieeffiziente Kühlsysteme nutzen modulierende Technologien und passen die Leistung kontinuierlich an die tatsächliche Wärmelast an. Das reduziert: Energieverbrauch, Betriebskosten und mechanischen Verschleiß.",
+        "Smart Screw Chiller Serie: Für schwere industrielle Anwendungen bietet SEPPA Schrauben-Chiller mit einer Kühlleistung von 140 kW bis 875 kW. Die Systeme verwenden effiziente Bitzer-Kompressoren und unterstützen verschiedene umweltfreundliche Kältemittel wie R134a, R407C und R404A. Ein integrierter Unterkühler verbessert die Leistung bei hohen Umgebungstemperaturen und steigert den COP-Wert der Anlage."
+      ]
+    }
+  ],
+  "featuresTitle": "Hauptkomponenten einer Kälteanlage",
+  "featuresSubtitle": "Für maximale thermische Effizienz müssen alle Komponenten einer industriellen Kälteanlage optimal aufeinander abgestimmt sein.",
+  "features": [
+    {
+      "title": "Hochleistungs-Kompressoren",
+      "description": "Der Kompressor ist das zentrale Antriebselement des Kältekreislaufs. Moderne Systeme nutzen Scroll- oder Doppel-Schraubenkompressoren, um den erforderlichen Druckunterschied für den Phasenwechsel des Kältemittels zu erzeugen. Frequenzumrichter (VFD) ermöglichen eine bedarfsgerechte Leistungsanpassung und verbessern die Energieeffizienz, indem die Motordrehzahl exakt an die aktuelle Kühllast angepasst wird."
+    },
+    {
+      "title": "Effiziente Verdampfer und Verflüssiger",
+      "description": "Die Wärmeübertragung wird durch Wärmetauscherfläche und Strömungsverhalten bestimmt. SEPPA setzt auf leistungsfähige Plattenwärmetauscher sowie robuste Rohrbündelwärmetauscher für industrielle Anwendungen. Korrosionsbeständige Materialien wie Edelstahl oder Kupfer-Nickel-Legierungen gewährleisten zuverlässigen Betrieb auch unter anspruchsvollen Bedingungen."
+    },
+    {
+      "title": "Intelligente Expansionsventile",
+      "description": "Elektronische Expansionsventile regeln die exakte Kältemittelmenge im Verdampfer. Sensoren überwachen kontinuierlich die Überhitzung und verhindern Flüssigkeitseintrag in den Kompressor. Dadurch arbeitet die Kälteanlage stabil und effizient."
+    },
+    {
+      "title": "Intelligente SPS-Steuerung",
+      "description": "Eine moderne SPS-Steuerung bildet die zentrale Schnittstelle der Anlage. Sie ermöglicht: automatische Lastanpassung, Echtzeitüberwachung, Datenerfassung und Integration in SCADA-Systeme. Eine zentral geplante Kälteanlage reduziert langfristig Betriebskosten und verbessert die Gesamtenergieeffizienz."
+    }
+  ],
+  "applicationsTitle": "Anwendungen industrieller Kälteanlagen",
+  "applicationsSubtitle": "Die Einsatzmöglichkeiten moderner Kühlsysteme reichen über viele Industriebereiche.",
+  "applications": [
+    {
+      "title": "Lebensmittel und Kühlketten",
+      "description": "In Lagerung, Tiefkühlung und Logistik sind stabile Temperaturen entscheidend. Schon geringe Abweichungen können wirtschaftliche Verluste verursachen."
+    },
+    {
+      "title": "Brauereien und Getränkeproduktion",
+      "description": "Eine präzise Wasser- und Prozesskühlung ist entscheidend für Würzekühlung, Fermentation und Produktlagerung."
+    },
+    {
+      "title": "Kunststoffindustrie",
+      "description": "Bei Kunststoffspritzgussprozessen beeinflusst schnelle und gleichmäßige Wärmeabfuhr direkt die Zykluszeit und verhindert Verformungen der Bauteile."
+    },
+    {
+      "title": "Große Prozessanlagen",
+      "description": "Für umfangreiche Produktionslinien bieten individuell geplante Wasserkühlanlagen zentrale Temperaturkontrolle für komplexe Fertigungsprozesse."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA für industrielle Kältelösungen?",
+    "description": "Produktionsunternehmen setzen auf SEPPA, weil moderne Kälteanlagen langfristig zuverlässig, effizient und erweiterbar sein müssen.",
+    "paragraphs": [
+      "SEPPA kombiniert: robuste industrielle Kältetechnik, energieeffiziente Komponenten, individuelle Anlagenplanung, IoT-fähige Überwachungssysteme und langjährige technische Erfahrung.",
+      "Die Lösungen sind darauf ausgelegt, auch unter anspruchsvollen Betriebsbedingungen stabile Kühlleistung bereitzustellen."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodik",
+    "title": "Methodik: Planung und Umsetzung industrieller Kälteanlagen",
+    "subtitle": "SEPPA folgt einem strukturierten Engineering-Prozess für jede industrielle Kühllösung.",
+    "steps": [
+      {
+        "title": "1. Analyse der thermischen Last",
+        "description": "Vor der Auslegung werden Kühlbedarf, Durchflussmengen, Temperaturdifferenzen und maximale Umgebungsbedingungen analysiert."
+      },
+      {
+        "title": "2. Individuelle Anlagendimensionierung",
+        "description": "Auf Basis der Anforderungen wird die passende Technologie ausgewählt – beispielsweise Scroll- oder Schrauben-Chiller."
+      },
+      {
+        "title": "3. Integration in bestehende Produktionsanlagen",
+        "description": "SEPPA entwickelt hydraulische und elektrische Schnittstellen für eine zuverlässige Integration mit vorhandenen Produktionslinien."
+      },
+      {
+        "title": "4. Inbetriebnahme und Prüfung",
+        "description": "Drucktests, Evakuierung und Funktionstests stellen sicher, dass die Anlage nach Installation zuverlässig arbeitet."
+      }
+    ],
+    "outro": [
+      "SEPPA – Ihr Partner für industrielle Kühlsysteme. SEPPA entwickelt industrielle Kälteanlagen und Chiller-Lösungen für Unternehmen, die präzise Temperaturkontrolle, hohe Energieeffizienz und langfristige Betriebssicherheit benötigen. Von der Planung bis zur Integration entstehen maßgeschneiderte Kühlsysteme für moderne Produktionsprozesse."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen zu industriellen Kälteanlagen",
+  "faqs": [
+    {
+      "question": "Welche Faktoren beeinflussen den Energieverbrauch einer Wasserkühlanlage?",
+      "answer": "Der Energieverbrauch hängt vor allem von Temperaturhub, Wärmetauscherzustand, Verdichterauslegung und Leistungsregelung ab. Mehrkompressorsysteme und frequenzgeregelte Schraubenkompressoren verbessern die Effizienz bei wechselnden Lastbedingungen."
+    },
+    {
+      "question": "Warum ist vorbeugende Wartung bei Kälteanlagen wichtig?",
+      "answer": "Regelmäßige Wartung verhindert Kältemittelverluste, erhält die Wärmeübertragung und schützt wichtige Komponenten. Bereits geringe Ablagerungen in Wärmetauschern können die Effizienz deutlich reduzieren."
+    },
+    {
+      "question": "Wie häufig sollten industrielle Kälteanlagen geprüft werden?",
+      "answer": "Kleinere Parameterkontrollen sollten regelmäßig erfolgen. Eine umfassende technische Prüfung und thermodynamische Bewertung empfiehlt sich mindestens jährlich."
+    },
+    {
+      "question": "Welche Lebensdauer hat eine industrielle Kälteanlage?",
+      "answer": "Bei fachgerechter Wartung können hochwertige industrielle Kälteanlagen 20 bis 25 Jahre zuverlässig betrieben werden."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen luftgekühlten und wassergekühlten Chiller-Systemen?",
+      "answer": "Luftgekühlte Systeme geben Wärme über Umgebungsluft und Ventilatoren ab und sind einfach zu installieren. Wassergekühlte Anlagen nutzen einen externen Kühlwasserkreislauf und bieten besonders bei hohen Umgebungstemperaturen eine höhere thermische Effizienz."
+    }
+  ]
+}

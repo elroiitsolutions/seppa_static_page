@@ -67,7 +67,8 @@ export default async function LiquidPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [meth1.src, meth2.src, meth3.src][index] || meth1.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')

@@ -8,6 +8,7 @@ import logoImg from '@/assets/logo/logo.png';
 import enHeader from '@/messages/en/header.json';
 import arHeader from '@/messages/ar/header.json';
 import deHeader from '@/messages/de/header.json';
+import nlHeader from '@/messages/nl/header.json';
 
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,31 +18,33 @@ const Header: React.FC = () => {
 
   const isArabic = pathname.startsWith('/ar');
   const isGerman = pathname.startsWith('/de');
+  const isDutch = pathname.startsWith('/nl');
 
-  const menu = isArabic ? arHeader : isGerman ? deHeader : enHeader;
+  const menu = isArabic ? arHeader : isGerman ? deHeader : isDutch ? { ...enHeader, ...nlHeader } : enHeader;
 
   const getLink = (path: string) => {
     if (path === '/') {
-      return isArabic ? '/ar' : isGerman ? '/de' : '/en';
+      return isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : '/en';
     }
-    const prefix = isArabic ? '/ar' : isGerman ? '/de' : '/en';
+    const prefix = isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : '/en';
     return `${prefix}${path}`;
   };
 
-  const currentLocale = isArabic ? 'ar' : isGerman ? 'de' : 'en';
+  const currentLocale = isArabic ? 'ar' : isGerman ? 'de' : isDutch ? 'nl' : 'en';
 
   const getLocaleLabel = (loc: string) => {
     switch (loc) {
       case 'ar': return 'العربية';
       case 'de': return 'Germany';
+      case 'nl': return 'Dutch';
       default: return 'English';
     }
   };
 
   const changeLanguage = (newLocale: string) => {
     if (newLocale === currentLocale) return;
-    const prefix = currentLocale === 'en' ? '/en' : currentLocale === 'ar' ? '/ar' : '/de';
-    const targetPrefix = newLocale === 'en' ? '/en' : newLocale === 'ar' ? '/ar' : '/de';
+    const prefix = currentLocale === 'en' ? '/en' : currentLocale === 'ar' ? '/ar' : currentLocale === 'de' ? '/de' : '/nl';
+    const targetPrefix = newLocale === 'en' ? '/en' : newLocale === 'ar' ? '/ar' : newLocale === 'de' ? '/de' : '/nl';
     router.replace(pathname.replace(prefix, targetPrefix));
   };
 
@@ -288,7 +291,7 @@ const Header: React.FC = () => {
               <FiChevronDown className="transition-transform group-hover/lang:rotate-180 text-xs" />
             </button>
             <div className="absolute right-0 top-full mt-2 w-32 bg-[#0d162a] border border-gold/20 text-white rounded-md shadow-lg opacity-0 invisible group-hover/lang:opacity-100 group-hover/lang:visible transition-all duration-300 transform translate-y-2 group-hover/lang:translate-y-0 z-50 flex flex-col py-1.5 overflow-hidden">
-              {['en', 'ar', 'de'].map((loc) => (
+              {['en', 'ar', 'de', 'nl'].map((loc) => (
                 <button
                   key={loc}
                   onClick={() => changeLanguage(loc)}
@@ -665,7 +668,7 @@ const Header: React.FC = () => {
             
             <div className="pt-6 mt-auto flex flex-col gap-3">
               <div className="flex justify-around gap-2 bg-[#0d162a]/50 p-2 rounded-xl border border-white/10">
-                {['en', 'ar', 'de'].map((loc) => (
+                {['en', 'ar', 'de', 'nl'].map((loc) => (
                   <button
                     key={loc}
                     onClick={() => { changeLanguage(loc); setIsMobileMenuOpen(false); }}

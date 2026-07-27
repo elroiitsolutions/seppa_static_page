@@ -1,0 +1,100 @@
+{
+  "title": "Industrielle Immersionskühler für prozesskritische Kühlanwendungen",
+  "breadcrumbName": "Immersionskühler",
+  "rootBreadcrumbName": "",
+  "rootBreadcrumbPath": "",
+  "overviewTitle": "Industrial Coolant Chiller Immersion Type: Präzisionskühlung für industrielle Prozesse",
+  "overviewDescription": "In vielen industriellen Anwendungen hat sich die Immersionskühlung seit Jahrzehnten bewährt. Sobald große Mengen an Prozessflüssigkeiten, empfindliche Chemiebäder oder temperaturkritische Brauereiprozesse kontrolliert werden müssen, stoßen klassische außenliegende Kühlsysteme schnell an ihre Grenzen. Genau für diese Anforderungen wurde die Immersionskühler-Technologie entwickelt. Der Kühlprozess erfolgt direkt innerhalb des Mediums, wodurch Wärmeverluste durch externe Rohrleitungen, Pumpenkreise oder zusätzliche Wärmetauscher reduziert werden. Die SEPPA DIP Serie von Seppa Solutions basiert auf diesem Prinzip. Das System verfügt über eine robuste Edelstahl-Kühlspirale aus SS 304, die direkt in den Prozessbehälter eingetaucht wird. Dadurch erfolgt die Wärmeübertragung unmittelbar an der Quelle der thermischen Belastung.",
+  "overviewsubDescription": [
+    "Diese Bauweise ermöglicht eine schnelle Reaktion auf Temperaturänderungen und eignet sich besonders für Anwendungen, bei denen konstante Prozessbedingungen entscheidend sind."
+  ],
+  "featuresTitle": "Was unterscheidet die Immersionskühler-Technologie?",
+  "featuresSubtitle": "Bei herkömmlichen Kühlsystemen wird das Prozessmedium häufig über externe Wärmetauscher geführt. Dabei entstehen zusätzliche Übergänge: externe Wärmetauscherflächen, Rohrleitungen, Pumpenverluste und zusätzliche Wärmeübertragungswiderstände. Ein Immersionskühler reduziert diese Verluste, indem die Verdampfer-Kühlspirale direkt im Medium arbeitet.",
+  "features": [
+    {
+      "title": "SS 304 Immersionsspirale für hohe Prozesssicherheit",
+      "description": "Die Materialauswahl der Kühlspirale ist entscheidend für die Lebensdauer des Systems. Edelstahl SS 304 eignet sich für zahlreiche industrielle Medien wie: Wasser-Glykol-Gemische, Solelösungen, milde Reinigungsmittel und verschiedene Kühlflüssigkeiten. Besonders in Lebensmittel- und Getränkeanwendungen ist die Materialverträglichkeit entscheidend, da Kontaminationen vermieden werden müssen. Die Geometrie der Kühlspirale wird individuell ausgelegt. Parameter wie Eintauchtiefe, Spiraldurchmesser, Rohrabstand und verfügbare Wärmeübertragungsfläche werden entsprechend der Tankgeometrie und Prozessanforderung dimensioniert."
+    },
+    {
+      "title": "Flüssigkeitsbewegung für maximale Wärmeübertragung",
+      "description": "Ein wichtiger Faktor bei Immersionskühlern ist die Bewegung des Mediums um die Kühlspirale. Bei stehenden Flüssigkeiten bildet sich eine thermische Grenzschicht an der Oberfläche der Spirale. Diese wirkt isolierend und reduziert die Wärmeübertragung. Deshalb berücksichtigt Seppa Solutions bei der Auslegung auch: Pumpenumwälzung, externe Rührwerke und Tankbewegung. Eine ausreichende Strömung sorgt dafür, dass kontinuierlich neues Medium an der Kühlfläche vorbeigeführt wird. Das Ergebnis ist eine gleichmäßige Temperaturverteilung im gesamten Behälter und eine konstante Kühlleistung."
+    },
+    {
+      "title": "Kompakte Bauweise und geringer Geräuschpegel",
+      "description": "Produktionsbereiche stellen häufig hohe Anforderungen an Platzbedarf und Geräuschentwicklung. Die SEPPA DIP Serie bietet: kompakte Installation, niedrige Geräuschemissionen und einfache Integration in bestehende Anlagen. Dadurch eignet sich der Immersionskühler auch für Produktionsumgebungen mit begrenztem Platzangebot."
+    }
+  ],
+  "applicationsTitle": "Anwendungen industrieller Immersionskühler",
+  "applicationsSubtitle": "Vielseitige industrielle Anwendungen, in denen die direkte Immersionskühlung die beste Leistung bietet.",
+  "applications": [
+    {
+      "title": "Brauerei-Würzekühlung",
+      "description": "Die Kühlung von Brauereiwürze gehört zu den anspruchsvollsten Anwendungen im Getränkebereich. Nach dem Kochprozess muss die Würze schnell auf die gewünschte Anstelltemperatur gebracht werden: 18–22 °C für Ale-Fermentation und 8–12 °C für Lagerbiere. Bei großen Tanks mit mehreren hundert bis mehreren tausend Litern Volumen ist eine zuverlässige Kühlung entscheidend. Ein klassischer externer Wärmetauscher benötigt zusätzliche Pumpkreise und bewegt die heiße Würze während der Kühlung. Dadurch entstehen zusätzliche hygienische und oxidationstechnische Herausforderungen. Der Immersions-Würzekühler arbeitet direkt im Tank: 1. Kühlspirale wird eingesetzt, 2. Temperatur wird kontrolliert reduziert, 3. Hefezugabe erfolgt zum geplanten Zeitpunkt. Die Edelstahlkonstruktion der SEPPA DIP Serie unterstützt CIP-kompatible Prozesse und lange Betriebszeiten."
+    },
+    {
+      "title": "Chemische Prozesse und Galvanikbäder",
+      "description": "Galvanische Prozesse und Ätzanlagen benötigen exakt definierte Temperaturen. Temperaturabweichungen können Beschichtungsqualität, Schichtdicke und Prozessstabilität beeinflussen. Ein Immersionskühler hält das Prozessbad durch kontinuierliche Kältemittelzirkulation innerhalb des definierten Temperaturbereichs. Da keine externe Wärmetauscherstrecke aufgeheizt werden muss, reagiert das System direkt auf Änderungen der Wärmelast."
+    },
+    {
+      "title": "Allgemeine industrielle Kühlkreisläufe",
+      "description": "Viele Produktionsbereiche benötigen eine aktive Kühlung von Prozessmedien: CNC-Kühlmitteltanks, Hydraulikanlagen, Spritzgießmaschinen und Fertigungsanlagen. Die SEPPA DIP Serie arbeitet als eigenständiges Industrie-Kühlsystem überall dort, wo keine zentrale Kaltwasserversorgung verfügbar ist oder eine dezentrale Lösung wirtschaftlicher ist."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Hersteller Seppa Solutions wählen",
+    "description": "Seppa Solutions entwickelt industrielle Kühlsysteme nicht als Standardprodukte, sondern als anwendungsspezifische Lösungen. Die Auslegung erfolgt anhand von: Tankgeometrie, Prozessmedium, Temperaturanforderungen und Installationsbedingungen.",
+    "paragraphs": [
+      "Als erfahrener Hersteller industrieller Kühlsysteme unterstützt Seppa Kunden aus: Lebensmittelindustrie, Getränkeproduktion, Chemiebranche und allgemeiner Fertigung.",
+      "Die SEPPA DIP Serie wurde für lange Produktionszeiten, anspruchsvolle CIP-Prozesse und reale Industriebedingungen entwickelt.",
+      "Die Kombination aus: SS 304 Edelstahlkonstruktion, energieeffizienten Kältemitteln, intelligenter Steuerung und individueller Auslegung macht die Systeme zu einer zuverlässigen Lösung für prozesskritische Kühlaufgaben."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise eines Immersionskühlers",
+    "subtitle": "Der thermodynamische Ablauf eines Immersionskühlers erfolgt in mehreren Schritten:",
+    "steps": [
+      {
+        "title": "1. Direkte Wärmeaufnahme im Prozessbehälter",
+        "description": "Die Edelstahlspirale befindet sich vollständig im Prozessmedium. Flüssiges Kältemittel mit niedrigem Druck nimmt Wärme durch die Rohrwand auf."
+      },
+      {
+        "title": "2. Verdampfung des Kältemittels",
+        "description": "Durch die aufgenommene Wärme verdampft das Kältemittel innerhalb der Spirale."
+      },
+      {
+        "title": "3. Rückführung zum Verdichter",
+        "description": "Der Kältemitteldampf wird zum Kompressor geführt, verdichtet und anschließend kondensiert."
+      },
+      {
+        "title": "4. Automatische Temperaturregelung",
+        "description": "Die Mikroprozessorsteuerung überwacht: Kältemitteldruck, Prozesstemperatur und Wärmelast und passt die Verdichterleistung automatisch an. Dadurch bleibt die Temperatur auch bei wechselnden Produktionszyklen stabil."
+      }
+    ],
+    "outro": [
+      "Der entscheidende Vorteil der Immersionskühlung liegt in der direkten Wärmeübertragung ohne zusätzliche Zwischenflächen. Ein industrieller Immersionskühler bietet eine effiziente Lösung für Anwendungen mit großen Flüssigkeitsvolumen und hohen Anforderungen an Temperaturstabilität. Mit der SEPPA DIP Serie kombiniert Seppa Solutions direkte Wärmeübertragung, robuste Edelstahlkonstruktion und intelligente Regeltechnik für zuverlässige industrielle Kühlprozesse."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Welche Materialien sind mit der SEPPA DIP Kühlspirale kompatibel?",
+      "answer": "Die SS 304 Kühlspirale eignet sich für viele industrielle Medien wie Sole, Propylenglykol, wasserbasierte Kühlflüssigkeiten und milde Reinigungsmittel. Bei aggressiven Chemikalien prüft Seppa die Materialverträglichkeit und empfiehlt bei Bedarf alternative Werkstoffe."
+    },
+    {
+      "question": "Wie wird ein Immersionskühler für hochviskose Flüssigkeiten ausgelegt?",
+      "answer": "Bei viskosen Medien beeinflusst die geringere Strömung die Wärmeübertragung. Seppa berechnet die erforderliche Wärmefläche, passt die Spiralkonstruktion an und berücksichtigt notwendige Umwälzung, damit die Kühlleistung erhalten bleibt."
+    },
+    {
+      "question": "Ist ein Immersions-Würzekühler effizienter als ein externer Plattenwärmetauscher?",
+      "answer": "Bei großen Behältern bietet die Immersionskühlung Vorteile durch einfachere Konstruktion, weniger Pumpentechnik und reduzierte Reinigungsanforderungen. Außerdem sinkt das Risiko von Verunreinigungen durch externe Wärmetauscher."
+    },
+    {
+      "question": "Warum ist ein zuverlässiges Industrie-Kühlsystem wichtig für die Prozessqualität?",
+      "answer": "Temperaturschwankungen beeinflussen direkt die Produktqualität. Ob Fermentation, Chemiebad oder Maschinenkühlung – ein präzises Kühlsystem schafft stabile Prozessbedingungen."
+    },
+    {
+      "question": "Was unterscheidet Seppa Solutions als Hersteller industrieller Kühlsysteme?",
+      "answer": "Seppa entwickelt jeden Immersionskühler passend zur jeweiligen Anwendung. Die Systeme werden auf Tankgröße, Medium und Temperaturanforderung abgestimmt und bieten dadurch zuverlässige Kühlleistung statt einer einfachen Standardlösung."
+    }
+  ]
+}

@@ -1,91 +1,127 @@
 {
-  "title": "A Comprehensive Guide to Vegetable Extract Processing and Extraction Systems by Seppa Solutions",
-  "breadcrumbName": "Ketchups & Sauces",
-  "overviewTitle": "Overview of Seppa's Vegetable Extract Processing Plant Solutions",
-  "overviewDescription": "",
+  "title": "Moderne Gemüseextrakt-Verarbeitungsanlagen für maximale Ausbeute und Qualität",
+  "breadcrumbName": "Ketchups & Saucen",
+  "overviewTitle": "Komplette Lösungen für die Gemüseextrakt-Verarbeitung",
+  "overviewDescription": "Tomaten stammen ursprünglich aus Mexiko und werden heute in mehr als 150 Ländern angebaut. Rund 80 % der weltweiten Tomatenproduktion werden frisch konsumiert, während etwa 20 % in der industriellen Verarbeitung eingesetzt werden. Dieser Anteil bildet die Grundlage eines globalen Marktes für Tomatenprodukte, der jährlich mehrere zehn Millionen Tonnen umfasst. Verarbeitete Tomaten werden vor allem für Saucen, Pasten, Konserven, Ketchup und Säfte genutzt. Hinter diesen Zahlen stehen anspruchsvolle Produktionsanforderungen. Jede Tomatenketchup-Fabrik, jede Saucenabfüllanlage und jeder Konzentrathersteller muss konstant hohe Qualität, maximale Ausbeute und niedrige Produktionskosten sicherstellen.",
   "overviewsubDescription": [
-    "When an investor considers entering the processed foods sector, they usually ask: Can a single production line serve more than one product? In the case of vegetable extracts, the answer is clear. These extracts are the foundation on which entire industries are built, from concentrated tomato juices to ready-made sauce bases.",
-    "Seppa Solutions relies on multi-stage extraction engineering, combining mechanical grinding, centrifugal separation, and partial vacuum evaporation. The goal of this sequence is to preserve the natural flavor and nutritional value of vegetables, rather than losing them in high-temperature stages as happens in older, conventional systems.",
-    "An interesting point here: the sterilization standards we apply in vegetable extraction units are largely inspired by the sterilization protocols approved in liquid dairy product lines, specifically CIP (Clean-in-Place) systems that prevent any bacterial contamination between batches. This similarity is no coincidence; both industries deal with heat-sensitive liquids that spoil quickly if not managed precisely.",
-    "In fact, many of the investors we deal with already own an existing production line for processing liquid dairy products, and ask us: Can a vegetable extraction unit be added without destroying the existing structure? The answer in most cases is yes, because many components of existing food production lines, such as chilled storage tanks and distribution piping, are reusable with limited modifications."
+    "Seppa Solutions entwickelt komplette Gemüseverarbeitungsanlagen, die genau diese Anforderungen erfüllen. Von der Rohstoffannahme über Extraktion und Konzentration bis zur aseptischen Abfüllung wird jede Gemüseverarbeitungsmaschine auf maximale Produktausbeute und effiziente Verarbeitung ausgelegt. Der Markt für natürliche Farbstoffe, funktionelle Konzentrate und pflanzliche Inhaltsstoffe wächst kontinuierlich. Verbraucher bevorzugen zunehmend natürliche Produkte, wodurch Hersteller höhere Anforderungen an Qualität, Hygiene und Prozesssicherheit erfüllen müssen. Seppa unterstützt Unternehmen mit modernen Verarbeitungstechnologien, Engineering-Kompetenz sowie umfassendem Service und Ersatzteilmanagement.",
+    "Glas, PET und Dosen bleiben die Verpackungsformate der Gegenwart und nahen Zukunft. Seppa unterstützt Sie bei der Planung, dem Bau und der Lieferung einer optimierten Produktionslinie von Anfang bis Ende, einschließlich ästhetisch gestalteter Flaschen- und Verpackungsformate, um eine kompakte Stellfläche der Anlage und eine verbesserte Durchsatzleistung zu gewährleisten. Mit fundierter Markterfahrung begleitet Seppa Kunden bei neuen Verbrauchertrends, veränderten Nachfragemustern und den daraus resultierenden technischen Anforderungen."
   ],
   "contentBlocks": [
     {
-      "title": "Turnkey Vegetable Extract Processing & Line Integration",
+      "title": "Schlüsselfertige Gemüseverarbeitung & Linienintegration",
       "paragraphs": [
-        "Seppa Solutions designs and integrates complete processed vegetable lines on a turnkey basis, ensuring that transfer pipelines, steam injection valves, and evaporation systems work cohesively.",
-        "Our lines feature advanced thermal protection control systems to avoid overheating sensitive ingredients like carrot juice or beet pulp, retaining color and essential nutrients.",
-        "By utilizing unified control architectures (PLC and SCADA), plant operators can switch recipes quickly, adapting the line speed and temperature depending on seasonal crop availability.",
-        "Sanitary design is applied throughout the entire layout, utilizing automated CIP washing to guarantee bacterial cleanliness between batches and during product changes."
+        "Seppa Solutions plant und integriert schlüsselfertige Gemüseverarbeitungslinien und sorgt dafür, dass Transferrohrleitungen, Dampfinjektionsventile und Verdampfersysteme reibungslos zusammenarbeiten.",
+        "Unsere Linien verfügen über fortschrittliche thermische Schutzsteuerungssysteme, um eine Überhitzung empfindlicher Zutaten wie Karottensaft oder Rübenmark zu vermeiden und die Farbe sowie wichtige Nährstoffe zu erhalten.",
+        "Durch den Einsatz einheitlicher Steuerungsarchitekturen (SPS und SCADA) können Anlagenbetreiber Rezepturen schnell wechseln und die Liniengeschwindigkeit sowie die Temperatur an die saisonale Verfügbarkeit der Ernte anpassen.",
+        "Das hygienische Design erstreckt sich über das gesamte Layout und nutzt die automatisierte CIP-Reinigung, um die bakterielle Sauberkeit zwischen den Chargen und bei Produktwechseln zu garantieren."
       ]
     }
   ],
-  "featuresTitle": "Key Features of Vegetable Processing & Extraction Systems",
-  "featuresSubtitle": "Our lines combine mechanical efficiency and thermal control to deliver natural extracts that preserve texture and flavor.",
+  "featuresTitle": "Hauptmerkmale von Gemüseverarbeitungs- & Extraktionssystemen",
+  "featuresSubtitle": "Unsere Linien kombinieren mechanische Effizienz und thermische Steuerung, um natürliche Extrakte zu liefern, die Textur und Geschmack bewahren.",
   "features": [
-    { "title": "Vegetable Extractor", "description": "Features adjustable rotation speeds to control the size of extracted particles based on recipe specifications and crop types." },
-    { "title": "Centrifugal Separation", "description": "High-precision units that separate pulp from liquid with minimal waste while maintaining optimum purity." },
-    { "title": "Real-time Thermal Control", "description": "Intelligent systems monitoring temperature continuously to prevent overcooking and retain nutritional values." },
-    { "title": "Advanced Homogenization", "description": "Ensures stable texture during storage, preventing separation of vegetable extracts into layers over time." }
+    {
+      "title": "Gemüseextraktor",
+      "description": "Bietet einstellbare Drehzahlen, um die Größe der extrahierten Partikel basierend auf Rezeptspezifikationen und Erntegutarten zu steuern."
+    },
+    {
+      "title": "Zentrifugalabscheidung",
+      "description": "Hochpräzise Einheiten, die Fruchtfleisch von Flüssigkeit mit minimalem Abfall trennen und gleichzeitig eine optimale Reinheit aufrechterhalten."
+    },
+    {
+      "title": "Echtzeit-Thermokontrolle",
+      "description": "Intelligente Systeme, die die Temperatur kontinuierlich überwachen, um ein Überkochen zu verhindern und die Nährwerte zu erhalten."
+    },
+    {
+      "title": "Fortschrittliche Homogenisierung",
+      "description": "Sorgt für eine stabile Textur während der Lagerung und verhindert, dass sich Gemüseextrakte im Laufe der Zeit in Schichten aufspalten."
+    }
   ],
-  "applicationsTitle": "Applications of Vegetable Extracts in Food & Beverage Industries",
-  "applicationsSubtitle": "Our solutions cover a wide spectrum of applications from ketchup and sauce plants to dairy-added bases.",
+  "applicationsTitle": "Arten von Gemüseextrakten, die wir verarbeiten",
+  "applicationsSubtitle": "Unsere Lösungen decken ein breites Anwendungsspektrum ab, von Ketchup- und Saucenanlagen bis hin zu milchbasierten Basen.",
   "applications": [
-    { "title": "Tomato Paste Plants", "description": "Achieve precise concentration of natural sugars and acids (Brix) and ideal viscosity without artificial additives." },
-    { "title": "Ketchup Processing", "description": "Precise evaporation, scheduled spice addition, and fast cooling that preserves the bright red color and prevents oxidation." },
-    { "title": "Soup Concentrates & Sauce Bases", "description": "Production of flexible, easy-to-mix ingredients that serve as bases for various processed foods." },
-    { "title": "Fortified Beverage Bases", "description": "Custom extracts added to liquid dairy products like yogurt and blended vegetable juices." }
+    {
+      "title": "Tomatenpaste und Konzentrate",
+      "description": "Erreichen Sie eine präzise Konzentration natürlicher Zucker und Säuren (Brix) und eine ideale Viskosität ohne künstliche Zusatzstoffe. Tomatenpaste und Konzentrate erfordern eine besonders präzise Kontrolle der thermischen Belastung während der Eindampfung. Eine zu starke Wärmebelastung kann den Lycopingehalt reduzieren und unerwünschte Geschmacksveränderungen verursachen. Seppa setzt auf Fallfilmverdampfer und mehrstufige Konzentrationssysteme, die enge Temperaturbereiche einhalten und dadurch Farbe, Geschmack sowie wertvolle Inhaltsstoffe erhalten."
+    },
+    {
+      "title": "Klare Gemüseextrakte und dünnflüssige Produkte",
+      "description": "Bei klaren Gemüseextrakten und flüssigen pflanzlichen Essenzen sind hohe Filtrationsleistung und schonende Pasteurisierung entscheidend. Plattenwärmetauscher und Zentrifugalseparatoren werden exakt auf die jeweilige Anwendung abgestimmt, um Oxidation und Qualitätsverluste zu vermeiden."
+    },
+    {
+      "title": "Pürees, Saucen und Spezialkonzentrate",
+      "description": "Herstellung von flexiblen, leicht zu mischenden Zutaten, die als Basis für verschiedene verarbeitete Lebensmittel dienen. Zwischen dünnflüssigen Extrakten und hochviskosen Konzentraten liegen zahlreiche weitere Produkte wie Gemüsepürees, Saucen, Salzlake-Produkte und Spezialkonzentrate für Lebensmittelanwendungen. Jedes Produkt benötigt eine spezifische Konfiguration der installierten Gemüseverarbeitungsmaschine. Die modulare Anlagenarchitektur von Seppa ermöglicht Anpassungen an unterschiedliche Produktviskositäten, ohne eine komplette Produktionslinie austauschen zu müssen. Eine moderne Tomatenverarbeitungsanlage muss außerdem saisonale Schwankungen bei Brix-Wert und Feststoffgehalt ausgleichen. Intelligente Prozesssteuerungen kompensieren diese Unterschiede automatisch und halten die gewünschte Produktqualität konstant."
+    },
+    {
+      "title": "Angereicherte Getränkebasen",
+      "description": "Kundenspezifische Extrakte, die flüssigen Milchprodukten wie Joghurt und gemischten Gemüsesäften zugesetzt werden."
+    }
   ],
   "whyChoose": {
-    "title": "Why Vegetable Manufacturers Choose Seppa Solutions",
-    "description": "We combine process design experience, hygienic engineering, and local support to deliver highly flexible food processing lines.",
+    "title": "Vorteile einer automatisierten Gemüseextrakt-Verarbeitungsanlage",
+    "description": "Manuelle Extraktions- und Konrationsprozesse können die heutigen Anforderungen an Lebensmittelsicherheit, Effizienz und Produktstandardisierung nur begrenzt erfüllen. Eine automatisierte Gemüseverarbeitungsanlage von Seppa bietet messbare Vorteile:",
     "reasons": [
       {
-        "title": "Waste Reduction",
-        "description": "Replacing legacy systems with modern Seppa lines reduces raw material losses significantly by extracting maximum concentrates."
+        "title": "Höhere Produktionsleistung",
+        "description": "Durch kontinuierliche Prozesse, kürzere Umrüstzeiten und reduzierte Bedienereinflüsse können Durchsatzsteigerungen von typischerweise 30–40 % gegenüber teilmanuellen Anlagen erreicht werden. Eine präzisere Prozesskontrolle verbessert gleichzeitig die Ausbeute während Extraktion und Separation."
       },
       {
-        "title": "Operational Flexibility",
-        "description": "Switch easily between processing tomato, carrot, or pepper bases with simple parameter adjustments, ideal for multi-product facilities."
+        "title": "Schutz wertvoller Inhaltsstoffe",
+        "description": "Bei Produkten wie natürlichen Pflanzenextrakten oder flüssigen Pflanzennährstoffen für Gemüseanwendungen ist eine kontrollierte Verarbeitung entscheidend. Empfindliche Inhaltsstoffe wie Carotinoide, Polyphenole und organische Säuren können durch zu hohe Temperaturen oder mechanische Belastung beeinträchtigt werden. Seppa Anlagen halten definierte Prozessfenster ein und schützen dadurch die Qualität pflanzlicher Rohstoffe."
       },
       {
-        "title": "Minimizing Downtime",
-        "description": "Hygienic sanitary design allows rapid CIP cleaning and batch changeovers without manually dismantling pipelines."
+        "title": "Effiziente Reinigung und Hygiene",
+        "description": "Automatische CIP-Systeme reduzieren Reinigungszeiten und Chemikalienverbrauch. Gleichzeitig erfüllen sie aktuelle FDA- und EU-Anforderungen für Lebensmittelkontaktanlagen. Kürzere Reinigungszyklen bedeuten mehr verfügbare Produktionszeit pro Schicht."
       }
     ]
   },
   "methodology": {
-    "title": "Seppa's Methodology: From Concept to Production Line",
-    "subtitle": "An integrated approach starting with mass balance calculations and ending with commissioning and training.",
+    "title": "Warum Hersteller Seppa Solutions für Gemüseextrakt-Anlagen wählen",
     "steps": [
-      { "title": "Phase 1: Mass Balance Study", "description": "Calculate raw material quantities and expected outputs at each stage to size storage tanks and pumping rates accurately." },
-      { "title": "Phase 2: Extraction Unit Design", "description": "Select the appropriate vegetable extractor and configure the grinding and filtering profile based on vegetable characteristics." },
-      { "title": "Phase 3: Integration & Pipework", "description": "Physical installation of piping, integrating control networks, and interfacing units with existing dairy or liquid lines." },
-      { "title": "Phase 4: Commissioning & Optimization", "description": "Monitor temperature, pressure, and viscosity to ensure several consecutive batches meet the agreed parameters." },
-      { "title": "Phase 5: Training & Follow-up Review", "description": "Provide hands-on training for operators and review line performance after six months to ensure maximum seasonal efficiency." }
+      {
+        "title": "Präzise Rohstoffsortierung",
+        "description": "Seppa liefert keine einzelnen Maschinenkomponenten, sondern vollständig integrierte Produktionslinien. Dieser Unterschied ist entscheidend bei Investitionsprojekten, da Gesamtkosten, Inbetriebnahmezeit und langfristige Betriebssicherheit direkt von der Anlagenintegration abhängen. Jede von Seppa realisierte Tomatenketchup-Fabrik wird als abgestimmtes Gesamtsystem geplant: Tomatensortierung passend zur Wasch- und Zerkleinerungskapazität, Zerkleinerung abgestimmt auf Verdampferleistung, und Konzentration angepasst an Abfüllgeschwindigkeit. Diese Systemplanung verhindert Engpässe und Kapazitätsverluste durch nicht abgestimmte Einzelmaschinen. Die Seppa Tomatensortiermaschine nutzt optische und dichtebasierte Bewertungssysteme, um unreife oder beschädigte Früchte vor der Verarbeitung zu entfernen. Dieser Prozessschritt beeinflusst Produktausbeute, mikrobielle Sicherheit, Farbe und Brix-Wert. Eine präzise Sortierung schützt die Qualität aller nachfolgenden Prozessstufen."
+      },
+      {
+        "title": "Energieeffiziente Verarbeitung & Anlagendesign",
+        "description": "Die thermische Anlagenarchitektur von Seppa nutzt Wärmerückgewinnung während Pasteurisierung und Eindampfung. Dadurch wird der Dampfverbrauch pro Tonne Produkt reduziert. Besonders bei einer kontinuierlich betriebenen Tomatenketchup-Fabrik während der Erntesaison entstehen erhebliche Energieeinsparungen. Alle Seppa Gemüseverarbeitungsmaschinen werden aus 304 oder 316L Edelstahl gefertigt. Produktberührende Flächen erfüllen 3-A Sanitary Standards und EHEDG Richtlinien. Die hygienische Ausführung ist durch externe Prüfungen nachvollziehbar."
+      },
+      {
+        "title": "Fertigung und Factory Acceptance Test",
+        "description": "Jede Gemüseverarbeitungsmaschine wird vor Auslieferung entsprechend der vereinbarten Leistungsdaten getestet. Kunden können an FAT-Prüfungen teilnehmen und Ergebnisse bestätigen."
+      },
+      {
+        "title": "Installation und Inbetriebnahme",
+        "description": "Seppa Ingenieure begleiten die komplette Installation: mechanische Montage, Medienanschlüsse, sterile Inbetriebnahme und Prozessvalidierung. Die Anlage wird mit realen Produktionsparametern übergeben. Nach der Installation stehen Ersatzteilversorgung, Ferndiagnose und Vor-Ort-Service zur Verfügung."
+      }
+    ],
+    "outro": [
+      "Wie realisiert SEPPA Sonderlösungen? Viele industrielle Anlagen benötigen individuelle Anpassungen – beispielsweise aufgrund spezieller Gebäudegegebenheiten, besonderer Produkteigenschaften oder regulatorischer Anforderungen. SEPPA beginnt jedes Projekt mit einer Analyse der tatsächlichen Betriebsbedingungen und entwickelt die komplette Produktionslinie entsprechend den spezifischen Anforderungen.",
+      "Fazit: Effiziente Gemüseverarbeitung mit Seppa Solutions. Seppa Solutions entwickelt komplette Gemüseextrakt-Verarbeitungsanlagen für Hersteller von Tomatenprodukten, Konzentraten, Saucen und pflanzlichen Extrakten. Mit integrierter Prozessplanung, hygienischem Design, automatisierter Steuerung und energieeffizienter Technologie entstehen Produktionslinien, die höchste Produktqualität, maximale Ausbeute und langfristige Wirtschaftlichkeit ermöglichen."
     ]
   },
-  "faqTitle": "Frequently Asked Questions",
+  "faqTitle": "Häufig gestellte Fragen",
   "faqs": [
     {
-      "question": "What quality parameters are essential in a tomato paste factory?",
-      "answer": "Brix level, acidity (pH), and final viscosity must be closely controlled, alongside complete package sterilization prior to filling to prevent bacterial contamination."
+      "question": "Welche Ausbeute erreicht eine Seppa Tomatenverarbeitungsanlage?",
+      "answer": "Die Ausbeute hängt von Rohstoffqualität und Endprodukt ab. Bei Tomatenpaste mit 28–30 °Brix erreichen optimierte Anlagen typischerweise eine Feststoffrückgewinnung von etwa 95–97 % bei hochwertigen Rohstoffen. Die genaue Prozessgarantie wird projektspezifisch definiert."
     },
     {
-      "question": "How is a vegetable extraction machine maintained?",
-      "answer": "Routine maintenance includes checking grinding blades, calibrating temperature sensors, and carrying out deep weekly cleaning in addition to daily CIP cycles."
+      "question": "Welche Hygienestandards erfüllen Seppa Anlagen?",
+      "answer": "Alle produktberührenden Komponenten entsprechen 3-A Sanitary Standards und EHEDG Richtlinien. CIP-Systeme werden validiert, um die Anforderungen gemäß FDA 21 CFR Part 110 und EU-Verordnung 852/2004 zu erfüllen."
     },
     {
-      "question": "Can vegetable extraction lines be integrated with existing dairy lines?",
-      "answer": "Yes, in many cases CIP systems and main utilities can be shared, which significantly lowers initial capital investments."
+      "question": "Wie hoch ist die Energieeinsparung gegenüber älteren Anlagen?",
+      "answer": "Durch Wärmerückgewinnungssysteme kann der Dampfverbrauch gegenüber älteren Eindampfungssystemen um etwa 20–35 % reduziert werden. Für große Tomatenverarbeitungsanlagen bedeutet dies deutlich niedrigere Betriebskosten."
     },
     {
-      "question": "How long does it take to install a complete ketchup processing line?",
-      "answer": "Depending on the scale, it usually takes between three to six months from final contract signing to initial commissioning trials."
+      "question": "Können die Anlagen auch andere Gemüseextrakte verarbeiten?",
+      "answer": "Ja. Die modulare Plattform eignet sich unter anderem für Rote-Bete-Extrakte für natürliche Farbstoffe, Karottenkonzentrate und pflanzliche Extrakte für funktionelle Produkte. Anpassungen erfolgen über Steuerungssysteme und mechanische Module ohne vollständigen Austausch der Anlage."
     },
     {
-      "question": "Does vegetable processing change significantly depending on the crop?",
-      "answer": "Yes, tomatoes require completely different crushing and filtering profiles than carrots or beets. We adjust centrifugal speeds and processing heats accordingly."
+      "question": "Welche Amortisationszeit ist realistisch?",
+      "answer": "Die Wirtschaftlichkeit hängt von Produktionsgröße, Produktwert und bisherigen Betriebskosten ab. Bei mittelgroßen Tomatenverarbeitungsanlagen können Investitionen häufig innerhalb von 3–5 Produktionssaisons durch höhere Ausbeute, geringere Verluste, niedrigere Personalkosten und Energieeinsparungen amortisiert werden."
     }
   ]
 }

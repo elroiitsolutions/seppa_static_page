@@ -30,10 +30,8 @@ export default async function LocalizedStretchWrappingPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'stretch' });
   const tEn = await getTranslations({ locale: 'en', namespace: 'stretch' });
   
-  // Safe translation helpers that fallback to English for 'de'
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? tEn(key) : t(key);
-  const getRaw = (key: string) => isDe ? tEn.raw(key) : t.raw(key);
+  const getT = (key: string) => t(key);
+  const getRaw = (key: string) => t.raw(key);
 
   const messages = await getMessages({ locale });
 
@@ -86,7 +84,8 @@ export default async function LocalizedStretchWrappingPage({ params }: Props) {
         title: step.title,
         description: step.description,
         image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      }))
+      })),
+      outro: getRaw('methodology.outro') ? (Array.isArray(getRaw('methodology.outro')) ? getRaw('methodology.outro') : [getT('methodology.outro')]) : undefined
     },
     faqTitle: getT('faqTitle'),
     faqs: getRaw('faqs')

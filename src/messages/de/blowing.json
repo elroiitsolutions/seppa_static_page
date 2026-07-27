@@ -1,98 +1,112 @@
 {
-  "title": "PET Bottle Blowing Machine",
-  "breadcrumbName": "Blowing",
-  "rootBreadcrumbName": "Equipments",
+  "title": "PET-Flaschen-Blasmaschinen von SEPPA für moderne Getränkeproduktion",
+  "breadcrumbName": "Blasmaschinen",
+  "rootBreadcrumbName": "Ausrüstung",
   "rootBreadcrumbPath": "/equipments",
-  "overviewTitle": "What a Modern PET Bottle Blowing Machine Actually Does",
-  "overviewDescription": "Seppa Solutions has been building blow molding equipment for over 25 years. In that time the fundamental physics of stretch blow molding has not changed much, but everything surrounding it preform conditioning, blowing pressure control, line integration has changed substantially. A modern pet bottle blowing machine from Seppa is the throughput ceiling of a beverage line. If it runs well, the rest of the line runs well. If it doesn't, nothing downstream saves you.",
+  "overviewTitle": "Was eine moderne PET-Flaschen-Blasmaschine tatsächlich leistet",
+  "overviewDescription": "SEPPA entwickelt seit über 25 Jahren Blasformtechnik für die Herstellung von PET-Flaschen. Während sich die grundlegende Physik des Streckblasens kaum verändert hat, haben sich die Anforderungen an Vorformlingserwärmung, Druckregelung und Linienintegration deutlich weiterentwickelt. Eine moderne PET-Flaschen-Blasmaschine von SEPPA bestimmt maßgeblich die maximale Leistung einer Getränkeproduktionslinie. Läuft die Blasmaschine stabil, profitieren auch alle nachfolgenden Prozesse. Bei ungleichmäßiger Flaschenqualität oder instabilen Zykluszeiten kann keine nachgeschaltete Abfüllanlage diese Schwächen ausgleichen.",
   "overviewsubDescription": [
-    "Seppa's range covers complete PET line solutions for water, sparkling water, CSD, juice, milk, beer, liquor, and wine. That breadth matters because each category has different container requirements a carbonated soft drink bottle needs high base stability and thick sidewall geometry; a still water bottle needs the opposite. The pet bottle blowing machine has to handle both, often on the same platform when a manufacturer produces multiple SKUs. Technological advancement in Seppa's equipment is the result of years of addressing exactly these production realities, not just chasing headline cavity counts.",
-    "The packaging industry has tightened on three fronts at the same time: material consumption is under pressure from lightweighting mandates, energy cost is a real line item in production economics, and output speeds keep rising because retail customers expect shorter lead times. A well specified plastic bottle blowing machine addresses all three. The question is how."
+    "SEPPA bietet komplette PET-Lösungen für Wasser, Mineralwasser, kohlensäurehaltige Getränke (CSD), Säfte, Milchprodukte, Bier, Spirituosen und Wein. Jede Anwendung stellt unterschiedliche Anforderungen an die Flaschengeometrie. Während CSD-Flaschen eine hohe Bodenstabilität und spezielle Wandverteilung benötigen, sind bei stillen Wasserflaschen geringeres Gewicht und Materialeinsparung entscheidend.",
+    "Die Entwicklung der SEPPA PET-Blasmaschinen basiert auf realen Produktionsanforderungen: steigende Ausbringung, reduzierte Materialkosten und höhere Energieeffizienz.",
+    "Die Verpackungsindustrie hat sich an drei Fronten gleichzeitig verschärft: Der Materialverbrauch steht unter dem Druck von Leichtbauvorgaben, die Energiekosten sind ein realer Posten in der Produktionsökonomie und die Ausstoßgeschwindigkeiten steigen weiter, da die Kunden im Einzelhandel kürzere Vorlaufzeiten erwarten. Eine gut spezifizierte Streckblasmaschine adressiert alle drei Herausforderungen."
   ],
   "contentBlocks": [
     {
-      "title": "Types of PET Blowing Machines",
+      "title": "Arten von PET-Blasmaschinen",
       "paragraphs": [
-        "Semi Automatic Units: Semi automatic machines suit pilot lines, specialty formats, and operations where output volumes sit below 2,000 bottles per hour. Manual preform loading is the trade off; the upside is lower capital cost and flexibility on neck finish. A semi automatic plastic bottle maker is a reasonable starting point when SKU range is wide and runs are short.",
-        "Linear Automatic Machines: Linear platforms carry two to twelve cavities in a fixed-pitch arrangement. They cover the mid volume range from roughly 2,000 to 12,000 bottles per hour and suit operations with infrequent format changes. As a plastic pet bottle making machine, linear designs have straightforward maintenance access and lower initial tooling cost than rotary equivalents factors that matter when a project is working against a tight pet bottle manufacturing plant cost budget.",
-        "Rotary High speed Systems: Rotary blow molders are where output rates and container quality both peak. Seppa's rotary platforms carry up to 24 cavities on a continuously rotating wheel, achieving outputs above 24,000 bottles per hour on standard 0.5 litre water formats. Preforms move through dedicated infrared oven segments in continuous flow, arrive at blowing stations at precise temperature, and exit as finished containers without interruption."
+        "Halbautomatische PET-Blasmaschinen: Halbautomatische Systeme eignen sich für Pilotanlagen, Spezialformate und Produktionsmengen unter etwa 2.000 Flaschen pro Stunde. Die manuelle Zuführung der Preforms bedeutet einen geringeren Automatisierungsgrad, bietet jedoch Vorteile bei niedrigen Investitionskosten und häufig wechselnden Flaschenformaten.",
+        "Lineare automatische PET-Blasmaschinen: Lineare Systeme verfügen typischerweise über 2 bis 12 Kavitäten und decken den mittleren Leistungsbereich von etwa 2.000 bis 12.000 Flaschen pro Stunde ab. Sie bieten eine einfache Wartungszugängigkeit, geringere Werkzeugkosten, flexible Formatwechsel und wirtschaftliche Lösungen für mittelgroße Produktionsanlagen. Diese Bauform ist besonders interessant, wenn der Fokus auf niedrigen PET-Flaschen-Herstellungskosten und überschaubaren Produktionsvolumen liegt.",
+        "Rotative Hochgeschwindigkeits-Blasmaschinen: Rotative PET-Blasmaschinen erreichen höchste Produktionsleistungen und gleichbleibende Flaschenqualität. SEPPA Rotary-Systeme verfügen über bis zu 24 Kavitäten und können bei Standard-Wasserflaschen mit 0,5 Litern Leistungen von über 24.000 Flaschen pro Stunde erreichen. Die Preforms durchlaufen kontinuierlich gesteuerte Infrarot-Heizzonen, werden exakt temperiert und anschließend ohne Produktionsunterbrechung zu fertigen Flaschen verarbeitet."
       ]
     },
     {
-      "title": "Selection Methodology",
+      "title": "Auswahl der passenden PET-Blasmaschine",
       "paragraphs": [
-        "Capacity Planning: Start from annual production volume. Apply an uptime factor of 85 to 90 percent and back calculate required bottles per hour. That number drives the cavity count decision and determines whether a linear or rotary pet bottle blowing machine platform is appropriate. Getting this calculation wrong in either direction is costly.",
-        "Mold Design Considerations: Mold cost scales with cavity count and container complexity. Heat-set molds for hot-fill applications cost roughly 40% more than standard molds due to internal cooling circuit complexity. Budget mold tooling correctly upfront. Replacing undersized molds at line startup delays commissioning and inflates project cost.",
-        "Site Layout & Installation: A rotary pet bottle blowing machine in a 24 cavity configuration requires approximately 18 metres of linear floor space. Seppa provides full on site commissioning, operator training, and factory acceptance testing. The validation protocol includes a 72 hour production run at rated speed, with bottle samples submitted for testing before handover."
+        "Kapazitätsplanung: Die richtige Maschinenleistung beginnt mit der jährlichen Produktionsmenge. Unter Berücksichtigung einer Anlagenverfügbarkeit von 85 bis 90 % wird die erforderliche Stundenleistung berechnet. Diese Entscheidung bestimmt: Kavitätenanzahl, Maschinenkonzept und zukünftige Erweiterungsmöglichkeiten. Eine falsche Dimensionierung führt entweder zu unnötig hohen Investitionskosten oder zu Produktionsengpässen.",
+        "Werkzeugauslegung: Die Werkzeugkosten hängen von Kavitätenanzahl und Flaschenkomplexität ab. Heat-Set-Formen für Heißabfüllanwendungen sind aufgrund zusätzlicher Kühlkreisläufe aufwendiger. Eine korrekte Werkzeugplanung verhindert spätere Verzögerungen bei der Inbetriebnahme.",
+        "Anlagenlayout: Eine 24-Kavitäten-Rotationsblasmaschine benötigt inklusive Heizmodul, Schaltschrank und Kühlung etwa 18 Meter Stellfläche. Wichtige Versorgungen wie Hochdruckluft bis 40 bar, Steuerluft mit 7 bar und Kühlwasser für Formen müssen vor der Installation geprüft und freigegeben werden. SEPPA begleitet Kunden mit Vorabtests, Vor-Ort-Inbetriebnahme, Bedienerschulungen und Produktionsvalidierung. Die Abnahme umfasst einen 72-Stunden-Testlauf mit Prüfung von Wandstärke, Stapeldruck und Falltests."
       ]
     }
   ],
-  "featuresTitle": "Key Technical Features",
+  "featuresTitle": "Technische Hauptmerkmale der SEPPA PET-Flaschen-Blasmaschinen",
   "features": [
     {
-      "title": "Infrared Heating Architecture",
-      "description": "Most cycle losses originate in the oven, not the blow station. Seppa's oven modules use independently controlled infrared lamp banks across multiple axial zones. Each zone targets a specific preform region neck support ring, body shoulder, sidewall, base and holds temperature within +1°C through the full production run. That granularity is not cosmetic. Uneven heating produces bottles with thin shoulders or base sag regardless of blowing pressure settings."
+      "title": "Infrarot-Heizsystem",
+      "description": "Ein großer Teil möglicher Qualitätsverluste entsteht bereits während der Preform-Erwärmung. SEPPA-Heizsysteme verwenden individuell gesteuerte Infrarot-Lampenzonen für verschiedene Bereiche des Preforms: Halsbereich, Schulter, Seitenwand und Flaschenboden. Jede Zone wird präzise geregelt und hält die Temperatur während des gesamten Produktionslaufs innerhalb von ±1 °C. Eine gleichmäßige Erwärmung verhindert dünne Schulterbereiche, Bodenverformungen und Qualitätsabweichungen."
     },
     {
-      "title": "Clamping Systems",
-      "description": "Seppa builds both hydraulic and full electric servo clamping configurations. Hydraulic units deliver high clamping tonnage at lower equipment cost, practical for large-diameter containers where mold closing force requirements are significant. Electric servo clamping reduces energy consumption per cycle by up to 30% compared to hydraulic equivalents and removes hydraulic fluid as a contamination risk in food grade environments."
+      "title": "Formschließsysteme",
+      "description": "SEPPA bietet hydraulische sowie vollelektrische Servo-Schließsysteme. Hydraulische Systeme bieten hohe Schließkräfte bei wirtschaftlichen Investitionskosten und eignen sich besonders für große Behälter. Elektrische Servo-Systeme reduzieren den Energieverbrauch gegenüber hydraulischen Lösungen um bis zu 30 % und vermeiden Hydrauliköl in sensiblen Lebensmittelbereichen. Die Schließkraft muss den typischen Blasdruck von 38 bis 40 bar sicher aufnehmen. SEPPA-Formplatten sind entsprechend dimensioniert, um Gratbildung an der Trennebene zu verhindern."
     },
     {
-      "title": "Control Interface and Recipe Management",
-      "description": "Seppa's control platform stores full recipe sets per SKU. Operators call up preform dimensions, oven heating profiles, blowing pressure curves, and stretch rod timing from a single touchscreen interface. Format changeovers that once required half a shift now take under an hour when the recipe is stored correctly."
+      "title": "Steuerung und Rezeptverwaltung",
+      "description": "Die SEPPA-Steuerung speichert vollständige Produktionsrezepte für jedes Flaschenformat. Über eine zentrale Touchscreen-Oberfläche lassen sich folgende Parameter abrufen: Preform-Daten, Heizprofile, Blasdruckkurven und Reckstangen-Zeitpunkte. Gespeicherte Rezepte reduzieren Umrüstzeiten erheblich und ermöglichen schnelle Formatwechsel ohne umfangreiche manuelle Einstellungen."
     }
   ],
   "whyChoose": {
-    "title": "Why Choose Seppa PET Blowing Machines?",
-    "description": "Choosing the right pet bottle blowing machine supplier is not just a capital equipment decision it is a production commitment that runs for a decade or more.",
+    "title": "Warum SEPPA PET-Blasmaschinen wählen?",
+    "description": "Die Auswahl einer PET-Flaschen-Blasmaschine ist eine langfristige Produktionsentscheidung. SEPPA entwickelt und fertigt seit mehr als 25 Jahren Blasformanlagen für anspruchsvolle industrielle Anwendungen.",
     "paragraphs": [
-      "Seppa has been designing and manufacturing blow molding equipment for over 25 years, building a track record that generic pet blowing machine manufacturers simply cannot match on experience alone.",
-      "Every plastic pet bottle making machine in Seppa's range is engineered for real production conditions: consistent cycle times under multi shift load, oven heating zones that hold temperature through ambient variation, and clamping systems that do not produce flash after the first 10 million cycles. As a plastic bottle maker built for beverage grade output, Seppa equipment is validated against the same quality benchmarks as the filling lines it feeds.",
-      "Seppa also offers complete line integration a factor that directly reduces your pet bottle manufacturing plant cost by eliminating conveyor infrastructure and unnecessary handling steps. Every plastic bottle manufacturing machine is matched to upstream and downstream modules during the engineering phase, not retrofitted afterward."
+      "Jede SEPPA Maschine ist für den kontinuierlichen Mehrschichtbetrieb ausgelegt: stabile Zykluszeiten, konstante Heiztemperaturen, langlebige Formschließsysteme und reproduzierbare Flaschenqualität.",
+      "Als Hersteller kompletter PET-Lösungen integriert SEPPA die Blasmaschine direkt in bestehende Getränkeabfüllanlagen. Dadurch können Fördertechnik reduziert, Prozesse optimiert und Gesamtinvestitionen gesenkt werden."
     ]
   },
   "methodology": {
-    "title": "PET Bottle Production Process",
+    "title": "PET-Flaschen-Herstellungsprozess",
     "steps": [
       {
-        "title": "Preform Loading & Heating",
-        "description": "Injection moulded PET preforms arrive bulk loaded into the hopper. An unscrambler orients them neck up before the oven conveyor takes over. Preforms pass through the infrared oven at calculated speed. Lamp intensity and conveyor dwell time are set from preform wall thickness and PET intrinsic viscosity."
+        "title": "1. Preform-Zuführung",
+        "description": "Spritzgegossene PET-Preforms werden automatisch zugeführt und vor der Erwärmung korrekt ausgerichtet."
       },
       {
-        "title": "Transfer to Blow Station",
-        "description": "Conditioned preforms move to the mold without delay. Any pause causes temperature decay at the shoulder, which is the most common source of thin wall failures in small neck water bottle formats."
+        "title": "2. Infrarot-Konditionierung",
+        "description": "Die Preforms durchlaufen die Heizstrecke mit exakt abgestimmter Geschwindigkeit. Lampenleistung und Verweilzeit werden abhängig von Wandstärke und Materialeigenschaften eingestellt."
       },
       {
-        "title": "Stretch Blow Cycle",
-        "description": "The stretch rod descends at a defined velocity, orienting PET molecular chains axially. High pressure air at 38 bar then inflates the preform radially against the mold wall. This biaxial orientation increases barrier properties and drop impact resistance."
+        "title": "3. Übergabe zur Blasstation",
+        "description": "Die erwärmten Preforms werden ohne Verzögerung in die Form übertragen. Jede Temperaturveränderung kann die spätere Wandstärke beeinflussen."
       },
       {
-        "title": "Ejection & Inspection",
-        "description": "Pressure exhausts through calibrated vent channels. The finished bottle ejects onto an air conveyor. Inline inspection vision systems check base geometry, neck finish, and wall-thickness distribution. Rejects divert automatically before the filler sees them."
+        "title": "4. Streckblasprozess",
+        "description": "Die Reckstange orientiert die PET-Molekülketten axial. Anschließend formt Druckluft mit etwa 38 bar den Preform radial gegen die Werkzeugwand. Diese biaxiale Orientierung verbessert Stabilität, Barriereeigenschaften und Stoßfestigkeit."
+      },
+      {
+        "title": "5. Entlüftung und Auswurf",
+        "description": "Nach dem Blasvorgang wird der Druck kontrolliert abgebaut. Die fertige Flasche wird anschließend über Luftfördertechnik weitertransportiert. Eine optimal eingestellte PET-Blasmaschine kann diesen Prozess in weniger als zwei Sekunden pro Kavität abschließen."
+      },
+      {
+        "title": "6. Inline-Qualitätskontrolle",
+        "description": "Kamerasysteme prüfen: Bodenform, Halsbereich und Wandstärkenverteilung. Fehlerhafte Flaschen werden automatisch ausgeschleust."
       }
+    ],
+    "outro": [
+      "Kapazitätsplanung. Die richtige Maschinenleistung beginnt mit der jährlichen Produktionsmenge. Unter Berücksichtigung einer Anlagenverfügbarkeit von 85 bis 90 % wird die erforderliche Stundenleistung berechnet. Diese Entscheidung bestimmt: Kavitätenanzahl, Maschinenkonzept und zukünftige Erweiterungsmöglichkeiten. Eine falsche Dimensionierung führt entweder zu unnötig hohen Investitionskosten oder zu Produktionsengpässen.",
+      "Werkzeugauslegung. Die Werkzeugkosten hängen von Kavitätenanzahl und Flaschenkomplexität ab. Heat-Set-Formen für Heißabfüllanwendungen sind aufgrund zusätzlicher Kühlkreisläufe aufwendiger. Eine korrekte Werkzeugplanung verhindert spätere Verzögerungen bei der Inbetriebnahme.",
+      "Anlagenlayout. Eine 24-Kavitäten-Rotationsblasmaschine benötigt inklusive Heizmodul, Schaltschrank und Kühlung etwa 18 Meter Stellfläche. Wichtige Versorgungen: Hochdruckluft bis 40 bar, Steuerluft mit 7 bar und Kühlwasser für Formen müssen vor der Installation geprüft werden.",
+      "Installation und Validierung. SEPPA begleitet Kunden mit: Vorabtests, Vor-Ort-Inbetriebnahme, Bedienerschulungen und Produktionsvalidierung. Die Abnahme umfasst einen 72-Stunden-Testlauf mit Prüfung von Wandstärke, Stapeldruck und Falltests."
     ]
   },
-  "faqTitle": "Frequently Asked Questions",
+  "faqTitle": "Häufig gestellte Fragen zu PET-Blasmaschinen",
   "faqs": [
     {
-      "question": "What drives the overall pet bottle manufacturing plant cost for a new PET line?",
-      "answer": "The blow molder typically represents 25 to 35% of total installed line cost. The remainder covers the filler, capper, labeller, conveyors, utilities infrastructure, civil works, and commissioning. Choosing a bloc blow-fill configuration reduces pet bottle manufacturing plant cost by condensing the line footprint and removing conveyor infrastructure."
+      "question": "Welche Faktoren bestimmen die Kosten einer PET-Flaschen-Produktionsanlage?",
+      "answer": "Die Blasmaschine macht typischerweise etwa 25 bis 35 % der gesamten Anlagenkosten aus. Weitere Kosten entstehen durch Abfülltechnik, Verschließer, Etikettierer, Fördertechnik, Infrastruktur und Inbetriebnahme. Block-Blas-Füll-Systeme können durch kompaktere Bauweise und weniger Fördertechnik die Gesamtinvestition reduzieren."
     },
     {
-      "question": "How much energy does a modern plastic pet bottle making machine consume?",
-      "answer": "A current generation electric servo plastic pet bottle making machine running 0.5 litre water bottles at 20,000 bottles per hour consumes approximately 0.08 to 0.12 kWh per 1,000 bottles. Older hydraulic machines on the same format typically consume 0.18 to 0.22 kWh per 1,000 bottles. Over a three shift operation, the difference can represent a six figure annual energy saving."
+      "question": "Wie hoch ist der Energieverbrauch einer modernen PET-Blasmaschine?",
+      "answer": "Eine aktuelle elektrische Servo-PET-Blasmaschine benötigt bei 0,5-Liter-Wasserflaschen etwa 0,08 bis 0,12 kWh pro 1.000 Flaschen. Der tatsächliche Verbrauch hängt von Preform-Gewicht und Umgebungsbedingungen ab."
     },
     {
-      "question": "What maintenance does a professional plastic bottle maker require?",
-      "answer": "Daily checks cover oven lamp condition, mold sealing surfaces, and stretch rod alignment. Weekly maintenance includes cam track lubrication and blowing valve seal inspection. Annual overhauls address mold refurbishment, lamp bank replacement, and drive system inspection. Seppa supplies scheduled maintenance kits and remote diagnostic access."
+      "question": "Welche Wartung benötigt eine professionelle PET-Blasmaschine?",
+      "answer": "Regelmäßige Wartung umfasst: Kontrolle der Heizlampen, Prüfung der Formdichtflächen, Ausrichtung der Reckstangen, Schmierung mechanischer Komponenten und Überprüfung der Blasventile. SEPPA bietet Wartungskonzepte und Ferndiagnose zur Reduzierung von Stillstandszeiten."
     },
     {
-      "question": "What separates top tier pet blowing machine manufacturers from generic suppliers?",
-      "answer": "Three things consistently: heating zone resolution, clamping rigidity, and software depth. Generic manufacturers cut cost on lamp bank count, reducing heating uniformity. Lighter mold plate designs deflect under pressure and produce flash. Software lacking recipe depth forces manual setup. Seppa's engineering addresses all three."
+      "question": "Was unterscheidet führende PET-Blasmaschinenhersteller?",
+      "answer": "Entscheidend sind drei Faktoren: Präzision der Heiztechnik, Stabilität des Formschließsystems und Tiefe der Steuerungssoftware. SEPPA kombiniert diese Technologien mit internationalem Service und Unterstützung in über 40 Ländern."
     },
     {
-      "question": "Can a Seppa pet bottle blowing machine handle multiple bottle formats?",
-      "answer": "Yes. Mold changeovers on Seppa's linear and rotary platforms use pre aligned mold carriers and stored recipes. A trained two person team can complete a format change in under 45 minutes on most configurations. For manufacturers running seasonal SKU mixes, that changeover speed is the difference between a flexible asset and a bottleneck."
+      "question": "Kann eine SEPPA PET-Blasmaschine mehrere Flaschenformate produzieren?",
+      "answer": "Ja. Lineare und rotative Systeme ermöglichen schnelle Formatwechsel durch vorbereitete Werkzeugträger und gespeicherte Produktionsrezepte. Bei vielen Konfigurationen kann ein geschultes Zweierteam den Formatwechsel innerhalb von 45 Minuten durchführen."
     }
   ]
 }

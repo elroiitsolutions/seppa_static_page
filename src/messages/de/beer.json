@@ -1,107 +1,107 @@
 {
-  "title": "Complete Beer Production Line From Brewing to Packaging",
-  "breadcrumbName": "Beer Lines",
-  "rootBreadcrumbName": "Complete Lines",
+  "title": "Komplette Bierproduktionslinie: Vom Brauprozess bis zur Verpackung",
+  "breadcrumbName": "Bierproduktionslinien",
+  "rootBreadcrumbName": "Komplette Linien",
   "rootBreadcrumbPath": "/complete-lines",
-  "overviewTitle": "Complete Beer Production Line From Brewing to Packaging",
-  "overviewDescription": "Beer is biologically fragile. From the moment yeast finishes in the fermentation vessel, every pump, valve, transfer line, and filling head downstream is a potential source of quality loss. An integrated beer production line exists to close those gaps to move liquid from brewhouse to sealed container without introducing oxygen, microbial contamination, or pressure instability.",
+  "overviewTitle": "Präzise integrierte Bierproduktionslinien für maximale Produktqualität",
+  "overviewDescription": "Bier ist ein biologisch sensibles Produkt. Sobald die Hefe den Gärprozess im Tank abgeschlossen hat, kann jeder nachfolgende Prozessschritt – von Pumpen und Ventilen über Transferleitungen bis zu den Füllventilen – die Produktqualität beeinflussen. Eine moderne Bierproduktionslinie wurde entwickelt, um diese Risiken zu minimieren und das Bier vom Sudhaus bis zum verschlossenen Gebinde ohne Sauerstoffeintrag, mikrobiologische Verunreinigung oder Druckschwankungen zu transportieren.",
   "overviewsubDescription": [
-    "In a large-scale beer manufacturing plant, fermentation vessel discharge rates, bright beer tank pressures, carbonation set points, and filler throughput targets must work as a single system, not as adjacent departments that happen to share a building. Seppa Solutions has been engineering this integration for over 50 years, with more than 7,000 installations across small craft operations and full-scale industrial facilities worldwide."
+    "In einer industriellen Bierproduktion müssen Austragsleistung der Gärtanks, Druckbedingungen in Lagertanks, Karbonisierungseinstellungen und Abfüllgeschwindigkeit als ein durchgängiges System funktionieren. Einzelne Maschinenbereiche dürfen nicht isoliert betrachtet werden. Seppa Solutions entwickelt seit über 50 Jahren integrierte Anlagenlösungen und hat weltweit mehr als 7.000 Installationen für kleine Craft-Brauereien bis hin zu industriellen Produktionsstätten realisiert."
   ],
-  "featuresTitle": "Key Components of a Complete Beer Line",
+  "featuresTitle": "Wesentliche Komponenten einer kompletten Bierlinie",
   "featuresSubtitle": "Understanding the core functions that keep a beer production line efficient and hygienic.",
   "features": [
     {
-      "title": "Fermentation Storage and Transfer",
-      "description": "Conditioning tanks hold finished beer under controlled CO₂ back-pressure, typically 1.5 to 2.5 bar depending on style. Transfer to the bright beer tank uses oxygen-free purging protocols CO₂ pre evacuation of receiving vessels before liquid arrives because dissolved oxygen pickup at this stage is essentially irreversible. A properly engineered beer line targets DO below 50 parts per billion at the bright beer tank outlet."
+      "title": "Gärlagerung und Biertransfer",
+      "description": "Nach Abschluss der Gärung wird das fertige Bier unter kontrolliertem CO₂-Gegendruck in Lagertanks konditioniert. Je nach Biersorte liegen typische Druckwerte zwischen 1,5 und 2,5 bar. Vor dem Transfer in den Drucktank werden die Behälter mit CO₂ gespült und evakuiert. Dadurch wird Sauerstoffaufnahme während des Transfers verhindert, da gelöster Sauerstoff in diesem Prozessstadium praktisch nicht mehr entfernt werden kann. Eine optimal ausgelegte Bierproduktionslinie hält den Gehalt an gelöstem Sauerstoff (DO) am Ausgang des Lagertanks unter 50 ppb."
     },
     {
       "title": "Filtration",
-      "description": "Most lager and ale styles require diatomaceous earth or membrane filtration before packaging. The beer line moves product through these stages under constant back-pressure to prevent CO₂ break out, which destabilizes carbonation and creates foaming problems at the filler."
+      "description": "Viele Lager- und Ale-Biere benötigen vor der Verpackung eine Filtration mittels Kieselgur- oder Membrantechnologie. Die Bierlinie transportiert das Produkt während dieser Prozessschritte unter konstantem Gegendruck. Dadurch wird ein vorzeitiges Entweichen von CO₂ verhindert, das zu instabiler Karbonisierung und Schaumbildung an der Abfüllmaschine führen kann."
     },
     {
-      "title": "Carbonation",
-      "description": "Inline carbonation modules dose CO₂ into the beer stream via high precision mass flow controllers. Volume targets typically run +0.05 volumes CO₂ of specification. Seppa's carbonation systems integrate directly with beer packaging line controls and adjust dose rates automatically when filler speed changes."
+      "title": "Karbonisierung",
+      "description": "Moderne Karbonisierungssysteme dosieren CO₂ direkt in den Bierstrom über hochpräzise Massendurchflussregler. Typische Zielwerte werden mit einer Genauigkeit von etwa ±0,05 Volumen CO₂ erreicht. Die Karbonisierungssysteme von Seppa Solutions sind direkt mit der Steuerung der Bierabfüllanlage verbunden und passen die CO₂-Dosierung automatisch an wechselnde Füllgeschwindigkeiten an."
     },
     {
-      "title": "The Beer Packaging Line",
-      "description": "This is where product integrity is either preserved or lost. Seppa's beer packaging line uses isobaric filling technology: the filling vessel and container are brought to equal CO₂ pressure before liquid transfer begins, eliminating the pressure differential that causes foaming and CO₂ loss. Electronic filling valves individually controlled per filling head deliver fill volumes within +1 ml at speeds exceeding 60,000 bottles per hour on high capacity lines."
+      "title": "Die Bierverpackungslinie",
+      "description": "Die Verpackungsphase entscheidet maßgeblich darüber, ob die ursprüngliche Produktqualität erhalten bleibt. Seppa Solutions verwendet isobare Abfülltechnologie. Dabei werden Fülltank und Behälter vor dem Befüllen auf denselben CO₂-Druck gebracht. Dadurch werden Druckunterschiede vermieden, die normalerweise Schaumbildung und Kohlensäureverluste verursachen. Elektronisch gesteuerte Füllventile ermöglichen: individuelle Steuerung jedes Füllkopfes, konstante Füllmengen, Genauigkeiten bis ±1 ml sowie Produktionsleistungen von über 60.000 Flaschen pro Stunde bei Hochleistungsanlagen."
     }
   ],
   "contentBlocks": [
     {
-      "title": "Beer Production Process Flow",
+      "title": "Bierproduktionsprozess: Vom Lagertank bis zur Palette",
       "paragraphs": [
-        "A functional beer production line follows a defined sequence from the bright beer tank to the palletizer.",
-        "Process Flow: Bright beer tank → deaeration → carbonation → filler → crowner/capper → pasteurizer → labeler → date and batch coder → packer → palletizer → stretch wrapper.",
-        "Seppa covers the full scope, including its proprietary KomboPure aseptic filling system for sensitive products requiring sterile barrier environments. The beer bottling line stage is where dissolved oxygen control matters most. Premium lager and ale products typically target less than 10 ppb total package oxygen.",
-        "Seppa's beer bottling line achieves this through CO₂ counterpressure filling, nitrogen snifting at the crowner, and inline DO monitoring with closed loop feedback to the filler. No manual intervention is needed between product changeovers.",
-        "Servo-driven conveyor timing buffers containers between stations across the beer bottling line, absorbing speed mismatches before they become pile ups or line stops. Container agitation during stoppages is one of the more overlooked causes of CO₂ loss on high speed lines the control architecture here is not incidental."
+        "Eine effiziente Bierproduktionslinie folgt einer klar definierten Prozessabfolge: Lagertank → Entgasung → Karbonisierung → Abfüllanlage → Kronkorken-/Verschließsystem → Pasteurisierung → Etikettierung → Datierung und Chargencodierung → Verpackung → Palettierung → Stretchwicklung.",
+        "Seppa Solutions bietet komplette Lösungen für den gesamten Prozess und integriert auch das proprietäre KomboPure aseptische Füllsystem für besonders empfindliche Produkte mit hohen Anforderungen an sterile Barrieren.",
+        "Gerade bei der Bierabfüllung ist die Kontrolle des gelösten Sauerstoffs entscheidend. Premium-Lagerbiere und Ales erreichen typischerweise Werte von weniger als 10 ppb Gesamtsauerstoff im fertigen Gebinde. Die Bierabfüllanlagen von Seppa Solutions erreichen diese Werte durch: CO₂-Gegendruckfüllung, Stickstoff-Spülung am Verschließer, Inline-Messung des gelösten Sauerstoffs und automatische Rückkopplung zur Füllsteuerung. Manuelle Eingriffe zwischen Produktwechseln sind nicht erforderlich.",
+        "Servo-gesteuerte Fördertechnik synchronisiert die Behälterbewegung zwischen den einzelnen Stationen. Dadurch werden Geschwindigkeitsunterschiede ausgeglichen, bevor sie zu Staus oder Produktionsunterbrechungen führen. Besonders auf Hochgeschwindigkeitslinien ist die Bewegung der Gebinde während Stopps eine häufig unterschätzte Ursache für CO₂-Verluste. Deshalb ist die Steuerungsarchitektur ein wesentlicher Bestandteil der gesamten Bierlinie."
       ]
     },
     {
-      "title": "Custom Brewery Solutions for Every Production Scale",
+      "title": "Individuelle Brauereilösungen für jede Produktionsgröße",
       "paragraphs": [
-        "No two facilities share the same floor layout, utility supply, or product mix. A beer production line built for a 50,000 hl/year craft operation looks fundamentally different from one at a 2 million hl/year beer manufacturing plant not just in size, but in automation architecture, CIP frequency, changeover design, and control system complexity.",
-        "Seppa's engineering team starts with a feasibility study and CAD-based layout planning before any fabrication begins. This lets the beer production line be shaped around the specific footprint, keeping utility runs short and civil works minimal. The modular design allows sections to be added as volume grows a craft brewer might start with a 10,000 BPH beer bottling line and expand to 30,000 BPH on the same control platform without starting over.",
-        "The Kombo block integrates blowing, rinsing, filling, and capping into a single compact unit, reducing the overall beer line footprint by up to 40% versus conventional standalone configurations. For operators needing validated aseptic processing, KomboPure provides sterile barrier technology within the same modular framework. Seppa also engineers its PET bottles with up to 25% less material weight while improving top-load strength by over 30% a measurable input cost reduction without compromising shelf aesthetics or structural performance."
+        "Jede Brauerei stellt spezifische Anforderungen an Anlagenlayout, Energieversorgung und Produktspektrum. Eine Bierproduktionslinie für eine Craft-Brauerei mit 50.000 hl Jahresausstoß unterscheidet sich grundlegend von der Konzeption einer industriellen Großbrauerei mit 2 Millionen hl – sowohl in der Automatisierungstechnik als auch in den Reinigungsabläufen, Umrüstzeiten und der Steuerungskomplexität. Seppa Solutions analysiert diese Anforderungen vorab im Rahmen von Machbarkeitsstudien und 3D-Anlagenplanungen, um kurze Leitungswege und minimale Installationszeiten zu realisieren. Dank des modularen Aufbaus können Anlagen bei steigendem Absatz flexibel erweitert werden. So kann eine Brauerei beispielsweise mit einer Abfülllinie für 10.000 Flaschen pro Stunde starten und diese auf derselben Steuerungsplattform später erweitern."
       ]
     }
   ],
   "whyChoose": {
-    "title": "Why Choose Seppa Solutions for Complete Beer Lines?",
+    "title": "Warum Brauereien Seppa Solutions für komplette Bierlinien wählen",
     "paragraphs": [
-      "Capital equipment in brewing gets evaluated on three things: initial quality, long term reliability, and what it actually costs to run over a 15 to 20 year horizon.",
-      "Seppa's beer production line technology holds up across all three. Electronic filling valves and intelligent CIP integration cut product waste at startup and between cycles. High precision conveyor controls reduce unplanned stops that translate directly into lost production volume. Standardized components across Seppa's equipment families simplify spare parts management and reduce repair downtime relevant in any beer manufacturing plant running multiple shifts.",
-      "Seppa provides structured service programs, remote diagnostics, operator training, and upgrade pathways after commissioning. The beer production line is designed to hit specified efficiency rates not just at handover, but five and ten years into production."
+      "Bei Investitionen in Brauereitechnik zählen für Hersteller vor allem drei Faktoren: gleichbleibende Produktqualität, langfristige Anlagenzuverlässigkeit und tatsächliche Betriebskosten über den gesamten Lebenszyklus. Eine moderne Bierproduktionslinie muss nicht nur bei der Inbetriebnahme optimale Ergebnisse liefern, sondern auch nach vielen Jahren stabil und wirtschaftlich arbeiten.",
+      "Die Technologie von Seppa Solutions erfüllt diese Anforderungen durch präzise Abfülltechnik, intelligente CIP-Integration und optimierte Prozesssteuerung. Elektronische Füllventile reduzieren Produktverluste während des Produktionsstarts und bei Formatwechseln. Präzise Fördersteuerungen minimieren ungeplante Stillstände, die direkt zu Produktionsverlusten führen können. Standardisierte Komponenten innerhalb der Seppa-Anlagenfamilie vereinfachen die Ersatzteilverwaltung und verkürzen Wartungszeiten – ein wichtiger Vorteil für Brauereien mit mehrschichtigem Betrieb.",
+      "Seppa Solutions bietet umfassende Unterstützung über die gesamte Anlagenlebensdauer: strukturierte Serviceprogramme, Fernwartung und Diagnose, Bedienerschulungen sowie technische Modernisierungsmöglichkeiten. Die Bierproduktionslinie wird nicht nur für die Leistung bei Übergabe entwickelt, sondern für stabile Produktion über viele Jahre hinweg."
     ]
   },
   "methodology": {
-    "title": "Complete Beer Line Methodology",
+    "title": "Komplettes Engineering-Konzept für Bierproduktionslinien",
     "steps": [
       {
-        "title": "Feasibility and Process Design",
-        "description": "Production targets, raw material specifications, utility availability, and floor constraints are assessed before a single component is specified. Brewhouse output data drives the beer production line design not standard cataloge assumptions."
+        "title": "Machbarkeit und Prozessdesign",
+        "description": "Vor der Auswahl einzelner Komponenten werden alle wichtigen Produktionsparameter analysiert: gewünschte Produktionskapazität, Rohstoffanforderungen, verfügbare Medienversorgung, verfügbare Produktionsfläche und zukünftige Erweiterungspläne. Die Auslegung der Bierproduktionslinie basiert auf den tatsächlichen Anforderungen der Brauerei und nicht auf allgemeinen Standardannahmen."
       },
       {
-        "title": "CAD Layout and P&ID Development",
-        "description": "Full 3D layout modelling of the beer packaging line and upstream stages prevents interference conflicts and optimizes maintenance access before fabrication begins."
+        "title": "CAD-Layout und P&ID-Entwicklung",
+        "description": "Eine vollständige 3D-Anlagenplanung ermöglicht die frühzeitige Optimierung aller Prozessbereiche. Dabei werden berücksichtigt: Platzbedarf der Bierverpackungslinie, Wartungszugängigkeit, Rohrleitungsführung und Schnittstellen zwischen Maschinen. So können mögliche Konflikte bereits vor der Fertigung erkannt und vermieden werden."
       },
       {
-        "title": "Fabrication and Factory Acceptance Testing",
-        "description": "Equipment is built to hygienic engineering standards (EHEDG, 3-A where applicable) and run at full production speed in Seppa's factory before shipment."
+        "title": "Fertigung und Factory Acceptance Test",
+        "description": "Die Anlagen werden nach hygienischen Konstruktionsprinzipien gefertigt und vor dem Versand umfassend getestet. Je nach Anwendung werden relevante Standards wie EHEDG und 3-A berücksichtigt. Während des Factory Acceptance Tests wird die Bierlinie unter realistischen Produktionsbedingungen geprüft."
       },
       {
-        "title": "Installation and Commissioning",
-        "description": "Seppa field engineers handle mechanical installation, utility connection, and sterile commissioning of the beer packaging line. Commissioning includes CIP validation and DO measurement across all critical transfer points."
+        "title": "Installation und Inbetriebnahme",
+        "description": "Seppa Solutions übernimmt die technische Umsetzung vor Ort: mechanische Installation, Medienanschlüsse, Steuerungsintegration und sterile Inbetriebnahme der Bierverpackungslinie. Die Inbetriebnahme umfasst unter anderem: CIP-Validierung, Messung des gelösten Sauerstoffs und Prüfung aller kritischen Transferpunkte."
       },
       {
-        "title": "Training and Handover",
-        "description": "Operators are trained across the complete beer line tank management through palletizing and stretch wrapping before formal handover."
+        "title": "Schulung und Übergabe",
+        "description": "Vor der finalen Übergabe werden Bediener umfassend geschult – vom Tankmanagement über Abfüllprozesse bis zur Verpackung und Palettierung. Dadurch kann das Betriebsteam die Bierproduktionslinie sicher und effizient betreiben."
       }
+    ],
+    "outro": [
+      "Fazit: Zukunftssichere Bierproduktionslinien für moderne Brauereien. Die Herstellung hochwertiger Biere erfordert heute präzise kontrollierte Prozesse vom Lagertank bis zur fertigen Verpackung. Eine leistungsfähige Bierproduktionslinie verbindet hygienisches Engineering, zuverlässige Abfülltechnik und intelligente Automatisierung zu einem abgestimmten Gesamtsystem. Seppa Solutions entwickelt komplette Lösungen für Brauereien jeder Größe – von flexiblen Craft-Brauereianlagen bis zu industriellen Hochleistungs-Bierabfüllanlagen. Mit umfassender Engineering-Erfahrung, modularen Anlagenkonzepten und langfristigem Service entstehen Produktionssysteme, die höchste Produktqualität, effiziente Abläufe und nachhaltige Investitionssicherheit gewährleisten."
     ]
   },
-  "faqTitle": "Frequently Asked Questions",
+  "faqTitle": "Häufig gestellte Fragen zu Bierproduktionslinien",
   "faqs": [
     {
-      "question": "How does a beer bottling line minimize dissolved oxygen pickup?",
-      "answer": "Seppa's beer bottling line uses CO₂ counterpressure filling with electronic valve control, container pre evacuation before liquid enters, and nitrogen snifting at the seaming station. Inline DO sensors monitor the process continuously with closed-loop feedback to the filler. Total package oxygen below 10 ppb is achievable under normal operating conditions. Whether that matters for your product depends on style and shelf life targets worth discussing at feasibility."
+      "question": "Wie reduziert eine Bierabfüllanlage die Aufnahme von gelösten Sauerstoff?",
+      "answer": "Seppa Solutions Bierabfüllanlagen verwenden CO₂-Gegendruckfüllung mit elektronischer Ventilsteuerung, Behältervorbereitung vor dem Befüllen und Stickstoff-Spülung im Verschließbereich. Inline-Sensoren überwachen kontinuierlich den Sauerstoffgehalt und geben automatische Rückmeldungen an das Füllsystem. Unter normalen Betriebsbedingungen können Werte von weniger als 10 ppb Gesamtsauerstoff im fertigen Gebinde erreicht werden. Die optimale Zielgröße hängt jedoch von Biersorte und gewünschter Haltbarkeit ab."
     },
     {
-      "question": "What throughput can a beer production line achieve?",
-      "answer": "Seppa configures each beer production line to the capacity established in the feasibility study, ranging from 5,000 to over 80,000 containers per hour. Throughput on any beer production line is effectively constrained by the slowest process step typically the filler or pasteurizer so Seppa balances station capacity across the line rather than over specifying individual machines."
+      "question": "Welche Produktionsleistung kann eine Bierproduktionslinie erreichen?",
+      "answer": "Seppa Solutions konfiguriert jede Bierproduktionslinie entsprechend den Anforderungen aus der Machbarkeitsanalyse. Typische Leistungen reichen von 5.000 bis über 80.000 Behältern pro Stunde. Die tatsächliche Kapazität wird nicht durch einzelne Maschinen bestimmt, sondern durch das Zusammenspiel aller Prozessschritte. Deshalb werden Füller, Pasteurisierer, Verpackung und Fördertechnik optimal aufeinander abgestimmt."
     },
     {
-      "question": "How is a complex beer line maintained?",
-      "answer": "CIP circuits are integrated into every wetted component, with automated sequences running between batches without manual disassembly. Preventive maintenance intervals are scheduled through the beer line control system, and Seppa's remote diagnostics platform identifies wear indicators before equipment fails. Spare part stocking recommendations come from actual line data, not generic service manuals."
+      "question": "Wie wird eine komplexe Bierlinie gewartet?",
+      "answer": "Alle produktberührenden Komponenten werden in automatisierte CIP-Reinigungskreise integriert. Die Wartung erfolgt über: geplante Reinigungszyklen, automatische Prozessüberwachung, vorbeugende Wartungsintervalle und digitale Zustandsdiagnose. Das Remote-Diagnosesystem erkennt mögliche Verschleißerscheinungen frühzeitig und unterstützt eine vorausschauende Wartung. Empfehlungen zur Ersatzteilbevorratung basieren auf realen Anlagendaten und nicht ausschließlich auf allgemeinen Wartungstabellen."
     },
     {
-      "question": "What is the ROI of an automated beer manufacturing plant?",
-      "answer": "It varies. A fully automated beer manufacturing plant typically recovers capital cost within four to seven years through reduced labour, lower product losses, and higher overall line efficiency but that range shifts depending on incumbent labour costs and current wastage rates. Seppa builds production models at the feasibility stage so the numbers are based on your facility's actual cost structure."
+      "question": "Welche Investitionsrendite bietet eine automatisierte Brauereianlage?",
+      "answer": "Die Wirtschaftlichkeit hängt von verschiedenen Faktoren ab, darunter: aktuelle Personalkosten, Produktionsvolumen, Ausschussrate und Automatisierungsgrad. Eine vollständig automatisierte Bierproduktionsanlage kann Investitionskosten häufig innerhalb von vier bis sieben Jahren durch geringere Arbeitskosten, reduzierte Produktverluste und höhere Effizienz ausgleichen. Seppa Solutions erstellt bereits in der Planungsphase individuelle Produktionsmodelle auf Basis der tatsächlichen Kostenstruktur der Brauerei."
     },
     {
-      "question": "Can Seppa upgrade an existing beer line?",
-      "answer": "Yes. Seppa's modular equipment architecture lets new technology integrate into existing beer line infrastructure without replacing everything upstream or downstream. Control system upgrades, new filling heads, and carbonation modules have been retrofitted into operational beer production line installations with minimal downtime and no major civil work."
+      "question": "Kann Seppa Solutions bestehende Bierlinien modernisieren?",
+      "answer": "Ja. Durch den modularen Aufbau können neue Technologien in bestehende Anlagen integriert werden. Mögliche Nachrüstungen umfassen: moderne Steuerungssysteme, neue Füllventile, verbesserte Karbonisierungsmodule und Prozessoptimierungen. Viele Erweiterungen können ohne umfangreiche Umbauten oder lange Produktionsunterbrechungen umgesetzt werden."
     }
   ]
 }
