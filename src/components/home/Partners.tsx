@@ -91,8 +91,7 @@ const PartnersContent = ({ getT }: { getT: (key: string) => string }) => {
 const LocalizedPartners = () => {
   const t = useTranslations('home');
   const locale = useLocale();
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? ((enHome as any).Partners?.[key] || key) : t(`Partners.${key}`);
+  const getT = (key: string) => t(`Partners.${key}`);
   return <PartnersContent getT={getT} />;
 };
 

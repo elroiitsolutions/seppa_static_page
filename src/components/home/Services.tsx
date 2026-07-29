@@ -4,8 +4,6 @@ import { Link } from '@/i18n/routing';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import bgPattern from '@/assets/bg/black-line-1.png';
 import { useTranslations, useLocale } from 'next-intl';
-import enHome from '@/messages/en/home.json';
-
 const fadeInUp:Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -19,9 +17,8 @@ const staggerContainer = {
 const Services = () => {
   const t = useTranslations('home');
   const locale = useLocale();
-  const isDe = locale === 'de';
 
-  const getT = (key: string) => isDe ? ((enHome as any).Services?.[key] || key) : t(`Services.${key}`);
+  const getT = (key: string) => t(`Services.${key}`);
 
   const services = [
     {

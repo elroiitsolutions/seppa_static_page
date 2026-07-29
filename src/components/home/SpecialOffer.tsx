@@ -21,9 +21,8 @@ const SpecialOffer = () => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
 
-  const getT = (key: string) => isDe ? ((enHome as any).SpecialOffer?.[key] || key) : t(`SpecialOffer.${key}`);
+  const getT = (key: string) => t(`SpecialOffer.${key}`);
 
   const reports = [
     {
