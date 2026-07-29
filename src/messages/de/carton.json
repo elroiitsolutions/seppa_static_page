@@ -9,38 +9,43 @@
     "Ein Kartonhandhabungssystem umfasst sämtliche automatisierten Prozessschritte – vom flachen Wellpappenzuschnitt bis zum aufgerichteten, befüllten und verschlossenen Karton für den Palettierer. Dabei handelt es sich nicht um eine einzelne Maschine, sondern um das präzise Zusammenspiel von drei Anlagenbereichen: Kartonaufrichtung, Kartonverpackung und Kartonverschließung.",
     "Jede Prozessstufe stellt eigene mechanische Anforderungen und muss exakt mit den übrigen Komponenten synchronisiert werden. Läuft beispielsweise eine Kartonverpackungsmaschine mit 40 Kartons pro Minute, während der Kartonaufrichter lediglich 32 Kartons bereitstellt, bestimmt die langsamste Station die Gesamtleistung der Linie. SEPPA entwickelt Kartonhandhabungssysteme daher als vollständig integrierte Verpackungslösungen und nicht als einzelne Maschinen."
   ],
+  "featuresTitle": "Hauptmerkmale unserer Kartonhandhabungssysteme",
+  "features": [
+    {
+      "title": "Saugscheiben-System zur Kartonentnahme und exakten Aufrichtung",
+      "description": "Der erste Prozessschritt besteht darin, einen einzelnen Kartonzuschnitt zuverlässig aus dem Magazin zu entnehmen und präzise aufzurichten. Die Kartonaufrichtmaschinen von SEPPA arbeiten mit einem kontinuierlich laufenden Saugscheiben-System anstelle eines Start-Stopp-Betriebs. Dadurch werden Doppelentnahmen und Fehlzuführungen selbst bei hohen Produktionsgeschwindigkeiten zuverlässig vermieden."
+    },
+    {
+      "title": "Sensorbasierte Positionserkennung für automatische Beladung",
+      "description": "Vor jedem Beladevorgang überprüft die automatische Kartonverpackungsmaschine mittels optischer Sensoren die exakte Position und Ausrichtung des geöffneten Kartons. Erkennt das System einen schiefen oder beschädigten Karton, wird dieser automatisch ausgeschleust, bevor Produkte eingelegt werden."
+    },
+    {
+      "title": "Schnelle Formatumstellung",
+      "description": "Die Kartonverpackungsmaschinen von SEPPA ermöglichen werkzeuglose Formatwechsel. Seitenführungen, Laschenführer und Kompressionsbänder lassen sich über Handräder mit Positionsanzeigen schnell einstellen. Ein geschulter Bediener kann innerhalb von weniger als 15 Minuten von einem Kartonformat umrüsten – ohne Werkzeugwechsel oder zusätzliche Formatteile."
+    }
+  ],
+  "applicationsTitle": "Arten von Kartonhandhabungsanlagen",
+  "applications": [
+    {
+      "title": "Kartonaufrichtmaschinen",
+      "description": "Formen flache Zuschnitte zu geöffneten Kartons und verschließen die Bodenlaschen automatisch. SEPPA bietet Ausführungen mit PVC-Klebeband oder Hotmelt-Klebstoff an. Die Klebebandvariante eignet sich insbesondere für kalte oder feuchte Produktionsumgebungen, während sich für höhere Produktionsgeschwindigkeiten die Hotmelt-Ausführung empfiehlt."
+    },
+    {
+      "title": "Kartonverpackungsmaschinen",
+      "description": "In der Kartonverpackungsmaschine werden die Produkte automatisch in den Karton eingebracht. Für Getränke- und FMCG-Anwendungen erreichen die Wraparound-Kartonverpackungsmaschinen von SEPPA Leistungen von bis zu 45 Verpackungen pro Minute. Diese Verpackungsart reduziert Leerraum innerhalb des Kartons und verbessert gleichzeitig die Stabilität auf der Palette."
+    },
+    {
+      "title": "Kartonverschließmaschinen",
+      "description": "Die automatischen Kartonverschließmaschinen von SEPPA verschließen befüllte Faltkartons zuverlässig über die oberen Kartonlaschen. Seitlich angetriebene Förderbänder transportieren die Kartons mit konstanter Geschwindigkeit durch die Maschine, während Klebstoffdüsen vier Hotmelt-Klebstoffraupen auf die oberen Laschen auftragen."
+    }
+  ],
   "contentBlocks": [
-    {
-      "title": "Hauptmerkmale unserer Kartonhandhabungssysteme",
-      "paragraphs": [
-        "Saugscheiben-System zur Kartonentnahme und exakten Aufrichtung: Der erste Prozessschritt besteht darin, einen einzelnen Kartonzuschnitt zuverlässig aus dem Magazin zu entnehmen und präzise aufzurichten. Die Kartonaufrichtmaschinen von SEPPA arbeiten mit einem kontinuierlich laufenden Saugscheiben-System anstelle eines Start-Stopp-Betriebs. Dadurch werden Doppelentnahmen und Fehlzuführungen selbst bei hohen Produktionsgeschwindigkeiten zuverlässig vermieden.",
-        "Das Umlegen der unteren Kartonlaschen erfolgt ausschließlich über mechanische Hebel und Führungen. Pneumatische Zylinder werden bewusst vermieden, da deren Reaktionszeiten bei hohen Taktzahlen zu Schwankungen führen können. So erreichen die Kartons die Verpackungsstation mit einer Maßgenauigkeit von bis zu ±1 mm.",
-        "Sensorbasierte Positionserkennung für automatische Beladung: Vor jedem Beladevorgang überprüft die automatische Kartonverpackungsmaschine mittels optischer Sensoren die exakte Position und Ausrichtung des geöffneten Kartons. Erkennt das System einen schiefen oder beschädigten Karton, wird dieser automatisch ausgeschleust, bevor Produkte eingelegt werden.",
-        "Schnelle Formatumstellung: Die Kartonverpackungsmaschinen von SEPPA ermöglichen werkzeuglose Formatwechsel. Seitenführungen, Laschenführer und Kompressionsbänder lassen sich über Handräder mit Positionsanzeigen schnell einstellen. Ein geschulter Bediener kann innerhalb von weniger als 15 Minuten von einem Kartonformat umrüsten – ohne Werkzeugwechsel oder zusätzliche Formatteile."
-      ]
-    },
-    {
-      "title": "Arten von Kartonhandhabungsanlagen",
-      "paragraphs": [
-        "Kartonaufrichtmaschinen formen flache Zuschnitte zu geöffneten Kartons und verschließen die Bodenlaschen automatisch. SEPPA bietet Ausführungen mit PVC-Klebeband oder Hotmelt-Klebstoff an. Die Klebebandvariante eignet sich insbesondere für kalte oder feuchte Produktionsumgebungen, während sich für höhere Produktionsgeschwindigkeiten die Hotmelt-Ausführung empfiehlt.",
-        "Kartonverpackungsmaschinen: In der Kartonverpackungsmaschine werden die Produkte automatisch in den Karton eingebracht. Für Getränke- und FMCG-Anwendungen erreichen die Wraparound-Kartonverpackungsmaschinen von SEPPA Leistungen von bis zu 45 Verpackungen pro Minute. Diese Verpackungsart reduziert Leerraum innerhalb des Kartons und verbessert gleichzeitig die Stabilität auf der Palette.",
-        "Kartonverschließmaschinen: Die automatischen Kartonverschließmaschinen von SEPPA verschließen befüllte Faltkartons zuverlässig über die oberen Kartonlaschen. Seitlich angetriebene Förderbänder transportieren die Kartons mit konstanter Geschwindigkeit durch die Maschine, während Klebstoffdüsen vier Hotmelt-Klebstoffraupen auf die oberen Laschen auftragen."
-      ]
-    },
     {
       "title": "Vorteile automatisierter Kartonhandhabungssysteme",
       "paragraphs": [
         "Die Automatisierung der Kartonhandhabung reduziert den manuellen Aufwand für Kartonaufrichtung und Kartonverschließung erheblich. Mitarbeitende können dadurch anspruchsvollere Aufgaben wie Qualitätskontrolle oder Anlagenüberwachung übernehmen.",
         "Ein weiterer Vorteil ist die hohe Prozesskonstanz. Automatische Kartonverschließmaschinen dosieren Klebstoff stets mit identischer Temperatur, Menge und Position. Dadurch entstehen gleichmäßige Verklebungen und dauerhaft stabile Kartons.",
         "Auch der Materialverbrauch sinkt deutlich. Hotmelt-Systeme tragen exakt berechnete Klebstoffmengen auf, während Klebebandmaschinen jede Verpackung mit einer konstanten Bandlänge verschließen. Materialverluste durch manuelle Verarbeitung werden dadurch minimiert."
-      ]
-    },
-    {
-      "title": "Einsatzbereiche in verschiedenen Industrien",
-      "paragraphs": [
-        "Kartonhandhabungssysteme von SEPPA kommen in zahlreichen Branchen zum Einsatz, darunter in der Getränkeindustrie, Lebensmittelproduktion, FMCG und bei Industriegütern.",
-        "Getränkeabfüllanlagen arbeiten häufig mit Wraparound-Kartonverpackungsmaschinen bei Leistungen von 35 bis 45 Kartons pro Minute für Glas- oder PET-Mehrfachverpackungen.",
-        "In der Lebensmittelindustrie müssen häufig Beutel, flexible Verpackungen oder unterschiedlich geformte Produkte verarbeitet werden. Hier sorgen individuell konfigurierte Gruppiersysteme mit Spureinteilern und Taktförderern für eine präzise Produktausrichtung vor dem Verpackungsvorgang."
       ]
     }
   ],
@@ -88,7 +93,7 @@
     },
     {
       "question": "3. Welche Effizienzsteigerungen bietet eine automatische Kartonverpackungsmaschine?",
-      "answer": "Im Vergleich zu manuellen Verpackungsplätzen lassen sich typischerweise zwei bis drei Arbeitsplätze pro Schicht einsparen. Gleichzeitig bleibt die Produktionsleistung konstant, während manuelle Prozesse im Schichtverlauf häufig deutliche Leistungsschwankungen aufweisen."
+      "answer": "Im Vergleich zu manuellen Verpackungsplätzen lassen sich typischerweise zwei bei drei Arbeitsplätze pro Schicht einsparen. Gleichzeitig bleibt die Produktionsleistung konstant, während manuelle Prozesse im Schichtverlauf häufig deutliche Leistungsschwankungen aufweisen."
     },
     {
       "question": "4. Warum wird bei hohen Geschwindigkeiten Hotmelt anstelle von Klebeband eingesetzt?",
