@@ -1,107 +1,118 @@
 {
-  "title": "Moderne Getränketechnologie: Saft-, Isotonik- und Teeverarbeitung mit Seppa Solutions",
+  "title": "Komplette Saftverarbeitungsanlagen für eine effiziente Produktion und Verpackung",
   "breadcrumbName": "Saftproduktionslinien",
   "rootBreadcrumbName": "Komplette Linien",
   "rootBreadcrumbPath": "/complete-lines",
-  "overviewTitle": "Fruchtsäfte, isotonische Getränke, Softdrinks und Tee – Wachstum durch moderne Prozesstechnik",
-  "overviewDescription": "Der globale Markt für Fruchtsäfte wächst kontinuierlich und hat bereits ein Volumen von über 84 Milliarden US-Dollar erreicht. Rund 30 % entfallen auf 100 % Direktsäfte, die aufgrund ihrer hohen Qualität attraktive Margen erzielen. Neben Fruchtsäften entwickeln sich auch Nektare, isotonische Sportgetränke und Teeprodukte dynamisch. Hersteller stehen dabei vor der Herausforderung, unterschiedliche Produkteigenschaften wie Viskosität, Fruchtfleischanteil, Säuregehalt oder Zuckerkonzentration zuverlässig zu beherrschen.",
+  "overviewTitle": "Integrierte Lösungen für die industrielle Saftproduktion",
+  "overviewDescription": "Eine moderne Saftverarbeitungsmethode besteht aus weit mehr als einer Reihe einzelner Maschinen. Jeder Prozessschritt beeinflusst die nachfolgenden Produktionsstufen unmittelbar. Die Bedingungen während der Extraktion bestimmen die Anforderungen an die Filtration. Entscheidungen bei der thermischen Behandlung wirken sich auf Pressparameter, Produktqualität und den Brix-Wert aus. Werden diese Übergänge nicht optimal aufeinander abgestimmt, können Fehlaromen, mikrobiologische Instabilität oder Qualitätsschwankungen zwischen einzelnen Chargen entstehen.",
   "overviewsubDescription": [
-    "Der wirtschaftliche Erfolg einer modernen Getränkeproduktion basiert auf vier entscheidenden Faktoren: gleichbleibende Produktqualität, hygienische Prozessführung, hohe Produktionseffizienz und reproduzierbare Ergebnisse. Diese Anforderungen lassen sich nur mit einer optimal ausgelegten Saftverarbeitungsanlage erfüllen, die exakt auf die jeweiligen Produkteigenschaften abgestimmt ist. Ein Mango-Nektar mit hohem Fruchtfleischanteil stellt beispielsweise völlig andere Anforderungen an den Prozess als klarer Apfelsaft, Zuckerrohrsaft oder Grüntee."
+    "Seppa Solutions entwickelt jede Saftproduktionslinie als vollständig integriertes System. Rohwarenannahme, Waschen, Pressen, Enzymbehandlung, Filtration, Pasteurisierung, Entgasung und thermische Behandlung arbeiten innerhalb einer gemeinsamen Steuerungsarchitektur zusammen. Dadurch können Prozessparameter zentral angepasst werden, ohne nachgelagerte Produktionsschritte manuell neu zu konfigurieren. Gerade bei industriellen Saftverarbeitungsanlagen mit mehreren tausend Litern Stundenleistung sorgt diese Systemintegration für reproduzierbare Produktqualität und hohe Prozesseffizienz.",
+    "Für die thermische Behandlung setzt Seppa je nach Produktviskosität und Partikelgehalt Platten- oder Röhrenwärmetauscher ein. Die Pasteurisierung erfolgt mit einer Temperaturgenauigkeit von ±0,5 °C über den gesamten Produktionsprozess. So werden Enzyme zuverlässig deaktiviert, während natürliche Aromen und Fruchtcharakter bestmöglich erhalten bleiben."
   ],
-  "featuresTitle": "Hochdruckpasteurisierung (HPP) – Höchste Produktsicherheit bei maximalem Frischeerhalt",
-  "featuresSubtitle": "Die Wahl des geeigneten Pasteurisierungsverfahrens zählt zu den wichtigsten Investitionsentscheidungen eines Getränkeherstellers. Zu geringe Kapazitäten begrenzen zukünftiges Wachstum, während überdimensionierte Anlagen unnötig Kapital binden. Die modular erweiterbaren HPP-Systeme von Seppa Solutions ermöglichen eine flexible Skalierung entsprechend der Unternehmensentwicklung.",
+  "featuresTitle": "Saftprodukte, die unsere Anlagen verarbeiten",
+  "featuresSubtitle": "Unterschiedliche Fruchtsäfte stellen unterschiedliche Anforderungen an die Verfahrenstechnik. Eine Produktionslinie für klaren Apfelsaftkonzentrat unterscheidet sich grundlegend von einer Anlage für Mango- oder Mehrfruchtnektar.",
   "features": [
-    { "title": "Natürlicher Geschmack", "description": "Die Behandlung erfolgt ausschließlich mit kaltem Wasser unter hohem Druck – ohne Hitze, Chemikalien oder Bestrahlung. Aroma, Farbe und Frische bleiben nahezu vollständig erhalten." },
-    { "title": "Hohe Lebensmittelsicherheit", "description": "Mikroorganismen wie Listerien oder Salmonellen werden zuverlässig inaktiviert, ohne dass Konservierungsstoffe erforderlich sind." },
-    { "title": "Längere Haltbarkeit", "description": "HPP reduziert Produktverluste deutlich und ermöglicht je nach Produkt Haltbarkeiten von bis zu 30 Tagen bei gekühlter Lagerung." },
-    { "title": "Langjährige Praxiserfahrung", "description": "Jahrzehntelange Projekterfahrung fließt in jede Detailkonstruktion ein und gewährleistet einen wirtschaftlichen sowie zuverlässigen Anlagenbetrieb." }
-  ],
-  "applicationsTitle": "EPF-Pasteurisierung – Schonende Technologie für hochwertige Getränke",
-  "applicationsSubtitle": "Für Hersteller, die eine nahezu wärmefreie Konservierung bevorzugen, bietet Seppa Solutions industrielle Systeme zur Electric Pulsed Field (EPF)-Technologie an. Die modular aufgebauten Komplettanlagen eignen sich sowohl zur Zellaufschlussbehandlung fester Rohstoffe als auch zur mikrobiellen Inaktivierung flüssiger Produkte.",
-  "applications": [
     {
-      "title": "Breites technisches Einsatzspektrum",
-      "description": "Die Systeme arbeiten mit Leistungen von bis zu 100 kW und Pulsfrequenzen von bis zu 500 Pulsen pro Sekunde. Durch den kontinuierlichen Prozess mit geringem Platzbedarf lässt sich die EPF-Technologie problemlos in bestehende Produktionslinien integrieren."
+      "title": "Zitrussäfte",
+      "description": "Zitrussäfte enthalten Fruchtfleisch und empfindliche Aromakomponenten. Die Verarbeitung erfordert schonende Extraktion mit geringer Scherbelastung, kontrollierte Entgasung zur Reduzierung von Oxidation sowie eine Pasteurisierung, welche Enzyme wie Pektinmethylesterase deaktiviert, ohne flüchtige Aromastoffe zu beeinträchtigen."
     },
     {
-      "title": "Kontinuierliche Prozessüberwachung",
-      "description": "Sämtliche Prozessparameter wie Durchfluss, Temperatur und Energieeintrag werden permanent überwacht und dokumentiert."
+      "title": "Nektare und Fruchtsäfte mit hohem Fruchtfleischanteil",
+      "description": "Tropische Fruchtnektare und Produkte mit hohem Fruchtanteil benötigen leistungsfähige Homogenisatoren und Rezirkulationssysteme. Diese gewährleisten eine gleichmäßige Partikelverteilung bis zur Abfüllung – auch bei hohen Produktionsgeschwindigkeiten."
     },
     {
-      "title": "Erhalt von Geschmack und Nährstoffen",
-      "description": "Bei Fruchtsäften, Rohmilch, Joghurtgetränken oder Molkeprodukten ermöglicht EPF eine effektive Keimreduzierung bei gleichzeitigem Erhalt von Geschmack, Vitaminen und probiotischen Eigenschaften. Da Zellmembranen gezielt permeabilisiert werden, verlängert sich die Haltbarkeit deutlich, ohne die sensorische Qualität oder den Nährstoffgehalt durch thermische Belastung zu beeinträchtigen."
+      "title": "Klare Fruchtsäfte und Konzentrate",
+      "description": "Für klare Fruchtsäfte kommen Zentrifugal- oder Ultrafiltrationssysteme zum Einsatz, welche Trübungsstoffe entfernen. Bei Konzentraten folgt anschließend eine mehrstufige Eindampfung. Für Exportprodukte mit langer Lagerdauer bildet die aseptische Abfüllung den entscheidenden letzten Prozessschritt."
     },
     {
-      "title": "Ideal für Strategien zur Nährstofferhaltung",
-      "description": "Für jede moderne Getränkeproduktionsstrategie, die den Erhalt von Nährstoffen priorisiert, verdient EPF eine ernsthafte Bewertung."
+      "title": "Modulares Anlagenkonzept",
+      "description": "Dank des modularen Anlagenkonzepts können mehrere Saftprodukte auf derselben Produktionslinie hergestellt werden. Saisonale Produktwechsel oder Sortimentserweiterungen lassen sich ohne den Aufbau separater Produktionsanlagen realisieren."
     }
   ],
   "contentBlocks": [
     {
-      "title": "Moderne Saftverarbeitung mit Seppa Solutions",
+      "title": "Prozessablauf einer modernen Saftproduktion",
       "paragraphs": [
-        "Vom Rohstoff bis zur Abfüllung – Eine durchgängige Prozesskette. Die Wirtschaftlichkeit einer Getränkeproduktion beginnt bereits bei der Rohstoffaufbereitung. Die von Seppa entwickelte Saftmühle verfügt über gehärtete Edelstahlkomponenten in Lebensmittelqualität sowie eine variable Schneidgeometrie, die sich automatisch an unterschiedliche Früchte anpasst – von weichen Beeren bis hin zu faseriger Ananas. Je nach Anwendung lassen sich Extraktionsausbeuten erzielen, die um 8 bis 12 % über konventionellen Zerkleinerungssystemen liegen. Gleichzeitig reduziert eine gleichmäßige Partikelgröße die Belastung nachgelagerter Filtrationssysteme, verlängert die Standzeit von Membranen und reduziert CIP-Zyklen.",
-        "Nach der Extraktion erfolgt die Produktsicherung über HPP- oder EPF-Technologie – abhängig von Produktkonzept, gewünschter Haltbarkeit und Verpackungsart. Beide Verfahren ermöglichen eine präzise Steuerung mikrobiologischer Sicherheit bei gleichzeitigem Erhalt der sensorischen Qualität. Sämtliche Prozessmodule werden über ein zentrales SCADA-System überwacht. Bediener erhalten in Echtzeit Informationen zu Druckverläufen, Durchflussmengen und CIP-Prozessen. Dadurch entsteht eine vollständig integrierte Produktionslinie, die verschiedene Getränkesorten mit minimalen Umrüstzeiten wirtschaftlich verarbeiten kann.",
-        "Darüber hinaus sorgen Wärmerückgewinnung, regenerative Pasteurisierungssysteme und frequenzgeregelte Antriebe für eine Reduzierung des Energieverbrauchs um bis zu 25 % gegenüber herkömmlichen Anlagen. Über die gesamte Anlagenlebensdauer ergeben sich dadurch erhebliche Betriebskostenvorteile."
+        "Der Produktionsprozess beginnt bereits bei der Anlieferung des Obstes. Nach der Wareneingangskontrolle werden die Früchte gewaschen und sortiert. Beschädigte oder verunreinigte Rohwaren werden entfernt. Gleichzeitig werden Brix-Wert und titrierbare Säure bestimmt, um die Produktionsparameter für die jeweilige Charge festzulegen.",
+        "Je nach Fruchtart erfolgt anschließend die Saftgewinnung. Zitrusfrüchte werden über Inline-Extraktoren verarbeitet, welche Saft und Schalenöl gleichzeitig trennen. Äpfel und Steinobst durchlaufen Zerkleinerungs- und Pressprozesse. Durch gezielte Enzymzugabe wird der Pektinabbau entsprechend der gewünschten Produktklarheit gesteuert.",
+        "Die anschließende Filtration entfernt Schwebstoffe entsprechend den Produktspezifikationen – grob for Nektare und fein for klare Fruchtsäfte. Danach folgt die Entgasung. Das Entfernen von gelöstem Sauerstoff reduziert Oxidationsprozesse erheblich und verbessert die Haltbarkeit des Endprodukts.",
+        "Im nächsten Schritt erfolgt die Pasteurisierung. Für Direktsäfte werden in der Regel HTST-Prozesse zwischen 95 und 100 °C mit Haltezeiten von 15 bis 30 Sekunden eingesetzt. Dabei werden unter anderem Peroxidase und Polyphenoloxidase zuverlässig deaktiviert, ohne die Produktqualität durch unnötig lange Wärmebelastung zu beeinträchtigen. Nach der Pasteurisierung wird das Produkt durch regenerative Wärmerückgewinnung innerhalb weniger Sekunden auf die erforderliche Abfülltemperatur heruntergekühlt."
+      ]
+    },
+    {
+      "title": "Saftabfüllung und Verpackungssysteme",
+      "paragraphs": [
+        "Nach der Pasteurisierung beginnt der hygienisch anspruchsvollste Abschnitt der gesamten Saftverarbeitungsanlage. Zwischen Kühler und verschlossenem Behälter darf keine mikrobiologische Kontamination auftreten, da sonst die zuvor erreichte Produktsicherheit gefährdet wird.",
+        "Die Saftabfüllanlagen von Seppa Solutions arbeiten mit einer sterilen Zonenarchitektur. Füllventile, Behälterzuführung und Verschließsystem befinden sich unter gefilterter Überdruckluft. Für Hot-Fill-Produkte werden Abfülltemperaturen zwischen 85 und 92 °C mit einer Genauigkeit von ±1 °C eingehalten. Dadurch wird einerseits eine sichere Sterilisation des Behälters gewährleistet und andererseits eine thermische Belastung von PET- oder HDPE-Flaschen vermieden. Produkte mit Fruchtfleisch werden durch temperaturgeregelte Rezirkulationssysteme homogen gehalten, sodass sich keine Partikel zwischen den Abfüllzyklen absetzen.",
+        "Nach der Abfüllung übernimmt die Verpackungslinie sämtliche nachgelagerten Prozesse: Etikettierung, Datums- und Chargencodierung, Sekundärverpackung, Palettierung und Stretchfolienwicklung. Alle Maschinen sind vollständig in die zentrale Anlagensteuerung integriert. Eine lückenlose Rückverfolgbarkeit vom fertigen Palettenstellplatz bis zur Rohwarencharge is gewährleistet.",
+        "Für die aseptische Kaltabfüllung ändert sich das System grundlegend: Behälter werden separat mittels Wasserstoffperoxid oder UV-Technologie sterilisiert. Der gesamte Füllbereich erfüllt Reinraumstandards der ISO-Klasse 5 oder besser, und die Abfüllung erfolgt bei Umgebungstemperatur oder leicht darunter."
       ]
     }
   ],
   "whyChoose": {
-    "title": "Warum Getränkehersteller auf Seppa Solutions setzen",
-    "description": "Moderne Getränkehersteller produzieren heute selten nur ein einzelnes Produkt. Häufig wechseln sich Direktsäfte, Fruchtnektare, isotonische Getränke oder Teeprodukte innerhalb kurzer Produktionszyklen ab.",
+    "title": "Vorteile der Saftverarbeitungsanlagen von Seppa Solutions",
+    "description": "Die Saftverarbeitungsanlagen von Seppa Solutions werden mit einem kompakten Anlagenlayout entwickelt, das kurze Produktwege und eine optimale Nutzung der Produktionsfläche ermöglicht.",
+    "paragraphs": [
+      "Kürzere Rohrleitungen bieten entscheidende Vorteile: geringere Produktverluste, schnellere CIP-Reinigungszyklen, reduzierter Chemikalienverbrauch, geringerer Wasserbedarf und kürzere Produktionsunterbrechungen. Auch die Ressourceneffizienz steht im Mittelpunkt der Anlagenplanung. Beim Pressvorgang wird der Trester über ein Rückgewinnungssystem geführt, das verbleibenden Saft zurückgewinnt, bevor der Feststoff ausgetragen wird. Die Pasteurisierung nutzt regenerative Wärmerückgewinnung mit Wirkungsgraden von über 90 %. Bereits während der Projektplanung werden Zielwerte für Wasser- und Energieverbrauch definiert und anschließend kontinuierlich überwacht.",
+      "Dank der modularen Bauweise können bestehende Produktionslinien erweitert werden, ohne die gesamte Anlage außer Betrieb zu nehmen. So lässt sich beispielsweise eine Produktionskapazität von 5.000 Litern pro Stunde durch zusätzliche Pasteurisierer oder weitere Füllstationen schrittweise erhöhen.",
+      "Alle produktberührenden Oberflächen bestehen aus elektropoliertem Edelstahl 316L mit einer Oberflächenrauheit von Ra ≤ 0,8 µm. Darüber hinaus setzt Seppa Solutions auf: FDA-konforme Dichtungsmaterialien, hygienisches Rohrleitungsdesign ohne Toträume, keine horizontalen Leitungsabschnitte mit Kondensatbildung und hygienegerechte Konstruktion bereits in der Planungsphase. Dadurch werden Reinigbarkeit, Produktsicherheit und langfristige Anlagenzuverlässigkeit verbessert."
+    ],
     "reasons": [
       {
-        "title": "Flexible Getränkeproduktion für unterschiedliche Produktkategorien",
-        "description": "Deshalb setzt Seppa Solutions auf modular aufgebaute Saftverarbeitungsanlagen, die sich flexibel an unterschiedliche Rezepturen und Produktionsanforderungen anpassen lassen. Homogenisatoren, Entgaser und aseptische Lagertanks sind über ein standardisiertes Hygienekonzept integriert. Produktspezifische Module können während geplanter Wartungsintervalle schnell ausgetauscht werden. Dadurch bleibt die Produktionsanlage auch bei wechselnden Marktanforderungen langfristig wirtschaftlich."
+        "title": "Engineering-Erfahrung für anspruchsvolle Produktionsprozesse",
+        "description": "Seppa Solutions entwickelt komplette Saftverarbeitungslösungen für Unternehmen unterschiedlicher Größen – von regionalen Fruchtsaftproduzenten bis hin zu internationalen Herstellern aseptischer Konzentrate. Diese Projekterfahrung ermöglicht es, typische Herausforderungen bereits während der Planung zu berücksichtigen. Dazu gehören unter anderem: Schaumbildung während der Entgasung, Sedimentation von Fruchtfleisch in langen Produktleitungen, Füllgewichtsschwankungen bei viskosen Nektaren sowie komplexe CIP-Validierungen in verzweigten Rohrleitungssystemen. Bewährte Lösungen für diese Anforderungen sind bereits Bestandteil der Engineering-Standards von Seppa Solutions."
       },
       {
-        "title": "Verarbeitung hochviskoser Produkte",
-        "description": "Besonders anspruchsvoll sind hochviskose Produkte wie Fruchtnektare mit hohem Fruchtfleischanteil, kokosbasierte isotonische Getränke oder pflanzliche Protein-Drinks. Konventionelle Abfüllsysteme stoßen hier häufig an ihre Grenzen. Seppa Solutions setzt deshalb auf Verdränger-Kolbenfüller und Doppelschneckenpumpen, die Medien mit Viskositäten bis zu 50.000 cP schonend fördern und präzise dosieren. So lassen sich sowohl dünnflüssige Teegetränke als auch Smoothies oder stark fruchthaltige Produkte auf derselben Produktionslinie verarbeiten."
+        "title": "Intelligente CIP-Integration",
+        "description": "Jede Saftproduktionslinie verfügt serienmäßig über ein automatisiertes CIP-System. Reinigungsprogramme für Laugen- und Säurezyklen werden produktspezifisch voreingestellt. Während jedes Reinigungsvorgangs dokumentiert die Steuerung automatisch: Temperatur, Durchfluss, Leitfähigkeit und Prozessdauer. Diese Daten stehen jederzeit für Qualitätsmanagement und behördliche Audits zur Verfügung."
       },
       {
-        "title": "Spezialisierte Abfülllösungen für Zuckerrohrsaft",
-        "description": "Zuckerrohrsaft zählt zu den anspruchsvollsten Getränken hinsichtlich Verarbeitung und Haltbarkeit. Mit einem natürlichen Zuckergehalt von etwa 18 bis 22 °Brix bietet das Produkt ideale Bedingungen für mikrobielles Wachstum. Gleichzeitig führt die Aktivität der Polyphenoloxidase bereits kurz nach der Extraktion zu einer sichtbaren Braunfärbung. Seppa Solutions begegnet diesen Herausforderungen mit einem speziell entwickelten Prozesskonzept. Die Verarbeitung kombiniert eine sauerstoffarme Extraktion mit einer Flash-Pasteurisierung sowie einer unmittelbar anschließenden Heiß- oder aseptischen Kaltabfüllung. Zum Gesamtsystem gehören unter anderem: Stickstoff-Spülung des Kopfraums zur Sauerstoffreduzierung, Inline-pH-Regelung zur Produktstabilisierung, aseptische PET-Abfüllsysteme für hochzuckerhaltige Getränke sowie hygienische Prozessführung über die gesamte Produktionslinie. Durch dieses Verfahren lässt sich die Haltbarkeit von Zuckerrohrsaft von wenigen Stunden auf 6 bis 9 Monate verlängern."
-      },
-      {
-        "title": "Multi-Getränke-Skalierbarkeit",
-        "description": "Für Hersteller mit mehreren Produktlinien können parallel Zuckerrohrsaft, kaltgepresste Zitrussäfte und isotonische Getränke auf separaten Linien innerhalb einer integrierten Produktionsanlage verarbeitet werden. Diese hohe Flexibilität schafft langfristige Investitionssicherheit und erleichtert spätere Kapazitätserweiterungen."
+        "title": "Unterstützung bis zur stabilen Serienproduktion",
+        "description": "Die Projektbegleitung endet nicht mit der Inbetriebnahme der Maschinen. Seppa Solutions unterstützt Kunden bis zur sicheren Erreichung der vereinbarten Produktionsziele. Zum Leistungsumfang gehören: Inbetriebnahmebegleitung, Bedienerschulungen, Wartungstrainings, Ersatzteilkonzepte und langfristiger technischer Support."
       }
     ]
   },
   "methodology": {
-    "title": "Die Seppa Engineering Lifecycle Methodik",
-    "subtitle": "Jedes Projekt von Seppa Solutions folgt einem strukturierten Engineering-Prozess mit vier aufeinander abgestimmten Phasen.",
+    "title": "Methodik: Saftverarbeitungsanlagen aus einer Hand",
     "steps": [
-      { "title": "Anlagenplanung und Prozessdesign", "description": "Zu Beginn analysieren die Verfahrenstechniker Produktrezepturen, Massenbilanzen, Medienverbrauch und Produktionskapazitäten. Anschließend werden CAD-Layouts hinsichtlich Platzbedarf, Materialfluss und Ergonomie optimiert. Dabei werden die Anforderungen internationaler Normen und Richtlinien wie FSSAI, FDA oder EU-Vorgaben entsprechend der Zielmärkte berücksichtigt." },
-      { "title": "Hygienische Anlagenintegration", "description": "Die komplette Saftverarbeitungsanlage wird aus Edelstahl AISI 316L gefertigt und mit hygienischen 3-A-Verbindungen sowie spaltfreien Schweißnähten ausgeführt. CIP- und SIP-Systeme werden so ausgelegt, dass Kreuzkontaminationen zwischen unterschiedlichen Getränken zuverlässig vermieden werden." },
-      { "title": "Inbetriebnahme und Leistungsvalidierung", "description": "Vor der Produktionsfreigabe werden sämtliche Prozessmodule anhand definierter Leistungskennzahlen validiert. Dazu gehören unter anderem: Produktausbeute, mikrobiologische Reduktionsraten, Energieverbrauch und Overall Equipment Effectiveness (OEE). Parallel erfolgt eine umfassende Schulung des Bedienpersonals, sodass die Anlage bereits ab dem ersten Produktionstag mit der vorgesehenen Leistung betrieben werden kann." },
-      { "title": "Langfristige Anlagenoptimierung", "description": "Auch nach der Inbetriebnahme unterstützt Seppa Solutions seine Kunden mit umfassenden Serviceleistungen. Predictive-Maintenance-Lösungen, strategisch verfügbare Ersatzteile sowie regelmäßige Performance-Audits sichern dauerhaft hohe Anlagenverfügbarkeit und Prozessstabilität. Gerade bei Greenfield-Projekten oder späteren Kapazitätserweiterungen profitieren Kunden von dieser langfristigen Partnerschaft." }
+      {
+        "title": "Prozessdesign & Engineering",
+        "description": "Entwicklung des Prozesslayouts basierend auf den Rohstoffeigenschaften, Brix-Zielen und Leistungsvorgaben vor dem Bau der Apparate."
+      },
+      {
+        "title": "Hygienische Systemintegration",
+        "description": "Fertigung in Edelstahl 316L, EHEDG-konforme Rohrleitungsführung und Validierung der CIP/SIP-Spülkreisläufe."
+      },
+      {
+        "title": "Inbetriebnahme & Validierung",
+        "description": "Durchführung von Media-Fill-Tests unter Produktionsbedingungen, mikrobiologische Validierung und Übergabeschulungen."
+      }
     ],
     "outro": [
-      "Fazit: Seppa Solutions entwickelt leistungsstarke Saftverarbeitungsanlagen für Fruchtsäfte, Nektare, isotonische Getränke, Tee und Spezialprodukte wie Zuckerrohrsaft. Durch den Einsatz moderner HPP- und EPF-Technologien, modularer Prozesskonzepte sowie vollständig integrierter Automatisierung entstehen wirtschaftliche Produktionslinien mit hoher Produktsicherheit, maximaler Qualität und langfristiger Investitionssicherheit. Von der Prozessplanung über die hygienische Anlagenintegration bis hin zu Inbetriebnahme, Schulung und After-Sales-Service begleitet Seppa Solutions Getränkehersteller bei der Realisierung effizienter, zukunftssicherer Produktionsanlagen für den internationalen Markt."
+      "Der Seppa Engineering Lifecycle garantiert eine reibungslose Realisierung und sorgt für die perfekte Balance aus Energieeffizienz, Prozessstabilität und flexiblen Erweiterungsmöglichkeiten."
     ]
   },
-  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqTitle": "Häufig gestellte Fragen",
   "faqs": [
     {
-      "question": "Wie verlängert Seppa Solutions die Haltbarkeit ohne Konservierungsstoffe?",
-      "answer": "Durch die Kombination aus Hochdruckpasteurisierung (HPP) und Electric Pulsed Field (EPF) werden Mikroorganismen zuverlässig inaktiviert, ohne das Produkt thermisch stark zu belasten. Je nach Verfahren erreichen HPP-behandelte Säfte gekühlt Haltbarkeiten von 30 bis 45 Tagen, während aseptisch abgefüllte EPF-Produkte bei Raumtemperatur bis zu 6 bis 9 Monate lagerfähig sein können."
+      "question": "Wie schützt eine Saftabfüllanlage hitzeempfindliche Vitamine wie Vitamin C?",
+      "answer": "Vitamin C wird sowohl durch Sauerstoff als auch durch Wärme beeinflusst. Deshalb entfernt die Entgasung vor der Pasteurisierung den gelösten Sauerstoff aus dem Produkt. Anschließend reduziert die HTST-Pasteurisierung die thermische Belastung auf ein Minimum. Für besonders empfindliche Produkte bietet Seppa Solutions aseptische Kaltabfüllsysteme an. Dabei wird der Saft pasteurisiert, unmittelbar gekühlt und anschließend in separat sterilisierte Behälter abgefüllt."
     },
     {
-      "question": "Wie wird der Erhalt von Vitaminen und Nährstoffen überprüft?",
-      "answer": "Jede Anlage wird im Rahmen der Inbetriebnahme durch unabhängige Laboranalysen validiert. Dabei werden unter anderem Vitaminerhalt, Polyphenolaktivität sowie Farbstabilität untersucht. Nichtthermische Verfahren erreichen typischerweise einen Erhalt von 90–95 % hitzeempfindlicher Vitamine."
+      "question": "Welche Leistung erreicht eine industrielle Saftproduktionslinie?",
+      "answer": "Je nach Produkt und Behältergröße realisiert Seppa Solutions Produktionsleistungen zwischen 3.000 und 36.000 Behältern pro Stunde. Die tatsächliche Kapazität hängt unter anderem ab von Gebindegröße, Füllvolumen, Produktviskosität und Fruchtfleischanteil. Nektare mit hohem Fruchtanteil erreichen aufgrund längerer Füllzeiten naturgemäß geringere Leistungen als klare Fruchtsäfte."
     },
     {
-      "question": "Welche CIP-Konzepte eignen sich für zuckerhaltige Getränke?",
-      "answer": "Die automatisierten CIP-Systeme von Seppa Solutions benötigen je nach Anlagenkonfiguration lediglich 35 bis 45 Minuten pro Reinigungszyklus. Dies reduziert Stillstandszeiten erheblich und eignet sich besonders für Produktionslinien mit häufig wechselnden, zuckerreichen Getränken."
+      "question": "Wie wird eine aseptische Saftlinie validiert und gewartet?",
+      "answer": "Die Validierung erfolgt über sogenannte Media-Fill-Tests mit kommerziell sterilem Nährmedium unter realen Produktionsbedingungen. Vor Produktionsfreigabe muss die Anlage eine statistisch abgesicherte Kontaminationsfreiheit nachweisen. Die regelmäßige Wartung umfasst unter anderem Integritätstests der Sterilluftfilter, Dichtheitsprüfung aseptischer Ventile und Kontrolle der CIP-Protokolle."
     },
     {
-      "question": "Wann amortisiert sich eine neue Saftverarbeitungsanlage?",
-      "answer": "Die Investition in eine moderne Greenfield-Anlage amortisiert sich in der Regel innerhalb von 3 bis 4 Jahren. Premiumprodukte wie kaltgepresste Säfte oder Zuckerrohrsaft können – abhängig von Auslastung und Marktpositionierung – bereits nach 24 bis 30 Monaten eine Kapitalrückführung ermöglichen."
+      "question": "Kann eine Hochleistungs-Saftverpackungslinie verschiedene Gebindeformat verarbeiten?",
+      "answer": "Ja. Seppa Solutions bietet Schnellwechselsysteme für Flaschenführungen, Füllventile, Verschließköpfe und Formatteile. Die meisten Formatwechsel können innerhalb von weniger als 30 Minuten durchgeführt werden. Voraussetzung dafür ist jedoch, dass Mehrformatfähigkeit bereits während der Anlagenplanung berücksichtigt wird."
     },
     {
-      "question": "Kann eine Saftmühle verschiedene Obstsorten verarbeiten?",
-      "answer": "Ja. Die Saftmühlen von Seppa Solutions verfügen über verstellbare Rotorgeometrien und austauschbare Siebe. Dadurch lassen sich Zitrusfrüchte, Steinobst, Beeren sowie faserige Tropenfrüchte mit Umrüstzeiten von etwa 15 Minuten effizient verarbeiten."
+      "question": "Was ist KomboPure und welche Aufgabe übernimmt es in einer Saftverarbeitungsanlage?",
+      "answer": "KomboPure ist das integrierte Blow-Fill-Cap-System von Seppa Solutions für die aseptische PET-Abfüllung. Flaschenblasen, sterile Abfüllung und Verschließen erfolgen innerhalb eines gemeinsamen sterilen Gehäuses. Dadurch entfällt der Transport offener Behälter durch die Produktionsumgebung und das Kontaminationsrisiko wird deutlich reduziert. Innerhalb der kompletten Saftproduktionslinie befindet sich KomboPure zwischen Pasteurisierung beziehungsweise Kühlung und den nachgelagerten Verpackungsprozessen wie Etikettierung, Codierung, Sekundärverpackung und Palettierung."
     }
   ]
 }

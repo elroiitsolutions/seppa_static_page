@@ -1,0 +1,112 @@
+{
+  "title": "SEPPA Verwerkingsapparatuur: De Motor Achter Betrouwbare Productielijnen",
+  "breadcrumbName": "Verwerking",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Overzicht van SEPPA Verwerkingsapparatuur",
+  "overviewDescription": "Wie in de procesindustrie werkt, weet dat een fabriek zo goed is als de zwakste schakel in de lijn. Eén onbetrouwbare pomp, één slecht afgestelde warmtewisselaar, en de hele productie hapert. Bij Seppa Solutions draait alles om het wegnemen van die onzekerheid. In deze gids leggen we uit hoe onze verwerkingsapparatuur is opgebouwd, wat ze fabriekseigenaren en investeerders oplevert, en waarom betrouwbaarheid uiteindelijk de doorslaggevende factor is bij de keuze voor een leverancier.",
+  "overviewsubDescription": [
+    "Onze systemen zijn ontworpen als samenhangend geheel, niet als losse machines die toevallig naast elkaar staan. Van de eerste ontvangst van grondstoffen tot de laatste kwaliteitscontrole communiceert elk onderdeel met de rest van de lijn via een centraal besturingssysteem. Dat klinkt vanzelfsprekend, maar in de praktijk zien we nog regelmatig fabrieken waar losse componenten van verschillende leveranciers slecht op elkaar aansluiten, met stilstand en productverlies tot gevolg.",
+    "Wat onze verwerkingsapparatuur onderscheidt, is de combinatie van roestvrijstalen constructies, modulaire opbouw en automatische debietregeling. Elk onderdeel is hygiënisch ontworpen volgens 3-A en EHEDG-richtlijnen, met gepolijste oppervlakken en volledige CIP-compatibiliteit. Dat betekent dat reiniging niet betekent dat de lijn urenlang stilligt, wat direct doorwerkt in de operationele efficiëntie.",
+    "Een goed voorbeeld is hoe onze industriële verwerkingsmachines onderling communiceren. Zodra een sensor een afwijking in druk of temperatuur detecteert, past het systeem automatisch de instellingen verderop in de lijn aan, zonder dat een operator hoeft in te grijpen. Die directe koppeling tussen meting en regeling is precies waarom klanten bij ons blijven terugkomen voor uitbreidingen van hun bestaande installatie."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Soorten Verwerkingsapparatuur die we Aanbieden",
+      "paragraphs": [
+        "Seppa's portfolio dekt het gehele spectrum van extractie tot verpakking af. Voor vloeistofverwerkingsapparatuur leveren we geavanceerde filtratie- en centrifuge-eenheden geschikt voor diverse viscositeiten.",
+        "Onze pasteuriseerders en platenwarmtewisselaars garanderen een temperatuurnauwkeurigheid van ±0,5°C over continu volumestromen tot wel 50.000 liter per uur.",
+        "Daarnaast omvat ons aanbod voedingsverwerkingsapparatuur voor scheiding, homogenisatie en ontgassing stappen die essentieel zijn voor de houdbaarheid en smaak van het eindproduct."
+      ]
+    },
+    {
+      "title": "Automatisering en Procesbesturing",
+      "paragraphs": [
+        "Onze industriële verwerkingsmachines zijn uitgerust met gecentraliseerde PLC-besturingen (Siemens of Allen Bradley) en open communicatieprotocollen zoals OPC-UA. Dit maakt realtime data-analyse en visualisatie eenvoudig.",
+        "Dankzij de HMI-schermen monitoren operators temperaturen, druk en debiet met uiterste precisie. Alarmeringen en batchregistraties worden automatisch gelogd in SQL-databases.",
+        "Trillingssensoren op pompbehuizingen en CIP-skids maken voorspellend onderhoud mogelijk. Dit minimaliseert onvoorziene stilstand aanzienlijk, wat direct bijdraagt aan een hogere OEE."
+      ]
+    },
+    {
+      "title": "Kwaliteit, Hygiëne en Veiligheid",
+      "paragraphs": [
+        "Al onze voedingsverwerkingsapparatuur wordt ontworpen en gebouwd volgens EHEDG en 3-A hygiënerichtlijnen. Dit garandeert dat alle contactoppervlakken eenvoudig te reinigen zijn en contaminatierisico's worden uitgesloten.",
+        "Automatische en gevalideerde CIP/SIP-systemen documenteren elke reinigingscyclus. Dit levert betrouwbare reinigingsrapportages voor audits zoals FSSC 22000 of BRC.",
+        "Geïntegreerde beveiligingen, drukontlastkleppen en explosieveilige componenten (ATEX) zorgen bovendien voor een veilige werkomgeving voor uw personeel."
+      ]
+    }
+  ],
+  "featuresTitle": "Key Features of Our Processing Systems",
+  "featuresSubtitle": "De unieke kenmerken van Seppa processing machinery waarborgen een betrouwbare werking.",
+  "features": [
+    {
+      "title": "Materialen en Oppervlaktestandaarden",
+      "description": "Elk productberûrend oppervlak is vervaardigd uit rvs AISI 316L met een elektrolytisch gepolijste ruwheid van Ra ≤ 0,8 µm. Dit voorkomt effectief biofilmvorming en garandeert een effectieve CIP-reiniging."
+    },
+    {
+      "title": "Modulaire Ontwerplogica",
+      "description": "Onze processing machinery maakt gebruik van een modulair skid-ontwerp. Een basissysteem kan later eenvoudig worden uitgebreid met parallelle modules zonder de complete sturing te moeten vervangen."
+    },
+    {
+      "title": "Energie-efficiëntie",
+      "description": "Met geïntegreerde warmteterugwinning, frequentiegeregelde pompmotoren en goed geïsoleerde thermische circuits verbruiken onze systemen gemiddeld 18-25% minder energie."
+    },
+    {
+      "title": "Koolzuur- en Gasdosering",
+      "description": "Seppa levert carbonators en deaerators voor capaciteiten tot 30.000 L/u, uitgerust met nauwkeurige doseerregelingen voor een stabiele bruis in bruiswater en CSD."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Verwerkingsoplossingen van SEPPA Solutions",
+    "description": "Laten we het concreet maken: investeerders willen cijfers zien. Een verouderde lijn verliest doorgaans 4 tot 7% product door morsen, lekken of temperatuurfluctuaties.",
+    "paragraphs": [
+      "Met goed afgestelde voedingsverwerkingsapparatuur daalt dat percentage naar onder de 2%. Op een fabriek die 100.000 liter per dag verwerkt, levert dat direct duizenden liters extra verkoopbaar product per week op.",
+      "Energie-efficiëntie is de tweede hefboom: onze warmtewisselaars herwinnen restwarmte met percentages tot 90%. Dat verlaagt de stookkosten aanzienlijk.",
+      "Dankzij onze modulaire opbouw kunt u klein starten en later uitbreiden zonder uw eerdere investeringen in productielijn apparatuur en besturingen af te schrijven."
+    ]
+  },
+  "methodology": {
+    "title": "Werkwijze: Van Grondstof tot Eindcontrole",
+    "steps": [
+      {
+        "title": "1. Site-audit & Analyse",
+        "description": "We inspecteren uw fabriek en nutsvoorzieningen om een nauwkeurig processtroomdiagram (P&ID) op te stellen."
+      },
+      {
+        "title": "2. Modellering & Design",
+        "description": "Met 3D-CAD-software (SolidWorks) ontwerpen we de skids en controleren we de sanitairtechnische aspecten."
+      },
+      {
+        "title": "3. Fabricage & FAT",
+        "description": "De fabricage gebeurt in eigen beheer. Elk vloeistofverwerkingsapparatuur-skid ondergaat een Factory Acceptance Test op water."
+      },
+      {
+        "title": "4. Installatie & Commissioning",
+        "description": "Seppa-engineers monteren de skids, kalibreren de flowmeters, verzorgen de inbedrijfstelling en trainen uw operators."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Hoe vaak moet CIP reiniging plaatsvinden bij verwerkingsapparatuur?",
+      "answer": "Doorgaans na elke productiecyclus of elke 8 tot 12 uur bij continu bedrijf, afhankelijk van het producttype en de lokale hygiënevoorschriften."
+    },
+    {
+      "question": "Hoe wordt kwaliteitscontrole geborgd binnen industriële verwerkingsmachines en productielijn apparatuur?",
+      "answer": "Via inline sensoren voor temperatuur, druk en viscositeit, aangevuld met periodieke laboratoriumtests en volledige batchtraceerbaarheid vanaf de grondstofontvangst."
+    },
+    {
+      "question": "Hoe optimaliseer je de efficiëntie van vloeistofverwerkingsapparatuur, drankverwerkingsapparatuur en voedingsverwerkingsapparatuur samen op één terrein?",
+      "answer": "Kijk eerst naar omsteltijden tussen producten en de duur van CIP-cycli. Dat is vaak waar de meeste verborgen capaciteit zit, meer dan bij de kernverwerking zelf."
+    },
+    {
+      "question": "Waar moet je op letten bij de selectie van betrouwbare verwerkingsapparatuur?",
+      "answer": "Kijk niet alleen naar de aanschafprijs, maar ook naar modulariteit, beschikbaarheid van onderdelen en de kwaliteit van technische ondersteuning na oplevering."
+    },
+    {
+      "question": "Kan een bestaand systeem worden opgewaardeerd zonder volledige vervanging?",
+      "answer": "In veel gevallen wel. Modulaire componenten zoals warmtewisselaars, pompen of regelkleppen kunnen los worden vervangen, mits de rest van de installatie qua capaciteit en besturing compatibel blijft."
+    }
+  ]
+}
