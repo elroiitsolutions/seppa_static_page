@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-05C – Halbautomatische PET-Streckblasmaschine",
+  "breadcrumbName": "SSB-05C",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Halbautomatische PET-Streckblasmaschine für wirtschaftliche Produktionsprozesse",
+  "overviewDescription": "Die SEPPA SSB-05C wurde für Unternehmen entwickelt, die eine zuverlässige Lösung für die Herstellung hochwertiger PET-Flaschen und PET-Behälter im kleinen bis mittleren Produktionsbereich suchen. Das halbautomatische Maschinenkonzept verbindet die Vorteile einer manuellen Prozesskontrolle mit einer präzisen automatisierten Streckblastechnologie und ermöglicht dadurch eine wirtschaftliche Produktion bei gleichbleibend hoher Qualität.",
+  "overviewsubDescription": [
+    "Der Bediener übernimmt das Einlegen der Preforms und startet den Produktionszyklus. Alle qualitätsrelevanten Prozessschritte – von der Erwärmung über das Streckblasen bis zur Formgebung – werden automatisch gesteuert. Dadurch lassen sich reproduzierbare Ergebnisse erzielen und gleichzeitig unterschiedliche Produktionsanforderungen flexibel umsetzen.",
+    "Was die SSB-05C auszeichnet, ist die präzise Abstimmung von Heizung, Clamping und Streckblassubsystemen, wodurch typische Fehler wie ungleichmäßige Wandstärke, Trübungen nahe dem Hals oder Falltestfehler effektiv verhindert werden."
+  ],
+  "featuresTitle": "Technische Merkmale der SEPPA SSB-05C",
+  "features": [
+    {
+      "title": "Präzise Infrarot-Erwärmung",
+      "description": "Mehrere separat regelbare Infrarot-Heizzonen sorgen für eine gleichmäßige Erwärmung der PET-Preforms. Die Heizleistung kann an unterschiedliche Preformgewichte und Flaschengeometrien angepasst werden. Dies verbessert die Materialverteilung während des Blasprozesses."
+    },
+    {
+      "title": "Effiziente Werkzeugkühlung",
+      "description": "Integrierte Kühlkanäle innerhalb der Blasformen unterstützen eine schnelle Wärmeabfuhr. Dadurch werden kurze Zykluszeiten, hohe Maßgenauigkeit und eine zuverlässige Formstabilität der fertigen PET-Flaschen erreicht."
+    },
+    {
+      "title": "Optimiertes pneumatisches Blassystem",
+      "description": "Der Streckblasprozess erfolgt über eine mehrstufige Druckluftsteuerung. Zunächst wird der Preform mit Niederdruck vorgestreckt, anschließend formt Hochdruckluft den Behälter präzise an die Werkzeugkontur. Dies reduziert den Druckluftverbrauch."
+    },
+    {
+      "title": "Benutzerfreundliche Steuerung",
+      "description": "Die Maschinensteuerung ermöglicht das Speichern produktspezifischer Einstellungen. Heizparameter und Prozessdaten können für unterschiedliche Flaschenformate hinterlegt und schnell aufgerufen werden, was die Umrüstzeiten verkürzt."
+    }
+  ],
+  "applicationsTitle": "Typische Einsatzbereiche",
+  "applicationsSubtitle": "Die SSB-05C eignet sich für eine Vielzahl von Anwendungen in der Getränke- und Verpackungsindustrie.",
+  "applications": [
+    {
+      "title": "Trink- und Mineralwasser",
+      "description": "Mineralwasserflaschen und packed drinking water bottle production, bei denen Transparenz und Mündungspräzision wichtig sind."
+    },
+    {
+      "title": "CSD (Carbonated Soft Drinks)",
+      "description": "Kohlensäurehaltige Getränke, bei denen der Behälter dem Innendruck standhalten muss, ohne am Boden Risse zu bilden."
+    },
+    {
+      "title": "Kosmetik, Körperpflege & Chemie",
+      "description": "Sonderformen, Kosmetikdosen, Haushalts- und Reinigungsprodukte mit angepassten Wandstärken."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA?",
+    "description": "SEPPA entwickelt PET-Streckblasmaschinen mit einem klaren Fokus auf Qualität, Effizienz und langfristige Betriebssicherheit.",
+    "paragraphs": [
+      "Konstruktion, Pneumatik, Heiztechnik und Werkzeugdesign werden optimal aufeinander abgestimmt, um stabile Produktionsprozesse und eine gleichbleibend hohe Flaschenqualität sicherzustellen.",
+      "Die Maschinen sind für unterschiedliche PET-Anwendungen ausgelegt und unterstützen Hersteller dabei, ihre Produktion flexibel an wechselnde Marktanforderungen anzupassen."
+    ]
+  },
+  "methodology": {
+    "title": "Produktionsablauf",
+    "subtitle": "Der Prozess startet mit dem manuellen Einsetzen der Preforms und wird anschließend vollautomatisch durchgeführt:",
+    "steps": [
+      {
+        "title": "Infrarot-Erwärmung",
+        "description": "Die Preforms durchlaufen separat regelbare Infrarot-Zonen, welche das Material auf Strecktemperatur bringen, ohne die Mündung zu überhitzen."
+      },
+      {
+        "title": "Transfer & Werkzeugverschluss",
+        "description": "Die erhitzten Preforms werden im Werkzeug positioniert, das anschließend sicher verriegelt, um Verzug und Gratbildung zu vermeiden."
+      },
+      {
+        "title": "Zweistufiges Blasen & Entnahme",
+        "description": "Reckstangen dehnen das Material axial vor, gefolgt von der Hochdruckluft, die die Flaschenkontur ausformt. Nach der Kühlung kann das fertige Produkt entnommen werden."
+      }
+    ],
+    "outro": [
+      "Die SSB-05C bietet insbesondere kleinen und mittelständischen Unternehmen zahlreiche wirtschaftliche Vorteile: geringe Investitionskosten, einfache Bedienung und minimierten Wartungsaufwand."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Für welche Unternehmen eignet sich die SEPPA SSB-05C?",
+      "answer": "Die Maschine ist besonders für kleine und mittelständische Hersteller geeignet, die hochwertige PET-Flaschen wirtschaftlich produzieren möchten."
+    },
+    {
+      "question": "2. Welche Produkte können hergestellt werden?",
+      "answer": "Die Anlage verarbeitet PET-Preforms für Wasserflaschen, Softdrinks, Kosmetikverpackungen, Haushaltsprodukte und zahlreiche weitere Behälterformen."
+    },
+    {
+      "question": "3. Wie wird eine gleichmäßige Flaschenqualität erreicht?",
+      "answer": "Die Kombination aus mehrzoniger Infrarot-Erwärmung, präziser Pneumatik und kontrollierter Werkzeugkühlung sorgt für eine gleichmäßige Materialverteilung und reproduzierbare Produktionsergebnisse."
+    },
+    {
+      "question": "4. Lässt sich die Maschine an unterschiedliche Flaschenformate anpassen?",
+      "answer": "Ja. Blasformen und Prozessparameter können schnell angepasst werden, sodass unterschiedliche Behältergrößen und Geometrien effizient produziert werden können."
+    },
+    {
+      "question": "5. Warum entscheiden sich Unternehmen für SEPPA?",
+      "answer": "SEPPA verbindet moderne Streckblastechnologie mit praxisorientiertem Maschinenbau. Das Ergebnis sind zuverlässige Anlagen mit hoher Produktqualität, einfacher Bedienung und wirtschaftlichem Betrieb."
+    }
+  ]
+}

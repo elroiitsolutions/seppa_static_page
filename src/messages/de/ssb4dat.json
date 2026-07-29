@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-4D-AT: Halbautomatische 4-Kavitäten-PET-Blasformmaschine mit automatischem Transfer",
+  "breadcrumbName": "SSB-4D-AT",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Engineering Excellence: Die Produktionstechnologie der SEPPA SSB-4D-AT",
+  "overviewDescription": "Moderne Produktionsanlagen stellen höchste Anforderungen an Präzision, Geschwindigkeit und Prozessstabilität. Die SEPPA SSB-4D-AT setzt in diesem Bereich neue Maßstäbe. Als fortschrittliche Getränkeverpackungsmaschine kombiniert dieses halbautomatische System eine Mehrkavitäten-Streckblasformtechnologie mit präziser thermischer Steuerung und effizientem Materialtransfer.",
+  "overviewsubDescription": [
+    "Durch ihre flexible Auslegung eignet sich die SSB-4D-AT als vielseitige PET Flaschenblasmaschine für unterschiedliche Produktionsanforderungen. Sie verbindet automatisierte Transferprozesse mit exakter Temperaturkontrolle und reduziert dadurch Zykluszeiten bei gleichzeitig hoher Flaschenqualität.",
+    "Für einen modernen Flaschenproduktionsbetrieb ist die Wahl der richtigen Flaschenproduktionsmaschine entscheidend. Die SEPPA Technologie schafft eine zuverlässige Verbindung zwischen Hochdruck-Pneumatik, mechanischer Stabilität und präziser Prozesssteuerung. Dadurch erreichen Hersteller eine gleichbleibende Behälterqualität, weniger Ausschuss und eine höhere Wirtschaftlichkeit der Produktionslinie."
+  ],
+  "featuresTitle": "Technische Merkmale und Vorteile der SEPPA SSB-4D-AT",
+  "features": [
+    {
+      "title": "Abgestimmtes System & IR-Heizmodule",
+      "description": "Im Zentrum der SSB-4D-AT steht ein abgestimmtes System aus mechanischen und thermischen Komponenten. Die integrierten IR-Heizmodule sorgen für eine gleichmäßige Temperaturverteilung über alle Kavitäten – ein entscheidender Faktor für eine leistungsfähige Getränkeverpackungsmaschine im Dauerbetrieb."
+    },
+    {
+      "title": "Robuste Schließeinheiten & SPS-Steuerung",
+      "description": "Die robusten Schließeinheiten sind speziell für hohe Druckbelastungen ausgelegt und gewährleisten eine stabile Formposition während des gesamten Blasprozesses. Jede Prozessphase – Erwärmung, Transfer, Streckung, Blasen und Auswerfen – wird über eine moderne SPS-Steuerung (SPS/PLC) überwacht und geregelt."
+    },
+    {
+      "title": "Wirtschaftlichkeit & Systemvorteile",
+      "description": "Bietet energieoptimierte IR-Heizzonen zur Reduzierung des Stromverbrauchs, präzise Formkühlung zur schnellen Stabilisierung des PET-Materials, Hochdruck-Pneumatik für kontrollierte Materialverteilung und ein automatisches Transfer-System. Diese Eigenschaften rechtfertigen den PET Flaschenblasmaschinenpreis durch hohe Betriebssicherheit."
+    }
+  ],
+  "applicationsTitle": "Anwendungen in Getränke-, Pharma-, Lebensmittel- und Chemieindustrie",
+  "applicationsSubtitle": "Die SEPPA SSB-4D-AT überzeugt durch ihre breite Einsatzfähigkeit in verschiedenen Industriebereichen.",
+  "applications": [
+    {
+      "title": "Getränke- und Wasserverpackung",
+      "description": "Produziert leichte und stabile PET-Flaschen für Mineralwasser, Softdrinks und andere flüssige Produkte. Besonders bei kohlensäurehaltigen Getränken ist eine gleichmäßige Materialverteilung wichtig."
+    },
+    {
+      "title": "Pharmaindustrie & Medizinverpackung",
+      "description": "Die automatisierte Transfertechnologie reduziert manuelle Eingriffe und unterstützt die Herstellung hochwertiger Behälter mit konstanten Wandstärken."
+    },
+    {
+      "title": "Lebensmittel- & Chemiebehälter",
+      "description": "Hervorragend geeignet für Lebensmittelverpackungen mit hohen Anforderungen an Maßhaltigkeit sowie chemische Verpackungen für robuste und langlebige Behälter."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Lösungen für PET Blasmaschinen wählen?",
+    "description": "SEPPA Solutions verfügt über umfangreiche Erfahrung in der Entwicklung von Technologien für thermische Stabilität, Hochdruck-Pneumatik und automatisierte Verpackungssysteme.",
+    "paragraphs": [
+      "Die SSB-4D-AT ist mehr als eine einzelne Flaschenproduktionsmaschine. Sie ist Teil eines ganzheitlichen Engineering-Konzepts für industrielle Hersteller, die zuverlässige und skalierbare Produktionslösungen benötigen.",
+      "Durch den Einsatz hochwertiger Komponenten, präziser Steuerungssysteme und robuster Konstruktionen bietet SEPPA PET Flaschenblasmaschinen mit hoher Lebensdauer und stabiler Produktionsleistung."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise des SEPPA SSB-4D-AT PET Flaschenblasprozesses",
+    "subtitle": "Der Produktionsprozess der SEPPA SSB-4D-AT beginnt mit einer kontrollierten Mehrfachzuführung der PET-Preforms:",
+    "steps": [
+      {
+        "title": "Temperierung und Ofendurchlauf",
+        "description": "Die Preforms durchlaufen energieoptimierte Infrarot-Heizmodule, die eine gleichmäßige Temperaturverteilung über alle Bereiche des Materials sicherstellen."
+      },
+      {
+        "title": "Automatisches Transfer-System (AT)",
+        "description": "Das AT-System übernimmt die präzise Übergabe der erhitzten Preforms in die hochpräzise 4-fach Formstation. Hochdruck-Pneumatik sorgt für eine gleichmäßige Materialverteilung."
+      },
+      {
+        "title": "Streckblasen & Auswurf",
+        "description": "Der Streckblasprozess nutzt eine elektronische Druckprofilierung für stabile Flaschenstrukturen. Nach dem Blasvorgang werden die fertigen Behälter automatisch ausgeworfen."
+      }
+    ],
+    "outro": [
+      "Das automatische Transfer-System der SEPPA SSB-4D-AT stellt einen wesentlichen Fortschritt dar: es verkürzt Zykluszeiten, reduziert Ausschuss und senkt Personalkosten."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Welche Eigenschaften machen die SSB-4D-AT zu einer leistungsfähigen Getränkeverpackungsmaschine?",
+      "answer": "Die Maschine kombiniert elektronische Druckprofilierung, Mehrkavitäten-Synchronisation und präzise Temperatursteuerung. Dadurch werden hohe Produktionsgeschwindigkeiten mit gleichbleibender Behälterqualität verbunden."
+    },
+    {
+      "question": "2. Wie gewährleistet die PET Flaschenproduktionsmaschine eine konstante Flaschenstruktur?",
+      "answer": "Durch exakte IR-Temperaturführung und optimierte Formkühlung wird eine gleichmäßige Materialverteilung erreicht. Dadurch werden Schwachstellen in der Flaschenwand reduziert."
+    },
+    {
+      "question": "3. Ist diese PET Streckblasmaschine für pharmazeutische Anwendungen geeignet?",
+      "answer": "Ja. Das automatisierte Transfer-System minimiert manuelle Kontakte und unterstützt die Herstellung hochwertiger Behälter mit konstanten Eigenschaften."
+    },
+    {
+      "question": "4. Wie steht der PET Flaschenblasmaschinenpreis im Verhältnis zur langfristigen Wirtschaftlichkeit?",
+      "answer": "Die Investition wird durch niedrigere Arbeitskosten, weniger Ausschuss und eine höhere Produktionsleistung ausgeglichen. Entscheidend ist nicht nur der Kaufpreis, sondern die gesamte Lebensdauer der Anlage."
+    },
+    {
+      "question": "5. Warum eignet sich SEPPA für neue Flaschenproduktionsanlagen?",
+      "answer": "SEPPA entwickelt integrierte Systeme, die mechanische Stabilität mit präziser Prozesskontrolle verbinden. Dadurch erhalten Hersteller eine zuverlässige Grundlage für effiziente und skalierbare PET-Produktion."
+    }
+  ]
+}

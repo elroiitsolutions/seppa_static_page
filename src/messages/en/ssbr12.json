@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-R12: High Cavity Rotary PET Blow Molding for Industrial Scale Output",
+  "breadcrumbName": "SSB-R12",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Overview of the SEPPA SSB-R12 Rotary PET Blowing Machine",
+  "overviewDescription": "When a bottling operation outgrows its existing rotary platform and the next step is a machine that can sustain industrial scale output without sacrificing wall thickness consistency, the conversation shifts to 12 cavity systems. The SEPPA SSB-R12 is built for exactly that transition, a rotary PET blow molding machine engineered to deliver the throughput of a high cavity count system while maintaining the dimensional precision that smaller platforms are known for.",
+  "overviewsubDescription": [
+    "Twelve cavities running on a continuously rotating carousel generate output volumes that put the SSB-R12 in direct competition with dedicated high speed installations. But unlike purpose built single format lines, this platform retains the format flexibility that multi SKU bottlers require, switching between container sizes and geometries without the full mechanical retooling that locks dedicated lines into one bottle shape.",
+    "Seppa Solutions designed the SSB-R12 around the understanding that at twelve stations, any inconsistency between cavities multiplies rapidly across a shift. A single station running slightly hot or slightly late on stretch timing produces thousands of marginally out of spec bottles before an operator notices. The engineering response is a single master cam reference governing all twelve stations, servo synchronized drive precision, and per cavity electronic pressure control that removes the variability other high cavity platforms accept as unavoidable."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications of the SSB-R12",
+  "features": [
+    {
+      "title": "12 Station Master Cam Synchronized Drive",
+      "description": "All twelve blow stations share a single master cam reference with servo driven indexing, ensuring that angular position, dwell time, and transition timing remain identical across every station regardless of line speed. This eliminates the progressive timing drift that affects independently driven high cavity systems during extended production runs."
+    },
+    {
+      "title": "High Density IR Thermal Tunnel",
+      "description": "The extended thermal conditioning tunnel accommodates the higher preform throughput with increased lamp density and additional heating zones compared to lower cavity platforms. Individual zone control with real time temperature feedback allows operators to maintain thermal uniformity across all twelve stations even when processing preforms with varying wall thickness distributions."
+    },
+    {
+      "title": "Per Cavity Electronic Blow Control",
+      "description": "Each of the twelve stations features independently adjustable pre blow and final blow pressure staging through the central HMI, allowing per cavity optimization without mechanical intervention. The integrated air recovery system scales with the higher cavity count, capturing and recirculating exhaust air across all twelve stations to maintain energy efficiency at industrial output volumes."
+    }
+  ],
+  "applicationsTitle": "Industrial Applications of the SSB-R12",
+  "applicationsSubtitle": "The twelve cavity configuration positions the SSB-R12 for production environments where sustained high volume output and format flexibility must coexist.",
+  "applications": [
+    {
+      "title": "Large Scale Water Bottling Operations",
+      "description": "Municipal and branded water operations running three shifts require a blow molding platform that maintains output consistency across 24 hour production cycles. The SSB-R12's twelve cavity carousel delivers the sustained throughput these operations demand without the wall thickness drift that degrades container performance over extended runs."
+    },
+    {
+      "title": "National CSD and Beverage Brands",
+      "description": "National beverage brands running multiple SKUs across regional production facilities need blow molding equipment that can switch between formats without dedicated lines for each container. The SSB-R12's stored profile recall and rapid mold changeover system minimize the downtime and requalification overhead of format switching."
+    },
+    {
+      "title": "Contract Packaging and Co-Packing",
+      "description": "Contract packagers serving multiple beverage clients need maximum format flexibility alongside high volume capability. The SSB-R12 handles this dual requirement by combining rapid changeover with twelve cavity throughput, allowing co-packers to serve diverse client portfolios without bottleneck constraints."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for the SSB-R12?",
+    "description": "At twelve cavities, the engineering decisions embedded in a rotary blow molding platform have outsized impact on operating economics. Seppa Solutions brings systems level integration expertise to every SSB-R12 installation, treating the blow molder as one component in a coordinated production line rather than a standalone output generator.",
+    "paragraphs": [
+      "Seppa's engineering team works through the full scope of line integration before equipment ships: preform handling, mold design validation, downstream conveyor synchronization, air supply sizing, and control system architecture. That front end engineering investment is what allows SSB-R12 installations to reach rated output within the first week of commissioning rather than spending months on post installation optimization.",
+      "The ongoing support relationship includes structured maintenance programs, rapid spare parts logistics, and field service teams experienced with high cavity rotary platforms specifically. For bottlers committing to a twelve cavity system for a decade or more, that depth of support is as material to the investment decision as the machine's rated specifications."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology of the SSB-R12 PET Bottle Blowing Process",
+    "subtitle": "The twelve cavity continuous motion sequence processes preforms through precisely timed zones:",
+    "steps": [
+      {
+        "title": "High Rate Preform Infeed",
+        "description": "An upgraded infeed system handles the higher preform volume required to keep twelve cavities continuously supplied, with orientation and singulation matched to the carousel's rotational speed."
+      },
+      {
+        "title": "Extended Multi Zone Thermal Conditioning",
+        "description": "The longer thermal tunnel provides additional heating zones to accommodate the higher throughput, with per zone lamp control and real time temperature monitoring ensuring consistent thermal profiles across all preforms entering the blow stations."
+      },
+      {
+        "title": "12 Station Synchronized Stretch Blow Molding",
+        "description": "Servo driven stretch rods and electronically staged blow pressure execute biaxial orientation across all twelve stations simultaneously, with each cavity independently optimizable through the central control system."
+      },
+      {
+        "title": "High Volume Discharge with Air Recovery",
+        "description": "Finished bottles discharge at industrial rates onto conveyors synchronized with downstream filling equipment, while the scaled air recovery system captures and recirculates exhaust air across all twelve stations."
+      }
+    ],
+    "outro": [
+      "The twelve cavity continuous motion architecture delivers output volumes that would require two or more lower cavity rotary systems running in parallel, with the consistency advantage of a single synchronized platform."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What production volumes does the SSB-R12 target?",
+      "answer": "The twelve cavity configuration is designed for bottling operations requiring sustained high volume output that exceeds what 8 or 10 cavity platforms can deliver, while maintaining the dimensional consistency and format flexibility that dedicated high speed lines sacrifice."
+    },
+    {
+      "question": "How does Seppa ensure cavity to cavity consistency across twelve stations?",
+      "answer": "A single master cam reference with servo synchronized drive precision governs all twelve stations, eliminating the progressive timing drift that affects independently driven systems. Per cavity electronic blow control allows individual station optimization without mechanical intervention."
+    },
+    {
+      "question": "What is the maintenance profile of a twelve cavity rotary system?",
+      "answer": "Higher cavity count systems require more structured maintenance scheduling, with additional attention to cam track condition, blow station seal integrity across all twelve positions, and IR lamp condition monitoring. Seppa provides tailored maintenance calendars based on each installation's specific operating profile."
+    },
+    {
+      "question": "Can the SSB-R12 switch between bottle formats efficiently?",
+      "answer": "Yes. The rapid mold changeover system combined with stored heating and blow profiles per SKU minimizes format switching downtime. The system is specifically designed for multi SKU production environments where format flexibility and high volume output must coexist."
+    },
+    {
+      "question": "How does the SSB-R12 integrate with downstream filling and capping equipment?",
+      "answer": "The SSB-R12's control architecture supports shared communication protocols with downstream equipment, enabling synchronized operation across blowing, filling, and capping as one coordinated production line. Seppa's engineering team handles integration design as part of the standard project scope."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "SEPPA SSB-SLE-150: PET-Streckblasmaschine für die industrielle Hochleistungsproduktion",
+  "breadcrumbName": "SSB-SLE-150",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Überblick über die SEPPA SSB-SLE-150 PET-Streckblasmaschine",
+  "overviewDescription": "In modernen Getränkeproduktionen entscheidet vor allem eine Kennzahl über die Wirtschaftlichkeit: die Anzahl hochwertiger Flaschen pro Stunde. Die SEPPA SSB-SLE-150 wurde genau für diese Anforderung entwickelt. Als Hochleistungs-PET-Streckblasmaschine bildet sie das Herzstück einer automatisierten PET-Flaschenproduktionslinie und ist für den kontinuierlichen 24/7-Betrieb ausgelegt.",
+  "overviewsubDescription": [
+    "Viele Rotationsblasmaschinen erreichen bei steigender Produktionsleistung ihre Grenzen. Temperaturabweichungen, Verschleiß der Schließeinheiten und nachlassende Produktqualität führen häufig zu höheren Ausschussraten. Die SSB-SLE-150 wurde entwickelt, um diese Herausforderungen dauerhaft zu vermeiden. Ein präzises Thermomanagement in Kombination mit einer hochgenauen Werkzeugkinematik gewährleistet auch bei hohen Produktionsgeschwindigkeiten gleichbleibende Maßhaltigkeit und Prozessstabilität.",
+    "Für Unternehmen, die ihre Produktion von Pilotanlagen auf industrielle Fertigung erweitern, bietet die SSB-SLE-150 zudem eine zukunftssichere Lösung. Durch ihre hohe Ausbringungsleistung lässt sich die Produktionskapazität deutlich steigern, bevor eine zusätzliche Blasformlinie erforderlich wird."
+  ],
+  "featuresTitle": "Hauptmerkmale der SEPPA SSB-SLE-150",
+  "features": [
+    {
+      "title": "Kontinuierlich arbeitende Rotationsplattform",
+      "description": "Das Herzstück der SSB-SLE-150 bildet ihre kontinuierlich arbeitende Rotationsplattform. Anders als bei intermittierenden Systemen bewegen sich die Preforms ohne Unterbrechung durch sämtliche Prozessschritte – vom Erwärmen über das Strecken bis zum Blasvorgang. Dadurch werden mechanische Belastungen reduziert und eine hohe Betriebssicherheit im Mehrschichtbetrieb gewährleistet."
+    },
+    {
+      "title": "Kurvengesteuerte Werkzeugbewegung",
+      "description": "Ein wesentliches Konstruktionsmerkmal ist die kurvengesteuerte Werkzeugbewegung. Präzisionsgefertigte Kurvenscheiben öffnen und schließen die Formen exakt zum richtigen Zeitpunkt. Da die Synchronisation mechanisch erfolgt, bleibt die Wiederholgenauigkeit auch nach langjährigem Dauerbetrieb konstant."
+    },
+    {
+      "title": "Rotierender Luftverteiler",
+      "description": "Ein rotierender Luftverteiler versorgt jede Formstation gleichmäßig mit Nieder- und Hochdruckluft. Dadurch werden Druckverluste minimiert und stabile Blasdrücke sichergestellt – eine wichtige Voraussetzung für hohe Berstfestigkeit, gleichmäßige Wandstärken und reproduzierbare Flaschenqualität."
+    },
+    {
+      "title": "Zusätzliche Baugruppen",
+      "description": "Die Anlage verfügt über eine elektronische Temperaturüberwachung aller Heizmodule, langlebige Dichtungssysteme für hohe Taktzahlen, ein energieeffizientes Druckluft-Rückgewinnungssystem sowie eine synchronisierte Prozesssteuerung für maximale Produktionsstabilität."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche der SSB-SLE-150",
+  "applicationsSubtitle": "Die SEPPA SSB-SLE-150 eignet sich für unterschiedlichste Anwendungen innerhalb der Getränke- und Verpackungsindustrie.",
+  "applications": [
+    {
+      "title": "Kohlensäurehaltige Getränke (CSD)",
+      "description": "Bei kohlensäurehaltigen Getränken sorgt die präzise Wandstärkenverteilung für die notwendige Druckfestigkeit."
+    },
+    {
+      "title": "Mineralwasser und alkalisches Wasser",
+      "description": "Für Mineralwasser steht eine hohe Produktionsgeschwindigkeit bei niedrigen Stückkosten im Vordergrund. Die präzise Druckregelung sichert beste Ergebnisse."
+    },
+    {
+      "title": "Säfte und Milchprodukte (Heißabfüllung)",
+      "description": "Saft- und milchbasierte Getränke erfordern Flaschengeometrien, die auch bei Heißabfüllprozessen ihre Formstabilität behalten."
+    },
+    {
+      "title": "Komplette Produktionslinien-Integration",
+      "description": "Das Austragsförderband übergibt die fertigen Flaschen direkt an nachgeschaltete automatische Flüssigkeitsabfüllanlagen, was einen kontinuierlichen Materialfluss sichert."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Flaschenproduktionslinien wählen?",
+    "description": "Seppa Solutions entwickelt seit vielen Jahren integrierte PET-Flaschenproduktionslinien für Unternehmen der Getränke- und FMCG-Industrie. Jede Anlagenkonfiguration basiert auf den tatsächlichen Materialeigenschaften der eingesetzten PET-Preforms.",
+    "paragraphs": [
+      "Dabei versteht Seppa die Blasmaschine nicht als Einzelanlage, sondern als Bestandteil einer vollständig integrierten Produktionslinie. Die SSB-SLE-150 lässt sich sowohl mit automatischen Flüssigkeitsabfüllanlagen als auch mit PET-Recyclinglinien effizient verbinden.",
+      "Zahlreiche Getränkehersteller setzen auf Seppa Solutions, weil die Anlagen auch nach vielen Betriebsjahren zuverlässig mit ihrer spezifizierten Leistung arbeiten und eine dauerhaft hohe Produktionsqualität gewährleisten."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der PET-Streckblasmaschine",
+    "subtitle": "Der Produktionsprozess beginnt mit der kontinuierlichen Zuführung der Preforms, welche automatisch ausgerichtet werden:",
+    "steps": [
+      {
+        "title": "Zuführung und Ofendurchlauf",
+        "description": "Die Preforms werden automatisch ausgerichtet und dem Infrarot-Ofen zugeführt. Heizmodule bringen jeden Preform auf das optimale Verarbeitungstemperaturfenster."
+      },
+      {
+        "title": "Kurvengesteuertes Schließen",
+        "description": "Das kurvengesteuerte Werkzeugsystem schließt jede Form mit gleichmäßiger Schließkraft, was Gratbildung zuverlässig verhindert."
+      },
+      {
+        "title": "Mehrstufiger Blasprozess",
+        "description": "Niederdruckluft dehnt den Preform vor, gefolgt von Hochdruckluft (bis zu 40 bar), die das Material vollständig an die Werkzeugkontur presst."
+      },
+      {
+        "title": "Entnahme & PET-Recycling-Option",
+        "description": "Die fertigen Flaschen werden automatisch ausgeschleust. Produktionsreste können direkt einer PET-Recyclinglinie zugeführt werden, um Materialkosten nachhaltig zu senken."
+      }
+    ],
+    "outro": [
+      "Der größte Vorteil der SSB-SLE-150 liegt in ihrer hohen Produktionsleistung bei gleichzeitig konstant hoher Produktqualität durch reduzierte Ausschussraten."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt die PET-Flaschenproduktionslinie eine planmäßige Wartung?",
+      "answer": "Bei kontinuierlichem Dreischichtbetrieb werden monatliche Kontrollen der Dichtungen sowie die Schmierung der Kurvensteuerung empfohlen. Eine umfassende Wartung der Blasformen erfolgt in der Regel jährlich."
+    },
+    {
+      "question": "2. Kann die SSB-SLE-150 mit automatischen Flüssigkeitsabfüllanlagen anderer Hersteller verbunden werden?",
+      "answer": "Ja. Das Austragsförderband und die standardisierten Schnittstellen ermöglichen in den meisten Fällen eine problemlose Integration in bestehende Abfülllinien."
+    },
+    {
+      "question": "3. Warum eignet sich die SSB-SLE-150 besonders für Produktionsbetriebe mit hohen Ausbringungsmengen?",
+      "answer": "Die Kombination aus präziser Kurvensteuerung, stabiler Temperaturregelung und langlebigen Komponenten reduziert Ausschuss und sorgt für dauerhaft niedrige Produktionskosten."
+    },
+    {
+      "question": "4. Ist die Maschine für einen 24/7-Dauerbetrieb ausgelegt?",
+      "answer": "Ja. Die kontinuierliche Rotationsplattform sowie die verschleißarmen Dichtungssysteme wurden speziell für den unterbrechungsfreien industriellen Mehrschichtbetrieb entwickelt."
+    },
+    {
+      "question": "5. Lässt sich durch die Anbindung an eine PET-Recyclinglinie Material einsparen?",
+      "answer": "Ja. Produktionsreste und Ausschuss können direkt wiederverwertet werden. Dadurch sinkt der Bedarf an neuem PET-Material."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "SEPPA SSB-SLE-60: Servoelektrische PET-Streckblasmaschine für Hochleistungs-Produktionslinien",
+  "breadcrumbName": "SSB-SLE-60",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Überblick über die SEPPA SSB-SLE-60 PET-Streckblasmaschine",
+  "overviewDescription": "Die pneumatische PET-Streckblastechnologie ist seit Jahrzehnten Standard in der Verpackungsindustrie. Mit steigenden Produktionsgeschwindigkeiten stoßen pneumatische Systeme jedoch zunehmend an ihre Grenzen: hoher Druckluftverbrauch, regelmäßiger Wartungsaufwand für Ventile und Zylinder sowie nachlassende Prozessgenauigkeit.",
+  "overviewsubDescription": [
+    "Die SEPPA SSB-SLE-60 PET-Streckblasmaschine verfolgt deshalb ein vollständig servoelektrisches Maschinenkonzept. Sämtliche Bewegungen – von der Streckstange über das Schließen der Form bis hin zur Steuerung der einzelnen Prozessschritte – werden präzise über Servomotoren ausgeführt. Dadurch werden Positionen mit einer Genauigkeit im Bruchteil eines Millimeters reproduzierbar erreicht – auch bei dauerhaft hohen Produktionsleistungen.",
+    "Diese Präzision wirkt sich direkt auf die Flaschenqualität aus. Bereits geringe Abweichungen beim Streckvorgang führen zu ungleichmäßigen Wandstärken, höherem Materialverbrauch oder Schwachstellen im Behälter. Die SSB-SLE-60 minimiert diese Risiken und reduziert gleichzeitig den Energieverbrauch deutlich gegenüber vergleichbaren pneumatischen PET-Streckblasmaschinen."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen",
+  "features": [
+    {
+      "title": "Servogesteuerte Streckstangen",
+      "description": "Das Herzstück der SSB-SLE-60 bilden leistungsstarke Servoantriebe für jede einzelne Streckstange. Anstelle eines festen mechanischen Hubs lässt sich das Bewegungsprofil individuell programmieren. Geschwindigkeit, Hub und Haltezeiten können exakt an das jeweilige Flaschendesign angepasst werden – ohne mechanische Umbauten."
+    },
+    {
+      "title": "Elektrische Formschließeinheit",
+      "description": "Die Formschließeinheit arbeitet vollständig elektrisch. Die elektronisch geregelte Schließkraft ersetzt hydraulische Systeme älterer Maschinengenerationen. Dadurch entfallen Ölleckagen im Bereich der Blasform und gleichzeitig reduziert sich der Wartungsaufwand erheblich."
+    },
+    {
+      "title": "Mehrzonen-Infrarot-Heizofen",
+      "description": "Der Heizofen verfügt über mehrere unabhängig regelbare Infrarot-Heizzonen. Dadurch lassen sich sowohl PET-Neuware als auch PET-Rezyklate mit unterschiedlichen Materialeigenschaften und Additiven zuverlässig verarbeiten."
+    },
+    {
+      "title": "Technische Leistungsparameter",
+      "description": "Die Maschine erzielt Leistungen von bis zu 2.000 Flaschen pro Stunde und Kavität (abhängig von Flaschengewicht und Mündung). Sie ist vollständig frei von Hydrauliköl und bietet eine präzise Servoregulierung."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche in der Getränke- und Verpackungsindustrie",
+  "applicationsSubtitle": "Die SSB-SLE-60 wurde insbesondere für die Herstellung von Mineralwasserflaschen entwickelt.",
+  "applications": [
+    {
+      "title": "Mineralwasser & Getränke",
+      "description": "Die servoelektrische Maschinenarchitektur gewährleistet einen stabilen Betrieb ohne die Druckschwankungen pneumatischer Systeme."
+    },
+    {
+      "title": "Fruchtsäfte & Hotfill-Flaschen",
+      "description": "Gezielte Steuerung von Wandstärken und Materialverteilung über HMI-Profile, ideal für Heiß- und Kaltabfüllungen."
+    },
+    {
+      "title": "Lebensmittel & Speiseöle",
+      "description": "Produktion robuster Behälter für Speiseöle, Gewürze und Feinkostverpackungen."
+    },
+    {
+      "title": "Körperpflege & Haushaltschemikalien",
+      "description": "Flexibler Formwechsel und schnelle Anpassung von Blasdruck- und Streckprofilen für Duschgel-, Shampoo- oder Reinigerflaschen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions?",
+    "description": "SEPPA Solutions entwickelt komplette PET-Verpackungslösungen und betrachtet dabei nicht nur die einzelne Maschine, sondern die gesamte Produktionslinie.",
+    "paragraphs": [
+      "Die Bewegungsprofile der SSB-SLE-60 wurden anhand zahlreicher Flaschengeometrien und verschiedener PET-Materialien optimiert. Vor einer Investitionsentscheidung erhalten Kunden transparente Informationen zu Produktionsleistung, Energieverbrauch und Wartungskosten auf Basis realer Betriebsdaten.",
+      "Auch nach der Inbetriebnahme begleitet SEPPA Solutions seine Kunden mit umfassendem technischen Support, einschließlich Inbetriebnahme und Schulung der Bediener vor Ort."
+    ]
+  },
+  "methodology": {
+    "title": "Prozessablauf der SSB-SLE-60",
+    "subtitle": "Der Produktionsprozess beginnt mit dem automatischen Einlauf der Preforms über ein Sternrad:",
+    "steps": [
+      {
+        "title": "Infrarot-Heizofen",
+        "description": "Die Preforms durchlaufen den mehrzonigen Infrarot-Heizofen. Jede Heizzone wird individuell entsprechend Materialtyp und rPET-Anteil geregelt."
+      },
+      {
+        "title": "Elektrisches Werkzeugschließen",
+        "description": "Die elektrische Schließeinheit schließt die Blasform mit exakt abgestimmter Kraft, abgestimmt auf die jeweilige Flaschengeometrie."
+      },
+      {
+        "title": "Servoelektrisches Recken & Blasen",
+        "description": "Die servoelektrische Streckstange fährt nach einem programmierten Profil ein. Während des Vorblasens wird die Vorform vorgestreckt, gefolgt vom Hochdruck-Fertigblasen."
+      },
+      {
+        "title": "Auswurf & Qualitätskontrolle",
+        "description": "Nach einer kurzen Kühlphase wird die fertige Flasche ausgeworfen. Die Steuerung überwacht kontinuierlich Streckposition, Schließkraft und Druckverlauf."
+      }
+    ],
+    "outro": [
+      "Servomotoren benötigen nur während tatsächlicher Bewegungen Leistung. Dadurch reduziert sich der Stromverbrauch pro Flasche gegenüber pneumatischen PET-Blasmaschinen um 25 bis 35 %."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie viel Energie spart die SSB-SLE-60 gegenüber älteren Blasmaschinen?",
+      "answer": "Durch servoelektrische Antriebe und den reduzierten Druckluftbedarf sinkt der Energieverbrauch je nach Anwendung in der Regel um 25 bis 35 %."
+    },
+    {
+      "question": "2. Kann die Maschine PET mit hohem Recyclinganteil verarbeiten?",
+      "answer": "Ja. Dank individuell regelbarer Infrarot-Heizzonen und programmierbarer Streckprofile eignet sich die SSB-SLE-60 auch für PET-Rezyklate mit unterschiedlichen Eigenschaften."
+    },
+    {
+      "question": "3. Ist die Maschine für hygienische Produktionsbereiche geeignet?",
+      "answer": "Ja. Da vollständig auf hydraulische Schließsysteme verzichtet wird, besteht kein Risiko von Ölverunreinigungen im Bereich der Blasform."
+    },
+    {
+      "question": "4. Welche Behälter können außer Mineralwasserflaschen produziert werden?",
+      "answer": "Neben Mineralwasserflaschen lassen sich auch Flaschen für Säfte, Speiseöle, Körperpflegeprodukte und Haushaltschemikalien herstellen."
+    },
+    {
+      "question": "5. Wodurch unterscheidet sich die SSB-SLE-60 von anderen servoelektrischen PET-Streckblasmaschinen?",
+      "answer": "Die Kombination aus programmierbaren Servoantrieben je Kavität und einer mehrzonigen Infrarot-Heizsteuerung ermöglicht eine besonders präzise Wandstärkenverteilung."
+    }
+  ]
+}

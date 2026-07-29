@@ -1,102 +1,20 @@
-import React from 'react';
-import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+"use client";
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-import bannerImg from '@/assets/services/generated/training_banner_1782102515585.png';
-import overviewImg from '@/assets/services/generated/training_overview_1782102530193.png';
-import img1 from '@/assets/services/generated/training_cb1_1782102543995.png';
-import over from '@/assets/services/generated/training_whychoose_1782102558103.png';
+export default function ServicesTrainingRedirectPage() {
+  const router = useRouter();
 
-import meth1 from '@/assets/services/generated/training_meth1_1782102578738.png';
-import meth2 from '@/assets/services/generated/training_meth2_1782102592295.png';
-import meth3 from '@/assets/services/generated/training_meth3_1782102607091.png';
-import meth4 from '@/assets/services/generated/training_meth4_1782102620138.png';
+  useEffect(() => {
+    const lang = typeof navigator !== 'undefined' ? navigator.language : 'en';
+    const detectedLang = lang?.startsWith('ar') ? 'ar' : lang?.startsWith('de') ? 'de' : 'en';
+    router.replace(`/${detectedLang}/services/training`);
+  }, [router]);
 
-const pageData: PackagingPageData = {
-  title: "Industrial Training",
-  breadcrumbName: "Training",
-  rootBreadcrumbName: "Services",
-  rootBreadcrumbPath: "/services",
-  headerImage: bannerImg.src,
-  overviewTitle: "Technical Capacity Building and Workforce Excellence: The Seppa Solutions Engineering Framework",
-  overviewDescription: "Walk onto any modern packaging floor, and you are instantly surrounded by an impressive display of automation. Millions of dollars are routinely invested in high-speed bottling lines, smart sensors, and advanced processing blocks. Yet, the line between hitting your daily production targets and dealing with a costly, stalled line almost always comes down to the individual standing at the main console. This is exactly where professional industrial training services shift from a corporate compliance checkbox into your most valuable operational asset.",
-  overviewsubDescription: [
-    "True operational efficiency is never just a metric stamped on a machine’s technical data sheet; it has to be actively earned through human skill on the floor. When floor teams do not fully understand the underlying mechanics of their equipment, even the most advanced systems fall short of their engineering potential. That is why structured machine operator training is so vital it turns raw mechanical capability into predictable, day to day throughput. Through comprehensive machine operator training, modern plants find hidden capacity in the hardware they already own.",
-    "By delivering clear, practical knowledge through tailored technical training services, companies stop just trying to survive their automated lines and start truly mastering them. This shifts the executive conversation entirely, reframing your educational budget as a high yield investment rather than a painful operational expense."
-  ],
-  overviewImage: overviewImg.src,
-  contentBlocks: [
-    {
-      title: "Benefits of Professional Industrial Training Programs",
-      paragraphs: [
-        "The connection between a skilled workforce and your Overall Equipment Effectiveness (OEE) is incredibly clear. When a factory invests in proper machine operator training, the very first thing they notice is a massive drop in unexpected downtime. In reality, a huge percentage of sudden equipment failures can be traced back to basic things a missed lubrication point, a minor setup mistake, or an ignored warning code on a screen. Good training fixes these errors permanently.",
-        "Furthermore, our tailored maintenance training services help build a proactive safety culture where people actually look out for the machinery. Instead of viewing a technical manual as an intimidating book to open only when everything breaks down, your crew treats it as a guide for daily optimization. When your staff undergoes focused technical training services, they start listening to the machines differently.",
-        "They notice subtle changes in sound, vibration, or temperature well before a breakdown happens. This preventative mindset keeps lines running, lowers repair costs, and builds a much safer workspace. Ultimately, high quality machine operator training directly reduces micro stops and material waste, delivering a clear return on investment."
-      ],
-      image1: img1.src,
-      reverse: true
-    }
-  ],
-  featuresTitle: "Key Features of Our Industrial Training Programs",
-  featuresSubtitle: "A great training program needs to move past boring PowerPoint slides and focus on real, hands on experience. At Seppa Solutions, our courses are designed to build practical, real world knowledge that changes the dynamic on your factory floor.",
-  features: [
-    { title: "Practical Floor Experience", description: "Our courses avoid superficial button pushing summaries to provide deep machine operator training that teaches your staff how to think like industrial systems engineers." },
-    { title: "PLC & Drives Focus", description: "We dive deep into PLC troubleshooting, variable frequency drive setups, and sensor calibration." },
-    { title: "Dashboard Optimization", description: "We train operators to read SCADA dashboards properly, using real time numbers to balance line speeds and keep production moving." },
-    { title: "Integrated Safety", description: "Safety is built directly into every single exercise, making Lockout Tagout (LOTO) protocols second nature. Your team gains the situational awareness needed to run a complex line safely." }
-  ],
-  applicationsTitle: "Applications of Industrial Training Across Industries",
-  applicationsSubtitle: "The requirement for education crosses over all forms of production, be it fast moving beverages or pharmaceuticals that must have very strict tolerances.",
-  applications: [
-    { title: "High Speed Bottling", description: "A tiny timing issue on a capping valve can ruin thousands of units and steal hours of production time. Effective machine operator training gives your team the reflexes to catch and fix these tiny variables before they blow up into a line crisis." },
-    { title: "Pharmaceutical & Strict Tolerance", description: "When your team has to handle intricate container filling valves or complex palletizing matrices, they need to know the equipment inside and out, handling daily runs smoothly no matter what product goes into your boxes." }
-  ],
-  whyChoose: {
-    title: "Why Choose Seppa Solutions for Industrial Training Services",
-    description: "Choosing a training partner isn't just about finding someone with standard teaching credentials it requires actual engineering experience. Plant managers choose Seppa Solutions because we deliver industrial training services built on decades of designing, building, and commissioning packaging machinery.",
-    paragraphs: [
-      "Our instructors aren't just reading from a script; they are veteran field engineers who know exactly how lines behave under intense production pressure. We make a point of translating complicated engineering concepts into clear, practical floor steps.",
-      "Through our advanced maintenance training services, we give your internal mechanical teams true OEM level depth. This means they can handle complex adjustments and major overhauls internally without constantly waiting for expensive outside tech support.",
-      "We don't sell generic, one size fits all training packets. We look at your specific line layout and machine setups to tailor our modules exactly to your needs. By combining practical machine operator training with deep engineering insight, we bridge the gap between advanced machinery and your human team."
-    ],
-    image: over.src
-  },
-  methodology: {
-    title: "Our Industrial Training Methodology",
-    steps: [
-      {
-        title: "Baseline Skills Assessment",
-        description: "We start with a thorough baseline skills assessment to see where your team stands, finding hidden knowledge gaps before we ever start teaching.",
-        image: meth1.src
-      },
-      {
-        title: "Hands-On Simulations",
-        description: "Your operators move to hands on simulations where they practice managing system faults and PLC errors in a zero risk environment.",
-        image: meth2.src
-      },
-      {
-        title: "Live Validation",
-        description: "We do live validation on your active production line, ensuring they can perform changeovers smoothly and safely under real world pressure.",
-        image: meth3.src
-      },
-      {
-        title: "Long Term Tracking",
-        description: "We set up long term tracking and follow up support through our maintenance training services to make sure these good habits stay in place.",
-        image: meth4.src
-      }
-    ]
-  },
-  faqTitle: "Frequently Asked Questions",
-  faqs: [
-    { question: "How exactly does machine operator training impact our Overall Equipment Effectiveness (OEE)?", answer: "There is a direct, measurable link between structured machine operator training and your OEE metrics. When operators are confident, they eliminate small, annoying micro stops, optimize run speeds, and perform changeovers much faster. Our industrial training services give your team the skills to spot wear and tear early, preventing minor glitches from turning into major line shutdowns." },
-    { question: "What is the complete scope of Seppa's industrial training services?", answer: "We cover everything needed to run a modern, automated facility safely. Our programs include mechanics, pneumatics, fluid dynamics, and electrical safety. Beyond technical details, our courses include focused workforce development training to improve team communication, shift handovers, and safety compliance, building a deeply competent team on your floor." },
-    { question: "How do maintenance training services differ from standard machine operator training?", answer: "Standard machine operator training focuses on daily operations, startup routines, changeovers, and monitoring dashboards. On the other hand, our specialized maintenance training services are designed for your technical staff. These modules focus on root cause analysis, complex fault isolation, component rebuilds, and deep PLC diagnostics. Using both tracks together ensures full coverage for your facility." },
-    { question: "What is the long term return on investment for technical training services?", answer: "The return shows up quickly through lower operating costs. You'll see a drop in expensive third party service calls, less material scrap during product changeovers, and a much longer lifespan for your machinery. Investing in your team through ongoing workforce development training also lowers turnover and protects your plant from sudden skills gaps as technology advances." },
-    { question: "Why does Seppa Solutions lead the market in manufacturing technical training services?", answer: "We stand out because we combine real engineering experience with practical floor teaching. We don't offer generic lectures; we deliver customized, plant specific courses led by active field engineers. By matching our advanced maintenance training services with thorough machine operator training, we give your plant a reliable way to boost both human performance and machine output." }
-  ]
-};
-
-const TrainingPage = () => {
-  return <PackagingPageLayout data={pageData} />;
-};
-
-export default TrainingPage;
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0d162a] text-white">
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#cda262]"></div>
+      <p className="mt-4 text-lg font-medium opacity-80 animate-pulse">Redirecting...</p>
+    </div>
+  );
+}

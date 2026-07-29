@@ -1,0 +1,115 @@
+{
+  "title": "SEPPA SSB-SLE-40: Engineering the Next Generation of High-Speed PET Bottle Production",
+  "breadcrumbName": "SSB-SLE-40",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Overview of the SEPPA SSB-SLE-40 PET Bottle Blowing Machine",
+  "overviewDescription": "Every container that leaves a production line carries the fingerprint of the equipment that made it. Wall thickness, base clarity, neck alignment: none of that happens by accident. It happens because a bottle manufacturing machine held its process window steady, cycle after cycle.",
+  "overviewsubDescription": [
+    "The SSB-SLE-40 is Seppa Solutions' answer to that demand. It's a linear, servo electric stretch blow moulding machine built around servo driven blow molding technology, for plants that can't afford a slow shift or an inconsistent batch. Where older hydraulic platforms drift as oil heats up and seals wear, this bottle manufacturing machine holds its stretch rod timing and blow pressure curve within tight tolerances from the first bottle to the ten thousandth.",
+    "For a mid size producer weighing up equipment, the question usually isn't \"can it make a bottle.\" Most stretch blow moulding machine platforms can. It's whether the bottle manufacturing machine can do it at volume, without babysitting, without the slow creep of rejects that eats into margin by week three."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications",
+  "features": [
+    {
+      "title": "Servo-electric drive architecture",
+      "description": "The SSB-SLE-40 replaces hydraulic stretch rod actuation with high torque servo motors on each cavity, the core of what makes it a servo driven blow molding platform rather than a conventional hydraulic press. Hydraulic systems lose precision as fluid temperature and viscosity shift over a shift; servo drives don't. Each stretch rod stroke on this bottle manufacturing machine is programmed as an electronic motion profile, set independently for every station, so cavity to cavity variation stays low even after eight or ten hours of continuous running.\n\nOperators can adjust the stretch rod curve from the HMI in seconds rather than re tuning hydraulic valves, a real difference when a plant switches between a 500ml still water bottle and a 1L carbonated format in the same shift."
+    },
+    {
+      "title": "IR heating and preform conditioning",
+      "description": "Preforms move through a multi lamp infrared oven ahead of the PET preform stretching stage, with independent zone control front and back. Getting this wrong shows up as pearlescence, uneven wall distribution, or base webbing. The lamp banks are zoned so operators can bias heat toward the preform's shoulder, body, or base, and the oven's air cooling fans stop the PET from crystallizing before PET preform stretching begins."
+    },
+    {
+      "title": "High pressure blow valve system",
+      "description": "Final shaping runs through a two stage blow: pre blow at lower pressure to seat the preform against the mold wall, then high pressure final blow to push material into corners and base details. The valve bank on this bottle manufacturing machine holds pressure drop to a minimum across all cavities at once, which is where cheaper platforms fall down past four or six cavities. Consistent PET preform stretching is also why the SSB-SLE-40 holds up as a high speed bottle blowing machine across long runs."
+    },
+    {
+      "title": "Specifications at a glance",
+      "description": "Cavity configuration: up to 4 cavities (model dependent)\nMax bottle volume: up to 2L\nOutput: up to roughly 2,000–2,400 bottles per hour, depending on container size and preform weight\nDrive type: full servo electric, no hydraulic oil circuit\nBlow pressure: dual stage, up to 40 bar on the high pressure side"
+    }
+  ],
+  "applicationsTitle": "Applications Across Industries",
+  "applicationsSubtitle": "A high speed bottle blowing machine built around servo precision earns its keep across more than one product category. The SSB-SLE-40 runs comfortably across:",
+  "applications": [
+    {
+      "title": "Beverage",
+      "description": "Still and carbonated water, juice, RTD tea and coffee, and CSD lines where base strength under carbonation pressure matters."
+    },
+    {
+      "title": "Edible oil and dairy",
+      "description": "Wider mouth bottles and jugs where wall thickness consistency affects drop test performance and label adhesion."
+    },
+    {
+      "title": "Personal care and household chemicals",
+      "description": "Shampoo, lotion, and cleaning product bottles where custom neck finishes and heavier wall specs are common."
+    },
+    {
+      "title": "Pharmaceutical adjacent packaging",
+      "description": "Non sterile PET containers for supplements and OTC products, where dimensional consistency has to hold up on high speed capping lines downstream."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions?",
+    "description": "Seppa Solutions builds turnkey PET packaging lines, not just standalone machines. The SSB-SLE-40 is engineered to integrate with upstream preform handling and downstream filling, capping, and labelling equipment rather than sit as an isolated island on the floor.",
+    "paragraphs": [
+      "The engineering team specs every stretch blow moulding machine against the customer's actual SKU mix, not a generic catalogue spec, since a plant running twelve bottle formats has different needs than one running two. That shows up in mold change design, HMI recipe management, and the flexibility built into the servo motion profiles from day one.",
+      "Plants that have moved from hydraulic to Seppa's servo driven blow molding platform consistently report the same thing: fewer 2am maintenance calls, and a bottle manufacturing machine that behaves the same in hour ten as it did in hour one."
+    ]
+  },
+  "methodology": {
+    "title": "How the Stretch Blow Moulding Machine Works",
+    "subtitle": "The process, station by station, on this bottle manufacturing machine:",
+    "steps": [
+      {
+        "title": "1. Preform loading",
+        "description": "Preforms feed from a hopper or sorter into the transfer system."
+      },
+      {
+        "title": "2. IR conditioning",
+        "description": "Zoned infrared lamps heat the preform body to stretch temperature while keeping the neck finish cool and stable."
+      },
+      {
+        "title": "3. Servo synchronized stretching",
+        "description": "This is where PET preform stretching happens: the stretch rod extends into the softened preform on a programmed motion profile, elongating it axially just ahead of the radial blow."
+      },
+      {
+        "title": "4. Pre blow and final blow",
+        "description": "Low pressure air seats the material against the mold; high pressure air completes the shape and pushes PET into the base and shoulder."
+      },
+      {
+        "title": "5. Cooling and ejection",
+        "description": "The mold's water channels pull heat out fast enough to hold shape under demolding stress, and the bottle ejects onto the outfeed conveyor."
+      }
+    ],
+    "outro": [
+      "What separates a high speed bottle blowing machine that holds tolerance from one that drifts is almost entirely step 3. If stretch rod timing isn't synchronized with blow air timing, you get uneven wall distribution: thin spots that fail drop tests, thick spots that waste resin. The SSB-SLE-40's servo control exists to keep that synchronization locked in, cavity after cavity."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What maintenance does the SSB-SLE-40 need?",
+      "answer": "Mainly lamp replacement in the IR oven, mold cooling channel cleaning, and periodic servo motor checks. Without a hydraulic circuit, there's no oil change schedule to manage."
+    },
+    {
+      "question": "How does Seppa ensure structural uniformity across a run?",
+      "answer": "Through servo synchronized stretch rod and blow air timing, plus zoned IR heating that keeps preform temperature even cavity to cavity, consistent PET preform stretching, in other words. Wall thickness variation is checked during commissioning against the target spec for each mold."
+    },
+    {
+      "question": "What makes this stretch blow moulding machine different from a hydraulic one?",
+      "answer": "Primarily drive precision and long run stability. Hydraulic systems lose accuracy as fluid heats up over a shift; the SSB-SLE-40's servo drives hold their programmed motion profile regardless of runtime."
+    },
+    {
+      "question": "Can the same machine run multiple bottle formats?",
+      "answer": "Yes. Stretch and blow parameters are stored as electronic recipes, so switching formats means loading a saved profile and swapping the mold, not manually retuning the machine."
+    },
+    {
+      "question": "Is the SSB-SLE-40 suitable for a high speed bottle blowing machine setup running multiple shifts?",
+      "answer": "Yes. Because servo driven blow molding doesn't drift the way hydraulic actuation does over long runs, the machine is built specifically for multi shift, continuous duty operation without the accuracy loss that shows up on older platforms after several hours."
+    },
+    {
+      "question": "Why do plants choose Seppa over other bottle manufacturing machine suppliers?",
+      "answer": "Integration, mostly. Seppa designs the SSB-SLE-40 as part of a full production line rather than selling a standalone bottle manufacturing machine and leaving the plant to work around it."
+    }
+  ]
+}

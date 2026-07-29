@@ -1,0 +1,111 @@
+{
+  "title": "SEPPA SSB-SLE-40: Servoelektrische PET-Streckblasmaschine für die Next-Generation-Flaschenproduktion",
+  "breadcrumbName": "SSB-SLE-40",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Überblick über die SEPPA SSB-SLE-40 PET-Flaschenblasmaschine",
+  "overviewDescription": "Jeder Behälter, der eine Produktionslinie verlässt, trägt die Eigenschaften der Maschine, auf der er gefertigt wurde. Wandstärke, Bodentransparenz und Halsausrichtung entstehen nicht zufällig. Sie sind das Ergebnis einer Flaschenproduktionsmaschine, die ihren Prozessbereich über tausende Zyklen stabil kontrolliert.",
+  "overviewsubDescription": [
+    "Die SEPPA SSB-SLE-40 wurde genau für diese Anforderungen entwickelt. Als servoelektrische Streckblasmaschine kombiniert sie moderne Servo-Blasformtechnologie mit hoher Wiederholgenauigkeit und kontinuierlicher Produktionsleistung. Sie richtet sich an Hersteller, die keine Kompromisse bei Geschwindigkeit, Qualität und Prozessstabilität eingehen können.",
+    "Während ältere hydraulische Systeme durch steigende Öltemperaturen oder verschleißende Dichtungen an Genauigkeit verlieren können, hält diese PET Flaschenblasmaschine die Bewegungsprofile der Reckstangen und die Druckkurven während des gesamten Produktionslaufs präzise ein. Für mittelständische Hersteller entscheidet die Flaschenproduktionsmaschine dauerhaft mit hoher Geschwindigkeit, geringem Ausschuss und ohne ständige Nachjustierung über die Gesamtwirtschaftlichkeit."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen",
+  "features": [
+    {
+      "title": "Servoelektrische Antriebsarchitektur",
+      "description": "Die SSB-SLE-40 ersetzt die hydraulische Betätigung der Reckstangen durch drehmomentstarke Servomotoren an jeder Kavität, was sie zu einer hochgenauen servoelektrischen Plattform macht. Hydrauliksysteme verlieren an Präzision, wenn sich die Öltemperatur ändert; Servoantriebe tun das nicht. Jede Reckstangenbewegung ist als elektronisches Profil programmierbar."
+    },
+    {
+      "title": "IR-Erwärmung und Preform-Konditionierung",
+      "description": "Preforms durchlaufen einen Infrarot-Ofen mit getrennter Zonenregelung. Durch präzise Abstimmung wird verhindert, dass Defekte wie Perlglanz, asymmetrische Wandverteilungen oder Bodenfehler entstehen. Die Ofenlüftung verhindert das vorzeitige Kristallisieren des PET-Materials vor dem Recken."
+    },
+    {
+      "title": "Hochdruck-Blasventilsystem",
+      "description": "Das Fertigblasen läuft über einen zweistufigen Blasprozess: Vorblasen mit niedrigem Druck zur Vorformung, gefolgt von Hochdruck-Endblasen (bis zu 40 bar) für feinste Konturen und Details. Das Ventilsystem minimiert Druckverluste über alle Kavitäten gleichzeitig."
+    },
+    {
+      "title": "Technische Daten im Überblick",
+      "description": "Kavitätenkonfiguration: bis zu 4 Kavitäten (modellabhängig)\nMax. Flaschenvolumen: bis zu 2 Liter\nAusbringung: ca. 2.000–2.400 Flaschen pro Stunde (abhängig von Größe und Preformgewicht)\nAntriebstyp: Vollständig servoelektrisch, kein Hydraulikölkreislauf\nBlasdruck: Zweistufig, bis zu 40 bar"
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche in verschiedenen Industrien",
+  "applicationsSubtitle": "Eine servoelektrische PET-Blasmaschine mit hoher Wiederholgenauigkeit eignet sich für zahlreiche Produktbereiche:",
+  "applications": [
+    {
+      "title": "Getränke & CSD",
+      "description": "Mineralwasser, Säfte, Eistee und kohlensäurehaltige Softdrinks, bei denen die Festigkeit des Flaschenbodens unter Innendruck entscheidend ist."
+    },
+    {
+      "title": "Speiseöle & Milchprodukte",
+      "description": "Weithalsflaschen und Behälter, bei denen eine gleichmäßige Wandstärke das Verhalten beim Falltest und die Etikettenhaftung direkt beeinflusst."
+    },
+    {
+      "title": "Körperpflege & Haushaltschemie",
+      "description": "Shampoo-, Lotion- und Reinigungsmittelflaschen, die häufig individuelle Halsformen und dickwandige Geometrien erfordern."
+    },
+    {
+      "title": "Pharmazeutische Verpackungen",
+      "description": "PET-Dosen für Nahrungsergänzungsmittel und OTC-Produkte, bei denen Maßhaltigkeit auf nachgeschalteten Abfüll- und Verschließlinien wichtig ist."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions?",
+    "description": "Seppa Solutions entwickelt schlüsselfertige Verpackungslösungen. Die SSB-SLE-40 ist darauf ausgelegt, sich nahtlos in vorgelagerte Zuführungen und nachgelagerte Abfülllinien zu integrieren.",
+    "paragraphs": [
+      "Unser Engineering-Team stimmt jede Streckblasmaschine auf das genaue Produktspektrum des Kunden ab. Das zeigt sich im schnellen Formenwechsel, der HMI-Rezeptverwaltung und den flexiblen Bewegungsprofilen der Servoantriebe.",
+      "Kunden, die von hydraulischen Systemen auf die servogesteuerte Plattform von SEPPA gewechselt sind, berichten übereinstimmend von einer deutlich stabileren Produktion und drastisch reduzierten Ausfallzeiten."
+    ]
+  },
+  "methodology": {
+    "title": "Arbeitsweise der Streckblasmaschine",
+    "subtitle": "Der Prozess erfolgt Station für Station in einem kontinuierlichen, präzisen Ablauf:",
+    "steps": [
+      {
+        "title": "1. Preform-Zuführung",
+        "description": "Preforms werden automatisch aus einem Sortiertrichter in das Transfersystem eingepflegt."
+      },
+      {
+        "title": "2. Infrarot-Konditionierung",
+        "description": "Zonengesteuerte IR-Lampen erwärmen den Flaschenkörper auf Strecktemperatur, während die Mündung kühl und formstabil bleibt."
+      },
+      {
+        "title": "3. Servogeregeltes Recken",
+        "description": "Die Reckstange fährt entlang eines definierten elektronischen Profils in den Preform ein und verlängert ihn exakt axial."
+      },
+      {
+        "title": "4. Vorblasen & Fertigblasen",
+        "description": "Niederdruckluft legt das Material an die Wandung an, Hochdruckluft formt anschließend Boden- und Schulterkonturen vollständig aus."
+      },
+      {
+        "title": "5. Kühlung & Ejektion",
+        "description": "Kühlkanäle leiten die Wärme schnell ab. Das Werkzeug öffnet sich und wirft die fertige Flasche formstabil auf das Förderband aus."
+      }
+    ],
+    "outro": [
+      "Der Erfolg des Prozesses hängt entscheidend von der präzisen Synchronisation des Reckvorgangs mit dem Blasluft-Timing ab. Die Servosteuerung der SSB-SLE-40 sichert diese Zuverlässigkeit über jeden Zyklus."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartung benötigt die SSB-SLE-40?",
+      "answer": "Hauptsächlich den regelmäßigen Austausch von IR-Lampen, die Reinigung der Formkühlkanäle und Routineprüfungen der Servomotoren. Da kein Hydraulikkreis existiert, entfallen Ölwechsel vollständig."
+    },
+    {
+      "question": "2. Wie wird eine gleichmäßige Wandstärke über die gesamte Produktion sichergestellt?",
+      "answer": "Durch die exakte servogesteuerte Synchronisation von Reckstangen und Blaszeiten sowie das zonengeregelte IR-Heizsystem, das Temperaturabweichungen minimiert."
+    },
+    {
+      "question": "3. Was unterscheidet diese Streckblasmaschine von einer hydraulischen Maschine?",
+      "answer": "Vor allem die Wiederholgenauigkeit und Langzeitstabilität. Servoantriebe halten ihr programiertes Bewegungsprofil unabhängig von der Betriebstemperatur präzise ein."
+    },
+    {
+      "question": "4. Kann die Maschine verschiedene Flaschenformate verarbeiten?",
+      "answer": "Ja. Sämtliche Parameter werden als elektronische Rezepte in der Steuerung gespeichert. Ein Produktwechsel erfordert lediglich den Abruf des Rezepts und das Wechseln der Form."
+    },
+    {
+      "question": "5. Ist die SSB-SLE-40 für den Mehrschichtbetrieb geeignet?",
+      "answer": "Ja. Die servoelektrische Auslegung verhindert das typische Leistungsdriften über lange Laufzeiten hinweg und eignet sich ideal für den industriellen 24/7-Einsatz."
+    }
+  ]
+}

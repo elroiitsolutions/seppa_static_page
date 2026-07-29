@@ -1,0 +1,36 @@
+{
+  "title": "Produktanfrage",
+  "breadcrumbName": "Produktanfrage",
+  "heading": "Sie haben ein Projekt im Blick?",
+  "subheading": "Füllen Sie das folgende Formular aus und teilen Sie uns Ihre Projektanforderungen mit. Unser Expertenteam wird sich mit maßgeschneiderten Lösungen bei Ihnen melden.",
+  "formTitle": "Anfrage senden",
+  "submitButtonText": "Anfrage absenden",
+  "getInTouch": "Kontakt aufnehmen",
+  "callUs": "Rufen Sie uns an:",
+  "emailUs": "Schreiben Sie uns:",
+  "headOffice": "Hauptsitz:",
+  "headOfficeAddress": "Chennai, Tamil Nadu, Indien",
+  "fields": {
+    "name": "Vollständiger Name",
+    "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+    "location": "Standort / Land",
+    "locationPlaceholder": "Wo befinden Sie sich?",
+    "product": "Produkt von Interesse",
+    "productPlaceholder": "Produkt von Interesse auswählen",
+    "message": "Projektanforderungen",
+    "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt, den Kapazitätsanforderungen und weiteren Details...",
+    "products": [
+      "Komplettlinien",
+      "Flüssigkeitsabfüllmaschinen",
+      "PET-Blasmaschinen",
+      "Verarbeitungsanlagen",
+      "Verpackung & Etikettierung",
+      "Service & Wartung",
+      "Sonstiges"
+    ]
+  }
+}

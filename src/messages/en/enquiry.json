@@ -1,0 +1,36 @@
+{
+  "title": "Product Enquiry",
+  "breadcrumbName": "Product Enquiry",
+  "heading": "Have a project in mind?",
+  "subheading": "Fill out the form below to let us know about your project requirements. Our team of experts will get back to you with the best solutions tailored to your needs.",
+  "formTitle": "Send us an Enquiry",
+  "submitButtonText": "Submit Enquiry",
+  "getInTouch": "Get In Touch",
+  "callUs": "Call Us:",
+  "emailUs": "Email Us:",
+  "headOffice": "Head Office:",
+  "headOfficeAddress": "Chennai, Tamil Nadu, India",
+  "fields": {
+    "name": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "location": "Location / Country",
+    "locationPlaceholder": "Where are you located?",
+    "product": "Product of Interest",
+    "productPlaceholder": "Select Product of Interest",
+    "message": "Project Requirements",
+    "messagePlaceholder": "Tell us about your project, capacity requirements, and any specific details...",
+    "products": [
+      "Complete Lines",
+      "Liquid Filling Machines",
+      "PET Blowers",
+      "Processing Equipment",
+      "Packaging & Labeling",
+      "Services & Maintenance",
+      "Other"
+    ]
+  }
+}

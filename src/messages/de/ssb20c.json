@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-20C – Hochleistungs-PET-Streckblasmaschine für industrielle Produktionslinien",
+  "breadcrumbName": "SSB-20C",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Maximale Effizienz für moderne PET-Produktionsanlagen",
+  "overviewDescription": "Die SEPPA SSB-20C wurde für Getränkehersteller und Verpackungsunternehmen entwickelt, die hohe Produktionskapazitäten mit einer konstanten Produktqualität verbinden möchten. Die lineare PET-Streckblasmaschine ermöglicht eine wirtschaftliche Herstellung unterschiedlichster PET-Behälter und unterstützt Unternehmen dabei, ihre Produktionsleistung nachhaltig zu steigern.",
+  "overviewsubDescription": [
+    "Durch die Kombination aus präziser Temperaturregelung, servogesteuerter Positionierung und mehrstufigem Streckblasverfahren entstehen PET-Flaschen mit gleichmäßiger Wandstärkenverteilung, hoher Transparenz und reproduzierbarer Qualität – auch im kontinuierlichen Mehrschichtbetrieb.",
+    "Die SEPPA SSB-20C eignet sich für zahlreiche Anwendungen innerhalb der Getränke- und Verpackungsindustrie. Dank programmierbarer Prozessparameter können unterschiedliche Flaschenformen und Behältergrößen ohne aufwendige Maschinenanpassungen produziert werden. Dadurch lassen sich Formatwechsel schnell durchführen und Produktionsunterbrechungen minimieren."
+  ],
+  "featuresTitle": "Technische Vorteile der SEPPA SSB-20C",
+  "features": [
+    {
+      "title": "Präzise Temperaturregelung",
+      "description": "Mehrzonige Infrarot-Heizsysteme ermöglichen eine produktspezifische Anpassung der Heizprofile. Dadurch können unterschiedliche Preformgrößen und Flaschengeometrien mit hoher Prozesssicherheit verarbeitet werden."
+    },
+    {
+      "title": "Energieeffizientes Druckluftmanagement",
+      "description": "Das optimierte pneumatische System reduziert den Druckluftverbrauch durch eine mehrstufige Luftführung und eine integrierte Luftrückgewinnung, was den Anlagenbetrieb wirtschaftlicher macht."
+    },
+    {
+      "title": "Robuste Werkzeugtechnik",
+      "description": "Eine stabile Werkzeugverriegelung gewährleistet auch bei hohen Produktionsgeschwindigkeiten eine konstante Formgenauigkeit und minimiert Verschleiß."
+    },
+    {
+      "title": "Schnelle Formatwechsel & Verfügbarkeit",
+      "description": "Werkzeugwechsel lassen sich ohne aufwendige Justierarbeiten durchführen. Die Kombination aus präziser Steuerung, langlebigen Komponenten und wartungsfreundlicher Konstruktion sichert hohe Verfügbarkeit."
+    }
+  ],
+  "applicationsTitle": "Flexible Einsatzmöglichkeiten der SSB-20C",
+  "applicationsSubtitle": "Die SSB-20C ist für den flexiblen Betrieb über mehrere Produktfamilien hinweg konzipiert:",
+  "applications": [
+    {
+      "title": "Trink- und Mineralwasser",
+      "description": "Geeignet für Mineralwasser, stilles Wasser, alkalisches Wasser sowie aromatisierte Wässer mit leichten Preforms."
+    },
+    {
+      "title": "Kohlensäurehaltige Erfrischungsgetränke (CSD)",
+      "description": "Erfüllt die hohen Anforderungen an die Druckfestigkeit und Biaxialorientierung für karbonisierte Getränke."
+    },
+    {
+      "title": "Speiseöle & Haushaltschemie",
+      "description": "Produziert dickwandigere Speiseölflaschen, Reinigungs- und Haushaltsbehälter mit hoher Dichte und chemischer Beständigkeit."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA?",
+    "description": "SEPPA entwickelt leistungsstarke PET-Streckblasmaschinen für anspruchsvolle industrielle Anwendungen.",
+    "paragraphs": [
+      "Konstruktion, Pneumatik, Heiztechnik und Steuerung werden als integriertes Gesamtsystem entwickelt, um eine hohe Prozessstabilität und reproduzierbare Produktionsergebnisse sicherzustellen.",
+      "Neben einzelnen Maschinen unterstützt SEPPA Kunden auch bei der Integration kompletter PET-Produktionslinien – von der Preformzuführung bis zur Anbindung an Abfüll-, Verschließ- und Etikettieranlagen."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-20C",
+    "subtitle": "Der Produktionsprozess ist voll synchronisiert und auf minimalen Verschleiß ausgelegt:",
+    "steps": [
+      {
+        "title": "Automatische Zuführung & Heiztunnel",
+        "description": "Ein Hochgeschwindigkeits-Zuführsystem richtet die Preforms aus. Mehrere separat regelbare Infrarot-Heizzonen erwärmen die Preforms gleichmäßig."
+      },
+      {
+        "title": "Servogesteuertes Transfersystem",
+        "description": "Das Transfersystem übernimmt die präzise Positionierung der erwärmten Preforms im Blaswerkzeug mit Sub-Millimeter-Genauigkeit."
+      },
+      {
+        "title": "Mehrstufiges Streckblasen & Ausstoß",
+        "description": "Zunächst wird das Material mithilfe eines Streckstabs vorgedehnt. Danach formt Hochdruckluft den Behälter exakt aus. Nach kurzer Kühlung erfolgt der automatische Auswurf."
+      }
+    ],
+    "outro": [
+      "Die SSB-20C trägt dazu bei, den Energieverbrauch zu reduzieren, Ausschuss zu minimieren und Umrüstzeiten drastisch zu verkürzen."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartungsarbeiten sind erforderlich?",
+      "answer": "Regelmäßige Kontrollen der Infrarot-Heizzonen, Pneumatik, Werkzeuge und Kühlsysteme tragen dazu bei, die Anlagenleistung dauerhaft auf hohem Niveau zu halten."
+    },
+    {
+      "question": "2. Für welche Produkte eignet sich die SEPPA SSB-20C?",
+      "answer": "Die Maschine verarbeitet PET-Preforms für Mineralwasser, Softdrinks, Speiseöl, Haushaltsprodukte sowie zahlreiche weitere Verpackungslösungen."
+    },
+    {
+      "question": "3. Welche Vorteile bietet das mehrstufige Streckblasverfahren?",
+      "answer": "Die kontrollierte Materialverteilung verbessert die Wandstärkenhomogenität, erhöht die Formstabilität und sorgt für eine gleichbleibend hohe Produktqualität."
+    },
+    {
+      "question": "4. Lässt sich die Maschine in bestehende Produktionslinien integrieren?",
+      "answer": "Ja. Die SEPPA SSB-20C kann problemlos mit vorhandenen Systemen für Preformzuführung, Abfüllung, Verschließung und Etikettierung kombiniert werden."
+    },
+    {
+      "question": "5. Warum entscheiden sich Unternehmen für SEPPA?",
+      "answer": "SEPPA verbindet langjährige Erfahrung im Maschinenbau mit moderner PET-Streckblastechnologie und entwickelt Lösungen, die auf hohe Produktionsleistung, zuverlässigen Betrieb und langfristige Wirtschaftlichkeit ausgelegt sind."
+    }
+  ]
+}

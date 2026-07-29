@@ -1,0 +1,108 @@
+{
+  "title": "Heißleim-Etikettiermaschinen: Präzisionstechnologie für Hochgeschwindigkeits-Produktionslinien",
+  "breadcrumbName": "Heißleim-Etikettierung",
+  "rootBreadcrumbName": "Labelling",
+  "rootBreadcrumbPath": "/labelling",
+  "overviewTitle": "Präzisionstechnologie für Hochgeschwindigkeits-Produktionslinien",
+  "overviewDescription": "Hochleistungs-Produktionslinien erfordern kompromisslose Präzision. In der industriellen Getränke- und Lebensmittelproduktion gilt die Heißleim-Etikettierung als bewährte Technologie für die sichere Befestigung von Rundum- und Punktetiketten aus Papier oder Folie. SEPPA LABELLING Systems entwickelt automatisierte Etikettierlösungen mit thermoplastischen Klebstoffen, die eine zuverlässige Verbindung bei höchsten Produktionsgeschwindigkeiten ermöglichen.",
+  "overviewsubDescription": [
+    "Der Betrieb einer modernen automatischen Etikettiermaschine erfordert ein tiefes Verständnis der Klebstoffrheologie, Temperaturführung und rotierenden Maschinendynamik. Durch den Einsatz einer spezialisierten Heißleimmaschine wird der Klebstoff exakt dosiert und positioniert. Besonders bei vorgestanzten Etiketten auf zylindrischen Behältern gewährleisten hochwertige Nordson-Düsen eine präzise Auftragung ohne unnötigen Klebstoffverbrauch.",
+    "Seppa Heißleim-Etikettiermaschinen sind für anspruchsvolle Produktionsumgebungen entwickelt. Durch exakte Temperaturregelung und synchronisierte Rotationsplattformen gewährleisten sie hohe Verfügbarkeit, minimale Klebstofffädenbildung und ein gleichmäßiges Erscheinungsbild über tausende Produktionszyklen pro Schicht."
+  ],
+  "featuresTitle": "Schlüsselmerkmale, Effizienz und Leistungsvorteile",
+  "features": [
+    {
+      "title": "Konstante Temperaturstabilität",
+      "description": "Schon geringe Abweichungen verändern die Viskosität des Klebstoffs. Seppa Systeme nutzen mikroprozessorgesteuerte Leimtanks, die das thermische Gleichgewicht konstant halten und die Schmelzviskosität optimal an das verwendete Etikettenmaterial anpassen."
+    },
+    {
+      "title": "Servogesteuerte Behälterpositionierung",
+      "description": "Während die automatische Etikettiermaschine das Etikettenmaterial präzise aus dem Magazin zuführt, steuert die elektronische Leimkontrolle das exakte Auftragungsmuster auf Edelstahl-Vakuumtrommeln."
+    },
+    {
+      "title": "Hochgeschwindigkeitsleistung",
+      "description": "Die Heißleim-Etikettiertechnik von Seppa deckt Leistungsbereiche von 60 BPM bis zu 600 BPM für Hochgeschwindigkeits-BOPP-Anwendungen ab. Werkzeuglose Formatwechsel reduzieren die OEE-Stillstandszeiten."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Vorteile automatisierter Heißleim-Etikettierung",
+      "paragraphs": [
+        "Geringere Betriebskosten: Durch elektronisch gesteuerte Düsen wird der Klebstoff gezielt aufgetragen und Materialverlust minimiert. Die hohe Geschwindigkeit moderner Verpackungs-Etikettiermaschinen reduziert die Kosten pro Einheit.",
+        "Zuverlässige Haftung bei schwierigen Bedingungen: Thermoplastische Klebstoffe benötigen keine langen Trocknungszeiten. Sie durchdringen selbst geringe Oberflächenfeuchtigkeit bei Kaltabfüllung und erzeugen eine sofort belastbare Verbindung.",
+        "Höhere OEE-Produktionsleistung: Automatische Etikettiermaschinen entfernen manuelle Arbeitsschritte aus dem Prozess und gewährleisten konstante Qualität unabhängig vom Bediener."
+      ]
+    }
+  ],
+  "applicationsTitle": "Industrielle Anwendungen von Heißleim-Etikettiermaschinen",
+  "applicationsSubtitle": "Für anspruchsvolle Rundum-Etikettierung auf verschiedensten Behälterformen und Materialien.",
+  "applications": [
+    {
+      "title": "Getränke- & Brauereiindustrie",
+      "description": "Flaschenetikettiermaschinen für Hochgeschwindigkeitslinien, die unempfindlich gegenüber Kaltabfüll-Feuchtigkeit und Kondensation sind."
+    },
+    {
+      "title": "Lebensmittel- & Speiseölbehälter",
+      "description": "Etikettierung von Dosen, Gläsern und Kunststoffbehältern mit hoher mechanischer Stabilität."
+    },
+    {
+      "title": "Spezialverpackungen",
+      "description": "Zuverlässige BOPP- und Papieretikettenverarbeitung für HDPE-Kunststoffe, beschichtete Metalle und Glasoberflächen."
+    },
+    {
+      "title": "Internationale FMCG-Verpackung",
+      "description": "Standardisierte, rezeptgesteuerte Etikettierprozesse mit minimaler Rüstzeit bei Produktwechseln."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions für Heißleim-Etikettiermaschinen wählen?",
+    "description": "Globale Getränke- und Lebensmittelhersteller setzen auf Seppa Solutions, weil wir komplette integrierte Etikettierlösungen entwickeln.",
+    "paragraphs": [
+      "Die langjährige Engineering-Erfahrung im Bereich robuster Verpackungs-Etikettiermaschinen ermöglicht Systeme, die speziell für hohe Produktionsleistungen und langfristigen 24/7-Betrieb ausgelegt sind.",
+      "Eine Seppa Heißleimmaschine steht für präzise Klebstoffdosierung, stabile mechanische Synchronisation, reduzierte Wartungsanforderungen und niedrige Gesamtbetriebskosten (TCO)."
+    ]
+  },
+  "methodology": {
+    "title": "Heißleim-Etikettierprozess: Methodik und Ablauf",
+    "steps": [
+      {
+        "title": "Behältereinlauf & Ausrichtung",
+        "description": "Behälter werden über eine Einlaufschnecke und einen Sternverteiler präzise an das Etikettierkarussell übergeben."
+      },
+      {
+        "title": "Stationärer Leimauftrag & Transfer",
+        "description": "Vor der Etikettenaufnahme bringen präzise Leimdüsen den Klebstoff exakt auf. Die Vakuumtrommel übergibt das Etikett faltenfrei an den rotierenden Behälter."
+      },
+      {
+        "title": "Andrücken & Versiegeln",
+        "description": "Spezielle Bürstenstationen und pneumatische Druckelemente schließen die Etikettenüberlappung und sorgen für eine sofort stabile Verbindung."
+      }
+    ],
+    "outro": [
+      "Fazit: Eine moderne Heißleim-Etikettiermaschine ist mehr als ein Etikettiersystem. Sie ist ein entscheidender Bestandteil einer effizienten Verpackungslinien. Mit präziser Klebstoffkontrolle, automatisierter Formatumstellung und robuster industrieller Konstruktion entwickelt Seppa Solutions Etikettiertechnik für Hersteller, die maximale Produktionssicherheit und langfristige Leistung erwarten."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie wirtschaftlich ist Heißleim-Etikettierung?",
+      "answer": "Bei hohen Produktionsvolumen ist sie besonders effizient. Durch präzise Düsenapplikation wird Klebstoffverbrauch reduziert, während hohe Geschwindigkeiten die Kosten pro Einheit senken."
+    },
+    {
+      "question": "2. Wie arbeitet eine Flaschenetikettiermaschine bei Kondensation?",
+      "answer": "Thermoplastische Klebstoffe besitzen eine hohe Anfangshaftung und können auch bei leichter Oberflächenfeuchtigkeit eine sichere Verbindung herstellen."
+    },
+    {
+      "question": "3. Wie wird die Präzision der Leimdosierung gesichert?",
+      "answer": "Durch stationäre Behälterpositionierung während des Leimauftrags, hochwertige Nordson-Düsen und mikroprozessorgesteuerte Klebstofftemperaturregelung."
+    },
+    {
+      "question": "4. Warum ist Heißleim besser als klassischer Kaltleim?",
+      "answer": "Heißleim bietet extrem schnelle Aushärtung, bessere Haftung auf schwierigen Oberflächen wie PET/BOPP und eliminiert lange Trocknungszeiten spürbar."
+    },
+    {
+      "question": "5. Warum ist Seppa Solutions ein führender Anbieter von Etikettiertechnik?",
+      "answer": "Seppa kombiniert modernste Servo-Steuerung mit robuster, wartungsarmer Maschinenkonstruktion für anspruchsvolle 24/7-Industriebedingungen."
+    }
+  ]
+}

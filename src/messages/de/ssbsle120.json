@@ -1,0 +1,108 @@
+{
+  "title": "SEPPA SSB-SLE-120: PET-Streckblasmaschine für die industrielle Großserienproduktion von PET-Flaschen",
+  "breadcrumbName": "SSB-SLE-120",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Überblick über die SEPPA SSB-SLE-120 PET-Streckblasmaschine",
+  "overviewDescription": "Hersteller von PET-Behältern, die im Zwei- oder Drei-Schicht-Betrieb produzieren, benötigen eine Blasformmaschine, die auch bei langen Produktionszyklen konstant arbeitet. Produktionsunterbrechungen während des Preformwechsels oder Temperaturschwankungen im Heizsystem führen unmittelbar zu Ausschuss und geringerer Produktivität. Die SEPPA SSB-SLE-120 wurde speziell entwickelt, um über komplette Produktionsschichten hinweg eine gleichmäßige Wandstärke und stabile Prozessqualität sicherzustellen.",
+  "overviewsubDescription": [
+    "Im Mittelpunkt steht eine Hochleistungs-Streckblasmaschine für die kontinuierliche Serienfertigung. Während kleinere halbautomatische Anlagen für geringe Stückzahlen ausgelegt sind, erreicht die SSB-SLE-120 eine kontinuierliche Produktion mit mehreren Kavitäten und einer Ausbringung von mehreren Hunderttausend Flaschen pro Schicht. Maschinenrahmen, servogesteuerte Reckstangen und das pneumatische System sind konsequent für den industriellen Dauerbetrieb ausgelegt.",
+    "Ein wesentlicher Vorteil gegenüber älteren linearen Blasformanlagen ist das präzise Wärmemanagement. Überhitzte Preforms können Trübungen oder Spannungsrisse verursachen, während eine zu niedrige Temperatur zu ungleichmäßigen Wandstärken und verminderter Fallfestigkeit führt. Die mehrzonige Infrarot-Heizung mit unabhängiger Regelung jeder Heizzone sorgt für eine deutlich gleichmäßigere Temperaturverteilung und stabile Produktionsbedingungen.",
+    "Für Hersteller von Getränken, Haushaltschemikalien oder Konsumgütern bietet die SSB-SLE-120 die Möglichkeit, hohe Produktionsvolumen auf einer einzigen Linie zu realisieren. Durch geringere Ausschussraten und eine hohe Prozessstabilität amortisiert sich die Anlage bereits nach kurzer Betriebszeit."
+  ],
+  "featuresTitle": "Hauptmerkmale der SSB-SLE-120",
+  "features": [
+    {
+      "title": "Mehrzonige Infrarot-Heizmodule",
+      "description": "Jede Heizzone arbeitet mit einer eigenen PID-Regelung. Dadurch lässt sich das Temperaturprofil exakt auf unterschiedliche Preformgrößen und Wandstärken abstimmen. Schwere Preforms profitieren von längeren Aufheizzeiten, während leichtere Preforms schneller verarbeitet werden können – ohne Änderungen am Heizofen."
+    },
+    {
+      "title": "Hochdruck-Luftrückgewinnung",
+      "description": "Druckluft zählt zu den größten Energiekosten einer PET-Streckblasanlage. Das integrierte Rückgewinnungssystem nutzt die Abluft des Endblasprozesses für den anschließenden Vorblasvorgang. Dadurch reduziert sich der Druckluftverbrauch deutlich und die Betriebskosten sinken nachhaltig."
+    },
+    {
+      "title": "Robustes Schließsystem und schneller Formwechsel",
+      "description": "Die Schließeinheit ist für dauerhaft hohe Belastungen im Mehrschichtbetrieb ausgelegt. Dank eines werkzeuglosen Schnellwechselsystems können Formen innerhalb kurzer Zeit ausgetauscht werden. Besonders bei wechselnden Flaschenformaten reduziert dies Stillstandszeiten erheblich und erhöht die Gesamtanlageneffektivität."
+    },
+    {
+      "title": "Elektronische Überwachung der Temperaturstabilität",
+      "description": "Sensoren überwachen kontinuierlich sämtliche Heizzonen und erkennen Temperaturabweichungen frühzeitig. So werden fehlerhafte Preforms identifiziert, bevor sie den Blasprozess erreichen. Dadurch lassen sich Ausschuss und Materialverluste deutlich reduzieren."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche in verschiedenen Industrien",
+  "applicationsSubtitle": "Die SEPPA SSB-SLE-120 wurde für eine Vielzahl industrieller Anwendungen entwickelt und eignet sich für unterschiedliche Flaschenformen und Behältergrößen.",
+  "applications": [
+    {
+      "title": "Getränkeindustrie",
+      "description": "Produziert PET-Flaschen für Mineralwasser, Erfrischungsgetränke, Säfte und isotonische Getränke, bei denen sowohl hohe Transparenz als auch Druckbeständigkeit erforderlich sind."
+    },
+    {
+      "title": "Haushalts- und Chemieprodukte",
+      "description": "Herstellung robuster Kunststoffbehälter mit hoher Formstabilität und zuverlässiger Beständigkeit gegenüber verschiedenen Füllgütern."
+    },
+    {
+      "title": "Lohnabfüllung und Großhandel",
+      "description": "Ideal für Lohnhersteller, die PET-Flaschen für verschiedene Marken produzieren. Schnelle Formatwechsel reduzieren die Stillstandszeiten."
+    },
+    {
+      "title": "Lebensmittel & Speiseöle",
+      "description": "Ermöglicht eine präzise Materialverteilung für Speiseöle, alkalisches Wasser und andere sensible Abfüllgüter."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Blasmaschinen wählen?",
+    "description": "SEPPA Solutions liefert ganzheitliche Verpackungstechnologie für anspruchsvolle Abfüller weltweit. Jede SSB-SLE-120 wird optimal auf die Produktionsanforderungen abgestimmt.",
+    "paragraphs": [
+      "Als erfahrener Hersteller integrierter Linien deckt SEPPA die gesamte Bandbreite von Preform-Handling über Blasformen bis hin zu Transportsystemen und Abfüllanlagen ab.",
+      "Dies sichert eine reibungslose Schnittstellenabstimmung und verkürzt die Inbetriebnahmezeit vor Ort erheblich."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-SLE-120 PET-Streckblasmaschine",
+    "subtitle": "Der Produktionsprozess basiert auf einer automatischen Zuführung und einer synchronisierten Materialverarbeitung:",
+    "steps": [
+      {
+        "title": "Preform-Zuführung",
+        "description": "Aus einem Vorratsbehälter gelangen die Preforms über ein Rotationszuführsystem halsorientiert und kontinuierlich in den Ofen."
+      },
+      {
+        "title": "Thermische Konditionierung",
+        "description": "Während die Preforms rotieren, durchlaufen sie den mehrzonigen Infrarot-Ofen für eine gleichmäßige Wandstärkenverteilung."
+      },
+      {
+        "title": "Strecken und Vorblasen",
+        "description": "Eine servogesteuerte Reckstange dehnt den Preform axial, während Niederdruckluft die erste radiale Expansion übernimmt."
+      },
+      {
+        "title": "Hochdruck-Blasformen & Ejektion",
+        "description": "Druckluft zwischen 35 und 40 bar formt den Preform an die Werkzeugkontur. Nach dem Abkühlen öffnet sich das Werkzeug und wirft die fertige Flasche aus."
+      }
+    ],
+    "outro": [
+      "Dieser vollständig automatisierte Ablauf ermöglicht eine dauerhaft hohe Ausbringung ohne nennenswerte Leistungseinbußen oder thermische Drift."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Benötigt das Schließsystem der SSB-SLE-120 Hydrauliköl?",
+      "answer": "Nein. Die SSB-SLE-120 ist auf ein wartungsarmes und sauberes Schließsystem optimiert, was das Risiko von Ölverunreinigungen ausschließt."
+    },
+    {
+      "question": "2. Wie hoch ist die Energieeinsparung durch die Luftrückgewinnung?",
+      "answer": "Das Rückgewinnungssystem reduziert den Druckluftverbrauch und senkt die damit verbundenen Kompressor-Stromkosten um bis zu 25 %."
+    },
+    {
+      "question": "3. Welche Flaschengrößen können produziert werden?",
+      "answer": "Die Maschine ist flexibel für gängige PET-Behältervolumen ausgelegt. Genaue Spezifikationen werden bei der Werkzeugauslegung definiert."
+    },
+    {
+      "question": "4. Wie stabil ist die Erwärmung bei schwankenden Umgebungstemperaturen?",
+      "answer": "Die elektronische Ofenlüftung und die geschlossene Regelung kompensieren Schwankungen und halten die Preformtemperatur konstant."
+    },
+    {
+      "question": "5. Bietet SEPPA Vor-Ort-Inbetriebnahme an?",
+      "answer": "Ja. Technische Inbetriebnahme und Schulung des Bedienpersonals gehören zum Standard-Lieferumfang von SEPPA Solutions."
+    }
+  ]
+}

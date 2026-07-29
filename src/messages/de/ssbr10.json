@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-R10: Rotary PET Blasmaschine für industrielle Hochvolumen-Produktion",
+  "breadcrumbName": "SSB-R10",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Überblick über die SEPPA SSB-R10 Rotary PET Blasmaschine",
+  "overviewDescription": "Eine PET-Flaschenproduktionslinie scheitert selten an der kurzfristig erreichbaren Höchstgeschwindigkeit. Die entscheidende Frage ist, ob eine automatische Blasmaschine diese Leistung dauerhaft über mehrere Schichten hinweg stabil halten kann. Genau darauf wurde die SEPPA SSB-R10 ausgelegt: maximale Verfügbarkeit, konstante Qualität und zuverlässiger Betrieb unter kontinuierlicher Belastung.",
+  "overviewsubDescription": [
+    "Die SSB-R10 ist eine Rotary PET Blasmaschine mit kontinuierlichem Karussellbetrieb und zehn Kavitäten. Anders als lineare Systeme arbeitet sie ohne wiederholte Start-Stopp-Bewegungen. Die PET-Preforms bewegen sich kontinuierlich durch die Heiz- und Blasstationen, wodurch mechanische Verluste reduziert und höhere reale Produktionsleistungen erreicht werden.",
+    "Viele Hersteller bezeichnen ihre Anlagen lediglich als automatische Blasmaschine. Die SSB-R10 geht jedoch deutlich weiter. Die Kombination aus präziser Rotary-Kinematik, synchronisierten Bewegungsabläufen und intelligenter Prozessüberwachung ermöglicht eine stabile Produktion, bei der jede Kavität unter identischen Bedingungen arbeitet. Für Betriebe mit Drei-Schicht-Produktion zählt nicht nur die Nennleistung einer Maschine, sondern ihre Fähigkeit, diese Leistung auch nach Monaten unter Dauerlast zu halten. Genau hier zeigt die SSB-R10 ihre Stärke als industrielle PET-Flaschenblasmaschine."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen der SSB-R10",
+  "features": [
+    {
+      "title": "Hochleistungs-Rotationskarussell mit Servoantrieb",
+      "description": "Das kraftvolle Rotary-Karussell wird durch ein synchronisiertes Servosystem gesteuert. Dadurch bleiben alle zehn Kavitäten präzise aufeinander abgestimmt, ohne dass sich während langer Produktionszyklen zeitliche Abweichungen aufbauen."
+    },
+    {
+      "title": "Mehrzonen-Infrarot-Heizsystem",
+      "description": "Jede PET-Vorform erhält ein individuell angepasstes Temperaturprofil. Die unabhängige Steuerung der IR-Zonen ermöglicht eine optimale Erwärmung entsprechend der Preform-Geometrie, Wandstärke und Flaschenform. Diese Technologie verhindert typische Fehler wie ungleichmäßige Materialverteilung, optische Trübungen oder instabile Flaschenböden."
+    },
+    {
+      "title": "Präzise elektronische Blasdrucksteuerung und HMI",
+      "description": "Der zweistufige Blasprozess aus Vorblasen und Hochdruckblasen wird millisekundengenau gesteuert. Dadurch kann die automatische PET Blasmaschine unterschiedliche PET-Materialien und Flaschenformate mit stabilen Prozessparametern verarbeiten. Sensoren überwachen Temperaturkonstanz und Prozessabweichungen bereits während der Produktion, um Fehler frühzeitig zu erkennen."
+    }
+  ],
+  "applicationsTitle": "Anwendungen der SSB-R10 in Getränke- und Verpackungsindustrien",
+  "applicationsSubtitle": "Die SEPPA SSB-R10 wurde für vielseitige PET-Verpackungsanwendungen entwickelt und eignet sich besonders für Hersteller mit hohen Produktionsvolumen.",
+  "applications": [
+    {
+      "title": "Mineralwasserproduktion",
+      "description": "Als Mineralwasser-Flaschenblasmaschine erfüllt die SSB-R10 die Anforderungen moderner Wasserabfüller. Besonders bei leichten PET-Flaschen sind geringe Wandstärken, hohe Stabilität und konstante Flaschenqualität entscheidend."
+    },
+    {
+      "title": "Kohlensäurehaltige Getränke (CSD)",
+      "description": "Bei Softdrinks müssen PET-Flaschen höheren Innendrücken standhalten. Die präzise Temperaturführung und Drucksteuerung ermöglichen stabile Behälter mit optimierter Boden- und Seitenwandstruktur."
+    },
+    {
+      "title": "Säfte, Sportgetränke und Großgegebinde",
+      "description": "Auch größere Flaschenformate stellen besondere Anforderungen an Preform-Verhältnis und Materialverteilung. Die flexible Rotary-Plattform ermöglicht schnelle Anpassungen durch gespeicherte Prozessparameter und passende Werkzeugkonfigurationen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET Blasmaschinen wählen?",
+    "description": "SEPPA Solutions entwickelt komplette PET-Verpackungssysteme und liefert nicht nur einzelne Maschinenkomponenten. Die SSB-R10 wird für jede Anwendung individuell ausgelegt – basierend auf Flaschenformat, Preform-Geometrie, Materialtyp und gewünschter Produktionsleistung.",
+    "paragraphs": [
+      "Die Integration in bestehende Füll-, Verschließ- und Etikettieranlagen wird bereits während der Projektplanung berücksichtigt. Dadurch können Kunden eine vollständig synchronisierte Produktionslinie aufbauen.",
+      "Für Hersteller bedeutet die Entscheidung für eine SEPPA automatische Flaschenblasmaschine nicht nur moderne Technik, sondern langfristige Betriebssicherheit. Technischer Support, Prozessoptimierung und zuverlässige Wartung begleiten die Anlage über den gesamten Lebenszyklus."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise des PET-Flaschenblasprozesses",
+    "subtitle": "Der Produktionsablauf der SEPPA SSB-R10 basiert auf einem vollständig automatisierten und synchronisierten Prozess:",
+    "steps": [
+      {
+        "title": "Kontinuierliche Preform-Zuführung",
+        "description": "Die PET-Preforms werden kontinuierlich über das Zuführsystem auf das Karussell übertragen, ohne Unterbrechungen im Arbeitsfluss."
+      },
+      {
+        "title": "Mehrzonige IR-Erwärmung",
+        "description": "Anschließend durchlaufen sie mehrere IR-Heizzonen, in denen das Material auf die optimale Strecktemperatur gebracht wird, ohne den Flaschenhals zu überhitzen."
+      },
+      {
+        "title": "Synchronisierter Streckblasprozess",
+        "description": "Dort erzeugen Streckstange und Druckluftsteuerung die biaxiale Orientierung des PET-Materials. Der Vorblasprozess formt die Grundstruktur, während der Hochdruck-Blasvorgang die endgültige Flaschengeometrie erzeugt."
+      },
+      {
+        "title": "Automatische Entnahme & Luft-Rückgewinnung",
+        "description": "Nach der Kühlung erfolgt die automatische Ausschleusung. Die kontinuierliche Bewegung des Karussells ermöglicht einen gleichmäßigen Produktionsfluss ohne Unterbrechungen."
+      }
+    ],
+    "outro": [
+      "Im Vergleich zu einem halbautomatischen Flaschenbläser eliminiert die SSB-R10 menschliche Schwankungen und ermöglicht eine konstante, energieeffiziente industrielle Produktion durch Druckluft-Rückgewinnung."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartung benötigt eine automatische Flaschenblasmaschine wie die SSB-R10?",
+      "answer": "Die wichtigsten Wartungsbereiche sind IR-Lampen, Dichtungen, Blasventile und Prozesskalibrierungen. SEPPA empfiehlt geplante Wartungsintervalle, damit Verschleiß früh erkannt und ungeplante Stillstände vermieden werden."
+    },
+    {
+      "question": "2. Warum ist eine Rotary PET Blasmaschine effizienter als ein halbautomatischer Flaschenbläser?",
+      "answer": "Ein halbautomatischer Flaschenbläser ist durch manuelle Bedienung und einzelne Produktionszyklen begrenzt. Die Rotary-Technologie der SSB-R10 ermöglicht dagegen kontinuierliche Bewegung und parallele Verarbeitung von zehn Kavitäten."
+    },
+    {
+      "question": "3. Warum wählen Hersteller SEPPA als Anbieter von Mineralwasser-Flaschenblasmaschinen?",
+      "answer": "SEPPA optimiert jede Anlage für die tatsächlichen Flaschenanforderungen des Kunden. Spezifische Heizprofile, präzise Drucksteuerung und umfangreiche Integrationserfahrung sorgen für stabile Produktion."
+    },
+    {
+      "question": "4. Wie verbessert eine vollautomatische PET Blasmaschine die Energieeffizienz?",
+      "answer": "Die SSB-R10 reduziert den Druckluftverbrauch durch Rückgewinnungssysteme und optimiert den Energieeinsatz durch individuell gesteuerte IR-Heizzonen."
+    },
+    {
+      "question": "5. Warum vertrauen Getränkehersteller auf SEPPA Rotary Blasmaschinen?",
+      "answer": "SEPPA liefert nicht nur Maschinen, sondern komplette Produktionslösungen mit Engineering, Inbetriebnahme und langfristigem Support. Entscheidend ist die Fähigkeit, hohe Produktionsleistung dauerhaft stabil zu gewährleisten."
+    }
+  ]
+}

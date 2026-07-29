@@ -1,0 +1,97 @@
+{
+  "title": "Energieeffiziente Kältemaschinen – Funktionsweise und Vorteile für industrielle Prozesskühlung",
+  "breadcrumbName": "Energieeffiziente Kältemaschinen",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Präzise Prozesskühlung bei minimalem Energieverbrauch",
+  "overviewDescription": "Viele Industrieunternehmen arbeiten noch mit älteren wassergekühlten Kältesystemen, die in einer Zeit entwickelt wurden, als Stromkosten vergleichsweise niedrig waren und Energieeffizienz kaum eine Rolle spielte. Heute stehen steigende Energiekosten und Nachhaltigkeitsziele im Mittelpunkt wirtschaftlicher Investitionsentscheidungen. Energieeffiziente Kältemaschinen wurden speziell entwickelt, um eine präzise Prozesskühlung bei minimalem Energieverbrauch sicherzustellen. Im Gegensatz zu herkömmlichen Kältemaschinen mit fest drehenden Verdichtern passen moderne Systeme sämtliche Betriebsparameter kontinuierlich an den tatsächlichen Kühlbedarf an.",
+  "overviewsubDescription": [
+    "Dieser Unterschied ist entscheidend. In den meisten Produktionsbetrieben wird die maximale Kühllast nur für einen geringen Teil der Betriebszeit benötigt. Die größten Energieeinsparungen erzielen energieeffiziente Kühlsysteme daher im Teillastbetrieb, in dem industrielle Anlagen den überwiegenden Teil ihrer Laufzeit arbeiten."
+  ],
+  "featuresTitle": "Wichtige Merkmale und technische Eigenschaften",
+  "features": [
+    {
+      "title": "Frequenzgeregelte Verdichter",
+      "description": "Die energieeffizienten Kältemaschinen von Seppa nutzen drehzahlgeregelte Scroll- oder Schraubenverdichter mit Frequenzumrichter (VFD). Die Verdichterleistung wird kontinuierlich an die aktuelle Kühllast angepasst, anstatt mit fester Leistung ein- und auszuschalten. Bei einer Auslastung von 50 % benötigt ein VFD-geregelter Verdichter typischerweise 30–40 % weniger elektrische Energie als ein vergleichbares System mit konstanter Drehzahl."
+    },
+    {
+      "title": "Hochleistungs-Wärmetauscher",
+      "description": "Seppa setzt Plattenverdampfer und Rohrbündelkondensatoren mit Annäherungstemperaturen von lediglich 1–2 °C ein. Eine geringe Temperaturdifferenz reduziert die Druckunterschiede im Kältemittelkreislauf und verringert dadurch den Energiebedarf des Verdichters pro erzeugter Kälteleistung."
+    },
+    {
+      "title": "Intelligente SPS-Steuerung",
+      "description": "Jedes System verfügt über eine SPS-Steuerung. Ein integrierter Algorithmus zur Optimierung des Part Load Value (PLV) berechnet permanent die effizienteste Lastverteilung innerhalb des Kältemittelkreislaufs und der Pumpensysteme, um den Energieverbrauch unter allen Betriebsbedingungen zu minimieren."
+    }
+  ],
+  "applicationsTitle": "Industrielle Einsatzbereiche",
+  "applicationsSubtitle": "Für anspruchsvolle Fertigungsprozesse, bei denen Viskositätsstabilität und hohe OEE im Vordergrund stehen.",
+  "applications": [
+    {
+      "title": "Metall- & Kunststoffverarbeitung",
+      "description": "Spindelkühlung, Hydrauliksysteme und Werkzeugtemperierung erfordern eine stabile Kaltwassertemperatur mit Toleranzen von etwa ±0,5 °C."
+    },
+    {
+      "title": "Chemische & Pharma-Produktion",
+      "description": "Produktausbeute, Kristallisationsverhalten und Produktqualität hängen von einer absolut konstanten Prozesskühlung ab."
+    },
+    {
+      "title": "Kühlung von Rechenzentren",
+      "description": "Kältemaschinen zur Versorgung von CRAC-Systemen oder Direct-Liquid-Cooling-Anlagen verbessern nachweislich die Energieeffizienz (PUE-Wert)."
+    },
+    {
+      "title": "Lebensmittel- & Getränkeindustrie",
+      "description": "Sorgt für einen zuverlässigen Betrieb von Abfüll-, Kühl- und Pasteurisierungsprozessen ohne temperaturbedingte Produktverluste."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions?",
+    "description": "Seppa Solutions entwickelt und realisiert energieeffiziente Kältemaschinen für anspruchsvolle Produktionsbedingungen in Süd- und Südostasien.",
+    "paragraphs": [
+      "Neben der Anlagentechnik entscheidet insbesondere die fachgerechte Inbetriebnahme über die tatsächliche Energieeffizienz. Seppa übernimmt die komplette Inbetriebsetzung des Kältemittelkreislaufs, die Integration der Steuerung sowie die Leistungsvalidierung, damit die geplanten PLV-Werte von Beginn an erreicht werden.",
+      "Auch nach der Inbetriebnahme sorgt ein vorausschauendes Wartungskonzept für dauerhaft hohe Effizienz. Verschmutzte Wärmetauscher, Kältemittelverluste oder Lagerverschleiß werden frühzeitig erkannt und behoben, bevor sie den Energieverbrauch erhöhen."
+    ]
+  },
+  "methodology": {
+    "title": "So arbeiten die Kältemaschinen von Seppa",
+    "steps": [
+      {
+        "title": "Erfassung der Kühllast",
+        "description": "Temperatur und Volumenstrom des Rücklaufwassers werden kontinuierlich überwacht. Die SPS berechnet daraus den aktuellen Kühlbedarf und vergleicht ihn mit der vorhandenen Verdichterleistung."
+      },
+      {
+        "title": "Adaptive Regelung & Wärmeabfuhr",
+        "description": "Die Steuerung passt die Verdichterdrehzahl an und regelt die Kondensatorventilatoren beziehungsweise die Kühlturmpumpen automatisch. Bereits eine Reduzierung der Ventilatordrehzahl auf 80 % senkt deren Stromverbrauch um ca. 50 %."
+      },
+      {
+        "title": "Präzise Kaltwasserversorgung",
+        "description": "Der Verdampfer liefert Kaltwasser mit konstantem Sollwert. Drehzahlgeregelte Primärpumpen fördern nur die tatsächlich erforderliche Wassermenge, was den Energiebedarf weiter reduziert."
+      }
+    ],
+    "outro": [
+      "Fazit: Energieeffiziente Kältemaschinen sind heute ein wesentlicher Bestandteil einer wirtschaftlichen und nachhaltigen Prozesskühlung. Mit frequenzgeregelten Verdichtern, intelligenten SPS-Steuerungen und optimierten Wärmetauschern reduzieren sie den Energieverbrauch erheblich und sorgen gleichzeitig für höchste Prozesssicherheit. Seppa Solutions unterstützt Industrieunternehmen mit leistungsstarken, energieeffizienten Kühlsystemen – von der Planung und Inbetriebnahme bis zur langfristigen Wartung – und schafft so nachhaltige Lösungen für eine zuverlässige industrielle Prozesskühlung."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Betriebskosten spart ein energieeffizientes Kühlsystem?",
+      "answer": "Unternehmen erzielen beim Umstieg auf energieeffiziente Kühlsysteme von Seppa typischerweise eine Reduzierung der kühlungsbedingten Energiekosten um 25–40 %. Die Amortisationszeit liegt meist zwischen 2,5 und 4 Jahren."
+    },
+    {
+      "question": "2. Wie reduziert eine hocheffiziente Kältemaschine den CO₂-Ausstoß?",
+      "answer": "Durch den reduzierten Stromverbrauch sinken die indirekten Scope-2-Emissionen spürbar. Eine Energieeinsparung von 35 % bei einer 200-Tonnen-Anlage spart ca. 150–180 Tonnen CO₂ pro Jahr."
+    },
+    {
+      "question": "3. Warum sind diese Kältemaschinen leistungsfähiger als ältere Systeme?",
+      "answer": "Konventionelle Kältemaschinen erreichen ihren besten COP nur unter Volllast. Die Systeme von Seppa erzielen dank frequenzgeregelter Verdichter und intelligenter PLV-Optimierung auch im Teillastbereich (40-80 % Auslastung) eine hohe Effizienz."
+    },
+    {
+      "question": "4. Welchen Einfluss hat die Wartung auf die Energieeffizienz?",
+      "answer": "Verschmutzte Wärmetauscher oder Kältemittelverluste verschlechtern die Effizienz kontinuierlich. Die vorausschauende Zustandsüberwachung verhindert solche schleichenden Verluste von bis zu 25 % der Effizienz innerhalb von zwei Jahren."
+    },
+    {
+      "question": "5. Warum Seppa Solutions statt importierter Kältemaschinen?",
+      "answer": "Die Systeme sind auf anspruchsvolle Umgebungsbedingungen wie hohe Temperaturen und schwankende Netzqualitäten vor Ort ausgelegt, kombiniert mit schnellem Service und Ersatzteilversorgung."
+    }
+  ]
+}

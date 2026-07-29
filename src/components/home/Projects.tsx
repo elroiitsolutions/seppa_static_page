@@ -8,6 +8,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
+
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -18,40 +21,45 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const projects = [
-  {
-    title: 'PET BLOWER',
-    subtitle: 'Complete Line Solutions for PET Blowing.',
-    image: 'pics/pet-blower.jpg'
-  },
-  {
-    title: 'PROCESS TECHNOLOGY',
-    subtitle: 'Complete Line Solutions for Process Technology.',
-    image: 'pics/process-technology.jpg'
-  },
-  {
-    title: 'PET FILLING LINE',
-    subtitle: 'Complete Line Solutions for PET Filling.',
-    image: 'pics/pet-filling-machine.jpg'
-  },
-  {
-    title: 'GLASS FILLING LINE',
-    subtitle: 'Complete Line Solutions for Glass Filling.',
-    image: 'pics/glass-filling-machine.jpg'
-  },
-  {
-    title: 'CAN FILLING LINE',
-    subtitle: 'Complete Line Solutions for Can Filling.',
-    image: 'pics/can-filling-machine.jpg'
-  },
-  {
-    title: 'LARGE BOTTLE FILLING LINE',
-    subtitle: 'Complete Line Solutions for Large Bottles.',
-    image: 'pics/large-bottle-filling-machine.jpg'
-  }
-];
-
 const Projects = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+
+  const getT = (key: string) => t(`Projects.${key}`);
+
+  const projects = [
+    {
+      title: getT('project1Title'),
+      subtitle: getT('project1Subtitle'),
+      image: '/pics/pet-blower.jpg'
+    },
+    {
+      title: getT('project2Title'),
+      subtitle: getT('project2Subtitle'),
+      image: '/pics/process-technology.jpg'
+    },
+    {
+      title: getT('project3Title'),
+      subtitle: getT('project3Subtitle'),
+      image: '/pics/pet-filling-machine.jpg'
+    },
+    {
+      title: getT('project4Title'),
+      subtitle: getT('project4Subtitle'),
+      image: '/pics/glass-filling-machine.jpg'
+    },
+    {
+      title: getT('project5Title'),
+      subtitle: getT('project5Subtitle'),
+      image: '/pics/can-filling-machine.jpg'
+    },
+    {
+      title: getT('project6Title'),
+      subtitle: getT('project6Subtitle'),
+      image: '/pics/large-bottle-filling-machine.jpg'
+    }
+  ];
+
   return (
     <section className="py-12 lg:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
@@ -67,11 +75,13 @@ const Projects = () => {
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
 
-            <span className="text-sm font-medium text-dark uppercase tracking-wider">COMPLETE LINE SOLUTIONS</span>
+            <span className="text-sm font-medium text-dark uppercase tracking-wider">
+              {getT('tag')}
+            </span>
           </motion.div>
      <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
           <AnimatedHeading
-            text="Comprehensive Beverage & Dairy Processing Lines"
+            text={getT('heading')}
             elementType="h2"
             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark leading-tight [&>span]:justify-center"
           />
@@ -87,6 +97,7 @@ const Projects = () => {
           className="relative group"
         >
           <Swiper
+            dir="ltr"
             modules={[Pagination, Autoplay, Navigation]}
             spaceBetween={32}
             slidesPerView={1}

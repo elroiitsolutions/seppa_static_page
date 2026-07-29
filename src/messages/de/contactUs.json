@@ -1,0 +1,118 @@
+{
+  "breadcrumbsHome": "Startseite",
+  "breadcrumbsContact": "Kontakt",
+  "title": "Kontakt",
+  "headquarters": "Hauptsitz",
+  "getInTouch": "Kontakt aufnehmen",
+  "subtitle": "Wenden Sie sich an unseren Hauptsitz oder erkunden Sie unsere weltweiten Niederlassungen, um einen Ansprechpartner in Ihrer Nähe zu finden.",
+  "tollFree": "Gebührenfrei:",
+  "quickEmail": "E-Mail:",
+  "registeredOffice": "Eingetragener Firmensitz:",
+  "sendMessage": "Nachricht senden",
+  "placeholderName": "Ihr Name *",
+  "placeholderEmail": "E-Mail-Adresse *",
+  "placeholderPhone": "Telefonnummer *",
+  "placeholderLocation": "Standort *",
+  "placeholderMessage": "Nachricht schreiben... *",
+  "btnSubmit": "Nachricht absenden",
+  "btnSending": "Wird gesendet...",
+  "network": "Unser Netzwerk",
+  "branchOffices": "Weltweite Niederlassungen",
+  "selectOffice": "Wählen Sie eine Niederlassung aus, um den Standort auf der Karte anzuzeigen.",
+  "showing": "Angezeigt:",
+  "errName": "Ihr Name ist erforderlich",
+  "errEmailRequired": "E-Mail-Adresse ist erforderlich",
+  "errEmailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+  "errPhoneRequired": "Telefonnummer ist erforderlich",
+  "errPhoneInvalid": "Bitte geben Sie eine gültige Telefonnummer ein (10-15 Ziffern)",
+  "errLocation": "Standort ist erforderlich",
+  "errMessage": "Bitte geben Sie Ihre Nachricht ein",
+  "successTitle": "Vielen Dank für Ihre Kontaktaufnahme!",
+  "successMsg": "Ihre Nachricht wurde erfolgreich gesendet. Unser Support-Team wird sich in Kürze bei Ihnen melden.",
+  "offices": [
+    {
+      "city": "Mumbai (Hauptgeschäftsstelle)",
+      "address": "712 Shivai Plaza, Andheri (East), Mumbai-400059, Indien",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "Indien"
+    },
+    {
+      "city": "Chennai",
+      "address": "Vatsala Eashwaran Estate, No. 7, Paarivakkam Road, Chennai - 600056, Tamilnadu, Indien",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "dgmw@canadiancrystalline.net",
+      "country": "Indien"
+    },
+    {
+      "city": "Bengaluru",
+      "address": "4th Floor, Novel office, Begaum Mahal, Yellappachetty Layout, Bengaluru- 560042",
+      "phone": ["+91-9483525500"],
+      "email": "info@seppasolutions.com",
+      "country": "Indien"
+    },
+    {
+      "city": "Neu-Delhi",
+      "address": "No.1305, 13th Floor, Vikram Towers, Building no-16, Rajendra place, New Delhi - 110008",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "Indien"
+    },
+    {
+      "city": "Hyderabad",
+      "address": "Region Hyderabad",
+      "phone": ["+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "Indien"
+    },
+    {
+      "city": "USA",
+      "address": "439 N Briery Road, Biery Industrial Area, Irving, Texas",
+      "phone": ["Gebührenfrei: 1-(888)-270-2217", "+1 267 7339 732"],
+      "email": "mail@seppasolutions.com",
+      "country": "USA"
+    },
+    {
+      "city": "Kanada (Edmonton)",
+      "address": "Region Alberta",
+      "phone": ["+1-(403)-469-4015"],
+      "email": "ccw@canadianclear.com",
+      "country": "Kanada"
+    },
+    {
+      "city": "VAE",
+      "address": "Ajman Free Zone, V.A.E.",
+      "phone": ["+971507726933"],
+      "email": "mail@seppasolutions.com",
+      "country": "VAE"
+    },
+    {
+      "city": "Vereinigtes Königreich",
+      "address": "Region Vereinigtes Königreich",
+      "phone": ["+44 20300 27711"],
+      "email": "mail@seppasolutions.com",
+      "country": "Vereinigtes Königreich"
+    },
+    {
+      "city": "Deutschland & Belgien",
+      "address": "Region Brüssel",
+      "phone": ["+4917622913101"],
+      "email": "ccw@canadianclear.com",
+      "country": "Europa"
+    },
+    {
+      "city": "Australien",
+      "address": "Region Australien",
+      "phone": ["+61363877084"],
+      "email": "mail@seppasolutions.com",
+      "country": "Australien"
+    },
+    {
+      "city": "Armenien",
+      "address": "Region Armenien",
+      "phone": ["+37494890965"],
+      "email": "mail@seppasolutions.com",
+      "country": "Armenien"
+    }
+  ]
+}

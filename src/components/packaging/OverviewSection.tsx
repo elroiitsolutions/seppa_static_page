@@ -1,8 +1,8 @@
-"use client";
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { FiCheckCircle } from 'react-icons/fi';
+import { usePathname } from 'next/navigation';
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -22,9 +22,13 @@ interface OverviewSectionProps {
   imageSrc: string;
   imageSrc2?: string;
   layout?: 'side-by-side' | 'stacked';
+  locale?: string;
 }
 
-const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, subDescription, benefits, imageSrc, imageSrc2, layout = 'side-by-side' }) => {
+const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, subDescription, benefits, imageSrc, imageSrc2, layout = 'side-by-side', locale }) => {
+  const pathname = usePathname();
+  const isAr = locale === 'ar' || pathname.startsWith('/ar') || pathname.includes('/ar/');
+  
   return (
     <section className="py-12 lg:py-24 bg-light overflow-hidden">
       <div className="container mx-auto px-4">
@@ -89,7 +93,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
               <motion.div variants={fadeInUp}>
                 {benefits && benefits.length > 0 && (
                   <>
-                    <h4 className="text-xl font-bold font-heading text-dark mb-4">Key Benefits</h4>
+                    <h4 className="text-xl font-bold font-heading text-dark mb-4">{isAr ? "المزايا الرئيسية" : "Key Benefits"}</h4>
                     <ul className="space-y-4">
                       {benefits.map((benefit, idx) => (
                         <li key={idx} className="flex items-start gap-3">
@@ -127,7 +131,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
             >
               <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-                <span className="text-sm font-medium text-dark uppercase tracking-wider">Overview</span>
+                <span className="text-sm font-medium text-dark uppercase tracking-wider">{isAr ? "نظرة عامة" : "Overview"}</span>
               </motion.div>
               
               <AnimatedHeading 
@@ -143,7 +147,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
               <motion.div variants={fadeInUp}>
                 {benefits && benefits.length > 0 && (
                   <>
-                    <h4 className="text-xl font-bold font-heading text-dark mb-4">Key Benefits</h4>
+                    <h4 className="text-xl font-bold font-heading text-dark mb-4">{isAr ? "المزايا الرئيسية" : "Key Benefits"}</h4>
                     <ul className="space-y-4">
                       {benefits.map((benefit, idx) => (
                         <li key={idx} className="flex items-start gap-3">

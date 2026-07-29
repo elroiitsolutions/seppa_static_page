@@ -26,7 +26,11 @@ const achievements = [
   { id: 5, image: achieve5.src }
 ];
 
-const Awards = () => {
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
+import { usePathname } from 'next/navigation';
+
+const AwardsContent = ({ getT }: { getT: (key: string) => string }) => {
   return (
     <section className="py-12 md:py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
@@ -41,23 +45,26 @@ const Awards = () => {
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-            <span className="text-sm font-medium text-dark uppercase tracking-wider">Recognition</span>
+            <span className="text-sm font-medium text-dark uppercase tracking-wider">
+              {getT('tag')}
+            </span>
           </motion.div>
           
           <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center mb-6'>
             <AnimatedHeading 
-              text="Awards & Achievements" 
+              text={getT('heading')} 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight [&>span]:justify-center" 
             />
           </div>
           <motion.p variants={fadeInUp} className="text-gray-500 max-w-3xl mx-auto text-lg leading-relaxed">
-            Our relentless pursuit of excellence and innovation has been recognized globally. We take pride in the milestones we've achieved on our journey to transforming the industry.
+            {getT('description')}
           </motion.p>
         </motion.div>
 
         {/* Marquee Slider */}
         <motion.div
+          dir="ltr"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -112,6 +119,24 @@ const Awards = () => {
       `}} />
     </section>
   );
+};
+
+const LocalizedAwards = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const getT = (key: string) => t(`Awards.${key}`);
+  return <AwardsContent getT={getT} />;
+};
+
+const StaticAwards = () => {
+  const getT = (key: string) => ((enHome as any).Awards?.[key] || key);
+  return <AwardsContent getT={getT} />;
+};
+
+const Awards = () => {
+  const pathname = usePathname() || '';
+  const isLocalized = pathname.startsWith('/ar') || pathname.startsWith('/en') || pathname.startsWith('/de');
+  return isLocalized ? <LocalizedAwards /> : <StaticAwards />;
 };
 
 export default Awards;

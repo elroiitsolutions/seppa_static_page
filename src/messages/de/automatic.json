@@ -1,0 +1,106 @@
+{
+  "title": "PET-Flaschen-Blasmaschinen von SEPPA für industrielle Produktionslinien",
+  "breadcrumbName": "Automatische PET-Blasmaschinen",
+  "overviewTitle": "Was eine moderne PET-Flaschen-Blasmaschine wirklich leistet",
+  "overviewDescription": "SEPPA Solutions entwickelt seit über 25 Jahren Blasformtechnik für industrielle Anwendungen. Die grundlegende Physik des Streckblasverfahrens hat sich kaum verändert – entscheidend weiterentwickelt haben sich jedoch die Bereiche Preform-Konditionierung, Drucksteuerung, Automatisierung und Linienintegration.",
+  "overviewsubDescription": [
+    "Eine moderne PET-Flaschen-Blasmaschine bildet die Leistungsgrenze einer Getränkeproduktionslinie. Arbeitet sie präzise und stabil, kann die gesamte nachfolgende Linie effizient betrieben werden. Treten hier Probleme auf, lassen sich diese durch nachgeschaltete Anlagen nicht kompensieren.",
+    "SEPPA bietet komplette PET-Linienlösungen für: Wasser und Mineralwasser, kohlensäurehaltige Getränke (CSD), Säfte, Milchprodukte, Bier, Spirituosen, Wein.",
+    "Jede Produktgruppe stellt unterschiedliche Anforderungen an die Verpackung. Während eine CSD-Flasche eine hohe Bodenstabilität und spezielle Wandgeometrien benötigt, erfordert eine leichte Wasserflasche eine andere Materialverteilung. Eine professionelle PET-Flaschen-Blasmaschine muss diese unterschiedlichen Anforderungen flexibel bewältigen können – auch bei Herstellern mit mehreren Produktformaten auf einer Plattform.",
+    "Die heutigen Anforderungen der Verpackungsindustrie sind eindeutig: geringerer Materialverbrauch, niedrigere Energiekosten und höhere Produktionsgeschwindigkeiten. SEPPA-Blasmaschinen sind darauf ausgelegt, alle drei Herausforderungen gleichzeitig zu erfüllen."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Arten von PET-Blasmaschinen",
+      "paragraphs": [
+        "Halbautomatische Systeme: Halbautomatische PET-Blasmaschinen eignen sich für Pilotanlagen, Sonderformate und Produktionsmengen unter etwa 2.000 Flaschen pro Stunde. Die manuelle Preform-Zuführung reduziert die Investitionskosten und bietet hohe Flexibilität bei unterschiedlichen Flaschenhälsen und Formaten. Für Hersteller mit vielen kurzen Produktionsläufen ist eine halbautomatische Lösung häufig der wirtschaftlichste Einstieg.",
+        "Lineare automatische Blasmaschinen: Lineare Systeme verfügen typischerweise über zwei bis zwölf Kavitäten und decken mittlere Produktionsbereiche von etwa 2.000 bis 12.000 Flaschen pro Stunde ab. Sie bieten einfache Wartungszugänglichkeit, geringere Werkzeugkosten und flexiblen Formatwechsel. Für Unternehmen mit begrenztem Budget bei der Planung einer PET-Flaschen-Produktionsanlage stellen lineare Systeme eine effiziente Lösung dar.",
+        "Hochgeschwindigkeits-Rotationsblasmaschinen: Rotationsblasmaschinen erreichen die höchsten Produktionsleistungen und eine besonders konstante Flaschenqualität. SEPPA-Rotationssysteme können mit bis zu 24 Kavitäten ausgestattet werden und erreichen bei Standard-Wasserflaschen mit 0,5 Litern Produktionsleistungen von über 24.000 Flaschen pro Stunde. Die Preforms durchlaufen kontinuierlich gesteuerte Infrarot-Heizzonen, erreichen exakt definierte Temperaturen und werden ohne Produktionsunterbrechung zu fertigen Flaschen verarbeitet."
+      ]
+    }
+  ],
+  "featuresTitle": "Technische Hauptmerkmale der SEPPA PET-Blasmaschinen",
+  "featuresSubtitle": "Der Unterschied zwischen hochwertigen PET-Blasmaschinenherstellern und einfachen Anbietern liegt vor allem in drei Bereichen: gleichmäßige Erwärmung, stabile Formschließung und präzise Blasdrucksteuerung. Diese Faktoren entscheiden über gleichmäßige Wandstärken und vermeiden Qualitätsprobleme wie dünne Stellen oder Materialversagen.",
+  "features": [
+    {
+      "title": "Infrarot-Heizsystem",
+      "description": "Die Qualität einer PET-Flasche wird maßgeblich bereits im Ofen bestimmt. SEPPA-Heizmodule verwenden unabhängig gesteuerte Infrarotlampen für verschiedene Preform-Zonen: Halsbereich, Schulter, Flaschenkörper und Bodenbereich. Jede Zone wird mit einer Temperaturgenauigkeit von ±1 °C geregelt. Eine ungleichmäßige Erwärmung führt zu instabilen Flaschengeometrien – unabhängig davon, wie präzise der Blasprozess arbeitet. Die Heizgleichmäßigkeit ist daher einer der wichtigsten Qualitätsfaktoren moderner PET-Flaschen-Herstellungsmaschinen."
+    },
+    {
+      "title": "Formschließsysteme",
+      "description": "SEPPA bietet hydraulische und vollelektrische Servo-Formschließsysteme. Hydraulische Systeme ermöglichen hohe Schließkräfte bei wirtschaftlichen Investitionskosten und eignen sich besonders für große Behälter. Elektrische Servo-Systeme reduzieren den Energieverbrauch pro Zyklus deutlich und vermeiden Hydrauliköl in sensiblen Lebensmittelumgebungen. Der Formschließdruck muss den maximalen Blasdruck von typischerweise 38–40 bar sicher aufnehmen. SEPPA-Konstruktionen berücksichtigen diese Sicherheitsreserven bereits bei der Auslegung."
+    },
+    {
+      "title": "Steuerung und Rezeptverwaltung",
+      "description": "Die SEPPA-Steuerplattform speichert vollständige Produktionsrezepte für jedes Flaschenformat. Über die zentrale Bedienoberfläche können eingestellt werden: Preform-Daten, Heizprofile, Blasdruckkurven und Reckstangenbewegungen. Gespeicherte Rezepte reduzieren Formatwechselzeiten erheblich und ermöglichen reproduzierbare Produktionsqualität."
+    }
+  ],
+  "applicationsTitle": "PET-Flaschen-Herstellungsprozess",
+  "applicationsSubtitle": "Der Weg von der Preform zur fertigen Flasche besteht aus mehreren präzise abgestimmten Prozessschritten.",
+  "applications": [
+    { "title": "1. Preform-Zuführung", "description": "Spritzgegossene PET-Preforms werden automatisch sortiert und mit der Halsöffnung nach oben zur Heizstrecke transportiert." },
+    { "title": "2. Infrarot-Konditionierung", "description": "Die Preforms werden entsprechend Materialstärke und PET-Eigenschaften erwärmt. Heizleistung und Transportgeschwindigkeit bestimmen die spätere Flaschenqualität." },
+    { "title": "3. Transfer zur Blasstation", "description": "Die erwärmten Preforms werden ohne Verzögerung in die Form übertragen. Temperaturverluste im Schulterbereich können sonst zu Wanddickenproblemen führen." },
+    { "title": "4. Streckblasprozess", "description": "Eine Reckstange orientiert die PET-Molekülketten axial. Anschließend formt Druckluft mit etwa 38 bar die Flasche radial gegen die Werkzeugwand. Diese biaxiale Orientierung verbessert mechanische Stabilität, Barriereeigenschaften und Stoßfestigkeit." },
+    { "title": "5. Entlüftung und Auswurf", "description": "Nach dem Blasvorgang wird der Druck kontrolliert abgebaut und die fertige Flasche auf das Transportsystem übergeben." },
+    { "title": "6. Inline-Qualitätskontrolle", "description": "Kamerasysteme prüfen Flaschenboden, Halsbereich und Wandstärkenverteilung. Fehlerhafte Produkte werden automatisch ausgeschleust." }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA PET-Blasmaschinen?",
+    "description": "Die Auswahl einer PET-Flaschen-Blasmaschine ist eine langfristige Produktionsentscheidung. Die Maschine muss über viele Jahre stabile Leistung liefern. SEPPA entwickelt Blasformtechnik seit mehr als 25 Jahren und konstruiert Anlagen für reale industrielle Produktionsbedingungen:",
+    "paragraphs": [
+      "Konstante Zykluszeiten und stabile Heizprofile.",
+      "Langlebige Formschließsysteme und reproduzierbare Flaschenqualität.",
+      "Zusätzlich bietet SEPPA komplette Linienintegration. Dadurch lassen sich Fördertechnik, Abfüllung und Verpackung bereits in der Engineering-Phase optimal aufeinander abstimmen. Dies reduziert Investitionskosten und vermeidet spätere Anpassungen."
+    ]
+  },
+  "methodology": {
+    "title": "Auswahl einer passenden PET-Blasmaschine",
+    "steps": [
+      {
+        "title": "Kapazitätsplanung",
+        "description": "Die erforderliche Maschinenleistung wird aus Jahresproduktion, Verfügbarkeit und gewünschter Flaschenmenge pro Stunde berechnet. Eine Überdimensionierung erhöht unnötig Investitionskosten. Eine zu kleine Anlage erzeugt schnell einen Produktionsengpass."
+      },
+      {
+        "title": "Werkzeugauslegung",
+        "description": "Die Formkosten hängen von Kavitätenzahl und Flaschenkomplexität ab. Besonders Hot-Fill-Flaschen benötigen spezielle Werkzeuge mit komplexen Kühlsystemen. Eine korrekte Werkzeugplanung verhindert Verzögerungen bei der Inbetriebnahme."
+      },
+      {
+        "title": "Anlagenlayout",
+        "description": "Eine 24-Kavitäten-Rotationsblasmaschine benötigt inklusive Ofen, Schaltschrank und Kühlsystem ausreichend Produktionsfläche. Vor Installation müssen Versorgungssysteme geprüft werden: Hochdruckluft bis 40 bar, Steuerluft bis 7 bar, Kühlwasser für Formkühlung."
+      },
+      {
+        "title": "Installation und Validierung",
+        "description": "SEPPA begleitet Installation, FAT, Inbetriebnahme und Bedienerschulung. Die Validierung umfasst einen 72-Stunden-Produktionstest mit Prüfungen von Wandstärke, Stapelbelastung und Fallfestigkeit. Die Anlage wird erst nach stabiler Erreichung der Produktionsziele übergeben."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Welche Faktoren bestimmen die Kosten einer PET-Flaschen-Produktionsanlage?",
+      "answer": "Die Blasmaschine macht typischerweise einen wesentlichen Anteil der Gesamtinvestition aus. Weitere Kosten entstehen durch Füller, Verschließer, Etikettierer, Fördertechnik, Infrastruktur und Inbetriebnahme."
+    },
+    {
+      "question": "Wie hoch ist der Energieverbrauch moderner PET-Blasmaschinen?",
+      "answer": "Elektrische Servo-Systeme benötigen bei 0,5-Liter-Wasserflaschen etwa 0,08 bis 0,12 kWh pro 1.000 Flaschen und sind damit deutlich effizienter als ältere hydraulische Maschinen."
+    },
+    {
+      "question": "Welche Wartung benötigt eine professionelle PET-Flaschenmaschine?",
+      "answer": "Regelmäßige Wartung umfasst Ofenprüfung, Formkontrolle, Schmierung, Ventilprüfung sowie jährliche Überholungen wichtiger Komponenten."
+    },
+    {
+      "question": "Was unterscheidet führende PET-Blasmaschinenhersteller?",
+      "answer": "Entscheidend sind Heizpräzision, Formstabilität und Softwarefunktionen. SEPPA kombiniert diese drei Bereiche mit internationalem Service."
+    },
+    {
+      "question": "Können SEPPA-Blasmaschinen mehrere Flaschenformate verarbeiten?",
+      "answer": "Ja. Gespeichert Rezepte und vorjustierte Formträger ermöglichen schnelle Formatwechsel. Viele Umstellungen können innerhalb von weniger als 45 Minuten durchgeführt werden."
+    }
+  ],
+  "outro": [
+    "Ihre Lösung für moderne PET-Flaschenproduktion",
+    "SEPPA entwickelt PET-Flaschen-Blasmaschinen für Hersteller, die höchste Anforderungen an Effizienz, Qualität und Flexibilität stellen.",
+    "Mit präziser Streckblas-Technologie, intelligenter Automatisierung und kompletter Linienintegration entstehen Produktionssysteme, die langfristig zuverlässig arbeiten."
+  ]
+}

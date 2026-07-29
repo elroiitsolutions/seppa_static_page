@@ -1,0 +1,24 @@
+{
+  "title": "Investors",
+  "breadcrumbName": "Investors",
+  "heading": "Investor Relations",
+  "subheading": "Seppa Solutions is at the forefront of innovation in the filling and packaging industry. We welcome strategic investors who share our vision for growth and technological advancement.",
+  "formTitle": "Investment Inquiry",
+  "submitButtonText": "Submit Inquiry",
+  "name": "Full Name",
+  "namePlaceholder": "Your full name",
+  "email": "Email Address",
+  "emailPlaceholder": "Your email address",
+  "phone": "Phone Number",
+  "phonePlaceholder": "Contact number",
+  "interest": "Investment Interest",
+  "message": "Message / Inquiry",
+  "messagePlaceholder": "Please share your investment interests, background, and any specific questions...",
+  "options": [
+    "Equity Investment",
+    "Strategic Partnership",
+    "Joint Venture",
+    "Project Financing",
+    "Other"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "title": "Industrial Screw Chiller Production Technology: Engineering Massive Thermal Capacity for Heavy Duty Operations",
+  "breadcrumbName": "Smart Screw Chillers",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Overview of Industrial Screw Chillers",
+  "overviewDescription": "Step into any industrial setting operating 24/7, and there exists an unassuming fact about machinery that exists somewhere behind closed doors: the screw chiller is hard at work. This is the piece of equipment that gets to work when no other will do, and when production cannot allow any kind of interruption due to heat, when the data center requires steady chilled water for years to come, or even when chemical reactions need to occur under controlled temperatures.",
+  "overviewsubDescription": [
+    "At Seppa Solutions, we don't just build these systems. We engineer them as long-term partners for the toughest cooling jobs on the planet.",
+    "Screw chillers are compression systems for refrigerators which consist of a twin screw compressor, and they have a capacity range from 150kW to more than 4500kW per machine. While in scroll compressors or reciprocating compressors where the high rate of mass flow becomes difficult to cope with, the twin screw compressor chiller system utilizes the volumetric reduction of refrigerant vapor through smooth and continuous processes.",
+    "That's exactly why the screw chiller has become the go-to standard for large-scale cooling worldwide. Heavy industrial loads rarely sit still. They swing with shifts, seasons, and production schedules."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Benefits of Using Energy-Efficient Screw Chillers",
+      "paragraphs": [
+        "The case for the screw chiller is, at its core, beautifully mechanical. With only two primary rotating elements — versus the dozen-plus moving parts in a comparable reciprocating bank — there's less to wear, less to contaminate the oil, and far fewer reasons to shut things down for service. Sound power levels run 8 to 12 dB(A) below equivalent-tonnage reciprocating cooling equipment, which makes a real difference in urban or mixed-use sites where neighbors matter.",
+        "Where Seppa engineering really shows is in how the machine behaves under stress. Our compressor-protection logic watches discharge superheat, oil differential pressure, motor winding temperature, and bearing vibration in real time, executing protective unloading sequences long before any parameter gets near a trip point.",
+        "The economic story writes itself: a Seppa screw compressor chiller routinely delivers more than 20 years of service, with major overhauls stretching past 60,000 operating hours. For a continuous-process facility, that's about as low as the total cost of ownership gets in the industrial market."
+      ]
+    }
+  ],
+  "featuresTitle": "Key Features and Technical Specifications",
+  "featuresSubtitle": "The engineering aspects of a Seppa screw chiller begin by talking about the rotor.",
+  "features": [
+    {
+      "title": "Precision Forged Rotors",
+      "description": "The rotors used in these chillers are of forged steel type having ground profiles either of SRM or hybrid asymmetric type with a machining tolerance better than 5 microns and dynamically balanced to ensure a vibration signature of less than 2.8 mm/s rms."
+    },
+    {
+      "title": "Stepless Capacity Control",
+      "description": "The control of capacity is achieved through hydraulic slide valve method which controls the effective volume of compression between 25% and 100% in a stepless way. The precision-machined slide valve slides across the axis of the rotor and compresses some of the suction gas, hence reducing the capacity without turning off the motor. Result: precise control of leaving water temperature (+0.3° Celsius)."
+    },
+    {
+      "title": "Advanced Heat Exchanger",
+      "description": "Integrates either flooded shell-and-tube evaporators with enhanced internally-finned copper tubing, or microchannel aluminum condenser coils that pack roughly 40% more surface area per cubic meter."
+    }
+  ],
+  "applicationsTitle": "Industrial Applications of Screw Chillers",
+  "applicationsSubtitle": "The variety of applications for a screw chiller is amazing.",
+  "applications": [
+    {
+      "title": "Food Processing",
+      "description": "In meat plants, dairy pasteurizers and beverage bottlers, a Seppa water cooled screw chiller provides the constant glycol or brine flow needed to meet food safety and shelf-life standards."
+    },
+    {
+      "title": "Hyperscale Data Centers",
+      "description": "Our chillers provide the chilled water flow needed to cool the servers using close-coupled rack cooling and rear-door heat exchangers."
+    },
+    {
+      "title": "Chemical Processing",
+      "description": "Exothermic reactors, distillation column overheads, crystallization vessels they all need cooling equipment that can soak up aggressive heat spikes without nuisance trips."
+    },
+    {
+      "title": "District Cooling & More",
+      "description": "District cooling networks increasingly lean on banked arrays of high-capacity screw compressor chiller units. Pharmaceutical solvent recovery, plastic injection molding, laser cutting halls all benefit from machinery that just keeps running."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for Screw Chillers",
+    "description": "",
+    "paragraphs": [
+      "Seppa Solutions works as turnkey production architects, not box-shifters. Every screw chiller that leaves our facility goes through full-load factory acceptance testing under contracted ambient and chilled-water conditions, with witnessed performance verification against AHRI 550/590 standards. Our handle on high-capacity thermodynamics is baked into proprietary selection software that matches rotor profiles, motor sizing, and heat exchanger geometry to the customer's actual load curve — not some generic catalog point that looks tidy on paper.",
+      "Major firms across cement, petrochemicals, automotive, and pharmaceuticals come back to us because our machines simply survive. Salt-laden coastal air, monsoon humidity, desert dust, brutal sub-zero starts — our screw chiller platforms are specified, coated, and protected for the specific environment they'll spend their lives in. That kind of engineering discipline is the reason Seppa cooling equipment is still running long after competing units have been hauled off to scrap."
+    ]
+  },
+  "methodology": {
+    "title": "Working Methodology of Screw Chiller Systems",
+    "steps": [
+      {
+        "title": "Vapor Intake",
+        "description": "Low-pressure refrigerant vapor — usually R-134a, R-513A, or R-1234ze for newer low-GWP installations enters the suction port and gets drawn into the meshing cavity formed by the male and female rotors."
+      },
+      {
+        "title": "Smooth Compression",
+        "description": "As the rotors turn, that trapped vapor pocket shrinks steadily, lifting pressure smoothly without the pulsation you'd feel in a reciprocating machine."
+      },
+      {
+        "title": "Heat Rejection",
+        "description": "High-pressure discharge gas heads into the condenser circuit. In a water cooled screw chiller, heat rejection happens across a shell-and-tube condenser. In an air cooled screw chiller, variable-speed axial EC fans push ambient air across microchannel coils."
+      },
+      {
+        "title": "Expansion and Cooling",
+        "description": "Subcooled liquid then flashes through the EEV, absorbs heat in the evaporator, and heads back to suction. In a properly built screw chiller, this loop runs cleanly for decades."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions About Screw Chillers",
+  "faqs": [
+    {
+      "question": "What maintenance does a water cooled screw chiller really need?",
+      "answer": "For the water-cooled screw chiller, oil samples will need to be analyzed quarterly, an eddy current test performed annually on the condenser bundle, and EEV calibration will need to be tested every six months. The quality of the cooling water chemistry will also need to be monitored in order to minimize scaling and biofouling."
+    },
+    {
+      "question": "What's the capacity difference between air-cooled and water-cooled variants?",
+      "answer": "A typical air-cooled screw chiller exists within the range of 150 kW to 1,600 kW per chiller because the temperature of the environment is the limiting factor for the lowest possible temperature at which the condenser can operate. A water-cooled screw chiller ranges from 350 kW to 4,500 kW per chiller, with an efficiency improvement of about 18 to 25%."
+    },
+    {
+      "question": "Why is the screw compressor design essential for heavy loads?",
+      "answer": "The continuous volumetric compression inside a screw compressor chiller wipes out the pulsation, valve fatigue, and starting-current spikes that limit reciprocating machines. For sustained multi-megawatt duty, it's really the only compressor architecture that holds up."
+    },
+    {
+      "question": "How do I size the right cooling equipment?",
+      "answer": "Sizing comes down to peak load, minimum load, diversity factor, redundancy plans, and ambient design conditions. Seppa engineers model the full annual load profile so you don't end up with oversized cooling equipment running perpetually at minimum capacity, quietly wasting energy."
+    },
+    {
+      "question": "Why does Seppa lead the way in screw chiller innovation?",
+      "answer": "Vertical integration. Rotor machining, heat exchanger fabrication, controls programming, and FAT testing all happen under one roof, which gives us a level of engineering control no assembler of cooling equipment can realistically match."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-4D PET Blowing Machine: 4 Cavity Semi-Automatic Production",
+  "breadcrumbName": "SSB-4D",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Overview of the SEPPA SSB-4D Semi Automatic PET Bottle Blowing Machine",
+  "overviewDescription": "Four cavities, one synchronized cycle. That's the engineering premise behind the SEPPA SSB-4D, and it sounds simple until you've tried holding four preforms to identical wall thickness under one timing sequence. Most manufacturers evaluating a pet bottle making machine for the first time underestimate how much can go wrong scaling from one cavity to four. Air distribution drifts. Heat profiles diverge by a few degrees. One mold clamps a fraction slower than the others, and a batch shows thickness variance nobody wants to explain to a client. It's a problem a pet bottle making machine buyer only discovers after the first run.",
+  "overviewsubDescription": [
+    "The SSB-4D treats cavity synchronization as the design starting point, not an afterthought bolted onto a single cavity frame. It's built as a 4 cavity pet blowing machine from the ground up, with independent thermal zones, a balanced pneumatic manifold, and clamping mechanics rated to handle four molds in parallel without one cavity stealing pressure from another. For mid volume beverage lines, that's the difference between a pet bottle making machine that quadruples output on paper and one that does it on the shop floor.",
+    "Seppa built this plastic bottle making machine for manufacturers who've outgrown single or double cavity units but aren't ready for a rotary system. It sits in that middle tier deliberately, giving operators genuine 4 cavity pet blowing machine throughput with the simplicity of a semi-automatic platform."
+  ],
+  "featuresTitle": "Key Features and Technical Advantages of the SEPPA SSB-4D",
+  "features": [
+    {
+      "title": "Balanced Air Distributor Manifold",
+      "description": "The air distributor manifold is engineered with equal length, equal diameter air paths to all four cavities, keeping pressure delivery within a tight tolerance band. Without that balance, a 4 cavity pet blowing machine is really four separate machines sharing a frame."
+    },
+    {
+      "title": "Robust Clamping Force for 4 Cavities",
+      "description": "Clamping force is rated for continuous four cavity duty, not derated from a single cavity spec and multiplied by four. The frame and tie bar assembly are sized for the actual combined tonnage of four simultaneous mold closures, so the structure doesn't fatigue under sustained production."
+    },
+    {
+      "title": "PLC-Based Timing & Thermal Consistency",
+      "description": "Each stage—heating, transfer, stretch, blow, ejection—is governed by a PLC based sequencer holding cavity to cavity variance to a minimum. Independently zoned heating addresses zone temperature drift directly instead of relying on one blanket heat profile for all four stations."
+    }
+  ],
+  "applicationsTitle": "Applications of the SEPPA SSB-4D for PET Bottle Manufacturing",
+  "applicationsSubtitle": "Versatile four-cavity packaging production across diverse FMCG segments:",
+  "applications": [
+    {
+      "title": "Beverage & Mineral Water Bottling",
+      "description": "Water bottlers make up a large share of Seppa's installed base. It handles mineral water lines requiring steady, high-rate output of lightweight PET containers with absolute dimensional consistency."
+    },
+    {
+      "title": "Condiment, Edible Oil & Chemicals",
+      "description": "Condiment producers running high volume sauce and syrup lines use the same plastic bottle making machine architecture, since the pressure profiling adapts to different neck finishes and wall thickness without a full retool."
+    },
+    {
+      "title": "Mixed SKU Production Flexibility",
+      "description": "Seppa didn't lock pressure and heating parameters to one bottle shape, so a plastic bottle making machine built on this platform handles a 500ml water bottle and a 1 liter oil container without re engineering the line."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions for PET Bottle Blowing Machines",
+    "description": "Beverage manufacturers don't switch equipment vendors lightly, and the ones who've stuck with Seppa across multiple line expansions cite the same thing: the machines hold tolerances after year three, not just in the first demo run.",
+    "paragraphs": [
+      "Seppa's engineering team spends real time on thermal stability work because that's where most four cavity systems quietly fail. A pet stretch blow moulding machine that looks identical to competitors on a spec sheet can behave differently after six months of heat cycling.",
+      "On blow molding machine price, Seppa quotes the actual configuration a client needs, not a stripped base unit requiring costly add ons. Our quotes reflect true landed cost from day one, built for long term reliability."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the SEPPA SSB-4D PET Bottle Blowing Process Works",
+    "subtitle": "The four-cavity cycle combines manual loading efficiency with fully automated ejection:",
+    "steps": [
+      {
+        "title": "Simultaneous Preform Loading & Parallel Heating",
+        "description": "The cycle starts with simultaneous preform loading across all four stations. From there, preforms move through parallel IR heating tunnels, each zone independently monitored to prevent temperature drift."
+      },
+      {
+        "title": "Synchronized Clamping & Dual-Stage Blowing",
+        "description": "If clamping isn't timed precisely, pressure builds unevenly. The SSB-4D closes all four cavities within milliseconds, applying a low pressure pre blow followed by a high pressure final blow through equal length air paths."
+      },
+      {
+        "title": "High Volume Ejection",
+        "description": "A pet stretch blow moulding machine running four cavities generates four times the ejection load per cycle. The SSB-4D features reinforced ejection mechanics that prevent bottlenecks at the release phase."
+      }
+    ],
+    "outro": [
+      "The SSB-4D, as a 4 cavity pet blowing machine, solves a genuinely harder problem, and the payoff is proportional throughput without proportional defects."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How much maintenance does a 4 cavity pet blowing machine actually require?",
+      "answer": "Weekly checks on the air distributor manifold and monthly inspection of the IR heater banks cover most of it. The clamping mechanism needs lubrication roughly every 200 operating hours."
+    },
+    {
+      "question": "How does the SSB-4D maintain structural rigidity across four molds at once?",
+      "answer": "The tie bar and frame assembly is sized for combined four cavity tonnage rather than a single cavity rating multiplied by four, which keeps the structure from flexing under load."
+    },
+    {
+      "question": "Why is Seppa's blow moulding machine considered a good fit for medium scale lines?",
+      "answer": "It sits between single cavity units and full rotary systems, giving operators four cavity output without the complexity of an automated rotary platform."
+    },
+    {
+      "question": "What actually affects blow molding machine price beyond the base unit?",
+      "answer": "Mold count and cavity specific tooling, automation add ons, and after sales service packages all move the number. Seppa breaks these out clearly."
+    },
+    {
+      "question": "Why does Seppa lead on innovation in the pet stretch blow moulding machine space?",
+      "answer": "Because the company treats multi cavity synchronization as the core engineering challenge. Independent thermal zoning, balanced air manifolds, and PLC governed timing all come from solving that problem properly."
+    }
+  ]
+}
