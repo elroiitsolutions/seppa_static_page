@@ -120,7 +120,7 @@ const Header: React.FC = () => {
             </Link>
           </div>
           <div className="relative group">
-            <button className={linkClass}>
+            <button suppressHydrationWarning className={linkClass}>
               {menu.packaging} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
@@ -148,7 +148,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="relative group">
-            <button className={linkClass}>
+            <button suppressHydrationWarning className={linkClass}>
               {menu.liquid} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
@@ -187,7 +187,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
+            <button suppressHydrationWarning className={linkClass}>
               {menu.services} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
@@ -201,7 +201,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
+            <button suppressHydrationWarning className={linkClass}>
               {menu.completeLines}  <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
@@ -217,7 +217,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
+            <button suppressHydrationWarning className={linkClass}>
               {menu.equipments}<FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className="absolute top-full -left-54 mt-2 w-[90vw] lg:w-[750px] xl:w-[850px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-4 lg:p-6 grid grid-cols-2 lg:grid-cols-4 gap-y-2 lg:gap-x-4">
@@ -255,7 +255,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
+            <button suppressHydrationWarning className={linkClass}>
               {menu.enquiry}  <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
@@ -285,6 +285,7 @@ const Header: React.FC = () => {
           </div>
           <div className="relative group/lang shrink-0">
             <button
+              suppressHydrationWarning
               className="px-2.5 xl:px-4 py-1.5 xl:py-2.5 rounded-full bg-gold text-[#0d162a] font-bold text-xs xl:text-sm shadow-md hover:bg-white transition-all duration-300 flex items-center gap-1"
             >
               <span>{getLocaleLabel(currentLocale)}</span>
@@ -294,6 +295,7 @@ const Header: React.FC = () => {
               {['en', 'ar', 'de', 'nl'].map((loc) => (
                 <button
                   key={loc}
+                  suppressHydrationWarning
                   onClick={() => changeLanguage(loc)}
                   className={`px-4 py-1.5 text-xs xl:text-sm text-center hover:bg-gold hover:text-[#0d162a] transition-colors ${currentLocale === loc ? 'text-gold font-bold' : 'text-white'}`}
                 >
@@ -671,6 +673,7 @@ const Header: React.FC = () => {
                 {['en', 'ar', 'de', 'nl'].map((loc) => (
                   <button
                     key={loc}
+                    suppressHydrationWarning
                     onClick={() => { changeLanguage(loc); setIsMobileMenuOpen(false); }}
                     className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${currentLocale === loc ? 'bg-gold text-[#0d162a]' : 'text-white hover:text-gold'}`}
                   >

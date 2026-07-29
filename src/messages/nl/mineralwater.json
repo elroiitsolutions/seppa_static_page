@@ -1,0 +1,112 @@
+{
+  "title": "Bronwater Verwerkingslijnen",
+  "breadcrumbName": "Mineraalwater",
+  "rootBreadcrumbName": "Vloeistof",
+  "rootBreadcrumbPath": "/liquid",
+  "overviewTitle": "Overzicht van de SEPPA Bronwater Verwerkingslijn",
+  "overviewDescription": "Welkom in de wereld van hoogwaardige vloeistofverwerking. Als industrieel adviseurs en verpakkingsingenieurs weten we dat de reis van bron tot fles geen ruimte laat voor compromissen. De moderne consument eist absolute zuiverheid, terwijl u als investeerder of fabriekseigenaar streeft naar maximale operationele uptime en rendement. Bij Seppa Solutions begrijpen we deze delicate balans volkomen. Onze geïntegreerde extractie- en zuiveringssystemen zijn fundamenteel ontworpen om maximale zuiverheid te garanderen zonder in te leveren op smaakbehoud.",
+  "overviewsubDescription": [
+    "Het succes van elke hoogwaardige mineraalwater productie begint bij de bron en de manier waarop het water mechanisch en chemisch wordt behandeld in een gecontroleerde omgeving.",
+    "We maken gebruik van state-of-the-art mineraalwater apparatuur: volledig gesloten systemen met RVS-316 pompen die cavitatie voorkomen, meertrapsfiltratie en real-time proces-sensoren.",
+    "Geavanceerde omgekeerde osmose en ultrafiltratie worden toegepast, waarbij essentiële mineralen behouden blijven voor een constante topkwaliteit."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA Water Verwerkingsinstallaties",
+      "paragraphs": [
+        "Wanneer u investeert in een nieuwe productiefaciliteit, is de return on investment (ROI) de belangrijkste drijfveer. Onze systemen zijn minutieus ontworpen om productieverliezen te minimaliseren.",
+        "Door de implementatie van een door Seppa geoptimaliseerde mineraalwater installatie reduceert u het dagelijkse water- en energieverbruik aanzienlijk door energieterugwinningssystemen en frequentieregelaars.",
+        "Dit resulteert in fundamenteel geoptimaliseerde mineraalwater productie voor de lange termijn, met lagere onderhoudsintervallen, minder downtime en een lagere Total Cost of Ownership."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van SEPPA Water Bottelsystemen",
+  "featuresSubtitle": "Geavanceerde technische innovaties die voldoen aan de hoogste hygiëne- en productienormen:",
+  "features": [
+    {
+      "title": "Contactloze Steriele Vultechnologie",
+      "description": "Voorkomt kruisbesmetting, sluit oxidatie uit en waarborgt absolute microbiologische integriteit vanaf de tank tot de fles."
+    },
+    {
+      "title": "Microfiltratie & Ozonstabilisatie",
+      "description": "Meertrapsfiltratie gecombineerd met ozon en UV-C sterilisatie neutraliseert virussen en bacteriën met behoud van natuurlijke mineralen."
+    },
+    {
+      "title": "Constructie in RVS-316L",
+      "description": "Alle kleppen, optische sensoren en leidingen zijn uitgevoerd in elektrogepolijst RVS-316L tegen corrosie en biofilmvorming."
+    },
+    {
+      "title": "Modulaire & Geïntegreerde Lijn-architectuur",
+      "description": "Naadloze koppeling tussen filtratie, vuller en capper binnen een gecontroleerde overdruk isolator."
+    }
+  ],
+  "applicationsTitle": "Toepassingen van Mineraalwater in de Drankenindustrie",
+  "applicationsSubtitle": "Oplossingen voor plat bronwater, verrijkte dranken en bruisend mineraalwater:",
+  "applications": [
+    {
+      "title": "Bruisend Mineraalwater & Carbonisatie",
+      "description": "Nauwkeurige temperatuurcontrole en gespecialiseerde systemen voor optimale bubbelgrootte en CO2-stabiliteit in de fles."
+    },
+    {
+      "title": "Plat Bronwater & Lage TDS",
+      "description": "Behoedzame meertrapsfiltratie die de subtiele elektrolytenbalans en smaak intact laat."
+    },
+    {
+      "title": "Grootschalige Industrie & Boutique Bottelarijen",
+      "description": "Flexibel schaalbare capaciteiten van 2.000 BPH voor nichemerken tot ruim 40.000 BPH voor 24/7 massaproductie."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor Seppa Solutions voor Bronwater Productielijnen?",
+    "description": "Een holistische benadering die hardware, procesautomatisering (PLC/SCADA) en diepgaande technische support op locatie combineert.",
+    "paragraphs": [
+      "Real-time Lijn-inzicht: Geavanceerde PLC- en SCADA-systemen bieden continu inzicht in productie-efficiëntie en verbruiksstatistieken.",
+      "Onder-Tegendruk Afvullen: Perfect gecontroleerd afvullen van koolzuurhoudend en temperatuurgevoelig mineraalwater.",
+      "Strategische Schaalbaarheid: Oplossingen die naadloos meegroeien met uw commerciële expansie en ambities."
+    ]
+  },
+  "methodology": {
+    "title": "Methodologie voor de Implementatie van een Complete Fabriek",
+    "steps": [
+      {
+        "title": "1. Hydrogeologische Bronanalytiek",
+        "description": "Nauwkeurige analyse van de chemische en microbiologische samenstelling voor een behandelingsplan op maat."
+      },
+      {
+        "title": "2. 3D Fabrieksontwerp & Routing",
+        "description": "Geoptimaliseerde lay-out voor logistiek, hygiënezones en medewerkersergonomie."
+      },
+      {
+        "title": "3. Hygiënische Installatie van de Installatie",
+        "description": "Vakkundige koppeling van leidingen en filtratie-units onder de meest strikte hygiëneprotocollen."
+      },
+      {
+        "title": "4. Validatie, Druktests & Oplevering",
+        "description": "Camera-inspecties, magnetische flowmeter-kalibratie en 72-uurs testruns vóór commerciële opstart."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Waterproductie en Bottelsystemen",
+  "faqs": [
+    {
+      "question": "Wat zijn de hygiënenormen binnen een Seppa mineraalwater productie faciliteit?",
+      "answer": "Onze systemen voldoen aan FDA en EHEDG richtlijnen met geautomatiseerde CIP/SIP integratie en gesloten RVS-316 vloeistofpaden."
+    },
+    {
+      "question": "Hoe hoog zijn de totale investeringskosten van een geavanceerde mineraalwater fabriek?",
+      "answer": "De investering varieert per capaciteit, maar door energiezuinige servomotoren en lage uitval wordt de ROI doorgaans binnen 3 tot 5 jaar behaald."
+    },
+    {
+      "question": "Wat beïnvloedt de operationele efficiëntie van een mineraalwater installatie het meest?",
+      "answer": "Procesautomatisering en materiaalkwaliteit. Intelligente sensoren sturen de productie proactief bij op basis van realtime data."
+    },
+    {
+      "question": "Welke productiecapaciteiten kan jullie mineraalwater verpakkingslijn operationeel aan?",
+      "answer": "Flexibel en schaalbaar van 2.000 BPH voor nichemerken tot ruim 40.000 BPH voor volautomatische 24/7 industriële fabrieken."
+    },
+    {
+      "question": "Hoe verzekert de apparatuur de productkwaliteit van bruisend mineraalwater tijdens de afvulling?",
+      "answer": "Door gecontroleerde tegendruktechnologie en snelle temperatuurverlaging voorkomen we schuimvorming en gasverlies."
+    }
+  ]
+}

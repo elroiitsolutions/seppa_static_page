@@ -45,6 +45,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
 
             {/* Close Icon Button */}
             <button
+              suppressHydrationWarning
               onClick={onClose}
               className="absolute top-4 right-4 text-gray-400 hover:text-white bg-white/10 hover:bg-seppa-red p-2 rounded-full transition"
               aria-label="Close popup"
@@ -67,6 +68,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
 
             {/* Action Button */}
             <button
+              suppressHydrationWarning
               onClick={onClose}
               className="w-full py-3.5 bg-seppa-red hover:bg-white hover:text-seppa-red text-white font-bold rounded-full transition duration-300 shadow-md text-base"
             >

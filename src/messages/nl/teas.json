@@ -1,0 +1,106 @@
+{
+  "title": "Theedranken Productielijnen",
+  "breadcrumbName": "Thee",
+  "rootBreadcrumbName": "Diensten",
+  "rootBreadcrumbPath": "/services",
+  "overviewTitle": "Thee Productielijn: De Motor Achter een Groeiende RTD Categorie",
+  "overviewDescription": "Kant-en-klare ijsthee staat al jaren op elk schap, maar wie achter de schermen kijkt, ziet dat de kwaliteitsverschillen tussen merken vooral bij de extractie ontstaan. Een fles thee die vandaag naar rook of bitterheid smaakt, komt zelden door een slecht recept – het komt bijna altijd door een thee productiemachine die temperatuur, extractietijd of druk niet nauwkeurig genoeg regelt. Bij Seppa Solutions praten we daarom liever met klanten over de thee verwerkingsapparatuur dan over de marketingverhalen eromheen.",
+  "overviewsubDescription": [
+    "Overzicht van de Productielijn voor Theedranken: Thee lijkt eenvoudig – bladeren, heet water, wachten – maar op industriële schaal is elke variabele een knop die de smaak beïnvloedt.",
+    "Onze aanpak begint bij de thee extractie, waar we temperatuur en tijd exact afstemmen op het type thee. Zwarte thee vraagt om een andere aanpak dan groene of kruidenthee, simpelweg omdat de smaakstoffen zich anders gedragen bij hitte.",
+    "Het resultaat is een thee productielijn die consistent aroma en heldere kleur aflevert, ongeacht of je vandaag duizend of honderdduizend flessen produceert via een enkele thee productiemachine."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Productielijn voor Theedranken",
+  "featuresSubtitle": "Geavanceerde technische innovaties die het tanninepunt beheersen en bittere smaken voorkomen:",
+  "features": [
+    {
+      "title": "Tegenstroom-Extractoren & Drukprecisie",
+      "description": "Voorkomt over-extractie en bittere bijsmaken door gecontroleerde druk en precieze contacttijd in de thee extractie."
+    },
+    {
+      "title": "Centrifugale Verheldering (Detanninization)",
+      "description": "Verwijdert deeltjes en troebelheid op submicronniveau zonder vluchtige aroma's aan het blad te onttrekken."
+    },
+    {
+      "title": "Licht- en Zuurstofafgeschermde Mengcircuits",
+      "description": "Lichtdichte leidingen en gesloten circuits voorkomen foto-oxidatie en smaakverlies tijdens de vloeibare fase."
+    },
+    {
+      "title": "Real-time Sensor Suites & Inline Monitoring",
+      "description": "Bewaakt continu stroomsnelheid, temperatuur en druk voor een constante extractieopbrengst."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Thee, RTD en Drankenindustrie",
+  "applicationsSubtitle": "Oplossingen van traditionele ijsthee tot premium groene theedranken:",
+  "applications": [
+    {
+      "title": "Kant-en-klare IJsthee (RTD Tea)",
+      "description": "High-volume productie van ijsthee in PET of glazen flessen voor de brede retailmarkt met citroen-, perzik- of suikervrije varianten."
+    },
+    {
+      "title": "Premium & Functionele Theedranken",
+      "description": "Kleine tot middelgrote oplages van verrijkte theedranken met vitaminen of adaptogenen tegen een hogere verkoopprijs."
+    },
+    {
+      "title": "Industriële Schaalbaarheid voor Grote Fabrieken",
+      "description": "Parallelle installaties voor tienduizenden liters per dag gebouwd rond dezelfde betrouwbare thee verpakkingsmachine."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor Seppa Solutions voor Theedrankenproductie?",
+    "description": "Diepgaande expertise in 'botanical engineering' gecombineerd met industriële schaalbaarheid.",
+    "paragraphs": [
+      "Maximale Aromaretentie: Efficiënte extractie maakt extra kunstmatige smaakversterkers overbodig.",
+      "Lage Grondstofkosten per Liter: Nauwkeurige extractie voorkomt overdosering van kostbaar theeblad.",
+      "Integrale Ondersteuning: Maatwerk in lay-out, CIP-integratie en uitgebreide personeelstraining."
+    ]
+  },
+  "methodology": {
+    "title": "Methodologie voor de Productie en Verwerking van Theedranken",
+    "subtitle": "Gestructureerd proces van gedroogd blad tot gecontroleerd afgevulde fles:",
+    "steps": [
+      {
+        "title": "1. Mechanische Extractie op Maat",
+        "description": "Warm- en koudtrekken in industriële brouwketels met behoud van polyfenolen en verwijdering van harde tannines."
+      },
+      {
+        "title": "2. Precieze Infusie en Menging",
+        "description": "Geautomatiseerde toevoeging van secundaire aroma's of zoetstoffen voor een constante streefviscositeit."
+      },
+      {
+        "title": "3. Centrifugale Verheldering",
+        "description": "Submicronfiltratie verwijdert fijn bezinksel voor een kristalheldere presentatie van het eindproduct."
+      },
+      {
+        "title": "4. Aseptische Stabilisatie & Afvulling",
+        "description": "UHT- of flash-pasteurisatie gevolgd door steriele afvulling op een geavanceerde thee verpakkingsmachine."
+      }
+    ],
+    "outro": [
+      "Met deze gestructureerde aanpak smaken RTD-theedranken van Seppa alsof ze zojuist vers zijn gezet."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Theedranken Productielijnen",
+  "faqs": [
+    {
+      "question": "Aan welke hygiënenormen moet botteling van RTD-thee voldoen?",
+      "answer": "Onze installaties voldoen aan internationale hygiënenormen, met steriele CIP/SIP circuits die tussen productieruns automatisch reinigen en steriliseren."
+    },
+    {
+      "question": "Wat kost onderhoud van een thee productiemachine op jaarbasis?",
+      "answer": "Dankzij de automatische reinigingscircuits blijven de onderhoudskosten lager dan bij systemen die handmatige reiniging vereisen."
+    },
+    {
+      "question": "Hoe voorkom je dat groene thee bitter wordt tijdens verwerking?",
+      "answer": "Door nauwkeurige temperatuur- en tijdregeling tijdens de extractiefase en snelle koeling vóór afvulling worden bitterstoffen voorkomen."
+    },
+    {
+      "question": "Hoe lang blijft een RTD-theedrank houdbaar na productie?",
+      "answer": "Met aseptische UHT-behandeling en zuurstofvrije verpakking is een houdbaarheid van meerdere maanden tot een jaar gebruikelijk."
+    },
+    {
+      "question": "Welke capaciteit kan een thee verwerkingsmachine aan?",
+      "answer": "Van kleinschalige pilotlijnen tot installaties die tienduizenden liters per dag verwerken – de modulaire opbouw maakt opschalen eenvoudig."
+    }
+  ]
+}
