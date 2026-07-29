@@ -1,0 +1,104 @@
+{
+  "title": "Pneumatic PET Blowing Machine",
+  "breadcrumbName": "Pneumatic PET Blowing Machine",
+  "rootBreadcrumbName": "PET Blowing Machine",
+  "rootBreadcrumbPath": "/blowing",
+  "overviewTitle": "Overview of the Pneumatic PET Blowing Machine", 
+  "overviewDescription": "Ask any plant manager running a high speed bottling line what actually limits output, and the answer rarely involves the labeling head or the capper. It comes down to how fast, and how consistently, you can turn a preform into a bottle.",
+  "overviewsubDescription": [
+    "A pneumatic pet blower uses compressed air, not hydraulics, to drive the stretch blow sequence: pre blow, main blow, and exhaust, all fired in tight sequence across dozens of cavities on a rotating carousel. Rotary architecture is what makes this practical at volume. Instead of a single station cycling preform after preform, a rotary pet blow molding machine indexes multiple stations continuously, so infeed, heating, blowing, and ejection happen in parallel rather than in a queue.",
+    "Why does the pneumatic side matter so much? Bottle wall thickness, base strength, and neck finish all depend on how precisely the air pressure ramps up and holds during the blow phase. A pneumatic pet system that can't hold a stable pressure profile produces bottles with thin spots, warping, or inconsistent haze. Those are defects that show up on the shelf, not just on the inspection line, and for beverage brands shipping globally, that consistency isn't optional."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Features of the SEPPA SSB-SL Pneumatic PET Blower",
+      "paragraphs": [
+        "Rotary indexing and cavity synchronization: Each station on the carousel is mechanically timed so blow air delivery lines up exactly with mold clamping, cavity by cavity. Drift here is what causes uneven bottles, and it's the first thing we tune during commissioning.",
+        "Integrated pneumatic tube system: Air doesn't just need to be available. It needs to arrive at the right pressure, at the right station, at the right millisecond. Our pneumatic tube system routes high pressure and low pressure air separately, which keeps pressure loss down across the rotary union and holds every cavity on the same blow curve.",
+        "High speed valve manifolds: The valve block is arguably the most overworked component on the whole machine. SEPPA uses manifold mounted valves with short response times specifically so a pet blow molding machine running at high index speeds doesn't lose synchronization as wear accumulates.",
+        "Durable rotary seals and air recovery circuits: Standard rotary unions leak air over time. SEPPA's seal design, paired with a circuit that reclaims exhaust air for pre blow use, cuts compressor load and the maintenance headaches that come with pressure loss.",
+        "None of these features work in isolation. A rotary air handling design is only as good as its weakest joint. You can't bolt a great valve manifold onto a pet packaging machine with a mediocre tube layout and expect the numbers to hold."
+      ]
+    },
+    {
+      "title": "Benefits of Using a Pneumatic PET Blowing Machine",
+      "paragraphs": [
+        "The obvious benefit is speed. Rotary indexing combined with a well tuned pneumatic pet system gets you real parallel processing instead of sequential blowing, and that shows up directly in bottles per hour numbers. It's a gap a linear pet blowing machine simply can't close, no matter how well its own pneumatic tube system is routed.",
+        "The less obvious benefit is consistency over time. Air systems degrade differently than hydraulic ones: seals wear gradually rather than failing suddenly, which means a properly monitored pneumatic pet packaging machine gives operators warning signs well before a breakdown. Add electronic blow pressure monitoring and an operator can catch a failing valve during a scheduled changeover, not mid shift.",
+        "Then there's the cost side. Air recovery circuits reduce compressor draw, one of the larger energy line items on a bottling floor. Over a year of continuous operation, that's a meaningfully lower cost per bottle."
+      ]
+    }
+  ],
+  "applicationsTitle": "Applications of the Pneumatic PET Blowing Machine",
+  "applicationsSubtitle": "Not every bottle has the same demands, and that's really the test of a good pet packaging machine: can it handle the range without constant retooling?",
+  "applications": [
+    {
+      "title": "Carbonated soft drinks",
+      "description": "Need base geometry that resists internal pressure without ballooning."
+    },
+    {
+      "title": "Mineral water lines",
+      "description": "Run lighter preforms at higher speeds, where every gram saved matters to the cost sheet."
+    },
+    {
+      "title": "Flavoured water products",
+      "description": "Often need custom shoulder contours, which means the mold change has to be fast, not a half day event."
+    },
+    {
+      "title": "Customized Capabilities",
+      "description": "SEPPA's pneumatic pet platform handles all of it because the air delivery logic, not just the mold, is built to be reprogrammed per SKU. A pet packaging machine that can't adjust its pressure profile quickly between product runs ends up costing a plant real change over time, and changeover time is money nobody gets back. A linear pet blowing machine can technically run the same variety of bottles, but the changeover math gets worse as SKU count grows, since each station has to be re tuned rather than the whole carousel adjusted at once."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions for Pneumatic PET Blowing Machines?",
+    "description": "We've built rotary systems for FMCG bottlers running lines that can't afford unplanned downtime, where a single stalled shift means missed distribution windows. That's the environment our engineering has to survive.",
+    "paragraphs": [
+      "What we bring isn't just a rotary frame with valves bolted on. It's an understanding of how a pneumatic tube system needs to be routed to avoid pressure loss at scale, how rotary seals age under three shift operation, and how to tune a valve manifold so it stays synchronized at the index speeds a modern pet blow molding machine runs at. We've made the mistakes already, undersized manifolds, seals that looked fine on paper and failed in month four, so our current designs don't repeat them.",
+      "If your line has outgrown what a linear pet blowing machine can deliver and needs a pneumatic pet blowing machine that holds tolerance at full speed, not just at the demo run, that's the conversation we want to have."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the Pneumatic PET Blowing Machine Works",
+    "subtitle": "Preforms enter on a continuous rotary infeed and move into the heating tunnel, where infrared lamps bring the PET to its stretch ready temperature window. From there, each preform transfers into a mold on the rotary carousel.",
+    "steps": [
+      {
+        "title": "Low pressure pre blow",
+        "description": "A stretch rod extends the preform while low pressure pre blow air, typically 8 to 12 bar, shapes the initial bubble."
+      },
+      {
+        "title": "High pressure main blow",
+        "description": "Once material is distributed toward the base and shoulders, high pressure main blow air, often north of 35 bar, pushes it fully into the mold wall."
+      },
+      {
+        "title": "Pressure set and release",
+        "description": "The bottle holds under pressure just long enough to set, then exhaust air releases before the mold opens and ejects the container."
+      }
+    ],
+    "outro": [
+      "Here's the part that separates rotary from linear: on a linear pet blowing machine, each station has to complete this entire sequence before the next preform can start. Throughput is capped by however many stations you can physically fit in a line, and by the fact they're often running in sequence rather than true parallel. A rotary pneumatic pet blow molding machine sidesteps that constraint entirely. While one station is exhausting, the next is already mid blow, and the one after that is just clamping. At scale, that difference is the gap between a few thousand bottles an hour and tens of thousands."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How much maintenance does a pneumatic PET unit actually require?",
+      "answer": "Rotary seals and valve manifolds are the main wear items. With scheduled inspection every 2,000 to 3,000 operating hours, most issues get caught before they cause downtime."
+    },
+    {
+      "question": "How does rotary output compare to a linear pet blowing machine?",
+      "answer": "Rotary systems process multiple stations in parallel, so throughput scales with cavity count rather than being capped by sequential station cycles. For high volume lines, that's usually the deciding factor."
+    },
+    {
+      "question": "How does SEPPA's pneumatic tube system improve energy efficiency?",
+      "answer": "By separating high and low pressure air paths and recovering exhaust air for pre blow use, the system reduces how hard the compressor has to work per bottle cycle."
+    },
+    {
+      "question": "How reliable is a SEPPA pet packaging machine over long production runs?",
+      "answer": "Reliability comes down to seal durability and pressure consistency. SEPPA's rotary unions and monitored pneumatic circuits are built specifically to hold tolerance across extended, continuous duty runs."
+    },
+    {
+      "question": "Why do FMCG bottlers keep choosing SEPPA for pet blow molding machine infrastructure?",
+      "answer": "Because the engineering is built around real production conditions, not clean demo floor performance."
+    }
+  ]
+}

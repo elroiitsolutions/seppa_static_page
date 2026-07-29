@@ -1,0 +1,20 @@
+{
+  "title": "Händler",
+  "breadcrumbName": "Händler",
+  "heading": "Werden Sie unser Partner",
+  "subheading": "Werden Sie Teil unseres weltweiten Netzwerks autorisierter Händler. Wir bieten branchenführende Abfüll- und Verpackungslösungen. Füllen Sie das folgende Formular aus, um sich als Seppa-Händler in Ihrer Region zu bewerben.",
+  "formTitle": "Händlerbewerbung",
+  "submitButtonText": "Jetzt bewerben",
+  "name": "Vollständiger Name",
+  "namePlaceholder": "Ihr vollständiger Name",
+  "company": "Firmenname / Einzelperson",
+  "companyPlaceholder": "Ihr Firmenname",
+  "email": "E-Mail-Adresse",
+  "emailPlaceholder": "Geschäftliche E-Mail",
+  "phone": "Telefonnummer",
+  "phonePlaceholder": "Kontaktnummer",
+  "region": "Gewünschte Händlerregion",
+  "regionPlaceholder": "Stadt, Bundesland oder Land",
+  "message": "Geschäftsvorschlag",
+  "messagePlaceholder": "Erzählen Sie uns von Ihrem aktuellen Geschäft, Ihrem Netzwerk und warum Sie mit uns zusammenarbeiten möchten..."
+}

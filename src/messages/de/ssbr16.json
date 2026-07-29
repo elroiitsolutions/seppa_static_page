@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-R16: Hochgeschwindigkeits-Rotary-PET-Blasformmaschine für maximalen Durchsatz",
+  "breadcrumbName": "SSB-R16",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Überblick über die SEPPA SSB-R16 Rotary PET-Blasmaschine",
+  "overviewDescription": "Die SEPPA SSB-R16 repräsentiert die höchste Kavitätenanzahl in der Rotary-PET-Blasformlinie von Seppa Solutions. Sechzehn Kavitäten im kontinuierlichen Rotary-Betrieb stellen höchste Anforderungen an eine moderne Wasserflaschen-Herstellungsmaschine. Die SEPPA SSB-R16 wurde genau für diese Produktionsklasse entwickelt. Karussell-Geometrie, Heizsystem und Formschließzeiten sind darauf ausgelegt, dass alle sechzehn Stationen identische PET-Behälter produzieren – auch bei langen Schichten und dauerhaftem 24/7-Betrieb.",
+  "overviewsubDescription": [
+    "Im Kern ist die SSB-R16 eine Rotary-Wasserflaschen-Herstellungsmaschine. Preforms werden auf einer Seite zugeführt, fertige PET-Flaschen verlassen die Anlage auf der anderen Seite. Dazwischen steuert ein präzises Servosystem die Prozesse Erwärmung, Streckung und Blasformen über alle Stationen hinweg.",
+    "Ältere Maschinen arbeiten häufig mit mechanischen Kurvenscheiben und Verbindungen, deren Genauigkeit über Jahre durch Verschleiß beeinflusst werden kann. Die SSB-R16 ersetzt diese Abhängigkeiten durch servoangetriebene Achsen, die eine konstante Kalibrierung zwischen allen Stationen sicherstellen. Genau darin liegt der Vorteil einer modernen Rotary-Blasformmaschine: Sechzehn Kavitäten bringen nur dann einen echten Produktivitätsvorteil, wenn jede einzelne Kavität dauerhaft gleich arbeitet. SEPPA entwickelte die R16 als leistungsstarke Lösung für Getränkebetriebe, die lineare Systeme oder kleinere Rotary-Anlagen überschritten haben und industrielle Produktionsmengen erreichen möchten, ohne zusätzliche Produktionsflächen oder deutlich mehr Personal einzusetzen."
+  ],
+  "featuresTitle": "Hauptmerkmale und Hochgeschwindigkeitsleistung",
+  "features": [
+    {
+      "title": "Rotary-Karussell und Antriebssystem mit Präzisions-Servo",
+      "description": "Das Karussell ist eines der wichtigsten technischen Elemente dieser Wasserflaschen-Herstellungsmaschine. Die Hochmoment-Rotary-Struktur transportiert sechzehn Formensätze durch einen vollständigen Heiz-, Streck- und Blaszyklus pro Umdrehung. Lager, Antriebskomponenten und mechanische Baugruppen sind für Dauerbetrieb ausgelegt und bieten zusätzliche Reserven über die normale Produktionsleistung hinaus."
+    },
+    {
+      "title": "Mehrzonen-IR-Heizmodule",
+      "description": "Die Preform-Konditionierung erfolgt über mehrere unabhängig steuerbare Infrarot-Heizzonen entlang des Transportweges. Dies ist entscheidend, da unterschiedliche Bereiche einer PET-Preform unterschiedliche Temperaturprofile benötigen: Halsbereich, Flaschenkörper und Bodenbereich. Eine falsche Temperaturverteilung kann bei einer Rotary-Blasformmaschine zu ungleichmäßiger Wandstärke, Materialspannungen oder Trübungen führen. Die SSB-R16 ermöglicht eine individuelle Anpassung der Heizkurve an Flaschengewicht, Preform-Geometrie und verwendetes PET-Material. Dadurch entsteht eine stabile Materialverteilung über lange Produktionscycles."
+    },
+    {
+      "title": "Servo-gesteuerte Blasventilsteuerung und Pneumatik",
+      "description": "Die Servo-Steuerung zeigt ihre Vorteile besonders bei der Blasprozess-Regelung. Vorblasen, Hauptblasen und Entlüften erfolgen innerhalb exakt definierter Zeitfenster, synchron zur tatsächlichen Rotary-Position. Im Gegensatz zu mechanischen Kurvensystemen kann der Prozess flexibel an unterschiedliche Produktionsgeschwindigkeiten angepasst werden. Dadurch bleibt die Streckblasqualität auch bei steigender Leistung stabil. Zusätzlich reduziert die integrierte Luft-Rückgewinnung den Druckluftverbrauch pro Zyklus. Hochbelastbare Dichtungssysteme in Pneumatik- und Blaskreisläufen erhöhen die Betriebssicherheit und verhindern ungeplante Produktionsunterbrechungen."
+    }
+  ],
+  "applicationsTitle": "Anwendungen in Getränke- und Verpackungsindustrien",
+  "applicationsSubtitle": "Nicht jede Mineralwasserflaschen-Herstellungsmaschine benötigt sechzehn Kavitäten. Anlagen dieser Leistungsklasse werden jedoch überall dort eingesetzt, wo konstante Nachfrage und hohe Produktionsmengen entscheidend sind.",
+  "applications": [
+    {
+      "title": "Großanlagen für stilles und Mineralwasser",
+      "description": "Für Wasserproduzenten wurde die SSB-R16 speziell auf hohe Ausbringung und stabile Flaschenqualität optimiert. Viele Installationen laufen mit wenigen Formaten über lange Zeiträume – genau hier spielt eine dedizierte Hochleistungsanlage ihre Vorteile aus."
+    },
+    {
+      "title": "Hersteller von karbonisierten Getränken (CSD)",
+      "description": "Bei kohlensäurehaltigen Getränken gelten andere Anforderungen. Die Flaschen müssen höheren Innendrücken standhalten und gleichzeitig präzise Halsgeometrien für zuverlässige Verschlussprozesse besitzen. Die SEPPA-Plattform unterstützt beide Anforderungen durch gespeicherte Prozessrezepte, ohne umfangreiche mechanische Anpassungen."
+    },
+    {
+      "title": "Zentralisiertes Blasen auf mehreren Linien",
+      "description": "Als Teil eines vollständigen Getränkeverpackungssystems lässt sich die SSB-R16 mit Preform-Zuführung, Etikettierung, Verpackung und weiteren Anlagenkomponenten integrieren. Die enorme Ausbringungsmenge ermöglicht die Versorgung mehrerer Abfülllager von einer einzigen Maschine aus."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Blasmaschinen wählen?",
+    "description": "SEPPA entwickelt Getränkeverpackungssysteme für Hersteller, die maximale Verfügbarkeit benötigen. Wasser-, Milch- und Getränkeproduzenten mit kontinuierlichem Schichtbetrieb profitieren von Maschinen, deren Komponenten für Dauerbetrieb ausgelegt sind.",
+    "paragraphs": [
+      "Die SSB-R16 verbindet robuste Mechanik mit einer wartungsfreundlichen Servo-Steuerungsarchitektur. Technische Anpassungen und Servicearbeiten können direkt vor Ort durchgeführt werden, ohne lange Ausfallzeiten.",
+      "Neben der PET-Blasmaschine unterstützt SEPPA komplette Produktionslinien: Preform-Handling, Verschlusssysteme, Etikettierung und Sekundärverpackung. Dadurch erhalten Kunden eine abgestimmte Gesamtlösung aus einer Hand. Diese vollständige Projektbetreuung ist ein wesentlicher Grund, warum Getränkebetriebe bei der Erweiterung ihrer Produktionskapazität erneut auf SEPPA setzen."
+    ]
+  },
+  "methodology": {
+    "title": "PET-Flaschenblasprozess und Produktionsablauf",
+    "subtitle": "Der Betrieb einer Wasserflaschen-Herstellungsmaschine ist einfach zu beschreiben, aber anspruchsvoll in der industriellen Umsetzung. Alle Prozessschritte laufen synchron zur Rotary-Bewegung ab:",
+    "steps": [
+      {
+        "title": "Hochgeschwindigkeitszuführung der Preforms",
+        "description": "Der Prozess beginnt mit der Hochgeschwindigkeitszuführung der Preforms. Diese werden automatisch ausgerichtet und anschließend in die Heizstation transportiert."
+      },
+      {
+        "title": "Mehrzonige IR-Konditionierung",
+        "description": "Dort bringt die mehrzonige IR-Konditionierung jede Preform auf die optimale Strecktemperatur. Die Temperatur wird zonenweise überwacht, um eine Überhitzung des Halsbereichs oder eine unzureichende Erwärmung des Bodens zu vermeiden."
+      },
+      {
+        "title": "16-Stationen Synchron-Streckblasformen",
+        "description": "Nach der Erwärmung startet der synchronisierte Streckblasprozess: Servo-gesteuerte Streckstabbewegung, Niederdruck-Vorblasen, Hochdruck-Hauptblasen sowie Kühlung und Stabilisierung."
+      },
+      {
+        "title": "Automatische Entnahme und Weitertransport",
+        "description": "Die fertigen Flaschen werden präzise ausgeworfen und direkt an die Transportbänder übergeben. Genau diese Ausführungsqualität unterscheidet eine einfache Mineralwasserflaschen-Herstellungsmaschine von einer Anlage, die über Jahre konstante Toleranzen hält."
+      }
+    ],
+    "outro": [
+      "Unternehmen, die diese Getränkeverpackungstechnik einsetzen, optimieren vor allem ihre Gesamtanlageneffektivität (OEE) durch weniger mechanischen Verschleiß, niedrigen Energieverbrauch und reduzierten Ausschuss."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartung benötigt eine Rotary-Blasformmaschine wie die SSB-R16?",
+      "answer": "Die regelmäßige Wartung konzentriert sich auf Karusselllager, Blasventildichtungen und IR-Heizsysteme. SEPPA empfiehlt planmäßige Lampenwechsel nach Betriebsstunden, da die Heizleistung schrittweise abnimmt, bevor sichtbare Qualitätsprobleme entstehen."
+    },
+    {
+      "question": "2. Wie verbessert die Servo-Steuerung die Qualität bei hohen Geschwindigkeiten?",
+      "answer": "Die Servo-Steuerung synchronisiert Streckstabbewegung und Blasluft exakt mit der Rotary-Position. Dadurch bleiben Toleranzen auch bei steigender Produktionsgeschwindigkeit stabil."
+    },
+    {
+      "question": "3. Warum entscheiden sich Getränkehersteller für SEPPA Verpackungstechnik?",
+      "answer": "SEPPA bietet eine vollständig abgestimmte Lösung statt einzelner Maschinen verschiedener Anbieter. Von der Preform-Zuführung bis zur Verpackung werden alle Komponenten gemeinsam geplant und integriert."
+    },
+    {
+      "question": "4. Welche technischen Vorteile bietet die SSB-R16 gegenüber älteren Anlagen?",
+      "answer": "Die wichtigsten Vorteile sind zonengesteuerte IR-Erwärmung, servooptimierte Prozesssteuerung und Luft-Rückgewinnung zur Reduzierung des Druckluftverbrauchs."
+    },
+    {
+      "question": "5. Warum vertrauen große Wasserproduzenten auf die SEPPA Mineralwasserflaschen-Herstellungsmaschine?",
+      "answer": "Große Wasserabfüller benötigen vor allem konstante Qualität über lange Produktionszeiten. Die SSB-R16 wurde genau dafür entwickelt – mit leistungsstarkem Karussell, präziser Temperaturkontrolle und synchronisierten Servo-Prozessen."
+    }
+  ]
+}

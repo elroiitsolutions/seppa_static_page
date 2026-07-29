@@ -1,0 +1,139 @@
+{
+  "title": "Palettiermaschinen",
+  "breadcrumbName": "Palettiermaschinen",
+  "rootBreadcrumbName": "Maschinen",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Palettiermaschinen: Präzision und Effizienz für die End-of-Line-Automatisierung",
+  "overviewDescription": "Am Ende jeder Produktionslinie entscheidet sich, ob Waren reibungslos für Lagerung und Versand bereitstehen oder ob Engpässe den gesamten Materialfluss beeinträchtigen. Genau an diesem Punkt entfaltet eine leistungsfähige Palettiermaschine ihren größten Nutzen.",
+  "overviewsubDescription": [
+    "SEPPA entwickelt Palettiersysteme für den industriellen Dauerbetrieb – nicht für Vorführungen, sondern für Produktionslinien, die zuverlässig und wirtschaftlich rund um die Uhr arbeiten müssen. Was ist ein Palettiersystem? Ein Palettiersystem bildet die Schnittstelle zwischen Produktion und Lagerlogistik. Kartons, Säcke, Kisten oder Flaschen werden automatisch zu stabilen, transportsicheren Paletten zusammengestellt.",
+    "Diese Aufgabe erfordert deutlich mehr als das reine Stapeln von Produkten. Moderne Palettiermaschinen berechnen Stapelmuster, überwachen den Schwerpunkt jeder Palette, koordinieren den Materialfluss und übergeben fertige Ladungen nahtlos an die nachgelagerte Stretchwickelanlage.",
+    "Je nach Anwendung verarbeiten die Systeme zwischen 1.200 und 2.400 Kartons pro Stunde und erreichen eine Positioniergenauigkeit im Bereich von Bruchteilen eines Millimeters. Diese Präzision sorgt für stabile Paletten und minimiert Transportschäden."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Arten von Palettiersystemen",
+      "paragraphs": [
+        "Roboterpalettierer: Für Unternehmen mit zahlreichen Produktvarianten bietet ein Roboterpalettierer die höchste Flexibilität. Vier- oder Sechsachs-Roboter mit Reichweiten von 2.500 bis 3.200 mm und Traglasten zwischen 80 und 450 kg verarbeiten unterschiedlichste Verpackungsarten – von Kartons über Säcke bis hin zu Schrumpfgebinden. Formatwechsel erfolgen häufig innerhalb von weniger als 90 Sekunden durch das Aufrufen gespeicherter Rezepte auf dem HMI. Ein weiterer Vorteil ist das flexible End-of-Arm-Tooling. Je nach Produkt kommen Vakuum-, Gabel-, Greif-, Magnet- oder Hybridgreifer zum Einsatz. Dadurch kann eine einzige Roboterzelle mehrere konventionelle Palettierstationen ersetzen.",
+        "Automatische Portal-Palettiermaschinen: Wenn maximale Leistung wichtiger ist als hohe Produktvielfalt, sind Portal-Palettierer häufig die wirtschaftlichste Lösung. Diese Systeme werden vor allem in Getränke-, Chemie- oder Industrieverpackungslinien mit geringer SKU-Anzahl und hohen Ausstoßleistungen eingesetzt. Die automatischen Palettiermaschinen von SEPPA verfügen über einen präzise geführten Palettierkopf aus geschliffenem Stahl, Rollenförderer zur Lagenbildung sowie integrierte Leerpalettenmagazine und Zwischenlagenzuführungen. Bei weniger als zehn Produktformaten und Leistungen von über 1.500 Kartons pro Stunde erzielen Portal-Palettierer in der Regel die niedrigsten Kosten pro Handhabungsvorgang.",
+        "Die passende Palettierlösung auswählen: Die Auswahl des optimalen Systems hängt von mehreren Faktoren ab: Anzahl der Produktvarianten, Häufigkeit von Formatwechseln, Maximale Stundenleistung, Produkteigenschaften, Verfügbare Stellfläche. Leichte oder empfindliche Produkte profitieren häufig von flexiblen Roboterlösungen mit sanften Bewegungsprofilen. Schwere und standardisierte Verpackungen lassen sich besonders effizient mit leistungsstarken Portal-Palettierern verarbeiten. In vielen Produktionsbetrieben kommen beide Technologien kombiniert zum Einsatz."
+      ]
+    },
+    {
+      "title": "Vorteile automatisierter Palettiermaschinen",
+      "paragraphs": [
+        "Automatisierte Palettiersysteme bieten zahlreiche wirtschaftliche Vorteile:",
+        "Gleichbleibend hohe Stapelqualität durch präzise Musterberechnung und Vermeidung ergonomischer Belastungen beim manuellen Stapeln schwerer Lasten.",
+        "Höhere Gesamtanlageneffektivität (OEE) durch reduzierte Umrüstzeiten und weniger Mikrostopps.",
+        "Geringere Transportschäden durch stabile Paletten.",
+        "Einsatz des Personals für qualifizierte Aufgaben wie Qualitätskontrolle oder Anlagenüberwachung.",
+        "Diese Faktoren führen langfristig zu einer höheren Produktivität und niedrigeren Betriebskosten."
+      ]
+    }
+  ],
+  "featuresTitle": "Wichtige Merkmale moderner Palettiermaschinen",
+  "featuresSubtitle": "Qualitätsmerkmale, die im täglichen industriellen Einsatz den Unterschied machen:",
+  "features": [
+    {
+      "title": "Einfache Programmierung von Stapelmustern",
+      "description": "Neue Palettenmuster sollten sich schnell und ohne Spezialkenntnisse erstellen lassen. Die HMI-Steuerung von SEPPA ermöglicht das Anlegen und Validieren neuer Palettiermuster innerhalb weniger Minuten."
+    },
+    {
+      "title": "Präzise Bewegungssteuerung",
+      "description": "Servogesteuerte Achsen, geschlossene Regelkreise und ruckbegrenzte Beschleunigungsprofile gewährleisten Wiederholgenauigkeiten von bis zu ±0,5 mm. Gleichzeitig werden empfindliche Produkte wie Glasflaschen besonders schonend bewegt."
+    },
+    {
+      "title": "Flexible Greifsysteme",
+      "description": "Modulare Werkzeugwechsler sowie Vakuumsysteme mit mehreren Greifzonen ermöglichen schnelle Produktwechsel ohne mechanische Umbauten."
+    },
+    {
+      "title": "Hohe Betriebssicherheit",
+      "description": "Lichtvorhänge, Laserscanner und softwaregesteuerte Sicherheitsbereiche erfüllen hohe Sicherheitsstandards, ohne unnötige Produktionsunterbrechungen zu verursachen."
+    },
+    {
+      "title": "Langlebige Konstruktion",
+      "description": "Geschlossene Lager, selbstschmierende Buchsen und frequenzgeregelte Antriebe sorgen für lange Wartungsintervalle. Die Palettiersysteme von SEPPA erreichen unter Dauerbetrieb Betriebszeiten von mehr als 8.000 Stunden zwischen größeren Wartungsmaßnahmen."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche von Palettiersystemen",
+  "applicationsSubtitle": "Palettiermaschinen werden in zahlreichen Industrien eingesetzt:",
+  "applications": [
+    {
+      "title": "Lebensmittel- und Getränkeindustrie",
+      "description": "Glasflaschen, Getränkekartons oder PET-Gebinde erfordern eine präzise und schonende Handhabung. Spezielle Greifersysteme und optimierte Bewegungsprofile gewährleisten einen sicheren Materialtransport."
+    },
+    {
+      "title": "Chemische Industrie",
+      "description": "Säcke, Eimer und IBC-Behälter stellen hohe Anforderungen an Tragfähigkeit, Lastverteilung und gegebenenfalls explosionsgeschützte Ausführungen."
+    },
+    {
+      "title": "Pharmaindustrie",
+      "description": "Hier stehen GMP-Konformität, lückenlose Dokumentation sowie die Integration in Track-and-Trace-Systeme im Vordergrund."
+    },
+    {
+      "title": "Getränkekisten und Mehrwegsysteme",
+      "description": "Roboterzellen übernehmen sowohl das Palettieren leerer Gebinde als auch den Transport gefüllter Kisten innerhalb derselben Produktionsfläche."
+    },
+    {
+      "title": "Papier-, Baustoff- und Schwerlastindustrie",
+      "description": "Portal-Palettierer gewährleisten bei schweren Produkten maximale Stabilität und kontrollieren jede Lage hinsichtlich ihrer Stapelqualität. Unabhängig von der Branche orientiert sich jede Palettierlösung an Produkt, Stapelmuster und Produktionsleistung."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Palettierlösungen von SEPPA?",
+    "description": "SEPPA entwickelt jede Palettiermaschine individuell entsprechend der jeweiligen Produktionsumgebung. Zu den wichtigsten Vorteilen gehören:",
+    "paragraphs": [
+      "Individuell ausgelegte Roboter- und Portal-Palettiersysteme sowie SPS-Steuerungen mit einfacher Programmierung neuer Palettenmuster.",
+      "Schlüsselfertige Gesamtlösungen inklusive Leerpalettenmagazin, Rollenfördertechnik, Zwischenlagenhandling und CE-konformer Sicherheitstechnik.",
+      "Umfassender After-Sales-Service mit Bedienerschulungen, Ersatzteilversorgung und technischer Dokumentation.",
+      "Integration moderner Stretchwickelsysteme wie Revolution- und Revolving-Base-Module für eine sichere Ladungssicherung.",
+      "Fazit: Die Palettiermaschinen von SEPPA verbinden präzise Automatisierung, hohe Flexibilität und robuste Konstruktion zu leistungsfähigen End-of-Line-Lösungen. Ob Roboterpalettierer oder Hochleistungs-Portalanlage – jedes System wird exakt auf Produktionsleistung, Produktportfolio und vorhandene Anlagenstruktur abgestimmt. Das Ergebnis sind stabile Paletten, optimierte Materialflüsse und eine nachhaltige Steigerung der Wirtschaftlichkeit in modernen Verpackungslinien."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodology",
+    "title": "So funktioniert der Palettierprozess",
+    "subtitle": "Der automatische Palettierprozess umfasst mehrere aufeinander abgestimmte Schritte:",
+    "steps": [
+      {
+        "title": "Produkterfassung und Lagenbildung",
+        "description": "Kartons oder Verpackungseinheiten gelangen auf den Sammelförderer. Sensoren und Scanner identifizieren Produkttyp und Position. Förderzonen ordnen die Produkte entsprechend dem hinterlegten Palettenmuster an."
+      },
+      {
+        "title": "Palettierung",
+        "description": "Der Roboterpalettierer oder Portal-Palettierer positioniert jede Lage präzise auf der Palette und überwacht den gesamten Bewegungsablauf."
+      },
+      {
+        "title": "Einlegen von Zwischenlagen",
+        "description": "Automatische Zwischenlagenzuführungen platzieren Trennlagen entsprechend der programmierten Stapelstruktur."
+      },
+      {
+        "title": "Stretchwickeln und Abtransport",
+        "description": "Nach Abschluss der Palettierung übernimmt die integrierte Stretchwickelmaschine die Transportsicherung der fertigen Palette. Die fertige Palette wird verwogen, etikettiert und anschließend dem Versand oder Lager zugeführt."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie hoch ist der Wartungsaufwand eines Roboterpalettierers?",
+      "answer": "Moderne Roboterpalettierer benötigen vergleichsweise wenig Wartung. Typische Maßnahmen sind Schmierungen nach etwa 2.000 Betriebsstunden, regelmäßige Kontrollen der Greifersysteme sowie eine jährliche Kalibrierung der Servoantriebe. Zustandsüberwachungssysteme erkennen viele Verschleißerscheinungen bereits im Vorfeld."
+    },
+    {
+      "question": "2. Wie viel Platz benötigt eine automatische Palettiermaschine?",
+      "answer": "Komplette Portal-Palettieranlagen einschließlich Fördertechnik und Palettenmagazin benötigen in der Regel zwischen 35 und 55 m². Kompakte Roboterzellen wie der MEC ARM lassen sich häufig bereits auf 18 bis 25 m² integrieren und eignen sich daher besonders für Nachrüstprojekte."
+    },
+    {
+      "question": "3. Wie verbessert eine Palettiermaschine die Stapelsicherheit?",
+      "answer": "Automatische Systeme berechnen das optimale Stapelmuster, überwachen die Lastverteilung und kontrollieren den Schwerpunkt jeder Palette. Dadurch werden instabile Ladungen und Transportschäden deutlich reduziert."
+    },
+    {
+      "question": "4. Warum ist SEPPA ein zuverlässiger Partner für Palettierlösungen?",
+      "answer": "SEPPA entwickelt Palettiermaschinen für unterschiedlichste Anwendungen in der Lebensmittel-, Getränke-, Chemie- und Pharmaindustrie. Alle Systeme werden individuell projektiert, erfüllen die geltenden CE-Anforderungen und sind auf einen langfristig wirtschaftlichen Betrieb ausgelegt."
+    },
+    {
+      "question": "5. Lassen sich bestehende Produktionslinien nachrüsten?",
+      "answer": "Ja. Die modularen Palettiersysteme von SEPPA lassen sich in bestehende Fördertechnik sowie vorhandene ERP- und Warehouse-Management-Systeme integrieren. Die meisten Nachrüstungen können umgesetzt werden, ohne den laufenden Produktionsprozess wesentlich zu beeinträchtigen."
+    }
+  ]
+}

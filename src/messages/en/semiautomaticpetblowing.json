@@ -1,0 +1,95 @@
+{
+  "title": "Semi Automatic PET Blowing Machine",
+  "breadcrumbName": "Semi Automatic Units",
+  "rootBreadcrumbName": "PET Blowing Machine",
+  "rootBreadcrumbPath": "/blowing",
+  "overviewTitle": "What a Semi Automatic PET Blowing Machine Actually Does",
+  "overviewDescription": "A semi automatic pet blowing machine takes a cold or warm pet preform, brings it through a controlled infrared heating zone, then transfers it into a mold where high pressure air stretches it into final bottle shape. The “semi” part refers to the loading and unloading an operator places the preform and removes the finished bottle while the heating, stretching, and blowing stages are handled by the semi automatic machine’s own pneumatic and electronic systems.",
+  "overviewsubDescription": [
+    "This split matters for bottle manufacturing operations that don’t yet need (or can’t justify) a fully robotic line. A semi pet blowing machine costs a fraction of a rotary automatic system, takes up less floor space, and can switch between bottle formats in under twenty minutes rather than the half day changeover typical of larger lines. For a contract packager running three or four SKUs a week, that flexibility is worth more than raw throughput.",
+    "We’ve found that buyers underestimate one thing going in: how much the IR lamp configuration affects everything downstream. Inconsistent lamp output creates preforms with uneven crystallinity. Uneven crystallinity creates bottles with thin spots, usually right where the customer notices them the shoulder or the base. A well tuned semi automatic pet blowing machine doesn’t just heat preforms; it heats them to a repeatable, mapped temperature gradient every single cycle."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Key Features That Separate a Good Machine From a Mediocre One",
+      "paragraphs": [
+        "Three subsystems decide whether a semi pet blowing machine earns its keep on the shop floor.",
+        "Infrared Heating Zones: Seppa’s heating modules use segmented IR lamp banks, each zone independently adjustable so the operator can compensate for preform wall thickness, neck finish, or resin grade. Preform geometry varies by bottle design a 28mm neck preform heats differently than a wide mouth jar preform and a fixed, non adjustable heating profile produces inconsistent stretch ratios. Our zones hold output variance under 2% across the lamp bank, keeping material stress low enough to avoid the stress whitening defect common in poorly heated PET.",
+        "Pneumatic Clamping and Blow Systems: The mold clamping unit on a semi automatic pet blowing machine has to do two contradictory things: close fast enough to keep cycle times short, and close with enough repeatable force to prevent flash at the parting line. We use dual stage pneumatic clamping rated for consistent tonnage across thousands of cycles, paired with a two stage blow air supply a low pressure pre blow stage around 8-10 bar that shapes the bottle, followed by a high pressure stage near 30-35 bar that locks in wall definition.",
+        "PLC Control Logic: The control interface on a semi pet blowing machine should let an operator adjust heating time, pre blow duration, and high pressure dwell time without calling in a service technician. Seppa’s PLC logic stores format specific recipes, so switching from a 500ml round bottle to a 1L oval jar means recalling a saved program rather than re tuning the machine from scratch."
+      ]
+    },
+    {
+      "title": "Why Producers Choose Semi Automatic Over Fully Automatic",
+      "paragraphs": [
+        "The case for a semi automatic pet blowing machine isn’t about it being a lesser version of a rotary line. It’s a different tool for a different production profile.",
+        "Entry cost is the obvious one a semi automatic machine runs at a fraction of the capital outlay of a fully automatic rotary system, which matters for a new bottle manufacturing operation testing demand before committing to high volume infrastructure. Format flexibility is the less obvious one. Mold changeover on a semi automatic pet blowing machine is largely tool less, meaning a trained operator can switch bottle shapes without a maintenance crew.",
+        "Reliability in mixed environments also counts. Facilities without climate controlled floors common across parts of South and Southeast Asia see a semi automatic machine hold thermal consistency better than automated bottle manufacturing systems with fixed heating curves, since an operator can react to ambient shifts in real time."
+      ]
+    }
+  ],
+  "applicationsTitle": "Applications Across Industries",
+  "applicationsSubtitle": "A semi automatic pet blowing machine isn’t locked to one product category. Across all of these applications, the underlying conditioning logic stays the same; only the mold and heating recipe change.",
+  "applications": [
+    { "title": "Carbonated Soft Drinks", "description": "Seppa’s systems handle carbonated soft drink bottles, where internal pressure resistance is non negotiable." },
+    { "title": "Still Water & Edible Oil", "description": "Produces containers that prioritize wall clarity over pressure tolerance." },
+    { "title": "Pharmaceutical Bottles", "description": "The same machine produces small volume containers for syrups, where dimensional accuracy on neck finish matters for cap sealing." },
+    { "title": "Cosmetic Jars", "description": "Cosmetic producers use it for custom jar shapes lower volume runs where a fully automatic line would sit idle between batches." }
+  ],
+  "whyChoose": {
+    "title": "Why Seppa Solutions",
+    "description": "We’ve built and serviced semi automatic pet blowing machine installations for FMCG manufacturers who needed a system that wouldn’t fail mid shift.",
+    "paragraphs": [
+      "That track record comes from getting the unglamorous details right: electronic thermal consistency monitoring that flags lamp drift before it produces scrap, tool less mold changeover, and energy efficient pneumatic circuits that cut compressed air consumption compared to older designs.",
+      "Our engineering team spends real time optimizing pet preform heating curves for each client’s resin grade and bottle geometry, rather than shipping a generic profile. That’s the difference between a machine that runs and a semi automatic pet blowing machine that runs predictably, shift after shift."
+    ]
+  },
+  "methodology": {
+    "title": "Step by Step: How the Bottle Actually Gets Made",
+    "subtitle": "The methodology behind a semi automatic pet blowing machine follows a fixed sequence, and skipping or rushing any stage shows up as a defect later.",
+    "steps": [
+      {
+        "title": "Manual preform loading",
+        "description": "The operator places a pet preform into the heating carrier, neck down, checking for visible defects before it enters the oven."
+      },
+      {
+        "title": "IR thermal conditioning",
+        "description": "The preform passes through the segmented lamp zones, reaching a body temperature around 95-105°C, while the neck finish stays shielded and unheated."
+      },
+      {
+        "title": "Mold transfer",
+        "description": "The conditioned preform moves into the closed mold cavity, positioned and centered before the blow head engages."
+      },
+      {
+        "title": "Dual stage blowing & Unloading",
+        "description": "The machine fires the pre blow stretch rod and low pressure air first, then the high pressure stage completes the form against the mold wall. Finally, the operator removes the finished bottle and inspects it."
+      }
+    ],
+    "outro": [
+      "This sequence, run consistently, is the difference between a semi pet blowing machine that produces saleable bottles and one that produces scrap. Why does the order matter so much? Each stage corrects a flaw the previous one might have introduced pre blow shapes the rough form so the high pressure stage isn’t fighting an uneven starting point."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How often does a semi pet blowing machine need maintenance?",
+      "answer": "IR lamp banks typically need inspection every 2,000-3,000 cycles, and pneumatic seals on the clamping unit should be checked monthly. Seppa machines log cycle counts automatically, so maintenance isn’t guesswork."
+    },
+    {
+      "question": "How do I get uniform wall thickness on a semi automatic machine?",
+      "answer": "Wall thickness uniformity comes down to matching the IR heating profile to the preform’s wall geometry and verifying pre blow timing. Most thin spot defects trace back to an uneven heat map, not the blow pressure itself."
+    },
+    {
+      "question": "Does ambient temperature really affect bottle manufacturing output?",
+      "answer": "Yes. Ambient shifts of even 5-8°C can change preform surface temperature enough to alter stretch ratio part of why semi automatic systems, with operator adjustable controls, often outperform fixed automated lines in non climate controlled facilities."
+    },
+    {
+      "question": "Why does Seppa’s pet blowing machine design last longer than competitors’?",
+      "answer": "Component selection matters more than most buyers realize we spec pneumatic cylinders and clamping components rated for continuous duty rather than intermittent use parts, which is where cheaper machines tend to fail first."
+    },
+    {
+      "question": "What makes Seppa Solutions a reliable source for pet preform processing equipment?",
+      "answer": "Years of engineering work tuning heating curves across resin grades and bottle geometries, with installations running across diverse climates, from coastal humidity to dry inland heat."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "title": "SEPPA SSB-SL-20: Kompakte PET-Streckblasmaschine für flexible Kleinserienproduktion",
+  "breadcrumbName": "SSB-SL-20",
+  "rootBreadcrumbName": "Pneumatic",
+  "rootBreadcrumbPath": "/blowing/pneumatic",
+  "overviewTitle": "Überblick über die SEPPA SSB-SL-20 PET-Streckblasmaschine",
+  "overviewDescription": "Kleine und mittlere Hersteller benötigen bei kurzen Produktionsläufen eine konstante Flaschenqualität, gleichmäßige Wandstärken und hohe Transparenz – ohne den Platzbedarf und die Infrastruktur einer industriellen Hochleistungsanlage. Die SEPPA SSB-SL-20 wurde genau für diese Anforderungen entwickelt.",
+  "overviewsubDescription": [
+    "Diese lineare PET-Streckblasmaschine richtet sich an Unternehmen, die wiederholbare Qualität bei moderaten Produktionsmengen benötigen und nicht auf maximale Geschwindigkeit, sondern auf Prozesskontrolle und Flexibilität setzen. Während Rotationsanlagen vor allem für lange Produktionsläufe mit einem festen Format optimiert sind, ermöglicht die SSB-SL-20 eine direkte Kontrolle über jeden einzelnen Herstellungsschritt.",
+    "Preform-Zuführung, Infrarot-Konditionierung, Werkzeugtransfer und Blasprozess erfolgen als klar getrennte und überprüfbare Prozessschritte. Sollte eine Charge außerhalb der Spezifikation liegen, können Betreiber die Ursache während des laufenden Zyklus erkennen und korrigieren – bevor größere Mengen Ausschuss entstehen.",
+    "SEPPA hat die SSB-SL-20 bewusst als kompakte Verpackungsmaschine entwickelt. Sie ist keine verkleinerte Rotationsanlage, sondern eine eigenständige Lösung für Hersteller, bei denen kleine bis mittlere Produktionsmengen den Schwerpunkt bilden."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen",
+  "features": [
+    {
+      "title": "Zonierte Infrarot-Erwärmung",
+      "description": "Das Infrarot-Heizsystem arbeitet mit unabhängig regelbaren Heizzonen entlang des Preforms. Dadurch können Körperbereich, Schulterbereich und Bodenbereich individuell temperiert werden. PET erwärmt sich nicht gleichmäßig über die gesamte Geometrie. Die zonierte IR-Steuerung gleicht diese Unterschiede bereits vor dem Eintritt in die Blasform aus, was gleichmäßige Wandstärken und stabile mechanische Eigenschaften sichert."
+    },
+    {
+      "title": "Effiziente Formkühlung",
+      "description": "Die Kühlkanäle der SSB-SL-20 sind für unterschiedliche PET-Materialien und Additivmischungen ausgelegt, wie sie häufig bei Getränke- und Lebensmittelverpackungen eingesetzt werden. Ob transparente PET-Behälter, eingefärbte Varianten oder spezielle Barriere-Materialien – die Kühlung unterstützt eine stabile Prozessführung. Die optimierte Kanalgeometrie sorgt dafür, dass die kompakte Maschine trotz geringer Stellfläche eine wettbewerbsfähige Produktionsleistung erreicht."
+    },
+    {
+      "title": "Zweistufiges Druckluftsystem",
+      "description": "Die SEPPA SSB-SL-20 nutzt einen zweistufigen Blasprozess: Niederdruck-Vorblasen zur ersten Formgebung des Preforms, gefolgt von Hochdruck-Endblasen zur vollständigen Ausformung von Konturen und feinen Details. Die optimale Abstimmung sichert eine maximale Materialverteilung."
+    },
+    {
+      "title": "Kompakte Bauweise mit zuverlässiger Wiederholgenauigkeit",
+      "description": "Die Maschine kombiniert eine kompakte Stellfläche mit einer stabilen Werkzeugschließung und reproduzierbaren Produktionsabläufen. Gerade für Unternehmen mit begrenztem Platzangebot bietet die Maschine eine Alternative zu größeren Systemen, ohne auf wichtige Prozesskontrolle verzichten zu müssen."
+    }
+  ],
+  "applicationsTitle": "Flaschentypen und industrielle Anwendungen",
+  "applicationsSubtitle": "Die Flexibilität der SEPPA SSB-SL-20 zeigt sich besonders bei häufigen Formatwechseln.",
+  "applications": [
+    {
+      "title": "Gewürz- und Gewürzgläser",
+      "description": "Ein Hersteller kann am Vormittag kleine Gewürz- oder Saucenbehälter produzieren und später auf ein anderes Flaschenformat wechseln, was ideal für Gewürzverpackungen ist."
+    },
+    {
+      "title": "Trockene Lebensmittel & Salzverpackung",
+      "description": "Für trockene Lebensmittel wie Salzverpackungen ist eine konstante Wanddichte entscheidend, um Schwachstellen an Dichtflächen zu vermeiden und die Feuchtigkeitsbeständigkeit zu erhöhen."
+    },
+    {
+      "title": "Getränke- und Lebensmittelgläser",
+      "description": "Lebensmittelhersteller profitieren von der eingesetzten Blasformtechnologie besonders bei transparenten PET-Behältern, bei denen Trübungen sofort auffallen würden."
+    },
+    {
+      "title": "Kundenspezifische Kleinserien",
+      "description": "Schneller Werkzeugwechsel und gespeicherte Heizparameter ermöglichen es, mehrere SKUs am selben Tag mit minimalen Ausfallzeiten zu fahren."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions wählen?",
+    "description": "SEPPA Solutions entwickelt PET-Verpackungslösungen für Hersteller, die zuverlässige Prozesse und flexible Produktion benötigen.",
+    "paragraphs": [
+      "Bei jeder Installation analysieren die Ingenieure die tatsächlichen Materialeigenschaften und Produktionsanforderungen des Kunden. Besonders bei Gewürz- und Lebensmittelverpackungen ist die genaue Abstimmung der Temperaturprofile entscheidend, da verschiedene PET-Formulierungen unterschiedlich auf Infrarotenergie reagieren.",
+      "Auch bei Anwendungen wie Salzverpackungen, bei denen zuverlässige Dichtflächen besonders wichtig sind, setzt SEPPA auf präzise Kühl- und Drucksteuerung. Kunden erhalten einen vollständigen Inbetriebnahmeprozess mit technischer Unterstützung und Erfahrung aus zahlreichen PET-Verpackungsanwendungen."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-SL-20",
+    "subtitle": "Der Produktionsablauf der SSB-SL-20 folgt einer klar definierten Prozesskette. Die Preforms werden manuell oder über eine halbautomatische Zuführung in die Maschine eingebracht:",
+    "steps": [
+      {
+        "title": "Infrarot-Erwärmung",
+        "description": "Die zonengesteuerten Heizmodule bringen das PET auf die optimale Strecktemperatur, ohne den empfindlichen Halsbereich zu überhitzen."
+      },
+      {
+        "title": "Transfer & Schließen",
+        "description": "Danach wird der erwärmte Preform in die Blasform übertragen. Die Schließeinheit sorgt für eine gleichmäßige und wiederholbare Spannkraft, wodurch Gratbildung vermieden wird."
+      },
+      {
+        "title": "Zweistufiges Blasen & Auswurf",
+        "description": "Vorblasen formt die Grundstruktur, während das Hochdruckblasen die endgültige Wandstärke und Oberflächenstruktur erzeugt. Nach einer kurzen Druckhaltephase wird der fertige Behälter ausgeworfen."
+      }
+    ],
+    "outro": [
+      "Dieser bewusst langsamere Prozess gegenüber einer Rotationsanlage bietet einen entscheidenden Vorteil: Jeder Schritt bleibt sichtbar, kontrollierbar und individuell anpassbar. Genau diese Eigenschaft macht die SSB-SL-20 besonders geeignet für kurze Serien mit mehreren Flaschenformaten."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt die PET-Verpackungsmaschine Wartung?",
+      "answer": "Die Infrarot-Heizmodule sollten monatlich auf Leistungsabweichungen geprüft werden. Die Kühlkanäle profitieren von einer vierteljährlichen Reinigung, um Ablagerungen zu vermeiden."
+    },
+    {
+      "question": "2. Wie erreicht die SSB-SL-20 gleichmäßige Wandstärken bei Spezialformen?",
+      "answer": "Durch die Kombination aus zonierter IR-Erwärmung, abgestimmten Temperaturprofilen und zweistufigem Blasprozess. SEPPA erstellt individuelle Einstellungen für jedes neue Flaschenformat."
+    },
+    {
+      "question": "3. Warum ist die Blasformtechnologie der SSB-SL-20 leistungsfähiger als ältere lineare Systeme?",
+      "answer": "Viele ältere Anlagen verfügen nur über einfache Heizprofile und feste Vorblasparameter. Die SSB-SL-20 bietet zusätzliche Einstellmöglichkeiten für komplexe Behältergeometrien."
+    },
+    {
+      "question": "4. Kann die SSB-SL-20 eine komplette Gewürzverpackungslinie unterstützen?",
+      "answer": "Ja. Viele Hersteller produzieren mehrere kleine Formate auf derselben Anlage und wechseln Werkzeuge zwischen verschiedenen Produktionsläufen."
+    },
+    {
+      "question": "5. Warum setzen Hersteller von Salzverpackungen auf SEPPA?",
+      "answer": "Bei feuchtigkeitsempfindlichen Produkten ist eine zuverlässige Dichtfläche entscheidend. SEPPA optimiert Kühlung und Druckprofile, um eine konstante Behälterqualität sicherzustellen."
+    }
+  ]
+}

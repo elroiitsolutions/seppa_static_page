@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import PageHeader from '@/components/layout/PageHeader';
 import OverviewSection from './OverviewSection';
 import FeaturesSection, { FeatureItem } from './FeaturesSection';
@@ -72,9 +73,14 @@ export interface PackagingPageData {
 
 interface PackagingPageLayoutProps {
   data: PackagingPageData;
+  locale?: string;
+  children?: React.ReactNode;
 }
 
-const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
+const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data, locale, children }) => {
+  const pathname = usePathname();
+  const isAr = locale === 'ar' || pathname.startsWith('/ar') || pathname.includes('/ar/');
+
   return (
     <div className="overflow-hidden">
       {/* Banner/Hero Section */}
@@ -82,8 +88,10 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
         title={data.title}
         bgImage={data.headerImage}
         breadcrumbs={[
-          { name: 'Home', path: '/' },
-          { name: data.rootBreadcrumbName || 'Packaging', path: data.rootBreadcrumbPath || '/services/packaging' },
+          { name: isAr ? 'الرئيسية' : 'Home', path: '/' },
+          ...(data.rootBreadcrumbName !== "" ? [
+            { name: data.rootBreadcrumbName || (isAr ? 'التعبئة والتغليف' : 'Packaging'), path: data.rootBreadcrumbPath || '/services/packaging' }
+          ] : []),
           { name: data.breadcrumbName }
         ]}
       />
@@ -97,6 +105,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
         imageSrc={data.overviewImage}
         imageSrc2={data.overviewImage2}
         layout={data.overviewLayout}
+        locale={locale}
       />
 
       {/* Dynamic Content Blocks */}
@@ -107,8 +116,8 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
       {/* Applications Section */}
       {data.applications && data.applications.length > 0 && (
         <FeaturesSection
-          badge="Applications"
-          title={data.applicationsTitle || "Applications"}
+          badge={isAr ? "التطبيقات" : "Applications"}
+          title={data.applicationsTitle || (isAr ? "التطبيقات" : "Applications")}
           subtitle={data.applicationsSubtitle}
           features={data.applications}
           columns={data.applications.length === 4 ? 4 : 3}
@@ -119,7 +128,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
       {/* Features & Advantages */}
       {data.features && data.features.length > 0 && (
         <FeaturesSection
-          title={data.featuresTitle || "Features & Advantages"}
+          title={data.featuresTitle || (isAr ? "الميزات والمزايا" : "Features & Advantages")}
           subtitle={data.featuresSubtitle}
           features={data.features}
           columns={data.features.length === 4 ? 4 : 3}
@@ -144,7 +153,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
         <MethodologySection {...data.methodology} />
       )}
 
-
+      {children}
 
       {/* FAQ Section */}
       {data.faqs ? (
@@ -204,7 +213,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data }) => {
       <Clients />
 
       {/* Client Testimonials */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* Our Partners */}
       <Partners />

@@ -1,0 +1,126 @@
+{
+  "title": "Komplette Lösungen für CSD-Getränkeabfüllanlagen von SEPPA",
+  "breadcrumbName": "CSD-Produktionslinien",
+  "overviewTitle": "CSD-Produktion mit perfekt abgestimmten Anlagenkonzepten",
+  "overviewDescription": "Der Betrieb einer Anlage für kohlensäurehaltige Erfrischungsgetränke (CSD) erfordert die präzise Steuerung vieler Prozesse gleichzeitig: gelöstes CO₂ unter Druck, exakte Brix-Werte, schnelle Abfüllventile und höchste hygienische Anforderungen an Rohrleitungen und Komponenten. Bereits kleine Abweichungen können Produktqualität, Haltbarkeit und Anlageneffizienz beeinflussen.",
+  "overviewsubDescription": [
+    "Genau hier setzt SEPPA an. Mit mehr als 50 Jahren Erfahrung und über 7.000 installierten Anlagen weltweit entwickelt SEPPA komplette CSD-Getränkeabfüllanlagen vom Rohwasser bis zur Stretchfolien-Palettierung. Der Fokus liegt nicht nur auf einzelnen Maschinen, sondern auf einer vollständig synchronisierten Produktionslösung, die den gesamten Herstellungsprozess zuverlässig steuert. Eine Getränkeabfüllanlage ist nur so leistungsfähig wie die Verbindung zwischen ihren einzelnen Komponenten. Viele Hersteller kombinieren einzelne Maschinen verschiedener Anbieter und stehen später vor Problemen bei Synchronisation, Ausbringung und Produktkonstanz.",
+    "SEPPA verfolgt einen integrierten Ansatz. Jede CSD-Anlage wird als abgestimmtes Gesamtsystem entwickelt. Die Mischanlage kommuniziert mit dem Karbonisierer, der Karbonisierer übermittelt Prozessdaten an die Gegendruck-Abfüllmaschine und die Fördertechnik reagiert auf den tatsächlichen Produktionsfluss. Diese geschlossene Systemarchitektur ermöglicht stabile Produktionsabläufe und konstante Produktqualität. SEPPA gehört zu den weltweit führenden Herstellern von CSD-Linien und realisiert Anlagen für regionale Getränkeproduzenten ebenso wie für internationale Getränkekonzerne – von 5.000 bis 36.000 Flaschen pro Stunde."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Prozessablauf einer CSD-Getränkeproduktion",
+      "paragraphs": [
+        "Der Produktionsprozess beginnt mit aufbereitetem Wasser und vorbereitetem Sirup. In der Mischanlage werden die Komponenten über präzise Durchflussmessung kombiniert. Anschließend reduziert ein Wärmetauscher die Temperatur auf den optimalen Bereich für die Karbonisierung.",
+        "CO₂ wird unter kontrolliertem Druck eingebracht und anschließend in einem Drucktank gespeichert. Die karbonisierte Flüssigkeit gelangt zur Rotationsfüllmaschine, wo PET-Flaschen, Glasflaschen oder Aluminiumdosen unter kontrollierter Atmosphäre befüllt werden. Der typische Füllablauf: 1. Vorspannen mit CO₂, 2. Produktfüllung, 3. Druckausgleich, 4. kontrollierte Entspannung.",
+        "Nach dem Verschließen folgen Kontrolle, Etikettierung, Codierung und Verpackung. Das integrierte HMI-System erfasst Produktionsdaten, Stillstandszeiten und OEE-Kennzahlen in Echtzeit."
+      ]
+    },
+    {
+      "title": "Individuelle CSD-Anlagen für jede Produktionskapazität",
+      "paragraphs": [
+        "Nicht jede Getränkeproduktion startet mit maximaler Kapazität. Deshalb entwickelt SEPPA skalierbare Anlagenkonzepte.",
+        "Für kleinere Produktionsbetriebe bietet SEPPA modulare Lösungen mit PET-Streckblasmaschine, Rinser-Füller-Verschließer-System (RFC), Etikettierung und Verpackungstechnik. Die Anlagen sind so ausgelegt, dass spätere Erweiterungen mit Kombo™ oder Kombopure™ ohne komplette Neuinvestition möglich sind.",
+        "Die Kombopure™ Technologie verbindet Blasen, Füllen und Verschließen in einer hygienisch geschlossenen Einheit. Dies reduziert Kontaminationsrisiken zwischen Flaschenherstellung und Abfüllung und eignet sich besonders für Produkte mit höchsten Hygieneanforderungen.",
+        "Für große Getränkehersteller ermöglicht die modulare Architektur Erweiterungen wie zusätzliche Füllköpfe, parallele Mischkreise oder weitere Karbonisierungsstufen ohne komplette Produktionsunterbrechung. Darüber hinaus unterstützt SEPPA die Herstellung leichter PET-Flaschen. Durch optimiertes Flaschendesign können bis zu 25 % Material eingespart werden, während die Belastbarkeit gegenüber herkömmlichen Flaschen um mehr als 30 % erhöht werden kann."
+      ]
+    }
+  ],
+  "featuresTitle": "Komponenten einer modernen CSD-Produktionsanlage",
+  "featuresSubtitle": "Eine gleichbleibende Qualität erfordert das Zusammenspiel verschiedener technischer Systeme:",
+  "features": [
+    {
+      "title": "Wasseraufbereitung",
+      "description": "Eine gleichbleibende Wasserqualität ist entscheidend für Geschmack, Sicherheit und Produktstabilität. SEPPA entwickelt Wasseraufbereitungssysteme abhängig von Produktionsleistung und Anforderungen, darunter: Mehrschicht-Sandfiltration, Aktivkohlefiltration, Umkehrosmose sowie UV-Sterilisation. Damit werden Wasserhärte, Trübung und mikrobiologische Werte zuverlässig kontrolliert."
+    },
+    {
+      "title": "Zuckerauflösung und Sirupherstellung",
+      "description": "Die Genauigkeit des Brix-Wertes in der Sirupvorbereitung beeinflusst alle nachfolgenden Prozessschritte. SEPPA verwendet Inline-Zuckerauflöser mit beheizten Behältern, präziser Temperaturregelung und Inline-Refraktometern zur kontinuierlichen Kontrolle der Konzentration. So wird eine gleichbleibende Rezeptur ohne manuelle Zwischenprüfungen sichergestellt."
+    },
+    {
+      "title": "Dosierung und Mischung",
+      "description": "Im Mischbereich werden Wasser und Sirup zum fertigen Getränkekonzentrat verarbeitet. SEPPA setzt auf magnetische Durchflussmesser und eine geschlossene SPS-Regelung, um Mischungsverhältnisse mit einer Genauigkeit von bis zu ±0,05° Brix einzuhalten. Das Ergebnis ist eine konstante Produktqualität über die gesamte Produktionsschicht hinweg."
+    },
+    {
+      "title": "Karbonisierung und Kühlung",
+      "description": "Die CO₂-Aufnahme hängt wesentlich von Temperatur und Druck ab. SEPPA-Karbonisierungssysteme kühlen das Produkt vor der CO₂-Zugabe auf 2 bis 4 °C und führen die Karbonisierung in kontrollierten Mischbehältern durch. Je nach Getränkerezept können CO₂-Werte von 2,5 bis 4,5 Volumen erreicht werden. Das karbonisierte Produkt wird anschließend unter Gegendruck direkt zur Abfüllmaschine geführt, um CO₂-Verluste zu vermeiden."
+    },
+    {
+      "title": "Gegendruck-Abfüllung für kohlensäurehaltige Getränke",
+      "description": "Die Abfülltechnik ist ein entscheidender Faktor für die Qualität eines CSD-Produkts. SEPPA-Gegendruck-Abfüllmaschinen füllen Flaschen unter kontrollierten Druckbedingungen. Vor dem Befüllen wird der Behälter mit CO₂ vorgespannt. Dadurch wird der Druckunterschied zwischen Tank und Flasche reduziert und Schaumbildung minimiert. Elektronisch gesteuerte Füllventile ermöglichen eine präzise Anpassung der Füllhöhe während der Produktion. Vorteile: konstantes Füllgewicht, geringe CO₂-Verluste, reduzierter Produktverlust, hohe Produktionsgeschwindigkeit."
+    },
+    {
+      "title": "Verschließen, Etikettierung und Endverpackung",
+      "description": "SEPPA liefert komplette Downstream-Lösungen inklusive: drehmomentgesteuerter Verschließmaschinen, Sleeve- und Rundum-Etikettierer, Inkjet-Codierung für Datum und Chargen, Sekundärverpackung sowie Roboter-Palettierung. Alle Komponenten sind in dieselbe Steuerungsarchitektur der CSD-Anlage integriert."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA für komplette CSD-Abfüllanlagen wählen?",
+    "reasons": [
+      {
+        "title": "Energieeffizienz",
+        "description": "Wärmerückgewinnung, Frequenzumrichter und intelligente CIP-Reinigungsprozesse reduzieren den Energie- und Medienverbrauch."
+      },
+      {
+        "title": "Weniger Produktverluste",
+        "description": "Gegendruckfüllung und kontrollierte Druckentlastung reduzieren Ausschuss und Produktverluste auf weniger als 0,3 % unter Standardbedingungen."
+      },
+      {
+        "title": "Hygienisches Anlagendesign",
+        "description": "Produktberührende Bereiche bestehen aus Edelstahl 316L mit elektropolierten Oberflächen und hygienischer Rohrleitungsführung gemäß internationalen Standards."
+      },
+      {
+        "title": "Flexible Behälterformate",
+        "description": "Die Anlagen können PET, rPET, Glas und Aluminiumdosen mit entsprechenden Formatwechselteilen verarbeiten."
+      },
+      {
+        "title": "Service und Betreuung",
+        "description": "SEPPA unterstützt Kunden mit Schulungen, Ersatzteilversorgung, Ferndiagnose und Wartungsprogrammen."
+      }
+    ]
+  },
+  "methodology": {
+    "title": "SEPPA Projektmethodik für CSD-Produktionslinien",
+    "subtitle": "Ein ganzheitlicher Ansatz von der Machbarkeitsstudie bis zur Abnahme.",
+    "steps": [
+      {
+        "title": "Machbarkeitsanalyse & CAD-Design",
+        "description": "Jede CSD-Getränkeabfüllanlage beginnt mit einer detaillierten Analyse. Produktionsmenge, Produktspektrum, verfügbare Medien, Fabriklayout und regulatorische Anforderungen werden bereits vor der Konstruktion berücksichtigt. Auf dieser Basis erstellen SEPPA-Ingenieure das Anlagenlayout und die technische Auslegung."
+      },
+      {
+        "title": "Modulfertigung & Werkstests",
+        "description": "Alle wichtigen Module wie Mischer, Karbonisierer, Füller und CIP-Systeme werden vor der Auslieferung umfangreichen Werkstests unterzogen. Dabei werden unter realistischen Bedingungen Karbonisierung, Geschwindigkeit und Prozessparameter geprüft."
+      },
+      {
+        "title": "Installation & Inbetriebnahme",
+        "description": "Nach Installation und Integration vor Ort erfolgt ein vollständiger Abnahmetest mit Überprüfung von: Brix-Wert, CO₂-Gehalt, Füllgewicht, Hygieneparametern und Produktionsleistung. Erst nach erfolgreicher Validierung wird die Anlage an den Betreiber übergeben."
+      }
+    ],
+    "outro": [
+      "Ihre Lösung für moderne CSD-Produktion. SEPPA bietet komplette Getränkeabfüllanlagen für Unternehmen, die höchste Anforderungen an Qualität, effiziente Abläufe und Produktionssicherheit stellen. Von der Wasseraufbereitung bis zur Endverpackung entstehen integrierte CSD-Lösungen, die langfristige Betriebssicherheit und flexible Erweiterbarkeit ermöglichen."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen zu CSD-Abfüllanlagen",
+  "faqs": [
+    {
+      "question": "Wie verhindert eine CSD-Abfüllmaschine CO₂-Verluste?",
+      "answer": "SEPPA-Gegendruck-Abfüllmaschinen spannen jeden Behälter mit CO₂ vor, bevor das Getränk eingefüllt wird. Dadurch werden Druckunterschiede reduziert und Schaumbildung verhindert. Die CO₂-Retention bleibt auch bei hohen Produktionsgeschwindigkeiten konstant."
+    },
+    {
+      "question": "Warum entsteht Schaum beim Abfüllen von kohlensäurehaltigen Getränken?",
+      "answer": "Schaum entsteht durch CO₂-Austritt infolge von Temperaturanstieg, Turbulenzen oder Druckverlust. SEPPA reduziert diese Faktoren durch gekühlte Produktführung, kontrollierten Gegendruck und optimierte Rohrleitungsführung."
+    },
+    {
+      "question": "Kann eine SEPPA-Anlage PET, Glas und Aluminiumdosen verarbeiten?",
+      "answer": "Ja. SEPPA-CSD-Abfüllanlagen sind für verschiedene Verpackungsformate ausgelegt. Formatwechsel erfolgen über passende Wechselteile und gespeicherte Maschinenrezepte."
+    },
+    {
+      "question": "Welche Amortisationszeit hat eine automatisierte CSD-Produktionslinie?",
+      "answer": "Die Wirtschaftlichkeit hängt von Produktionsvolumen, Personalkosten und aktuellen Verlusten ab. Bei größeren Produktionsmengen tragen geringerer Ausschuss, Energieeinsparungen und Automatisierung wesentlich zur Investitionsrendite bei."
+    },
+    {
+      "question": "Was unterscheidet Kombopure™ von einer klassischen Getränkeabfüllanlage?",
+      "answer": "Kombopure™ integriert Blasen, Füllen und Verschließen in einer geschlossenen hygienischen Einheit. Dadurch wird die offene Transportstrecke zwischen Flaschenproduktion und Abfüllung reduziert und die Produktsicherheit erhöht."
+    }
+  ]
+}

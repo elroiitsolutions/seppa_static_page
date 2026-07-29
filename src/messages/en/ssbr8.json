@@ -1,0 +1,90 @@
+{
+  "title": "The SEPPA SSB-R8: Engineering Rotary PET Blow Molding for 24/7 Production",
+  "breadcrumbName": "SSB-R8",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Overview of the SEPPA SSB-R8 Rotary PET Blowing Machine",
+  "overviewDescription": "Most plants don't fail because a plastic bottle maker can't hit peak speed for an hour. They fail because the same plastic bottle maker can't hold that speed at 3 a.m. on day nine of a production run. That distinction is the entire design brief behind the SEPPA SSB-R8, and it's why Seppa built this plastic bottle maker platform around sustained performance rather than a headline number.",
+  "overviewsubDescription": [
+    "The SSB-R8 is a rotary carousel PET stretch blow molding system built around continuous motion rather than the stop start rhythm of linear machines. Preforms move through a rotating IR oven into the blow station without pausing, which is what lets an 8 cavity pet blowing machine of this class sustain genuinely high throughput instead of a spec sheet number that only holds up in a demo. For bottlers running three shifts, that gap between rated and real output is the whole business case."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications of the Rotary 8 System",
+  "features": [
+    {
+      "title": "High Torque Rotary Carousel",
+      "description": "A servo synchronized drive train indexes preforms through the thermal and blow stages, holding timing tight enough that cavity to cavity variance stays within a narrow band even as line speed climbs. An 8 cavity pet blowing machine lives or dies on consistency across cavities, not peak performance in one."
+    },
+    {
+      "title": "Multi Zone IR Thermal Modules",
+      "description": "Each preform passes through independently controlled infrared zones, with reflector geometry and lamp spacing tuned per neck finish and bottle weight. That's what determines whether the base and shoulder end up with even material distribution."
+    },
+    {
+      "title": "Precise Blow Valve Timing",
+      "description": "Pre blow and final blow pressure staging is electronically timed rather than mechanically cammed, so the valve sequence can be tuned to the resin and preform geometry instead of forcing every SKU through one fixed profile. Because the SSB-R8 works as both a water bottle blowing machine and a system for heavier, more structurally demanding containers, thermal and pressure consistency across the whole cavity set isn't optional."
+    }
+  ],
+  "applicationsTitle": "Applications of the SSB-R8 Across Beverage and Packaging Industries",
+  "applicationsSubtitle": "Seppa builds the SSB-R8 platform to flex across container types rather than locking a customer into one bottle shape.",
+  "applications": [
+    {
+      "title": "Water Bottling Lines",
+      "description": "As a water bottle blowing machine, it handles the tight tolerance demands of still and sparkling mineral water lines, where minor wall thickness drift shows up fast in drop test failures."
+    },
+    {
+      "title": "CSD and Custom Shape Containers",
+      "description": "Move to carbonated soft drinks and it needs higher internal pressure resistance; move to edible oils or dairy and it needs heat set or heavier wall containers instead. A juice producer might switch from a 500 ml bottle to a 1.5 liter format inside the same shift, and a plastic bottle maker that requires a full retooling for that switch is a liability, not an asset. The SSB-R8's mold change architecture is built around minimizing that changeover window."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for Rotary PET Blowing Machines",
+    "description": "Beverage manufacturers don't select a supplier off a spec sheet. They ask who has kept a plastic bottle maker running through three shifts a day without downtime eating the margin. Seppa's answer is a track record built on turnkey lines, not standalone units, including machines running as the water bottle blowing machine at the front of a line and matched components that hand off cleanly to a bottle cap making machine.",
+    "paragraphs": [
+      "Choosing an 8 cavity pet blowing machine, or the water bottle blowing machine feeding a larger line, is also a decision about who answers the phone when a thermal zone drifts out of spec at 2 a.m. Seppa's support is built around that reality, with documentation designed for fast fault isolation rather than a guessing game. For a bottler evaluating an 8 cavity pet blowing machine for the next decade, that support relationship often matters as much as rated output.",
+      "Overall Equipment Effectiveness is where rotary architecture earns its keep. Continuous motion removes the acceleration deceleration losses baked into linear blow molding, and that shows up directly in availability and performance rather than just theoretical max speed. Combined with the air recovery system, per unit energy cost on this plastic bottle maker tends to run below a comparable linear system at the same output."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology Behind the Rotary 8 PET Bottle Blowing Process",
+    "subtitle": "Walk the process station by station and the logic becomes clear:",
+    "steps": [
+      {
+        "title": "Preform infeed & heating",
+        "description": "Preforms feed from the hopper into an infeed system that indexes them onto the carousel at a rate matched to the blow cycle. From there they enter the multi zone IR tunnel, where thermal profiling brings each preform to the resin's optimal stretch temperature without overheating the neck."
+      },
+      {
+        "title": "Stretching and staged blowing",
+        "description": "The heated preform rotates into the blow station, where stretch rod actuation and staged air pressure execute the biaxial orientation that gives PET its strength. The stretch blow cycle has to complete, cool the container to a demoldable state, and hand it off cleanly."
+      },
+      {
+        "title": "Discharge & air recovery",
+        "description": "Finished bottles discharge onto a conveyor, ready for a bottle cap making machine or filling line downstream. Air recovery architecture recaptures high pressure air from the blow stroke and redirects it to pre blow stages, cutting compressed air demand without touching cycle time."
+      }
+    ],
+    "outro": [
+      "Whether that's a rinser filler capper acting as the machine to seal plastic bottles or a standalone sealing station, the handoff has to stay clean at full line speed. Seppa engineers the SSB-R8's discharge and conveyor interface with that downstream integration in mind from the start."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How often does an 8 cavity pet blowing machine need preventive maintenance?",
+      "answer": "IR lamp and mold cavity inspection schedules depend on run hours and resin type, but Seppa recommends a structured maintenance calendar rather than run to failure for this plastic bottle maker, since catching seal wear or lamp degradation early avoids downtime."
+    },
+    {
+      "question": "Why do bottlers choose Seppa for a water bottle blowing machine over other rotary suppliers?",
+      "answer": "Seppa's advantage comes down to consistency at scale: multi zone thermal control, electronically timed blow-valve staging, and a track record of turnkey installations rather than isolated units."
+    },
+    {
+      "question": "Can the SSB-R8 integrate with a machine to seal plastic bottles for full line automation?",
+      "answer": "Yes. The SSB-R8 is designed with downstream integration as a core requirement, so a machine to seal plastic bottles or a rinser filler capper unit can run on shared timing signals, letting bottlers run blowing, filling, and sealing as one continuous line rather than separate manual handoffs."
+    },
+    {
+      "question": "Does Seppa supply the bottle cap making machine and machine to seal plastic bottles alongside the SSB-R8?",
+      "answer": "Seppa can supply a matched bottle cap making machine and downstream sealing equipment as part of a turnkey line, so cap production, blow molding, and capping all run on compatible control architecture instead of coming from unrelated vendors."
+    },
+    {
+      "question": "Why does the plastic bottle maker community trust Seppa Solutions for high volume production?",
+      "answer": "Seppa's reputation as a plastic bottle maker rests on machines that hold rated output over long production runs, backed by engineering support that treats uptime as the actual product being sold, not just the hardware."
+    }
+  ]
+}

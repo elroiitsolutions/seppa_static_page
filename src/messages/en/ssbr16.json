@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-R16: Ultra High Speed Rotary PET Blow Molding for Maximum Throughput",
+  "breadcrumbName": "SSB-R16",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Overview of the SEPPA SSB-R16 Rotary PET Blowing Machine",
+  "overviewDescription": "The SEPPA SSB-R16 represents the highest cavity count in Seppa Solutions' rotary PET blow molding lineup. Sixteen stations running on a continuously rotating carousel generate output volumes that place this machine at the top of the production hierarchy, serving the largest bottling operations where anything less than maximum sustained throughput means falling behind demand.",
+  "overviewsubDescription": [
+    "At sixteen cavities, the SSB-R16 enters territory where most bottling operations previously needed multiple lower cavity machines running in parallel. Consolidating that output onto a single platform reduces floor space, operator headcount, energy consumption per bottle, and the coordination overhead of managing multiple independent blowing systems feeding the same filling line.",
+    "Seppa Solutions engineered the SSB-R16 with the understanding that sixteen cavity synchronization is an exponentially harder engineering problem than six or eight. The margin for timing drift, thermal inconsistency, or pressure variation between stations shrinks as cavity count rises, because the production rate amplifies any deviation into a statistically significant quality defect before corrective action can take effect. Every design decision on the SSB-R16, from the master cam geometry to the per cavity blow valve electronics, is calibrated against that reality."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications of the SSB-R16",
+  "features": [
+    {
+      "title": "16 Station Master Cam with Precision Servo Drive",
+      "description": "The master cam reference governing all sixteen stations is machined to tolerances that maintain angular precision across the full speed range. Servo synchronized indexing ensures that every station, from position one through sixteen, executes its thermal, stretch, and blow sequence at identical timing intervals. At this cavity count, even microsecond level drift between stations would produce measurable quality variation over a production shift."
+    },
+    {
+      "title": "Extended High Density Thermal Tunnel",
+      "description": "The thermal conditioning system scales with the sixteen cavity throughput requirement, featuring an extended tunnel with high density infrared lamp arrays and additional independently controlled heating zones. Real time thermal feedback from multiple points along the tunnel allows the control system to compensate for ambient temperature fluctuations and preform batch variations automatically."
+    },
+    {
+      "title": "16 Channel Electronic Blow Control with Air Recovery",
+      "description": "Each of the sixteen stations features independently programmable pre blow and final blow pressure staging, with valve timing adjustable through the central HMI to accommodate different preform geometries and resin grades. The air recovery system, scaled for sixteen cavity operation, captures and recirculates exhaust air at volumes that produce measurable energy savings compared to non recovery systems at this output level."
+    }
+  ],
+  "applicationsTitle": "Applications of the SSB-R16 in Ultra High Volume Production",
+  "applicationsSubtitle": "The sixteen cavity SSB-R16 serves production environments where sustained maximum throughput is the primary operational requirement.",
+  "applications": [
+    {
+      "title": "Mega Scale Water Bottling Plants",
+      "description": "The largest water bottling operations, those supplying national distribution networks, need blow molding platforms that can sustain output rates measured in the tens of thousands of bottles per hour without quality degradation. The SSB-R16's sixteen cavity carousel delivers that sustained rate from a single machine footprint."
+    },
+    {
+      "title": "High Volume CSD Production",
+      "description": "National and international CSD brands running dedicated high speed filling lines require blow molding equipment that can keep pace without becoming the line's throughput bottleneck. The SSB-R16's sixteen cavity configuration matches the output requirements of the fastest commercial filling systems."
+    },
+    {
+      "title": "Multi Line Centralized Blowing",
+      "description": "Some large production facilities centralize their blow molding operation, using a single high output machine to supply preblown bottles to multiple filling lines via conveyor networks. The SSB-R16's output capacity makes it suitable for this centralized architecture, reducing the total number of blow molding machines in the facility."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose Seppa Solutions for the SSB-R16?",
+    "description": "Deploying a sixteen cavity rotary blow molding machine is not simply a matter of scaling up from a smaller platform. The engineering complexity, integration requirements, and operational stakes demand a manufacturer with specific experience at this cavity count. Seppa Solutions brings that experience to every SSB-R16 project.",
+    "paragraphs": [
+      "Seppa's approach to SSB-R16 installations begins with comprehensive site and production analysis: air supply capacity, electrical infrastructure, floor loading, downstream equipment compatibility, and operational workflow mapping. This front end engineering prevents the commissioning delays and performance shortfalls that occur when a high cavity machine is dropped into an infrastructure designed for a smaller system.",
+      "The ongoing partnership includes priority field service access, dedicated spare parts inventory management, and structured maintenance programs designed specifically for sixteen cavity rotary platforms. When a bottling operation invests in a machine at this output tier, the support infrastructure behind it is as critical as the mechanical engineering inside it."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology of the SSB-R16 PET Bottle Blowing Process",
+    "subtitle": "The sixteen cavity continuous motion sequence represents the most demanding production workflow in Seppa's rotary lineup:",
+    "steps": [
+      {
+        "title": "Ultra High Rate Preform Infeed",
+        "description": "A purpose built high speed infeed system delivers oriented preforms to the carousel at rates matched to sixteen cavity demand. Redundant sensing ensures continuous supply without jamming or starvation at the elevated throughput levels this platform requires."
+      },
+      {
+        "title": "Extended Multi Zone Thermal Conditioning",
+        "description": "The longest thermal tunnel in the SSB-R series provides maximum heating zone count with high density lamp arrays and automatic temperature compensation. Each preform receives precisely calibrated thermal energy regardless of its position in the continuous infeed stream."
+      },
+      {
+        "title": "16 Station Synchronized Stretch Blow Molding",
+        "description": "All sixteen stations execute servo driven stretch and electronically staged blow pressure simultaneously, each independently optimizable while sharing the master cam's timing reference. The synchronization precision at this station count represents the peak of Seppa's rotary engineering capability."
+      },
+      {
+        "title": "Maximum Throughput Discharge with Full Air Recovery",
+        "description": "Finished bottles discharge at the highest rate in the SSB-R series onto conveyors engineered for sixteen cavity output volumes. The full scale air recovery system operates across all sixteen stations, capturing and recirculating exhaust air at volumes that provide significant energy cost reduction."
+      }
+    ],
+    "outro": [
+      "The SSB-R16's sixteen cavity continuous motion architecture consolidates output that would otherwise require multiple rotary machines, delivering maximum throughput from a single synchronized platform with consistent quality across every station."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What production rates does the SSB-R16 achieve?",
+      "answer": "The sixteen cavity configuration delivers the highest sustained output in Seppa's rotary lineup, with rates dependent on bottle size and preform specifications. This platform is designed for operations where tens of thousands of bottles per hour is the baseline requirement."
+    },
+    {
+      "question": "What infrastructure does a sixteen cavity rotary system require?",
+      "answer": "High cavity count rotary systems require proportionally larger compressed air supply, electrical capacity, and floor space. Seppa's engineering team conducts comprehensive site analysis as a standard part of every SSB-R16 project to ensure infrastructure compatibility before equipment arrives."
+    },
+    {
+      "question": "How does Seppa maintain quality across sixteen simultaneous cavities?",
+      "answer": "The single master cam reference with precision servo drive, combined with per cavity electronic blow control and real time thermal monitoring, ensures that all sixteen stations produce bottles within the same tight tolerance band throughout extended production runs."
+    },
+    {
+      "question": "Is the SSB-R16 suitable for multi format production?",
+      "answer": "While the SSB-R16 excels in high volume sustained production, it retains format changeover capability through the rapid mold change system and stored SKU profiles. The changeover time is minimal relative to the output gains the sixteen cavity platform provides."
+    },
+    {
+      "question": "What level of support does Seppa provide for SSB-R16 installations?",
+      "answer": "SSB-R16 installations receive Seppa's highest tier of support: priority field service access, dedicated spare parts logistics, structured maintenance programs tailored to sixteen cavity operation, and engineering consultation for ongoing production optimization."
+    }
+  ]
+}

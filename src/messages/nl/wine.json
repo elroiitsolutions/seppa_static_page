@@ -1,0 +1,119 @@
+{
+  "title": "Wijnverwerkingsinstallatie van SEPPA Solutions",
+  "breadcrumbName": "Wijn & Met",
+  "rootBreadcrumbName": "Vloeistoffen",
+  "rootBreadcrumbPath": "/liquid",
+  "overviewTitle": "Overzicht van de SEPPA Wijn en Sterke Drank Verwerkingsoplossingen",
+  "overviewDescription": "Praat met een wijnmaker over zijn ergste jaar, en de kans is groot dat het niet over de oogst gaat maar over oxidatie die zich pas weken later openbaarde, toen de eerste flessen al bij klanten stonden. Dat soort verlies is zelden een kwestie van slecht vakmanschap; het zit vaker in apparatuur die net niet nauwkeurig genoeg werkt op het moment dat het ertoe doet. Een goed ontworpen wijnverwerkingsinstallatie is precies daarvoor gebouwd: om die kwetsbare momenten tussen druif en fles zo klein mogelijk te maken. Wie eerder met verouderde wijnverwerkingsapparatuur heeft gewerkt, herkent dat gevoel van machteloosheid maar al te goed.",
+  "overviewsubDescription": [
+    "Onze wijnverwerkingsinstallatie is opgezet rond één centraal uitgangspunt: productintegriteit begint bij controle over zuurstof, temperatuur en tijd, in die volgorde van belangrijkheid. Wijn en sterke drank zijn allebei gevoelig voor oxidatie, maar op verschillende momenten in het proces, en een installatie die dat verschil niet begrijpt, levert uiteindelijk een minder consistent product.",
+    "Vanaf de filtratie na gisting tot de laatste afvulstap wordt elke overdracht binnen onze wijnverwerkingsinstallatie zo ontworpen dat luchtcontact tot een minimum wordt beperkt. Dat klinkt eenvoudig, maar in de praktijk betekent het dat pompen, leidingen en tanks allemaal op elkaar moeten zijn afgestemd, want één slecht ontworpen overdrachtspunt kan het werk van maanden vaten rijping tenietdoen.",
+    "Smaakbehoud is de andere pijler. Onze systemen houden rekening met de gevoeligheid van tannines, esters en aroma's voor temperatuurschommelingen, wat vooral belangrijk is bij gedistilleerde sterke dranken waar zelfs kleine temperatuurpieken tijdens opslag of transport de smaak merkbaar kunnen veranderen. Deze aandacht voor detail zit in elk onderdeel van onze wijnverwerkingsapparatuur, van de eerste filtratiestap tot de laatste controle voor verzending."
+  ],
+  "featuresTitle": "Wijnproductieproces en ontwerp van verwerkingsinstallaties",
+  "featuresSubtitle": "Ontworpen voor de meest gevoelige wijnen en gedistilleerde dranken",
+  "features": [
+    {
+      "title": "Precisie-engineering",
+      "description": "De wijnproductie is de afgelopen twintig jaar drastisch veranderd. Zelfs kleine inconsistenties in de gisting of filtratie kunnen het eindproduct beïnvloeden, waardoor de marges voor fouten minimaal zijn."
+    },
+    {
+      "title": "Mousserende witte wijn uitdagingen",
+      "description": "Het behoud van CO₂-verzadiging van tank tot verzegelde fles vereist isobarische tegendruk-afvulling. Elke drukval tijdens het bottelproces veroorzaakt schuimverlies en onregelmatige koolzuurniveaus."
+    },
+    {
+      "title": "Gasbeheersing",
+      "description": "Onze mousserende wijnlijnen maken gebruik van een gesloten gasregelsysteem om het gewenste CO₂-gehalte uiterst stabiel te houden, batch na batch."
+    },
+    {
+      "title": "Hygiëne en CIP/SIP-integratie",
+      "description": "Geautomatiseerde CIP (Clean-in-Place) en SIP (Sterilize-in-Place) cycli zijn standaard geïntegreerd in elke Seppa wijninstallatie en voldoen aan strenge internationale veiligheidsnormen."
+    }
+  ],
+  "applicationsTitle": "Geautomatiseerde wijnvul- en bottellijnen",
+  "applicationsSubtitle": "Precisie in elke fase van het bottelen",
+  "applications": [
+    {
+      "title": "Nauwkeurige volumetrische afvulling",
+      "description": "Onze vulmachines maken gebruik van nauwkeurige volumetrische dosering. Voor producenten die meerdere wijnstijlen of gedistilleerde dranken verpakken, is het mogelijk om snel en zonder gereedschap van formaat te wisselen."
+    },
+    {
+      "title": "Omgang met afwijkende flesvormen",
+      "description": "Wijnproducenten gebruiken diverse flesvormen om hun merk te onderscheiden. Seppa's grijp- en transportsystemen zijn ontworpen om taps toelopende flessen, zware decanteerflessen en onregelmatige profielen probleemloos te verwerken."
+    },
+    {
+      "title": "Bescherming tegen zuurstofopname",
+      "description": "Het minimaliseren van opgeloste zuurstof is essentieel voor de houdbaarheid. Onze vulmachines spoelen de flessen met stikstof of inert gas voor en tijdens het vullen om de zuurstofwaarde onder 0,05 mg/L te houden."
+    }
+  ],
+  "whyChoose": {
+    "title": "Voordelen van de SEPPA Wijn en Sterke Drank Productielijnen",
+    "description": "Wat onze apparatuur onderscheidt, zijn de engineeringkeuzes die de productkwaliteit en processtabiliteit direct ondersteunen.",
+    "reasons": [
+      {
+        "title": "Minder productverlies en oxidatie",
+        "description": "Een goed afgestelde wijnproductielijn vermindert productverlies aanzienlijk ten opzichte van verouderde systemen, omdat filtratie, overdracht en afvulling nauwkeuriger worden geregeld."
+      },
+      {
+        "title": "Hoge operationele flexibiliteit",
+        "description": "De wijnbottelmachine kan binnen enkele uren worden omgesteld van stille wijn naar een andere flesmaat of sluiting, in plaats van een halve productiedag te verliezen."
+      },
+      {
+        "title": "Modulaire schaalbaarheid",
+        "description": "Onze modulaire aanpak maakt groei mogelijk: u start met een wijnproductielijn die past bij uw huidige volume en breidt uit wanneer het volume dat rechtvaardigt."
+      },
+      {
+        "title": "Compensatie van temperatuurinvloeden",
+        "description": "Ons spirits-doseersysteem compenseert realtime voor volumeveranderingen door temperatuurfluctuaties, wat de nauwkeurigheid van het vulvolume in exportmarkten garandeert."
+      }
+    ]
+  },
+  "methodology": {
+    "title": "Werkwijze: De Seppa Methode voor Wijn & Sterke Drank",
+    "subtitle": "Van concept tot ingebruikname begeleiden we elke stap van uw proces.",
+    "steps": [
+      {
+        "title": "Filtratie en klaring",
+        "description": "Na gisting verwijdert filtratie gistresten en vaste deeltjes zonder de cruciale smaakstoffen en esters aan te tasten die het karakter van de wijn bepalen."
+      },
+      {
+        "title": "Stabiele overdracht",
+        "description": "Het product beweegt van filtratie naar de afvullijn via pompen en leidingen die speciaal zijn ontworpen om schuimvorming en zuurstofcontact tot een minimum te beperken."
+      },
+      {
+        "title": "Luchtdichte afvulling",
+        "description": "Op de wijnbottelmachine wordt de wijn onder stikstofspoeling, vacuümvulling of isobarische druk afgevuld om het smaakprofiel optimaal te conserveren."
+      },
+      {
+        "title": "Eindinspectie",
+        "description": "Binnen de totale wijnverwerkingsinstallatie controleert een automatisch inspectiesysteem het vulniveau, de dopsluiting en de zuurstofretentie."
+      }
+    ],
+    "outro": [
+      "De wijnverwerkingsinstallatie van Seppa Solutions is ontworpen om kwetsbare momenten tussen druif en fles te minimaliseren. Met inerte gasinjectiesystemen, geavanceerde vacuümvullers en modulaire schaalbaarheid leveren we betrouwbare oplossingen die voldoen aan de hoogste kwaliteitseisen."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Aan welke hygiënenormen voldoen SEPPA's wijnverwerkingsmachines?",
+      "answer": "Onze wijnverwerkingsmachines zijn gebouwd volgens internationale hygiënenormen voor de voedingsmiddelenindustrie, met roestvrijstalen productcontactoppervlakken en geïntegreerde CIP reiniging."
+    },
+    {
+      "question": "Wat kost het onderhoud van wijnverwerkingsmachines ongeveer?",
+      "answer": "Dat verschilt per volume en lokale arbeidskosten, maar klanten rapporteren doorgaans lagere onderhoudskosten dan bei oudere apparatuur, mede dankzij sensordata die vroegtijdig slijtage signaleert."
+    },
+    {
+      "question": "Hoe wordt oxidatie verminderd op een wijnbottelmachine?",
+      "answer": "Stikstofspoeling en vacuümvulling verdrijven zuurstof uit fles en leidingen voordat het product wordt toegevoegd, wat oxidatie tijdens het afvulproces sterk beperkt."
+    },
+    {
+      "question": "Hoe wordt kwaliteitscontrole geregeld in een wijnproductielijn?",
+      "answer": "Sensoren monitoren druk, temperatuur en vulniveau continu, terwijl steekproeven op troebelheid en zuurgraad worden genomen voordat een partij de wijnproductielijn verlaat."
+    },
+    {
+      "question": "Hoe efficiënt zijn moderne wijnverwerkingsoplossingen voor kleinere producenten?",
+      "answer": "Onze modulaire wijnverwerkingsoplossingen laten toe om te starten met een kleinere capaciteit en later uit te breiden, zonder dat kleinere wijnmakerijen overinvesteren in capaciteit die ze nog niet nodig hebben."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-R12: Rotary PET-Blasmaschine für Hochgeschwindigkeitsproduktion",
+  "breadcrumbName": "SSB-R12",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Überblick über die SEPPA SSB-R12 Rotary PET-Blasmaschine",
+  "overviewDescription": "Die Rotary-Technologie hat die Anforderungen an moderne PET-Produktionslinien grundlegend verändert. Die SEPPA SSB-R12 wurde für Anlagen entwickelt, die ihre Leistung in Hunderttausenden Flaschen pro Schicht messen und höchste Verfügbarkeit über lange Produktionszyklen benötigen. Die 12-Kavitäten Rotary-Plattform basiert auf kontinuierlicher Bewegungssynchronisation und ermöglicht den Transport der Preforms durch Heiz- und Formstationen ohne die typischen Start-Stopp-Verluste linearer Systeme.",
+  "overviewsubDescription": [
+    "Beim Rotary-Streckblasformen bewegt sich der gesamte Prozess auf einem rotierenden Karussell. Dadurch durchlaufen alle Kavitäten die Schritte Erwärmung, Streckung und Blasformung ohne Unterbrechung durch einzelne Flaschenzyklen. Genau diese kontinuierliche Prozessführung unterscheidet eine echte Hochgeschwindigkeits-PET-Blasmaschine von herkömmlichen Systemen mit rein hoher Taktzahl.",
+    "SEPPA entwickelte die SSB-R12 mit Fokus auf thermische und pneumatische Stabilität über alle zwölf Kavitäten hinweg. In der industriellen Massenproduktion können bereits minimale Abweichungen zu Ausschuss führen. Deshalb ist diese Hochgeschwindigkeits-PET-Blasmaschine speziell für große Getränke-, Wasser- und Verpackungsproduzenten konzipiert, bei denen jede ungeplante Stillstandszeit erhebliche Auswirkungen hat."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen",
+  "features": [
+    {
+      "title": "Rotary-Karussell und Antriebssystem",
+      "description": "Die SSB-R12 arbeitet mit einem drehmomentstarken Rotary-Karussell, das durch ein präzise abgestimmtes Servosystem für den kontinuierlichen Dauerbetrieb ausgelegt ist. Die Kinematik der Formschließung wurde so entwickelt, dass Schließen, Strecken und Blasen in allen Kavitäten innerhalb engster Zeitfenster synchron erfolgen. Auch bei maximaler Produktionsgeschwindigkeit bleibt die Synchronisation stabil. Diese hohe Präzision ist ein entscheidender Vorteil gegenüber vielen linearen Systemen und ein Grund dafür, warum der Begriff Hochgeschwindigkeits-PET-Blasmaschine heute eng mit Rotary-Plattformen verbunden ist."
+    },
+    {
+      "title": "Mehrzonen-Infrarot-Heizmodule",
+      "description": "Die Preform-Konditionierung erfolgt über mehrere unabhängig gesteuerte Infrarot-Heizzonen entlang des Rotary-Prozesses. Jede Zone kann individuell angepasst werden, sodass Wandstärke und Materialverteilung vom ersten Preform einer Schicht bis zum zehntausendsten Behälter konstant bleiben. Gerade bei einer Hochgeschwindigkeits-PET-Blasmaschine entscheidet die Heizpräzision über Produktionsqualität oder Ausschuss. Ungleichmäßige Erwärmung führt unmittelbar zu Materialverlagerungen, optischen Fehlern und instabilen Flascheneigenschaften."
+    },
+    {
+      "title": "Präzise Blasventilsteuerung und Pneumatiksystem",
+      "description": "Die Blasventile der SSB-R12 werden elektronisch gesteuert. Dadurch können die Streckblasparameter exakt an unterschiedliche Flaschengeometrien angepasst werden, ohne mechanische Änderungen am Ventilsystem vorzunehmen. In Kombination mit dem Hochdruck-Pneumatiksystem und der integrierten Luft-Rückgewinnung reduziert die Maschine den Druckluftverbrauch gegenüber Systemen ohne Energierückführung. SEPPA setzt auf langlebige Dichtungssysteme in pneumatischen und hydraulischen Baugruppen, da Dichtungsverschleiß eine der häufigsten Ursachen ungeplanter Produktionsunterbrechungen bei Rotary-Anlagen ist."
+    }
+  ],
+  "applicationsTitle": "Anwendungen in Getränke-, Wasser- und Verpackungsindustrien",
+  "applicationsSubtitle": "SEPPA Rotary-Systeme sind für unterschiedliche Produktionsanforderungen ausgelegt.",
+  "applications": [
+    {
+      "title": "Hochgeschwindigkeits-PET-Blasmaschine für Wasserproduktion",
+      "description": "Bei Wasserabfüllanlagen für stilles und Mineralwasser ist eine konstante Wandstärke bei hohen Ausstoßmengen entscheidend. Dünne PET-Bereiche können bei transparenten Flaschen sofort sichtbar werden. Eine Hochgeschwindigkeits-PET-Blasmaschine für Wasserproduktion benötigt daher maximale Prozessstabilität und präzise Streckblasparameter."
+    },
+    {
+      "title": "Karbonisierte Getränke (CSD)",
+      "description": "Bei karbonisierten Getränken gelten andere Anforderungen. Flaschen müssen hohen Innendrücken standhalten, ohne Verformungen oder Materialüberschüsse zu erzeugen. Die SSB-R12 passt Streckverhältnisse und Blasprofile über gespeicherte Prozessrezepte an, ohne umfangreiche mechanische Umbauten."
+    },
+    {
+      "title": "Körperpflege & Haushaltschemie",
+      "description": "Auch außerhalb der Getränkeindustrie eignet sich die Rotary-Plattform für Körperpflegeverpackungen, Haushaltschemikalien, Speiseölbehälter und unterschiedliche PET-Industieverpackungen. SEPPA-Ingenieure konfigurieren die Streckblasparameter passend zur jeweiligen Behältergeometrie und Produktionsanforderung."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Blasmaschinen wählen?",
+    "description": "SEPPA entwickelt Rotary- und Linear-Streckblasmaschinen für Produktionsanlagen, bei denen zuverlässige Leistungswerte entscheidend sind. Jede Hochgeschwindigkeits-PET-Blasmaschine wird auf die tatsächliche Flaschenpalette, Produktionsmenge und technischen Anforderungen des Kunden abgestimmt.",
+    "paragraphs": [
+      "Statt einer Standardkonfiguration liefert SEPPA eine projektspezifische Lösung mit passender Dokumentation und Prozessparametern.",
+      "Darüber hinaus unterstützt SEPPA komplette Produktionslinien. Preform-Handling, Fördertechnik, Etikettierung und Abfüllintegration werden bereits während der Projektplanung berücksichtigt. Dadurch erreicht die Anlage ihre Zielgeschwindigkeit schneller und mit weniger Optimierungsaufwand. Auch nach der Inbetriebnahme bleibt SEPPA technischer Partner seiner Kunden. Regelmäßiger Support und tiefes Verständnis der eigenen Maschinen sorgen dafür, dass Rotary-PET-Systeme langfristig zuverlässig arbeiten."
+    ]
+  },
+  "methodology": {
+    "title": "Fertigungsmethodik der PET-Flaschenblasmaschine",
+    "subtitle": "Der Produktionsprozess der SSB-R12 beginnt mit der Hochgeschwindigkeits-Preformzuführung. Ein automatisches Orientierungssystem positioniert die Preforms auf dem Rotary-Karussell:",
+    "steps": [
+      {
+        "title": "Zuführung und Ausrichtung",
+        "description": "Ein automatisches Orientierungssystem positioniert die Preforms entsprechend der erforderlichen Produktionsgeschwindigkeit auf dem Rotary-Karussell."
+      },
+      {
+        "title": "Mehrzonige IR-Erwärmung",
+        "description": "Anschließend durchlaufen die Preforms die mehrzonige IR-Erwärmung. Jede Kavität erhält ein abgestimmtes Temperaturprofil, das auf Harztyp, Preform-Geometrie und gewünschte Flascheneigenschaften optimiert ist."
+      },
+      {
+        "title": "12-Stationen Rotary-Streckblasprozess",
+        "description": "Der Streckstab fährt kontrolliert aus, während Niederdruck-Vorblasen die Grundkontur formt. Das anschließende Hochdruckblasen erzeugt die finale Flaschengeometrie."
+      },
+      {
+        "title": "Kühlung und automatische Entnahme",
+        "description": "Nachdem das Behältermaß gekühlt und stabilisiert wurde, übergibt die automatische Entnahme die fertigen Flaschen an das Fördersystem. Da alle Kavitäten diesen Ablauf parallel ausführen, steigt die Produktionsleistung direkt mit der Anzahl der Kavitäten."
+      }
+    ],
+    "outro": [
+      "Produktionsanlagen mit der SSB-R12 profitieren besonders durch eine höhere Gesamtanlageneffektivität (OEE), optimierten Energieverbrauch und eine erstklassige Wartungsfreundlichkeit."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt eine Hochgeschwindigkeits-PET-Blasmaschine wie die SSB-R12 Wartung?",
+      "answer": "Dichtungssysteme, Blasventile und IR-Module werden nach definierten Produktionszyklen überprüft. Die Wartungsintervalle richten sich nach Laufzeit, Schichtbetrieb und eingesetztem PET-Material."
+    },
+    {
+      "question": "2. Wie gewährleistet die SSB-R12 Stabilität bei hohen Drehzahlen?",
+      "answer": "Das leistungsstarke Rotary-Antriebssystem und die präzise synchronisierte Formschließung halten alle Kavitäten im gleichen Streckblasprozess. Dadurch werden Vibrationen, Fehlstellungen und Qualitätsabweichungen reduziert."
+    },
+    {
+      "question": "3. Warum entscheiden sich Abfüllbetriebe für SEPPA Streckblasmaschinen?",
+      "answer": "Kunden profitieren von gleichmäßigen Wandstärken, geringeren Ausschussraten durch Mehrzonen-Heizung und einer individuellen Anpassung an ihre Flaschenformate."
+    },
+    {
+      "question": "4. Was unterscheidet die Blasmaschinen-Technologie der SSB-R12 von anderen Rotary-Systemen?",
+      "answer": "Die Kombination aus elektronischer Blasventilsteuerung, Luft-Rückgewinnung und unabhängig geregelten Heizbereichen ermöglicht eine präzisere Prozesskontrolle als mechanisch begrenzte Systeme."
+    },
+    {
+      "question": "5. Warum vertrauen internationale Getränkehersteller auf SEPPA?",
+      "answer": "SEPPA entwickelt komplette PET-Lösungen auf Basis der tatsächlichen Produktionsanforderungen des Kunden und begleitet Projekte mit direktem technischen Support statt über externe Partner."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "title": "SEPPA SSB-SLE-60: A Servo Electric PET Bottle Blower Machine Built for High Volume Lines",
+  "breadcrumbName": "SSB-SLE-60",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Overview of the SEPPA SSB-SLE-60 PET Bottle Blowing Machine",
+  "overviewDescription": "Pneumatic stretch blow molding has run the packaging industry for decades, and it still works, but it wastes compressed air, needs constant valve and cylinder maintenance, and struggles to hold tight tolerances as cycle speeds climb. Buyers evaluating a new pet bottle blower machine run into these limits more often now.",
+  "overviewsubDescription": [
+    "The SEPPA SSB-SLE-60 pet bottle blower machine takes a different approach: every stretch rod motion, clamping stroke, and pressure transition runs through servo motors instead of air cylinders, so the machine hits repeatable positions down to fractions of a millimeter, cycle after cycle.",
+    "That precision matters. A pet bottle blower machine that drifts on stretch rod timing produces uneven wall thickness, meaning either wasted resin or weak spots that fail under filling pressure. The SSB-SLE-60 closes that gap while cutting energy draw well below what a comparable pneumatic automatic bottle blowing machine uses over a full shift."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications",
+  "features": [
+    {
+      "title": "Servo stretch rod positioning",
+      "description": "The core of the SSB-SLE-60 is a bank of high torque servo motors dedicated to stretch rod positioning. Each rod follows a programmable motion profile instead of a fixed mechanical stroke, so operators fine tune stretch speed and dwell time per bottle design without swapping hardware. That's what separates a genuine automatic bottle blowing machine from one that's merely automated in name: the motion itself is tunable, not just the cycle trigger, which matters as much on a mineral water bottle making machine as it does on lines running heavier containers."
+    },
+    {
+      "title": "Electronic Clamping and Heating",
+      "description": "Clamping is handled electronically too. Servo driven clamp force modulation replaces the hydraulic units found on older platforms, removing the risk of oil leaks near the mold cavity and cutting a maintenance headache that plagues most pet packaging machine installations after a few years. The heating tunnel uses independently controlled infrared zones, tuned for both virgin PET and the heat sensitive profile of recycled plastic bottles feedstock, where inconsistent flake quality can otherwise throw off preform conditioning."
+    },
+    {
+      "title": "Specifications at a glance",
+      "description": "Output: up to 2,000 bottles per hour per cavity, depending on bottle weight and neck finish\nStretch rod servo axes: independently programmable per cavity\nClamping force: electronically modulated, no hydraulic oil\nHeating zones: multi zone IR with individual lamp control\nCompatible resin: virgin PET and recycled plastic bottles flake/pellet blends"
+    }
+  ],
+  "applicationsTitle": "Applications Across Beverage and Packaging Lines",
+  "applicationsSubtitle": "The SSB-SLE-60 was built with mineral water as the anchor application, and it shows. A mineral water bottle making machine has to run fast, stay sanitary, and tolerate long unattended shifts, and the servo architecture handles all three without the pressure drops that plague pneumatic lines at peak output. But it isn't locked into one product category.",
+  "applications": [
+    {
+      "title": "Juice production",
+      "description": "Juice producers use the same platform for hot-fill and cold fill runs, since electronic pressure profiling adjusts wall thickness differently for products that need extra rigidity around the shoulder."
+    },
+    {
+      "title": "Edible oil and personal care",
+      "description": "Beyond beverages, the SSB-SLE-60 functions as a general purpose pet packaging machine for edible oil bottles, personal care containers, and household chemical packaging."
+    },
+    {
+      "title": "Flexible parameter changing",
+      "description": "Because blow pressure and stretch profile are programmable rather than fixed, switching between them is a parameter change, not a mechanical rebuild, and that flexibility often matters more than raw output numbers."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions",
+    "description": "SEPPA Solutions has spent years building turnkey lines for manufacturers who need more than a single machine. When we install a pet bottle blower machine, we're also thinking about upstream preform handling, downstream labelling and filling integration, and how the line performs after eighteen months of real production, not just at commissioning.",
+    "paragraphs": [
+      "Energy is the first place operators notice the difference. Servo motors only draw power when moving load, and regenerative braking recovers energy during deceleration, so the SSB-SLE-60 typically runs 25 to 35 percent lower on electricity per bottle than a pneumatic automatic bottle blowing machine of comparable output. There's no compressor running constantly for actuators, since only the final blow stage needs high pressure air.",
+      "Mechanical wear drops too. Pneumatic cylinders rely on seals that degrade with each cycle, and hydraulic clamping needs periodic oil changes and filter swaps. A servo based pet bottle blower machine has fewer wear parts in the motion path, meaning less downtime and a lower parts bill over a multi year service life. For plants running three shifts, that difference compounds fast.",
+      "Processing recycled plastic bottles reliably is where this pays off most. Recycled flake varies more in intrinsic viscosity and moisture content than virgin resin, and a pneumatic machine's fixed settings don't adapt well to that variability. The SSB-SLE-60's programmable profiles let operators dial in settings per resin batch, keeping reject rates from creeping up as a facility shifts toward higher recycled content.",
+      "Our engineers have tuned the SSB-SLE-60's motion profiles across dozens of resin types and bottle geometries, from lightweight water bottles to heavier oil containers, and much of that tuning history traces back to mineral water bottle making machine installations where uptime matters most. Every SSB-SLE-60 automatic bottle blowing machine we ship comes with commissioning support and access to our process engineers."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the SSB-SLE-60 Blowing Process Works",
+    "subtitle": "A pet bottle blower machine cycle starts with rapid preform loading through a starwheel infeed, positioning preforms neck up before the heating tunnel. From there:",
+    "steps": [
+      {
+        "title": "1. Multi-zone IR tunnel",
+        "description": "Preforms pass through the multi zone IR tunnel, where each lamp bank adjusts output by wall thickness and resin type, including recycled plastic bottles feedstock that needs a different thermal curve than virgin resin."
+      },
+      {
+        "title": "2. Electric clamping",
+        "description": "Electric clamping closes the mold with force calibrated to bottle geometry, avoiding the over clamping that wastes energy on smaller containers."
+      },
+      {
+        "title": "3. Servo stretching and blowing",
+        "description": "The servo stretch rod extends on a programmed profile while low-pressure air pre blows the preform, then high pressure air pushes PET into the final cavity shape."
+      },
+      {
+        "title": "4. Cooling and ejection",
+        "description": "The machine cools the bottle briefly against the mold wall before ejection, and the cycle restarts without operator intervention."
+      }
+    ],
+    "outro": [
+      "Every step is monitored by the machine's control system, which logs stretch rod position, clamp force, and pressure curves per cycle, so maintenance teams catch drift before it shows up as a defect on the line."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How much energy does the SSB-SLE-60 actually save compared to older machines?",
+      "answer": "Most operators see 25 to 35 percent lower electricity consumption per bottle on this automatic bottle blowing machine, mainly because servo motors don't draw power when idle and there's no compressor running continuously for actuator air."
+    },
+    {
+      "question": "Can this pet packaging machine handle a high percentage of recycled resin?",
+      "answer": "Yes. The IR heating zones and stretch rod profiles are adjustable enough to handle recycled plastic bottles feedstock with variable IV and moisture levels, though we recommend a short tuning period when a plant first switches resin blends."
+    },
+    {
+      "question": "Is the SSB-SLE-60 suitable for clean room or high sanitation environments?",
+      "answer": "The lack of hydraulic oil is the main advantage here. Without oil lines near the mold cavity, there's no contamination risk that pneumatic hydraulic hybrid machines carry, which makes this pet packaging machine a better fit for food and beverage clean rooms."
+    },
+    {
+      "question": "What bottle types can run on this mineral water bottle making machine besides mineral water?",
+      "answer": "The same mineral water bottle making machine runs juice, edible oil, and personal care containers by adjusting blow pressure and stretch timing per SKU, so plants don't need separate machines for each product line."
+    },
+    {
+      "question": "What makes SEPPA's pet bottle blower machine different from other servo electric platforms?",
+      "answer": "Independently programmable stretch axes per cavity, combined with multi zone IR control, give operators finer control over wall thickness than most competing pet bottle blower machine designs, which translates into lower resin usage per bottle over time."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "breadcrumbsHome": "Home",
+  "breadcrumbsContact": "Contact Us",
+  "title": "Contact Us",
+  "headquarters": "Headquarters",
+  "getInTouch": "Get In Touch",
+  "subtitle": "Reach out to our corporate headquarters or explore our global branch offices to connect with a representative near you.",
+  "tollFree": "Toll Free:",
+  "quickEmail": "Quick Email:",
+  "registeredOffice": "Registered Office:",
+  "sendMessage": "Send us a message",
+  "placeholderName": "Your Name *",
+  "placeholderEmail": "Email Address *",
+  "placeholderPhone": "Phone Number *",
+  "placeholderLocation": "Location *",
+  "placeholderMessage": "Write Message... *",
+  "btnSubmit": "Submit Message",
+  "btnSending": "Sending...",
+  "network": "Our Network",
+  "branchOffices": "Global Branch Offices",
+  "selectOffice": "Select an office below to view its location on the map.",
+  "showing": "Showing:",
+  "errName": "Your name is required",
+  "errEmailRequired": "Email address is required",
+  "errEmailInvalid": "Please enter a valid email address",
+  "errPhoneRequired": "Phone number is required",
+  "errPhoneInvalid": "Please enter a valid phone number (10-15 digits)",
+  "errLocation": "Location is required",
+  "errMessage": "Please enter your message",
+  "successTitle": "Thank You for Contacting Us!",
+  "successMsg": "Your message has been sent successfully. Our support team will get in touch with you shortly.",
+  "offices": [
+    {
+      "city": "Mumbai (Corporate Office)",
+      "address": "712 Shivai Plaza, Andheri (East), Mumbai-400059, India",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "Chennai",
+      "address": "Vatsala Eashwaran Estate, No. 7, Paarivakkam Road, Chennai - 600056, Tamilnadu, India",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "dgmw@canadiancrystalline.net",
+      "country": "India"
+    },
+    {
+      "city": "Bengaluru",
+      "address": "4th Floor, Novel office, Begaum Mahal, Yellappachetty Layout, Bengaluru- 560042",
+      "phone": ["+91-9483525500"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "New Delhi",
+      "address": "No.1305, 13th Floor, Vikram Towers, Building no-16, Rajendra place, New Delhi - 110008",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "Hyderabad",
+      "address": "Hyderabad Region",
+      "phone": ["+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "USA",
+      "address": "439 N Briery Road, Biery Industrial Area, Irving, Texas",
+      "phone": ["Toll Free: 1-(888)-270-2217", "+1 267 7339 732"],
+      "email": "mail@seppasolutions.com",
+      "country": "USA"
+    },
+    {
+      "city": "Canada (Edmonton)",
+      "address": "Alberta Region",
+      "phone": ["+1-(403)-469-4015"],
+      "email": "ccw@canadianclear.com",
+      "country": "Canada"
+    },
+    {
+      "city": "UAE",
+      "address": "Ajman Free Zone, U.A.E.",
+      "phone": ["+971507726933"],
+      "email": "mail@seppasolutions.com",
+      "country": "UAE"
+    },
+    {
+      "city": "United Kingdom",
+      "address": "UK Region",
+      "phone": ["+44 20300 27711"],
+      "email": "mail@seppasolutions.com",
+      "country": "UK"
+    },
+    {
+      "city": "Germany & Belgium",
+      "address": "Brussels Region",
+      "phone": ["+4917622913101"],
+      "email": "ccw@canadianclear.com",
+      "country": "Europe"
+    },
+    {
+      "city": "Australia",
+      "address": "Australia Region",
+      "phone": ["+61363877084"],
+      "email": "mail@seppasolutions.com",
+      "country": "Australia"
+    },
+    {
+      "city": "Armenia",
+      "address": "Armenia Region",
+      "phone": ["+37494890965"],
+      "email": "mail@seppasolutions.com",
+      "country": "Armenia"
+    }
+  ]
+}

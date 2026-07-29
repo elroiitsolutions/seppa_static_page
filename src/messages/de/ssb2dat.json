@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-2D-AT: Halbautomatische 2-Kavitäten-PET-Blasmaschine mit Auto-Drop",
+  "breadcrumbName": "SSB-2D-AT",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Überblick über die SEPPA SSB-2D-AT Halbautomatische PET-Blasmaschine",
+  "overviewDescription": "Hersteller stehen in der PET-Verpackungsproduktion häufig vor der Herausforderung, Geschwindigkeit, Flexibilität und Präzision miteinander zu verbinden. Die SEPPA SSB-2D-AT wurde entwickelt, um genau diese Anforderungen zu erfüllen. Als halbautomatische PET-Flaschenblasmaschine kombiniert sie die Vorteile manueller Kontrolle mit automatisierten Prozessschritten für Heizung, Transfer und Streckblasformen.",
+  "overviewsubDescription": [
+    "Die Maschine verfügt über zwei Kavitäten und eignet sich besonders für Produktionsbetriebe, die regelmäßig zwischen verschiedenen Flaschenformen, Halsausführungen oder PET-Rohmaterialien wechseln. Während vollautomatische Anlagen bei kleineren und mittleren Produktionsmengen oft hohe Investitionen und weniger Flexibilität bedeuten, ermöglicht die SSB-2D-AT eine wirtschaftliche Lösung für Hersteller mit wechselnden Produktanforderungen.",
+    "Der entscheidende Vorteil dieser PET-Flaschenblasmaschine liegt in der präzise Abstimmung von Infraroterwärmung, Formspannung und Streckblasprozess. Eine falsche Abstimmung führt schnell zu Problemen wie ungleichmäßiger Wandstärke, Trübungen im Halsbereich oder instabilen Behältern. SEPPA entwickelt die Systeme deshalb mit Fokus auf konstante Qualität über lange Produktionszyklen."
+  ],
+  "featuresTitle": "Technische Vorteile und Hauptmerkmale der SSB-2D-AT",
+  "features": [
+    {
+      "title": "Präzise Infrarot-Erwärmung für optimale PET-Verarbeitung",
+      "description": "Die SEPPA SSB-2D-AT verwendet zonengesteuerte Infrarot-Heizmodule mit individueller Leistungsregelung. Dadurch kann die Temperaturkurve an unterschiedliche Preform-Gewichte und Flaschengeometrien angepasst werden. Diese präzise Wärmekontrolle unterscheidet eine professionelle PET-Flaschenblasmaschine von einfachen Standardlösungen."
+    },
+    {
+      "title": "Robuste Formschließeinheit für stabile Produktion",
+      "description": "Die Formschließeinheit verwendet verstärkte Stahlkomponenten für einen zuverlässigen Betrieb bei kontinuierlichen Produktionszyklen. Dadurch bleibt die Formposition stabil und die fertigen Flaschen erreichen eine gleichbleibende Maßgenauigkeit ohne Gratbildung."
+    },
+    {
+      "title": "Auto-Drop-System für gleichmäßigen Materialtransfer",
+      "description": "Das integrierte Auto-Drop-System (AT) automatisiert den Transfer der erhitzten Preforms in die Blasform. Dadurch reduziert sich der manuelle Arbeitsaufwand und gleichzeitig bleibt die Ausrichtung der Preforms konstant, was die Verteilung der Materialstärke verbessert."
+    }
+  ],
+  "applicationsTitle": "Anwendungen in verschiedenen Branchen",
+  "applicationsSubtitle": "Die SEPPA SSB-2D-AT ist eine flexible Lösung für unterschiedliche Bereiche der PET-Verpackungsproduktion.",
+  "applications": [
+    {
+      "title": "Mineralwasser und Getränke",
+      "description": "Bei Wasserflaschen und kohlensäurehaltigen Getränken stehen geringes Gewicht, Materialeffizienz und stabile Flaschenstrukturen im Vordergrund. Die präzise IR-Erwärmung und das Auto-Drop-System verarbeiten leichte Preforms optimal."
+    },
+    {
+      "title": "Speiseöl- und chemische Verpackungen",
+      "description": "Speiseölflaschen benötigen eine angepasste Materialverteilung. Chemische Verpackungen erfordern eine hohe Umweltspannungsrissbeständigkeit, die durch die gleichmäßige Wandstärke gewährleistet wird."
+    },
+    {
+      "title": "Pharmazeutische Verpackungen",
+      "description": "Pharma-Anwendungen benötigen besonders konstante Abmessungen und geringe Kontaminationsrisiken. Die kontrollierte Übergabe der Preforms und die stabile Prozessführung machen sie hierfür ideal."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Flaschenblasmaschinen wählen?",
+    "description": "SEPPA Solutions entwickelt PET-Blasmaschinen für unterschiedliche Produktionsumgebungen – von FMCG-Herstellern bis zu spezialisierten Verpackungsproduzenten.",
+    "paragraphs": [
+      "Die Erfahrung des Unternehmens zeigt sich besonders bei der Optimierung von Heizprofilen. Unterschiedliche PET-Materialien reagieren verschieden auf Temperatur, Feuchtigkeit und Streckbedingungen. Deshalb werden die Maschinen auf die tatsächlichen Produktionsanforderungen der Kunden abgestimmt.",
+      "Jede SEPPA PET-Flaschenblasmaschine basiert auf einer Kombination aus präziser Thermosteuerung, zuverlässiger Pneumatik und stabiler Mechanik. Ziel ist nicht nur eine hohe Geschwindigkeit, sondern eine gleichbleibende Qualität über den gesamten Produktionszeitraum."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-2D-AT",
+    "subtitle": "Der Produktionsprozess basiert auf manueller Bestückung und automatisierten Abfolgen für Heizung und Transfer:",
+    "steps": [
+      {
+        "title": "Preform-Erwärmung",
+        "description": "Die Preforms werden manuell in das Heizkarussell eingelegt und durch zonengesteuerte Infrarot-Heizmodule optimal temperiert."
+      },
+      {
+        "title": "Automatisierter Transfer & Streckblasformung",
+        "description": "Das Auto-Drop-System positioniert die Preforms exakt in der Form. Der Streckstab dehnt sie axial, während Hochdruckluft das PET radial formt."
+      },
+      {
+        "title": "Kühlung & Auto-Auswurf",
+        "description": "Formkühlkanäle stabilisieren die Flaschengeometrie. Nach der Kühlphase öffnet sich das Werkzeug und die fertige Flasche wird automatisch ausgeworfen."
+      }
+    ],
+    "outro": [
+      "Mit der SSB-2D-AT erhalten Hersteller eine ausgewogene Kombination aus Investitionskosten, Produktionsqualität und Flexibilität."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt eine PET-Flaschenblasmaschine Wartung?",
+      "answer": "Formeinheiten, IR-Heizsysteme und pneumatische Komponenten sollten regelmäßig geprüft werden. SEPPA empfiehlt eine zyklusabhängige Wartungsplanung."
+    },
+    {
+      "question": "2. Wie verbessert die PET-Verpackungsmaschine die Beständigkeit von Flaschen?",
+      "answer": "Eine gleichmäßige Temperaturverteilung der Preforms und eine kontrollierte Streckblasfolge sorgen für eine bessere Molekülorientierung des PET-Materials. Dadurch entstehen stabile Flaschen mit konstanter Wandstärke."
+    },
+    {
+      "question": "3. Warum eignet sich die SSB-2D-AT für pharmazeutische Anwendungen?",
+      "answer": "Das reduzierte manuelle Handling während des Transfers, die präzise Prozesssteuerung und die stabile Formführung minimieren Qualitätsabweichungen und unterstützen hohe Anforderungen an Verpackungssicherheit."
+    },
+    {
+      "question": "4. Warum ist die thermische Konditionierung bei PET-Blasmaschinen so wichtig?",
+      "answer": "Eine ungleichmäßige Erwärmung ist eine der häufigsten Ursachen für Fehler wie dünne Stellen oder Verformungen. Die zonengesteuerte IR-Technologie sorgt für eine gleichmäßige Materialvorbereitung."
+    },
+    {
+      "question": "5. Was unterscheidet die SEPPA Auto-Drop-Technologie von Standardlösungen?",
+      "answer": "Das Auto-Drop-System hält die Preform-Ausrichtung zwischen Heizprozess und Formung konstant. Diese scheinbar kleine Verbesserung hat einen großen Einfluss auf Wandstärke, Maßhaltigkeit und Produktionsstabilität."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "title": "SEPPA SSB-05A: Kompakte PET-Streckblasmaschine für flexible und präzise Flaschenproduktion",
+  "breadcrumbName": "SSB-05A",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Überblick über die SEPPA SSB-05A PET-Streckblasmaschine",
+  "overviewDescription": "Die SEPPA SSB-05A wurde für Unternehmen entwickelt, die eine kompakte, leistungsfähige und wirtschaftliche Lösung für die Herstellung hochwertiger PET-Flaschen benötigen. Besonders kleine und mittelständische Getränkehersteller profitieren von einer Maschine, die eine hohe Produktqualität bei geringem Platzbedarf ermöglicht.",
+  "overviewsubDescription": [
+    "Das Maschinenkonzept vereint die Erwärmung der Preforms, den Streckblasprozess und die präzise Formgebung in einer kompakten Bauweise. Durch eine kontrollierte Infrarot-Erwärmung und eine stabile Schließeinheit werden konstante Produktionsbedingungen geschaffen, die zu einer gleichmäßigen Wandstärkenverteilung und einer hohen Flaschenqualität beitragen.",
+    "Dank ihrer flexiblen Konstruktion eignet sich die SSB-05A für unterschiedliche Flaschenformate und schnelle Produktwechsel. Die Bedienung erfolgt über eine benutzerfreundliche Steuerung, wodurch der tägliche Betrieb vereinfacht und Rüstzeiten reduziert werden."
+  ],
+  "featuresTitle": "Merkmale und Vorteile der SEPPA SSB-05A PET-Streckblasmaschine",
+  "features": [
+    {
+      "title": "Energieeffiziente Infrarot-Heizung",
+      "description": "Segmentierte Infrarot-Heizmodule ermöglichen eine bedarfsgerechte Erwärmung der Preforms. Dadurch wird Energie nur dort eingesetzt, wo sie tatsächlich benötigt wird, was den Stromverbrauch reduziert."
+    },
+    {
+      "title": "Präzise Schließeinheit",
+      "description": "Die robuste Werkzeugschließung gewährleistet auch bei langen Produktionsläufen eine hohe Maßhaltigkeit und minimiert Verschleißerscheinungen."
+    },
+    {
+      "title": "Werkzeugwechsel ohne aufwendige Nachjustierung",
+      "description": "Dank des durchdachten Spannsystems lassen sich Blasformen schnell wechseln. Dadurch verkürzen sich Stillstandszeiten und die Gesamtanlagenverfügbarkeit steigt."
+    },
+    {
+      "title": "SPS-Steuerung & Temperaturüberwachung",
+      "description": "Die Steuerung speichert Rezepte mit Heiz- und Prozessdaten. Sensoren überwachen die Temperatur jeder Heizzone in Echtzeit, um Abweichungen frühzeitig zu erkennen."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche der SEPPA SSB-05A",
+  "applicationsSubtitle": "Die SSB-05A's Vielseitigkeit kommt durch flexibel anpassbare Heizprofile und leicht wechselbare Blasformen zum Tragen:",
+  "applications": [
+    {
+      "title": "Mineralwasser & Erfrischungsgetränke",
+      "description": "Unterschiedliche Wandstärkenerfordernisse lassen sich problemlos abdecken. Ob leichte Flaschen für stilles Wasser oder verstärkte Böden und Schultern für Kohlensäure – die Druckstufen und Ofenprofile passen sich flexibel an."
+    },
+    {
+      "title": "Kosmetik- & Weithalsbehälter",
+      "description": "Ideal auch für Kosmetikdosen, Körperpflegeflaschen und Spezialbehälter, deren asymmetrische Formen eine gezielte Reckstangengeschwindigkeit über die SPS erfordern."
+    },
+    {
+      "title": "Komplette Produktionslinien-Integration",
+      "description": "Förderbänder, Schnittstellen und das Ejektions-Timing lassen sich nahtlos mit vor- oder nachgelagerten Füll- und Etikettierstationen kombinieren."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA für PET-Streckblasmaschinen?",
+    "description": "SEPPA entwickelt PET-Streckblasmaschinen als integrierte Gesamtsysteme, bei denen Heiztechnik, Pneumatik, Werkzeugtechnik und Steuerung optimal aufeinander abgestimmt sind.",
+    "paragraphs": [
+      "Die Konstruktion basiert auf einem tiefen Verständnis des Werkstoffverhaltens von PET während des Streckblasprozesses. Dadurch entstehen Maschinen, die bereits bei der Inbetriebnahme reproduzierbare Ergebnisse liefern und dauerhaft wirtschaftlich arbeiten.",
+      "Von einzelnen Produktionszellen bis hin zu kompletten PET-Produktionslinien unterstützt SEPPA Kunden mit leistungsfähigen Lösungen für unterschiedliche Produktionsanforderungen. Das Ergebnis sind zuverlässige Maschinen mit hoher Produktqualität, kurzen Umrüstzeiten und niedrigen Betriebskosten."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-05A PET-Streckblasmaschine",
+    "subtitle": "Der vollautomatische Arbeitszyklus der Maschine eliminiert menschliche Toleranzschwankungen im Mehrschichtbetrieb:",
+    "steps": [
+      {
+        "title": "Zuführung und Temperierung",
+        "description": "Die Preforms werden automatisch sortiert und durchlaufen mehrere segmentierte Infrarot-Heizzonen, um vor dem Verstrecken ein gleichmäßiges Wärmeniveau zu erreichen."
+      },
+      {
+        "title": "Werkzeugtransfer & Mehrstufiges Blasen",
+        "description": "Das Werkzeug schließt mit hoher Kraft. Die Reckstange dehnt das PET axial, während Niederdruck-Vorblasluft und Hochdruck-Blasluft den Behälter exakt ausformen."
+      },
+      {
+        "title": "Automatischer Auswurf",
+        "description": "Nach einer kurzen Kühlphase in der Form öffnet das Werkzeug und wirft die fertige Flasche automatisch auf das Austragsband aus."
+      }
+    ],
+    "outro": [
+      "Dieser kontinuierlich überwachte Ablauf sorgt für minimalen Ausschuss und eine dauerhaft stabile Behälterfertigung."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartungsarbeiten sind bei der SSB-05A erforderlich?",
+      "answer": "Empfohlen werden regelmäßige Kontrollen der Infrarot-Heizmodule, der Pneumatik, der Werkzeugschließung sowie eine planmäßige Schmierung der beweglichen Komponenten. Dadurch bleibt die Maschine langfristig leistungsfähig."
+    },
+    {
+      "question": "2. Wie wird eine gleichbleibende Flaschenqualität erreicht?",
+      "answer": "Mehrere Infrarot-Heizzonen, eine präzise Werkzeugschließung und ein mehrstufiger Streckblasprozess sorgen für eine gleichmäßige Materialverteilung und reproduzierbare Produktionsergebnisse."
+    },
+    {
+      "question": "3. Welche Vorteile bietet die Maschine gegenüber herkömmlichen PET-Blasmaschinen?",
+      "answer": "Die energieeffiziente Heiztechnik, kurze Werkzeugwechsel, intelligente Rezeptverwaltung und die automatisierte Prozesssteuerung erhöhen Produktivität und Wirtschaftlichkeit bei gleichzeitig hoher Produktqualität."
+    },
+    {
+      "question": "4. Kann die SSB-05A in bestehende Produktionslinien integriert werden?",
+      "answer": "Ja. Die Maschine lässt sich problemlos mit vorhandenen Anlagen für Preform-Zuführung, Abfüllung, Verschließung und Etikettierung kombinieren."
+    },
+    {
+      "question": "5. Warum entscheiden sich Unternehmen für SEPPA?",
+      "answer": "SEPPA verbindet langjährige Engineering-Kompetenz mit moderner PET-Streckblastechnologie. Die Maschinen überzeugen durch hohe Prozesssicherheit, flexible Einsatzmöglichkeiten und einen wirtschaftlichen Betrieb."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "title": "Tunnelkühler für moderne Getränke- und Lebensmittelverarbeitung",
+  "breadcrumbName": "Tunnelkühler",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Präzise Kühlung zwischen Verarbeitung und Verpackung",
+  "overviewDescription": "Wenn eine Glasflasche nach der Pasteurisierung mit etwa 65 °C aus der Anlage kommt und anschließend sicher auf Umgebungstemperatur gebracht wird, ohne Verformung, Glasbruch oder Kohlensäureverlust, übernimmt ein Tunnelkühler diese entscheidende Aufgabe. Diese thermische Übergangsphase zwischen Verarbeitung und nachgelagerter Verpackung ist ein kritischer Punkt jeder Produktionslinie. Ohne ein geeignetes Kühlsystem verlassen Behälter den Pasteurisierungsprozess in einem thermisch belasteten Zustand. Druckverhältnisse innerhalb der Flasche verändern sich, Etiketten haften schlechter und Sekundärverpackungen können beeinträchtigt werden.",
+  "overviewsubDescription": [
+    "SEPPA Solutions entwickelt Tunnelkühlsysteme, die diese Prozesslücke schließen. Dabei wird nicht nur die Austrittstemperatur betrachtet, sondern der gesamte thermische Verlauf des Produkts innerhalb der Produktionsanlage."
+  ],
+  "featuresTitle": "Kernmerkmale und Vorteile der SEPPA Tunnelkühler",
+  "features": [
+    {
+      "title": "Temperaturregelung Zone für Zone",
+      "description": "Ein zu schneller Temperaturabfall kann Glasbruch oder CO₂-Stabilitätsverluste verursachen. SEPPA setzt deshalb variable Sprühzonen mit 4 bis 7 unabhängig gesteuerten Temperaturbereichen (Abweichung innerhalb von ±1,5 °C) ein."
+    },
+    {
+      "title": "Integrierte Wärmerückgewinnung",
+      "description": "Erwärmtes Wasser aus frühen Kühlzonen wird als vorgewärmte Zufuhr für spätere Bereiche genutzt. Dies senkt den Wasserverbrauch in geschlossenen Kreisläufen um 30–40 % bei optimierten verstopfungsarmen Düsen."
+    },
+    {
+      "title": "Modulare Edelstahlkonstruktion",
+      "description": "Die Module bestehen aus hochwertigem Edelstahl (Güte 304) mit reibungsarmen Ketten für stabile Behälterführung. Dies ist besonders wichtig bei Hochleistungsanlagen mit z. B. 36.000 Flaschen pro Stunde."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Vorteile eines Tunnelkühlers in Produktionslinien",
+      "paragraphs": [
+        "Verbesserte Haltbarkeit und Geschmackstabilität: Eine präzise gesteuerte Abkühlung verhindert eine Über- oder Unterkühlung, sichert die CO₂-Bindung und schützt die biologische Qualität des Produkts.",
+        "Schutz nachgelagerter Verpackungsprozesse: Flaschen verlassen den Kühler auf Umgebungstemperatur, sodass Klebstoffe bei Etikettiermaschinen optimal haften und keine Feuchtigkeit in Kartons getragen wird.",
+        "Kompaktere Bauweise & Geringere Betriebskosten: Durch geschlossene Wasserkreisläufe, Wärmerückgewinnung und Isolierung der Kühlkammern wird der Energiebedarf der gesamten Abfülllinie spürbar reduziert."
+      ]
+    }
+  ],
+  "applicationsTitle": "Anwendungen in verschiedenen Industrien",
+  "applicationsSubtitle": "Schonende Temperaturprofile für Flaschen, Dosen und empfindliche Süßwarenprodukte.",
+  "applications": [
+    {
+      "title": "Getränkeabfülllinien",
+      "description": "Kühlt Bier, kohlensäurehaltige Erfrischungsgetränke und RTD-Produkte von ca. 72 °C auf 20–25 °C ab, ideal für nachgelagerte Etikettiersysteme."
+    },
+    {
+      "title": "Milch- & Saftverarbeitung",
+      "description": "Tunnelkühler für Molkereianwendungen nutzen verlängerte Förderstrecken und angepasste Sprühprofile, um viskose Produkte schonend herunterzukühlen."
+    },
+    {
+      "title": "Schokoladen- & Süßwaren",
+      "description": "Arbeitet mit kontrollierter Luftführung statt Wasser. Präzise Kühltemperaturen (18 °C bis 12 °C) sichern die Bildung stabiler Kakaobutterkristalle."
+    },
+    {
+      "title": "Lebensmittelkonserven",
+      "description": "Kompakte Mehrzonen-Kühler zur Temperierung von Glasgläsern und Metalldosen nach Heißabfüll- oder Sterilisationsprozessen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions?",
+    "description": "SEPPA Solutions konzipiert Kühlsysteme als integrierte Prozessanlagen für den anspruchsvollen Mehrschichtbetrieb.",
+    "paragraphs": [
+      "Jedes Projekt wird bezüglich Durchsatz, Behältergeometrie, Wärmeeintrag und lokaler Wassertemperaturen berechnet, um eine punktgenaue Dimensionierung zu gewährleisten.",
+      "Die Integration moderner Automatisierungstechnik ermöglicht die Fernüberwachung aller Zonentemperaturen und Durchflussraten für eine lückenlose Qualitätssicherung."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise eines Tunnelkühlers: Prozessablauf",
+    "steps": [
+      {
+        "title": "Einlauf & Erste Kühlzone",
+        "description": "Heiße Behälter werden kontinuierlich auf das Förderband übergeben. Das Sprühwasser der ersten Zone liegt ca. 15–20 °C unter Produkttemperatur, um thermische Spannungen zu vermeiden."
+      },
+      {
+        "title": "Zonenweise Herunterkühlung",
+        "description": "Während des Transports durchläuft das Produkt weitere Segmente mit schrittweise reduzierter Wassertemperatur. Sensoren passen die Durchflussmengen in Echtzeit an."
+      },
+      {
+        "title": "Übergabe auf Lagertemperatur",
+        "description": "Die letzte Zone bringt die Behälter auf einen stabilen Endwert von ca. 20–25 °C. Das Produkt wird trocken und perfekt temperiert an die Verpackungsmaschinen übergeben."
+      }
+    ],
+    "outro": [
+      "Fazit: Präzise Kühlung für zuverlässige Produktionsprozesse. Ein moderner Tunnelkühler ist ein entscheidendes Element zwischen thermischer Verarbeitung und Verpackung. Durch exakte Temperaturführung, Energieeffizienz und flexible Konstruktion unterstützt SEPPA Solutions Getränke- und Lebensmittelhersteller dabei, Produktqualität, Produktionssicherheit und Anlagenleistung dauerhaft zu optimieren."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Warum ist die zonenweise Abkühlung wichtig?",
+      "answer": "Ein plötzlicher Kälteschock kann bei Glasflaschen zu Rissen führen und bei kohlensäurehaltigen Getränken die Bindung von CO₂ stören. Zonenweise Kühlung schützt das Material."
+    },
+    {
+      "question": "2. Wie funktioniert die Wärmerückgewinnung?",
+      "answer": "Das in den kälteren Zonen erwärmte Wasser wird im Kreislauf gefiltert und zum Vorwärmen in den früheren Zonen genutzt, was Energie und Frischwasser spart."
+    },
+    {
+      "question": "3. Welche Wartung benötigt ein Tunnelkühler?",
+      "answer": "Hauptsächlich die Reinigung der Sprühdüsen und Siebe zur Vermeidung von Verstopfungen sowie die mechanische Überprüfung des Transportbandes."
+    },
+    {
+      "question": "4. Wie unterscheidet sich ein Schokoladenkühltunnel?",
+      "answer": "Er nutzt klimatisierte Luftströme anstelle von Wasser, da Feuchtigkeit die Schokoladenstruktur beschädigen würde, und arbeitet mit hochpräzisen Zonentemperaturen."
+    },
+    {
+      "question": "5. Kann die Geschwindigkeit angepasst werden?",
+      "answer": "Ja, der Bandantrieb ist frequenzgeregelt und wird über die zentrale SPS-Steuerung auf die jeweilige Liniengeschwindigkeit und Behältergröße abgestimmt."
+    }
+  ]
+}

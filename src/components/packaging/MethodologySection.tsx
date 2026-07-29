@@ -74,6 +74,8 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
         <div className="space-y-16 md:space-y-24">
           {steps.map((step, idx) => {
             const isEven = idx % 2 === 0;
+            const title = step?.title || "";
+            const isPhaseOrStep = typeof title === 'string' && (title.toLowerCase().startsWith('phase') || title.toLowerCase().startsWith('step'));
             return (
               <motion.div 
                 key={idx}
@@ -85,25 +87,25 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
               >
                 {/* Content */}
                 <motion.div variants={fadeInUp} className="w-full lg:w-1/2 group cursor-pointer">
-                  <div className={`flex items-center ${step.title.toLowerCase().startsWith('phase') || step.title.toLowerCase().startsWith('step') ? 'gap-0' : 'gap-4'} mb-6`}>
-                    {!(step.title.toLowerCase().startsWith('phase') || step.title.toLowerCase().startsWith('step')) && (
+                  <div className={`flex items-center ${isPhaseOrStep ? 'gap-0' : 'gap-4'} mb-6`}>
+                    {!isPhaseOrStep && (
                       <span className="w-12 h-12 shrink-0 rounded-full flex items-center justify-center text-seppa-red font-bold font-heading text-xl shadow-sm group-hover:bg-seppa-red group-hover:text-white group-hover:border-seppa-red transition-all duration-500">
                         <FiStar size={24}/>
                       </span>
                     )}
-                    <h3 className="text-3xl md:text-4xl font-bold font-heading text-dark leading-tight">{step.title}</h3>
+                    <h3 className="text-3xl md:text-4xl font-bold font-heading text-dark leading-tight">{title}</h3>
                   </div>
-                  {Array.isArray(step.description) ? (
+                  {Array.isArray(step?.description) ? (
                     <div className="space-y-4">
                       {step.description.map((desc, i) => (
-                        <p key={i} className="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                        <p key={i} className="text-gray-600 text-base md:text-lg leading-relaxed text-start">
                           {desc}
                         </p>
                       ))}
                     </div>
                   ) : (
-                    <p className="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                      {step.description}
+                    <p className="text-gray-600 text-base md:text-lg leading-relaxed text-start">
+                      {step?.description || ""}
                     </p>
                   )}
                 </motion.div>
@@ -114,11 +116,13 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
                   className="w-full lg:w-1/2 group relative"
                 >
                   <div className="rounded-[2rem] overflow-hidden aspect-[4/3] shadow-2xl relative">
-                    <img 
-                      src={step.image} 
-                      alt={step.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                    />
+                    {step.image ? (
+                      <img 
+                        src={step.image} 
+                        alt={step.title} 
+                        className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                      />
+                    ) : null}
                     <div className="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500"></div>
                   </div>
                 </motion.div>
