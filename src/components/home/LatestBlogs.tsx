@@ -120,8 +120,7 @@ const LocalizedLatestBlogs = () => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? ((enHome as any).LatestBlogs?.[key] || key) : t(`LatestBlogs.${key}`);
+  const getT = (key: string) => t(`LatestBlogs.${key}`);
   return <LatestBlogsContent getT={getT} isArabic={isArabic} />;
 };
 

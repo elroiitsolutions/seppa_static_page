@@ -26,9 +26,8 @@ const Projects = () => {
     const t = useTranslations('home');
     const locale = useLocale();
     const isArabic = locale === 'ar';
-    const isDe = locale === 'de';
 
-    const getT = (key: string) => isDe ? ((enHome as any).PetTechnology?.[key] || key) : t(`PetTechnology.${key}`);
+    const getT = (key: string) => t(`PetTechnology.${key}`);
 
     const projects = [
         {

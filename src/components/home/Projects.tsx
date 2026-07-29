@@ -24,9 +24,8 @@ const staggerContainer = {
 const Projects = () => {
   const t = useTranslations('home');
   const locale = useLocale();
-  const isDe = locale === 'de';
 
-  const getT = (key: string) => isDe ? ((enHome as any).Projects?.[key] || key) : t(`Projects.${key}`);
+  const getT = (key: string) => t(`Projects.${key}`);
 
   const projects = [
     {

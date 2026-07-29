@@ -185,8 +185,7 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
 const LocalizedClients = () => {
   const t = useTranslations('home');
   const locale = useLocale();
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? ((enHome as any).Clients?.[key] || key) : t(`Clients.${key}`);
+  const getT = (key: string) => t(`Clients.${key}`);
   return <ClientsContent getT={getT} />;
 };
 

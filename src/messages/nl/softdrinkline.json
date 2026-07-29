@@ -1,0 +1,122 @@
+{
+  "title": "Complete CSD-productielijn van SEPPA Solutions",
+  "breadcrumbName": "Frisdranklijnen",
+  "overviewTitle": "Overzicht van de Complete Productielijn voor Koolzuurhoudende Frisdranken",
+  "overviewDescription": "In een markt waarin marges krimpen en consumenten steeds veeleisender worden, blijkt de keuze voor een goed geëngineerde CSD-productielijn vaak het verschil te maken tussen een gezonde balans en tegenvallende cijfers. Seppa Solutions bouwt geïntegreerde systemen waarbij elke module, van siroopbereiding tot palletisering, op elkaar is afgestemd via een gemeenschappelijk SCADA-platform. Die integratie is geen marketingtruc; het is een engineeringkeuze die het aantal storingsbronnen drastisch reduceert.",
+  "overviewsubDescription": [
+    "Wat een CSD-productielijn van Seppa onderscheidt, is de doordachte balans tussen mechanische robuustheid en digitale intelligentie. Onze inline carbonators werken samen met massaflowmeters die tot op 0,01 g/l CO₂-gehalte meten, terwijl de tegendrukvulling zorgt dat geen enkele bubbel verloren gaat tijdens transfer. Zo krijgt de investeerder in een moderne frisdrank fabriek wat hij nodig heeft: voorspelbare kwaliteit, meetbare efficiëntie en een duidelijk pad naar opschaling.",
+    "Het architectuurprincipe is eenvoudig maar streng: één ontwerpfilosofie, één besturingslogica, één aanspreekpunt. Daarmee vervalt de klassieke hoofdpijn van mismatchende interfaces tussen leveranciers."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Koolzuurhoudende frisdrank productieproces en procesverloop",
+      "paragraphs": [
+        "Tijdens de productie stroomt behandeld water samen met siroop in de menger. Magneetdebietmeters bewaken de brix-verhouding en leiden de vloeistof naar platenwarmtewisselaars die de temperatuur verlagen naar het carbonatatiebereik.",
+        "Het gecarboneerde product wordt tijdelijk opgeslagen in een druktank voordat het naar de vuller stroomt. Elke fles (PET, glas of aluminium) wordt onder een gecontroleerde CO₂-atmosfeer isobarisch afgevuld om koolzuurverlies te vermijden.",
+        "Direct na het afvullen worden de flessen afgedopt en passeren ze visuele inspectiestations voor vulniveau- en dopcontrole. Het SCADA-systeem registreert in realtime proces- en OEE-data."
+      ]
+    },
+    {
+      "title": "Maatwerk CSD-lijnen voor elke productiecapaciteit",
+      "paragraphs": [
+        "Seppa bouwt CSD-lijnen met het oog op toekomstige capaciteitsuitbreiding, startend vanaf 6.000 bph tot wel 36.000 bph.",
+        "Voor kleinere volumes leveren we compacte stand-alone installaties, terwijl we voor grote producties het Kombopure™-systeem inzetten, dat blazen, spoelen, afvullen en doppen in één steriele behuizing integreert.",
+        "Bovendien hebben we lichtgewicht PET-fles-blaastechnologie geïntegreerd in onze blaasmachines. Dit vermindert het flesgewicht met gemiddeld 25% met behoud van de top-loadsterkte."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste onderdelen van een complete CSD-productielijn",
+  "featuresSubtitle": "De onderdelen in een complete frisdrank fabriek moeten naadloos op elkaar zijn afgestemd om storingen te vermijden.",
+  "features": [
+    {
+      "title": "Waterbehandeling",
+      "description": "Filtratie en omgekeerde osmose zorgen voor een constante waterkwaliteit, wat de smaak en carbonatatie-efficiëntie ten goede komt."
+    },
+    {
+      "title": "Siroopbereiding",
+      "description": "Suikeroplossers en mengtanks met inline refractometers garanderen een uiterst nauwkeurige brix-dosering."
+    },
+    {
+      "title": "Mengen en Proportioneren",
+      "description": "Water en siroop worden continu en volumetrisch gemengd met behulp van magneetdebietmeters."
+    },
+    {
+      "title": "Carbonatatie en Koeling",
+      "description": "Het product wordt gekoeld tot 2-4°C en onder druk verzadigd met CO₂ in inline carbonators."
+    },
+    {
+      "title": "Isobarisch afvullen",
+      "description": "De vulsondes en isobarische vulkleppen spoelen en vullen flessen zonder drukverschil om schuimvorming en CO₂-verlies te elimineren."
+    },
+    {
+      "title": "Doppen en Verpakken",
+      "description": "Automatische capper-stations, sleeve-etiketteerders en palletiseerders voltooien het proces aan het einde van de lijn."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Complete CSD-oplossingen van Seppa Solutions",
+    "description": "Seppa leeft turn-key projecten met één vast engineeringteam dat gedurende het gehele traject uw aanspreekpunt blijft.",
+    "reasons": [
+      {
+        "title": "Kortere terugverdientijd",
+        "description": "Een complete frisdrank productielijn van Seppa realiseert doorgaans een terugverdientijd tussen 26 en 38 maanden, mede dankzij een energiebesparing van 22%."
+      },
+      {
+        "title": "Minder productverlies",
+        "description": "Isobarische afvulling en realtime brix-monitoring dringen productverliezen aan de vuller terug tot onder 0,6%."
+      },
+      {
+        "title": "Flexibiliteit in verpakkingen",
+        "description": "Dezelfde frisdrank vulmachine kan PET-flessen, rPET, glas en aluminium blikjes verwerken met minimale omsteltijden van onder 20 minuten."
+      },
+      {
+        "title": "Hygienic Design & CIP",
+        "description": "Alle productcontactdelen zijn van 316L roestvast staal. Gevalideerde CIP- en SIP-cycli lopen automatisch door de complete installatie."
+      }
+    ]
+  },
+  "methodology": {
+    "title": "Werkwijze: Van Siroop tot Verpakking",
+    "subtitle": "Een geïntegreerd proces dat zorgt voor een storingsvrije livegang.",
+    "steps": [
+      {
+        "title": "Siroopbereiding",
+        "description": "Suiker en aroma's worden gemengd in tanks met roerwerk en koeling, waarbij inline refractometers continu brix en pH controleren."
+      },
+      {
+        "title": "De-aeratie en carbonatatie",
+        "description": "De deaerator verwijdert zuurstof tot onder 0,5 ppm, waarna gecontroleerde CO₂-injectie onder vacuümniveau de gewenste carbonatatie realiseert."
+      },
+      {
+        "title": "Afvullen en Capping",
+        "description": "Onder tegendruk wordt het product schuimvrij afgevuld op de frisdrank vulmachine, waarna de capper de fles direct luchtdicht verzegelt."
+      }
+    ],
+    "outro": [
+      "De complete CSD-productielijn van Seppa Solutions integreert alle stappen tot een harmonieus systeem dat productveiligheid combineert met maximale output."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Welke hygiënenormen volgt een Seppa CSD productielijn?",
+      "answer": "Unsere systemen voldoen aan EHEDG, 3A Sanitary en FDA-materiaalvereisten. Alle productcontactoppervlakken zijn AISI 316L met Ra ≤ 0,8 µm, en CIP-cycli zijn valideerbaar via automatische temperatuur-, geleidbaarheid- en tijdregistratie."
+    },
+    {
+      "question": "Wat zijn de gemiddelde onderhoudskosten van een frisdrank productielijn?",
+      "answer": "Voor een lijn van 12.000 bph liggen de jaarlijkse OPEX-kosten voor onderhoud tussen 1,8% en 2,5% van de initiële investering. Voorspellend onderhoud via onze SCADA-integratie kan dit met circa 15% verder terugbrengen door reactieve interventies te elimineren."
+    },
+    {
+      "question": "Hoe efficiënt is een moderne Seppa frisdrank vulmachine?",
+      "answer": "De operationele efficiëntie (OEE) ligt bij correcte bediening tussen 92% en 96%, met vulnauwkeurigheid binnen ±1,5 ml en maximale netto snelheden tot 36.000 bph in de topsegmentmodellen."
+    },
+    {
+      "question": "Hoe borgt Seppa de kwaliteitscontrole bij koolzuurhoudende dranken?",
+      "answer": "Kwaliteit wordt bewaakt via inline densimeters, CO₂- en Brix-analyzers, en 100% visuele controle via HD-camerasystemen. Alle data worden gekoppeld aan batchnummers voor volledige traceerbaarheid, essentieel voor exporterende producenten van koolzuurhoudende dranken."
+    },
+    {
+      "question": "Kan de installatie geleidelijk worden opgeschaald?",
+      "answer": "Ja, alle Seppa-lijnen zijn modulair. Klanten starten vaak met 6.000–8.000 bph en breiden vervolgens uit naar 20.000+ bph zonder de bestaande carbonator, menger of besturingsarchitectuur te vervangen."
+    }
+  ]
+}

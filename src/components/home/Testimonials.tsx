@@ -124,8 +124,7 @@ const TestimonialsContent = ({ getT }: { getT: (key: string) => string }) => {
 const LocalizedTestimonials = () => {
   const t = useTranslations('home');
   const locale = useLocale();
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? ((enHome as any).Testimonials?.[key] || key) : t(`Testimonials.${key}`);
+  const getT = (key: string) => t(`Testimonials.${key}`);
   return <TestimonialsContent getT={getT} />;
 };
 

@@ -4,7 +4,7 @@ import { Link } from '@/i18n/routing';
 import { FiCheckCircle, FiPlay } from 'react-icons/fi';
 
 import { useTranslations, useLocale } from 'next-intl';
-import enHome from '@/messages/en/home.json';
+
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -27,9 +27,7 @@ const HomeHero = () => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
-
-  const getT = (key: string) => isDe ? ((enHome as any).HomeHero?.[key] || key) : t(`HomeHero.${key}`);
+  const getT = (key: string) => t(`HomeHero.${key}`);
 
   const bullets = [
     getT('bullet1'),
