@@ -1,0 +1,127 @@
+{
+  "title": "Tunnelpasteuriseermachines",
+  "breadcrumbName": "Tunnelpasteuriseermachines",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Pasteuriseermachine: Waar Houdbaarheid en Smaak Elkaar Ontmoeten",
+  "overviewDescription": "Pasteurisatie is een van die processen waar je pas echt over nadenkt als het misgaat. Een paar graden te weinig, een paar seconden te kort, en je hebt een product dat er goed uitziet maar niet houdt wat het belooft. Precies daarom is de keuze voor een goede pasteuriseermachine geen bijzaak in een productielijn, maar het punt waarop je bepaalt of je product de winkelschappen en de klant thuis veilig haalt.",
+  "overviewsubDescription": [
+    "Seppa Solutions ontwerpt deze machine als een geïntegreerd geheel van opwarm-, verblijfs- en koelzones, afgestemd op het specifieke product dat erdoorheen gaat. Bier, sap en verpakte levensmiddelen hebben allemaal een ander temperatuurprofiel nodig, en onze machines zijn daar vanaf de basis op ingericht.",
+    "Het kernidee achter onze tunnelpasteurisatie is simpel te zeggen, maar lastig goed uit te voeren: elk product moet exact lang genoeg op exact de juiste temperatuur blijven om schadelijke micro-organismen te elimineren, zonder dat smaak, textuur of voedingswaarde onnodig lijden.",
+    "Wat ons betreft zit de echte waarde van een moderne pasteuriseermachine in de precisie waarmee dat evenwicht wordt bewaakt. PLC-gestuurde regelsystemen monitoren continu de temperatuur in elke zone en sturen bij zodra er afwijkingen optreden."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA Tunnelpasteuriseermachine",
+      "paragraphs": [
+        "Bij klanten die overstapten van batchpasteurisatie naar onze continue tunnelpasteurisatie, zagen we doorgaans een capaciteitsverhoging van 20 tot 30 procent bij vergelijkbare vloeroppervlakte doordat producten continu doorstromen.",
+        "Onze warmteterugwinningssystemen vangen restwarmte uit de koelzone op en gebruiken die om binnenkomend product voor te verwarmen, wat vaak een besparing van 25 tot 40 procent op stoom- of gasverbruik oplevert.",
+        "Onze modulerende stoomkleppen houden de temperatuur binnen minder dan een halve graad afwijking, wat bederf voorkomt en energierekeningen verlaagt. Dankzij de modulaire opbouw kunt u de capaciteit later eenvoudig uitbreiden door zones toe te voegen."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Dranken, Voedingsmiddelen en Verpakkingsindustrie",
+      "paragraphs": [
+        "Brouwerijen gebruiken tunnelpasteurisatie voor gebotteld en geblikt bier voor lange houdbaarheid zonder smaakverlies. De automatische pasteurisator bewaakt PU-accumulatie en voorkomt smaakverandering door oxidatie.",
+        "Sapproducenten profiteren van aparte recepten voor verse of geconcentreerde sappen die vitamines behouden en schadelijke sporen neutraliseren.",
+        "Voor verpakte levensmiddelen (potten, blikken, stuitverpakkingen) garandeert de installatie dat de warmte tot in de kern van viskeuze vullingen doordringt. Zuivelverwerkers benutten kortere, intensieve hittepieken."
+      ]
+    },
+    {
+      "title": "Belangrijkste Kenmerken van de SEPPA Tunnelpasteuriseermachine",
+      "paragraphs": [
+        "De meertraps temperatuurzones zijn afzonderlijk regelbaar voor een geleidelijke opwarmcurve die verpakkingen beschermt tegen thermische schokken.",
+        "Sproeisystemen verdelen stoom en water gelijkmatig over flessen, blikken en potten. Frequentieregelde transportbanden passen de verblijftijd automatisch aan bij lijnvertragingen.",
+        "PLC-gestuurde PU-reductiebewaking (Pasteurisatie-eenheden) berekend continu de microbiologische veiligheid. De RVS AISI 316 constructie biedt langdurige corrosiebestendigheid."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Tunnelpasteuriseermachine",
+  "featuresSubtitle": "Hoogwaardige technologische specificaties voor maximale kiemreductie en energie-efficiëntie:",
+  "features": [
+    {
+      "title": "Super Heat Zone Snelle Warmteoverdracht",
+      "description": "Brengt producten snel en gelijkmatig op pasteurisatietemperatuur om overmatige verhitting te voorkomen."
+    },
+    {
+      "title": "Exacte PU-Reductiebewaking",
+      "description": "PLC-gebaseerde bewaking garandeert dat exact de gewenste pasteurisatie-eenheden (PU) worden behaald."
+    },
+    {
+      "title": "Warmteterugwinning & Energiebesparing",
+      "description": "Regeneratieve waterlussen vangen restwarmte uit de koelzones op voor voorverwarming, wat tot 40% energie bespaart."
+    },
+    {
+      "title": "Zwaar Uitgevoerde Transportbanden",
+      "description": "RVS in- en uitvoer gecombineerd met een robuuste platte gaasband voor stabiel transport bij hoge snelheden."
+    },
+    {
+      "title": "Zelfreinigende Sproeipanelen",
+      "description": "Gelijkmatige waterverdeling zonder nozzleverstoppingen over de gehele breedte van de tunnel."
+    },
+    {
+      "title": "Modulerende Stoomregeling",
+      "description": "Houdt de procestemperatuur binnen ±0,5°C nauwkeurig voor optimale smaak- en kwaliteitsborging."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Tunnelpasteurisatieoplossingen van Seppa Solutions?",
+    "description": "Ons technische team blijft nauw betrokken tijdens opstart en de eerste productiemaanden voor een naadloze procesintegratie.",
+    "paragraphs": [
+      "Maatwerk Zone-indeling: Wij ontwerpen het opwarm-, verblijfs- en koeltraject exact op basis van uw product- en verpakkingstype.",
+      "Gegarandeerd Smaak- & Vitaminebehoud: Precieze temperatuurbeheersing voorkomt gekookte smaken en vitamineverlies.",
+      "Lange Levensduur & Betrouwbaarheid: Klanten draaien 20 tot 22 uur per dag continu zonder ongeplande stilstand.",
+      "Eenvoudige Modulaire Uitbreiding: Voeg in de toekomst extra zones toe zonder uw bestaande lijn te hoeven vervangen."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Werkwijze van de Pasteuriseermachine",
+    "subtitle": "Een 5-staps thermisch verwerkingsproces voor microbiologische veiligheid:",
+    "steps": [
+      {
+        "title": "1. Productinvoer",
+        "description": "Flessen, blikken of potten komen via het geleidesysteem binnen op de RVS transportband van de tunnel."
+      },
+      {
+        "title": "2. Geleidelijke Opwarming",
+        "description": "Opeenvolgende zones verwarmen het product stap voor stap om thermische schokken en glasbreuk te voorkomen."
+      },
+      {
+        "title": "3. Exacte Pasteurisatiefase",
+        "description": "Het product blijft gedurende een berekende tijd op de doeltemperatuur voor gevalideerde microbiologische reductie."
+      },
+      {
+        "title": "4. Gecontroleerde Koeling",
+        "description": "Stapsgewijze koeling laat de verpakking veilig afkoelen tot procestemperatuur."
+      },
+      {
+        "title": "5. Kwaliteitsborging & Datalogging",
+        "description": "Temperatuurlogs en PU-waarden worden automatisch opgeslagen voor audits en certificering."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Welke hygiënenormen haalt de SEPPA pasteuriseermachine?",
+      "answer": "Onze systemen voldoen aan de geldende Europese en internationale hygiënerichtlijnen voor voedingscontactoppervlakken, met volledige temperatuurlogging per productiebatch."
+    },
+    {
+      "question": "Wat kost het onderhoud van een moderne pasteuriseermachine op jaarbasis?",
+      "answer": "Dat hangt af van draaiuren en producttype, maar de meeste klanten begroten tussen 2 en 4 procent van de aanschafwaarde per jaar aan onderhoud en slijtdelen."
+    },
+    {
+      "question": "Hoeveel energie verbruikt een industriële pasteurisator gemiddeld?",
+      "answer": "Dankzij warmteterugwinning ligt het verbruik doorgaans 25 tot 40 procent lager dan bij oudere, niet-geoptimaliseerde systemen."
+    },
+    {
+      "question": "Hoe effectief is tunnelpasteurisatie vergeleken met batchverwerking?",
+      "answer": "Continue tunnelpasteurisatie levert doorgaans 20 tot 30 procent meer capaciteit op bij vergelijkbare vloeroppervlakte, met consistentere resultaten per product."
+    },
+    {
+      "question": "Hoe betrouwbaar is een pasteurisatie installatie bij continu gebruik?",
+      "answer": "Onze klanten draaien doorgaans 20 tot 22 uur per dag zonder ongeplande stilstand, mede dankzij de PLC gestuurde temperatuurbewaking."
+    }
+  ]
+}

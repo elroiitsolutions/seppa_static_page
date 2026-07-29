@@ -1,0 +1,133 @@
+{
+  "title": "RFC Machine Monoblock Oplossingen",
+  "breadcrumbName": "Spoel- Vul- Sluitmonoblock",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "RFC Machine: Drie Processen, Eén Naadloze Lijn",
+  "overviewDescription": "Er is iets bevredigends aan een goed afgestelde monoblock. Flessen komen leeg binnen, gaan door een paar snelle bewegingen, en verlaten de machine gevuld, gesloten en klaar voor etikettering. Dat is in essentie waarom een RFC machine zo'n aantrekkelijke investering is voor wie op schaal water of dranken bottelt: drie kritieke stappen samengevoegd tot één beweging, met minder overdrachtspunten en dus minder kans op fouten.",
+  "overviewsubDescription": [
+    "Seppa Solutions bouwt de RFC machine als één mechanisch en elektronisch geheel, niet als drie losse machines die toevallig naast elkaar staan. Dat onderscheid bepaalt in de praktijk hoeveel ruimte je nodig hebt, hoeveel operators je moet inzetten en hoe stabiel je productiesnelheid blijft bij lange runs.",
+    "De flessen worden door een centrale draaitafel gevoerd, waarbij dezelfde grijpers ze vasthouden van de eerste spoelbeurt tot het moment dat de dop erop klikt. Die continuïteit is precies wat een RFC machine onderscheidt van een lijn met losstaande units: geen tussentransport en een aanzienlijk kleinere machinevoetafdruk.",
+    "Wat ons betreft is de echte waarde van deze aanpak dat kwaliteit en snelheid elkaar niet meer bijten. Bij oudere gescheiden opstellingen moet je vaak kiezen tussen snelheid en contaminatierisico. Een geïntegreerde RFC machine haalt die afweging grotendeels weg."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA RFC-machine",
+      "paragraphs": [
+        "Praten we even over cijfers, want daar zit uiteindelijk de beslissing. Klanten die overstappen van gescheiden apparatuur naar onze RFC machine zien doorgaans een productieverhoging van 15 tot 25 procent bij gelijkblijvende vloeroppervlakte. Minder transportbanden betekent minder stilstand door blokkades en kantelende flessen.",
+        "Onze servogestuurde vulventielen doseren met een nauwkeurigheid van doorgaans onder de 0,5 procent afwijking per fles, wat bij hoge volumes al snel duizenden euro's per maand aan bespaard product oplevert vergeleken met oudere zwaartekrachtvulsystemen.",
+        "Voor watervulmachine toepassingen met hoge volumes denk aan bronwater of gedistilleerd water in PET flessen merken klanten dat de doorvoersnelheid stabieler blijft over een volledige productiedag. Terugverdientijden liggen typisch tussen twee en drie jaar."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Dranken, Water en Verpakkingsindustrie",
+      "paragraphs": [
+        "Mineraalwaterproducenten zijn de meest voor de hand liggende gebruikers van een spoel-vul-sluitmachine vanwege de grote volumes en dunne marges. Elke seconde tijdverlies per fles telt op.",
+        "Koolzuurhoudende dranken vragen om tegendrukvulling om te voorkomen dat CO2 ontsnapt, met een snelle sluitfase. Frisdrankfabrikanten en producenten van sport- en energiedranken gebruiken hetzelfde systeem met verschillende vulprofielen.",
+        "Ook bulkwaterleveranciers die grote flessen (10 tot 20 liter) vullen voor kantoren vertrouwen op onze technologie met aangepaste grijpers en krachtigere doseerpompen."
+      ]
+    },
+    {
+      "title": "Belangrijkste Kenmerken van de SEPPA RFC machine",
+      "paragraphs": [
+        "De roterende koppen in de dopsluitmachine gebruiken magnetische koppelingen in plaats van starre mechanische aandrijving, wat zorgt voor een consistent aandraaikoppel per dop.",
+        "CIP reinigingskoppen (Clean in Place) zijn standaard geïntegreerd, zodat de RFC machine tussen productruns door wordt gereinigd zonder onderdelen te demonteren.",
+        "Vloeistofmeting gebeurt via servogestuurde vulventielen per fles individueel. De constructie is roestvrij staal AISI 316, bestand tegen agressieve reinigingsmiddelen."
+      ]
+    }
+  ],
+  "featuresTitle": "Sectoren en Toepassingen",
+  "featuresSubtitle": "De operationele veelzijdigheid van onze monoblocks bedient uiteenlopende industriële sectoren:",
+  "features": [
+    {
+      "title": "Mineraalwater & Bronwater",
+      "description": "Hoge doorvoersnelheid en stabiele dosering voor PET flessen en bulkcontainers."
+    },
+    {
+      "title": "Koolzuurhoudende Frisdranken",
+      "description": "Tegendrukvulling om CO2-verlies te voorkomen met snelle dopplaatsing."
+    },
+    {
+      "title": "Sport- & Energiedranken",
+      "description": "Flexibel instelbare vulprofielen en recepten voor dranken met uiteenlopende viscositeiten."
+    },
+    {
+      "title": "Bulkwater (10L - 20L)",
+      "description": "Versterkte mechanica en doseerpompen voor grote kantoor- en huishoudverpakkingen."
+    }
+  ],
+  "applicationsTitle": "Belangrijkste Functies & Specificaties",
+  "applicationsSubtitle": "Geavanceerde technische innovaties voor maximale proceszekerheid:",
+  "applications": [
+    {
+      "title": "Magnetische Koppeling Capper",
+      "description": "Consistent aandraaikoppel ter voorkoming van te losse of te strakke dopsluitingen."
+    },
+    {
+      "title": "Geïntegreerde CIP-Reiniging",
+      "description": "Grondige reiniging van alle vloeistofwegen tussen productruns zonder demontage."
+    },
+    {
+      "title": "Servogestuurde Vulventielen",
+      "description": "Individuele volumetrische dosering per fles met een afwijking < 0,5%."
+    },
+    {
+      "title": "Constructie in RVS AISI 316",
+      "description": "Maximale corrosiebestendigheid tegen CIP-reinigingsmiddelen en vochtige omgevingen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de RFC machines van Seppa Solutions?",
+    "description": "Onze technische afdeling blijft nauw betrokken vanaf installatie tot opstart en continue service.",
+    "paragraphs": [
+      "Onze systemen presteren voorspelbaar onder echte fabrieksomstandigheden met variabele spanning en wisselende ploegen.",
+      "Installatie, opstart en proefdraaien gebeuren door onze eigen ervaren ingenieurs.",
+      "Maatwerkoplossingen afgestemd op uw exacte capaciteit in plaats van overgedimensioneerde standaardmodellen."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Werkwijze van de RFC machine",
+    "subtitle": "Het 3-staps gecontroleerde monoblock proces:",
+    "steps": [
+      {
+        "title": "1. Flessenspoelmachine",
+        "description": "Flessen worden via een sterrenwiel overgedragen, ondersteboven gespoeld met water of een gesteriliseerde oplossing en rechtop gezet."
+      },
+      {
+        "title": "2. Flessenvulmachine",
+        "description": "Servogestuurde vulventielen meten de exacte vloeistofdosering per fles met automatische snelheidsaanpassing per producttype."
+      },
+      {
+        "title": "3. Dopsluitmachine & Controle",
+        "description": "Roterende magnetische koppen brengen doppen aan met exact koppel, waarna optische sensoren de eindkwaliteit bewaken."
+      }
+    ],
+    "outro": [
+      "Conclusie: De RFC monoblocks van Seppa Solutions combineren spoelen, vullen en sluiten in één compact, hygiënisch en hoogrendabel systeem."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Welke hygiënenormen haalt de SEPPA RFC machine?",
+      "answer": "Onze systemen voldoen aan de geldende hygiënerichtlijnen voor voedingscontactoppervlakken, met CIP-cycli die tussen producties door de volledige vloeistofweg reinigen zonder demontage."
+    },
+    {
+      "question": "Wat kost het onderhoud van een moderne RFC machine op jaarbasis?",
+      "answer": "Dat hangt af van draaiuren en producttype, maar de meeste klanten begroten tussen 2 en 4 procent van de aanschafwaarde per jaar aan onderhoud en slijtdelen."
+    },
+    {
+      "question": "Hoe nauwkeurig is de vulefficiëntie van een flessenvulmachine?",
+      "answer": "Met servogestuurde vulventielen ligt de afwijking doorgaans onder de 0,5 procent per fles, wat het productverlies aanzienlijk beperkt."
+    },
+    {
+      "question": "Wat zijn de prestaties van een dopsluitmachine binnen deze monoblock?",
+      "answer": "Dankzij de magnetische koppelingen blijft het aandraaikoppel consistent, waardoor het percentage foutieve sluitingen doorgaans onder de 0,2 procent blijft."
+    },
+    {
+      "question": "Kan de flessenspoelmachine omgaan met verschillende flesvormen?",
+      "answer": "Ja. De grijpers en spoelkoppen van de flessenspoelmachine zijn aanpasbaar aan verschillende flesdiameters en hoogtes zonder grote ombouwtijd."
+    }
+  ]
+}

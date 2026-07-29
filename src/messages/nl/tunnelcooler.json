@@ -1,0 +1,105 @@
+{
+  "title": "Tunnelkoelsystemen",
+  "breadcrumbName": "Tunnelkoeler",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "#",
+  "overviewTitle": "Tunnelkoelsysteem: De Stille Winstmaker in Uw Thermische Lijn",
+  "overviewDescription": "Wie ooit naast de uitloop van een tunnelpasteur heeft gestaan terwijl een glazen fles bij 62 °C de laatste zone verlaat, kent dat moment van kwetsbaarheid. Eén sproeistraal die twintig graden te koud is, en u hoort het: een dof knappen, gevolgd door twintig minuten lijnstilstand en een reinigingsploeg met glasscherven. Precies daar begint het werk van een tunnelkoelsysteem. Het is de schakel tussen procesveiligheid en marge.",
+  "overviewsubDescription": [
+    "Overzicht van het SEPPA Tunnelkoelsysteem: Thermische pasteurisatie werkt met pasteurisatie-eenheden (PU). Die terugweg is een berekende afkoelcurve. Gaat u te snel, dan ontstaat thermische schok; gaat u te langzaam, dan blijft het product te lang in de microbiologisch gevoelige zone (25 tot 45 °C).",
+    "Van Afkoelcurve naar Hardware: Seppa Solutions ontwerpt elk tunnelkoelsysteem vanuit de warmtelast. We werken met een gradiënt van 12 tot 18 °C per zone om de spanning in de glaswand ruim onder de breukgrens te houden.",
+    "Constante Uitgangstemperatuur: Een goed geëngineerde industriële koeltunnel houdt de uitlooptemperatuur binnen enkele graden bandbreedte voor labellers, inspectiesystemen en verpakkers, met breukcijfers onder 0,05%."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van het SEPPA Tunnelkoelsysteem",
+  "featuresSubtitle": "Geavanceerde sproeizones, warmteterugwinning en waterbeheer voor maximale efficiëntie:",
+  "features": [
+    {
+      "title": "Meertraps Sproeizones & Nozzle-geometrie",
+      "description": "Modulaire zones met eigen tank, pomp en sensoren. Gereedschapsloos demonteerbare nozzles voor 100% containermanteldekking."
+    },
+    {
+      "title": "Nauwkeurige Zonetemperatuurregeling & PLC",
+      "description": "Anticipatieve zoneregeling past sproeidebiet, temperatuur en bandsnelheid automatisch aan bij productwissels."
+    },
+    {
+      "title": "Waterbeheer, Hygiëne & CIP-integratie",
+      "description": "Volledig RVS-304/316 constructie met hellende bodems, niveaubewaking en CIP-aansluitingen voor BRC/HACCP audits."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Dranken-, Voedingsmiddelen- en Verpakkingsindustrie",
+  "applicationsSubtitle": "Gespecialiseerde koeloplossingen voor glas, PET, blik en chocolade:",
+  "applications": [
+    {
+      "title": "PET, Glas & Blik (Drankkoeling)",
+      "description": "Voorkomt halsvervorming bij PET en thermische breuk bij glas. Luchtmessen verwijderen waterresidu op blikken vóór codering."
+    },
+    {
+      "title": "Zuivel, Sappen & Hot-Fill Lines",
+      "description": "Langere verblijftijden en geleidelijke gradiënten voorkomen oppervlakte-bounceback bij viskeuze dranken."
+    },
+    {
+      "title": "Chocolade & Confectionery (Luchtgekoeld)",
+      "description": "Luchtgekoelde industriële koeltunnel met gecontroleerde luchtsnelheid en vochtigheid voorkomt fat bloom en borgt de gewenste snap."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van het SEPPA Tunnelkoelsysteem",
+      "paragraphs": [
+        "ROI-analyse in vier posten: Een breukdaling van 0,4% naar 0,05% bespaart ruim 140.000 flessen per 40M containers per jaar. Gesloten circulatie en warmteterugwinning verlagen netto koelvermogen en waterverbruik met 30-40%.",
+        "Energieverlissing is een ontwerpfout: Geïsoleerde panelen en frequentiegeregelde pompen verlagen de hal-HVAC belasting aanzienlijk, vooral in warme klimaten.",
+        "Productintegriteit & CO2-retentie: Correct geregelde drankkoeling voorkomt CO2-verlies bij koolzuurhoudende dranken en borgt smaakstabiliteit en houdbaarheid."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Tunnelkoelsystemen van Seppa Solutions?",
+    "description": "Procesontwerp op maat op basis van warmtelastberekening, lijnsnelheid en containerspecificaties.",
+    "paragraphs": [
+      "Geboute Modulariteit: Secties worden gebout in plaats van gelast, zodat u het tunnelkoelsysteem eenvoudig kunt verlengen bij capaciteitsgroei.",
+      "Integratie met Downstream Lijn: Naadloze afstemming met pasteurisatoren, transportbanden, labellers en cold-fill installaties.",
+      "Betrouwbare Hoge Uptime (97%): Minimale stilstand en preventieve onderhoudsprogramma's geborgd door onze internationale serviceteams."
+    ]
+  },
+  "methodology": {
+    "title": "Werking van het Tunnelkoelsysteem (Methodologie & Procesverloop)",
+    "subtitle": "Stapsgewijze warmteonttrekking van pasteur-uitloop tot verpakkingslijn:",
+    "steps": [
+      {
+        "title": "Stap 1: Eerste Warmteonttrekking",
+        "description": "Sproeitemperatuur in zone 1 ligt 15 tot 20 °C onder de containertemperatuur voor geleidelijke convectie zonder thermische schok."
+      },
+      {
+        "title": "Stap 2: Incrementele Afkoeling & Watercirculatie",
+        "description": "Tegenstroomlogica hergebruikt warm retourwater voor voorverwarming en stroomt koud water tegengesteld voor maximaal rendement."
+      },
+      {
+        "title": "Stap 3: Eindzone & Kwaliteitscontrole",
+        "description": "Brengt het product tot 3–5 °C van de doeltemperatuur. Luchtmessen verwijderen restwater vóór etikettering en HACCP-logging."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Tunnelkoelsystemen",
+  "faqs": [
+    {
+      "question": "Welke hygiënenormen gelden voor de sproeinozzles?",
+      "answer": "Nozzles zijn uitgevoerd in roestvast staal met open geometrie zonder dode hoeken, CIP-reinigbaar en 100 micron gefilterd."
+    },
+    {
+      "question": "Wat kost het onderhoud van een tunnelkoelsysteem per jaar?",
+      "answer": "Reken bij een normaal tweeploegenbedrijf op ongeveer 1,5 tot 3 procent van de investeringswaarde per jaar."
+    },
+    {
+      "question": "Hoeveel energie is er werkelijk te besparen?",
+      "answer": "Door closed-loop warmteterugwinning tussen vroege en late zones wordt 30 tot 40% op water- en energieverbruik bespaard."
+    },
+    {
+      "question": "Wat is het verschil met een chocolade koeltunnel?",
+      "answer": "Chocolade koeling gebruikt geconditioneerde lucht in plaats van water om vochtproblemen te voorkomen en vetkristallisatie te sturen."
+    },
+    {
+      "question": "Is het systeem uitbreidbaar bij hogere productiecapaciteit?",
+      "answer": "Ja. Dankzij de geboute modulaire opbouw kunnen extra koelzones worden toegevoegd zonder het hele systeem te vervangen."
+    }
+  ]
+}

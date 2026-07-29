@@ -61,6 +61,7 @@ const FloatingActions = () => {
 
       {/* Quick Enquiry / Quote Form Button */}
       <button
+        suppressHydrationWarning
         onClick={openEnquiryModal}
         className="w-10 h-10 md:w-12 md:h-12 bg-[#101934] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-seppa-red transition-all duration-300 group relative border border-white/20"
         aria-label="Request Quote"
@@ -73,6 +74,7 @@ const FloatingActions = () => {
 
       {/* Scroll to Top Button */}
       <button
+        suppressHydrationWarning
         onClick={scrollToTop}
         className={`w-10 h-10 md:w-12 md:h-12 bg-seppa-red rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 hover:bg-[#101934] transition-all duration-300 group relative ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
           }`}

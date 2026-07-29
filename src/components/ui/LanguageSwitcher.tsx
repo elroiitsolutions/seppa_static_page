@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
@@ -35,6 +36,7 @@ export default function LanguageSwitcher() {
   return (
     <div className="fixed top-24 right-6 z-[999] md:right-8">
       <button
+        suppressHydrationWarning
         onClick={toggleLanguage}
         className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-seppa-blue/95 border border-white/20 text-white font-semibold text-sm shadow-xl backdrop-blur-md hover:bg-gold hover:text-dark transition-all duration-300 transform hover:scale-105 active:scale-95"
       >
