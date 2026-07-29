@@ -1,0 +1,126 @@
+{
+  "title": "Palletiseermachine Oplossingen",
+  "breadcrumbName": "Palletiseerapparatuur",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "De Strategische Waarde van End of Line Automatisering",
+  "overviewDescription": "Voor fabriekseigenaren en investeerders in de dranken, voedings en verpakkingsindustrie is het einde van de productielijn allang niet meer een sluitpost. Het is het strategische scharnierpunt waar productiviteit, arbeidskosten en logistieke betrouwbaarheid samenkomen. Wie vandaag investeert in een modern palletiseersysteem, koopt geen machine, maar een operationeel fundament dat de komende tien tot vijftien jaar het rendement van de fabriek bepaalt. SEPPA Solutions bouwt precies om die reden geïntegreerde installaties die verder gaan dan het simpelweg stapelen van dozen.",
+  "overviewsubDescription": [
+    "In deze gids nemen we je mee door de technische architectuur, de zakelijke argumenten en de praktische toepassingen die SEPPA onderscheiden binnen de wereld van industriële end-of-line automatisering.",
+    "Het door SEPPA ontwikkelde palletiseersysteem is opgebouwd rond drie kerncriteria: stabiliteit, snelheid en operationele betrouwbaarheid. Waar veel aanbieders zich beperken tot standaardcellen, ontwerpt SEPPA volledig geïntegreerde oplossingen waarin transportbanden, oriëntatiestations, laagvormers en robotcellen synchroon werken via één centrale PLC gestuurde kinematica.",
+    "Wat maakt deze aanpak technisch bijzonder? Ten eerste de portaalconstructie. Wij kiezen bewust voor robuuste portaalframes met versterkte lineaire geleidingen, zodat trillingen bij hoge cyclussnelheden geen positioneringsfouten veroorzaken. Ten tweede de multi zone vacuümkoppelingen op de grijperkop, die het mogelijk maken om binnen één cyclus verschillende productformaten op te pakken zonder mechanische aanpassing. Zo levert automatisch palletiseren consistente resultaten, zelfs bij snelle SKU wisselingen. Elke palletiseerinstallatie wordt bovendien voorbereid op Industry 4.0 integratie. OPC-UA connectiviteit, remote diagnostics en predictieve onderhoudsmodules zijn geen optionele extra's, maar standaard bouwstenen."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA Palletiseeroplossingen",
+      "paragraphs": [
+        "ROI en Kapitaalrendement: Laten we eerlijk zijn: een investeringsbeslissing draait om cijfers. In onze praktijkcases behalen klanten typisch een terugverdientijd tussen 18 en 30 maanden. Dit komt door de combinatie van arbeidsbesparing (twee tot drie fte per ploeg), reductie van productschade (tot 60% minder afgekeurde eenheden) en verhoogde OEE-scores. Een goed geconfigureerd palletiseersysteem tilt uw beschikbaarheidscijfer moeiteloos boven de 95%.",
+        "Vermindering van Productschade: Traditionele handmatige stapeling introduceert microschade vervormde dozen, gescheurde folies, beschadigde etiketten. Onze palletiseerapparatuur past de aandrukkracht dynamisch aan op basis van gewicht en materiaalstijfheid. Voor kwetsbare glazen flessen of vacuümverpakte voedingsmiddelen is dat het verschil tussen klachten en klanttevredenheid.",
+        "Schaalbaarheid en Toekomstbestendigheid: Elke industriële palletiseermachine van SEPPA is modulair opgebouwd. Groeit uw productie? Dan breidt u eenvoudig uit met een tweede robotarm, een extra laagvormer of een geautomatiseerd pallettransportsysteem. Geautomatiseerd palletiseren evolueert mee met uw bedrijf, niet andersom."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Voedingsmiddelen-, Dranken-, Chemische en Verpakkingsindustrie",
+      "paragraphs": [
+        "De veelzijdigheid van moderne palletiseerapparatuur blijkt uit het brede spectrum van producten dat wij verwerken. In de drankensector palletiseren wij glazen flessen, blikken en PET verpakkingen aan snelheden tot 120 verpakkingen per minuut. Voor de voedingsindustrie ontwerpen wij hygiënische uitvoeringen met RVS 316 behuizingen, afgesloten servomotoren en washdown bestendige componenten.",
+        "De chemische industrie stelt weer andere eisen: onze installaties verwerken jerrycans, IBC containers en gevaarlijke stoffen conform ATEX richtlijnen. In de verpakkingsindustrie zelf, denk aan kartonproducenten en flexibele zakkenfabrikanten, bewijst een industriële palletiseermachine haar waarde bij het stapelen van bundels tot 40 kg per laag.",
+        "Wat al deze sectoren delen? De behoefte aan een palletiseerinstallatie die zonder mechanische ombouw kan schakelen tussen productformaten. Onze programmeerbare laagpatronen maken dat mogelijk via een enkele HMI selectie."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van SEPPA Palletiseersystemen",
+  "featuresSubtitle": "De technische pijlers en innovatieve modules die onze geautomatiseerde palletiseerinstallaties onderscheiden:",
+  "features": [
+    {
+      "title": "Servogestuurde Grijpers",
+      "description": "Het hart van elk palletiseersysteem is de grijper. Onze servogestuurde end of arm tools bieden gereedschapsloze grijperwissels binnen 90 seconden, wat cruciaal is voor fabrieken met veel productwissels per ploeg. De kinematica is volledig gesloten lus, met terugkoppeling op zowel positie als koppel."
+    },
+    {
+      "title": "Programmeerbare Laagpatronen",
+      "description": "Automatisch palletiseren betekent bij SEPPA méér dan simpel stapelen. De PatternBuilder-software genereert optimale laagpatronen op basis van doosafmetingen, palletformaat en stabiliteitscriteria. Operators voegen nieuwe patronen toe zonder één regel code te schrijven."
+    },
+    {
+      "title": "Superieure Stabiliteit",
+      "description": "Elke industriële palletiseermachine wordt geleverd met een vloerplaat die berekend is op dynamische belastingen tot 2G. Combineer dat met de PLC gestuurde kinematica en trillingsdempende voetsokkels, en u krijgt een installatie die decennia meegaat."
+    },
+    {
+      "title": "Veiligheid en Compliance",
+      "description": "CE conformiteit, categorie 3 veiligheidscircuits volgens EN ISO 13849, lichtschermen en area scanners zijn standaard. Zo voldoet uw palletiseerinstallatie direct aan de strengste Europese normen."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in Industrieën",
+  "applicationsSubtitle": "Onze industriële palletiseerinstallaties verwerken een breed spectrum aan producten in diverse sectoren:",
+  "applications": [
+    {
+      "title": "Drankensector",
+      "description": "Palletiseren van glazen flessen, blikken en PET verpakkingen aan snelheden tot 120 verpakkingen per minuut met superieure stabiliteit."
+    },
+    {
+      "title": "Voedingsindustrie",
+      "description": "Hygiënische uitvoeringen met RVS 316 behuizingen, afgesloten servomotoren en washdown bestendige componenten volgens EHEDG richtlijnen."
+    },
+    {
+      "title": "Chemische Industrie",
+      "description": "Installaties voor verwerking van jerrycans, IBC containers en gevaarlijke stoffen conform ATEX richtlijnen."
+    },
+    {
+      "title": "Verpakkingsindustrie",
+      "description": "Stapelen van bundels tot 40 kg per laag voor kartonproducenten en flexibele zakkenfabrikanten."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Palletiseersystemen van Seppa Solutions",
+    "description": "Kortom, wij verkopen geen dozen. Wij bouwen partnerschappen die uw end of line logistiek transformeren met geautomatiseerd palletiseren op topniveau.",
+    "paragraphs": [
+      "Technische Ondersteuning: Een 24/7 servicedesk, gecertificeerde monteurs binnen Europa en gegarandeerde interventietijden van maximaal 24 uur.",
+      "Maatwerk Architectuur: Geen twee fabrieken zijn identiek, dus ontwerpen wij elk palletiseersysteem op maat, van layout tot besturingsstrategie.",
+      "Compleet Ecosysteem: Wij leveren niet alleen de robot, maar de complete oplossing inclusief transportbanden, pallethandling, folie omwikkelmachines en labelapparatuur."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Hoe het Palletiseerproces Werkt",
+    "subtitle": "Van productaanvoer tot finale expeditie: een volledig geautomatiseerde end-of-line gestroomlijnde gestuurde keten.",
+    "steps": [
+      {
+        "title": "Aanvoer en Oriëntatie",
+        "description": "Het proces begint bij de aanvoer, waar producten via transportbanden richting het palletiseersysteem worden gevoerd. Een oriëntatiestation draait en centreert elk product tot een voorspelbare uitgangspositie. Vervolgens vormt de laagvormer complete lagen volgens het geprogrammeerde patroon."
+      },
+      {
+        "title": "Automatisch Palletiseren",
+        "description": "Nu treedt automatisch palletiseren in werking: de robotarm of gantryhead pakt de volledige laag op met multi zone vacuümkoppelingen, verplaatst deze langs een geoptimaliseerd traject en plaatst haar met millimeternauwkeurigheid op de pallet. De palletiseerinstallatie coördineert intussen tussenvellen, pallethandling en hoogtemeting."
+      },
+      {
+        "title": "Systeemintegratie & Communicatie",
+        "description": "De palletiseerapparatuur communiceert continu met upstream en downstream systemen: van het WMS tot de folie omwikkelmachine met volledige traceerbaarheid via de MES-koppeling."
+      },
+      {
+        "title": "Transport naar Expeditie",
+        "description": "Zodra de pallet compleet is, transporteert de industriële palletiseermachine deze naar het wikkelstation en uiteindelijk naar de expeditiezone, geheel zonder menselijke tussenkomst."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Voldoen SEPPA-installaties aan de hygiënenormen voor de voedingsindustrie?",
+      "answer": "Ja, absoluut. Onze hygiënische uitvoeringen voldoen aan EHEDG richtlijnen, met washdown bestendige RVS behuizingen, afgesloten kabelgoten en IP69K motoren. Een palletiseersysteem voor gevoelige voedingsproducten wordt bovendien uitgevoerd met food grade smeermiddelen en gladde oppervlakken zonder holtes."
+    },
+    {
+      "question": "2. Wat zijn de onderhoudskosten van een modern palletiseersysteem?",
+      "answer": "De jaarlijkse onderhoudskosten liggen doorgaans tussen 2% en 4% van de initiële investering. Door predictief onderhoud via IoT sensoren en gestandaardiseerde onderdelen houden wij die kosten laag. Onderhoudscontracten zijn beschikbaar in Bronze, Silver en Gold formules."
+    },
+    {
+      "question": "3. Hoe snel werkt geautomatiseerd palletiseren in de praktijk?",
+      "answer": "Afhankelijk van de configuratie behalen wij tussen 40 en 120 cycli per minuut. Voor drankenlijnen met blikken haalt onze snelste palletiseerapparatuur zelfs pieken van 150 verpakkingen per minuut, met behoud van laagstabiliteit."
+    },
+    {
+      "question": "4. Hoe flexibel is een SEPPA palletiseerinstallatie bij productwisselingen?",
+      "answer": "Bijzonder flexibel. Dankzij programmeerbare laagpatronen en gereedschapsloze grijperwissels schakelt u binnen 90 tot 180 seconden tussen SKU's. Voor fabrieken met veel productvarianten is dit een doorslaggevend voordeel."
+    },
+    {
+      "question": "5. Hoe betrouwbaar is professionele palletiseerapparatuur op lange termijn?",
+      "answer": "Onze installaties hebben een gedocumenteerde MTBF (Mean Time Between Failures) van meer dan 8.000 draaiuren. Met correct preventief onderhoud gaat een industriële palletiseermachine minimaal 15 jaar mee zonder majeure revisie."
+    }
+  ]
+}

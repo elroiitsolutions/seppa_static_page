@@ -1,0 +1,111 @@
+{
+  "title": "Isotonische Drank Verwerkingssystemen",
+  "breadcrumbName": "Isotonisch",
+  "rootBreadcrumbName": "Diensten",
+  "rootBreadcrumbPath": "/services",
+  "overviewTitle": "Wat is een Isotone Drank en Hoe Ondersteunt Deze Hydratatie?",
+  "overviewDescription": "Ga een middag mee op de vloer van een sportvoedingfabriek en je merkt al snel dat isotonische drank een heel ander beestje is dan gewoon water met smaak. De osmotische waarde moet kloppen, de elektrolytenbalans moet consistent zijn, en één afwijkende batch kan een hele partij ongeschikt maken voor verkoop. Bij Seppa Solutions bouwen we al jaren apparatuur voor precies dit soort precisiewerk.",
+  "overviewsubDescription": [
+    "De term 'isotoon' verwijst naar de osmotische waarde van een drank ten opzichte van het bloedplasma (ca. 280-300 mOsm/kg). Een isotonische drank heeft ongeveer dezelfde osmolariteit, wat betekent dat water en elektrolyten sneller worden opgenomen.",
+    "Bij Seppa Solutions bouwen we systemen die de osmotische waarde van elke batch isotonische drank binnen nauwe marges houden, ongeacht kleine schommelingen in grondstofkwaliteit. Dat vraagt om nauwkeurige dosering van suikers, zouten en elektrolyten.",
+    "Onze systemen houden alle variabelen strak onder controle, zodat de uiteindelijke osmotische waarde precies overeenkomt met wat op het etiket staat."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Isotone Drankverwerkingssystemen van Seppa Solutions",
+  "featuresSubtitle": "Precisie-engineering gericht op osmotische stabiliteit en steriele verwerking:",
+  "features": [
+    {
+      "title": "Gravimetrische Doseersystemen",
+      "description": "Doseert ingrediënten nauwkeurig op gewicht in plaats van volume, essentieel bij concentraten en poedervormige elektrolyten."
+    },
+    {
+      "title": "Inline Elektrolytenmengers & Geleidbaarheidsmeters",
+      "description": "Homogene verdeling van zouten en mineralen door de hele batch met real-time bijsturing via inline geleidbaarheidsmeting."
+    },
+    {
+      "title": "Hoogrenderende Platenkoelers & High-Shear Mixers",
+      "description": "Houdt het product op de juiste temperatuur en lost ingrediënten volledig op zonder de smaak of vitamines aan te tasten."
+    },
+    {
+      "title": "Steriele CIP/SIP Reinigingscircuits",
+      "description": "Automatische reiniging en sterilisatie tussen productieruns zonder handmatig openen van tanks voor maximale houdbaarheid."
+    }
+  ],
+  "applicationsTitle": "Toepassingen van Isotone Dranken in de Sport-, Gezondheids- en Drankenindustrie",
+  "applicationsSubtitle": "Oplossingen voor professionele atleten, duursport en medische rehydratatie:",
+  "applications": [
+    {
+      "title": "Grootschalige Botteling van Isotonische Drank",
+      "description": "High-speed PET-botteling voor sportvoedingmerken met een sterk merkverhaal gericht op professionele atleten."
+    },
+    {
+      "title": "Isotone Energiedrank Subcategorie",
+      "description": "Gespecialiseerde productielijnen voor gecombineerde hydratatie en snelle energielevering tijdens langdurige inspanning."
+    },
+    {
+      "title": "Gezondheids- & Revalidatiesector",
+      "description": "Nauwkeurig gedoseerde isotonische hersteldranken om uitdroging bij kwetsbare groepen medisch verantwoord te voorkomen."
+    },
+    {
+      "title": "Modulaire Lijn-uitbreiding voor Drankenproducenten",
+      "description": "Naadloze integratie van een isotonische lijn naast een bestaande drankenfaciliteit zonder fabrieksombouw."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Isotone Drankproductielijnen van Seppa Solutions?",
+    "description": "Diepgaande kennis van vloeistofdynamica en elektrochemische balans voor een gegarandeerde ROI.",
+    "paragraphs": [
+      "Maatwerk op Sportdrank Productiemachine: Afgestemd op specifieke recepturen, van 1 smaak isotone sportdrank tot een breed assortiment.",
+      "Investeringsbescherming & Schaalbaarheid: Modulair ontworpen zodat toekomstige capaciteitsuitbreiding geen vervanging van de kern vereist.",
+      "Eerlijk & Transparant Advies: Realistisch advies over de juiste automatiseringsgraad voor uw productievolume."
+    ]
+  },
+  "methodology": {
+    "title": "Methodologie voor de Productie en Verwerking van Isotone Dranken",
+    "subtitle": "",
+    "steps": [
+      {
+        "title": "1. Waterpreparatie voor Isotonische Drank",
+        "description": "Meervoudige filtratie en UV-sterilisatie om een neutraal basiswater te garanderen zonder stoormineralen.",
+        "image": "/images/isotonic_header_1782124547528.png"
+      },
+      {
+        "title": "2. Nauwkeurige Dosering in de Isotone Drank Productie",
+        "description": "Gravimetrische toevoeging van suikers, zouten en elektrolyten conform de receptuur met inline osmotische controle.",
+        "image": "/images/isotonic_why_choose_1782124560326.png"
+      },
+      {
+        "title": "3. Thermische Stabilisatie & Koeling",
+        "description": "UHT-behandeling en snelle, gecontroleerde koeling om de biobeschikbaarheid en smaak van de isotone drank voor sport te beschermen.",
+        "image": "/images/isotonic_drink_line_1782122017310.png"
+      },
+      {
+        "title": "4. Aseptische Vulling via Sportdrank Productiemachine",
+        "description": "Steriele afvulling in een cleanroom-omgeving met inline inspectie van vulniveau en afdichting.",
+        "image": "/images/rtd_content_block_1782124674023.png"
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Isotone Dranken",
+  "faqs": [
+    {
+      "question": "Aan welke hygiënenormen moet botteling van isotonische drank voldoen?",
+      "answer": "Onze installaties voldoen aan internationale hygiënenormen, met steriele CIP/SIP circuits die tussen productieruns automatisch reinigen en steriliseren."
+    },
+    {
+      "question": "Wat kost onderhoud van een sportdrank productiemachine op jaarbasis?",
+      "answer": "Dankzij de automatische reinigingscircuits blijven de onderhoudskosten van een sportdrank productiemachine doorgaans lager dan bij handmatige sterilisatie."
+    },
+    {
+      "question": "Hoe wordt osmotische controle geborgd bij isotone drank productie?",
+      "answer": "Inline geleidbaarheidsmeters en gravimetrische doseersystemen bewaken continu de concentratie tijdens de isotone drank productie."
+    },
+    {
+      "question": "Hoe stabiel blijft een isotone sportdrank tijdens langere opslag?",
+      "answer": "Bij correcte temperatuurbeheersing tijdens productie en opslag blijft de osmotische waarde van een isotone sportdrank gedurende de houdbaarheid stabiel."
+    },
+    {
+      "question": "Welke capaciteit kan een isotone drank voor sport aan op industriële schaal?",
+      "answer": "Van kleinschalige pilotlijnen tot installaties die tienduizenden liters per dag verwerken – de modulaire opbouw maakt opschalen eenvoudig."
+    }
+  ]
+}

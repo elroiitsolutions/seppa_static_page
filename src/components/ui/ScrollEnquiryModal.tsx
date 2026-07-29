@@ -172,6 +172,7 @@ const ScrollEnquiryModal: React.FC = () => {
             >
               {/* Close Button */}
               <button 
+                suppressHydrationWarning
                 onClick={handleClose}
                 className={`absolute top-4 ${isArabic ? 'left-4' : 'right-4'} z-20 w-10 h-10 bg-white/10 hover:bg-seppa-red text-white rounded-full flex items-center justify-center transition backdrop-blur-md`}
                 aria-label="Close modal"
@@ -261,6 +262,7 @@ const ScrollEnquiryModal: React.FC = () => {
                   </div>
                   
                   <button 
+                    suppressHydrationWarning
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full py-4 bg-seppa-red hover:bg-white hover:text-seppa-red text-white font-bold rounded-xl transition duration-300 mt-2 disabled:opacity-50"
