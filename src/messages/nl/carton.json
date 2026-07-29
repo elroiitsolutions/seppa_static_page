@@ -1,0 +1,89 @@
+{
+  "title": "Verpakkingsmachines & Automatisering",
+  "breadcrumbName": "Carton Handling",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Overzicht van de Verpakkingsmachines van SEPPA",
+  "overviewDescription": "In de hedendaagse productieomgeving bepaalt de kwaliteit van uw end of line systeem vaak het verschil tussen een winstgevende operatie en een kostbare bottleneck. SEPPA Solutions ontwikkelt al jaren geïntegreerde systemen waarbij elke verpakkingsmachine wordt ontworpen vanuit één centrale filosofie: maximale betrouwbaarheid koppelen aan operationele flexibiliteit. Wie ooit een productielijn heeft zien stilvallen door een falende afsluitunit, begrijpt onmiddellijk waarom deze combinatie doorslaggevend is.",
+  "overviewsubDescription": [
+    "Onze engineers kiezen bewust voor roestvrijstalen AISI 304 constructies, niet als marketingargument, maar omdat corrosiebestendigheid in vochtige omgevingen simpelweg de levensduur verdubbelt. Elke verpakkingsmachine die onze werkplaats verlaat, ondergaat een uitgebreide simulatietest waarbij snelheidspieken, formaatwisselingen en storingsscenario's worden nagebootst.",
+    "Wat SEPPA onderscheidt, is dat wij verpakkingsautomatisering niet als losstaand product benaderen. Elke oplossing wordt gebouwd rond het bestaande productiekader van de klant, waarbij de datacommunicatie tussen PLC, MES en ERP naadloos verloopt."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van Geautomatiseerde Verpakkingsmachines",
+      "paragraphs": [
+        "Laten we eerlijk zijn: fabriekseigenaren kijken bij elke investering naar één cijfer – de terugverdientijd. Een moderne verpakkingsmachine haalt doorgaans een ROI tussen 14 en 22 maanden, afhankelijk van het aantal ploegen en de productmix.",
+        "De grootste kostenbesparing zit vaak in onverwachte hoek: een modulaire verpakkingsmachine met nauwkeurige productdetectie voorkomt dat foutieve verpakkingen de logistieke keten binnenkomen, wat in de voedingssector al snel 2 tot 4 procent besparing op grondstoffenverlies oplevert.",
+        "Bovendien reduceert doorgedreven verpakkingsautomatisering het aantal repetitieve blessures bij operators en verlaagt het energieverbruik dankzij servogestuurde motoren. Elke modulaire verpakkingsmachine wordt geleverd met een OEE baseline."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Voedingsmiddelen, Dranken, Farmaceutische en Industriële Sector",
+      "paragraphs": [
+        "In de voedingsindustrie moet een verpakkingsmachine kwetsbare producten (zoals verse pasta, zachte kazen of bakkerijproducten) verwerken zonder mechanische stress dankzij onze soft handling systemen met vacuümondersteuning.",
+        "De drankensector stelt eisen aan hoge doorloopsnelheden tot 24.000 units per uur in natte omgevingen. Onze case packing machine groepeert PET flessen, blikken en glazen flessen in trays of dozen met frequentieregelde transportbanden.",
+        "Voor de farmaceutische sector gelden GMP-richtlijnen en integratie van serialisatie. In de industriële sector (chemie, cosmetica) zorgt een stevige transportverpakking voor langdurige bescherming."
+      ]
+    },
+    {
+      "title": "Belangrijkste Kenmerken van SEPPA Verpakkingssystemen",
+      "paragraphs": [
+        "Intelligente servoaandrijvingen sturen elke beweging aan met een positioneernauwkeurigheid van ±0,1 mm op een gebruiksvriendelijk HMI touchscreen.",
+        "Snelle formaatwissels zonder gereedschap (binnen 4 tot 7 minuten) besparen dagelijks tientallen minuten productietijd.",
+        "PLC-gestuurde storingsdiagnose en predictive maintenance algoritmes lokaliseren slijtage en problemen tot op componentniveau voordat stilstand optreedt."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Verpakkingsoplossingen van Seppa Solutions?",
+    "description": "Onze transparante total cost of ownership analyses brengen alle kostencomponenten over een periode van 10 jaar helder in kaart.",
+    "paragraphs": [
+      "Grondige Project-audit & Simulatie: Elke opdracht start met een audit en 3D simulatie die prestaties vóór productie exact voorspelt.",
+      "24/7 Technische Ondersteuning & VPN: Snelle respons binnen twee uur en directe remote diagnose voor maximale uptime.",
+      "100% Maatwerk Engineering: Wij ontwerpen elke verpakkingsmachine specifiek rond uw ruimtelijke en logistieke beperkingen."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Werkwijze: Van Product tot Verzendklare Pallet",
+    "subtitle": "Een gestroomlijnd 4-staps geautomatiseerd verpakkingsproces:",
+    "steps": [
+      {
+        "title": "1. Producttoevoer & Buffer",
+        "description": "Een intelligent buffersysteem stabiliseert en lijnt binnenkomende producten uit voor verpakking."
+      },
+      {
+        "title": "2. Productgroepering",
+        "description": "Geavanceerde automatisering brengt producten samen in het gewenste patroon (bijv. 2x3, 4x6)."
+      },
+      {
+        "title": "3. Case Packing & Lijm/Tape Sluiting",
+        "description": "De case packing machine plaatst producten in kartonnen dozen of trays met hotmelt- of tapesluiting."
+      },
+      {
+        "title": "4. Transportverpakking & Traceerbaarheid",
+        "description": "Dozen worden gestapeld, gepalletiseerd en gewikkeld met geïntegreerde RFID-tracking voor batchtraceerbaarheid."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Voldoen SEPPA machines aan strikte hygiënenormen?",
+      "answer": "Absoluut. Onze machines voor de voedings- en farmasector worden uitgevoerd in AISI 304/316L, met afgeronde overgangen, IP65 beschermde componenten en EHEDG-conforme constructies."
+    },
+    {
+      "question": "Wat zijn de gemiddelde onderhoudskosten van een moderne verpakkingsmachine?",
+      "answer": "De jaarlijkse onderhoudskosten liggen doorgaans tussen 2,5% en 4% van de investeringswaarde. Dankzij PLC-gestuurde diagnose blijven reparatietijden uiterst kort."
+    },
+    {
+      "question": "Hoe snel kan er gewisseld worden tussen verschillende verpakkingsformaten?",
+      "answer": "Formaatwissels verlopen gereedschapsloos via verstelbare geleiders en opgeslagen HMI-recepten binnen 4 tot 7 minuten."
+    },
+    {
+      "question": "Kunnen de verpakkingsmachines geïntegreerd worden in bestaande productielijnen?",
+      "answer": "Ja, onze systemen zijn modulair gebouwd en communiceren via PROFINET/EtherNet IP naadloos met bestaande PLC-, MES- en ERP-netwerken."
+    }
+  ]
+}

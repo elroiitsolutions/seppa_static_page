@@ -1,0 +1,125 @@
+{
+  "title": "Stil Water Bottelsystemen",
+  "breadcrumbName": "Stil Water",
+  "rootBreadcrumbName": "Vloeistof",
+  "rootBreadcrumbPath": "/liquid",
+  "overviewTitle": "Stil Water: Waarom de Juiste Bottellijn het Verschil Maakt",
+  "overviewDescription": "Praat met een fabriekseigenaar die al jaren stil water bottelt en je hoort steevast hetzelfde: de marge zit niet in de grondstof, die zit in de lijn zelf. Bij Seppa Solutions zien we regelmatig fabrieken die technisch prima water produceren, maar geld laten liggen door een verouderde watervulmachine of een water bottellijn die niet is doorontwikkeld met de rest van het proces. Onze aanpak voor stil water draait daarom niet om één machine, maar om een volledig samenhangend systeem.",
+  "overviewsubDescription": [
+    "Een goede stil water bottellijn begint niet bij de vulkop, maar bij de filtratie. Wij ontwerpen onze lijnen zodanig dat elke stap – van ruwwaterinname tot eindcontrole – op elkaar is afgestemd, zonder knelpunten.",
+    "Onze vulinstallatie werkt met contactloze roterende vulkoppen, zodat het water nooit in aanraking komt met bewegende onderdelen die vervuiling kunnen introduceren. Voor stil water – waar geen koolzuur is om microbiële groei te onderdrukken – is hygiëne de sleutel tot succes.",
+    "Fabrieken die bij ons komen noemen vaak hetzelfde probleem: de watervulmachine liep prima, maar de rest kon het tempo niet bijbenen. Onze systemen worden vanaf het ontwerp op elkaar afgestemd met magnetische debietmeters en een realtime besturing."
+  ],
+  "overviewLayout": "stacked",
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA Still Water Bottelinstallatie",
+      "paragraphs": [
+        "Onze klanten zien doorgaans binnen twaalf tot zestien maanden een positieve terugverdientijd, vooral wanneer de oude lijn kampte met hoge uitval of onnodig energieverbruik.",
+        "Een moderne watervulmachine met drukkleploze zwaartekrachtvulling minimaliseert schuimvorming en overvulling, wat direct scheelt in productverlies per duizend flessen vergeleken met oudere drukvulsystemen.",
+        "CIP-reinigingskoppen verminderen het waterverbruik tijdens reinigingscycli aanzienlijk, en de servogestuurde afdichtingskop past de afdichtdruk automatisch aan per flesformaat om slijtage aan doppen en matrijzen te beperken."
+      ]
+    },
+    {
+      "title": "Toepassingen voor Drinkwater-, Mineraalwater- en Bronwaterproductie",
+      "paragraphs": [
+        "Grootschalig mineraalwater bottelen vraagt om hoge lijnsnelheden en constante kwaliteitsbewaking, terwijl gespecialiseerd bronwater bottelen vaak vraagt om flexibiliteit (kleinere batches, wisselende flesformaten).",
+        "Wat deze toepassingen gemeen hebben, is de noodzaak van constante kwaliteit stil water door de hele lijn heen: zuiverheid bewaken, uitval beperken en tempo houden.",
+        "We bieden ook hybride lijnen die zowel mineraalwater bottelen als stil water uit stedelijke bronnen kunnen verwerken, ondersteund door eenvoudig herconfigureerbare procesparameters in onze watervulmachine."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Processing- & Verpakkingssystemen",
+  "featuresSubtitle": "Geavanceerde technische keuzes die het verschil maken tussen een gemiddelde en uitstekende stil water lijn:",
+  "features": [
+    {
+      "title": "Contactloze Roterende Spoel- en Vulkoppen",
+      "description": "Reinigt en vult flessen zonder fysiek contact met kritieke oppervlakken voor een drastisch verlaagd besmettingsrisico."
+    },
+    {
+      "title": "Hygiënisch Ontwerp RVS 316L",
+      "description": "Alle contactoppervlakken zijn uitgevoerd in sanitair roestvrij staal met minimale naden waar bacteriën zich kunnen nestelen."
+    },
+    {
+      "title": "Magnetische Debietmeters",
+      "description": "Nauwkeurige volumetrische dosering zonder bewegende mechanische delen voor maximale uptime en minimaal onderhoud."
+    },
+    {
+      "title": "Drukkleploze Zwaartekrachtvulling & Servo Capper",
+      "description": "Rustige vulling zonder turbulentie of schuim, gecombineerd met servogestuurde dopplaatsing voor exact aandraaikoppel."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in Industrie & Schaalbaarheid",
+  "applicationsSubtitle": "Flexibele oplossingen van kleine bronwater-bottelarij tot grootschalige mineraalwater-fabriek:",
+  "applications": [
+    {
+      "title": "Grootschalige Mineraalwater-installaties",
+      "description": "Volautomatische high-speed rotatieve lijnen voor continue 24/7 productie van miljoenen liters stil water."
+    },
+    {
+      "title": "Gespecialiseerd Bronwater Bottelen",
+      "description": "Behoedzame verwerking van bronwater met stikstofdosering ter bescherming van het natuurlijke mineralenprofiel."
+    },
+    {
+      "title": "Schaalbare Container-formaten",
+      "description": "Snelle omstelling tussen kleine 200ml flesjes tot 5 liter grote watercontainers."
+    },
+    {
+      "title": "Hybride Lijn-implementaties",
+      "description": "Eenvoudig herconfigureerbare parameters om zowel bronwater als stil leidingwater op dezelfde lijn te verwerken."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor Seppa Solutions voor Still Water Bottellijnen",
+    "description": "Complete vloeistoflijnen van filtratie tot palletisering met één technisch aanspreekpunt gedurende het hele traject.",
+    "paragraphs": [
+      "Eén Integraal Aanspreekpunt: Geen kastje-naar-de-muur politiek tussen leveranciers als er zich een afstellingsprobleem voordoet.",
+      "Betrokkenheid bij Opstart & Proefdraaien: Onze ingenieurs blijven op locatie totdat de lijn op vol tempo en zuiverheid draait.",
+      "Maximale Rendementsverhoging: Merkbare daling in ongeplande productiestops en minimaal productverlies."
+    ]
+  },
+  "methodology": {
+    "title": "Onze Methodologie voor de Implementatie van Still Water Productielijnen",
+    "steps": [
+      {
+        "title": "1. Waterfiltratie & Pre-treatment",
+        "description": "Groffiltratie, actieve kool en eventuele omgekeerde osmose afgestemd op de specifieke bron- en waterkwaliteit."
+      },
+      {
+        "title": "2. Gesynchroniseerde Vul- en Sluitfase",
+        "description": "Spoelen, drukkleploos vullen en afsluiten in nauwe synchronisatie via magnetische debietmeters."
+      },
+      {
+        "title": "3. Volledige Lijn-optimalisatie",
+        "description": "Afstemming van de doorstroom tussen spoelen, vullen, etiketteren en verpakken om bottlenecks te elimineren."
+      },
+      {
+        "title": "4. Kwaliteitscontrole & Operationele Borging",
+        "description": "Microbiologische zuiverheidscontroles, vulnauwkeurigheidsmeting en vastlegging van KPI's voor continue bewaking."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Still Water Bottelsystemen",
+  "faqs": [
+    {
+      "question": "Voldoet een stil water bottellijn van Seppa aan internationale hygiënenormen?",
+      "answer": "Ja. Onze systemen zijn ontworpen conform de relevante voedselveiligheidsnormen voor drinkwaterverwerking met hygiënische contactmaterialen."
+    },
+    {
+      "question": "Wat zijn de onderhoudskosten van een moderne watervulmachine?",
+      "answer": "Dankzij de magnetische debietmeters zonder bewegende delen en de modulaire opbouw liggen de onderhoudskosten lager dan bij traditionele systemen."
+    },
+    {
+      "question": "Wat is de capaciteit van een geavanceerde water bottellijn?",
+      "answer": "De capaciteit is schaalbaar en wordt afgestemd op de productiedoelen van de klant, van kleinschalige bronwaterlijnen tot hoogvolume mineraalwaterinstallaties."
+    },
+    {
+      "question": "Aan welke eisen moet mineraalwater bottelen voldoen?",
+      "answer": "Naast microbiologische zuiverheid gelden eisen aan mineralensamenstelling, verpakkingsmateriaal en etikettering conform lokale regelgeving."
+    },
+    {
+      "question": "Hoe betrouwbaar is een stil water bottellijn bij continue productie?",
+      "answer": "Contactloze vulsystemen en CIP-reinigingskoppen zorgen ervoor dat de lijn ook bij lange productieruns stabiel blijft presteren zonder kwaliteitsdaling."
+    }
+  ]
+}

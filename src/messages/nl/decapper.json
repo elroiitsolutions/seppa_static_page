@@ -1,0 +1,131 @@
+{
+  "title": "Ontdopmachine Technologie",
+  "breadcrumbName": "De-Capper",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Ontdopmachine: De Onderschatte Schakel Vóór Reiniging en Hervulling",
+  "overviewDescription": "Niemand denkt graag na over doppen verwijderen tot de lijn stilvalt omdat een dop scheef vastzit en de hele batch flessen zich opstapelt bij de invoer. Dat is precies waarom een goede ontdopmachine zoveel meer verdient dan een bijrol in het gesprek over botteltechnologie. Voor fabrieken die met retourflessen, statiegeldsystemen of recyclingstromen werken, is dit vaak het eerste knelpunt in de hele lijn.",
+  "overviewsubDescription": [
+    "Seppa Solutions bouwt de ontdopmachine als een robuust, zelfstandig werkend systeem dat flessen detecteert, doppen grijpt en verwijdert, en de flessen doorstuurt naar de volgende stap – reiniging, sortering of recycling – zonder dat een operator continu moet ingrijpen.",
+    "Onze automatische flesontdopper is gebouwd rond een systeem dat zich aanpast aan wat er daadwerkelijk binnenkomt. Sensoren detecteren dopformaat en positie vóór het grijpmechanisme in actie komt, wat het percentage mislukte ontdopbeurten aanzienlijk verlaagt.",
+    "Wat deze aanpak onderscheidt is de combinatie van snelheid en zachtheid: pneumatische koppelbegrenzers beschermen de flessenhals tegen breuk of vervorming."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van het Gebruik van de SEPPA Ontdopmachine",
+      "paragraphs": [
+        "Klanten die overstapten van handmatig of halfautomatisch ontdoppen naar onze ontdopmachine zagen doorgaans een verhoging van de verwerkingssnelheid van 30 tot 50 procent doordat de machine continu op tempo blijft.",
+        "Stilstand wordt geminimaliseerd door PLC-gestuurde storingsdiagnose die problemen (vastgelopen dop, verkeerd gepositioneerde fles) direct isoleert en weergeeft op het bedieningspaneel.",
+        "Operationele kosten dalen: doordat de industriële ontdopmachine voorspelbaar presteert, hoeft u minder buffervoorraad aan te houden tussen de ontdopstap en de reinigingslijn, wat ruimte en werkkapitaal vrijmaakt."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Dranken, Water, Farmaceutische en Recyclingindustrie",
+      "paragraphs": [
+        "Herlaadbare waterkratten en 3 tot 5 gallon flessen worden schadevrij ontdopt, zelfs na maanden opslag in de buitenlucht met beschadigde of vastgeplakte doppen.",
+        "Glazen retourflessen in de bierindustrie vragen om fijnere grijpkracht om glasbreuk te voorkomen. Onze inline ontdopmachine past de kracht automatisch aan op het flesmateriaal.",
+        "De farmaceutische en recyclingsector benut de technologie voor het hygiënisch en snel voorbereiden van lege verpakkingen voor hervulling of grondstofterugwinning met volledige traceerbaarheidsdatalogging."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de SEPPA Ontdopmachine",
+  "featuresSubtitle": "Geavanceerde mechanische grijptechnologie en sensoriek voor schadevrije dopverwijdering:",
+  "features": [
+    {
+      "title": "Verwisselbare Grijpkoppen",
+      "description": "Maakt snelwissel tussen kroonkurken, schroefdoppen en sportdoppen mogelijk binnen enkele minuten zonder ombouw."
+    },
+    {
+      "title": "Frequentieregelde Transportbanden",
+      "description": "Houdt flessen stabiel tijdens het grijpmoment voor een trefzekere extractie op hoge snelheden."
+    },
+    {
+      "title": "Constructie in RVS AISI 304/316",
+      "description": "Duurzame materialen gekozen voor maximale corrosiebestendigheid in natte of chemische omgevingen."
+    },
+    {
+      "title": "PLC-Gestuurde Storingsdiagnose",
+      "description": "Toont direct de exacte foutlocatie op het touchscreen HMI voor een minimale hersteltijd (MTTR)."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in Industrieën",
+  "applicationsSubtitle": "Op maat gemaakte ontdopoplossingen voor uiteenlopende retour- en recyclingsstromen:",
+  "applications": [
+    {
+      "title": "Retourwater & Gallonflessen",
+      "description": "Snelle verwijdering van snap-on en schroefdoppen op grote watercontainers."
+    },
+    {
+      "title": "Brouwerij Retourglas",
+      "description": "Zachte verwerking van glazen bierflessen met bescherming van de kwetsbare flessenhals."
+    },
+    {
+      "title": "Farmacie & Lab-vials",
+      "description": "Schoon en gedocumenteerd ontdoppen van kleine glazen buisjes en flesjes."
+    },
+    {
+      "title": "Recycling & Batch-Salvage",
+      "description": "Continue high-speed verwerking voor het terugwinnen van vloeistoffen uit verkeerd gelabelde batches."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Ontdopoplossingen van SEPPA Solutions",
+    "description": "Onze systemen koppelen container-indexering, exact koppel en optionele voorwasfase in één naadloze oplossing.",
+    "paragraphs": [
+      "25+ Jaar Ervaring in Lijnintegratie: Wij analyseren uw exacte dopkoppel- en flesgeometrie voor het ideale ontwerp.",
+      "Modulair & Schaalbaar: Start semi-automatisch en breid eenvoudig uit naar een volautomatische high-speed lijn.",
+      "Directe Voorwas-Integratie: Voorkomt het binnendringen van stof en vuil zodra de dop de fles verlaat.",
+      "Bescherming van uw Flessenpark: Verlengt de levensduur van uw kostbare glazen of PET retourflessen."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Werkwijze van de Ontdopmachine",
+    "subtitle": "Een gestroomlijnd 5-staps geautomatiseerd proces:",
+    "steps": [
+      {
+        "title": "1. Flessenaanvoer & Detectie",
+        "description": "Flessen komen via de transportband binnen. Sensoren registreren het flestype, de dopstand en het dopformaat."
+      },
+      {
+        "title": "2. Nauwkeurige Grijppositionering",
+        "description": "Pneumatische halsklemmen fixeren de fles schokvrij onder de extractiekop."
+      },
+      {
+        "title": "3. Gecontroleerde Dopverwijdering",
+        "description": "De kop voert een gelijktijdige draai- en trekbeweging uit waarbij koppelbegrenzers de flessenhals beschermen."
+      },
+      {
+        "title": "4. Automatische Dop-afvoer",
+        "description": "Verwijderde doppen worden via een luchtstoot in een opvangschacht of afvoerband geworpen."
+      },
+      {
+        "title": "5. Uitvoer naar Reiniging",
+        "description": "De ontdopte fles stroomt direct door naar de spoel- en vulmachine zonder vertraging."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Welke hygiënenormen haalt de SEPPA ontdopmachine?",
+      "answer": "Onze systemen zijn ontworpen volgens de geldende hygiënerichtlijnen voor voedingscontactoppervlakken en zijn eenvoudig te reinigen tussen productruns door."
+    },
+    {
+      "question": "Wat kost het onderhoud van een moderne ontdopmachine op jaarbasis?",
+      "answer": "Dat hangt af van draaiuren en dopmateriaal, maar de meeste klanten begroten tussen 2 en 4 procent van de aanschafwaarde per jaar aan onderhoud en slijtdelen."
+    },
+    {
+      "question": "Hoe betrouwbaar is een flesontdopper bij continu gebruik?",
+      "answer": "Onze klanten draaien doorgaans 20 tot 22 uur per dag zonder ongeplande stilstand, mede dankzij de PLC gestuurde storingsdiagnose die problemen vroeg signaleert."
+    },
+    {
+      "question": "Is een industriële ontdopmachine compatibel met een bestaande inline ontdopmachine?",
+      "answer": "Ja. Onze systemen zijn modulair ontworpen, zodat een industriële ontdopmachine kan worden geïntegreerd binnen een bestaande inline ontdopmachine zonder de hele lijn te herbouwen."
+    },
+    {
+      "question": "Kan de ontdopmachine omgaan met verschillende dopformaten?",
+      "answer": "Ja. Verwisselbare grijpkoppen maken het mogelijk om binnen enkele minuten te schakelen tussen kroonkurken, schroefdoppen en sportdoppen."
+    }
+  ]
+}

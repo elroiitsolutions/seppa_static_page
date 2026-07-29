@@ -1,0 +1,112 @@
+{
+  "title": "Energie- & Procesaudits",
+  "breadcrumbName": "Audits",
+  "rootBreadcrumbName": "Diensten",
+  "rootBreadcrumbPath": "/services",
+  "overviewTitle": "Energieaudit: Waarom SEPPA Elke Watt en Elke Euro in Kaart Brengt",
+  "overviewDescription": "Er gaat iets vreemds schuil in de meeste fabrieken: niemand weet precies waar de energie naartoe gaat. De rekening komt binnen, iedereen fronst de wenkbrauwen, en toch blijft het gissen naar de exacte oorzaak. Een energieaudit maakt daar een einde aan. Bij Seppa Solutions beschouwen we die audit niet als een formaliteit voor de jaarrekening, maar als het startpunt van elke serieuze kostenbesparing op de vloer.",
+  "overviewsubDescription": [
+    "Onze energieaudit is opgebouwd rond geïntegreerde inspectiesystemen die verder gaan dan het aflezen van een meterkast. We combineren elektrische metingen, thermische analyses en procesdata tot één samenhangend beeld van het daadwerkelijke energieverbruik.",
+    "We zetten ultra-E meters en flowmeters in op kritieke punten voor perslucht, stoom en koelwater. Deze combinatie van instrumenten geeft een energieaudit die niet alleen zegt hóéveel er verbruikt wordt, maar ook wannéér."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van Professionele Energie en Procesaudits",
+      "paragraphs": [
+        "De ROI analyse die we samen met klanten opstellen laat consistent zien dat de investering in een energieaudit zich binnen enkele maanden terugverdient doordat energieverspilling vaak gratis of goedkoop te verhelpen is.",
+        "Veel besparingen komen uit kleine gedragsveranderingen en het dichten van lekken die een procesaudit en productieaudit stelselmatig aan het licht brengen (persluchtlekken, overlappend koelen/verwarmen).",
+        "Blijvende optimalisatie vraagt om een vervolgtraject: binnen elke vitale procesaudit, actieve productieaudit en aansluitende onderhoudsaudit toetsen we of verbeteringen het verwachte effect opleveren."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Auditoplossingen van SEPPA",
+  "featuresSubtitle": "Geavanceerde meetinstrumenten en diagnostische methoden voor maximale transparantie:",
+  "features": [
+    {
+      "title": "Ultrasone Perslucht-lekdetectie",
+      "description": "Lokaliseert onzichtbare en kostbare persluchtlekken in leidingen en appendages."
+    },
+    {
+      "title": "Thermografische Analyses",
+      "description": "Brengt warmteverliezen bij ketels en oververhitte elektrische componenten scherp in beeld."
+    },
+    {
+      "title": "Real-time Elektrische Datalogging",
+      "description": "Monitort piekbelastingen en spanningsonbalans over dagen en weken voor diepgaande netkwaliteitsanalyse."
+    },
+    {
+      "title": "Specialistische Apparatuur-audit",
+      "description": "Doelgerichte machine audit van compressoren en koelinstallaties om de mechanische afstelling te controleren."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Productie en Verpakkingsindustrie",
+  "applicationsSubtitle": "Doelgerichte audits voor verschillende verwerkingsomgevingen:",
+  "applications": [
+    {
+      "title": "Bottelarijen & Drankverwerking",
+      "description": "Analyse van gelijktijdig verbruik van koeling, compressie en verwarming ter voorkoming van energieverspilling."
+    },
+    {
+      "title": "Verpakkingsfabrieken & Logistiek",
+      "description": "Onderzoek naar mechanische aandrijvingen en pneumatische verliezen voor een efficiënter verbruik."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor Auditdiensten van Seppa Solutions",
+    "description": "Verbeterplannen ontworpen op maat van uw praktische productie-realiteit zonder de operatie te verstoren.",
+    "paragraphs": [
+      "Praktijkgerichte Adviezen: Elk advies is direct uitvoerbaar zonder de lopende batches te ontregelen.",
+      "Ondersteuning bij Implementatie: Onze technische specialisten blijven betrokken bij het doorvoeren van aanbevelingen.",
+      "Heldere Businesscase & Besparingsgarantie: Concrete onderbouwing van verwachte besparingen en terugverdientijden op basis van harde data."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Onze Auditmethodologie en Rapportageproces",
+    "subtitle": "Een gestroomlijnd 4-staps traject van nulmeting tot definitieve besparing:",
+    "steps": [
+      {
+        "title": "1. Eerste Nulmeting & Intake",
+        "description": "Brengt het huidige energieverbruik per machine en tijdsblok realistisch in kaart als uitgangspunt."
+      },
+      {
+        "title": "2. Procesaudit & Productieanalyse",
+        "description": "Onderzoekt het verband tussen energieverbruik, productievolumes en operationele gewoontes."
+      },
+      {
+        "title": "3. Evaluatie via Onderhoudsaudit",
+        "description": "Beoordeelt in hoeverre slijtage of slecht onderhouden apparatuur het gemeten verbruik opdrijft."
+      },
+      {
+        "title": "4. Apparatuur-audit & Eindrapport",
+        "description": "Grondige machine audit van de grootste verbruikers met geprioriteerde acties en terugverdientijden."
+      }
+    ],
+    "outro": [
+      "Conclusie: Professionele energie-auditdiensten vormen de basis voor duurzame efficiëntieverbeteringen in de industriële verwerkings- en verpakkingssector."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Auditdiensten",
+  "faqs": [
+    {
+      "question": "Voldoet jullie energieaudit aan de hygiënenormen voor de voedings en drankindustrie?",
+      "answer": "Ja. Onze meetapparatuur en werkwijze zijn afgestemd op de hygiëne-eisen van voedsel en drankverwerkende omgevingen."
+    },
+    {
+      "question": "Hoeveel kostenbesparing levert een moderne energieaudit gemiddeld op?",
+      "answer": "Dat verschilt per fabriek, maar de meeste klanten zien binnen het eerste jaar een daling in de energierekening met een terugverdientijd van enkele maanden."
+    },
+    {
+      "question": "Hoe vaak moet een procesaudit worden herhaald?",
+      "answer": "We adviseren minimaal jaarlijks, en vaker wanneer er grote wijzigingen zijn in productievolume of apparatuur."
+    },
+    {
+      "question": "Wat is de impact van een productieaudit op de dagelijkse operatie?",
+      "answer": "Minimaal. We plannen metingen zo dat de productie gewoon doorgaat."
+    },
+    {
+      "question": "Hoe betrouwbaar zijn de resultaten van een onderhoudsaudit, apparatuur audit en machine audit?",
+      "answer": "Zeer betrouwbaar, omdat we meetdata combineren met historische onderhoudsgegevens in plaats van losse momentopnamen."
+    }
+  ]
+}
