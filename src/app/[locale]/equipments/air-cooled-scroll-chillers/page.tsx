@@ -1,25 +1,119 @@
 import React from 'react';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
-import PageContent from './page-content';
+import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
+
+import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.png';
+import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
+import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
+import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-interface Props {
+interface PageProps {
   params: Promise<{ locale: string }>;
 }
 
-export default async function LocalizedPage({ params }: Props) {
+export default async function AirCooledScrollChillersPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'aircooledscrollchiller' });
   const messages = await getMessages({ locale });
+
+  const pageData: PackagingPageData = {
+    title: t('title'),
+    breadcrumbName: t('breadcrumbName'),
+    rootBreadcrumbName: t('rootBreadcrumbName'),
+    rootBreadcrumbPath: t('rootBreadcrumbPath'),
+    headerImage: "/images/equipments/immersion_chiller_banner.png",
+    overviewTitle: t('overviewTitle'),
+    overviewDescription: t('overviewDescription'),
+    overviewsubDescription: (() => {
+      try {
+        const raw = t.raw('overviewsubDescription');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
+    overviewImage: "/images/equipments/chiller_overview.png",
+    contentBlocks: (() => {
+      try {
+        const raw = t.raw('contentBlocks');
+        if (Array.isArray(raw)) {
+          return raw.map((block: any, index: number) => ({
+            title: block.title,
+            paragraphs: block.paragraphs,
+            image1: [ "/images/equipments/chiller_overview.png", "/images/equipments/immersion_chiller_banner.png" ][index] || undefined,
+            reverse: [true, false][index] || false
+          }));
+        }
+      } catch (e) {}
+      return [];
+    })(),
+    featuresTitle: t('featuresTitle'),
+    featuresSubtitle: t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: (() => {
+      try {
+        const raw = t.raw('features');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
+    applicationsTitle: t('applicationsTitle'),
+    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
+    applications: (() => {
+      try {
+        const raw = t.raw('applications');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
+    whyChoose: {
+      title: t('whyChoose.title'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
+      paragraphs: (() => {
+        try {
+          const raw = t.raw('whyChoose.paragraphs');
+          if (Array.isArray(raw)) return raw;
+        } catch (e) {}
+        return [];
+      })(),
+      image: "/images/equipments/chiller_overview.png"
+    },
+    methodology: {
+      title: t('methodology.title'),
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw)) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title,
+              description: step.description,
+              image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })()
+    },
+    faqTitle: t('faqTitle'),
+    faqs: (() => {
+      try {
+        const raw = t.raw('faqs');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })()
+  };
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <PageContent />
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale} />
+      </div>
     </NextIntlClientProvider>
   );
 }

@@ -1,0 +1,117 @@
+{
+  "title": "Overzicht van Watergekoelde Scrollkoelers voor Industriële Koeling",
+  "breadcrumbName": "Watergekoelde Scrollkoelers",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Overzicht van Watergekoelde Scrollkoelers voor Industriële Koeling",
+  "overviewDescription": "Als verpakkingsingenieur en thermisch adviseur zie ik dagelijks hoe essentieel betrouwbare koeling is voor het behalen van de gestelde productiequota. Een stabiele procestemperatuur is een absolute noodzaak voor hoogwaardige, foutloze productie. Binnen de procesindustrie kijken we met een extreem kritische blik naar warmtewisseling via industriële koeltorens, aangezien dit direct invloed heeft op het eindresultaat. Hierbij levert Seppa Solutions een uiterst betrouwbare watergekoelde chiller die een bijzonder constante vloeistoftemperatuur en werkelijk maximale energie-efficiëntie garandeert.",
+  "overviewsubDescription": [
+    "Overzicht van Watergekoelde Scrollkoelers van SEPPA: Wanneer u investeert in een watergekoelde chiller, investeert u direct in de levensader van uw fabriek. Een industriële koelinstallatie biedt de thermische capaciteit om hitteschommelingen en zware belastingen moeiteloos te verwerken.",
+    "Wat deze innovatieve systemen uniek maakt, is de naadloze synergie tussen toegepaste thermodynamica, doordacht materiaalgebruik en een robuust, onderhoudsvriendelijk ontwerp met shell-and-tube condensors.",
+    "In de huidige competitieve markt is het integreren van een zeer efficiënt watergekoeld koelsysteem een noodzakelijke strategische zet voor langdurige, stabiele winstgevendheid."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken en Technische Specificaties van Watergekoelde Scrollkoelers",
+  "featuresSubtitle": "Superieure engineering gefocust op hoog rendement en continu-bedrijf:",
+  "features": [
+    {
+      "title": "Hermetische Scrollcompressoren",
+      "description": "Ongeëvenaarde efficiëntie tijdens deellast en minimale trillingen voor sterk wisselende productieomstandigheden."
+    },
+    {
+      "title": "Shell and Tube Condensors",
+      "description": "Optimale warmtewisseling, minder vatbaar voor vervuiling en eenvoudig te reinigen voor een langdurig hoog rendement."
+    },
+    {
+      "title": "Geavanceerde PLC-Regeling",
+      "description": "Nauwkeurige temperatuurregeling met minimale afwijking (<0,5 °C) via slimme microprocessoren en sensoren."
+    },
+    {
+      "title": "Gesloten Koelsysteem met Veiligheidsvoorzieningen",
+      "description": "Uitgerust met expansieventielen en elektronische beveiliging tegen over- en onderdruk en bevriezing."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Kunststof-, Chemische-, Voedingsmiddelen- en Productie-industrie",
+  "applicationsSubtitle": "Betrouwbare proceskoeling voor uiteenlopende industriële sectoren:",
+  "applications": [
+    {
+      "title": "Kunststofindustrie & Spuitgietmachines",
+      "description": "Snelle en uniforme afkoeling van hete matrijzen ter voorkoming van krimpvervorming en verkorting van cyclustijden."
+    },
+    {
+      "title": "Chemische Sector & Exotherme Reacties",
+      "description": "Betrouwbare warmteafvoer bij exotherme processen waar temperatuurschommelingen kritisch zijn voor procesveiligheid."
+    },
+    {
+      "title": "Voedingsmiddelen & Pasteurisatie",
+      "description": "Consistente koeling voor pasteurisatie, melkverwerking en opslag conform strikte hygiëne- en voedselveiligheidsnormen."
+    },
+    {
+      "title": "Algemene Productie & Machinekamers",
+      "description": "Inpandige installaties die minder vloeroppervlak vereisen en gebruikmaken van een externe koeltoren of oppervlaktewater."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de Watergekoelde Scrollkoelers van Seppa Solutions",
+      "paragraphs": [
+        "Lagere Condensatietemperatuur & Hoge Energie-efficiëntie: Een externe koelbron zorgt voor een constante lage condensatietemperatuur, wat stroomverbruik drastisch verlaagt vergeleken met luchtgekoelde systemen.",
+        "Minder Mechanische Slijtage & Lagere TCO: De continue waterkoeling vermindert de compressorbelasting en trillingen, wat de onderhoudsfrequentie en Total Cost of Ownership (TCO) verlaagt.",
+        "Real-Time Monitoring & Bedrijfszekerheid: Intelligente PLC-besturing bewaakt de status van de koelwaterchiller in real-time om ongeplande stilstand uit te sluiten."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Watergekoelde Scrollkoelers van Seppa Solutions",
+    "description": "Als vooraanstaande waterkoeler fabrikant begeleiden wij het volledige traject van warmtelastberekening tot inbedrijfstelling.",
+    "paragraphs": [
+      "Op Maat Geconfigureerd voor Uw Infrastructuur: Afgestemd op uw specifieke thermische profielen en volumestromen.",
+      "Ondersteuning van Schets tot Inbedrijfstelling: Ervaren ingenieurs die de integratie van uw nieuwe waterkoeler vlekkeloos uitvoeren.",
+      "Duurzame Componenten & Eenvoudig Onderhoud: Robuuste shell-and-tube warmtewisselaars en naadloze leidingen voor langdurige betrouwbaarheid."
+    ]
+  },
+  "methodology": {
+    "title": "Werkwijze van Watergekoelde Scrollkoelers",
+    "subtitle": "Thermodynamische koelcyclus via een extern koelwatercircuit:",
+    "steps": [
+      {
+        "title": "1. Warmte-absorptie in de Verdamper",
+        "description": "Opgewarmd proceswater stroomt naar de verdamper, waar het koudemiddel de warmte opneemt en verdampt."
+      },
+      {
+        "title": "2. Scrollcompressie",
+        "description": "De hermetische scrollcompressor perst het hete koudemiddelgas samen, waardoor systeemdruk en temperatuur stijgen."
+      },
+      {
+        "title": "3. Warmteafgifte in de Shell & Tube Condensor",
+        "description": "Het hete gas geeft in de shell-and-tube condensor zijn warmte af aan extern koelwater (van een koeltoren) en condenseert."
+      },
+      {
+        "title": "4. Expansie & Gekoelde Herstart",
+        "description": "Het vloeibare koudemiddel passeert het expansieventiel, waardoor de druk daalt en de koelcyclus opnieuw begint."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Wat zijn de optimale onderhoudsintervallen voor een watergekoelde chiller?",
+      "answer": "Een periodieke kwartaalinspectie van condensorbuizen, koudemiddelniveau en olie, gecombineerd met jaarlijks grondig onderhoud."
+    },
+    {
+      "question": "Hoe beïnvloedt dit systeem de energiekosten van een watergekoelde chiller?",
+      "answer": "Doordat de condensatietemperatuur aanzienlijk lager ligt dan bij luchtgekoelde varianten, ligt het stroomverbruik structureel lager."
+    },
+    {
+      "question": "Hoe garanderen we de nauwkeurigheid van een industriële waterkoeler?",
+      "answer": "Door geavanceerde PLC-microprocessors en gevoelige sensoren behoudt het systeem een minimale temperatuurafwijking van <0,5 °C."
+    },
+    {
+      "question": "Wat bepaalt de technische integriteit bij langdurig gebruik?",
+      "answer": "De constructiekwaliteit, corrosiebestendige materialen en naadloze leidingen om lekkages en stilstand te voorkomen."
+    },
+    {
+      "question": "Wat is de maximale koelcapaciteit van een moderne scrollcompressor chiller?",
+      "answer": "Door meerdere compressoren in tandem te schakelen, is de capaciteit flexibel schaalbaar van middelgrote tot zeer grote installaties."
+    }
+  ]
+}
