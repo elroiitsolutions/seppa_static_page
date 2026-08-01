@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FaWhatsapp, FaPhone } from 'react-icons/fa';
 import { FiArrowUp } from 'react-icons/fi';
 import { LuMessageSquareText } from "react-icons/lu";
+import ChatWidget from '../chat/ChatWidget';
 
 const FloatingActions = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -85,6 +86,9 @@ const FloatingActions = () => {
           Go to top
         </span>
       </button>
+
+      {/* Chatbot Widget */}
+      <ChatWidget />
     </div>
   );
 };

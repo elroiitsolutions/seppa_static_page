@@ -2,6 +2,7 @@ import React from 'react';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -34,6 +35,9 @@ export default async function LocalizedStretchWrappingPage({ params }: Props) {
   const getRaw = (key: string) => t.raw(key);
 
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/stretch-wrapping', locale);
 
   const pageData: PackagingPageData = {
     title: getT('title'),
@@ -90,6 +94,8 @@ export default async function LocalizedStretchWrappingPage({ params }: Props) {
     faqTitle: getT('faqTitle'),
     faqs: getRaw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

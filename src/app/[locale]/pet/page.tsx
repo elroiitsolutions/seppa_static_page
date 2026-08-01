@@ -13,6 +13,8 @@ import meth3Img from '@/assets/packaging/generated/methodology_3.png';
 import meth4Img from '@/assets/packaging/generated/methodology_4.png';
 import meth5Img from '@/assets/packaging/generated/methodology_5.png';
 
+import { getRelatedBlogs } from '@/lib/strapi/client';
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -26,6 +28,9 @@ export default async function PetPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'pet' });
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to PET automatically
+  const relatedBlogs = await getRelatedBlogs('/pet', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -63,7 +68,8 @@ export default async function PetPage({ params }: PageProps) {
       image: whyChooseImg.src
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
 
   return (

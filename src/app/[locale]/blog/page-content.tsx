@@ -5,6 +5,6 @@ export const metadata = {
   description: 'Read the latest trends in sustainable textiles and yarn technology. Stay updated with the latest news from Yarnex.',
 };
 
-export default function BlogPage() {
-  return <BlogView />;
+export default function BlogPage({ blogs }: { blogs: any[] }) {
+  return <BlogView blogs={blogs} />;
 }
