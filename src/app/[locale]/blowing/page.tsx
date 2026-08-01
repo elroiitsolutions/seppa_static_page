@@ -100,22 +100,22 @@ export default async function BlowingPage({ params }: PageProps) {
                   {
                     title: locale === 'ar' ? "نافخ PET" : "Seppa SSB-SL-PNEUMATIC",
                     img: img1.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic" : "/en/blowing/pneumatic"
+                    link: `/${locale}/blowing/pneumatic`
                   },
                   {
                     title: locale === 'ar' ? "تكنولوجيا المعالجة" : "Seppa SSB-SLE-ELECTRIC",
                     img: meth1.src,
-                    link: locale === 'ar' ? "/ar/electric-pet-blowing" : "/en/electric-pet-blowing"
+                    link: `/${locale}/electric-pet-blowing`
                   },
                   {
                     title: locale === 'ar' ? "خط تعبئة PET" : "Seppa SSB-R-ROTARY",
                     img: meth4.src,
-                    link: locale === 'ar' ? "/ar/blowing/rotary-high-speed-systems" : "/en/blowing/rotary-high-speed-systems"
+                    link: `/${locale}/blowing/rotary-high-speed-systems`
                   },
                   {
                     title: locale === 'ar' ? "خط تعبئة الزجاج" : "SEMI-AUTOMATIC PET STRETCH BLOW MOULDING",
                     img: img3.src,
-                    link: locale === 'ar' ? "/ar/blowing/semi-automatic-units" : "/en/blowing/semi-automatic-units"
+                    link: `/${locale}/blowing/semi-automatic-units`
                   }
                 ].map((item, idx) => (
                   <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block">

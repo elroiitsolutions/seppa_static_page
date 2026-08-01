@@ -67,18 +67,26 @@ const Header: React.FC = () => {
     document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
   }, [isArabic, isGerman]);
 
-  // Handle scroll event for sticky header
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
-      setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const isScrolled = window.scrollY > 50;
+          setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    // Check scroll position immediately on mount (handles page refresh when already scrolled)
     handleScroll();
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   // Dynamic header classes - sticky behavior across all viewports
