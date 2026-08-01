@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -31,6 +32,9 @@ export default async function UnscramblerPage({ params }: PageProps) {
   const messages = await getMessages({ locale });
 
   const contentBlockImages = [img1.src, img2.src, img3.src];
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/unscramblers', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -69,6 +73,8 @@ export default async function UnscramblerPage({ params }: PageProps) {
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
