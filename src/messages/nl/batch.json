@@ -1,0 +1,98 @@
+{
+  "title": "Batch Codeermachine",
+  "breadcrumbName": "Batch Codeerders",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Batch Codeermachine: De Ruggengraat van Betrouwbare Productcodering",
+  "overviewDescription": "Wie in de verpakkingsindustrie werkt weet dat een verkeerd geprinte houdbaarheidsdatum meer kost dan alleen een paar herdrukte dozen. Het kan een hele partij terugroepen, een audit triggeren, of erger, het vertrouwen van een retailer breken. Daarom besteden wij bij Seppa Solutions zoveel aandacht aan één schijnbaar bescheiden stuk apparatuur: de batch codeermachine.",
+  "overviewsubDescription": [
+    "Dit is geen randproduct in onze catalogus. Voor veel van onze klanten in de voedingsmiddelen, dranken, farmaceutische en verpakkingssector is de batch codeermachine het laatste controlepunt voordat een product de fabriek verlaat. Als dat systeem hapert, hapert de hele lijn mee.",
+    "Onze batch codeermachine is ontworpen rond een simpel uitgangspunt: elke code moet leesbaar zijn, elke keer, zonder dat een operator er de hele dag naar hoeft te kijken. Dat klinkt vanzelfsprekend, maar wie ooit een streepjescode heeft zien vervagen op een vochtige verpakkingslijn weet dat dit niet altijd zo werkt.",
+    "We hebben het systeem opgebouwd rond een modulaire architectuur. De printkop, de besturingseenheid en de sensoren zijn los te vervangen, wat betekent dat een storing in één onderdeel niet meteen de hele lijn stillegt. In de praktijk zien we dat fabrieken hierdoor gemiddeld veel minder stilstand ervaren dan met oudere, monolithische systemen.",
+    "Snelheid is het tweede aandachtspunt. Onze machines printen bij lijnsnelheden die oplopen tot honderden producten per minuut, zonder dat de leesbaarheid van de code eronder lijdt. Dat is waar veel goedkopere systemen struikelen: ze kunnen snel printen óf duidelijk printen, zelden allebei tegelijk."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA Batch Codeermachine",
+      "paragraphs": [
+        "Laten we het praktisch houden. Een fabriekseigenaar wil weten wat dit oplevert, niet alleen wat het doet.",
+        "Terugverdientijd: De meeste van onze klanten zien de investering in twaalf tot achttien maanden terugverdiend, vooral wanneer je de kosten van herwerk en afgekeurde partijen meerekent. Eén verkeerd geprinte batch is vaak duurder dan een jaar onderhoud aan de machine.",
+        "Minder stilstand: Omdat de machine zelfreinigende printkoppen heeft, hoeven operators niet elke ploegwisseling handmatig te ontstoppen. Dat scheelt in de praktijk al snel een uur per dag aan productieve tijd.",
+        "Foutreductie in Productcodering: Handmatige controle van codes is foutgevoelig, zeker bij lange ploegen. Onze systemen koppelen automatisch aan het productierecept, zodat Productcodering-fouten door menselijke vergissing vrijwel worden uitgesloten.",
+        "Traceerbaarheid: Elke stap in de Productiecodering-workflow wordt gelogd. Bij een terugroepactie kun je binnen minuten zien welke lijn, welke ploeg en welk tijdstip bij een specifieke code hoort. Dit soort Productiecodering-gegevens wordt steeds vaker gevraagd door retailers, niet alleen door regelgevers.",
+        "Consistentie tussen ploegen: Waar handmatig ingestelde machines vaak per operator net iets anders worden afgesteld, dwingt een goed geconfigureerde batch codeermachine dezelfde instellingen af, ongeacht wie er dienst heeft. Dat lijkt een klein voordeel, tot je merkt hoeveel variatie er anders in codekwaliteit sluipt over een volledige week."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Voedingsmiddelen-, Dranken-, Farmaceutische en Verpakkingsindustrie",
+      "paragraphs": [
+        "Wat ons opvalt bij klantbezoeken is hoe verschillend de eisen zijn per sector, ook al lijkt het oppervlakkig op hetzelfde probleem.",
+        "In de voedingsmiddelenindustrie draait alles om houdbaarheidsdata en allergeneninformatie op flexibele folies. Hier werkt onze Inkjet codeermachine het best, omdat inkjet zich aanpast aan bewegende, soms lichtjes vervormende verpakkingsmaterialen zonder contact te maken met het oppervlak. Een Inkjet codeermachine heeft bovendien als voordeel dat er geen slijtageonderdeel tegen de folie schuurt, wat op lange termijn de printkwaliteit consistenter houdt.",
+        "Bij dranken zien we juist een combinatie van harde kunststoffen en glas. Coderen op verpakkingen zoals PET-flessen of glazen flessen vraagt om een andere aanpak dan folie: de inkt moet sneldrogend zijn en bestand tegen condens, vooral bij gekoelde producten.",
+        "De farmaceutische sector stelt weer andere eisen. Hier gaat het om regelgeving, GS1 standaarden en serialisatie. Coderen op verpakkingen in deze context betekent vaak submillimeter precisie, omdat een inspecteur elke code kan controleren. Voor sommige klanten koppelen we de Productiecodering rechtstreeks aan een landelijke serialisatiedatabase.",
+        "En in de bredere verpakkingsindustrie, denk aan kartonnen dozen, kratten en pallets, ligt de nadruk op leesbaarheid op grotere afstand. Daar is een Conveyor codeermachine ideaal, omdat die de code aanbrengt terwijl het product in beweging blijft, zonder de doorvoersnelheid van de lijn te vertragen."
+      ]
+    },
+    {
+      "title": "Types van Informatie Geprint met Batch Codeerders",
+      "paragraphs": [
+        "Batchnummers: Een batchnummer bevat een kwaliteitsincident. Wanneer een recall is uitgegeven, identificeert het nummer de exacte productierun.",
+        "Productie- en Vervaldatum: Datumcodes geven interne kwaliteitsteams de mogelijkheid om een eindproduct terug te herleiden naar een specifieke ploeg of grondstoffenbatch. De inkjet coding printer brengt vervaldata direct aan op de primaire verpakking.",
+        "Barcodes en QR-codes: De inkjet coding printer genereert 1D en 2D codes op resoluties die voldoen aan de scanspecificaties van retailers. QR-codes geprint met batchdata laten consumenten de echtheid van producten controleren."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor Batch Codeeroplossingen van Seppa Solutions",
+    "description": "Seppa bouwt codeersystemen rond de realiteit dat productievloeren continu moeten draaien en dat codeerstoringen direct de lijn stilleggen.",
+    "paragraphs": [
+      "De hardware weerspiegelt dat: precisie-gefabriceerde printkoppen, stabiele pompen en kwaliteitsvoedingen geschikt voor 24/7 gebruik.",
+      "De industriële inkjet printer platforms die Seppa levert, verwerken meerdere verpakkingsmaterialen binnen een enkele installatie. Operators schakelen eenvoudig tussen verschillende substraatprofielen op het HMI-paneel.",
+      "Grote producenten in voeding, farma en cosmetica vertrouwen op Seppa's batch codeermachines omdat de printkwaliteit ook na lange, intensieve ploegendiensten betrouwbaar op peil blijft."
+    ]
+  },
+  "methodology": {
+    "title": "Methodologie: Onze Aanpak voor de Integratie van Batch Codeerders",
+    "steps": [
+      {
+        "title": "Lijnbeoordeling",
+        "description": "Het proces begint bij de sensor op de Conveyor codeermachine, die het naderende product detecteert en een triggersignaal stuurt naar de besturingseenheid."
+      },
+      {
+        "title": "Inkt- en Locatieselectie",
+        "description": "Het signaal activeert de Inkjet codeermachine die batchnummers, productiedatum en lotcodes ophaalt voor de specifieke verpakking."
+      },
+      {
+        "title": "Doseerafstemming",
+        "description": "De printkop stuurt de inktdruppels aan op basis van een intern raster, waardoor Coderen op verpakkingen scherp en leesbaar blijft op hoge snelheid."
+      },
+      {
+        "title": "Visie-controle & Handover",
+        "description": "Een optionele visie-sensor controleert de leesbaarheid in real time en markeert eventuele afwijkingen voor uitsluiting zonder de lijn stil te leggen."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Voldoet de batch codeermachine aan hygiënenormen voor de voedingsindustrie?",
+      "answer": "Ja. De behuizing en materialen zijn geschikt voor omgevingen waar regelmatig gereinigd wordt, inclusief natte reiniging in zuivel- en vleesverwerkende fabrieken."
+    },
+    {
+      "question": "Wat kost onderhoud van een batch codeermachine over de tijd?",
+      "answer": "Dat hangt af van het gebruik, maar de zelfreinigende printkop en modulaire onderdelen houden de onderhoudskosten doorgaans lager dan bij oudere contactgebaseerde systemen."
+    },
+    {
+      "question": "Welke inkt moet ik kiezen voor Productcodering op mijn verpakkingen?",
+      "answer": "Dat hangt van het materiaal af: sneldrogende inkt voor gekoelde, vochtige oppervlakken, en pigmentinkt voor donkere of transparante verpakkingen waar contrast belangrijk is."
+    },
+    {
+      "question": "Hoe precies is een Inkjet codeermachine bij kleine lettergroottes?",
+      "answer": "Onze systemen printen leesbare tekst en barcodes vanaf enkele millimeters hoog, wat voldoende is voor de meeste GS1 en farmaceutische serialisatie-eisen."
+    },
+    {
+      "question": "Is Coderen op verpakkingen betrouwbaar bij hoge productiesnelheden?",
+      "answer": "Ja, mits de printkop en het inktsysteem goed zijn afgestemd op de lijnsnelheid. Dat is precies waarom we elke installatie op maat configureren in plaats van een standaardmodel te leveren."
+    }
+  ]
+}

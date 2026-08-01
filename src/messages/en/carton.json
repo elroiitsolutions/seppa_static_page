@@ -9,23 +9,37 @@
     "Carton handling covers the full sequence of automated operations from flat corrugated blank to formed, loaded, and sealed case ready for the palletizer. It is not one machine. It is three discrete machine stages erecting, packing, sealing each with its own mechanical demands, running in tight synchronization.",
     "Get the timing wrong between stages and the line chokes. A carton packing machine that runs at 40 cases per minute does nothing useful if the erector upstream is feeding it at 32. Throughput is always governed by the slowest stage, which is why Seppa engineers carton handling equipment as complete line solutions rather than isolated units."
   ],
+  "featuresTitle": "Key Features of Our Carton Handling Solutions",
+  "features": [
+    {
+      "title": "Suction-Cup Blank Feeding and Squaring",
+      "description": "The first mechanical event in any carton handling line is drawing a single flat blank from the magazine and opening it square. Seppa's carton erecting machines use a suction disk system in continuous motion not indexed stop start to maintain reliable blank separation at production speed without doubling or misfeeds."
+    },
+    {
+      "title": "Sensor-Based Alignment for Automatic Loading",
+      "description": "An automatic carton packing machine needs to know exactly where the open case sits before any loading motion begins. Seppa's packing stations use optical sensors at infeed to confirm position and squareness. If a case arrives off square, the sensor flags it for rejection rather than letting the machine pack and seal a box that will buckle on a pallet."
+    },
+    {
+      "title": "Rapid Changeover",
+      "description": "Seppa's carton packaging machine range supports tool free format changes. Side guides, flap folders, and compression belts adjust via handwheels with indexed position markers. A trained operator can reformat a case in under 15 minutes."
+    }
+  ],
+  "applicationsTitle": "Types of Carton Handling Equipment",
+  "applications": [
+    {
+      "title": "Carton Erecting Machines",
+      "description": "Take flat blanks and produce open, bottom sealed boxes. Seppa supplies erectors for both PVC tape and hot melt adhesive bottom flap sealing. The tape option works well in cold or humid environments. Hot melt gives cleaner closure at higher speeds."
+    },
+    {
+      "title": "Carton Packing Machine",
+      "description": "Where product enters the box. For beverage and FMCG lines, Seppa's wraparound carton packaging machine models reach 45 packs per minute. The wraparound format wraps a corrugated blank tightly around a collated product group, which is more material efficient than top-load."
+    },
+    {
+      "title": "Carton Sealing Machine",
+      "description": "Handles both upper and lower flap closure on filled cases. Side driven belts transport cases through at controlled speed; injectors apply adhesive strips; a presser plate holds the flaps under compression until the adhesive sets."
+    }
+  ],
   "contentBlocks": [
-    {
-      "title": "Key Features of Our Carton Handling Solutions",
-      "paragraphs": [
-        "Suction-Cup Blank Feeding and Squaring: The first mechanical event in any carton handling line is drawing a single flat blank from the magazine and opening it square. Seppa's carton erecting machines use a suction disk system in continuous motion not indexed stop start to maintain reliable blank separation at production speed without doubling or misfeeds.",
-        "Sensor-Based Alignment for Automatic Loading: An automatic carton packing machine needs to know exactly where the open case sits before any loading motion begins. Seppa's packing stations use optical sensors at infeed to confirm position and squareness. If a case arrives off square, the sensor flags it for rejection rather than letting the machine pack and seal a box that will buckle on a pallet.",
-        "Rapid Changeover: Seppa's carton packaging machine range supports tool free format changes. Side guides, flap folders, and compression belts adjust via handwheels with indexed position markers. A trained operator can reformat a case in under 15 minutes."
-      ]
-    },
-    {
-      "title": "Types of Carton Handling Equipment",
-      "paragraphs": [
-        "Carton Erecting Machines: Take flat blanks and produce open, bottom sealed boxes. Seppa supplies erectors for both PVC tape and hot melt adhesive bottom flap sealing. The tape option works well in cold or humid environments. Hot melt gives cleaner closure at higher speeds.",
-        "Carton Packing Machine: Where product enters the box. For beverage and FMCG lines, Seppa's wraparound carton packaging machine models reach 45 packs per minute. The wraparound format wraps a corrugated blank tightly around a collated product group, which is more material efficient than top-load.",
-        "Carton Sealing Machine: Handles both upper and lower flap closure on filled cases. Side driven belts transport cases through at controlled speed; injectors apply adhesive strips; a presser plate holds the flaps under compression until the adhesive sets."
-      ]
-    },
     {
       "title": "Benefits of Automated Carton Handling",
       "paragraphs": [
