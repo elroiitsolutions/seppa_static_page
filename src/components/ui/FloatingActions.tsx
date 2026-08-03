@@ -8,22 +8,22 @@ const FloatingActions = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    let ticking = false;
+    let timeoutId: any = null;
 
     const toggleVisibility = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const show = window.scrollY > 300;
-          setIsVisible((prev) => (prev !== show ? show : prev));
-          ticking = false;
-        });
-        ticking = true;
-      }
+      if (timeoutId) return;
+
+      timeoutId = setTimeout(() => {
+        const show = window.scrollY > 300;
+        setIsVisible((prev) => (prev !== show ? show : prev));
+        timeoutId = null;
+      }, 100);
     };
 
     window.addEventListener("scroll", toggleVisibility, { passive: true });
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
+      if (timeoutId) clearTimeout(timeoutId);
     };
   }, []);
 
