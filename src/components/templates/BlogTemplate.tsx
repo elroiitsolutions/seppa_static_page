@@ -80,9 +80,16 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data, locale }) => {
               </div>
 
               {/* Title */}
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-8">
+              <h1 className={`text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight ${data.hero?.subtitle ? 'mb-4' : 'mb-8'}`}>
                 {data.hero?.title || data.title}
               </h1>
+
+              {/* Subtitle */}
+              {data.hero?.subtitle && (
+                <h2 className="text-xl md:text-2xl text-gray-600 mb-8 font-medium leading-relaxed">
+                  {data.hero.subtitle}
+                </h2>
+              )}
 
               {/* Hero Image / Video */}
               {data.hero?.background_image?.url && (
