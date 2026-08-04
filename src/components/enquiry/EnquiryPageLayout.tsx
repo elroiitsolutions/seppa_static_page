@@ -196,6 +196,7 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
                               onChange={(e) => handleInputChange(field.name, e.target.value, field.type)}
                               placeholder={field.placeholder} 
                               rows={5}
+                              suppressHydrationWarning={true}
                               className={`w-full px-6 py-4 rounded-2xl bg-white/10 border ${errors[field.name] ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red focus:border-transparent transition shadow-sm resize-none backdrop-blur-sm`}
                             ></textarea>
                           ) : field.type === 'select' ? (
@@ -205,6 +206,7 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
                                 name={field.name}
                                 value={formData[field.name] || ''}
                                 onChange={(e) => handleInputChange(field.name, e.target.value, field.type)}
+                                suppressHydrationWarning={true}
                                 className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors[field.name] ? 'border-red-400' : 'border-white/20'} text-white appearance-none focus:outline-none focus:ring-2 focus:ring-seppa-red focus:border-transparent transition shadow-sm backdrop-blur-sm`}
                               >
                                 <option value="" disabled className="text-gray-900">{field.placeholder || `Select ${field.label}`}</option>
@@ -224,6 +226,7 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
                               value={formData[field.name] || ''}
                               onChange={(e) => handleInputChange(field.name, e.target.value, field.type)}
                               placeholder={field.placeholder} 
+                              suppressHydrationWarning={true}
                               className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors[field.name] ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red focus:border-transparent transition shadow-sm backdrop-blur-sm`} 
                             />
                           )}
@@ -238,6 +241,7 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
                       <button 
                         type="submit" 
                         disabled={isSubmitting}
+                        suppressHydrationWarning={true}
                         className="bg-seppa-red text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-seppa-red transition duration-300 w-full sm:w-auto text-lg shadow-lg disabled:opacity-50"
                       >
                         {isSubmitting ? 'Submitting...' : (data.submitButtonText || 'Submit Enquiry')}

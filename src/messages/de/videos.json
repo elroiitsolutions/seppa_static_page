@@ -1,6 +1,9 @@
 {
   "title": "Videogalerie",
   "breadcrumbName": "Videogalerie",
+  "productsInAction": "Unsere Produkte in Aktion",
+  "productVideos": "Produkt-Videos",
+  "productVideosDesc": "Sehen Sie unsere erstklassigen Maschinen und Komplettanlagenlösungen im realen Einsatz in Betriebsstätten weltweit.",
   "searchPlaceholder": "Videos suchen...",
   "categoriesHeading": "Kategorien",
   "noVideos": "Keine Videos gefunden, die Ihren Kriterien entsprechen.",
