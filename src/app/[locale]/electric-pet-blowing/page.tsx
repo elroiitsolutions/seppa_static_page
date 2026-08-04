@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -32,6 +33,9 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'electricpetblowing' });
   const messages = await getMessages({ locale });
 
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/electric-pet-blowing', locale);
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -61,11 +65,14 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
@@ -84,27 +91,37 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {[
                   {
-                    title: locale === 'ar' ? "نافخ PET" : "Seppa SSB-SL-10",
+                    title: "Seppa SSB-SLE-40",
                     img: img1.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-10" : "/en/blowing/pneumatic/ssb-sl-10"
+                    link: locale === 'ar' ? "/ar/electric-pet-blowing/ssb-sle-40" : "/en/electric-pet-blowing/ssb-sle-40"
                   },
                   {
-                    title: locale === 'ar' ? "تكنولوجيا المعالجة" : "Seppa SSB-SL-20",
+                    title: "Seppa SSB-SLE-60",
                     img: meth1.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-20" : "/en/blowing/pneumatic/ssb-sl-20"
+                    link: locale === 'ar' ? "/ar/electric-pet-blowing/ssb-sle-60" : "/en/electric-pet-blowing/ssb-sle-60"
                   },
                   {
-                    title: locale === 'ar' ? "خط تعبئة PET" : "Seppa SSB-SL-40",
+                    title: "Seppa SSB-SLE-80",
                     img: meth2.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-40" : "/en/blowing/pneumatic/ssb-sl-40"
+                    link: locale === 'ar' ? "/ar/electric-pet-blowing/ssb-sle-80" : "/en/electric-pet-blowing/ssb-sle-80"
                   },
                   {
-                    title: locale === 'ar' ? "خط تعبئة الزجاج" : "Seppa SSB-SL-60",
+                    title: "Seppa SSB-SLE-100",
                     img: meth3.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-60" : "/en/blowing/pneumatic/ssb-sl-60"
+                    link: locale === 'ar' ? "/ar/electric-pet-blowing/ssb-sle-100" : "/en/electric-pet-blowing/ssb-sle-100"
+                  },
+                  {
+                    title: "Seppa SSB-SLE-120",
+                    img: img2.src,
+                    link: locale === 'ar' ? "/ar/electric-pet-blowing/ssb-sle-120" : "/en/electric-pet-blowing/ssb-sle-120"
+                  },
+                  {
+                    title: "Seppa SSB-SLE-150",
+                    img: img3.src,
+                    link: locale === 'ar' ? "/ar/electric-pet-blowing/ssb-sle-150" : "/en/electric-pet-blowing/ssb-sle-150"
                   }
                 ].map((item, idx) => (
                   <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block">

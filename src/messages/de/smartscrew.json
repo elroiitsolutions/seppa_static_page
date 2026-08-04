@@ -1,0 +1,99 @@
+{
+  "title": "Industrie-Schraubenkälteanlagen: Präzise Kühltechnik für anspruchsvolle Produktionsprozesse",
+  "breadcrumbName": "Schraubenkühler",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Überblick über industrielle Schraubenkälteanlagen",
+  "overviewDescription": "In nahezu jeder industriellen Anlage mit einem kontinuierlichen 24/7-Betrieb arbeitet im Hintergrund eine zentrale Komponente für die Prozesssicherheit: die Schraubenkälteanlage. Wenn Produktionsanlagen dauerhaft auf stabile Temperaturen angewiesen sind, wenn Rechenzentren über Jahre hinweg konstante Kaltwasserversorgung benötigen oder chemische Prozesse exakt kontrollierte Temperaturbedingungen erfordern, bieten Schraubenkühler die notwendige thermische Leistung.",
+  "overviewsubDescription": [
+    "Seppa Solutions entwickelt industrielle Schraubenkälteanlagen nicht als Standardprodukte, sondern als langfristig ausgelegte Kühlsysteme für besonders anspruchsvolle Anwendungen.",
+    "Eine Schraubenkälteanlage arbeitet mit einem leistungsstarken Doppelschraubenverdichter und erreicht typische Kälteleistungen von 150 kW bis über 4.500 kW pro Einheit. Während Kolben- oder Scrollverdichter bei sehr hohen Volumenströmen an Grenzen stoßen können, verdichtet der Twin-Screw-Kompressor das Kältemittel kontinuierlich und gleichmäßig.",
+    "Genau diese Eigenschaft macht die Schraubenkälteanlage zur bevorzugten Lösung für große industrielle Kühllasten. Moderne Schraubenkühler erreichen auch bei Teillast eine hohe Energieeffizienz durch stufenlose Leistungsregelung."
+  ],
+  "featuresTitle": "Technische Merkmale und Vorteile moderner Schraubenkühler",
+  "features": [
+    {
+      "title": "Präzisionsrotoren aus geschmiedetem Stahl",
+      "description": "Die eingesetzten Rotoren verfügen über präzisionsgeschliffene Profile mit Toleranzen unter 5 Mikrometern. Die Zylinderrollenlager sind auf eine Lebensdauer von über 100.000 Betriebsstunden ausgelegt."
+    },
+    {
+      "title": "Stufenlose Schiebersteuerung",
+      "description": "Die Leistungsanpassung erfolgt über eine hydraulische Schieberregelung stufenlos zwischen 25 % und 100 %. Dies hält die Kälteleistung präzise auf einem Sollwert von bis zu ±0,3 °C Abweichung."
+    },
+    {
+      "title": "Hocheffiziente Wärmetauscher",
+      "description": "Wassergekühlte Systeme nutzen geflutete Rohrbündelverdampfer mit innen berippten Kupferrohren. Luftgekühlte Systeme arbeiten mit modernen Mikrokanal-Kondensatoren und elektronischen Expansionsventilen."
+    }
+  ],
+  "applicationsTitle": "Industrielle Anwendungen von Schraubenkälteanlagen",
+  "applicationsSubtitle": "Mehrere parallel geschaltete Schraubenkälteanlagen können dabei als modulare Kühleinheiten für große industrielle Kältenetze eingesetzt werden.",
+  "applications": [
+    {
+      "title": "Lebensmittel- & Getränkeindustrie",
+      "description": "Sichert konstante Glykol- oder Soletemperaturen in Molkereien, Brauereien und bei der Fleischverarbeitung zur Einhaltung von Sicherheitsstandards."
+    },
+    {
+      "title": "Rechenzentren & Cloud-Server",
+      "description": "Liefert extrem stabile Kaltwassermengen für Serverkühlung, Rack-Kühlsysteme und kontinuierliche Klimatisierung."
+    },
+    {
+      "title": "Chemische & Pharmazeutische Prozesse",
+      "description": "Fängt starke exotherme Reaktionswärme oder Kristallisationswärme durch schnell ansprechende Regelung zuverlässig ab."
+    },
+    {
+      "title": "Schwerindustrie & Zementwerke",
+      "description": "Robust konstruierte Kühlanlagen für extreme klimatische Bedingungen, hohe Luftfeuchtigkeit und Staubbelastung."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions für Schraubenkälteanlagen wählen?",
+    "description": "Seppa Solutions entwickelt industrielle Kühlsysteme als komplette technische Lösungen und nicht als einfache Standardgeräte.",
+    "paragraphs": [
+      "Jede Schraubenkälteanlage wird anhand des tatsächlichen Lastprofils, der klimatischen Bedingungen, des verfügbaren Installationsraums und der betrieblichen Anforderungen ausgelegt.",
+      "Vor der Auslieferung durchläuft jede Anlage umfassende Werkstests unter realistischen Betriebsbedingungen. Die Leistungsprüfung erfolgt entsprechend strengster industrieller Qualitätsanforderungen."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise einer Schraubenkälteanlage",
+    "steps": [
+      {
+        "title": "Kontinuierliche Verdichtung",
+        "description": "Niederdruck-Kältemitteldampf wird vom Twin-Screw-Kompressor angesaugt. Zwischen den ineinandergreifenden Rotoren wird das Kältemittel gleichmäßig und vibrationsarm komprimiert."
+      },
+      {
+        "title": "Wärmeabgabe im Kondensator",
+        "description": "Das heiße Gas gelangt in den Kondensator. Wassergekühlte Systeme nutzen Rohrbündelkondensatoren, während luftgekühlte Systeme Mikrokanal-Kondensatoren mit EC-Lüftern nutzen."
+      },
+      {
+        "title": "Druckminderung & Verdampfung",
+        "description": "Das elektronische Expansionsventil reduziert den Kältemitteldruck. Im Verdampfer nimmt das kalte Kältemittel erneut Wärme aus dem Prozesswasser auf, um den Kreislauf zu schließen."
+      }
+    ],
+    "outro": [
+      "Durch diese kontinuierliche Arbeitsweise können hochwertige Schraubenkälteanlagen über viele Jahre hinweg äußerst wartungsarm betrieben werden."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen zu Schraubenkälteanlagen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartung benötigt eine wassergekühlte Schraubenkälteanlage?",
+      "answer": "Die Wartung umfasst regelmäßige Ölanalysen, Wärmetauscherprüfungen, Ventilkontrollen und die Überwachung der Wasserqualität zur Vermeidung von Ablagerungen."
+    },
+    {
+      "question": "2. Was ist der Unterschied zwischen luftgekühlten und wassergekühlten Systemen?",
+      "answer": "Luftgekühlte Systeme liegen meist im Bereich von 150 bis 1.600 kW. Wassergekühlte Systeme erreichen Leistungen über 4.500 kW und bieten oft eine höhere thermodynamische Effizienz."
+    },
+    {
+      "question": "3. Warum sind Schraubenverdichter für hohe Lasten geeignet?",
+      "answer": "Die kontinuierliche Verdichtung ohne pulsierende Bewegungen reduziert mechanische Belastungen und ermöglicht einen störungsfreien 24/7-Betrieb bei großen Kälteleistungen."
+    },
+    {
+      "question": "4. Wie wird die richtige Größe einer Schraubenkälteanlage bestimmt?",
+      "answer": "Die Auslegung basiert auf der Mindest- und Spitzenlast, Redundanzanforderungen und den klimatischen Spitzenwerten des Standorts, um Überdimensionierung zu vermeiden."
+    },
+    {
+      "question": "5. Was unterscheidet Seppa Solutions von anderen Herstellern?",
+      "answer": "Seppa betrachtet Schraubenkälteanlagen als integrierte Prozesskomponente. Von der thermodynamischen Lastanalyse bis zur Übergabe wird das System individuell maßgeschneidert."
+    }
+  ]
+}

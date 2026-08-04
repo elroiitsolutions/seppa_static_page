@@ -1,1 +1,105 @@
-{}
+{
+  "title": "Großflaschen-Abfüllmaschine",
+  "breadcrumbName": "Großflaschen-Abfüllmaschine",
+  "rootBreadcrumbName": "Ausrüstung",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Großflaschen-Abfüllmaschine: Engineering für die Zukunft der Hochleistungs-Flüssigkeitsverarbeitung",
+  "overviewDescription": "Der weltweite Bedarf an Trinkwasser, industriellen Flüssigkeiten und kommerziellen Flüssigprodukten wächst kontinuierlich. Herkömmliche Abfüllanlagen sind jedoch häufig nicht für große Behälter und die damit verbundenen mechanischen Belastungen ausgelegt.",
+  "overviewsubDescription": [
+    "Gewicht, Flüssigkeitsdynamik und strukturelle Anforderungen verändern sich erheblich, sobald große Flaschen verarbeitet werden.",
+    "Die SEPPA PLC-Serie wurde speziell für diese Anforderungen entwickelt. Sie verarbeitet schwere Großgebinde mit hoher Präzision und reduziert gleichzeitig Kontaminationsrisiken. Die Kombination aus stabiler Maschinenkonstruktion und intelligenter Automatisierung macht den Unterschied zwischen einer Standardlösung und einer echten industriellen Großflaschen-Abfüllmaschine."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Übersicht der Großflaschen-Abfüllmaschine",
+      "paragraphs": [
+        "Ein gefüllter 5-Gallonen-Behälter wiegt etwa 19 kg. Bei einer Leistung von 40 Flaschen pro Minute entstehen hohe mechanische Belastungen entlang der gesamten Linie. Leichtere Verpackungssysteme können dadurch Verschleiß, Ausrichtungsfehler und ungeplante Stillstände entwickeln.",
+        "SEPPA setzt deshalb auf einen verstärkten hygienischen Edelstahl-Monoblockrahmen, der Vibrationen und Dauerbelastungen während des Hochgeschwindigkeitsbetriebs absorbiert.",
+        "Gleichzeitig sorgt eine kontrollierte Flüssigkeitsführung mit mehrstufigen Füllgeschwindigkeiten für schnelle Zykluszeiten ohne Schaumbildung oder Produktverluste."
+      ]
+    }
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen",
+  "featuresSubtitle": "Die SEPPA Evats PLC-Serie kombiniert robuste Mechanik mit moderner Steuerungstechnik. Jede Komponente ist darauf ausgelegt, Verfügbarkeit zu erhöhen, Betriebskosten zu reduzieren und verschiedene Behältergrößen flexibel zu verarbeiten.",
+  "features": [
+    {
+      "title": "Hochleistungs-Fördertechnik und schnelle Indexierung",
+      "description": "Das Bewegen leerer und gefüllter Großbehälter erfordert eine besonders stabile Fördertechnik. Eine automatische Wasserabfüllmaschine für große Flaschen benötigt leistungsstarke VFD-gesteuerte Förderanlagen mit hohem Drehmoment."
+    },
+    {
+      "title": "Verschleißfeste Führungselemente",
+      "description": "Verstärkte Halsführungen und verschleißfeste Führungselemente verhindern, dass große Flaschen während schneller Transfers kippen oder ihre Position verändern. Dadurch bleibt der gesamte Produktionsablauf stabil und zuverlässig."
+    },
+    {
+      "title": "Präzise Füllverteiler und absenkbare Ventilsysteme",
+      "description": "Das Herzstück der Abfülltechnik bilden Edelstahl-Füllköpfe, die direkt in den Flaschenhals abgesenkt werden. Die automatisierten Füllventile arbeiten mit zwei definierten Stufen: Hochdruck-/Hochstromfüllung für schnellen Produkttransfer und Niederdruck-/Niedrigstromfüllung für kontrollierte Endbefüllung. Diese Technologie reduziert Luftblasen, verhindert Turbulenzen und gewährleistet gleichmäßige Füllstände bei jedem Behälter."
+    },
+    {
+      "title": "Automatische Verschließung und Drehmomentkontrolle",
+      "description": "Bei Großbehältern ist eine präzise Verschließtechnik entscheidend. Der Verschluss muss sicher abdichten, ohne Gewinde oder Flaschenhals zu beschädigen. SEPPA-Systeme verwenden automatische Sortier- und Zuführeinheiten sowie pneumatische Verschließköpfe mit kontrollierter Drehmomentregelung. Dadurch werden Leckagen während Transport und Lagerung vermieden."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Großflaschen-Abfüllmaschinen?",
+    "description": "Internationale Getränke- und Produktionsunternehmen setzen auf SEPPA, weil die Anlagen für kontinuierlichen Mehrschichtbetrieb und anspruchsvolle industrielle Bedingungen entwickelt wurden.",
+    "paragraphs": [
+      "Der Prozess umfasst:",
+      "Automatische Flaschenzuführung: Robuste Fördertechnik positioniert leere Behälter präzise.",
+      "3- bis 14-stufige Reinigung: Innen- und Außenflächen werden gründlich hygienisiert.",
+      "Abfüllung mit absenkbaren Ventilen: Kontrollierte Flüssigkeitszufuhr verhindert Spritzen und Schaumbildung.",
+      "Drehmomentüberwachtes Verschließen: Gleichbleibende Verschlussqualität bei jeder Flasche.",
+      "Dichtheitsprüfung und Qualitätskontrolle: Jede Einheit wird vor der Ausgabe geprüft.",
+      "Die SEPPA PLC-Serie bietet außerdem flexible Formatwechsel. Unterschiedliche Großflaschenformen und -größen können mit minimalen Umrüstungen verarbeitet werden. Hersteller können dadurch neue Verpackungsdesigns einführen, ohne eine komplett neue Abfüllanlage zu benötigen.",
+      "Integrierte Sensorsysteme bieten Funktionen wie „No Bottle No Wash“ und „No Bottle No Fill“. Diese Schutzfunktionen vermeiden Wasser-, Chemikalien- und Produktverluste und verhindern Schäden durch Trockenlauf. Über eine moderne HMI-Touchscreen-Steuerung lassen sich Waschzeiten, Füllzeiten und Indexierungsintervalle zentral kontrollieren."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodik",
+    "title": "Arbeitsweise des Flaschenwasch-, Abfüll- und Verschließprozesses",
+    "subtitle": "Jede SEPPA Großflaschen-Abfülllinie arbeitet in einem klar definierten Prozess.",
+    "steps": [
+      {
+        "title": "Schritt 1: Vollautomatische Beladung",
+        "description": "Leere Behälter werden über das Zuführband transportiert. Ein pneumatisches Robotersystem mit optischen Sensoren positioniert die Flaschen automatisch in den Halterungen. Dadurch werden manuelle Eingriffe reduziert und eine konstante Positionierung sichergestellt."
+      },
+      {
+        "title": "Schritt 2: Mehrstufige Innen- und Außenreinigung",
+        "description": "Je nach Anwendung erfolgt die Reinigung über 3 bis 14 Prozessstufen. Nylo-Brüssel-Bürsten und winkelverstellbare Sprühdüsen von 0° bis 15° reinigen Innen- und Außenflächen einschließlich Halsbereich. Der Reinigungsprozess umfasst: Gefilterte Wasserwäsche (Entfernung loser Verschmutzungen), Heißwasser-Reinigung mit Reinigungsmittel (Entfernung organischer Rückstände und Öle), Heißwasserspülung (Entfernung von Reinigungsmittelresten und thermische Desinfektion) und Ozonisiertes Wasser (Antimikrobielle Endspülung vor der Befüllung). Das Spülwasser wird über Edelstahlfiltersysteme und Recyclingbehälter wiederverwendet, wodurch der Wasserverbrauch reduziert wird."
+      },
+      {
+        "title": "Schritt 3: Präzise Hochgeschwindigkeitsbefüllung",
+        "description": "Nach der Reinigung gelangen die Behälter in den Füllbereich. Die Edelstahl-Füllköpfe fahren in den Flaschenhals ein und steuern den Füllvorgang über die PLC-Regelung. Die Flüssigkeit wird entlang der Innenwand eingebracht, wodurch Lufttaschen, Schaumbildung und Spritzverluste vermieden werden."
+      },
+      {
+        "title": "Schritt 4: Drehmomentüberwachtes Verschließen und Prüfung",
+        "description": "Nach der Befüllung erfolgt direkt der Verschlussprozess. Der Verschluss wird automatisch ausgerichtet und mit definiertem Drehmoment angebracht. Fehlt ein Verschluss, erkennt das System dies automatisch und stoppt den Prozess. Anschließend durchläuft jeder Behälter eine automatische Dichtheitsprüfung."
+      }
+    ],
+    "outro": [
+      "Fazit. Eine moderne Großflaschen-Abfüllmaschine muss weit mehr leisten als reine Befüllung. Sie muss schwere Behälter sicher transportieren, höchste Hygienestandards erfüllen und gleichzeitig konstante Produktionsgeschwindigkeit gewährleisten. Mit der SEPPA PLC-Serie erhalten Hersteller eine integrierte Lösung für Reinigung, Abfüllung und Verschließung großer Behälter – entwickelt für zuverlässigen Dauerbetrieb, flexible Formate und langfristige Produktionssicherheit."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Wie gewährleistet die Reinigung eine vollständige mikrobiologische Sicherheit?",
+      "answer": "SEPPA Großflaschen-Abfüllmaschinen kombinieren bis zu 14 Reinigungsstufen mit Heißwasser, Reinigungsmittel und ozonisiertem Wasser. Durch die gezielte Sprühtechnik werden Innen- und Außenkontaminationen vor der Befüllung entfernt."
+    },
+    {
+      "question": "2. Welche Vorteile bietet eine automatische Wasserabfüllmaschine?",
+      "answer": "Automatische Systeme ermöglichen Produktionsleistungen bis zu 40 Flaschen pro Minute, reduzieren Personalkosten und minimieren Bedienfehler. Automatisierte Zuführung, Reinigung, Befüllung und Verschließung erhöhen die Effizienz der gesamten Anlage."
+    },
+    {
+      "question": "3. Wie verhindert die Flüssigkeitsabfüllmaschine Schaumbildung?",
+      "answer": "Absenkbare Füllventile und eine zweistufige Befüllung mit hoher und niedriger Durchflussrate kontrollieren die Flüssigkeitsbewegung. Dadurch bleibt der Produktstrom gleichmäßig und Turbulenzen werden vermieden."
+    },
+    {
+      "question": "4. Welche Wartung benötigt eine Großflaschen-Abfüllanlage?",
+      "answer": "Regelmäßige Wartung umfasst die Schmierung der Förderlager, Prüfung pneumatischer Komponenten und Kalibrierung der Verschließköpfe. Die robuste Edelstahlkonstruktion ermöglicht schnelle Reinigung und kurze Wartungszeiten."
+    },
+    {
+      "question": "5. Warum gehört SEPPA zu den führenden Herstellern von Großflaschen-Abfüllmaschinen?",
+      "answer": "SEPPA verbindet stabile Maschinenkonstruktion, flexible Linienkonzepte und intelligente PLC/HMI-Automatisierung. Durch Mehrformatfähigkeit, Wasserrecycling und zuverlässige Komponenten entsteht eine wirtschaftliche Lösung mit niedrigen Gesamtbetriebskosten."
+    }
+  ]
+}

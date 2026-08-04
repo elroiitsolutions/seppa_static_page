@@ -1,0 +1,112 @@
+{
+  "title": "Industriële Opleidingen & Training",
+  "breadcrumbName": "Training",
+  "rootBreadcrumbName": "Diensten",
+  "rootBreadcrumbPath": "/services",
+  "overviewTitle": "Industriële Opleidingen: De Investering Die Uw Apparatuur Pas Echt Laat Renderen",
+  "overviewDescription": "Je kunt de meest geavanceerde productielijn ter wereld installeren, maar zonder operators die precies weten wat ze doen, blijft die investering onder haar potentieel presteren. Dat is een les die we bij Seppa Solutions keer op keer bevestigd zien: de machine is zelden het probleem, de bediening wel. Industriële opleidingen zijn daarom een integraal onderdeel van elk project dat serieus rendement wil halen uit nieuwe of bestaande apparatuur.",
+  "overviewsubDescription": [
+    "Onze industriële opleidingen zijn opgebouwd rond geïntegreerde opleidingssystemen die verder gaan dan een handleiding doorbladeren. We combineren theorie, praktijk en storingssimulatie tot een programma dat operators daadwerkelijk voorbereidt.",
+    "Elke reeks industriële opleidingen start met een grondige analyse van de bestaande vaardigheden en sluit af met een meetbare certificering. Dit geldt voor zowel gerichte machinetraining als bredere productietraining voor een hele ploeg."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van Professionele Industriële Trainingsprogramma's",
+      "paragraphs": [
+        "De ROI van industriële opleidingen wordt ruimschoots terugverdiend door minder stilstand die veroorzaakt wordt door operatorfouten (verkeerd ingestelde vulkop, gemiste alarmering).",
+        "Een operator die na een gerichte machinetraining een storingscode zelf kan interpreteren voorkomt dat kleine vertragingen zich opstapelen tot uren productieverlies.",
+        "Operators die hun apparatuur echt begrijpen signaleren vroege tekenen van slijtage of verkeerde instellingen via een specialistische technische opleiding. Zo worden zij het verlengstuk van uw onderhoudsteam."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Industriële Trainingsprogramma's van Seppa Solutions",
+  "featuresSubtitle": "Praktijkgerichte modules en simulatiewerkvormen voor maximale kennisoverdracht:",
+  "features": [
+    {
+      "title": "Interactieve Fabriekssimulaties",
+      "description": "Operators oefenen actief met storingsscenario's en PLC-fouten in een risicovrije simulatieomgeving."
+    },
+    {
+      "title": "Praktijkgerichte Technische Opleiding",
+      "description": "Afwisseling van korte theoretische blokken met directe praktijkoefeningen op relevante apparatuur."
+    },
+    {
+      "title": "Dashboard- & SCADA Optimalisatie",
+      "description": "Training in het juist aflezen en interpreteren van dashboards voor optimale snelheidsregeling en handovers."
+    },
+    {
+      "title": "Geïntegreerde Veiligheidsprotocollen",
+      "description": "Directe integratie van Lockout-Tagout (LOTO) en veiligheidsnormen in alle bedieningsoefeningen."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in Productie en Verpakkingsindustrieën",
+  "applicationsSubtitle": "Gespecialiseerde trainingsprogramma's per type productielijn:",
+  "applications": [
+    {
+      "title": "High-Speed Bottellijn Training",
+      "description": "Praktijkgerichte bottellijn training over doseerprecisie, station-synchronisatie en snelle storingsafhandeling."
+    },
+    {
+      "title": "Verpakkingslijnen & Machinebediening",
+      "description": "Strak instellen van sensoren, snelle storingsdiagnose en veilig ingrijpen bij vastlopers."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Industriële Trainingsdiensten van Seppa Solutions",
+    "description": "Leerprogramma's specifiek ontwikkeld op basis van uw apparatuur, productmix en ervaringsniveau.",
+    "paragraphs": [
+      "Docenten met Veldervaring: Onze trainers zijn ervaren veldingenieurs die de druk van een actieve productievloer kennen.",
+      "OEM-Niveau Onderhoudstraining: Wij leiden uw interne technici op om complexe aanpassingen en overhauls zelfstandig uit te voeren.",
+      "100% Maatwerk op uw Fabrieksindeling: Geen kant-en-klare pakketten, maar modules afgestemd op uw machines."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Onze Methodologie voor Industriële Trainingen",
+    "subtitle": "Een gestroomlijnd 4-staps gefaseerd natraject:",
+    "steps": [
+      {
+        "title": "1. Nulmeting & Vaardighedenanalyse",
+        "description": "Grondige analyse van het huidige kennisniveau en identificatie van verborgen lacunes."
+      },
+      {
+        "title": "2. Risicovrije Simulatietraining",
+        "description": "Oefenen van storingsoplossing en parameter-instellingen op interactieve fabriekssimulatoren."
+      },
+      {
+        "title": "3. Live Validatie op de Werkvloer",
+        "description": "Begeleiding bij live ombouwen en lijnbediening onder echte productieomstandigheden."
+      },
+      {
+        "title": "4. Langetermijn-tracking & Certificering",
+        "description": "Borging van opgedane vaardigheden en periodieke vervolgsessies via onderhoudstraining."
+      }
+    ],
+    "outro": [
+      "Conclusie: Gekwalificeerde medewerkers zijn de doorslaggevende succesfactor voor een hoogwaardige en rendabele productie."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Hoe beïnvloedt machinetraining de Overall Equipment Effectiveness (OEE)?",
+      "answer": "Doelgerichte machinetraining reduceert micro-stops, versnelt ombouwtijden en verhoogt de draaisnelheid merkbaar."
+    },
+    {
+      "question": "Wat is de omvang van de industriële trainingsdiensten van Seppa?",
+      "answer": "Van mechanica, pneumatica en vloeistofdynamica tot PLC-diagnostiek, veiligheid en ploegenoverdracht."
+    },
+    {
+      "question": "Wat is het verschil tussen machinetraining en onderhoudstraining?",
+      "answer": "Machinetraining richt zich op dagelijkse bediening en ombouw; onderhoudstraining leidt technici op in root-cause analyse en overhauls."
+    },
+    {
+      "question": "Wat is de langetermijn-ROI van technische opleidingen?",
+      "answer": "Minder derden-servicekosten, lagere afvalpercentages bij ombouw en langere levensduur van uw kostbare apparatuur."
+    },
+    {
+      "question": "Waarom is Seppa Solutions koploper in industriële opleidingen?",
+      "answer": "Omdat wij praktijkgerichte trainingen bieden die worden gegeven door actieve veldingenieurs op uw eigen of identieke apparatuur."
+    }
+  ]
+}

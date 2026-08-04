@@ -1,0 +1,147 @@
+{
+  "title": "Über SEPPA Solutions | Getränkeverarbeitungsanlagen und komplette Produktionssysteme",
+  "breadcrumbName": "Über uns",
+  "whoWeAre": {
+    "title": "Wer wir sind",
+    "description": "SEPPA Solutions entwickelt und liefert Getränkeverarbeitungsanlagen sowie schlüsselfertige Produktionssysteme für Flüssigkeitshersteller weltweit. Unser Ziel ist nicht nur eine Anlage, die auf dem Papier überzeugt – wir bauen Produktionssysteme, die im täglichen Betrieb zuverlässig funktionieren.",
+    "subDescription": [
+      "Unsere Kunden kommen aus unterschiedlichsten Bereichen der Getränkeindustrie: Mineralwasser, karbonisierte Erfrischungsgetränke, Säfte, Milchprodukte, Bier, Wein, Spirituosen und Ready-to-Drink-Produkte. Manche Unternehmen starten mit detaillierten Engineering-Plänen, andere mit einem Produkt und einer leeren Produktionshalle. In beiden Fällen entwickeln wir die passende technische Lösung und begleiten das Projekt so lange, bis die Anlage die gewünschten Produktionsziele erreicht.",
+      "Was SEPPA Solutions von klassischen Maschinenlieferanten unterscheidet, ist die durchgängige Verantwortung über den gesamten Projektablauf. Unser Team übernimmt Beratung, Anlagenplanung, Engineering, Fertigung, Installation, Inbetriebnahme und technischen Support. Ein zentraler Ansprechpartner begleitet das komplette Projekt – ein Ansatz, den viele Anbieter nicht bieten."
+    ]
+  },
+  "whatWeBuild": {
+    "title": "Was wir bauen",
+    "paragraphs": [
+      "Der internationale Markt für Getränkeverarbeitungsanlagen hat 2025 die Marke von 29 Milliarden US-Dollar überschritten. Das Wachstum wird durch die steigende Nachfrage nach verpackten Getränken, zunehmende Automatisierung und strengere Anforderungen an Lebensmittelsicherheit unterstützt.",
+      "SEPPA Solutions entwickelt Produktionssysteme für zwei zentrale Anwendungsbereiche: Unternehmen, die eine neue Produktionsanlage aufbauen, und Hersteller, die bestehende Produktionskapazitäten erweitern möchten. Jede Anlage wird individuell ausgelegt. Wir orientieren uns nicht an Standardkatalogen, sondern analysieren Produktionsziele, Produktsortiment und vorhandene Standortbedingungen. Daraus entsteht eine technische Lösung, die exakt auf die Anforderungen des Kunden abgestimmt ist.",
+      "Unsere Systeme unterstützen zahlreiche Verpackungsformate: PET-Flaschen, Dosen, Glasflaschen, Beutelverpackungen, Kartonverpackungen, Gable-Top-Verpackungen und aseptische Großgebinde. Jedes Format stellt eigene Anforderungen an Abfüllprozess, Hygiene, Materialhandling und nachgelagerte Verpackungstechnik. Wir entwickeln komplette Produktionslinien für diese unterschiedlichen Anwendungen."
+    ]
+  },
+  "expertise": {
+    "title": "Unsere Expertise in Getränkeverarbeitungslösungen",
+    "paragraphs": [
+      "Wenn ein Kunde uns bittet, Saftproduktionslinien zu entwerfen, fragen wir als Erstes nach dem Fruchtfleischanteil im Produkt, da dieser Wert maßgeblich den Pumpentyp und den Rohrdurchmesser bestimmt. Wir haben Saftproduktionslinien für Konzentrate sowie für frische, minimal verarbeitete Produkte realisiert. Der technische Unterschied zwischen beiden Anwendungen ist enorm, auch wenn das Endprodukt im Regal sehr ähnlich aussieht.",
+      "In einem völlig anderen Bereich erfordern die von uns entwickelten Bierproduktionslinien ein ganz anderes Maß an Präzision, da wir den Kohlendioxidgehalt kontrollieren und die Abfülltemperatur in einem sehr engen Rahmen halten müssen. Jede kleinste Abweichung bei Bierlinien kann den Schaum oder die Haltbarkeit beeinträchtigen. Daher nutzen wir Steuerungseinheiten, die die Geschwindigkeit basierend auf Sensorwerten in Echtzeit anpassen.",
+      "Die von uns hergestellten Getränkeverarbeitungsanlagen arbeiten nicht isoliert, sondern als vernetztes System. Flüssigkeitsabfüllmaschinen sind direkt mit den Blaseinheiten gekoppelt. Hier kommen unsere PET-Flaschenblasmaschinen ins Spiel, die so entwickelt wurden, dass sie die Übergangszeiten zwischen verschiedenen Flaschengrößen minimieren. Während herkömmliche Blasmaschinen viel Zeit für das Umrüsten benötigten, verkürzt unser Design diese Zeit auf wenige Minuten.",
+      "Industrielle Automatisierung ist ein wesentlicher Teil unserer DNA. Wir setzen programmierbare SPS-Systeme ein, die jede Phase vom Waschen bis zum Abfüllen überwachen und sofort Alarm schlagen, wenn Grenzwerte überschritten werden. Dies macht unsere Anlagen berechenbarer und reduziert ungeplante Stillstandszeiten, die in Fabriken zu erheblichen Verlusten führen können.",
+      "In einem kürzlich durchgeführten Projekt wünschte ein Kunde die Integration von drei separaten Linien – Saft, Wasser und kohlensäurehaltige Getränke – unter einer einzigen zentralen Steuerung. Dies erforderte eine umfassende Programmierung der Controller, aber das Ergebnis waren harmonisch arbeitende Produktionslinien ohne den Bedarf an drei separaten Teams, was langfristig erhebliche Personalkosten sparte."
+    ]
+  },
+  "equipment": {
+    "title": "Von SEPPA Solutions gelieferte Anlagen und Komponenten",
+    "subtitle": "Von der präzisen Abfüllung bis zur effizienten Verpackung konstruieren wir Komponenten für jede Phase Ihrer Produktionslinie.",
+    "features": [
+      {
+        "title": "Verarbeitungssysteme",
+        "description": "Die Basis jeder modernen Getränkeproduktion bilden leistungsfähige Verarbeitungssysteme. Dazu gehören Wärmetauscher, Mischsysteme, Karbonisierungseinheiten, Homogenisatoren, Filtersysteme und CIP-Reinigungssysteme. Diese Komponenten bilden das technische Fundament."
+      },
+      {
+        "title": "Flüssigkeitsabfüllmaschinen",
+        "description": "SEPPA Solutions liefert Flüssigkeitsabfüllmaschinen für verschiedene Produkte wie stilles Wasser, karbonisierte Getränke, Säfte, Spirituosen, Milchprodukte und Wein. Jede Abfüllanlage wird entsprechend der Viskosität, des Kohlensäuregehalts und der Füllgenauigkeit ausgelegt."
+      },
+      {
+        "title": "PET-Blasmaschinen",
+        "description": "Für die Herstellung eigener PET-Behälter bieten wir automatische und halbautomatische PET-Blasmaschinen für verschiedene Flaschenformen und Größen. Unsere Weithals-Blasmaschinen eignen sich besonders für Wasserspender und Lebensmittelverpackungen."
+      },
+      {
+        "title": "Rinser-Füller-Verschließer-Systeme",
+        "description": "Monoblock-Systeme aus Rinser, Füller und Verschließer ermöglichen eine schnelle, hygienische und zuverlässige Verarbeitung von stillen sowie karbonisierten Getränken, angepasst an Ausbringung, Flaschen- und Deckeltyp."
+      },
+      {
+        "title": "Verpackungslösungen",
+        "description": "Unsere Verpackungslösungen umfassen Etikettiermaschinen, Schrumpfverpackungssysteme, Kartonhandling, Stretchwickler, Kistenstapler und Palettiertechnik. Jede Lösung wird an Liniengeschwindigkeit, Format und Layout angepasst."
+      },
+      {
+        "title": "Abfüllanlagen & komplette Bottling-Line-Systeme",
+        "description": "Komplette Abfüllanlagen für Wasser, Softdrinks, Säfte, Bier, Wein und Spirituosen. Auch Mehrprodukt- und Multi-SKU-Anwendungen können integriert werden, wenn unterschiedliche Produkte oder Behältergrößen auf einer Linie verarbeitet werden sollen."
+      }
+    ]
+  },
+  "whyChooseText": {
+    "title": "Warum SEPPA Solutions?",
+    "paragraphs": [
+      "Der technische Support nach der Lieferung unterscheidet uns von vielen Anbietern. Unser Team beantwortet Ersatzteilanfragen innerhalb weniger Stunden, da wir wissen, dass ein eintägiger Stillstand einer Linie den Kunden weit mehr kosten kann als das Ersatzteil selbst. Wir halten wichtige Komponenten für unsere gängigsten Modelle, einschließlich der Blasmaschinen, stets auf Lager.",
+      "Innovation ist für uns kein Marketing-Slogan, sondern ein fortlaufender Prozess. Wir optimieren unsere Konstruktionen jährlich basierend auf Kundenfeedback. Als wir sahen, dass Filter bei dickflüssigen Säften verstopfen, entwickelten wir ein selbstreinigendes System, das manuelle Eingriffe deutlich reduziert.",
+      "Energieeffizienz nehmen wir sehr ernst, da Stromkosten einen erheblichen Teil der Betriebskosten ausmachen. Die neu entwickelten Bierproduktionslinien verbrauchen dank energiesparender Motoren und optimierter Kühlkreisläufe deutlich weniger Energie als die Vorgängergeneration.",
+      "Flexibilität in der Fertigung ist ein weiterer Punkt, auf den wir stolz sind. Wenn ein Kunde zwei Monate nach Vertragsunterzeichnung Designänderungen wünscht, behandeln wir dies als normalen Teil des Prozesses, solange Sicherheitsstandards eingehalten werden. Dies erfordert zwar manchmal mehr Zeit, baut aber die langfristigen Beziehungen auf, die uns auszeichnen."
+    ]
+  },
+  "industriesText": {
+    "title": "Branchen, die wir bedienen",
+    "paragraphs": [
+      "Die Bedürfnisse der einzelnen Branchen unterscheiden sich grundlegend. Im Wasserbereich stehen Geschwindigkeit und Sterilisation im Vordergrund. Im Molkereibereich ist die mikrobiologische Reinheit der wichtigste Aspekt beim Design der Flüssigkeitsabfüllmaschinen. Bei kohlensäurehaltigen Getränken liegt die Herausforderung darin, Druck und Gas verlustfrei im gesamten Zyklus zu halten.",
+      "Wir haben Sportgetränke- und Vitaminwasserlinien realisiert, die eine exakte Dosierung erfordern. Ebenso arbeiten wir mit Weingütern und Spirituosenherstellern zusammen, die besondere Anforderungen an die Filtration und die schonende Abfüllung stellen.",
+      "Die von uns gelieferten Getränkeverarbeitungsanlagen sind modular aufgebaut. So konnte ein Kunde, der vor drei Jahren mit einer Linie startete, problemlos drei weitere hinzufügen, ohne die bestehende Infrastruktur zu beeinträchtigen.",
+      "Ein wachsender Bereich sind funktionelle Getränke und flüssige Nahrungsergänzungsmittel. Hier überschneiden sich traditionelle Fruchtsaftlinien mit den präzisen Dosierungsstandards der Pharmaindustrie. Jedes Projekt in diesem Bereich stellt eine spannende, neue Engineering-Herausforderung dar."
+    ]
+  },
+  "industries": {
+    "title": "Branchen, die wir bedienen",
+    "subtitle": "Individuelle Lösungen für die spezifischen Anforderungen der Getränke- und Lebensmittelbranchen.",
+    "features": [
+      {
+        "title": "Wasserproduktion",
+        "description": "Produktionslinien für stilles Wasser, Mineralwasser, alkalisches Wasser, Tafelwasser, aromatisiertes Wasser und Vitaminwasser. Die Anlagen werden entsprechend Füllleistung und Verpackungsformat ausgelegt – von kleinen PET-Flaschen bis zu 19-Liter-Gebinden."
+      },
+      {
+        "title": "Kohlensäurehaltige Getränke",
+        "description": "Komplette Anlagen für Carbonated Soft Drinks (CSD) inklusive Karbonisierung, Sirupdosierung, Mischen und Hochgeschwindigkeitsabfüllung, ausgelegt auf Auslastung und Behältertyp."
+      },
+      {
+        "title": "Säfte, Nektare & isotonische Getränke",
+        "description": "Heißabfüll- und Kaltabfüllsysteme für Säfte, Nektare, Sportgetränke und Teegetränke. Je nach gewünschter Haltbarkeit stehen Pasteurisierungs- und aseptische Lösungen zur Verfügung."
+      },
+      {
+        "title": "Bier & Brauereitechnik",
+        "description": "Brautechnik, Fermentation, Filtration, Tunnelpasteurisierung und komplette Bierabfülltechnik für Craft-Brauereien und industrielle Hersteller."
+      },
+      {
+        "title": "Wein, Spirituosen & RTDs",
+        "description": "Verarbeitungssysteme und Verpackungslösungen für Wein, Met, Spirituosen, Ready-to-Drink-Getränke und Hard Seltzer in Glas-, PET- und Dosenformaten."
+      },
+      {
+        "title": "Milchprodukte",
+        "description": "Flüssigverarbeitung und Abfüllsysteme für Milch, aromatisierte Milchgetränke und UHT-Produkte."
+      },
+      {
+        "title": "Saucen & Ketchup",
+        "description": "Abfüllsysteme für viskose Produkte wie Tomatenprodukte, Ketchup und fließfähige Saucen mit passenden Ventilkonfigurationen für unterschiedliche Produktviskositäten."
+      }
+    ]
+  },
+  "whyChoose": {
+    "title": "Warum Hersteller SEPPA Solutions wählen",
+    "description": "Im Bereich Getränkeverarbeitungsanlagen gibt es zahlreiche Anbieter. Der Unterschied zeigt sich jedoch in der technischen Umsetzung und langfristigen Zusammenarbeit. SEPPA Solutions liefert keine Standardkonfigurationen. Jede Produktionslinie wird auf Produkt, Kapazität und Anlagenumgebung abgestimmt.",
+    "paragraphs": [
+      "Der Unterschied zwischen einer Anlage mit 85 % und einer mit 95 % Effizienz liegt häufig in den technischen Details: optimale Maschinenabfolge, intelligente Pufferzonen, integrierte CIP-Systeme und benutzerfreundliche Bedienkonzepte. Diese Faktoren entstehen durch Engineering-Erfahrung – nicht durch die Auswahl aus einem Standardkatalog.",
+      "Auch komplexe Projekte gehören zu unserer Kompetenz: Mehrformatanlagen, Multiproduktlinien, parallele Flüssigkeits- und Kartonproduktion sowie schrittweise Erweiterungsprojekte. Wir übernehmen die technische Komplexität, damit sich unsere Kunden auf ihre Produktion konzentrieren können.",
+      "Durch internationale Projektbetreuung, regionale Unterstützung und zuverlässige Ersatzteillogistik bleiben wir auch nach der Installation ein verlässlicher Partner."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Welche Getränkeverarbeitungsanlagen liefert SEPPA Solutions?",
+      "answer": "Wir liefern Verarbeitungssysteme, PET-Blasmaschinen, Rinser-Füller-Verschließer-Einheiten, Flüssigkeitsabfüllmaschinen, Etikettiertechnik, Codiersysteme, Schrumpfverpackung, Kartonhandling, Palettiertechnik und komplette integrierte Produktionslinien."
+    },
+    {
+      "question": "2. Können Verpackungslösungen an bestehende Produktionsanlagen angepasst werden?",
+      "answer": "Ja. Jede Verpackungslösung wird entsprechend Kapazität, Produktanforderungen, Gebäudestruktur und betrieblichen Abläufen entwickelt."
+    },
+    {
+      "question": "3. Übernimmt SEPPA internationale Anlageninstallationen?",
+      "answer": "Ja. Wir unterstützen internationale Projekte mit Projektmanagement, Vor-Ort-Service und technischer Betreuung in verschiedenen Ländern und Regionen."
+    },
+    {
+      "question": "4. Wie berücksichtigt SEPPA Lebensmittelsicherheit bei der Anlagenplanung?",
+      "answer": "Lebensmitteltaugliche Edelstahloberflächen, CIP-Kompatibilität, automatische Reinigungssysteme und geschlossene Antriebseinheiten werden bereits in der technischen Planung berücksichtigt."
+    },
+    {
+      "question": "5. Warum ist eine schlüsselfertige Produktionslinie sinnvoller als einzelne Maschinen verschiedener Hersteller?",
+      "answer": "Eine Turnkey-Lösung reduziert Integrationsrisiken. Alle Maschinen werden aufeinander abgestimmt und arbeiten als Gesamtsystem. Bei Einzelbeschaffung liegt die Verantwortung für Schnittstellen und Kompatibilität beim Betreiber."
+    }
+  ],
+  "outro": [
+    "Fazit: Ihr Partner für moderne Getränkeproduktionsanlagen. SEPPA Solutions entwickelt Getränkeverarbeitungsanlagen und komplette Produktionslinien für Hersteller, die Wert auf zuverlässige Technik, effiziente Prozesse und langfristige Produktionssicherheit legen. Von der ersten Planung bis zur erfolgreichen Inbetriebnahme begleiten wir unsere Kunden mit Engineering-Kompetenz, branchenspezifischem Know-how und maßgeschneiderten Lösungen für die internationale Getränkeindustrie."
+  ]
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -30,6 +31,9 @@ export default async function LocalizedCartonHandlingPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'carton' });
   const messages = await getMessages({ locale });
 
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/carton-handling', locale);
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -40,36 +44,26 @@ export default async function LocalizedCartonHandlingPage({ params }: Props) {
     overviewDescription: t('overviewDescription'),
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
-    contentBlocks: [
-      {
-        title: t('contentBlocks.0.title'),
-        paragraphs: t.raw('contentBlocks.0.paragraphs'),
-        image1: img1.src,
-        reverse: true
-      },
-      {
-        title: t('contentBlocks.1.title'),
-        paragraphs: t.raw('contentBlocks.1.paragraphs'),
-        image1: img2.src,
-        reverse: false,
-        bgClass: "bg-light"
-      },
-      {
-        title: t('contentBlocks.2.title'),
-        paragraphs: t.raw('contentBlocks.2.paragraphs'),
-        image1: img3.src,
-        reverse: true
-      }
-    ],
+    contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
+      title: block.title,
+      paragraphs: block.paragraphs,
+      image1: [img1.src, img2.src, img3.src][index] || img1.src,
+      reverse: index % 2 === 0,
+      bgClass: index === 1 ? "bg-light" : "bg-white"
+    })),
+    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    features: t.has('features') ? t.raw('features') : undefined,
+    applicationsTitle: t.has('applicationsTitle') ? t('applicationsTitle') : undefined,
+    applications: t.has('applications') ? t.raw('applications') : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
       image: over.src
     },
     methodology: {
       title: t('methodology.title'),
-      subtitle: t('methodology.subtitle'),
+      subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : "",
       steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
         title: step.title,
         description: step.description,
@@ -79,6 +73,8 @@ export default async function LocalizedCartonHandlingPage({ params }: Props) {
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

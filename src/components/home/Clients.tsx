@@ -107,6 +107,7 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
 
         {/* Marquee Slider */}
         <motion.div
+          dir="ltr"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
@@ -184,8 +185,7 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
 const LocalizedClients = () => {
   const t = useTranslations('home');
   const locale = useLocale();
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? ((enHome as any).Clients?.[key] || key) : t(`Clients.${key}`);
+  const getT = (key: string) => t(`Clients.${key}`);
   return <ClientsContent getT={getT} />;
 };
 

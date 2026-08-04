@@ -1,0 +1,102 @@
+{
+  "title": "SEPPA SSB-SLE-100 PET Bottle Blowing Machine: Precision Infrared Thermal Conditioning for High Volume Production",
+  "breadcrumbName": "SSB-SLE-100",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Overview of the SEPPA SSB-SLE-100 PET Bottle Blowing Machine",
+  "overviewDescription": "Stretch blow molding lives or dies on one variable most buyers never ask about: how evenly the preform heats before it ever reaches the mold. The SEPPA SSB-SLE-100 was built around that fact. At the center of the machine sits an infrared heating system engineered to bring each preform to a uniform, process ready temperature before the stretch rod and blow air stages take over.",
+  "overviewsubDescription": [
+    "Get that step wrong and everything downstream suffers: thin spots, hazing, stress whitening, bottles that fail a drop test nobody wanted to run twice. Get it right, and a pet preform blowing machine like the SSB-SLE-100 turns out consistent wall distribution, shot after shot, at line speeds that hold up across a full shift. That's the premise behind this piece of bottle manufacturing equipment: molecular orientation in PET depends on heat uniformity, which depends on how well the infrared heating system is tuned to the resin and preform geometry."
+  ],
+  "featuresTitle": "Key Features and Technical Specifications",
+  "features": [
+    {
+      "title": "Multi Zone Infrared Heating System",
+      "description": "The SSB-SLE-100 is built around a multi zone infrared heating system, with lamp banks arranged so operators can dial in intensity zone by zone rather than treating the whole preform as one blanket heated object. Preform necks, bodies, and gate areas don't absorb heat at the same rate, so a single zone oven forces compromises. Independent zone control inside the infrared heating system removes that trade off."
+    },
+    {
+      "title": "Closed Loop Thermal Feedback",
+      "description": "Closed loop thermal feedback sensors track surface temperature in real time and adjust lamp output on the fly, keeping thermal drift out of long runs."
+    },
+    {
+      "title": "Servo Controlled Stretching",
+      "description": "High torque servo motors drive stretch rod kinematics, giving repeatable stroke timing instead of the lag typical of older pneumatic only setups."
+    },
+    {
+      "title": "Continuous Clamping and Quick Changeover",
+      "description": "Clamping units hold rated tonnage through continuous 24 hour operation, without the drop off cheaper tooling shows after a few thousand cycles. Tool less mold changeover cuts changeover time from hours to roughly 20-30 minutes per SKU switch. None of this works without the infrared heating system doing its job first. A pet preform blowing machine can have the best servo kinematics on the market, but if the preform enters the stretch station with an uneven thermal profile, no downstream precision fixes it. That's why Seppa treats heating as the engineering center of the bottle making machine, not an accessory."
+    }
+  ],
+  "applicationsTitle": "Applications Across Beverage, Water, Food, and Packaging Industries",
+  "applicationsSubtitle": "Plants rarely run one product. A bottling line might need 500ml water bottles Monday and 1 liter juice containers by Thursday, and the SSB-SLE-100 handles that kind of switching without a full retooling exercise.",
+  "applications": [
+    {
+      "title": "Water and Beverage Lines",
+      "description": "For water bottlers, the machine pairs naturally with a semi automatic bottle filling machine downstream, letting a mid sized operation run blow molding and filling as one connected process instead of two stations with pallets stacking up between them. Dairy and juice producers adjust preform wall thickness and blow pressure for their different viscosity and hygiene needs, but run the same blowing platform."
+    },
+    {
+      "title": "Food Packaging",
+      "description": "Food packaging customers (sauces, oils, condiments) care less about clarity and more about drop resistance and stackability, so their line settings favour different stretch ratios. Across all of these, the bottle manufacturing equipment stays the same core platform; what changes is the recipe of heat, pressure, and timing loaded for that SKU."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions for PET Bottle Blowing Machines",
+    "description": "Seppa has spent years building bottle manufacturing equipment for plants that can't afford unplanned downtime: three shift bottling operations, co packers juggling multiple SKUs, water plants where a stalled line means missed delivery windows. That reality shapes how the machines get engineered.",
+    "paragraphs": [
+      "FMCG buyers keep coming back to Seppa's pet preform blowing machine line for a practical reason: the machines hold thermal calibration over long runs instead of drifting after the first few hours, which is where competing equipment often shows inconsistency. Understanding PET thermodynamics well enough to build a reliable infrared heating system isn't a marketing claim here; it shows up in fewer service calls.",
+      "Seppa also designs its equipment to integrate cleanly with existing plant infrastructure, whether that means slotting in next to a semi automatic bottle filling machine already in place or working alongside conveying and labeling gear from other vendors. The goal isn't an all Seppa ecosystem; it's a bottle making machine that does its one job well and plays nicely with whatever else is on the floor."
+    ]
+  },
+  "methodology": {
+    "title": "Working Methodology of the SSB-SLE-100 PET Bottle Blowing Machine",
+    "subtitle": "The process itself is straightforward to describe, even though getting each stage right in practice takes real tuning:",
+    "steps": [
+      {
+        "title": "Preform loading",
+        "description": "Preforms feed in via a sorting hopper and orientation wheel, arriving neck up and evenly spaced."
+      },
+      {
+        "title": "Thermal conditioning",
+        "description": "Preforms pass through the infrared heating system, where multi zone lamp banks bring the body to a target window typically 95-105°C for standard PET, adjusted for recycled content resin, which behaves differently under the same lamp settings."
+      },
+      {
+        "title": "Mold clamping",
+        "description": "High precision clamping closes the mold halves with consistent tonnage, verified by pressure sensors every cycle."
+      },
+      {
+        "title": "Stretching and blowing",
+        "description": "The stretch rod extends mechanically while low pressure air pre blows the preform, followed by a high pressure blow stage that pushes material fully into the mold cavity. This two stage approach is what separates a properly engineered pet preform blowing machine from older single stage designs that leave weak spots near the base."
+      },
+      {
+        "title": "Ejection",
+        "description": "Finished bottles eject onto a conveyor, ready to move into a semi automatic bottle filling machine or labeling station, and the cycle restarts before the previous bottle fully clears."
+      }
+    ],
+    "outro": [
+      "Every stage after loading depends on what happened during thermal conditioning. If the infrared heating system delivers an uneven profile, the stretch stage either overstretches thin zones or leaves thick zones under blown, and nothing downstream corrects that. It's why the bottle making machine's control software weights heating parameters above any other single variable."
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How often does the infrared heating system need maintenance?",
+      "answer": "Lamp elements typically need replacement every 3,000-5,000 operating hours, depending on duty cycle. Reflector surfaces should be inspected quarterly, since dust buildup cuts radiant efficiency well before lamps actually fail."
+    },
+    {
+      "question": "Is this bottle making machine capable of handling different resin grades, including rPET?",
+      "answer": "Yes. Recycled content PET absorbs infrared energy differently than virgin resin, so the heating profile needs adjusting: usually a higher target temperature and a longer dwell time. Seppa provides calibration presets for common rPET blends as a starting point."
+    },
+    {
+      "question": "Why does this bottle manufacturing equipment outperform older single zone systems?",
+      "answer": "Multi zone control is the main reason. Single zone ovens heat the whole preform as one unit, forcing a compromise between neck, body, and base temperature. Independent zone control on the SSB-SLE-100 avoids that."
+    },
+    {
+      "question": "How much does an optimized infrared heating system affect production costs?",
+      "answer": "Plants running the SSB-SLE-100 typically report meaningful reductions in per bottle energy use compared to older ovens, mainly from improved reflector design and closed loop feedback that avoids over heating preforms \"just to be safe,\" a common habit on manually tuned lines."
+    },
+    {
+      "question": "Can the SSB-SLE-100 run alongside a semi automatic bottle filling machine we already have on the floor?",
+      "answer": "Generally, yes. Most plants add this bottle making machine to an existing line rather than replacing everything at once, and Seppa's engineers review conveyor spacing and neck finish compatibility before installation to make sure the handoff to filling equipment is clean."
+    }
+  ]
+}

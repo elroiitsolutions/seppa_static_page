@@ -209,7 +209,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             )}
             
             {hasImages && (
-              <div className="relative w-[90%] md:w-[65%] h-[300px] md:h-[400px] mb-20 md:mb-24 mx-auto">
+              <div className="relative w-[90%] md:w-[65%] min-h-[260px] md:min-h-[380px] aspect-[16/10] mb-16 md:mb-20 mx-auto">
                 <motion.div 
                   className={`absolute top-0 left-0 w-full h-full rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10`}
                   initial="hidden"
@@ -247,6 +247,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             <div className="space-y-6 text-start w-full">
               {paragraphs.map((content, idx) => {
                 let isListItem = false;
+                let isBoldPrefix = false;
                 let title = "";
                 let desc = "";
                 
@@ -256,6 +257,13 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                     isListItem = true;
                     title = match[1];
                     desc = match[2];
+                  } else {
+                    const matchPeriod = content.match(/^([^.]+)\.\s+(.*)$/);
+                    if (matchPeriod && matchPeriod[1].split(' ').length <= 10) {
+                      isBoldPrefix = true;
+                      title = matchPeriod[1];
+                      desc = matchPeriod[2];
+                    }
                   }
                 }
 
@@ -267,6 +275,15 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                         <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                         <strong>{title}:</strong> {desc}
+                        {linkPath && isMounted && (
+                          <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
+                            Read More <FiArrowUpRight className="text-xs" />
+                          </Link>
+                        )}
+                      </p>
+                    ) : isBoldPrefix ? (
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                        <strong>{title}.</strong> {desc}
                         {linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
                             Read More <FiArrowUpRight className="text-xs" />
@@ -326,6 +343,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
               <div className="space-y-4 mb-10">
                 {paragraphs.map((content, idx) => {
                   let isListItem = false;
+                  let isBoldPrefix = false;
                   let title = "";
                   let desc = "";
                   
@@ -335,6 +353,13 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       isListItem = true;
                       title = match[1];
                       desc = match[2];
+                    } else {
+                      const matchPeriod = content.match(/^([^.]+)\.\s+(.*)$/);
+                      if (matchPeriod && matchPeriod[1].split(' ').length <= 10) {
+                        isBoldPrefix = true;
+                        title = matchPeriod[1];
+                        desc = matchPeriod[2];
+                      }
                     }
                   }
 
@@ -346,6 +371,15 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                           <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                           <strong>{title}:</strong> {desc}
+                          {linkPath && isMounted && (
+                            <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
+                              Read More <FiArrowUpRight className="text-xs" />
+                            </Link>
+                          )}
+                        </p>
+                      ) : isBoldPrefix ? (
+                        <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                          <strong>{title}.</strong> {desc}
                           {linkPath && isMounted && (
                             <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
                               Read More <FiArrowUpRight className="text-xs" />
@@ -379,7 +413,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             </motion.div>
 
             {/* Images */}
-            <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px] order-1 lg:order-2">
+            <div className="w-full lg:w-1/2 relative min-h-[320px] md:min-h-[420px] lg:min-h-[480px] max-h-[550px] aspect-[4/3] order-1 lg:order-2">
               <motion.div 
                 className={`absolute top-0 right-0 ${image2 ? 'w-[85%] h-[80%]' : 'w-full h-full'} rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10`}
                 initial="hidden"
@@ -442,6 +476,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
             <div className="space-y-6">
               {paragraphs.map((content, idx) => {
                 let isListItem = false;
+                let isBoldPrefix = false;
                 let title = "";
                 let desc = "";
                 
@@ -451,6 +486,13 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                     isListItem = true;
                     title = match[1];
                     desc = match[2];
+                  } else {
+                    const matchPeriod = content.match(/^([^.]+)\.\s+(.*)$/);
+                    if (matchPeriod && matchPeriod[1].split(' ').length <= 10) {
+                      isBoldPrefix = true;
+                      title = matchPeriod[1];
+                      desc = matchPeriod[2];
+                    }
                   }
                 }
 
@@ -462,6 +504,15 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
                         <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                         <strong>{title}:</strong> {desc}
+                        {linkPath && isMounted && (
+                          <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
+                            Read More <FiArrowUpRight className="text-xs" />
+                          </Link>
+                        )}
+                      </p>
+                    ) : isBoldPrefix ? (
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
+                        <strong>{title}.</strong> {desc}
                         {linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
                             Read More <FiArrowUpRight className="text-xs" />

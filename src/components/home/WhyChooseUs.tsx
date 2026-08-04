@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
             viewport={{ once: true, amount: 0.1 }}
             variants={fadeInUp}
           >
-            <div className="rounded-[2rem] overflow-hidden h-[800px] w-full shadow-lg">
+            <div className="rounded-[2rem] overflow-hidden aspect-[4/5] min-h-[380px] max-h-[650px] lg:h-full w-full shadow-lg">
               <img 
                 src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg" 
                 alt="Woman inspecting thread" 

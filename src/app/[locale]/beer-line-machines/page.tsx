@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import imgA from '@/assets/packaging/generated/brewery_line_wide_1781701502517.png';
@@ -27,6 +28,9 @@ export default async function BeerLineMachinesPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'beer' });
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/beer-line-machines', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -59,11 +63,14 @@ export default async function BeerLineMachinesPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [imgE.src, imgF.src, imgG.src, imgH.src, meth4.src][index] || imgE.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import PageHeader from '@/components/layout/PageHeader';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin, FiGlobe, FiChevronDown, FiChevronUp, FiCheck } from 'react-icons/fi';
@@ -16,107 +17,22 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
 
-const offices = [
-  {
-    city: "Mumbai (Corporate Office)",
-    address: "712 Shivai Plaza, Andheri (East), Mumbai-400059, India",
-    phone: ["1-800-425-20000", "+91-9384806105"],
-    email: "info@seppasolutions.com",
-    country: "India"
-  },
-  {
-    city: "Chennai",
-    address: "Vatsala Eashwaran Estate, No. 7, Paarivakkam Road, Chennai - 600056, Tamilnadu, India",
-    phone: ["1-800-425-20000", "+91-9384806105"],
-    email: "dgmw@canadiancrystalline.net",
-    country: "India"
-  },
-  {
-    city: "Bengaluru",
-    address: "4th Floor, Novel office, Begaum Mahal, Yellappachetty Layout, Bengaluru- 560042",
-    phone: ["+91-9483525500"],
-    email: "info@seppasolutions.com",
-    country: "India"
-  },
-  {
-    city: "New Delhi",
-    address: "No.1305, 13th Floor, Vikram Towers, Building no-16, Rajendra place, New Delhi - 110008",
-    phone: ["1-800-425-20000", "+91-9384806105"],
-    email: "info@seppasolutions.com",
-    country: "India"
-  },
-  {
-    city: "Hyderabad",
-    address: "Hyderabad Region",
-    mapQuery: "Hyderabad, India",
-    phone: ["+91-9384806105"],
-    email: "info@seppasolutions.com",
-    country: "India"
-  },
-  {
-    city: "USA",
-    address: "439 N Briery Road, Biery Industrial Area, Irving, Texas",
-    phone: ["Toll Free: 1-(888)-270-2217", "+1 267 7339 732"],
-    email: "mail@seppasolutions.com",
-    country: "USA"
-  },
-  {
-    city: "Canada (Edmonton)",
-    address: "Alberta Region",
-    mapQuery: "Edmonton, Alberta, Canada",
-    mapZoom: 10,
-    phone: ["+1-(403)-469-4015"],
-    email: "ccw@canadianclear.com",
-    country: "Canada"
-  },
-  {
-    city: "UAE",
-    address: "Ajman Free Zone, U.A.E.",
-    phone: ["+971507726933"],
-    email: "mail@seppasolutions.com",
-    country: "UAE"
-  },
-  {
-    city: "United Kingdom",
-    address: "UK Region",
-    mapQuery: "United Kingdom",
-    mapZoom: 5,
-    phone: ["+44 20300 27711"],
-    email: "mail@seppasolutions.com",
-    country: "UK"
-  },
-  {
-    city: "Germany & Belgium",
-    address: "Brussels Region",
-    mapQuery: "Brussels, Belgium",
-    mapZoom: 6,
-    phone: ["+4917622913101"],
-    email: "ccw@canadianclear.com",
-    country: "Europe"
-  },
-  {
-    city: "Australia",
-    address: "Australia Region",
-    mapQuery: "Australia",
-    mapZoom: 6,
-    phone: ["+61363877084"],
-    email: "mail@seppasolutions.com",
-    country: "Australia"
-  },
-  {
-    city: "Armenia",
-    address: "Armenia Region",
-    mapQuery: "Armenia",
-    mapZoom: 6,
-    phone: ["+37494890965"],
-    email: "mail@seppasolutions.com",
-    country: "Armenia"
-  }
-];
+interface Office {
+  city: string;
+  address: string;
+  phone: string[];
+  email: string;
+  country: string;
+  mapQuery?: string;
+  mapZoom?: number;
+}
 
 const ContactUs: React.FC = () => {
-  const [activeOffice, setActiveOffice] = React.useState<typeof offices[0]>(offices[0]);
-  const [expandedCountries, setExpandedCountries] = React.useState<string[]>(["India"]);
+  const t = useTranslations('contactUs');
+  const offices = t.raw('offices') as Office[];
+
+  const [activeOffice, setActiveOffice] = React.useState<Office>(offices[0]);
+  const [expandedCountries, setExpandedCountries] = React.useState<string[]>([offices[0].country]);
 
   // Form State
   const [formData, setFormData] = React.useState({
@@ -149,22 +65,22 @@ const ContactUs: React.FC = () => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) newErrors.name = 'Your name is required';
+    if (!formData.name.trim()) newErrors.name = t('errName');
     if (!formData.email.trim()) {
-      newErrors.email = 'Email address is required';
+      newErrors.email = t('errEmailRequired');
     } else if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
-      newErrors.email = 'Please enter a valid email address';
+      newErrors.email = t('errEmailInvalid');
     }
     if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
+      newErrors.phone = t('errPhoneRequired');
     } else {
       const digitsOnly = formData.phone.replace(/\D/g, '');
       if (digitsOnly.length < 10 || digitsOnly.length > 15) {
-        newErrors.phone = 'Please enter a valid phone number (10-15 digits)';
+        newErrors.phone = t('errPhoneInvalid');
       }
     }
-    if (!formData.location.trim()) newErrors.location = 'Location is required';
-    if (!formData.message.trim()) newErrors.message = 'Please enter your message';
+    if (!formData.location.trim()) newErrors.location = t('errLocation');
+    if (!formData.message.trim()) newErrors.message = t('errMessage');
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -180,25 +96,25 @@ const ContactUs: React.FC = () => {
   };
 
   const groupedOffices = React.useMemo(() => {
-    const groups: Record<string, typeof offices> = {};
+    const groups: Record<string, Office[]> = {};
     offices.forEach(office => {
       if (!groups[office.country]) groups[office.country] = [];
       groups[office.country].push(office);
     });
     return groups;
-  }, []);
+  }, [offices]);
 
   return (
     <div className="bg-gray-50">
       <SuccessModal 
         isOpen={showSuccessModal} 
         onClose={() => setShowSuccessModal(false)} 
-        title="Thank You for Contacting Us!"
-        message="Your message has been sent successfully. Our support team will get in touch with you shortly."
+        title={t('successTitle')}
+        message={t('successMsg')}
       />
       <PageHeader 
-        title="Contact Us" 
-        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact Us' }]} 
+        title={t('title')} 
+        breadcrumbs={[{ name: t('breadcrumbsHome'), path: '/' }, { name: t('breadcrumbsContact') }]} 
         bgImage={bannerImg.src}
       />
       
@@ -216,13 +132,13 @@ const ContactUs: React.FC = () => {
               variants={staggerContainer}
             >
               <motion.h3 variants={fadeInUp} className="text-seppa-red font-medium uppercase tracking-wider mb-2">
-                Headquarters
+                {t('headquarters')}
               </motion.h3>
               <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-[#101934] leading-tight mb-8">
-                Get In Touch
+                {t('getInTouch')}
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-gray-600 mb-8">
-                Reach out to our corporate headquarters or explore our global branch offices to connect with a representative near you.
+                {t('subtitle')}
               </motion.p>
 
               <motion.div variants={fadeInUp} className="space-y-6">
@@ -231,7 +147,7 @@ const ContactUs: React.FC = () => {
                     <FiPhoneCall />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">Toll Free:</h3>
+                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">{t('tollFree')}</h3>
                     <p className="text-gray-600">1-800-425-20000</p>
                   </div>
                 </a>
@@ -241,7 +157,7 @@ const ContactUs: React.FC = () => {
                     <FiMail />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">Quick Email:</h3>
+                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">{t('quickEmail')}</h3>
                     <p className="text-gray-600">info@seppasolutions.com</p>
                   </div>
                 </a>
@@ -251,8 +167,8 @@ const ContactUs: React.FC = () => {
                     <FiMapPin />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">Registered Office:</h3>
-                    <p className="text-gray-600 text-sm">712 Shivai Plaza, Andheri (East), Mumbai-400059, India</p>
+                    <h3 className="text-xl font-bold font-heading text-[#101934] mb-1">{t('registeredOffice')}</h3>
+                    <p className="text-gray-600 text-sm">{offices[0].address}</p>
                   </div>
                 </div>
               </motion.div>
@@ -270,13 +186,13 @@ const ContactUs: React.FC = () => {
                 <div className="absolute top-0 right-0 w-64 h-64 bg-seppa-red rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
                 
                 <div className="relative z-10">
-                  <h3 className="text-3xl font-bold font-heading text-white mb-8">Send us a message</h3>
+                  <h3 className="text-3xl font-bold font-heading text-white mb-8">{t('sendMessage')}</h3>
                   <form className="space-y-6" onSubmit={handleSubmit} noValidate>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <input 
                           type="text" 
-                          placeholder="Your Name *" 
+                          placeholder={t('placeholderName')} 
                           value={formData.name}
                           onChange={(e) => handleInputChange('name', e.target.value)}
                           className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.name ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
@@ -286,7 +202,7 @@ const ContactUs: React.FC = () => {
                       <div>
                         <input 
                           type="email" 
-                          placeholder="Email Address *" 
+                          placeholder={t('placeholderEmail')} 
                           value={formData.email}
                           onChange={(e) => handleInputChange('email', e.target.value)}
                           className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.email ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
@@ -298,7 +214,7 @@ const ContactUs: React.FC = () => {
                       <div>
                         <input 
                           type="tel" 
-                          placeholder="Phone Number *" 
+                          placeholder={t('placeholderPhone')} 
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
                           className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.phone ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
@@ -308,7 +224,7 @@ const ContactUs: React.FC = () => {
                       <div>
                         <input 
                           type="text" 
-                          placeholder="Location *" 
+                          placeholder={t('placeholderLocation')} 
                           value={formData.location}
                           onChange={(e) => handleInputChange('location', e.target.value)}
                           className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.location ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
@@ -319,7 +235,7 @@ const ContactUs: React.FC = () => {
                     <div>
                       <textarea 
                         rows={5} 
-                        placeholder="Write Message... *" 
+                        placeholder={t('placeholderMessage')} 
                         value={formData.message}
                         onChange={(e) => handleInputChange('message', e.target.value)}
                         className={`w-full px-6 py-4 rounded-3xl bg-white/10 border ${errors.message ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition resize-none backdrop-blur-sm`}
@@ -331,7 +247,7 @@ const ContactUs: React.FC = () => {
                       disabled={isSubmitting}
                       className="bg-seppa-red text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-seppa-red transition duration-300 w-full md:w-auto shadow-lg disabled:opacity-50"
                     >
-                      {isSubmitting ? 'Sending...' : 'Submit Message'}
+                      {isSubmitting ? t('btnSending') : t('btnSubmit')}
                     </button>
                   </form>
                 </div>
@@ -346,9 +262,9 @@ const ContactUs: React.FC = () => {
       <section className="py-20 lg:py-28 bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h3 className="text-seppa-red font-medium uppercase tracking-wider mb-2">Our Network</h3>
-            <h2 className="text-4xl font-heading font-bold text-[#101934]">Global Branch Offices</h2>
-            <p className="mt-4 text-gray-600">Select an office below to view its location on the map.</p>
+            <h3 className="text-seppa-red font-medium uppercase tracking-wider mb-2">{t('network')}</h3>
+            <h2 className="text-4xl font-heading font-bold text-[#101934]">{t('branchOffices')}</h2>
+            <p className="mt-4 text-gray-600">{t('selectOffice')}</p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8 items-start relative">
@@ -447,11 +363,11 @@ const ContactUs: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full h-[350px] md:h-[450px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl border-4 lg:border-8 border-gray-50 relative"
+                className="w-full h-[320px] sm:h-[400px] lg:h-[500px] xl:h-[550px] rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl border-4 lg:border-8 border-gray-50 relative"
               >
                 <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm border border-gray-100 font-bold text-[#101934] flex items-center gap-2 max-w-[80%]">
                   <FiMapPin className="text-seppa-red shrink-0" />
-                  <span className="truncate">Showing: {activeOffice.city}</span>
+                  <span className="truncate">{t('showing')} {activeOffice.city}</span>
                 </div>
                 <iframe 
                   src={`https://maps.google.com/maps?q=${encodeURIComponent(activeOffice.mapQuery || activeOffice.address)}&t=&z=${activeOffice.mapZoom || 14}&ie=UTF8&iwloc=&output=embed`}

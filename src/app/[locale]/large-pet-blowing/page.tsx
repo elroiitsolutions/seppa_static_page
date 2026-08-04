@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -29,6 +30,9 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'largepetblowing' });
   const messages = await getMessages({ locale });
 
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/large-pet-blowing', locale);
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -39,6 +43,8 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
     overviewDescription: t('overviewDescription'),
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
+    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
+    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
     contentBlocks: (t.raw('contentBlocks') as any[] || []).map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
@@ -68,6 +74,8 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
     faqTitle: t('faqTitle'),
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

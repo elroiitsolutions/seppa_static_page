@@ -43,6 +43,9 @@
       { "title": "Phase 2: Process Integration", "description": "Process integration for wine production is the next step mapping everything from grape reception or raw spirit intake through to palletized finished goods. The question at every point is whether automation reduces cost and error, or just adds complexity. Not every wine plant needs robotics across the board. The right answer depends on SKU count, shift structure, and how much technical maintenance capability exists on site." },
       { "title": "Phase 3: Installation and Commissioning", "description": "Installation and commissioning are handled by Seppa's own engineers. Factory Acceptance Testing happens at our facility before anything ships. Site Acceptance Testing confirms that throughput, fill accuracy, and CIP validation all perform to specification under actual production conditions not controlled lab conditions. We don't sign off until they do." },
       { "title": "Phase 4: Operator Training", "description": "Operator training is last, and it gets underestimated more often than anything else. The difference between catching a dosing drift early and losing a batch is usually a trained operator noticing something feels off. We run hands-on training with the shift team, not a binder drop." }
+    ],
+    "outro": [
+      "Conclusion: Precise Wine & Spirits Processing for Highest Quality Demands. Seppa Solutions develops complete wine processing plants, bottling lines, and spirits solutions for manufacturers who want to combine premium quality with economic production. From hygienic process design to precise dosing technology and automated filling systems, plants are created that reliably protect sensitive products while enabling scalable production."
     ]
   },
   "faqTitle": "Frequently Asked Questions",

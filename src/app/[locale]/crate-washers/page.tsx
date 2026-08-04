@@ -2,6 +2,7 @@ import React from 'react';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/packaging/generated/banner_crate_washer.png';
@@ -25,11 +26,13 @@ export default async function LocalizedCrateWashersPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'washers' });
   const tEn = await getTranslations({ locale: 'en', namespace: 'washers' });
   
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? tEn(key) : t(key);
-  const getRaw = (key: string) => isDe ? tEn.raw(key) : t.raw(key);
+  const getT = (key: string) => t(key);
+  const getRaw = (key: string) => t.raw(key);
 
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/crate-washers', locale);
 
   const pageData: PackagingPageData = {
     title: getT('title'),
@@ -87,11 +90,14 @@ export default async function LocalizedCrateWashersPage({ params }: Props) {
           "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-3.jpg",
           "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-2.jpg"
         ][index] || "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-2.jpg"
-      }))
+      })),
+      outro: getRaw('methodology.outro') ? (Array.isArray(getRaw('methodology.outro')) ? getRaw('methodology.outro') : [getT('methodology.outro')]) : undefined
     },
     faqTitle: getT('faqTitle'),
     faqs: getRaw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

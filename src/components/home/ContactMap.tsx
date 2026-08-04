@@ -34,9 +34,8 @@ const allLocations = [...locations, { ...indiaLocation, cities: indiaCities }];
 const ContactMap = () => {
   const t = useTranslations('home');
   const locale = useLocale();
-  const isDe = locale === 'de';
 
-  const getT = (key: string) => isDe ? ((enHome as any).ContactMap?.[key] || key) : t(`ContactMap.${key}`);
+  const getT = (key: string) => t(`ContactMap.${key}`);
 
   const [activePin, setActivePin] = useState<string | null>(null);
 

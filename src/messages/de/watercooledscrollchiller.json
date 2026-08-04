@@ -1,0 +1,109 @@
+{
+  "title": "Wassergekühlte Scroll-Kaltwassersätze: Industrielle Kühlsysteme für präzise Prozesskühlung",
+  "breadcrumbName": "Wassergekühlte Scroll-Kühler",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Überblick über wassergekühlte Scroll-Kaltwassersätze für industrielle Anwendungen",
+  "overviewDescription": "Wenn Produktionsanlagen rund um die Uhr betrieben werden, ist eine Temperaturschwankung nicht nur ein Effizienzproblem, sondern ein echtes Produktionsrisiko. Ein wassergekühlter Kaltwassersatz bietet in hoch belasteten Industrieumgebungen eine besonders stabile Temperaturkontrolle, die luftgekühlte Systeme häufig nicht erreichen können.",
+  "overviewsubDescription": [
+    "Während luftgekühlte Kühlsysteme die Wärme direkt an die Umgebungsluft abgeben und bei hohen Außentemperaturen an Leistungsfähigkeit verlieren, führt ein wassergekühlter Kaltwassersatz die abgeführte Wärme über einen geschlossenen Kühlwasserkreislauf zuverlässig ab. Die Wärme wird kontrolliert über einen Kondensator-Wasserkreislauf abgeführt, unabhängig von wechselnden Umgebungsbedingungen.",
+    "In Kombination mit moderner Scroll-Verdichtertechnik entsteht ein leistungsfähiges industrielles Kühlsystem mit geringer mechanischer Belastung, niedrigem Vibrationsniveau und hoher Betriebssicherheit.",
+    "Seppa Solutions entwickelt wassergekühlte Scroll-Kaltwassersätze für Produktionsumgebungen, in denen eine konstante Kaltwasserversorgung ohne Temperaturschwankungen entscheidend ist."
+  ],
+  "featuresTitle": "Technische Merkmale und Spezifikationen moderner wassergekühlter Scroll-Kaltwassersätze",
+  "features": [
+    {
+      "title": "Hermetische Scroll-Verdichter mit VFD",
+      "description": "Zwei ineinandergreifende Spiralprofile verdichten Kältemittel gleichmäßig ohne mechanische Stöße. Frequenzumrichter (VFD) passen die Verdichterleistung stufenlos an den tatsächlichen Kühlbedarf an, statt zu takten."
+    },
+    {
+      "title": "Leistungsstarke Rohrbündelkondensatoren",
+      "description": "Robuste Rohrbündelkondensatoren mit optimierten Kupferrohren und korrosionsbeständigen Rohrplatten minimieren den Druckverlust im Kältekreislauf und maximieren die Effizienz im 24/7-Betrieb."
+    },
+    {
+      "title": "Optimierte Verdampfer & Kältemittelfüllung",
+      "description": "Geflutete Rohrbündelverdampfer erreichen geringe Annäherungstemperaturen von 1 bis 1,5 °C. Seppa kalibriert die Kältemittelfüllung individuell zur Vermeidung von Flüssigkeitsschlägen oder Unterfüllung."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Vorteile wassergekühlter Scroll-Kaltwassersätze",
+      "paragraphs": [
+        "Hohe thermodynamische Effizienz: Da Wasser eine bessere Wärmekapazität besitzt als Luft, arbeiten wassergekühlte Systeme bei hohen Kühllasten deutlich effizienter und senken die Betriebskosten.",
+        "Konstante Kühlleistung: Unabhängig von sommerlicher Hitze oder Temperaturschwankungen in der Halle bleibt der Kühlkreislauf stabil, da die Wärme kontrolliert über Kühltürme abgeführt wird.",
+        "Kompaktere Bauweise & Langlebigkeit: Scroll-Verdichter besitzen weniger bewegliche Teile. Da die Aggregate im Innenbereich stehen und keine massiven Außenlüfter benötigen, ist die Aufstellung platzsparend."
+      ]
+    }
+  ],
+  "applicationsTitle": "Industrielle Einsatzbereiche",
+  "applicationsSubtitle": "Ideal für anspruchsvolle Produktionsumgebungen mit konstanter Wärmelast und vorhandener Kühlwasserinfrastruktur.",
+  "applications": [
+    {
+      "title": "Kunststoffspritzguss",
+      "description": "Sichert eine präzise Werkzeugkühlung für konstante Produktqualität und optimierte Zykluszeiten."
+    },
+    {
+      "title": "Galvanik & Metallveredelung",
+      "description": "Kühlt Elektrolytbäder zuverlässig ab und schützt medienberührte Teile durch korrosionsfreie Wärmetauscher."
+    },
+    {
+      "title": "Chemische & Pharma-Anlagen",
+      "description": "Ermöglicht eine präzise Temperaturführung während empfindlicher Misch- und Abfüllprozesse."
+    },
+    {
+      "title": "Lebensmittelverarbeitung",
+      "description": "Kühlt Prozesswasser für Abfülllinien und Temperierbehälter im kontinuierlichen Mehrschichtbetrieb."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions?",
+    "description": "Seppa Solutions entwickelt Kaltwassersätze als hochgradig integrierte Prozesskühlung.",
+    "paragraphs": [
+      "Jedes System wird exakt auf die thermodynamischen Betriebsbedingungen vor Ort abgestimmt, um Überdimensionierung und unnötige Energiekosten zu vermeiden.",
+      "Die Integration moderner SPS-Steuerungen, intelligenter VFD-Verdichterregelung und die Verwendung langlebiger Materialien gewährleisten maximale Betriebssicherheit."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise wassergekühlter Scroll-Kaltwassersätze",
+    "steps": [
+      {
+        "title": "Wärmeaufnahme im Verdampfer",
+        "description": "Erwärmtes Prozesswasser aus der Produktion gelangt in den Verdampfer und gibt Wärme an das Kältemittel ab, das verdampft."
+      },
+      {
+        "title": "Verdichtung & Kondensation",
+        "description": "Der Kältemitteldampf wird vom Scroll-Verdichter komprimiert. Im Rohrbündelkondensator entzieht das Kühlwasser dem Kältemittel die Wärme."
+      },
+      {
+        "title": "Wärmeabfuhr & Expansion",
+        "description": "Die Wärme wird über den Kühlwasserkreislauf zum Kühlturm transportiert und abgegeben. Das entspannte Kältemittel strömt zurück zum Verdampfer."
+      }
+    ],
+    "outro": [
+      "Dieser kontrollierte Kreislauf garantiert eine kontinuierliche Kaltwasserversorgung mit minimalen Temperaturschwankungen."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartung benötigt ein wassergekühlter Kaltwassersatz?",
+      "answer": "Die regelmäßige Wartung umfasst die Kontrolle des Kältemittelkreislaufs, elektrische Prüfungen sowie die Reinigung der Kondensatorrohre zur Vermeidung von Ablagerungen."
+    },
+    {
+      "question": "2. Wie verbessert das VFD-System die Energieeffizienz?",
+      "answer": "Der Frequenzumrichter passt die Verdichterdrehzahl der aktuellen Kühllast an und spart im Teillastbetrieb signifikant Strom im Vergleich zu Festdrehzahlgeräten."
+    },
+    {
+      "question": "3. Warum ist die Wasserqualität im Kondensatorkreis wichtig?",
+      "answer": "Verunreinigtes Wasser führt zu Biofouling oder Kalkschichten in den Rohren, was die Wärmeübertragung massiv verschlechtert und den Stromverbrauch steigen lässt."
+    },
+    {
+      "question": "4. Wie lange ist die Lebensdauer eines wassergekühlten Kaltwassersatzes?",
+      "answer": "Bei ordnungsgemäßer Wartung und Einhaltung der Wasserqualität erreichen wassergekühlte Kaltwassersätze problemlos eine Lebensdauer von über 20 Jahren."
+    },
+    {
+      "question": "5. Kann das System in bestehende Kühltürme integriert werden?",
+      "answer": "Ja, der Kaltwassersatz kann an jeden industriellen Kühlturm angeschlossen werden, sofern Durchflussmenge und Temperaturdifferenzen übereinstimmen."
+    }
+  ]
+}

@@ -4,7 +4,6 @@ import { Link } from '@/i18n/routing';
 import AnimatedHeading from '../ui/AnimatedHeading';
 
 import { useTranslations, useLocale } from 'next-intl';
-import enHome from '@/messages/en/home.json';
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -20,9 +19,7 @@ const AboutIndustries = () => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
-
-  const getT = (key: string) => isDe ? ((enHome as any).AboutIndustries?.[key] || key) : t(`AboutIndustries.${key}`);
+  const getT = (key: string) => t(`AboutIndustries.${key}`);
 
   return (
     <section id="about-industries" className="py-12 lg:py-24 bg-white overflow-hidden">

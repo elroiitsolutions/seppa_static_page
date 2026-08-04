@@ -105,8 +105,7 @@ const LocalizedHomeFAQs = () => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? ((enHome as any).HomeFAQs?.[key] || key) : t(`HomeFAQs.${key}`);
+  const getT = (key: string) => t(`HomeFAQs.${key}`);
   return <HomeFAQsContent getT={getT} isArabic={isArabic} />;
 };
 

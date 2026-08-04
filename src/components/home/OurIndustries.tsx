@@ -6,7 +6,6 @@ import { FiCheckCircle, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import AnimatedHeading from '../ui/AnimatedHeading';
 
 import { useTranslations, useLocale } from 'next-intl';
-import enHome from '@/messages/en/home.json';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -22,9 +21,8 @@ const OurIndustries = () => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
 
-  const getT = (key: string) => isDe ? ((enHome as any).OurIndustries?.[key] || key) : t(`OurIndustries.${key}`);
+  const getT = (key: string) => t(`OurIndustries.${key}`);
 
   const tabsData = [
     {
@@ -145,6 +143,7 @@ const OurIndustries = () => {
                 <button
                   key={tab.id}
                   id={`tab-${tab.id}`}
+                  suppressHydrationWarning
                   className={`relative pb-4 text-base md:text-[17px] font-bold font-heading transition-all duration-300 whitespace-nowrap cursor-pointer ${
                     activeTab.id === tab.id 
                       ? 'text-seppa-red font-extrabold' 

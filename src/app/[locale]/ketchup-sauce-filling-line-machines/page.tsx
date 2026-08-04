@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/packaging/pouch/pouch-banner.webp';
@@ -27,6 +28,9 @@ export default async function TomatoKetchupPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'sauceline' });
   const messages = await getMessages({ locale });
 
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/ketchup-sauce-filling-line-machines', locale);
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -50,7 +54,9 @@ export default async function TomatoKetchupPage({ params }: PageProps) {
             const parts = pText.split(':');
             const stepTitle = parts[0];
             const stepBody = parts.slice(1).join(':');
-            return (
+              pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+
+  return (
               <div key={stepTitle} className="mb-2">
                 <h4 className="font-bold text-dark text-lg mb-2">{stepTitle}</h4>
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed">{stepBody}</p>

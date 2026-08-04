@@ -1,0 +1,90 @@
+{
+  "title": "SEPPA SSB-R8: Hochleistungs-Rotationsanlage für die industrielle PET-Flaschenproduktion",
+  "breadcrumbName": "SSB-R8",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Überblick über die SEPPA SSB-R8 Rotary PET Blasmaschine",
+  "overviewDescription": "In der Getränkeverpackungsindustrie entscheidet nicht nur die maximale Geschwindigkeit einer Maschine über den wirtschaftlichen Erfolg. Entscheidend ist, ob eine PET-Flaschenmaschine diese Leistung dauerhaft über mehrere Schichten hinweg stabil halten kann. Genau für diese Anforderung wurde die SEPPA SSB-R8 entwickelt: eine Rotary PET Blasmaschine, die auf kontinuierliche Leistung, hohe Verfügbarkeit und konstante Behälterqualität ausgelegt ist.",
+  "overviewsubDescription": [
+    "Im Gegensatz zu linearen Blasformmaschinen arbeitet die SSB-R8 mit einem kontinuierlich rotierenden Karussellsystem. Die PET-Vorformen bewegen sich ohne Unterbrechung durch die Infrarot-Erwärmung und anschließend zur Blasstation. Dadurch werden typische Verluste durch Beschleunigungs- und Verzögerungsphasen reduziert, die bei herkömmlichen linearen Systemen die Produktionsleistung begrenzen. Die 8-Kavitäten PET Blasmaschine von SEPPA wurde speziell für Abfüllbetriebe entwickelt, die drei Schichten pro Tag und langfristig stabile Produktionsprozesse benötigen. Nicht kurzfristige Spitzenleistung, sondern konstante reale Ausbringung über viele Jahre steht im Mittelpunkt des Maschinenkonzepts."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen der Rotary 8 PET Blasmaschine",
+  "features": [
+    {
+      "title": "Hochpräzises Rotary-Karussellsystem",
+      "description": "Der servo-synchronisierte Antrieb transportiert die PET-Vorformen exakt durch alle Prozessschritte. Die präzise Bewegungssteuerung reduziert Schwankungen zwischen den einzelnen Kavitäten und gewährleistet eine gleichbleibende Flaschenqualität auch bei hohen Produktionsgeschwindigkeiten. Eine 8-Kavitäten PET Blasmaschine lebt von der Stabilität aller Stationen."
+    },
+    {
+      "title": "Mehrzonen-Infrarot-Erwärmung",
+      "description": "Jede PET-Vorform durchläuft unabhängig gesteuerte IR-Heizzonen. Lampenanordnung, Reflektorgeometrie und Heizprofile können an unterschiedliche Flaschengewichte und Halsausführungen angepasst werden. Diese präzise Temperatursteuerung sorgt für eine optimale Materialverteilung während des Streckblasprozesses und verhindert typische Qualitätsprobleme wie Trübungen, ungleichmäßige Wandstärken oder Materialspannungen."
+    },
+    {
+      "title": "Präzise Drucksteuerung beim Blasprozess",
+      "description": "Die SSB-R8 verwendet eine elektronische Steuerung für Vorblasen und Endblasen. Dadurch lassen sich Druckprofile individuell an Harztyp, Preform-Geometrie und Flaschenformat anpassen. Da die Maschine sowohl als Wasserflaschen-Blasmaschine als auch für anspruchsvollere PET-Behälter eingesetzt werden kann, ist eine konstante Temperatur- und Druckverteilung über alle Kavitäten entscheidend für eine niedrige Ausschussrate."
+    }
+  ],
+  "applicationsTitle": "Anwendungen der SSB-R8 in Getränke- und Verpackungsindustrien",
+  "applicationsSubtitle": "SEPPA baut die SSB-R8-Plattform so auf, dass sie flexibel für unterschiedliche Behältertypen eingesetzt werden kann, statt Kunden auf eine einzige Flaschenform festzulegen.",
+  "applications": [
+    {
+      "title": "Mineralwasserproduktion (Wasserflaschen-Blasmaschine)",
+      "description": "Als Wasserflaschen-Blasmaschine erfüllt die SSB-R8 die Anforderungen moderner Mineralwasseranlagen mit hohen Produktionsmengen. Besonders bei leichten PET-Flaschen sind konstante Wandstärken und stabile Flaschenböden entscheidend."
+    },
+    {
+      "title": "Softdrinks, Öle, Säfte und Molkereiprodukte",
+      "description": "Für Softdrinks bietet die Maschine die notwendige Druckbeständigkeit durch optimierte Kühlkanäle und präzise Blasdrucksteuerung. Auch für schwerere Behälter wie Speiseölflaschen oder Säfte lässt sich die SSB-R8 schnell anpassen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET Blasmaschinen wählen?",
+    "description": "Die Entwicklung einer leistungsfähigen Rotary PET Blasmaschine erfordert tiefes Verständnis für Mechanik, Thermodynamik und Prozesssteuerung. SEPPA Solutions entwickelt jede SSB-R8 auf Basis der tatsächlichen Anforderungen des Kunden – einschließlich Preform-Geometrie, Materialtyp, Flaschenformat und gewünschter Produktionsleistung.",
+    "paragraphs": [
+      "Als erfahrener Hersteller von PET Blasmaschinen bietet SEPPA nicht nur die Maschine selbst, sondern komplette technische Unterstützung inklusive Integration, Inbetriebnahme und Prozessoptimierung.",
+      "Viele Getränkehersteller setzen auf SEPPA, weil die Maschinen nicht nur auf theoretische Höchstleistung ausgelegt sind, sondern auf stabile Produktion im täglichen Betrieb. Die Kombination aus präziser Prozesssteuerung, zuverlässiger Konstruktion und langfristigem Service macht SEPPA zu einem starken Partner für industrielle PET-Verpackungslösungen."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der Rotary 8 PET-Flaschenblasmaschine",
+    "subtitle": "Der Produktionsprozess der SEPPA SSB-R8 basiert auf einer vollständig synchronisierten Prozesskette:",
+    "steps": [
+      {
+        "title": "Zuführung und Erwärmung",
+        "description": "Preforms werden automatisch aus dem Zuführsystem auf das rotierende Karussell übertragen. Im mehrzonigen IR-Heizbereich werden sie auf optimale Strecktemperatur gebracht, ohne den Flaschenhals zu überhitzen."
+      },
+      {
+        "title": "Strecken und stufenweises Blasen",
+        "description": "Dort erfolgt die biaxiale Orientierung durch Streckstange und zweistufige Druckluftsteuerung. Das Vorblasen formt die Grundstruktur, während das Hochdruckblasen die endgültige Kontur erzeugt."
+      },
+      {
+        "title": "Ausschleusung und Luft-Rückgewinnung",
+        "description": "Die fertige PET-Flasche wird automatisch ausgeschleust. Ein integriertes Druckluft-Rückgewinnungssystem nutzt Restluft aus der Hochdruck-Blasphase für Vorblasfunktionen, was den Energiebedarf senkt."
+      }
+    ],
+    "outro": [
+      "Die SSB-R8 wurde für eine reibungslose Übergabe an nachgelagerte Füll- und Verschließmaschinen konzipiert, sodass die gesamte Linie mit maximaler Geschwindigkeit laufen kann."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie oft benötigt eine 8-Kavitäten PET Blasmaschine Wartung?",
+      "answer": "Die Wartungsintervalle hängen von Betriebsstunden, Materialtyp und Flaschenformat ab. SEPPA empfiehlt eine regelmäßige vorbeugende Wartung der IR-Lampen, Blasventile, Dichtungen und Formkühlung, um ungeplante Produktionsunterbrechungen zu vermeiden."
+    },
+    {
+      "question": "2. Warum wählen Hersteller SEPPA als Anbieter von Wasserflaschen-Blasmaschinen?",
+      "answer": "SEPPA überzeugt durch konstante Produktionsqualität bei hohen Geschwindigkeiten. Mehrzonen-Erwärmung, elektronische Drucksteuerung und integrierte Systemlösungen sorgen für stabile Ergebnisse über lange Produktionszyklen."
+    },
+    {
+      "question": "3. Kann die SSB-R8 mit Anlagen zum Verschließen von PET-Flaschen integriert werden?",
+      "answer": "Ja. Die Maschine wurde für die Integration in komplette PET-Produktionslinien entwickelt. Nachgelagerte Verschließmaschinen, Füllanlagen und Transportsysteme können über gemeinsame Steuerungsschnittstellen synchronisiert werden."
+    },
+    {
+      "question": "4. Liefert SEPPA auch Verschließ- und Komplettanlagen?",
+      "answer": "SEPPA kann komplette PET-Verpackungslösungen einschließlich abgestimmter Komponenten für Blasformen, Transport, Füllen und Verschließen realisieren."
+    },
+    {
+      "question": "5. Warum vertrauen Hersteller weltweit auf SEPPA Rotary PET Blasmaschinen?",
+      "answer": "Die Kombination aus synchronisierter Kavitätensteuerung, energieeffizienter Pneumatik, robuster Konstruktion und langfristigem technischen Support macht SEPPA zu einem zuverlässigen Partner für Hochleistungs-PET-Produktion."
+    }
+  ]
+}

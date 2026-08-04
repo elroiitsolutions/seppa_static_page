@@ -1,0 +1,109 @@
+{
+  "title": "Halbautomatische PET-Blasmaschine: Präzision und Zuverlässigkeit in der Flaschenproduktion",
+  "breadcrumbName": "Halbautomatische Blasmaschinen",
+  "rootBreadcrumbName": "PET-Blasmaschine",
+  "rootBreadcrumbPath": "/blowing",
+  "overviewTitle": "Präzision und Zuverlässigkeit in der Flaschenproduktion",
+  "overviewDescription": "Eine halbautomatische PET-Blasmaschine verbindet die Wirtschaftlichkeit manueller Prozesse mit der Präzision moderner Blasformtechnologie. Obwohl das Einlegen und Entnehmen der PET-Preforms manuell erfolgt, basiert der eigentliche Streckblasprozess auf denselben physikalischen Prinzipien wie bei vollautomatischen Produktionslinien. Für kleine und mittlere Produktionsmengen bietet dieses Maschinenkonzept die ideale Kombination aus Flexibilität, Qualität und Investitionssicherheit.",
+  "overviewsubDescription": [
+    "Bei Seppa Solutions steht ein entscheidender Faktor im Mittelpunkt: Der Temperaturzustand eines PET-Preforms unmittelbar nach dem Verlassen des Infrarot-Ofens bestimmt maßgeblich die spätere Flaschenqualität. Ist das Temperaturprofil nicht exakt abgestimmt, können selbst hohe Schließkräfte oder Blasdrücke Materialfehler nicht mehr ausgleichen.",
+    "Eine halbautomatische PET-Blasmaschine verarbeitet kalte oder vorgewärmte PET-Preforms, führt sie durch eine kontrollierte Infrarot-Heizzone und überführt sie anschließend in eine Blasform. Dort wird der Preform mithilfe von Hochdruckluft gestreckt und zur fertigen PET-Flasche ausgeformt. Dieses Konzept eignet sich besonders für Hersteller, die keine vollautomatische Produktionslinie benötigen, Stellfläche einsparen wollen und Formatwechsel in weniger als 20 Minuten realisieren möchten."
+  ],
+  "featuresTitle": "Wesentliche Merkmale einer hochwertigen PET-Blasmaschine",
+  "features": [
+    {
+      "title": "Segmentierte Infrarot-Heizzonen",
+      "description": "Die Heizmodule von Seppa Solutions arbeiten mit unabhängig regelbaren Infrarot-Lampensegmenten. Dadurch lässt sich das Heizprofil individuell an Wandstärke, Halsgeometrie oder Materialeigenschaften anpassen, was ungleichmäßige Kristallisation und Materialtrübungen minimiert."
+    },
+    {
+      "title": "Pneumatisches Spann- und Blassystem",
+      "description": "Die Schließeinheit verwendet ein zweistufiges pneumatisches Spannsystem für konstante Schließkräfte. Das Blassystem arbeitet ebenfalls zweistufig mit Vorblasdruck (8–10 bar) und Hauptblasen (30–35 bar) für eine präzise Konturausformung."
+    },
+    {
+      "title": "Intelligente SPS-Steuerung",
+      "description": "Über die SPS-Steuerung lassen sich Heizzeit, Vorblasdauer und Hochdruckhaltezeit komfortabel einstellen. Zudem können produktspezifische Rezepturen für unterschiedliche Formate direkt geladen werden."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Warum viele Hersteller auf halbautomatische PET-Blasmaschinen setzen",
+      "paragraphs": [
+        "Niedrige Investitionskosten: Ermöglicht einen wirtschaftlichen Einstieg in die eigene PET-Flaschenproduktion oder das Testen neuer Produkte ohne hohe Einstiegshürden.",
+        "Hohe Flexibilität: Formwechsel erfolgen werkzeuglos und schnell, was die Rüstzeiten minimiert. Zudem können Heizparameter direkt vor Ort an schwankende Umgebungstemperaturen angepasst werden.",
+        "Zuverlässigkeit & Praxistauglichkeit: Unabhängig von den klimatischen Bedingungen der Halle liefert die Maschine dank individueller Heizprofile und robuster Pneumatikzylinder eine gleichbleibend hohe Qualität."
+      ]
+    }
+  ],
+  "applicationsTitle": "Typische Einsatzbereiche",
+  "applicationsSubtitle": "Unabhängig von der Anwendung bleiben die Prozessparameter identisch – lediglich Werkzeug und Heizprofil werden angepasst.",
+  "applications": [
+    {
+      "title": "Mineralwasser & Speiseöle",
+      "description": "Behälter mit hoher Materialtransparenz und gleichmäßiger Wandstärkenverteilung."
+    },
+    {
+      "title": "Kohlensäurehaltige Getränke",
+      "description": "Erfordert hohe mechanische Festigkeit und optimierte Bodenausbildung gegen Innendruck."
+    },
+    {
+      "title": "Pharmazeutische Behälter",
+      "description": "Maßgenaue Flaschen für Sirupe oder flüssige Arzneimittel zur präzisen Verschlussabdichtung."
+    },
+    {
+      "title": "Kosmetikverpackungen",
+      "description": "Hohe Flexibilität bei kleinen Losgrößen und individuellen, asymmetrischen Geometrien."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions?",
+    "description": "Seppa Solutions entwickelt und installiert halbautomatische PET-Blasmaschinen für Hersteller aus der FMCG-, Getränke-, Pharma- und Verpackungsindustrie.",
+    "paragraphs": [
+      "Der Fokus liegt dabei auf einer dauerhaft stabilen Produktion und reproduzierbaren Prozessergebnissen. Dazu gehören eine kontinuierliche Überwachung der Heizleistung zur Erkennung von Lampenalterung, werkzeuglose Formwechsel sowie energieeffiziente Pneumatiksysteme.",
+      "Darüber hinaus optimiert das Engineering-Team von Seppa für jeden Kunden individuelle Heizprofile entsprechend der eingesetzten PET-Materialien und Flaschengeometrien."
+    ]
+  },
+  "methodology": {
+    "title": "So entsteht eine PET-Flasche – Schritt für Schritt",
+    "subtitle": "Der Produktionsablauf einer halbautomatischen PET-Blasmaschine folgt einer klar definierten Prozesskette:",
+    "steps": [
+      {
+        "title": "Einlegen des Preforms",
+        "description": "Der Bediener setzt den PET-Preform manuell mit dem Hals nach unten in den Heizträger ein und kontrolliert ihn gleichzeitig auf Beschädigungen."
+      },
+      {
+        "title": "Thermische Konditionierung",
+        "description": "Während des Durchlaufs durch die segmentierten Infrarot-Heizzonen erreicht der Flaschenkörper Temperaturen von 95 bis 105 °C, während der Flaschenhals abgeschirmt bleibt."
+      },
+      {
+        "title": "Blasen & Entnahme",
+        "description": "Der Preform wird in das Werkzeug eingesetzt. Nach dem zweistufigen Streckblasprozess entnimmt der Bediener die fertige PET-Flasche für die anschließende Sichtprüfung."
+      }
+    ],
+    "outro": [
+      "Diese exakt definierte Reihenfolge gewährleistet eine gleichbleibend hohe Flaschenqualität und kompensiert Toleranzen im Preform-Material."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt eine halbautomatische PET-Blasmaschine Wartung?",
+      "answer": "Die Infrarot-Lampen sollten etwa alle 2.000 bis 3.000 Produktionszyklen überprüft werden. Pneumatische Dichtungen der Schließeinheit empfiehlt Seppa monatlich zu kontrollieren."
+    },
+    {
+      "question": "2. Wie lässt sich eine gleichmäßige Wandstärke erzielen?",
+      "answer": "Eine homogene Wandstärke hängt in erster Linie von einem exakt abgestimmten Heizprofil und der richtigen Vorblaszeit ab, weniger vom reinen Blasdruck."
+    },
+    {
+      "question": "3. Beeinflusst die Umgebungstemperatur die Flaschenproduktion?",
+      "answer": "Ja, Temperaturschwankungen von 5 bis 8 °C verändern das Streckverhalten des Preforms. Die Parameter der Maschine erlauben eine schnelle, flexible Anpassung."
+    },
+    {
+      "question": "4. Warum zeichnen sich PET-Blasmaschinen von Seppa durch eine lange Lebensdauer aus?",
+      "answer": "Seppa verwendet hochwertige Pneumatikzylinder und Schließkomponenten für den kontinuierlichen Industrieeinsatz unter anspruchsvollen Bedingungen."
+    },
+    {
+      "question": "5. Warum ist Seppa Solutions ein zuverlässiger Partner für die PET-Verarbeitung?",
+      "answer": "Die langjährige Erfahrung in der Entwicklung individueller Heizprofile sowie zahlreiche erfolgreiche Installationen unter verschiedensten klimatischen Bedingungen ermöglichen eine dauerhaft stabile Produktion."
+    }
+  ]
+}

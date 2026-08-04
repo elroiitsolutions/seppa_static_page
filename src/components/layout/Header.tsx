@@ -1,15 +1,16 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
+import Image from "next/image";
+import { fetchAPI } from '@/lib/strapi/client';
 import { usePathname, useRouter } from "next/navigation";
 import { FiMenu, FiX, FiChevronDown, FiChevronRight } from 'react-icons/fi';
 
 import logoImg from '@/assets/logo/logo.png';
-import enHeader from '@/messages/en/header.json';
-import arHeader from '@/messages/ar/header.json';
-import deHeader from '@/messages/de/header.json';
+import { useTranslations } from 'next-intl';
 
 const Header: React.FC = () => {
+  const t = useTranslations('header');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
@@ -17,31 +18,113 @@ const Header: React.FC = () => {
 
   const isArabic = pathname.startsWith('/ar');
   const isGerman = pathname.startsWith('/de');
+  const isDutch = pathname.startsWith('/nl');
 
-  const menu = isArabic ? arHeader : isGerman ? deHeader : enHeader;
+  const menu = {
+    home: t('home'),
+    packaging: t('packaging'),
+    petBlowers: t('petBlowers'),
+    automaticPetBlowers: t('automaticPetBlowers'),
+    semiAutomaticPetBlowers: t('semiAutomaticPetBlowers'),
+    petJarBlowing: t('petJarBlowing'),
+    pet: t('pet'),
+    can: t('can'),
+    glass: t('glass'),
+    pouch: t('pouch'),
+    brickCarton: t('brickCarton'),
+    gableTopCarton: t('gableTopCarton'),
+    asepticDrum: t('asepticDrum'),
+    liquid: t('liquid'),
+    mineralWaterLine: t('mineralWaterLine'),
+    stillWater: t('stillWater'),
+    mineralWater: t('mineralWater'),
+    alkalineWater: t('alkalineWater'),
+    sparklingWater: t('sparklingWater'),
+    structuredWater: t('structuredWater'),
+    flavoredWater: t('flavoredWater'),
+    softDrinks: t('softDrinks'),
+    juicesNectars: t('juicesNectars'),
+    juiceNectarsSoftDrinks: t('juiceNectarsSoftDrinks'),
+    isotonics: t('isotonics'),
+    teas: t('teas'),
+    beer: t('beer'),
+    alcoholSpirits: t('alcoholSpirits'),
+    wineMead: t('wineMead'),
+    rtdsSeltzers: t('rtdsSeltzers'),
+    ldp: t('ldp'),
+    tomatoKetchups: t('tomatoKetchups'),
+    services: t('services'),
+    spareParts: t('spareParts'),
+    maintenance: t('maintenance'),
+    lineImprovement: t('lineImprovement'),
+    lineConversions: t('lineConversions'),
+    audits: t('audits'),
+    training: t('training'),
+    completeLines: t('completeLines'),
+    waterLines: t('waterLines'),
+    softDrinkLines: t('softDrinkLines'),
+    juiceLines: t('juiceLines'),
+    beerLines: t('beerLines'),
+    wineLines: t('wineLines'),
+    liquorLines: t('liquorLines'),
+    dairyLines: t('dairyLines'),
+    ketchupsSauces: t('ketchupsSauces'),
+    equipments: t('equipments'),
+    processing: t('processing'),
+    blowing: t('blowing'),
+    preFormSterilization: t('preFormSterilization'),
+    unscramblers: t('unscramblers'),
+    rinserFillerCapper: t('rinserFillerCapper'),
+    kombo: t('kombo'),
+    elevators: t('elevators'),
+    labelling: t('labelling'),
+    batchCoders: t('batchCoders'),
+    bottleHandling: t('bottleHandling'),
+    shrinkWrapping: t('shrinkWrapping'),
+    cartonHandling: t('cartonHandling'),
+    palletEquipment: t('palletEquipment'),
+    stretchWrapping: t('stretchWrapping'),
+    crateStacker: t('crateStacker'),
+    refrigerationSystem: t('refrigerationSystem'),
+    airDryer: t('airDryer'),
+    crateWashers: t('crateWashers'),
+    glassBottleWasher: t('glassBottleWasher'),
+    glassBottleFillerCapper: t('glassBottleFillerCapper'),
+    tunnelPasteurizers: t('tunnelPasteurizers'),
+    tunnelCooler: t('tunnelCooler'),
+    deCapper: t('deCapper'),
+    largeBottleFiller: t('largeBottleFiller'),
+    enquiry: t('enquiry'),
+    productEnquiry: t('productEnquiry'),
+    investors: t('investors'),
+    dealers: t('dealers'),
+    videos: t('videos'),
+    contactUs: t('contactUs')
+  };
 
   const getLink = (path: string) => {
     if (path === '/') {
-      return isArabic ? '/ar' : isGerman ? '/de' : '/en';
+      return isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : '/en';
     }
-    const prefix = isArabic ? '/ar' : isGerman ? '/de' : '/en';
+    const prefix = isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : '/en';
     return `${prefix}${path}`;
   };
 
-  const currentLocale = isArabic ? 'ar' : isGerman ? 'de' : 'en';
+  const currentLocale = isArabic ? 'ar' : isGerman ? 'de' : isDutch ? 'nl' : 'en';
 
   const getLocaleLabel = (loc: string) => {
     switch (loc) {
       case 'ar': return 'العربية';
-      case 'de': return 'Deutsch';
+      case 'de': return 'Germany';
+      case 'nl': return 'Dutch';
       default: return 'English';
     }
   };
 
   const changeLanguage = (newLocale: string) => {
     if (newLocale === currentLocale) return;
-    const prefix = currentLocale === 'en' ? '/en' : currentLocale === 'ar' ? '/ar' : '/de';
-    const targetPrefix = newLocale === 'en' ? '/en' : newLocale === 'ar' ? '/ar' : '/de';
+    const prefix = currentLocale === 'en' ? '/en' : currentLocale === 'ar' ? '/ar' : currentLocale === 'de' ? '/de' : '/nl';
+    const targetPrefix = newLocale === 'en' ? '/en' : newLocale === 'ar' ? '/ar' : newLocale === 'de' ? '/de' : '/nl';
     router.replace(pathname.replace(prefix, targetPrefix));
   };
 
@@ -82,52 +165,56 @@ const Header: React.FC = () => {
   }, []);
 
   // Dynamic header classes - sticky behavior across all viewports
-  const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-4 lg:px-8 ${scrolled
-      ? 'w-full top-0 bg-seppa-blue shadow-lg py-3 lg:py-4 rounded-none'
-      : 'w-full xl:max-w-[1700px] xl:w-[96%] top-0 xl:top-[30px] 2xl:top-[40px] xl:rounded-[30px] bg-transparent py-4 lg:py-5'
+  const isBlogPage = pathname.includes('/blog') && !pathname.endsWith('/blog') && !pathname.endsWith('/blog/');
+  const isSolid = scrolled || isBlogPage;
+
+  const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-3 sm:px-6 lg:px-8 ${isSolid
+      ? 'w-full top-0 bg-seppa-blue shadow-lg py-2.5 lg:py-3.5 rounded-none'
+      : 'w-full lg:max-w-[1700px] lg:w-[96%] top-0 lg:top-3 2xl:top-6 lg:rounded-[24px] xl:rounded-[30px] bg-transparent py-3 lg:py-4'
     }`;
 
-  const linkClass = `font-medium hover:text-gold transition flex items-center gap-1 py-2 text-white ${isGerman ? 'text-xs 2xl:text-base' : 'text-sm 2xl:text-base'}`;
+  const linkClass = `font-medium hover:text-gold transition flex items-center gap-0.5 xl:gap-1 py-1.5 text-white ${isGerman ? 'text-[11px] lg:text-xs xl:text-[13px] 2xl:text-base tracking-tight' : 'text-xs xl:text-sm 2xl:text-base'}`;
 
-  const dropdownClass = "absolute top-full left-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
-  const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left";
+  const dropdownClass = "absolute top-full left-0 rtl:left-auto rtl:right-0 mt-2 w-56 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 flex flex-col py-2";
+  const dropdownItemClass = "px-4 py-1.5 hover:text-dark transition-colors block w-full text-left text-xs xl:text-sm";
 
   return (
     <>
       <header className={headerClass}>
         <div className="w-full flex justify-between items-center transition-colors duration-300">
         {/* Left: Logo */}
-        <div className="shrink-0 flex justify-start items-center z-50 relative mr-4 rtl:ml-4">
+        <div className="shrink-0 flex justify-start items-center z-50 relative mr-2 lg:mr-3 xl:mr-4 rtl:ml-2 rtl:lg:ml-3 rtl:xl:ml-4">
           <Link href="/" className="shrink-0">
-            <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-2 shrink-0'>
-              <img
-                src={logoImg.src}
+            <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-1.5 lg:p-2 shrink-0'>
+              <Image
+                src={logoImg}
                 alt="Seppa Solutions Logo"
-                className="h-10 md:h-10 w-auto transition-all duration-300 shrink-0"
+                priority
+                className="h-7 lg:h-8 xl:h-10 w-auto transition-all duration-300 shrink-0"
               />
             </div>
           </Link>
         </div>
 
         {/* Center: Desktop Menu */}
-        <nav className={`hidden xl:flex flex-none justify-center items-center ${isGerman ? 'gap-3 2xl:gap-6' : 'gap-6 2xl:gap-8'}`}>
+        <nav className={`hidden lg:flex flex-none justify-center items-center ${isGerman ? 'gap-1.5 lg:gap-2 xl:gap-3.5 2xl:gap-6' : 'gap-2.5 lg:gap-3.5 xl:gap-5 2xl:gap-8'}`}>
           <div className="relative group">
             <Link href={getLink("/")} className={linkClass}>
               {menu.home}
             </Link>
           </div>
           <div className="relative group">
-            <button className={linkClass}>
-              {menu.packaging} <FiChevronDown className="text-sm opacity-70" />
+            <button suppressHydrationWarning className={linkClass}>
+              {menu.packaging} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
 
               <div className="relative group/sub">
                 <div className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">{menu.petBlowers}</span>
-                  <FiChevronRight className="text-sm opacity-70 shrink-0" />
+                  <FiChevronRight className="text-sm opacity-70 shrink-0 rtl:rotate-180" />
                 </div>
-                <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
+                <div className="absolute top-0 left-full rtl:left-auto rtl:right-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 rtl:-translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
                   <Link href={getLink("/automatic")} className={dropdownItemClass}>{menu.automaticPetBlowers}</Link>
                   <Link href={getLink("/semi-automatic")} className={dropdownItemClass}>{menu.semiAutomaticPetBlowers}</Link>
                   <Link href={getLink("/pet-jars")} className={dropdownItemClass}>{menu.petJarBlowing}</Link>
@@ -145,16 +232,16 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="relative group">
-            <button className={linkClass}>
-              {menu.liquid} <FiChevronDown className="text-sm opacity-70" />
+            <button suppressHydrationWarning className={linkClass}>
+              {menu.liquid} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <div className="relative group/sub">
                 <Link href={getLink("/mineral-water-line-machines")} className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">{menu.mineralWaterLine}</span>
-                  <FiChevronRight className="text-sm opacity-70 shrink-0" />
+                  <FiChevronRight className="text-sm opacity-70 shrink-0 rtl:rotate-180" />
                 </Link>
-                <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
+                <div className="absolute top-0 left-full rtl:left-auto rtl:right-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 rtl:-translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
                   <Link href={getLink("/still-water")} className={dropdownItemClass}>{menu.stillWater}</Link>
                   <Link href={getLink("/mineral-water")} className={dropdownItemClass}>{menu.mineralWater}</Link>
                   <Link href={getLink("/alkaline-water")} className={dropdownItemClass}>{menu.alkalineWater}</Link>
@@ -167,9 +254,9 @@ const Header: React.FC = () => {
               <div className="relative group/sub">
                 <Link href={getLink("/juice")} className={`${dropdownItemClass} flex items-center justify-between cursor-pointer gap-2`}>
                   <span className="leading-snug">{menu.juicesNectars}</span>
-                  <FiChevronRight className="text-sm opacity-70 shrink-0" />
+                  <FiChevronRight className="text-sm opacity-70 shrink-0 rtl:rotate-180" />
                 </Link>
-                <div className="absolute top-0 left-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
+                <div className="absolute top-0 left-full rtl:left-auto rtl:right-full w-64 bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-2 rtl:-translate-x-2 group-hover/sub:translate-x-0 z-50 flex flex-col py-2">
                   <Link href={getLink("/juice&nectars")} className={dropdownItemClass}>{menu.juiceNectarsSoftDrinks}</Link>
                   <Link href={getLink("/isotonics")} className={dropdownItemClass}>{menu.isotonics}</Link>
                   <Link href={getLink("/teas")} className={dropdownItemClass}>{menu.teas}</Link>
@@ -184,8 +271,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
-              {menu.services} <FiChevronDown className="text-sm opacity-70" />
+            <button suppressHydrationWarning className={linkClass}>
+              {menu.services} <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <Link href={getLink("/services/packaging")} className={dropdownItemClass}>{menu.packaging}</Link>
@@ -198,8 +285,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
-              {menu.completeLines}  <FiChevronDown className="text-sm opacity-70" />
+            <button suppressHydrationWarning className={linkClass}>
+              {menu.completeLines}  <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <Link href={getLink("/complete-lines")} className={dropdownItemClass}>{menu.completeLines}</Link>
@@ -214,8 +301,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
-              {menu.equipments}<FiChevronDown className="text-sm opacity-70" />
+            <button suppressHydrationWarning className={linkClass}>
+              {menu.equipments}<FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className="absolute top-full -left-54 mt-2 w-[90vw] lg:w-[750px] xl:w-[850px] bg-seppa-red text-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 p-4 lg:p-6 grid grid-cols-2 lg:grid-cols-4 gap-y-2 lg:gap-x-4">
               {/* Column 1 */}
@@ -252,8 +339,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='relative group'>
-            <button className={linkClass}>
-              {menu.enquiry}  <FiChevronDown className="text-sm opacity-70" />
+            <button suppressHydrationWarning className={linkClass}>
+              {menu.enquiry}  <FiChevronDown className="text-xs opacity-70" />
             </button>
             <div className={dropdownClass}>
               <Link href={getLink("/product-enquiry")} className={dropdownItemClass}>{menu.productEnquiry}</Link>
@@ -265,34 +352,37 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Right: CTA Button & Language Switcher */}
-        <div className="hidden xl:flex flex-grow justify-end items-center group cursor-pointer gap-4 shrink-0">
-          <div className="flex items-center gap-1 2xl:gap-2">
+        <div className="hidden lg:flex flex-none justify-end items-center group cursor-pointer gap-2 xl:gap-3 shrink-0 ml-2 lg:ml-3">
+          <div className="flex items-center gap-1 xl:gap-2">
             <Link
               href={getLink("/contact-us")}
-              className="px-5 2xl:px-6 py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red tracking-wide text-sm 2xl:text-base flex items-center justify-center"
+              className="px-3 xl:px-4 2xl:px-6 py-2 xl:py-2.5 2xl:py-3 rounded-full font-bold transition duration-300 bg-seppa-blue text-white hover:bg-seppa-red tracking-wide text-xs xl:text-sm 2xl:text-base flex items-center justify-center"
             >
               {menu.contactUs}
             </Link>
             <Link
               href={getLink("/contact-us")}
-              className="w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0 animate-pulse"
+              aria-label="Contact Us"
+              className="w-8 h-8 xl:w-9 xl:h-9 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0 animate-pulse"
             >
-              <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[16px] h-[16px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
+              <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[14px] h-[14px] xl:w-[15px] xl:h-[15px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
             </Link>
           </div>
           <div className="relative group/lang shrink-0">
             <button
-              className="px-4 py-2.5 rounded-full bg-gold text-[#0d162a] font-bold text-sm shadow-md hover:bg-white transition-all duration-300 flex items-center gap-1.5"
+              suppressHydrationWarning
+              className="px-2.5 xl:px-4 py-1.5 xl:py-2.5 rounded-full bg-gold text-[#0d162a] font-bold text-xs xl:text-sm shadow-md hover:bg-white transition-all duration-300 flex items-center gap-1"
             >
               <span>{getLocaleLabel(currentLocale)}</span>
-              <FiChevronDown className="transition-transform group-hover/lang:rotate-180" />
+              <FiChevronDown className="transition-transform group-hover/lang:rotate-180 text-xs" />
             </button>
             <div className="absolute right-0 top-full mt-2 w-32 bg-[#0d162a] border border-gold/20 text-white rounded-md shadow-lg opacity-0 invisible group-hover/lang:opacity-100 group-hover/lang:visible transition-all duration-300 transform translate-y-2 group-hover/lang:translate-y-0 z-50 flex flex-col py-1.5 overflow-hidden">
-              {['en', 'ar', 'de'].map((loc) => (
+              {['en', 'ar', 'de', 'nl'].map((loc) => (
                 <button
                   key={loc}
+                  suppressHydrationWarning
                   onClick={() => changeLanguage(loc)}
-                  className={`px-4 py-1.5 text-sm text-center hover:bg-gold hover:text-[#0d162a] transition-colors ${currentLocale === loc ? 'text-gold font-bold' : 'text-white'}`}
+                  className={`px-4 py-1.5 text-xs xl:text-sm text-center hover:bg-gold hover:text-[#0d162a] transition-colors ${currentLocale === loc ? 'text-gold font-bold' : 'text-white'}`}
                 >
                   {getLocaleLabel(loc)}
                 </button>
@@ -302,9 +392,10 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="flex-grow-0 flex xl:hidden justify-end">
+        <div className="flex-grow-0 flex lg:hidden justify-end">
           <button
             suppressHydrationWarning
+            aria-label="Toggle mobile menu"
             className={`text-2xl z-50 relative text-white`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -665,9 +756,10 @@ const Header: React.FC = () => {
             
             <div className="pt-6 mt-auto flex flex-col gap-3">
               <div className="flex justify-around gap-2 bg-[#0d162a]/50 p-2 rounded-xl border border-white/10">
-                {['en', 'ar', 'de'].map((loc) => (
+                {['en', 'ar', 'de', 'nl'].map((loc) => (
                   <button
                     key={loc}
+                    suppressHydrationWarning
                     onClick={() => { changeLanguage(loc); setIsMobileMenuOpen(false); }}
                     className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${currentLocale === loc ? 'bg-gold text-[#0d162a]' : 'text-white hover:text-gold'}`}
                   >

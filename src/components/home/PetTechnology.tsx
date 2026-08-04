@@ -26,9 +26,8 @@ const Projects = () => {
     const t = useTranslations('home');
     const locale = useLocale();
     const isArabic = locale === 'ar';
-    const isDe = locale === 'de';
 
-    const getT = (key: string) => isDe ? ((enHome as any).PetTechnology?.[key] || key) : t(`PetTechnology.${key}`);
+    const getT = (key: string) => t(`PetTechnology.${key}`);
 
     const projects = [
         {
@@ -113,6 +112,7 @@ const Projects = () => {
                     className="relative group"
                 >
                     <Swiper
+                        dir="ltr"
                         modules={[Pagination, Autoplay, Navigation]}
                         spaceBetween={32}
                         slidesPerView={1}

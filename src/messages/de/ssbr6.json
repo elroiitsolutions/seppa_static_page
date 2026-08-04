@@ -1,0 +1,94 @@
+{
+  "title": "SEPPA SSB-R6: Hochpräzise Rotations-PET-Blasmaschine für kontinuierliche Produktion",
+  "breadcrumbName": "SSB-R6",
+  "rootBreadcrumbName": "Rotary",
+  "rootBreadcrumbPath": "/blowing/rotary-high-speed-systems",
+  "overviewTitle": "Überblick über die SEPPA SSB-R6 Rotations-PET-Blasmaschine",
+  "overviewDescription": "In der PET-Verpackungsindustrie entscheidet die Zykluszeit darüber, wie schnell sich eine Produktionslinie wirtschaftlich amortisiert. Jede verlorene Sekunde durch Preform-Handling, ungleichmäßige Erwärmung oder Verzögerungen beim Formen summiert sich über eine komplette Schicht. Genau hier setzt die SEPPA SSB-R6 Rotations-PET-Blasmaschine an.",
+  "overviewsubDescription": [
+    "Im Gegensatz zu linearen Blasformanlagen, die einzelne Prozessschritte stoppen, ausführen und anschließend neu starten, bewegt die SSB-R6 die Preforms kontinuierlich über ein rotierendes Karussellsystem durch den gesamten Produktionsprozess. Dadurch werden Unterbrechungen reduziert und ein gleichmäßiger Materialfluss erreicht. Eine moderne Rotations-Blasmaschine bietet nicht nur höhere Geschwindigkeit, sondern reduziert auch die Beschleunigungs- und Verzögerungsverluste klassischer linearer Systeme. SEPPA Solutions kombiniert deshalb einen stabilen Rotationsrahmen mit synchronisierten, kurvengesteuerten Formbewegungen, sodass jede Station Zyklus für Zyklus exakt positioniert arbeitet. Das Ergebnis ist eine leistungsstarke PET-Rotationsmaschine, die auch bei hohen Produktionsraten enge Wandstärketoleranzen einhält. Für Getränkehersteller, bei denen Stillstand direkte Umsatzverluste bedeutet, bietet diese Stabilität einen entscheidenden Vorteil für langfristige Betriebssicherheit."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Spezifikationen der SSB-R6",
+  "features": [
+    {
+      "title": "Synchronisiertes Rotationskarussell",
+      "description": "Das Herzstück der SSB-R6 ist ein synchronisiertes Rotationskarussell, das durch eine zentrale Master-Kurve gesteuert wird. Dadurch werden Preform-Transfer, Erwärmung und Werkzeugschließung über eine gemeinsame mechanische Referenz koordiniert. Diese Architektur unterscheidet eine echte Hochleistungs-Rotationsblasmaschine von einfachen linearen Systemen mit kreisförmiger Bauweise."
+    },
+    {
+      "title": "Zonengesteuerte IR-Erwärmung und Spindeln",
+      "description": "Die thermische Konditionierung erfolgt über einen Mehrzonen-Infrarotofen mit individuell steuerbaren Heizmodulen. Dadurch kann die Wärmezufuhr entsprechend der jeweiligen Preform-Wandbereiche angepasst werden. Da die Verweilzeit im Heiztunnel durch die Karussellgeschwindigkeit definiert ist, gleicht die SSB-R6 diesen Faktor durch optimierte Lampenverteilung und rotierende Preform-Spindeln aus. Dadurch wird eine gleichmäßige Oberflächenerwärmung gewährleistet und Probleme wie Trübungen oder Materialspannungen werden vermieden."
+    },
+    {
+      "title": "Robustes Formschließsystem & Pneumatik",
+      "description": "Das Formschließsystem kombiniert eine robuste Kniehebelmechanik mit hydraulischer Unterstützung und ist für wiederholte Hochfrequenzzyklen ausgelegt. Die pneumatische Druckregelung steuert Vorblasen, Hochdruckblasen und Entlüftung für jede Kavität separat, wodurch eine konstante Materialverteilung über die gesamte Produktionsschicht erreicht wird. Zusätzlich nutzt die Anlage ein Druckluft-Rückgewinnungssystem, das Abluft aus der Blasphase wieder in andere Prozessschritte integriert und so den Energieverbrauch reduziert."
+    }
+  ],
+  "applicationsTitle": "Anwendungen in der Getränke- und Verpackungsindustrie",
+  "applicationsSubtitle": "Die Stärke einer Rotations-PET-Blasmaschine zeigt sich besonders bei unterschiedlichen Preform-Geometrien und Produktanforderungen.",
+  "applications": [
+    {
+      "title": "Kohlensäurehaltige Getränke (CSD)",
+      "description": "Bei kohlensäurehaltigen Getränken sind gleichmäßige Wandstärken entscheidend, damit Flaschen den Innendruck zuverlässig aufnehmen und keine Verformungen entstehen. Die synchronisierte Rotationsblas-Technologie bietet hier klare Vorteile gegenüber Systemen mit häufigen Geschwindigkeitswechseln."
+    },
+    {
+      "title": "Mineralwasser und leichte PET-Flaschen",
+      "description": "Für Mineralwasserproduktion steht maximale Ausbringung bei gleichzeitig reduziertem Materialeinsatz im Vordergrund. Die SSB-R6 ermöglicht die Anpassung von Heizprofilen und Blasdruckkurven über die Steuerung, ohne umfangreiche mechanische Umstellungen."
+    },
+    {
+      "title": "Säfte, Isotonika und Speiseöle",
+      "description": "Die Rotations-Blasmaschine verarbeitet auch PET-Flaschen für Säfte, funktionale Getränke, isotonische Getränke, Speiseölbehälter und verschiedene Verpackungsanwendungen mit unterschiedlichen Klarheits- und Festigkeitsanforderungen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Blasmaschinen wählen?",
+    "description": "Die Entwicklung einer Rotations-Blasmaschine mit hoher Geschwindigkeit und präziser Prozessstabilität erfordert tiefes Verständnis für Bewegungsdynamik, Pneumatik und PET-Verarbeitung. SEPPA Solutions integriert dieses Know-how in jede SSB-R6 – von der Master-Kurvenauslegung bis zur Druckluftsteuerung.",
+    "paragraphs": [
+      "Führende FMCG-Hersteller bewerten Maschinenlieferanten nicht nur nach technischen Daten, sondern nach realer Anlagenverfügbarkeit, Servicequalität und langfristiger Betriebssicherheit. SEPPA's Erfolgsbilanz in diesen Bereichen sichert kontinuierliche Nachbestellungen.",
+      "SEPPA unterstützt Kunden nicht nur mit der Maschine selbst, sondern mit einer vollständigen Integrationslösung inklusive Fördertechnik, Druckluftauslegung, Steuerungssystem-Inbetriebnahme und Prozessoptimierung. Dieser ganzheitliche Ansatz macht SEPPA zu einem zuverlässigen Partner."
+    ]
+  },
+  "methodology": {
+    "title": "Arbeitsweise des SEPPA SSB-R6 PET-Flaschenblasprozesses",
+    "subtitle": "Der Produktionsablauf beginnt mit der kontinuierlichen Preform-Zuführung, bei der die Preforms automatisch geladen werden, ohne die Karussellbewegung zu unterbrechen:",
+    "steps": [
+      {
+        "title": "Thermische Konditionierung",
+        "description": "Die Preforms durchlaufen die Heizbänke, wo Infrarot-Heizmodule und die kontinuierliche Spindelrotation das Material schnell und gleichmäßig auf die optimale Strecktemperatur bringen."
+      },
+      {
+        "title": "Rotations-Transfer und stufenweises Blasen",
+        "description": "Der synchronisierte Transfer bewegt die Preforms zur Blasstation. Der zweistufige Blasprozess beginnt mit dem Vorblasen bei niedrigerem Druck, gefolgt von einem Hochdruckblasen mit über 35 bar zur finalen Ausformung."
+      },
+      {
+        "title": "Schnelle automatisierte Entnahme",
+        "description": "Die fertigen Flaschen werden automatisch ausgegeben und auf das Förderband zur nächsten Produktionsstufe transportiert, während das Karussell in den nächsten Zyklus rotiert."
+      }
+    ],
+    "outro": [
+      "Dieses kontinuierliche Prinzip minimiert den typischen mechanischen Verschleiß, senkt die Energiekosten und führt zu einer deutlich reduzierten Zykluszeit gegenüber linearen Alternativen."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt eine Rotations-PET-Maschine Wartung?",
+      "answer": "Die Wartungsintervalle hängen von Schichtbetrieb und Flaschenformat ab. Besonders wichtig sind die Schmierung der Master-Kurve sowie die Kontrolle der Dichtungen an den Blasstationen. Durch die reduzierte Vibrationsbelastung sind Wartungsintervalle häufig länger als bei vergleichbaren linearen Anlagen."
+    },
+    {
+      "question": "2. Wie erreicht die SSB-R6 hohe Stabilität bei schnellen Rotationsgeschwindigkeiten?",
+      "answer": "Die Stabilität entsteht durch den steifen Maschinenrahmen, die zentrale Master-Kurvensteuerung und das präzise Formschließsystem. Alle Stationen arbeiten synchron nach derselben mechanischen Referenz."
+    },
+    {
+      "question": "3. Warum wählen Getränkehersteller SEPPA als Partner für Rotationsblasmaschinen?",
+      "answer": "Entscheidend sind Anlagenverfügbarkeit und Gesamtbetriebskosten. SEPPA kombiniert technische Entwicklung, Serviceunterstützung und komplette Integration, wodurch Produktionsrisiken reduziert werden."
+    },
+    {
+      "question": "4. Was ist der Unterschied zwischen Rotations- und Linear-Blasformanlagen?",
+      "answer": "Lineare Systeme arbeiten mit einzelnen Stop-and-Go-Prozessschritten. Rotations-Blasmaschinen bewegen die Preforms kontinuierlich durch Erwärmung, Transfer und Blasprozess und vermeiden dadurch Geschwindigkeitsverluste."
+    },
+    {
+      "question": "5. Was macht SEPPA zu einem führenden Anbieter von PET-Rotationsmaschinen?",
+      "answer": "Die Kombination aus synchronisierter Kavitätssteuerung, energieeffizienter Pneumatik und vollständiger Anlagenintegration macht SEPPA zu einem zuverlässigen Partner für Hochleistungs-PET-Produktion."
+    }
+  ]
+}

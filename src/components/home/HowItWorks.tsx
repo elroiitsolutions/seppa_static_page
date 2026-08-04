@@ -22,9 +22,8 @@ const HowItWorks = () => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
 
-  const getT = (key: string) => isDe ? ((enHome as any).HowItWorks?.[key] || key) : t(`HowItWorks.${key}`);
+  const getT = (key: string) => t(`HowItWorks.${key}`);
 
   const processes = [
     {

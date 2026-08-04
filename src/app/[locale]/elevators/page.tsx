@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -41,6 +42,9 @@ export default async function ElevatorsPage({ params }: PageProps) {
     bgClass: index % 2 === 1 ? "bg-light" : "bg-white"
   }));
 
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/elevators', locale);
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -75,6 +79,8 @@ export default async function ElevatorsPage({ params }: PageProps) {
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

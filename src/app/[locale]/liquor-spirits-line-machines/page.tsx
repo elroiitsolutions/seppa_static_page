@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 import bannerImg from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
 import overviewImg from '@/assets/packaging/generated/premium_spirits_closeup_1781701569217.png';
@@ -18,13 +19,16 @@ interface PageProps {
 export default async function LiquorSpiritsLineMachinesPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'alcohol-spirits' });
+  const t = await getTranslations({ locale, namespace: 'liquor-spirits-line-machines' });
 
   const getArray = (val: any): any[] => {
     if (Array.isArray(val)) return val;
     if (val !== null && typeof val === 'object') return Object.values(val);
     return val ? [val] : [];
   };
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/liquor-spirits-line-machines', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -66,6 +70,8 @@ export default async function LiquorSpiritsLineMachinesPage({ params }: PageProp
   };
 
   const messages = await getMessages({ locale });
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 import Link from 'next/link';
 // import ProcessingLinesCarousel from '@/components/blowing/ProcessingLinesCarousel';
@@ -37,6 +38,9 @@ export default async function BlowingPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'blowing' });
   const messages = await getMessages({ locale });
 
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/blowing', locale);
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -48,27 +52,9 @@ export default async function BlowingPage({ params }: PageProps) {
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => {
-      let paragraphs: any[] = block.paragraphs;
-      
-      if (index === 0 && locale === 'en') {
-        paragraphs = [<React.Fragment key="blowing-types">
-          <span className="font-bold"><span className="text-seppa-red text-xl"> • </span> Semi Automatic Units:</span> Semi automatic machines suit pilot lines, specialty formats, and operations where output volumes sit below 2,000 bottles per hour. Manual preform loading is the trade off; the upside is lower capital cost and flexibility on neck finish. A semi automatic plastic bottle maker is a reasonable starting point when SKU range is wide and runs are short.<Link href="blowing/semi-automatic-units" className="text-primary cursor-pointer text-seppa-red hover:border-b hover:border-seppa-red ml-1">Learn More</Link><br/>
-          <span className="font-bold"><span className="text-seppa-red text-xl"> • </span> Linear Automatic Machines:</span> Linear platforms carry two to twelve cavities in a fixed-pitch arrangement. They cover the mid volume range from roughly 2,000 to 12,000 bottles per hour and suit operations with infrequent format changes. As a plastic pet bottle making machine, linear designs have straightforward maintenance access and lower initial tooling cost than rotary equivalents factors that matter when a project is working against a tight pet bottle manufacturing plant cost budget.<Link href="blowing/linear-automatic-machines" className="text-primary cursor-pointer text-seppa-red hover:border-b border-seppa-red ml-1">Learn More</Link><br/>
-          <span className="font-bold"><span className="text-seppa-red text-xl"> • </span> Rotary High speed Systems:</span> Rotary blow molders are where output rates and container quality both peak. Seppa's rotary platforms carry up to 24 cavities on a continuously rotating wheel, achieving outputs above 24,000 bottles per hour on standard 0.5 litre water formats. Preforms move through dedicated infrared oven segments in continuous flow, arrive at blowing stations at precise temperature, and exit as finished containers without interruption.<Link href="blowing/rotary-high-speed-systems" className="text-primary cursor-pointer text-seppa-red hover:border-b hover:border-seppa-red ml-1">Learn More</Link>
-          </React.Fragment>
-        ];
-      } else if (index === 0 && locale === 'ar') {
-        paragraphs = [<React.Fragment key="blowing-types-ar">
-          <span className="font-bold"><span className="text-seppa-red text-xl"> • </span> الوحدات نصف الأوتوماتيكية:</span> تناسب خطوط الإنتاج التجريبية والعبوات ذات الأشكال الخاصة والتشغيل غير المستمر بطاقات أقل من 2000 عبوة/ساعة. وتتميز بانخفاض التكلفة الاستثمارية وسرعة التهيئة وتعديل عنق الزجاجة بما يخدم المشروعات المبتدئة.<Link href="/ar/blowing/semi-automatic-units" className="text-primary cursor-pointer text-seppa-red hover:border-b hover:border-seppa-red mr-1">اقرأ المزيد</Link><br/>
-          <span className="font-bold"><span className="text-seppa-red text-xl"> • </span> الماكينات الأوتوماتيكية الخطية:</span> تعتمد على ترتيب طولي ثابت من تجويفين إلى 12 تجويفاً وتغطي الطاقات المتوسطة بين 2000 و 12000 زجاجة في الساعة، مع سهولة تامة بالصيانة وتغيير القوالب بما يتلاءم مع ميزانية تكلفة مصنع زجاجات PET المحدودة.<Link href="/ar/blowing/linear-automatic-machines" className="text-primary cursor-pointer text-seppa-red hover:border-b border-seppa-red mr-1">اقرأ المزيد</Link><br/>
-          <span className="font-bold"><span className="text-seppa-red text-xl"> • </span> الأنظمة الدوارة عالية السرعة:</span> وهي القمة في الكفاءة والسرعة، حيث تصل طاقة ماكينة نفخ عبوات PET الدوارة من سيبا إلى أكثر من 24 ألف عبوة/ساعة للعبوات القياسية 0.5 لتر عبر 24 تجويفاً يدورون باستمرار وحركة نقل آلية للبريفورم عبر مناطق تسخين دقيقة بالأشعة تحت الحمراء.<Link href="/ar/blowing/rotary-high-speed-systems" className="text-primary cursor-pointer text-seppa-red hover:border-b hover:border-seppa-red mr-1">اقرأ المزيد</Link>
-          </React.Fragment>
-        ];
-      }
-
       return {
         title: block.title,
-        paragraphs: paragraphs,
+        paragraphs: block.paragraphs,
         image1: [img1.src, img3.src][index] || img1.src,
         reverse: index % 2 === 0,
         bgClass: index === 1 ? "bg-light" : "bg-white"
@@ -89,11 +75,14 @@ export default async function BlowingPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      }))
+      })),
+      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

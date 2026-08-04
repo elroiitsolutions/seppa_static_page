@@ -1,7 +1,7 @@
 {
-  "title": "Stretchwickelmaschinen",
-  "breadcrumbName": "Stretchwickelmaschinen",
-  "rootBreadcrumbName": "Maschinen",
+  "title": "Stretchwickelmaschinen für sichere und effiziente Palettenverpackung",
+  "breadcrumbName": "Stretchwickler",
+  "rootBreadcrumbName": "Ausrüstung",
   "rootBreadcrumbPath": "/equipments",
   "overviewTitle": "Stretchwickelmaschinen für sichere und effiziente Palettenverpackung",
   "overviewDescription": "In modernen Logistik- und Distributionszentren entscheidet die Qualität der Palettensicherung maßgeblich über einen sicheren Transport. Eine professionelle Stretchwickelmaschine übernimmt dabei weit mehr als das bloße Umwickeln einer Palette mit Stretchfolie. Sie erzeugt eine exakt definierte Ladungssicherung, die Produkte während Lagerung, Transport und Umschlag zuverlässig stabilisiert.",
@@ -13,17 +13,15 @@
     {
       "title": "Arten von Stretchwickelmaschinen",
       "paragraphs": [
-        "Die Auswahl der geeigneten Stretchwickelmaschine richtet sich nach Produktionsleistung, Palettengewicht und Anlagenlayout.",
-        "Automatische Stretchwickelmaschinen: Für Produktionslinien mit hohem Durchsatz bieten automatische Stretchwickelmaschinen die höchste Effizienz. Sie lassen sich direkt in bestehende Fördertechnik integrieren und automatisieren den gesamten Wickelprozess ohne manuelle Eingriffe. Besonders bei schweren oder instabilen Paletten kommen häufig Rotationsarm-Systeme zum Einsatz, bei denen sich die Palette selbst nicht bewegt.",
+        "Die Auswahl der geeigneten Stretchwickelmaschine richtet sich nach Produktionsleistung, Palettengewicht und Anlagenlayout. Automatische Stretchwickelmaschinen: Für Produktionslinien mit hohem Durchsatz bieten automatische Stretchwickelmaschinen die höchste Effizienz. Sie lassen sich direkt in bestehende Fördertechnik integrieren und automatisieren den gesamten Wickelprozess ohne manuelle Eingriffe. Besonders bei schweren oder instabilen Paletten kommen häufig Rotationsarm-Systeme zum Einsatz, bei denen sich die Palette selbst nicht bewegt.",
         "Halbautomatische Stretchwickelmaschinen: Halbautomatische Drehtelleranlagen eignen sich für Unternehmen mit geringeren Produktionsmengen oder häufig wechselnden Ladeeinheiten. Sie bieten hohe Flexibilität und ermöglichen dennoch eine deutlich höhere Verpackungsqualität als manuelle Wickelverfahren. Unabhängig vom Maschinentyp bleibt das Ziel identisch: maximaler Folienertrag bei gleichzeitig optimaler Ladungssicherung."
       ]
     },
     {
       "title": "Vorteile automatisierter Stretchwickelmaschinen",
       "paragraphs": [
-        "Der wirtschaftliche Nutzen einer automatisierten Stretchwickelmaschine geht weit über die Einsparung manueller Arbeitszeit hinaus. Zu den wichtigsten Vorteilen zählen: Gleichbleibend hohe Verpackungsqualität, deutlich geringerer Folienverbrauch durch Vorrecktechnologie, verbesserte Ergonomie und geringere körperliche Belastung der Mitarbeitenden, höhere Prozesssicherheit, Reduzierung von Transportschäden und eine höhere Gesamtanlageneffektivität (OEE).",
-        "Durch die gleichmäßige Folienspannung wird die Palette als kompakter Ladeblock stabilisiert, ohne empfindliche Verpackungen zu beschädigen.",
-        "Moderne Anlagen dokumentieren zudem jeden Verpackungszyklus und liefern wertvolle Produktionsdaten zum Folienverbrauch und zur Anlagenauslastung. Dadurch lassen sich Materialeinsatz und Verpackungsprozesse kontinuierlich optimieren."
+        "Der wirtschaftliche Nutzen einer automatisierten Stretchwickelmaschine geht weit über die Einsparung manueller Arbeitszeit hinaus. Zu den wichtigsten Vorteilen zählen: gleichbleibend hohe Verpackungsqualität, deutlich geringerer Folienverbrauch durch Vorrecktechnologie, verbesserte Ergonomie und geringere körperliche Belastung der Mitarbeitenden, höhere Prozesssicherheit, Reduzierung von Transportschäden und höhere Gesamtanlageneffektivität (OEE).",
+        "Durch die gleichmäßige Folienspannung wird die Palette als kompakter Ladeblock stabilisiert, ohne empfindliche Verpackungen zu beschädigen. Moderne Anlagen dokumentieren zudem jeden Verpackungszyklus und liefern wertvolle Produktionsdaten zum Folienverbrauch und zur Auslastung. Dadurch lassen sich Materialeinsatz und Verpackungsprozesse kontinuierlich optimieren."
       ]
     }
   ],
@@ -31,68 +29,75 @@
   "featuresSubtitle": "Die Stretchwickelmaschinen von SEPPA wurden für anspruchsvolle industrielle Anwendungen entwickelt und eignen sich für das automatische Verpacken unterschiedlichster Palettenformate – einschließlich hoher Exportpaletten für den internationalen Containertransport.",
   "features": [
     {
-      "title": "Präzisionskomponenten",
-      "description": "Zur Serienausstattung gehören präzise Lastzellenspanner zur exakten Spannungsregelung, leistungsstarke Vorrecksysteme, robuste Drehteller- oder Rotationssysteme und SPS-Steuerung mit individuell programmierbaren Wickelprogrammen."
+      "title": "Präzise Lastzellenspanner",
+      "description": "Präzise Lastzellenspanner zur exakten Spannungsregelung gewährleisten eine konstante Qualität des Wickelbilds."
     },
     {
-      "title": "Powered Pre-Stretch Unit",
+      "title": "Leistungsstarke Vorrecksysteme",
       "description": "Besonders hervorzuheben ist die motorisierte Powered Pre-Stretch Unit, welche die Stretchfolie um bis zu 300 % vorreckt. Dabei werden aus einem Meter Folie bis zu vier Meter nutzbare Verpackungsfolie."
     },
     {
-      "title": "Separater Dehnungsmotor",
+      "title": "Robuste Drehteller- oder Rotationssysteme",
       "description": "Da die Vordehnung durch einen separaten Motor erfolgt, wird die Folie nicht über die Palette gespannt. Dies gewährleistet eine konstant hohe Folienqualität, reduziert den Materialverbrauch und sorgt gleichzeitig für eine optimale Ladungssicherung."
     },
     {
-      "title": "Widerstandsfähiger Schutz",
-      "description": "Darüber hinaus schützt die Stretchfolie zuverlässig vor Feuchtigkeit, Staub, Korrosion und den Belastungen beim See- oder Ferntransport."
+      "title": "SPS-Steuerung",
+      "description": "SPS-Steuerung mit individuell programmierbaren Wickelprogrammen. Darüber hinaus schützt die Stretchfolie zuverlässig vor Feuchtigkeit, Staub, Korrosion und den Belastungen beim See- oder Ferntransport."
     }
   ],
   "applicationsTitle": "Einsatzbereiche in verschiedenen Industrien",
-  "applicationsSubtitle": "Die Stretchwickelmaschinen von SEPPA werden weltweit in unterschiedlichsten Industriezweigen eingesetzt.",
+  "applicationsSubtitle": "Die Stretchwickelmaschinen von SEPPA werden weltweit in unterschiedlichsten Industriezweigen eingesetzt. Typische Anwendungen sind:",
   "applications": [
     {
-      "title": "Getränke- und Lebensmittelindustrie",
-      "description": "Eingesetzt in der Getränkeindustrie, Lebensmittelproduktion, Molkereien und bei Spirituosen. Besonders bei Getränken wie Mineralwasser, Erfrischungsgetränken oder Milch verhindert die gleichmäßige Folienvorspannung ein Verrutschen der Paletten und reduziert das Risiko von Glasbruch oder Produktausfällen."
+      "title": "Getränkeindustrie & Spirituosen",
+      "description": "Besonders bei Getränken wie Mineralwasser, Erfrischungsgetränken oder Milch verhindert die gleichmäßige Folienvorspannung ein Verrutschen der Paletten und reduziert das Risiko von Glasbruch oder Produktausfällen."
     },
     {
-      "title": "Schwerindustrie und Chemie",
-      "description": "Eingesetzt in der chemischen Industrie, Maschinen- und Anlagenbau sowie in der Elektroindustrie. Auch Säcke mit Getreide, Chemikalien oder Düngemitteln, Jumbo Bags mit Granulaten und Pulvern sowie schwere Metallteile lassen sich zuverlässig sichern."
+      "title": "Schwerindustrie & Chemie",
+      "description": "Auch Säcke mit Getreide, Chemikalien oder Düngemitteln, Jumbo Bags mit Granulaten und Pulvern sowie schwere Metallteile lassen sich zuverlässig sichern."
     },
     {
-      "title": "Pharma und Konsumgüter",
-      "description": "Eingesetzt in der Textil- und Pharmaindustrie. Empfindliche Produkte wie Pharmaartikel oder Haushaltsgeräte profitieren zusätzlich vom Schutz vor Feuchtigkeit und Staub während Transport und Lagerung."
+      "title": "Pharmaindustrie & Konsumgüter",
+      "description": "Empfindliche Produkte wie Pharmaartikel oder Haushaltsgeräte profitieren zusätzlich vom Schutz vor Feuchtigkeit und Staub während Transport und Lagerung."
     }
   ],
   "whyChoose": {
     "title": "Warum Stretchwickelmaschinen von SEPPA?",
     "description": "Für Produktions- und Logistikverantwortliche stehen Zuverlässigkeit, Wirtschaftlichkeit und langfristige Betriebssicherheit im Mittelpunkt jeder Investitionsentscheidung.",
     "paragraphs": [
-      "Die Stretchwickelmaschinen von SEPPA überzeugen durch: Motorisierte Vorrecksysteme mit bis zu 300 % Folienvordehnung, präzise elektronische Spannungsregelung, individuell programmierbare Wickelmuster, robuste Stahlkonstruktionen für den Dauerbetrieb, energieeffiziente Antriebstechnik und hohe Materialeinsparungen durch optimierte Foliennutzung.",
-      "Jede Stretchwickelmaschine wird speziell auf die Anforderungen der jeweiligen Produktionslinie abgestimmt und sorgt dafür, dass Paletten sicher, stabil und transportsicher das Werk verlassen.",
-      "Fazit: Effiziente Stretchwickellösungen für sichere Logistikprozesse. Die Stretchwickelmaschinen von SEPPA verbinden präzise Automatisierung, maximale Materialeffizienz und zuverlässige Ladungssicherung zu einer leistungsstarken End-of-Line-Lösung. Mit intelligenter SPS-Steuerung, motorisierter 300-%-Vorrecktechnologie und individuell anpassbaren Wickelprogrammen gewährleisten sie stabile Paletten, geringere Verpackungskosten und einen sicheren Transport."
+      "Die Stretchwickelmaschinen von SEPPA überzeugen durch: motorisierte Vorrecksysteme mit bis zu 300 % Folienvordehnung, präzise elektronische Spannungsregelung, individuell programmierbare Wickelmuster, robuste Stahlkonstruktionen für den Dauerbetrieb, energieeffiziente Antriebstechnik sowie hohe Materialeinsparungen durch optimierte Foliennutzung.",
+      "Jede Stretchwickelmaschine wird speziell auf die Anforderungen der jeweiligen Produktionslinie abgestimmt und sorgt dafür, dass Paletten sicher, stabil und transportsicher das Werk verlassen."
     ]
   },
   "methodology": {
-    "badge": "Methodology",
+    "badge": "Methodik",
     "title": "Der Stretchwickelprozess",
     "subtitle": "Der automatische Verpackungsprozess erfolgt in mehreren exakt abgestimmten Schritten:",
     "steps": [
       {
-        "title": "Palettenerkennung und Folienstart",
-        "description": "Sensoren erfassen automatisch Höhe und Abmessungen der Palette. Die Maschine positioniert und fixiert die Stretchfolie an der Palette."
+        "title": "1. Palettenerkennung",
+        "description": "Sensoren erfassen automatisch Höhe und Abmessungen der Palette."
       },
       {
-        "title": "Programmgesteuerter Wickelvorgang",
+        "title": "2. Automatischer Folienstart",
+        "description": "Die Maschine positioniert und fixiert die Stretchfolie an der Palette."
+      },
+      {
+        "title": "3. Programmgesteuerter Wickelvorgang",
         "description": "Die SPS regelt Vorreckung, Überlappung und Folienspannung entsprechend dem ausgewählten Wickelprogramm."
       },
       {
-        "title": "Kontinuierliche Spannungsregelung",
+        "title": "4. Kontinuierliche Spannungsregelung",
         "description": "Ein Tänzerarm-System passt die Folienabgabe permanent an die Palettengeometrie an und verhindert Folienrisse insbesondere an Ecken."
       },
       {
-        "title": "Abschluss des Wickelvorgangs",
-        "description": "Nach dem letzten Wickelzyklus wird die Folie automatisch thermisch getrennt und sauber an der Palette angelegt. Die robuste Konstruktion ermöglicht einen zuverlässigen Dauerbetrieb."
+        "title": "5. Abschluss des Wickelvorgangs",
+        "description": "Nach dem letzten Wickelzyklus wird die Folie automatisch thermisch getrennt und sauber an der Palette angelegt."
       }
+    ],
+    "outro": [
+      "Die robuste Konstruktion ermöglicht einen zuverlässigen Dauerbetrieb auch unter anspruchsvollen Industriebedingungen. Da sämtliche Abläufe automatisiert sind, ist lediglich ein minimaler Bedienaufwand erforderlich.",
+      "Effiziente Stretchwickellösungen für sichere Logistikprozesse. Die Stretchwickelmaschinen von SEPPA verbinden präzise Automatisierung, maximale Materialeffizienz und zuverlässige Ladungssicherung zu einer leistungsstarken End-of-Line-Lösung. Mit intelligenter SPS-Steuerung, motorisierter 300-%-Vorrecktechnologie und individuell anpassbaren Wickelprogrammen gewährleisten sie stabile Paletten, geringere Verpackungskosten und einen sicheren Transport – vom Produktionsstandort bis zum endgültigen Bestimmungsort."
     ]
   },
   "faqTitle": "Häufig gestellte Fragen",

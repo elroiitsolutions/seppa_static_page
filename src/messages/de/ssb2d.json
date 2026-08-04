@@ -1,0 +1,103 @@
+{
+  "title": "SEPPA SSB-2D (Auto Drop) PET-Blasmaschine",
+  "breadcrumbName": "SSB-2D",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Überblick über die SEPPA SSB-2D Auto Drop PET-Streckblasmaschine",
+  "overviewDescription": "In modernen PET-Verpackungsanlagen sind konstante Qualität, hohe Verfügbarkeit und minimale manuelle Eingriffe entscheidende Faktoren. Die SEPPA SSB-2D Auto Drop PET-Streckblasmaschine wurde für Produktionsumgebungen entwickelt, in denen eine stabile Ausbringung über lange Betriebszeiten erforderlich ist.",
+  "overviewsubDescription": [
+    "Das integrierte Auto-Drop-System automatisiert die Übergabe der fertigen PET-Flaschen nach dem Blasprozess. Dadurch werden manuelle Entnahmeprozesse reduziert, Produktionsabläufe beschleunigt und die Prozesssicherheit erhöht.",
+    "Die Maschine kombiniert robuste mechanische Konstruktion mit präziser Steuerungstechnik. Durch die abgestimmte Zusammenarbeit von Heizsystem, Pneumatik, Werkzeugtechnik und automatisierter Materialführung entsteht ein zuverlässiger Produktionsprozess mit gleichbleibender Flaschenqualität."
+  ],
+  "featuresTitle": "Technische Vorteile der SEPPA SSB-2D",
+  "features": [
+    {
+      "title": "Energieeffiziente Heiztechnologie",
+      "description": "Das modulare IR-Heizsystem ermöglicht eine gezielte Wärmezufuhr entsprechend der jeweiligen Preform-Geometrie. Dadurch wird der Energieeinsatz optimiert und gleichzeitig die Produktqualität verbessert."
+    },
+    {
+      "title": "Präzise Pneumatiksteuerung",
+      "description": "Schnell reagierende Ventiltechnik und kontrollierte Druckprofile ermöglichen eine genaue Steuerung des Streckblasprozesses. Dies reduziert Druckluftverluste und unterstützt einen wirtschaftlichen Betrieb."
+    },
+    {
+      "title": "Robuste Werkzeugverriegelung",
+      "description": "Die verstärkte Schließeinheit ist für hohe Belastungen im kontinuierlichen Produktionsbetrieb ausgelegt. Sie trägt dazu bei, Formabweichungen und Ausschuss zu minimieren."
+    },
+    {
+      "title": "Automatisiertes Auto-Drop-System",
+      "description": "Die automatische Flaschenübergabe reduziert manuelle Eingriffe und verbessert die Geschwindigkeit der Produktionszyklen. Gleichzeitig wird die hygienische Sicherheit erhöht, da der direkte Kontakt mit fertigen Behältern vermieden wird."
+    }
+  ],
+  "applicationsTitle": "Anwendungen der SEPPA SSB-2D",
+  "applicationsSubtitle": "Durch flexible Prozessparameter und anpassbare Werkzeuglösungen können unterschiedliche Flaschenformen und Größen produziert werden.",
+  "applications": [
+    {
+      "title": "Getränkeverpackung",
+      "description": "Die Maschine produziert leichte Flaschen für Mineralwasser, PET-Flaschen für kohlensäurehaltige Getränke sowie Saft- und Erfrischungsgetränkeverpackungen."
+    },
+    {
+      "title": "Kosmetik- & Körperpflegebehälter",
+      "description": "Es entstehen klare, hochwertige PET-Behälter für Shampoos, Flüssigseifen, Körperpflegeprodukte und Duschgele."
+    },
+    {
+      "title": "Speiseöle, Saucen & Haushaltschemie",
+      "description": "Die Maschine eignet sich optimal für Speiseölflaschen, Weithalsgläser und formstabile Behälter für Wasch- oder Haushaltsreinigungsmittel."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA?",
+    "description": "SEPPA entwickelt PET-Streckblasmaschinen mit Fokus auf industrielle Zuverlässigkeit, einfache Integration und langfristige Betriebseffizienz.",
+    "paragraphs": [
+      "Die Kombination aus mechanischer Präzision, moderner Automatisierung und abgestimmten Prozesssystemen ermöglicht Anlagenlösungen, die auch bei kontinuierlichem Betrieb stabile Ergebnisse liefern.",
+      "Von der Maschinenkonstruktion über Steuerungstechnik bis zur technischen Unterstützung bietet SEPPA Lösungen für Unternehmen, die ihre PET-Produktion erweitern oder modernisieren möchten."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-2D Auto Drop PET-Blasmaschine",
+    "subtitle": "Die Herstellung einer PET-Flasche erfordert eine präzise Kontrolle. Die SSB-2D steuert alle Prozessschritte automatisiert:",
+    "steps": [
+      {
+        "title": "Preform-Zuführung",
+        "description": "PET-Preforms werden über ein Zuführsystem sortiert und ausgerichtet. Dadurch gelangen sie in definierter Position in den Heizbereich."
+      },
+      {
+        "title": "Kontrollierte Infrarot-Erwärmung",
+        "description": "Mehrere individuell regelbare Infrarot-Heizzonen erwärmen die Preforms gleichmäßig auf die optimale Verarbeitungstemperatur."
+      },
+      {
+        "title": "Präzise Übergabe & Schließen",
+        "description": "Nach der Konditionierung wird der Preform exakt in das Blaswerkzeug eingesetzt und die Schließeinheit verriegelt die Form sicher."
+      },
+      {
+        "title": "Mehrstufiges Streckblasen & Entnahme",
+        "description": "Der Streckstab dehnt den Preform axial, während Vorblasen und Hochdruckblasen das Material formen. Das Auto-Drop-System übergibt die fertigen Flaschen direkt ans Fördersystem."
+      }
+    ],
+    "outro": [
+      "Dieses automatisierte System reduziert manuelle Arbeitsschritte, verkürzt Übergabezeiten und schützt die fertigen Flaschen vor Beschädigungen."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Welche Vorteile bietet das Auto-Drop-System?",
+      "answer": "Das automatische Entnahmesystem reduziert manuelle Arbeitsschritte, verkürzt Übergabezeiten und schützt die fertigen Flaschen vor Beschädigungen."
+    },
+    {
+      "question": "2. Wie wird eine konstante Flaschenqualität erreicht?",
+      "answer": "Durch die Kombination aus präziser Preform-Erwärmung, kontrolliertem Streckblasprozess und stabiler Werkzeugführung wird eine gleichmäßige Materialverteilung erreicht."
+    },
+    {
+      "question": "3. Für welche Produktionsbereiche eignet sich die SSB-2D?",
+      "answer": "Die Maschine ist für industrielle PET-Verpackungsanwendungen geeignet, insbesondere für Getränke-, Kosmetik- und Konsumgüterhersteller."
+    },
+    {
+      "question": "4. Wie beeinflusst die Technologie die Betriebskosten?",
+      "answer": "Optimierte Heiz- und Pneumatiksysteme reduzieren Energieverbrauch, während automatisierte Abläufe den Personal- und Wartungsaufwand senken."
+    },
+    {
+      "question": "5. Warum wählen Unternehmen SEPPA?",
+      "answer": "SEPPA verbindet Engineering-Kompetenz mit praxisorientierter Maschinenentwicklung und bietet zuverlässige PET-Blaslösungen für anspruchsvolle Produktionsumgebungen."
+    }
+  ]
+}
