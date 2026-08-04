@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @source "../**/*.{js,ts,jsx,tsx,mdx}";
 
 @theme {
@@ -13,31 +13,7 @@
   --font-heading: 'Cal Sans', sans-serif;
 }
 
-/* Self-hosted Cal Sans font — avoids CORS issues across browsers */
-@font-face {
-	font-family: 'Cal Sans';
-	font-style: normal;
-	font-weight: 600;
-	src: url('/fonts/CalSans-SemiBold.woff2') format('woff2');
-	font-display: swap;
-}
 
-@font-face {
-	font-family: 'Cal Sans';
-	font-style: normal;
-	font-weight: 700;
-	src: url('/fonts/CalSans-Bold.woff2') format('woff2');
-	font-display: swap;
-}
-
-/* Fallback: map weight 400 to SemiBold so existing code with font-weight:normal still works */
-@font-face {
-	font-family: 'Cal Sans';
-	font-style: normal;
-	font-weight: 400;
-	src: url('/fonts/CalSans-SemiBold.woff2') format('woff2');
-	font-display: swap;
-}
 
 @layer base {
   /* Cross-browser color scheme consistency and DPI scaling safeguards */

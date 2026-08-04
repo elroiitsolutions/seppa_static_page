@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import imgA from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
@@ -26,6 +27,9 @@ export default async function SoftDrinkLinesPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'softdrinkline' });
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/soft-drink-lines', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -68,6 +72,8 @@ export default async function SoftDrinkLinesPage({ params }: PageProps) {
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

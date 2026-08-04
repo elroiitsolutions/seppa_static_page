@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -30,6 +31,9 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'rotarypetblowing' });
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/blowing/rotary-high-speed-systems', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -144,6 +148,7 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
       link: `/${locale}/blowing/rotary-high-speed-systems/ssb-r16`
     }
   ];
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

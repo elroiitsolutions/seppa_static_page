@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import bannerImg from '@/assets/processing/generated/processing_banner_1781759101340.png';
@@ -30,6 +31,9 @@ export default async function ProcessingPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'processing' });
   const messages = await getMessages({ locale });
 
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/processing', locale);
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -48,7 +52,9 @@ export default async function ProcessingPage({ params }: PageProps) {
             const parts = pText.split('für:');
             const mainText = parts[0] + 'für:';
             const listItems = parts[1].split(',').map(item => item.trim()).filter(Boolean);
-            return (
+              pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+
+  return (
               <div key={pIdx}>
                 <p className="mb-4 text-base md:text-lg text-gray-600 leading-relaxed">{mainText}</p>
                 <ul className="list-disc pl-6 mb-4 space-y-2 text-base md:text-lg text-gray-600 leading-relaxed marker:text-seppa-red">

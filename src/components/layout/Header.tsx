@@ -1,16 +1,16 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
+import Image from "next/image";
+import { fetchAPI } from '@/lib/strapi/client';
 import { usePathname, useRouter } from "next/navigation";
 import { FiMenu, FiX, FiChevronDown, FiChevronRight } from 'react-icons/fi';
 
 import logoImg from '@/assets/logo/logo.png';
-import enHeader from '@/messages/en/header.json';
-import arHeader from '@/messages/ar/header.json';
-import deHeader from '@/messages/de/header.json';
-import nlHeader from '@/messages/nl/header.json';
+import { useTranslations } from 'next-intl';
 
 const Header: React.FC = () => {
+  const t = useTranslations('header');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
@@ -20,7 +20,87 @@ const Header: React.FC = () => {
   const isGerman = pathname.startsWith('/de');
   const isDutch = pathname.startsWith('/nl');
 
-  const menu = isArabic ? arHeader : isGerman ? deHeader : isDutch ? { ...enHeader, ...nlHeader } : enHeader;
+  const menu = {
+    home: t('home'),
+    packaging: t('packaging'),
+    petBlowers: t('petBlowers'),
+    automaticPetBlowers: t('automaticPetBlowers'),
+    semiAutomaticPetBlowers: t('semiAutomaticPetBlowers'),
+    petJarBlowing: t('petJarBlowing'),
+    pet: t('pet'),
+    can: t('can'),
+    glass: t('glass'),
+    pouch: t('pouch'),
+    brickCarton: t('brickCarton'),
+    gableTopCarton: t('gableTopCarton'),
+    asepticDrum: t('asepticDrum'),
+    liquid: t('liquid'),
+    mineralWaterLine: t('mineralWaterLine'),
+    stillWater: t('stillWater'),
+    mineralWater: t('mineralWater'),
+    alkalineWater: t('alkalineWater'),
+    sparklingWater: t('sparklingWater'),
+    structuredWater: t('structuredWater'),
+    flavoredWater: t('flavoredWater'),
+    softDrinks: t('softDrinks'),
+    juicesNectars: t('juicesNectars'),
+    juiceNectarsSoftDrinks: t('juiceNectarsSoftDrinks'),
+    isotonics: t('isotonics'),
+    teas: t('teas'),
+    beer: t('beer'),
+    alcoholSpirits: t('alcoholSpirits'),
+    wineMead: t('wineMead'),
+    rtdsSeltzers: t('rtdsSeltzers'),
+    ldp: t('ldp'),
+    tomatoKetchups: t('tomatoKetchups'),
+    services: t('services'),
+    spareParts: t('spareParts'),
+    maintenance: t('maintenance'),
+    lineImprovement: t('lineImprovement'),
+    lineConversions: t('lineConversions'),
+    audits: t('audits'),
+    training: t('training'),
+    completeLines: t('completeLines'),
+    waterLines: t('waterLines'),
+    softDrinkLines: t('softDrinkLines'),
+    juiceLines: t('juiceLines'),
+    beerLines: t('beerLines'),
+    wineLines: t('wineLines'),
+    liquorLines: t('liquorLines'),
+    dairyLines: t('dairyLines'),
+    ketchupsSauces: t('ketchupsSauces'),
+    equipments: t('equipments'),
+    processing: t('processing'),
+    blowing: t('blowing'),
+    preFormSterilization: t('preFormSterilization'),
+    unscramblers: t('unscramblers'),
+    rinserFillerCapper: t('rinserFillerCapper'),
+    kombo: t('kombo'),
+    elevators: t('elevators'),
+    labelling: t('labelling'),
+    batchCoders: t('batchCoders'),
+    bottleHandling: t('bottleHandling'),
+    shrinkWrapping: t('shrinkWrapping'),
+    cartonHandling: t('cartonHandling'),
+    palletEquipment: t('palletEquipment'),
+    stretchWrapping: t('stretchWrapping'),
+    crateStacker: t('crateStacker'),
+    refrigerationSystem: t('refrigerationSystem'),
+    airDryer: t('airDryer'),
+    crateWashers: t('crateWashers'),
+    glassBottleWasher: t('glassBottleWasher'),
+    glassBottleFillerCapper: t('glassBottleFillerCapper'),
+    tunnelPasteurizers: t('tunnelPasteurizers'),
+    tunnelCooler: t('tunnelCooler'),
+    deCapper: t('deCapper'),
+    largeBottleFiller: t('largeBottleFiller'),
+    enquiry: t('enquiry'),
+    productEnquiry: t('productEnquiry'),
+    investors: t('investors'),
+    dealers: t('dealers'),
+    videos: t('videos'),
+    contactUs: t('contactUs')
+  };
 
   const getLink = (path: string) => {
     if (path === '/') {
@@ -90,7 +170,10 @@ const Header: React.FC = () => {
   }, []);
 
   // Dynamic header classes - sticky behavior across all viewports
-  const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-3 sm:px-6 lg:px-8 ${scrolled
+  const isBlogPage = pathname.includes('/blog') && !pathname.endsWith('/blog') && !pathname.endsWith('/blog/');
+  const isSolid = scrolled || isBlogPage;
+
+  const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-3 sm:px-6 lg:px-8 ${isSolid
       ? 'w-full top-0 bg-seppa-blue shadow-lg py-2.5 lg:py-3.5 rounded-none'
       : 'w-full lg:max-w-[1700px] lg:w-[96%] top-0 lg:top-3 2xl:top-6 lg:rounded-[24px] xl:rounded-[30px] bg-transparent py-3 lg:py-4'
     }`;
@@ -108,9 +191,10 @@ const Header: React.FC = () => {
         <div className="shrink-0 flex justify-start items-center z-50 relative mr-2 lg:mr-3 xl:mr-4 rtl:ml-2 rtl:lg:ml-3 rtl:xl:ml-4">
           <Link href="/" className="shrink-0">
             <div className='w-fit h-fit rounded-xl overflow-hidden bg-white p-1.5 lg:p-2 shrink-0'>
-              <img
-                src={logoImg.src}
+              <Image
+                src={logoImg}
                 alt="Seppa Solutions Logo"
+                priority
                 className="h-7 lg:h-8 xl:h-10 w-auto transition-all duration-300 shrink-0"
               />
             </div>
@@ -283,6 +367,7 @@ const Header: React.FC = () => {
             </Link>
             <Link
               href={getLink("/contact-us")}
+              aria-label="Contact Us"
               className="w-8 h-8 xl:w-9 xl:h-9 2xl:w-12 2xl:h-12 rounded-full bg-seppa-red group-hover:bg-seppa-blue transition duration-300 flex items-center justify-center text-white shadow-md shrink-0 animate-pulse"
             >
               <svg className="transform transition-transform duration-300 group-hover:rotate-45 w-[14px] h-[14px] xl:w-[15px] xl:h-[15px] 2xl:w-[18px] 2xl:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="19" x2="19" y2="5"></line><polyline points="9 5 19 5 19 15"></polyline></svg>
@@ -315,6 +400,7 @@ const Header: React.FC = () => {
         <div className="flex-grow-0 flex lg:hidden justify-end">
           <button
             suppressHydrationWarning
+            aria-label="Toggle mobile menu"
             className={`text-2xl z-50 relative text-white`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >

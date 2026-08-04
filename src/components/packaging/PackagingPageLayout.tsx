@@ -69,6 +69,7 @@ export interface PackagingPageData {
   faqSubtitle?: string;
   cta?: CTAProps;
   hideWhyChoose?: boolean;
+  trending_articles?: any[];
 }
 
 interface PackagingPageLayoutProps {
@@ -225,7 +226,9 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data, locale,
       <PackagingContact />
 
       {/* Blog Section */}
-      <LatestBlogs />
+      <LatestBlogs 
+        selected_blogs={data.trending_articles && data.trending_articles.length > 0 ? data.trending_articles : undefined}
+      />
     </div>
   );
 };
