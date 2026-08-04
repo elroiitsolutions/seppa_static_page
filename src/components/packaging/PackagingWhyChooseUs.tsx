@@ -73,12 +73,19 @@ const ReasonItem = ({ reason }: { reason: { icon?: React.ReactNode; title: strin
         <p className="text-gray-600 text-sm leading-relaxed">
           {displayText}
           {isLongText && (
-            <button 
+            <span 
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-seppa-red ml-1 font-medium hover:underline focus:outline-none text-xs inline-block"
+              className="text-seppa-red ml-1 font-medium hover:underline focus:outline-none text-xs inline-block cursor-pointer"
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  setIsExpanded(!isExpanded);
+                }
+              }}
             >
               {isExpanded ? "Read Less" : "Read More"}
-            </button>
+            </span>
           )}
         </p>
       </div>

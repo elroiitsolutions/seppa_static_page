@@ -307,6 +307,7 @@ export default function ChatWidget() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
+        suppressHydrationWarning={true}
         className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-[#20B2AA] to-[#0f8c85] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:shadow-2xl transition-all duration-300 relative z-50"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}

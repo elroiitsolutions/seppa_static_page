@@ -147,7 +147,7 @@ export default async function PneumaticBlowingPage({ params }: PageProps) {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
         <PackagingPageLayout data={pageData} locale={locale}>
-          <section className="py-16 bg-white relative">
+           <section className="py-16 bg-white relative">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
                 <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
