@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 import Link from 'next/link';
 
@@ -28,6 +29,9 @@ export default async function PneumaticBlowingPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'pneumaticpetblowing' });
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/blowing/pneumatic', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -137,12 +141,12 @@ export default async function PneumaticBlowingPage({ params }: PageProps) {
       link: `/${locale}/blowing/pneumatic/ssb-sl-60`
     }
   ];
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
         <PackagingPageLayout data={pageData} locale={locale}>
-          {/* Custom Section 2: Comprehensive Lines */}
           <section className="py-16 bg-white relative">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">

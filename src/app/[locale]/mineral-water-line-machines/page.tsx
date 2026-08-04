@@ -2,6 +2,7 @@ import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 import overview from '@/assets/packaging/generated/mineral_overview.png';
@@ -24,6 +25,9 @@ export default async function MineralWaterLinePage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'mineral' });
   const messages = await getMessages({ locale });
+
+  // Fetch blogs related to this page automatically
+  const relatedBlogs = await getRelatedBlogs('/mineral-water-line-machines', locale);
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -67,6 +71,8 @@ export default async function MineralWaterLinePage({ params }: PageProps) {
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : [],
     hideWhyChoose: false
   };
+
+    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

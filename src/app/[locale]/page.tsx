@@ -2,6 +2,7 @@ import HomeView from '../HomeView';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
+import { pickMessages } from '@/lib/i18n-helper';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -16,9 +17,10 @@ export default async function LocalizedHomePage({ params }: Props) {
   setRequestLocale(locale);
 
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['home', 'videos']);
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <HomeView />
     </NextIntlClientProvider>
   );

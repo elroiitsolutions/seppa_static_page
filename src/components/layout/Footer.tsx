@@ -1,22 +1,45 @@
 "use client";
 import React from 'react';
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FiFacebook, FiInstagram, FiArrowUpRight } from 'react-icons/fi';
 import { FaYoutube } from 'react-icons/fa';
 import logoImg from '@/assets/logo/logo.png';
 import bgPattern from '@/assets/bg/black-line-1.png';
 
-import enFooter from '@/messages/en/footer.json';
-import arFooter from '@/messages/ar/footer.json';
-import deFooter from '@/messages/de/footer.json';
+import { useTranslations } from 'next-intl';
 
 const Footer: React.FC = () => {
+  const t = useTranslations('footer');
   const pathname = usePathname();
   const isArabic = pathname.startsWith('/ar');
   const isGerman = pathname.startsWith('/de');
   
-  const f = isArabic ? arFooter : isGerman ? deFooter : enFooter;
+  const f = {
+    subscribeNewsletter: t('subscribeNewsletter'),
+    enterEmail: t('enterEmail'),
+    engineerTogether: t('engineerTogether'),
+    getInTouch: t('getInTouch'),
+    quickLinks: t('quickLinks'),
+    home: t('home'),
+    aboutUs: t('aboutUs'),
+    ourBlog: t('ourBlog'),
+    contactUs: t('contactUs'),
+    ourServices: t('ourServices'),
+    packaging: t('packaging'),
+    spareParts: t('spareParts'),
+    maintenance: t('maintenance'),
+    lineImprovement: t('lineImprovement'),
+    lineConversions: t('lineConversions'),
+    audits: t('audits'),
+    training: t('training'),
+    contactInformation: t('contactInformation'),
+    address: t('address'),
+    copyright: t('copyright'),
+    seppaSolutions: t('seppaSolutions'),
+    allRightsReserved: t('allRightsReserved')
+  };
 
   const [newsletterEmail, setNewsletterEmail] = React.useState('');
   const [newsletterSubscribed, setNewsletterSubscribed] = React.useState(false);
@@ -53,10 +76,10 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-16 pb-12 border-b border-white/10">
           <div className="shrink-0 flex items-center gap-3">
             <Link href="/">
-              <img 
-                src={logoImg.src} 
+              <Image 
+                src={logoImg} 
                 alt="Seppa Solutions Logo" 
-                className="h-14 transition-all duration-300 bg-white px-2 py-1 rounded" 
+                className="h-14 w-auto transition-all duration-300 bg-white px-2 py-1 rounded" 
               />
             </Link>
           </div>
@@ -84,6 +107,7 @@ const Footer: React.FC = () => {
                   <button 
                     suppressHydrationWarning
                     type="submit" 
+                    aria-label="Submit Newsletter"
                     className="bg-seppa-red text-white px-5 sm:px-6 py-3.5 sm:py-4 rounded-r-lg hover:bg-white hover:text-[#101934] transition flex items-center justify-center shrink-0"
                   >
                     <FiArrowUpRight size={20} />
@@ -109,7 +133,7 @@ const Footer: React.FC = () => {
               <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="inline-flex bg-seppa-red text-white px-6 sm:px-8 py-3.5 sm:py-[18px] rounded-full font-bold text-base sm:text-lg group-hover:bg-white group-hover:text-seppa-red transition duration-300 tracking-wide text-center">
                 {f.getInTouch}
               </button>
-              <button suppressHydrationWarning onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-12 h-12 sm:w-[60px] sm:h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md shrink-0">
+              <button suppressHydrationWarning aria-label="Open Enquiry Modal" onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('open-enquiry-modal')); }} className="w-12 h-12 sm:w-[60px] sm:h-[60px] bg-white flex items-center justify-center text-seppa-red rounded-full group-hover:bg-seppa-red group-hover:text-white transition duration-300 shadow-md shrink-0">
                 <FiArrowUpRight className="transform transition-transform duration-300 group-hover:rotate-45" size={22} strokeWidth={2.5} />
               </button>
             </div>
