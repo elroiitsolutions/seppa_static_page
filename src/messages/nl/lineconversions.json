@@ -1,0 +1,108 @@
+{
+  "title": "Lijnconversies & Matrijzen",
+  "breadcrumbName": "Lijnconversies & Matrijzen",
+  "rootBreadcrumbName": "Diensten",
+  "rootBreadcrumbPath": "/services",
+  "overviewTitle": "SEPPA Lijnconversies & Matrijsoplossingen",
+  "overviewDescription": "Een plant manager die ooit een weekend heeft doorgebracht met het handmatig ombouwen van een lijn voor een nieuw flesformaat, weet precies waar dit over gaat. Elke minuut stilstand kost geld, en toch is flexibiliteit tegenwoordig geen luxe meer – het is een voorwaarde om aan de vraag van de markt te blijven voldoen. Bij Seppa Solutions bouwen we Lijnconversies die dat spanningsveld oplossen zonder dat je hele productieteam er een weekend voor hoeft op te offeren.",
+  "overviewsubDescription": [
+    "Overzicht van SEPPA Lijnconversies & Matrijsoplossingen: Een succesvolle omschakeling draait om de vraag hoe snel je overschakelt van product A naar product B zonder concessies aan kwaliteit.",
+    "Onze aanpak voor Lijnconversies vervangt handmatige afstelling door snelwisselsystemen zonder gereedschap. Modulaire wisselonderdelen zijn vooraf gekalibreerd voor snelle omsteltijden.",
+    "CAD/CAM geoptimaliseerde blaasvormen en precisiegeleiders zorgen ervoor dat elk flesformaat, elke dop en elk etiket exact op zijn plek valt."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van SEPPA Lijnconversies & Matrijssystemen",
+  "featuresSubtitle": "Geavanceerde snelwissel- en matrijsinnovaties voor maximale uptime:",
+  "features": [
+    {
+      "title": "Snelwisselonderdelen met Precisiegeleiders",
+      "description": "Tolerantiecontrole tot op tiende millimeters nauwkeurig om foutaccumulatie bij hoge snelheden te voorkomen."
+    },
+    {
+      "title": "CAD/CAM Geoptimaliseerde Blaasvormen",
+      "description": "3D-simulatie en FEA-analyse van het blaasproces vóór de matrijs gefreesd wordt voor een optimale thermische balans."
+    },
+    {
+      "title": "Gereedschapsloze Omschakelsystemen",
+      "description": "Operators werken met gekalibreerde kliksystemen en gemarkeerde instelpunten om menselijke fouten te minimaliseren."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Dranken-, Voedingsmiddelen-, Zuivel- en Verpakkingsindustrie",
+  "applicationsSubtitle": "Flexibele oplossingen voor uiteenlopende verpakkingsmaterialen en sectoren:",
+  "applications": [
+    {
+      "title": "Drankenindustrie & Flessenvullijnen",
+      "description": "Aanpassen van een bestaande flessenvullijn om snel te schakelen tussen glas en PET of verschillende flesformaten."
+    },
+    {
+      "title": "Voedingsmiddelen & Zuivelverpakkingen",
+      "description": "Ombouw van consumentenverpakkingen naar bulkverpakkingen met hygiënische wisselonderdelen en CIP-bestendigheid."
+    },
+    {
+      "title": "Structurele Productielijn Upgrades",
+      "description": "Modulaire aanpassingen die industriële verpakkingslijnen toekomstbestendig maken voor meerdere jaren productvariatie."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van Lijnconversies en Matrijsupgrades",
+      "paragraphs": [
+        "Stilstand tijdens een handmatige ombouw van productielijnen kost bij veel fabrieken tussen de 4 en 8 uur per omschakeling. Met onze snelwisselsystemen loopt die tijd terug naar minder dan 90 minuten.",
+        "Een doordachte ombouw van productielijnen kan op jaarbasis honderden productie-uren terugwinnen bij industriële verpakkingslijnen, die direct ingezet kunnen worden voor extra output.",
+        "Fabrieken die snel kunnen schakelen tussen SKU's kunnen kleinere orders en seizoensgebonden producten aannemen die voorheen niet rendabel waren."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor SEPPA Solutions voor Lijnconversies en Matrijzen?",
+    "description": "Gecontroleerd maatwerk afgestemd op het specifieke product, bestaande apparatuur en de fabriekslayout.",
+    "paragraphs": [
+      "Wereldwijde Ervaring in Omschakelingen: Beproefde snelwisselsystemen bij ambachtelijke stokerijen tot grote exportgerichte fabrieken.",
+      "Duurzame Lijnupgrades: Een flessenvullijn die we vandaag ombouwen kan over twee jaar opnieuw worden aangepast voor een nieuw formaat.",
+      "Integrale Ondersteuning: Van pre-engineering en simulatie tot fysieke inbedrijfstelling en gedegen operator-training."
+    ]
+  },
+  "methodology": {
+    "title": "Methodologie voor Lijnconversies: Van Analyse tot Implementatie",
+    "steps": [
+      {
+        "title": "1. Pre-Engineering & Data Audit",
+        "description": "Analyse van de bestaande lijn, cyclustijden, vuldruk en fysieke beperkingen van de fabriekshal."
+      },
+      {
+        "title": "2. Matrijsontwerp & 3D-Simulatie",
+        "description": "CAD/CAM-ontwerp en thermische processimulatie om de blaasvorming digitaal te testen vóór productie."
+      },
+      {
+        "title": "3. Fabricage & Snelwisselonderdelen",
+        "description": "Frezen van matrijzen op 5-assige CNC-centra en kalibreren van gereedschapsloze snelwisselonderdelen."
+      },
+      {
+        "title": "4. Fysieke Tests & Inbedrijfstelling",
+        "description": "Uitgebreide testruns op onze eigen faciliteit gevolgd door snelle implementatie en operator-training op locatie."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Lijnconversies en Matrijzen",
+  "faqs": [
+    {
+      "question": "Hoe lang duurt een gemiddelde lijnconversie?",
+      "answer": "De meeste van onze Lijnconversies nemen tussen de 60 en 90 minuten in beslag voor de fysieke omschakeling zelf."
+    },
+    {
+      "question": "Wat kost een gerichte ombouw van productielijnen?",
+      "answer": "De investering varieert per project, maar de meeste klanten verdienen de kosten binnen 12 tot 18 maanden terug via bespaarde stilstandtijd."
+    },
+    {
+      "question": "Zijn jullie systemen compatibel met bestaande industriële verpakkingslijnen?",
+      "answer": "In de meeste gevallen wel. We beoordelen tijdens de pre-engineering of bestaande drankindustrie machines kunnen worden geïntegreerd."
+    },
+    {
+      "question": "Hoe efficiënt is een moderne flessenvullijn na een conversie?",
+      "answer": "Klanten rapporteren gemiddeld een stijging van de OEE met 10 tot 20 procent na implementatie van een geconverteerde flessenvullijn."
+    },
+    {
+      "question": "Wat is de impact van een productielijn upgrade op de bestaande garantie?",
+      "answer": "Onze upgrades worden zo ontworpen dat ze de bestaande garantie op kernonderdelen niet aantasten, en we documenteren elke wijziging."
+    }
+  ]
+}

@@ -7,6 +7,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
+import { Link } from '@/i18n/routing';
+
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
 
 const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 40 },
@@ -18,45 +22,58 @@ const staggerContainer = {
     visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const projects = [
-    {
-        title: 'MINERAL WATER / SOFT DRINK PET BOTTLE MACHINE',
-        subtitle: 'MINERAL WATER / SOFT DRINK PET BOTTLE MACHINE',
-        image: 'pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg'
-    },
-    {
-        title: 'MILK / JUICE PET BOTTLE MACHINE',
-        subtitle: 'Complete Line Solutions for Process Technology.',
-        image: 'pics/large.jpg'
-    },
-    {
-        title: 'PET HOUSEHOLD CLEANING PRODUCTS',
-        subtitle: 'Complete Line Solutions for PET Filling.',
-        image: 'pics/PET-HOUSEHOLD.png'
-    },
-    {
-        title: 'OIL / KETCHUPS PET BOTTLE MACHINE',
-        subtitle: 'Complete Line Solutions for Glass Filling.',
-        image: 'pics/ar-taste-test-ketchup-hero-01-4x3-691200ff01674e20805c9ed469841597.jpg'
-    },
-    {
-        title: 'ALCOHOL AND SPRITS PET BOTTLE',
-        subtitle: 'Complete Line Solutions for Can Filling.',
-        image: 'pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg'
-    },
-    {
-        title: 'LARGE PET BOTTLE FOR 3 TO 20 LITERS',
-        subtitle: 'Complete Line Solutions for Large Bottles.',
-        image: 'pics/LARGE-PET-BOTTLE.jpg'
-    },
-    {
-        title: 'PHARMA / COSMETICS BOTTLE PET MACHINE',
-        subtitle: 'Complete Line Solutions for Large Bottles.',
-        image: 'pics/pharmaceutical-packaging-bottles-134.jpg'
-    }
-];
-
 const Projects = () => {
+    const t = useTranslations('home');
+    const locale = useLocale();
+    const isArabic = locale === 'ar';
+
+    const getT = (key: string) => t(`PetTechnology.${key}`);
+
+    const projects = [
+        {
+            title: getT('project1'),
+            subtitle: getT('project1'),
+            image: '/pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg',
+            link: "/soft-drink-pet-blowing"
+        },
+        {
+            title: getT('project2'),
+            subtitle: 'Complete Line Solutions for Process Technology.',
+            image: '/pics/large.jpg',
+            link: "/milk-juice-pet-blowing"
+        },
+        {
+            title: getT('project3'),
+            subtitle: 'Complete Line Solutions for PET Filling.',
+            image: '/pics/PET-HOUSEHOLD.png',
+            link: "/household-cleaning-pet-blowing"
+        },
+        {
+            title: getT('project4'),
+            subtitle: 'Complete Line Solutions for Glass Filling.',
+            image: '/pics/ar-taste-test-ketchup-hero-01-4x3-691200ff01674e20805c9ed469841597.jpg',
+            link: "/oil-ketchup-pet-blowing"
+        },
+        {
+            title: getT('project5'),
+            subtitle: 'Complete Line Solutions for Can Filling.',
+            image: '/pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg',
+            link: "/alcohol-spirits-pet-blowing"
+        },
+        {
+            title: getT('project6'),
+            subtitle: 'Complete Line Solutions for Large Bottles.',
+            image: '/pics/LARGE-PET-BOTTLE.jpg',
+            link: "/large-pet-blowing"
+        },
+        {
+            title: getT('project7'),
+            subtitle: 'Complete Line Solutions for Large Bottles.',
+            image: '/pics/pharmaceutical-packaging-bottles-134.jpg',
+            link: "/pharma-cosmetics-pet-blowing"
+        }
+    ];
+
     return (
         <section className="py-12 lg:py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
@@ -72,12 +89,14 @@ const Projects = () => {
                     <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
                         <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
 
-                        <span className="text-sm font-medium text-dark uppercase tracking-wider">PET TECHNOLOGY</span>
+                        <span className="text-sm font-medium text-dark uppercase tracking-wider">
+                            {getT('tag')}
+                        </span>
                     </motion.div>
 
                     <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
                         <AnimatedHeading
-                            text={"Select a SEPPA PET SOLUTIONS you are looking for\u00A0?"}
+                            text={getT('heading')}
                             elementType="h2"
                             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark leading-tight [&>span]:justify-center"
                         />
@@ -93,6 +112,7 @@ const Projects = () => {
                     className="relative group"
                 >
                     <Swiper
+                        dir="ltr"
                         modules={[Pagination, Autoplay, Navigation]}
                         spaceBetween={32}
                         slidesPerView={1}
@@ -112,6 +132,10 @@ const Projects = () => {
                             <SwiperSlide key={idx} className="h-auto py-4">
                                 <motion.div variants={fadeInUp} className="group/item cursor-pointer h-full">
                                     <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-lg h-full">
+                                        <Link
+                                            href={project.link}
+                                            className="group/item cursor-pointer h-full"
+                                        >
                                         <img
                                             src={project.image}
                                             alt={project.title}
@@ -126,10 +150,8 @@ const Projects = () => {
                                             <h3 className="text-2xl font-bold font-heading text-white mb-2 leading-tight">
                                                 {project.title}
                                             </h3>
-                                            <p className="text-gray-300 text-sm opacity-0 group-hover/item:opacity-100 transition duration-300 delay-100">
-                                                {project.subtitle}
-                                            </p>
                                         </div>
+                                        </Link>
                                     </div>
                                 </motion.div>
                             </SwiperSlide>

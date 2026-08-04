@@ -1,0 +1,104 @@
+{
+  "title": "SEPPA SSB-SL-40: 4-Kavitäten PET-Streckblasmaschine für industrielle Fertigung",
+  "breadcrumbName": "SSB-SL-40",
+  "rootBreadcrumbName": "Pneumatic",
+  "rootBreadcrumbPath": "/blowing/pneumatic",
+  "overviewTitle": "Überblick über die SEPPA SSB-SL-40 PET-Streckblasmaschine",
+  "overviewDescription": "Hersteller mit hohen Produktionsanforderungen benötigen eine PET-Streckblasmaschine, die maximale Ausbringung mit konstanter Qualität verbindet. Die SEPPA SSB-SL-40 wurde genau für diese Herausforderung entwickelt. Die lineare Streckblasplattform mit synchronisierter 4-Kavitäten-Schließeinheit ermöglicht Produktionsleistungen, die mit Einzelstationsanlagen nicht erreichbar sind.",
+  "overviewsubDescription": [
+    "Während ältere Anlagen häufig mehrere parallele Maschinen benötigen, um gewünschte Produktionsmengen zu erzielen, kombiniert die SSB-SL-40 vier Produktionsstationen in einem präzise abgestimmten System. Dadurch reduziert sich der Platzbedarf pro Flasche, der Bedienaufwand sinkt und die Betriebskosten werden optimiert.",
+    "Im Kern ist die SSB-SL-40 eine 4-Kavitäten PET-Streckblasmaschine, bei der jede Kavität nicht als unabhängige Einheit betrachtet wird, sondern als Teil eines gemeinsamen thermischen und pneumatischen Systems. Die Preforms werden parallel zugeführt, über abgestimmte Infrarot-Zonen erwärmt, synchron in die Formstation übertragen und über einen gemeinsamen Hochdruckverteiler mit identischen Blasprofilen verarbeitet. Das Ergebnis ist eine PET-Flaschenproduktionsmaschine, die aus Qualitätssicht wie vier exakt synchronisierte Einzelanlagen arbeitet.",
+    "Für Unternehmen, die ihre Produktionskapazität erweitern möchten, beantwortet die SSB-SL-40 eine zentrale Frage: Wie lässt sich die Ausbringung vervierfachen, ohne die engen Toleranzen bei Wandstärke, Halsgeometrie und Bodentransparenz zu verlieren? Die Lösung liegt in einer vollständig abgestimmten PET-Streckblas-Technologie mit identischer thermischer Vorgeschichte, gleichen Druckkurven und synchoner Reckbewegung für jede Kavität."
+  ],
+  "featuresTitle": "Hauptmerkmale und Leistung der SEPPA SSB-SL-40",
+  "features": [
+    {
+      "title": "Ausbalanciertes Druckluft-Verteilersystem",
+      "description": "Eine der wichtigsten technischen Herausforderungen bei Mehrkavitäten-Systemen ist die gleichmäßige Druckversorgung aller Formstationen. Bereits geringe Unterschiede beim Druckaufbau können zu Qualitätsabweichungen zwischen den Kavitäten führen. Die SSB-SL-40 löst dieses Problem durch einen symmetrisch aufgebauten Hochdruck-Luftverteiler. Jede Blasstation erhält identische Luftmengen und vergleichbare Druckanstiegszeiten. Vorblas- und Endblasdruck können separat eingestellt werden. Zusätzlich überwachen Kavitätsdrucksensoren den Prozess kontinuierlich und melden Abweichungen automatisch an die Steuerung."
+    },
+    {
+      "title": "Verstärkte Schließeinheit für stabile PET-Verarbeitung",
+      "description": "Eine 4-Kavitäten PET-Streckblasmaschine must gleichzeitig hohen Innendrücken in mehreren Formen standhalten. Bei Blasdrücken von bis zu 40 bar können unzureichend dimensionierte Rahmenstrukturen zu Verformungen und Qualitätsproblemen führen. Die SSB-SL-40 verwendet eine verstärkte Kniehebel-Schließeinheit mit gehärteten Zugstangen. Diese Konstruktion gewährleistet eine stabile Formtrennung über komplette Produktionsschichten hinweg. Die hohe mechanische Steifigkeit bildet die Grundlage für gleichbleibende PET-Streckblas-Ergebnisse bei kontinuierlichem Betrieb."
+    },
+    {
+      "title": "Präzise thermische Konditionierung",
+      "description": "Die Erwärmung der Preforms erfolgt über parallel arbeitende Infrarot-Heizzonen mit individuell steuerbaren Lampeneinheiten. Jeder Preform durchläuft ein exakt abgestimmt Temperaturprofil. Pyrometer-Rückmeldungen überwachen die Oberflächentemperatur und halten sie innerhalb eines definierten Bereichs. Diese thermische Stabilität ist entscheidend für die Materialverteilung während des Streckblasprozesses und ermöglicht eine konstant hohe Flaschenqualität mit minimalen Wandstärkenabweichungen."
+    },
+    {
+      "title": "Kapital- und Produktionseffizienz",
+      "description": "Ein besonderer Vorteil zeigt sich bei Weithalsbehältern. Hier arbeitet die Maschine als leistungsfähige PET-Glasblasmaschine für Lebensmittel-, Süßwaren- und Nutraceutical-Verpackungen. Die Herstellung von PET-Behältern mit großer Öffnung stellt besondere Anforderungen an Streckverhältnisse, Schulterbereiche, Bodenformung und Halspräzision. Die SSB-SL-40 speichert individuelle Prozessrezepte für unterschiedliche Behältertypen direkt in der HMI-Steuerung."
+    }
+  ],
+  "applicationsTitle": "Industrielle Anwendungen der SEPPA SSB-SL-40",
+  "applicationsSubtitle": "Dank schneller Formatwechsel kann eine Produktionslinie verschiedene Produktgruppen verarbeiten, ohne lange Stillstandszeiten zwischen den Anwendungen.",
+  "applications": [
+    {
+      "title": "Mineralwasser und kohlensäurehaltige Getränke",
+      "description": "Schnelle 4-Kavitäten-Blasmaschine zur Herstellung von Getränkeflaschen mit hoher Boden- und Seitenwandstabilität."
+    },
+    {
+      "title": "Speiseöl und Milchprodukte",
+      "description": "Ideal für Lebensmittel- und Speiseölbehälter, die eine konstante PET-Materialdichte und präzise Verschlussflächen erfordern."
+    },
+    {
+      "title": "Weithals-PET-Gläser",
+      "description": "Hervorragend als PET-Glasblasmaschine für Süßwaren, Gewürze, Lebensmittel und Nutraceutical-Verpackungen mit großer Öffnung."
+    },
+    {
+      "title": "Spezialbehälter",
+      "description": "Geeignet für Agrarchemikalien, pharmazeutische Behälter, Körperpflege- und Haushaltsflaschen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Streckblasmaschinen?",
+    "description": "SEPPA Solutions entwickelt PET-Streckblassysteme mit einem prozessorientierten Ansatz. Jede Maschine wird nicht nach einem Standarddatenblatt ausgelegt, sondern entsprechend der tatsächlichen Anforderungen des Kunden.",
+    "paragraphs": [
+      "Dabei berücksichtigt SEPPA Preform-Geometrie, PET-Materialqualität, gewünschte Produktionsleistung und die verfügbaren Versorgungssysteme. Vor der Übergabe wird jede Anlage umfangreich geprüft, einschließlich der Balance zwischen allen Kavitäten.",
+      "Getränke- und Konsumgüterhersteller entscheiden sich für SEPPA, weil nicht nur die Maschine betrachtet wird, sondern die gesamte Produktionslösung – von Investitionsplanung über Wartung bis zur langfristigen Prozessunterstützung."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-SL-40",
+    "subtitle": "Der Produktionsprozess basiert auf einer synchronisierten Parallelverarbeitung von vier Preforms. Vier Preforms werden gleichzeitig auf die Transportkette geladen, ausgerichtet und in den Ofen geführt:",
+    "steps": [
+      {
+        "title": "Parallele Preform-Konditionierung",
+        "description": "Dort erfolgt die thermische Optimierung über mehrere Heizbereiche, um eine gleichmäßige Temperaturverteilung zwischen Oberfläche und Materialkern zu erreichen."
+      },
+      {
+        "title": "Synchronisierter Transfer & Verschluss",
+        "description": "Nach der Konditionierung werden die vier erwärmten Preforms gleichzeitig in die Formstation übertragen, wo die Schließeinheit mit hoher Kraft verriegelt."
+      },
+      {
+        "title": "Zweistufiges Blasformen & Mikro-Justierung",
+        "description": "Reckstangen fahren aus und Vorblasen dehnt das Material, bevor Hochdruck-Endblasen die Flaschen formt. Sensoren ermöglichen Mikro-Justierungen der Druckkurve je Kavität."
+      }
+    ],
+    "outro": [
+      "Im Vergleich zu vier separaten Einzelmaschinen benötigt die SSB-SL-40 nur eine gemeinsame Infrastruktur für Bedienung, Druckluft, Heizung und Wartung. Dadurch sinken Arbeitsaufwand, Energieverbrauch und Platzbedarf pro produzierter Flasche erheblich."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Wartung verbessert die Verfügbarkeit einer 4-Kavitäten PET-Streckblasmaschine?",
+      "answer": "Regelmäßige Wartung von Druckluftdichtungen, IR-Heizsystemen, Reckstangen und Formkühlkreisläufen ist entscheidend. Die SSB-SL-40 verfügt über zugängliche Wartungspunkte und Kavitätsdiagnosen zur frühzeitigen Fehlererkennung."
+    },
+    {
+      "question": "2. Wie erreicht die SSB-SL-40 Stabilität bei vier Formen gleichzeitig?",
+      "answer": "Durch verstärkte Zugstangen, eine robuste Kniehebel-Schließeinheit und eine stabile Rahmenkonstruktion. Dadurch bleiben Formposition und Trennlinienqualität während jedes Zyklus konstant."
+    },
+    {
+      "question": "3. Warum eignet sich die SSB-SL-40 als PET-Weithalsblasmaschine?",
+      "answer": "Die 4-Kavitäten-Konfiguration erhöht die Wirtschaftlichkeit besonders bei Behältern mit längeren Zykluszeiten. Gleichzeitig bleiben Formatwechsel und Prozesssteuerung einfach."
+    },
+    {
+      "question": "4. Welchen Einfluss hat die PET-Streckblas-Technologie auf die Behälterqualität?",
+      "answer": "Temperaturverlauf, Streckverhältnis und Druckprofil bestimmen direkt Wandstärke, Stabilität und Transparenz des fertigen Behälters."
+    },
+    {
+      "question": "5. Warum gehört SEPPA zu den führenden Anbietern von PET-Streckblasmaschinen?",
+      "answer": "SEPPA kombiniert technische Prozesskompetenz mit einer transparenten Maschinenkonfiguration und langfristigem Service. Kunden erhalten eine Lösung, die exakt auf ihre Produktionsanforderungen abgestimmt ist."
+    }
+  ]
+}

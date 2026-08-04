@@ -1,0 +1,119 @@
+{
+  "title": "Complete Bierproductielijn van Seppa Solutions",
+  "breadcrumbName": "Bierlijnen",
+  "rootBreadcrumbName": "Complete Lijnen",
+  "rootBreadcrumbPath": "/complete-lines",
+  "overviewTitle": "Overzicht van de Complete Bierproductielijn van Seppa Solutions",
+  "overviewDescription": "Wie vandaag investeert in brouwcapaciteit, weet dat losse machines aan elkaar knopen zelden werkt. De markt vraagt om samenhang, om systemen die vanaf het eerste moutsilo tot aan de laatste palletwikkelaar één ritme aanhouden. Precies daar zit de kracht van een complete bierproductielijn zoals Seppa Solutions die levert: geen verzameling apparaten, maar een doordacht ecosysteem waarin elk proces het volgende ondersteunt.",
+  "overviewsubDescription": [
+    "Onze aanpak begint bij een fundamenteel principe: productintegriteit staat of valt bij de zwakste schakel. Daarom ontwerpen wij elke bier productielijn met continue traceerbaarheid, geïntegreerde CIP-circuits en sensoren die zuurstofopname, temperatuur en druk realtime bewaken. Het resultaat is een complete bierproductielijn die smaakstabiliteit garandeert, zelfs bij hoge doorvoersnelheden en frequente productwisselingen.",
+    "De filosofie achter onze bierbrouwinstallatie is even pragmatisch als technisch verfijnd: elke component van de maischketel tot de tegendrukvuller communiceert via een centraal SCADA platform. Brouwers krijgen zo één dashboard waarop ze de volledige complete bierproductielijn kunnen monitoren, aansturen en optimaliseren zonder tussen meerdere interfaces te schakelen."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Bierproductie en procesverloop",
+      "paragraphs": [
+        "Een functionele bierproductielijn volgt een gedefinieerde volgorde van de helderbiertank tot aan de palletiseermachine.",
+        "Procesverloop: Helderbiertank → deaeratie → carbonatatie → vuller → crowner/capper → pasteurisator → etiketteermachine → codeermachine → verpakker → palletiseerder → rekfoliewikkelaar.",
+        "Seppa's bier afvulmachine en bier vulinstallatie maken gebruik van CO₂-tegendruk, stikstofspoeling bij het sluiten, en inline zuurstofcontrole om de Total Package Oxygen (TPO) onder 50 ppb te houden. Servo-aangedreven buffersystemen vangen snelheidsschommelingen tussen stations op."
+      ]
+    },
+    {
+      "title": "Brouwerijoplossingen op maat voor elke productieschaal",
+      "paragraphs": [
+        "Geen twee brouwerijen zijn identiek qua fabriekslay-out of productmix. Een bierbrouwinstallatie voor een craft-brouwerij heeft andere eisen qua automatisering en CIP-frequentie dan een grootschalige industriële bierfabriek.",
+        "Seppa's engineeringteam ontwerpt de bier productielijn op maat voor uw specifieke fabrieksoppervlak. Ons modulaire ontwerp maakt uitbreidingen mogelijk: start met een 10.000 bph lijn en schaal later op naar 30.000 bph op hetzelfde besturingsplatform.",
+        "Het Kombo-blok integreert blazen, spoelen, afvullen en sluiten in één unit, wat de totale voetafdruk met 40% verkleint vergeleken met losse machines. Voor aseptische eisen biedt het KomboPure-systeem een kiemvrije barrièrestructuur."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste kenmerken van de complete bierproductielijn",
+  "featuresSubtitle": "De complete bierproductielijn van Seppa Solutions combineert betrouwbaarheid met uitstekende hygiëne-engineering.",
+  "features": [
+    {
+      "title": "Fermentatietanks en Transfer",
+      "description": "Fermentoren houden het bier onder gecontroleerde CO₂-tegendruk van 1,5 tot 2,5 bar. Zuurstofvrije transferprotocollen minimaliseren de opname van opgeloste zuurstof."
+    },
+    {
+      "title": "Bierfiltratie",
+      "description": "Het bier wordt onder constante tegendruk gefilterd via kiezelaarde- of membraanfilters om koolzuurverlies en schuimvorming aan de vuller te voorkomen."
+    },
+    {
+      "title": "Inline Carbonatatie",
+      "description": "Precieze massaflowcontrollers doseren CO₂ inline in de bierstroom. Het systeem past de dosering automatisch aan de snelheid van de afvulmachine aan."
+    },
+    {
+      "title": "De Bier Verpakkingslijn",
+      "description": "Tegendrukvullers brengen de fles en de vultank op gelijke druk om koolzuurverlies en schuimvorming volledig te vermijden."
+    }
+  ],
+  "whyChoose": {
+    "title": "Voordelen van een Complete Bierproductielijn van Seppa",
+    "description": "Investeren in een complete bierproductielijn van Seppa Solutions garandeert een voorspelbare werking en lagere operationele kosten.",
+    "reasons": [
+      {
+        "title": "Minder productverlies",
+        "description": "Een geïntegreerde bier productielijn verlaagt productverliezen met 12 tot 18 procent door minder schuimverlies en kortere CIP-cycli."
+      },
+      {
+        "title": "Efficiënte warmteterugwinning",
+        "description": "Dampwarmte en heet water uit het brouwproces worden hergebruikt om het inkomende brouwsel voor te verwarmen."
+      },
+      {
+        "title": "Betrouwbare en robuuste hardware",
+        "description": "Alle productcontactdelen zijn van 316L roestvast staal om pitting door reinigingsmiddelen te voorkomen."
+      },
+      {
+        "title": "Langdurige technische ondersteuning",
+        "description": "Onze servicedienst ondersteunt u 24/7 met remote diagnostics, reserveonderdelen en operator-trainingen."
+      }
+    ]
+  },
+  "methodology": {
+    "title": "Werkwijze: Het brouwproces van Wort tot Etiket",
+    "steps": [
+      {
+        "title": "Ontwerp en Layoutplanning",
+        "description": "Brouwdoelen en site-utilities bepalen het ontwerp van de bierbrouwinstallatie, met een gedetailleerde P&ID-ontwikkeling."
+      },
+      {
+        "title": "Fabricage en FAT-testen",
+        "description": "Alle apparatuur wordt geproduceerd volgens hygiënische normen (EHEDG/3A) en getest op bedrijfssnelheid in onze fabriek."
+      },
+      {
+        "title": "Site-installatie en Commissioning",
+        "description": "Seppa-engineers installeren de complete bierproductielijn, sluiten de utilities aan en valideren de CIP- en zuurstofwaarden."
+      },
+      {
+        "title": "Operator-training en Handover",
+        "description": "We trainen uw personeel grondig in de werking en het onderhoud van de installatie voor de formele overdracht."
+      }
+    ],
+    "outro": [
+      "De complete bierproductielijn van Seppa Solutions biedt brouwerijen een toekomstbestendig systeem dat superieure bierkwaliteit combineert met maximale operationele efficiëntie."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Hoe minimaliseert een bierbottellijn de opname van opgeloste zuurstof?",
+      "answer": "Seppa's bierbottellijn maakt gebruik van CO₂-tegendrukvulling, voorafgaande vacuümevacuatie van flessen, en stikstofspoeling bij het sluiten. Inline zuurstofsensoren bewaken dit proces om de TPO onder 10 ppb te houden."
+    },
+    {
+      "question": "Welke doorvoersnelheden kan een bierproductielijn behalen?",
+      "answer": "Onze lijnen worden geconfigureerd voor capaciteiten van 5.000 tot meer dan 80.000 containers per uur. De doorvoer wordt bepaald door het langzaamste station, meestal de vul- of pasteuriseermachine, om een optimale lijnbalans te garanderen."
+    },
+    {
+      "question": "Hoe wordt een complexe bierlijn onderhouden?",
+      "answer": "CIP-circuits zijn geïntegreerd in alle wetted componenten en reinigen de lijn automatisch zonder demontage. Preventief onderhoud wordt aangegeven via het besturingssysteem, en remote diagnostics detecteren vroegtijdige slijtage."
+    },
+    {
+      "question": "Wat is de ROI van een geautomatiseerde bierbrouwinstallatie?",
+      "answer": "Een volledig geautomatiseerde installatie verdient zich doorgaans binnen vier tot zeven jaar terug door verminderde productverliezen, lager energieverbruik en verminderde arbeidskosten."
+    },
+    {
+      "question": "Kan Seppa een bestaande bierlijn upgraden?",
+      "answer": "Ja. Dankzij onze modulaire opbouw kunnen nieuwe vulkoppen, carbonators of besturingsupgrades eenvoudig in een bestaande lijn worden geïntegreerd met minimale downtime."
+    }
+  ]
+}

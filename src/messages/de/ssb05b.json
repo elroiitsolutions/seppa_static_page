@@ -1,0 +1,95 @@
+{
+  "title": "SEPPA SSB-05B – Halbautomatische PET-Streckblasmaschine",
+  "breadcrumbName": "SSB-05B",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Halbautomatische PET-Streckblasmaschine für wirtschaftliche Produktionsprozesse",
+  "overviewDescription": "Kleine und mittlere Getränkehersteller stehen vor einer wiederkehrenden Herausforderung: Flaschenqualität zu erzielen, die einer vollautomatischen Linie in nichts nachsteht, jedoch ohne die extrem hohen Investitionskosten. Die SEPPA SSB-05B bietet hierfür eine maßgeschneiderte Lösung.",
+  "overviewsubDescription": [
+    "Das halbautomatische Maschinenkonzept der SSB-05B lässt den Bediener die manuelle Kontrolle über das Einlegen der Preforms und den Start des Zyklus behalten. Gleichzeitig werden alle kritischen Qualitätsschritte automatisiert: die Infrarot-Konditionierung, die Zeiten für das Streckblasen sowie die Dichtdrücke auf der Formseite.",
+    "Das Ergebnis ist eine PET-Verpackungsmaschine, die kleine und mittlere Hersteller auch bei moderaten Stückzahlen wirtschaftlich betreiben können, ohne auf eine gleichmäßige Wandstärkenverteilung verzichten zu müssen, die Kunden von einer Mineralwasserflaschen-Blasmaschine erwarten."
+  ],
+  "featuresTitle": "Hauptmerkmale & technische Spezifikationen der SSB-05B",
+  "features": [
+    {
+      "title": "Optimierte 2-Kavitäten-Ausbringung",
+      "description": "Die SSB-05B ist als 2-Kavitäten-PET-Flaschenblasmaschine konzipiert. Jeder Produktionszyklus erzeugt zwei fertige Behälter gleichzeitig. Bei einer 8- bis 12-Stunden-Schicht verdoppelt diese Kavitätenanzahl den Durchsatz im Vergleich zu Ein-Kavitäten-Maschinen bei nahezu gleicher Stellfläche."
+    },
+    {
+      "title": "Segmentierte Infrarot-Konditionierung",
+      "description": "Die Erwärmung erfolgt über segmentierte Infrarot-Lampenbänke, die entlang der Rotationsbahn der Preforms angeordnet sind. Jede Zone kann individuell geregelt werden, um ein Überhitzen der Schultern oder Unterkühlen des Flaschenbodens zu verhindern."
+    },
+    {
+      "title": "Integrierte Formkühlkanäle",
+      "description": "Direkt im Werkzeugblock integrierte Kühlkanäle entziehen dem PET-Material die Wärme extrem schnell, sobald das Hochdruck-Endblasen abgeschlossen ist. Der Druckluftverbrauch bewegt sich in einem Rahmen, der sich problemlos mit einem standardmäßigen 7,5-PS-Kompressor abdecken lässt."
+    }
+  ],
+  "applicationsTitle": "Typische Einsatzbereiche der SSB-05B",
+  "applicationsSubtitle": "Vielseitiges Format-Handling für unterschiedliche Flaschengewichte und -formen:",
+  "applications": [
+    {
+      "title": "Mineralwasserflaschen",
+      "description": "Standardflaschen von 200 ml bis 2 Liter können mit minimalen Rüstzeiten produziert werden und liefern eine hervorragende Boden- und Schulterfestigkeit."
+    },
+    {
+      "title": "Speiseöle & CSD-Getränke",
+      "description": "Edible oil-Behälter, Saucengläser und druckbeständige kohlensäurehaltige Softdrinkflaschen lassen sich mit geringen Prozessanpassungen auf derselben Plattform fertigen."
+    },
+    {
+      "title": "Flexible Umrüstungen (SKU)",
+      "description": "Ein werkzeugloser Formenwechsel ermöglicht schnelle Formatwechsel, sodass eine einzige Maschine problemlos wechselnde Aufträge und Flaschenformen abdecken kann."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions?",
+    "description": "Seppa Solutions hat jahrelange Praxiserfahrung in die Optimierung der Temperierprofile fließen lassen, die für eine gleichbleibend hohe Flaschenqualität entscheidend sind.",
+    "paragraphs": [
+      "Die präzise IR-Steuerung verhindert typische Ausfälle wie Trübungen im Halsbereich oder ungleichmäßige Dehnung beim Streckblasen.",
+      "Getränkeabfüller, die ihre Kapazitäten erweitern, entscheiden sich bei Folgeinvestitionen erneut für SEPPA, weil die installierten Verpackungsmaschinen auch nach Jahren noch dieselbe hohe Wiederholgenauigkeit aufweisen."
+    ]
+  },
+  "methodology": {
+    "title": "Arbeitsweise der SEPPA SSB-05B",
+    "subtitle": "Der Streckblasprozess kombiniert manuelle Kontrolle mit automatisierten Prozessschritten:",
+    "steps": [
+      {
+        "title": "Preform-Prüfung & Einlegen",
+        "description": "Der Bediener setzt die Preforms manuell in die Heizstation ein, was eine direkte optische Kontrolle auf Beschädigungen oder Verschmutzungen ermöglicht."
+      },
+      {
+        "title": "Infrarot-Heiztunnel",
+        "description": "Die Preforms durchlaufen die IR-Heizzonen, wo Lampenleistung und Rotationsgeschwindigkeit exakt auf die Materialeigenschaften abgestimmt sind."
+      },
+      {
+        "title": "Strecken & Fertigblasen",
+        "description": "Das Werkzeug schließt. Ein Streckstab dehnt den Preform axial, woraufhin die zweistufige Druckluft (Niederdruck-Vorblasen, danach Hochdruckblasen bis 38 bar) die endgültige Flaschenkontur ausformt."
+      }
+    ],
+    "outro": [
+      "Nach der Kühlphase öffnet das Werkzeug automatisch und die fertigen Flaschen können entnommen werden."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Ist eine 2-Kavitäten-Maschine im Vergleich zu einer Einzelkavitäten-Maschine vorteilhaft?",
+      "answer": "Für den Mehrschichtbetrieb in jedem Fall. Die Durchsatzsteigerung gleicht den geringen Preisunterschied meist innerhalb des ersten Jahres aus, während der Platzbedarf nahezu identisch bleibt."
+    },
+    {
+      "question": "2. Wie häufig benötigt die SSB-05B Wartung?",
+      "answer": "Formkavitäten sollten alle 50.000 bis 70.000 Zyklen gereinigt werden. Die Infrarotlampen weisen eine typische Standzeit von 3.000 bis 4.000 Betriebsstunden auf."
+    },
+    {
+      "question": "3. Wie wird eine gleichmäßige Wandstärke auf einer halbautomatischen Maschine erreicht?",
+      "answer": "Entscheidend ist die genaue Abstimmung des Vorblasdrucks und des Timings auf die Kristallinität und das Wandprofil des jeweiligen Preforms."
+    },
+    {
+      "question": "4. Wodurch unterscheiden sich SEPPA-Maschinen von älteren Standardlösungen?",
+      "answer": "Die segmentierten Infrarot-Heizzonen und die optimierten, werkzeugnahen Kühlkanäle sorgen für deutlich kürzere Zykluszeiten und stabilere Prozesse."
+    },
+    {
+      "question": "5. Welche Rolle spielt die thermische Konditionierung für Wasserflaschen?",
+      "answer": "Sie ist der wichtigste Parameter. Unterkühlte Preforms dehnen sich ungleichmäßig, während überhitztes PET kristallisiert und zu einer Eintrübung des Materials führt."
+    }
+  ]
+}

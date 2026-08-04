@@ -1,0 +1,107 @@
+{
+  "title": "SEPPA SSB-4D: Halbautomatische 4-Kavitäten-PET-Flaschenblasmaschine",
+  "breadcrumbName": "SSB-4D",
+  "rootBreadcrumbName": "Semi-Automatic",
+  "rootBreadcrumbPath": "/blowing/semi-automatic-units",
+  "overviewTitle": "Überblick über die SEPPA SSB-4D PET-Flaschenblasmaschine",
+  "overviewDescription": "Vier Kavitäten, ein synchronisierter Produktionszyklus – genau dieses Prinzip bildet die Grundlage der SEPPA SSB-4D. Bei der Skalierung von einer Einzel- oder Doppelstation auf ein 4-Kavitäten-System entstehen neue technische Herausforderungen: Luftverteilung, Temperaturgleichheit, Formschließung und Prozesszeiten müssen exakt aufeinander abgestimmt sein.",
+  "overviewsubDescription": [
+    "Viele Hersteller erkennen diese Anforderungen erst nach den ersten Produktionsläufen. Bereits geringe Unterschiede zwischen den Kavitäten können zu abweichenden Wandstärken, optischen Fehlern oder Qualitätsabweichungen führen. Eine professionelle PET-Flaschenblasmaschine muss deshalb nicht nur mehr Output liefern, sondern jede Kavität mit identischer Prozessqualität betreiben.",
+    "Die SEPPA SSB-4D wurde als 4-Kavitäten PET-Blasmaschine von Grund auf für diese Anforderungen entwickelt. Unabhängig geregelte Heizbereiche, ein ausgeglichenes Pneumatiksystem und eine stabile Formschließeinheit sorgen dafür, dass alle vier Kavitäten unter gleichen Bedingungen arbeiten. Die Maschine richtet sich an Hersteller, die höhere Produktionsmengen benötigen, aber noch nicht auf eine komplexe Rotationsanlage umsteigen möchten. Sie bietet die Leistung einer 4-Kavitäten PET-Flaschenblasmaschine mit der Bedienfreundlichkeit einer halbautomatischen Plattform."
+  ],
+  "featuresTitle": "Technische Vorteile der SEPPA SSB-4D PET-Flaschenblasmaschine",
+  "features": [
+    {
+      "title": "Ausbalanciertes Pneumatiksystem für vier Kavitäten",
+      "description": "Das Luftverteilersystem ist eines der wichtigsten Bauteile dieser PET-Flaschenblasmaschine. Jede Kavität erhält eine gleichmäßige Druckversorgung durch optimierte Luftwege mit identischen Dimensionen. Dadurch wird verhindert, dass einzelne Stationen weniger Druck erhalten oder unterschiedliche Blasergebnisse produzieren."
+    },
+    {
+      "title": "Robuste Formschließeinheit für Dauerbetrieb",
+      "description": "Die Formschließeinheit wurde speziell für den gleichzeitigen Betrieb von vier Formen ausgelegt. Rahmenstruktur und Zugstangen sind für die tatsächliche Gesamtbelastung dimensioniert und nicht einfach von einer Einzelkavitätenmaschine hochgerechnet. Das reduziert mechanische Belastung."
+    },
+    {
+      "title": "Präzise Steuerung aller Prozessschritte",
+      "description": "Heizung, Transfer, Streckung, Blasdruck und Ausstoß werden über eine SPS-basierte Steuerung synchronisiert. Diese genaue Prozesskontrolle reduziert Unterschiede zwischen den Kavitäten und verhindert Qualitätsabweichungen während langer Produktionsschichten."
+    },
+    {
+      "title": "Gleichmäßige Temperaturführung",
+      "description": "Die unabhängigen IR-Heizzonen ermöglichen individuelle Anpassungen für unterschiedliche Preform-Gewichte und Flaschengeometrien. Die präzise Wärmeregelung sorgt für stabile Wandstärken und konstante Flaschenqualität."
+    }
+  ],
+  "applicationsTitle": "Anwendungen der SEPPA SSB-4D in der PET-Flaschenproduktion",
+  "applicationsSubtitle": "Die SEPPA SSB-4D wird in verschiedenen Bereichen der PET-Verpackungsindustrie eingesetzt.",
+  "applications": [
+    {
+      "title": "Mineralwasser und Getränke",
+      "description": "Bei Wasserflaschen stehen geringes Gewicht, Materialeffizienz und hohe Produktionsgeschwindigkeit im Vordergrund. Die präzise Temperaturführung ermöglicht eine stabile Verarbeitung leichter Preforms."
+    },
+    {
+      "title": "Saucen, Sirupe und Würzmittel",
+      "description": "Durch anpassbare Druckprofile und flexible Heizparameter können unterschiedliche Flaschenformen und Halsausführungen verarbeitet werden."
+    },
+    {
+      "title": "Speiseöle & Chemiebehälter",
+      "description": "Speiseölbehälter mit angepasster Wandstärkenverteilung, Verpackungen für Haushaltschemikalien und Behälter für pharmazeutische Anwendungen."
+    },
+    {
+      "title": "Mehrere Produktvarianten",
+      "description": "Der Vorteil zeigt sich besonders bei Unternehmen mit mehreren Produktvarianten. Die Maschine ermöglicht Formatwechsel, ohne dass jede neue Flasche eine komplette technische Anpassung erfordert."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Flaschenblasmaschinen wählen?",
+    "description": "Hersteller investieren nicht nur in eine Maschine, sondern in langfristige Produktionssicherheit. SEPPA Solutions entwickelt PET-Blasmaschinen mit Fokus auf stabile Prozesse, geringe Ausschussraten und zuverlässige Leistung über viele Jahre.",
+    "paragraphs": [
+      "Die Erfahrung des Unternehmens zeigt sich besonders bei Mehrkavitäten-Systemen. Eine 4-Kavitäten PET-Flaschenblasmaschine muss nicht nur schneller produzieren, sondern alle Stationen dauerhaft synchron halten. SEPPA konzentriert sich deshalb auf thermische Stabilität, präzise Pneumatik und robuste Mechanik.",
+      "Beim Thema PET-Flaschenblasmaschine Preis betrachtet SEPPA nicht nur den Anschaffungspreis, sondern die tatsächlichen Gesamtbetriebskosten. Eine günstigere Maschine kann durch höheren Ausschuss, häufigere Wartung und längere Umrüstzeiten langfristig teurer werden."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-4D",
+    "subtitle": "Der vierstufige Zyklus kombiniert manuelle Bestückung mit automatischem Flaschenausstoß:",
+    "steps": [
+      {
+        "title": "Preform-Zuführung & Ofendurchlauf",
+        "description": "Die Preforms durchlaufen parallel angeordnete Infrarot-Heizzonen, wobei jede Zone unabhängig geregelt und überwacht wird."
+      },
+      {
+        "title": "Synchronisiertes Formschließen",
+        "description": "Die Formeinheiten schließen absolut synchron. Druckunterschiede werden durch die ausgeglichene Luftversorgung minimiert."
+      },
+      {
+        "title": "Zweistufiger Streckblasprozess",
+        "description": "Vorblasen mit niedrigem Druck dehnt den Preform vor. Hochdruckblasen (30–40 bar) presst das Material vollständig an die Kontur."
+      },
+      {
+        "title": "Auswurf",
+        "description": "Die fertigen Behälter werden automatisch und beschädigungsfrei ausgeworfen. Die Ejektionsmechanik ist für die vierfache Last ausgelegt."
+      }
+    ],
+    "outro": [
+      "Die SSB-4D bietet die Leistung einer 4-Kavitäten PET-Flaschenblasmaschine mit der Einfachheit einer halbautomatischen Plattform."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Wie viel Wartung benötigt eine 4-Kavitäten PET-Blasmaschine?",
+      "answer": "Die regelmäßige Wartung umfasst hauptsächlich die Kontrolle des Luftverteilers, die Prüfung der IR-Heizelemente sowie die Schmierung der Formschließeinheit. Eine Inspektion der Heizsysteme und Pneumatik sollte regelmäßig entsprechend der Betriebsstunden erfolgen."
+    },
+    {
+      "question": "2. Wie gewährleistet die SSB-4D Stabilität bei vier Formen gleichzeitig?",
+      "answer": "Die Maschine verwendet eine verstärkte Rahmenstruktur und Formschließeinheit, die für die gesamte Belastung aller vier Kavitäten ausgelegt ist. Dadurch bleibt die Konstruktion auch bei kontinuierlichem Betrieb stabil."
+    },
+    {
+      "question": "3. Warum eignet sich die SEPPA SSB-4D für mittelgroße Produktionslinien?",
+      "answer": "Die Maschine bietet eine höhere Leistung als Einzel- oder Doppelstationssysteme, bleibt aber einfacher zu bedienen als vollautomatische Rotationsanlagen. Dadurch ist sie besonders für mittelgroße Hersteller geeignet."
+    },
+    {
+      "question": "4. Welche Faktoren beeinflussen den Preis einer PET-Blasmaschine?",
+      "answer": "Neben der Grundmaschine beeinflussen Kavitätenanzahl, Werkzeugausstattung, Automatisierungsgrad und Serviceleistungen den Gesamtpreis. SEPPA berücksichtigt die tatsächlichen Produktionsanforderungen des Kunden bei der Konfiguration."
+    },
+    {
+      "question": "5. Was unterscheidet SEPPA PET-Streckblasmaschinen von Standardlösungen?",
+      "answer": "SEPPA betrachtet die Synchronisierung mehrerer Kavitäten als zentrale technische Herausforderung. Unabhängige Heizsteuerung, ausgeglichene Luftverteilung und präzise SPS-Steuerung sorgen für stabile Produktionsqualität."
+    }
+  ]
+}

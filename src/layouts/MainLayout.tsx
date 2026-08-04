@@ -6,11 +6,26 @@ import MagicCursor from '@/components/ui/MagicCursor';
 import FloatingActions from '@/components/ui/FloatingActions';
 import ScrollEnquiryModal from '@/components/ui/ScrollEnquiryModal';
 
+import { usePathname } from 'next/navigation';
+
 interface MainLayoutProps { 
   children: ReactNode;
 }
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+  const pathname = usePathname();
+
+  React.useEffect(() => {
+    const isArabic = pathname.startsWith('/ar');
+    if (isArabic) {
+      document.documentElement.dir = 'rtl';
+      document.documentElement.lang = 'ar';
+    } else {
+      document.documentElement.dir = 'ltr';
+      document.documentElement.lang = 'en';
+    }
+  }, [pathname]);
+
   return (
     <div className="flex flex-col min-h-screen max-w-[100vw] overflow-x-hidden" style={{ minHeight: '100dvh' }}>
       <FloatingActions />

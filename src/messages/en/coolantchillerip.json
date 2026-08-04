@@ -1,0 +1,98 @@
+{
+  "title": "Industrial Coolant Chiller Immersion Type: Engineering Precision Cooling for Process Critical Applications",
+  "breadcrumbName": "Coolant Chiller Immersion",
+  "rootBreadcrumbName": "",
+  "rootBreadcrumbPath": "",
+  "overviewTitle": "Industrial Coolant Chiller Immersion Type",
+  "overviewDescription": "There's a reason immersion-based cooling has held its ground in large scale industrial environments for decades. When you're dealing with several thousand litres of process fluid, a chemical bath that can't tolerate a two degree swing, or a brewery wort tank that needs to hit pitching temperature before the yeast window closes surface mounted cooling systems start looking like a bad idea. The chiller immersion method solves for exactly this scenario.",
+  "overviewsubDescription": [
+    "Seppa Solutions' SEPPA DIP series is built on this principle. The unit houses a stainless steel 304 cooling coil that submerges directly into the coolant side of the process tank, enabling aggressive heat transfer right at the source of thermal load."
+  ],
+  "featuresTitle": "Key Engineering Features of the SEPPA DIP Series",
+  "featuresSubtitle": "The SEPPA DIP series is meticulously engineered to provide exceptional cooling for immersion-based process applications.",
+  "features": [
+    {
+      "title": "SS 304 Immersion Coil Construction",
+      "description": "SS 304 handles a wide range of process fluids without corroding or leaching contamination. Coil geometry is customizable (immersion depth, coil diameter, pitch spacing) to optimize the convective heat transfer coefficient."
+    },
+    {
+      
+      "title": "Fluid Agitation Requirements",
+      "description": "A chiller immersion coil only performs at rated capacity when there's adequate fluid movement. Tank agitation is specified alongside the cooling unit to ensure consistent turbulence over the coil surface."
+    },
+    {
+      "title": "Low Noise, Compact Footprint",
+      "description": "The SEPPA DIP runs at low acoustic output compared to large frame industrial cooling units, sharing floor space neatly between processing and packaging lines."
+    }
+  ],
+  "applicationsTitle": "Applications Across Industrial Cooling Processes",
+  "applicationsSubtitle": "Versatile industrial applications where direct immersion cooling performs best.",
+  "applications": [
+    {
+      "title": "Brewery Wort Cooling",
+      "description": "Immersion wort chiller configuration drops wort from boiling to pitching temperatures (18-22°C for ale, 8-12°C for lager) within a two-hour window for large volume tanks."
+    },
+    {
+      "title": "Chemical Processing and Plating Baths",
+      "description": "Electroplating and etching operations run process chemistry at very specific temperatures where tanks cannot overshoot or undershoot setpoints."
+    },
+    {
+      "title": "General Manufacturing Coolant Loops",
+      "description": "Works as an equipment cooling system across closed loops like hydraulic units, CNC coolant tanks, and injection moulding where central chilled water is unavailable."
+    }
+  ],
+  "whyChoose": {
+    "title": "Why Manufacturers Choose Seppa Solutions",
+    "description": "The glycol chiller system you receive is configured specifically for your application, tank geometry, process fluid, and installation constraints.",
+    "paragraphs": [
+      "Seppa isn't positioning itself as a catalogue supplier. The engineering team works from your tank geometry and fluid properties to optimize thermodynamic limits.",
+      "As an industrial chiller manufacturer, Seppa understands that chiller immersion hardware needs to survive aggressive CIP cycles and actual plant floor ambient conditions.",
+      "The SEPPA DIP series coil construction, compressor selection, and control architecture are all specified with long-term service life in mind."
+    ]
+  },
+  "methodology": {
+    "title": "Methodology: How the Immersion Type Coolant Chiller Works",
+    "subtitle": "Direct Immersion Cooling Cycle",
+    "steps": [
+      {
+        "title": "Thermodynamic Sequence",
+        "description": "The stainless coil sits inside the process tank, fully submerged. Liquid refrigerant enters the coil and begins absorbing heat directly."
+      },
+      {
+        "title": "Evaporation Cycle",
+        "description": "As the refrigerant absorbs heat, it evaporates. This vapour returns to the compressor, gets compressed and condensed, and repeats."
+      },
+      {
+        "title": "Direct Heat Exchange",
+        "description": "The contact area avoids intermediary heat exchange surfaces, keeping fluid cycling past the coil rather than sitting in a thermal dead zone."
+      },
+      {
+        "title": "Microprocessor Control",
+        "description": "The microprocessor controller monitors refrigerant pressures and process temperatures, adjusting output to hold setpoints during heat load variations."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What materials are compatible with the SEPPA DIP immersion coil?",
+      "answer": "The SS 304 coil handles most fluids like brine, propylene glycol, mild cleaning agents, and water based coolants. Alternative alloys can be specified for aggressive acids."
+    },
+    {
+      "question": "How does Seppa size a chiller immersion unit for high viscosity fluids?",
+      "answer": "Viscosity affects heat transfer. Seppa calculates the revised heat transfer rate, adjusts coil surface area, and specifies the required agitation system."
+    },
+    {
+      "question": "Is an immersion wort chiller more efficient than an external plate exchanger for brewery applications?",
+      "answer": "For large volume tanks, the immersion wort chiller wins on simplicity and hygiene, eliminating pump circuits and reducing CIP complexity."
+    },
+    {
+      "question": "What makes a well designed equipment cooling system critical for process quality?",
+      "answer": "Temperature variation directly affects product consistency. An undersized cooling unit introduces variation that compounds downstream."
+    },
+    {
+      "question": "What sets Seppa Solutions apart as an industrial chiller manufacturer?",
+      "answer": "Seppa's approach is application specific rather than product catalogue driven, optimizing tank geometry and fluid properties for long term durability."
+    }
+  ]
+}

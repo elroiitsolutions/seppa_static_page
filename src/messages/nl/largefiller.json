@@ -1,0 +1,114 @@
+{
+  "title": "Grote Flessenvulmachine",
+  "breadcrumbName": "Grote Flessenvulmachine",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Overzicht van de SEPPA PLC Serie Grote Flessenvulmachine",
+  "overviewDescription": "In de moderne bottelindustrie draait alles om precisie, doorvoer en hygiëne. Wanneer fabriekseigenaren investeren in een grote flessenvulmachine, zoeken ze niet louter een stuk metaal met vulventielen; ze zoeken een geïntegreerd platform dat hun productielijn jarenlang zonder haperingen laat draaien. Precies daar positioneert Seppa Solutions zich met de PLC serie, ontwikkeld voor containers van 3 tot 20 liter.",
+  "overviewsubDescription": [
+    "De PLC gestuurde architectuur vormt het brein van elk systeem. Seppa laat alle vulcycli, drukwaarden en sluitkoppels aansturen via een Siemens of Allen Bradley controller met touchscreen HMI. Operators wisselen recepten binnen enkele seconden, wat cruciaal is bij meerdere formaten op dezelfde water bottellijn.",
+    "De volledige constructie is uitgevoerd in AISI 304 voor het frame en AISI 316 voor alle productcontactdelen. Dit 316-staal weerstaat chloride-ionen en agressieve CIP-reinigingsmiddelen (Clean in Place), essentieel bij dagelijkse 16-uurs runs."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA Grote Flessenvulmachine: ROI en Doorvoer",
+      "paragraphs": [
+        "Laten we eerlijk zijn: investeerders kijken naar terugverdientijd. Een goed geconfigureerde grote flessenvulmachine van Seppa haalt gemiddeld een ROI horizon van 18 tot 26 maanden door minimalisering van productverlies, energie-efficiëntie en lagere personeelskosten.",
+        "Contactloze niveauregeling reduceert het productverlies tot onder 0,4% (vergeleken met 1,5–3% bij traditionele overloopvullers), wat op jaarbasis honderdduizenden liters scheelt. De doorvoercapaciteit schaalt tussen 600 en 2.400 flessen per uur.",
+        "Frequentiegeregelde transportbanden passen de snelheid automatisch aan op basis van sensordata vanuit de spoel-, vul- en sluitstations. De modulaire water bottellijn is eenvoudig uit te breiden met etikettering of krimpfolieverpakking."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Grote Flessenvulmachine",
+  "featuresSubtitle": "Geavanceerde technische innovaties voor betrouwbare grootvolume afvulling:",
+  "features": [
+    {
+      "title": "Contactloze Vulventielen",
+      "description": "Vulnozzles raken de flesopening niet aan voor absolute hygiëne, gestuurd via magnetische debiet- of massaflow-meting."
+    },
+    {
+      "title": "Precieze Niveauregeling",
+      "description": "Ultrasone of capacitieve sensoren meten het vloeistofniveau met millimeterprecisie, optisch bevestigd bij doorzichtige containers."
+    },
+    {
+      "title": "Roterend Wasstation (3-14 Fases)",
+      "description": "Flessen worden 180° gedraaid, uitwendig gespoeld bij 3-5 bar en intern behandeld met ozon- of gesteriliseerd water."
+    },
+    {
+      "title": "PLC-Gestuurde Hygiënebewaking",
+      "description": "Sensoren registreren temperatuur, druk en debiet continu met automatische stop en foutrapportage bij afwijkingen."
+    },
+    {
+      "title": "Frequentiegeregelde Transportbanden",
+      "description": "Variabele snelheidsregeling voorkomt flessenopstoppingen en beschermt PET- en polycarbonaatcontainers tegen krassen."
+    },
+    {
+      "title": "Automatische Sluitkoppen",
+      "description": "Elektronische koppelregeling (+0,2 Nm tolerantie) voor bergsluitingen, schroefdoppen en drukdoppen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Grote Flessenvulmachines van Seppa Solutions",
+    "description": "Met meer dan twee decennia ervaring in grootvolume systemen leveren wij maatwerk met gegarandeerde ROI.",
+    "paragraphs": [
+      "Lege Flessen Invoer: Zware transportrails voeren lege containers efficiënt en schokvrij aan.",
+      "3 tot 14 Fases Grondige Reiniging: Diepe sanitaire in- en uitwendige spoeling.",
+      "Dalend Vulventiel: Gecontroleerde vloeistofstroom voorkomt spatten en schuimvorming.",
+      "Koppel-Gemonitorde Sluiting: Mechanische capper-assemblages brengen doppen aan met exact koppel.",
+      "Lektest & Validatie: Strenge kwaliteitscontrole verifieert de afdichting vóór uitvoer."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Werkwijze: Wassen, Vullen en Afsluiten van Grote Flessen",
+    "subtitle": "Een 5-staps gecontroleerd grootvolume vulproces:",
+    "steps": [
+      {
+        "title": "1. Flesseninvoer",
+        "description": "Lege flessen komen via de infeed conveyor binnen. Sensoren detecteren de aanwezigheid waarna een sterrenwiel de containers overzet."
+      },
+      {
+        "title": "2. Inwendige Reiniging",
+        "description": "Flessen kantelen 180 graden en worden gespoeld met gefilterd water en ozon, waarna droge steriele lucht restvocht uitblaast."
+      },
+      {
+        "title": "3. Precieze Dosering",
+        "description": "Het contactloze vulventiel doseert de vloeistof via volumetrische of massa-gebaseerde meting met +0,3% nauwkeurigheid."
+      },
+      {
+        "title": "4. Automatische Sluiting",
+        "description": "Magazijngevoede doppen worden aangebracht en met een elektronisch gecontroleerd aandraaikoppel vastgezet."
+      },
+      {
+        "title": "5. Kwaliteitscontrole & Uitvoer",
+        "description": "Visiesystemen controleren het vulniveau, doppositie en etiket waarna afgekeurde containers pneumatisch worden uitgeworpen."
+      }
+    ],
+    "outro": [
+      "Conclusie: De SEPPA PLC Serie grote flessenvulmachines bieden een geïntegreerde, robuuste en energiezuinige oplossing voor het wassen, vullen en sluiten van grote containers tot 20 liter."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Welke hygiënenormen ondersteunt de SEPPA grote flessenvulmachine?",
+      "answer": "Elke machine voldoet aan EHEDG-richtlijnen, FDA materiaaleisen en 3-A Sanitary Standards. De volledige constructie in AISI 316 waarborgt compatibiliteit met CIP/SIP procedures."
+    },
+    {
+      "question": "2. Wat zijn de gemiddelde onderhoudskosten?",
+      "answer": "Reken op 2–3% van de initiële investering per jaar, inclusief slijtdelen, afdichtingen en preventief onderhoud – ongeveer 30% lager dan bij vergelijkbare Europese systemen."
+    },
+    {
+      "question": "3. Hoe efficiënt is de watervulmachine bij het minimaliseren van productverlies?",
+      "answer": "Onze contactloze technologie bereikt een verliesratio onder 0,4%, tegenover 1,5–3% bij klassieke overloopvullers."
+    },
+    {
+      "question": "4. Hoe betrouwbaar is een SEPPA water bottellijn op lange termijn?",
+      "answer": "Met een gemiddelde MTBF (Mean Time Between Failures) van 4.000 productie-uren behoren onze systemen tot de meest robuuste in hun klasse."
+    },
+    {
+      "question": "5. Kan één automatische afvulmachine verschillende formaten verwerken?",
+      "answer": "Ja, formaatwissels tussen 3L, 5L, 10L en 19L nemen typisch 20–35 minuten in beslag dankzij snelwisselgereedschappen en HMI-receptbeheer."
+    }
+  ]
+}

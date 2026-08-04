@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion , Variants } from 'framer-motion';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import bgPattern from '@/assets/bg/black-line-1.png';
-
+import { useTranslations, useLocale } from 'next-intl';
 const fadeInUp:Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -14,27 +14,31 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const services = [
-  {
-    title: 'Complete Beer/Wine & Mead processing and packaging lines',
-    image: 'pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg'
-  },
-  {
-    title: 'Complete liquor & spirits/RTDs & seltzers processing and packaging lines',
-    image: 'pics/istockphoto-2209086842-612x612.jpg'
-  },
-  {
-    title: 'Complete mineral water/Alkaline water processing and packaging lines',
-    image: 'pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg'
-  },
-  {
-    title: 'Complete soft drinks/juice/milk processing and packaging lines',
-    image: 'pics/pexels-photo-17559580.jpg'
-  }
-  
-];
-
 const Services = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+
+  const getT = (key: string) => t(`Services.${key}`);
+
+  const services = [
+    {
+      title: getT('service1'),
+      image: '/pics/360_F_98234483_dlK6t4pwm8npmgVjzoYi0QvVPd3M90xc.jpg'
+    },
+    {
+      title: getT('service2'),
+      image: '/pics/istockphoto-2209086842-612x612.jpg'
+    },
+    {
+      title: getT('service3'),
+      image: '/pics/360_F_643784437_OcJMafVBr2EFvS0uN6TrXI8b9CwuZAew.jpg'
+    },
+    {
+      title: getT('service4'),
+      image: '/pics/pexels-photo-17559580.jpg'
+    }
+  ];
+
   return (
     <section className="py-12 lg:py-24 bg-[#101934] relative overflow-hidden m-3 rounded-2xl">
       {/* Background Pattern Overlay (Optional subtle texture) */}
@@ -52,12 +56,14 @@ const Services = () => {
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700 bg-[#1c1c1c] mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-            <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">Our Services</span>
+            <span className="text-sm font-medium text-gray-300 uppercase tracking-wider">
+              {getT('tag')}
+            </span>
           </motion.div>
           
           <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
             <AnimatedHeading 
-              text="Comprehensive Processing & Packaging Systems You Can Trust" 
+              text={getT('heading')} 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-white leading-tight [&>span]:justify-center" 
             />

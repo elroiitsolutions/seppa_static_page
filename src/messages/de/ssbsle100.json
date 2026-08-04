@@ -1,0 +1,107 @@
+{
+  "title": "SEPPA SSB-SLE-100: PET-Streckblasmaschine mit präziser Infrarot-Thermokonditionierung",
+  "breadcrumbName": "SSB-SLE-100",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Überblick über die SEPPA SSB-SLE-100 PET-Streckblasmaschine",
+  "overviewDescription": "Beim PET-Streckblasverfahren entscheidet vor allem ein Faktor über die Qualität der fertigen Flasche: die gleichmäßige Erwärmung des Preforms vor dem eigentlichen Blasprozess. Genau auf dieser Grundlage wurde die SEPPA SSB-SLE-100 PET-Streckblasmaschine entwickelt.",
+  "overviewsubDescription": [
+    "Im Zentrum der Maschine steht ein leistungsfähiges mehrzoniges Infrarot-Heizsystem, das jeden Preform präzise und gleichmäßig auf die optimale Verarbeitungstemperatur bringt, bevor Streckstange und Blasluft den eigentlichen Formgebungsprozess übernehmen.",
+    "Bereits geringe Temperaturunterschiede können zu ungleichmäßigen Wandstärken, Trübungen, Spannungsaufhellungen oder einer verminderten Fallfestigkeit der PET-Flaschen führen. Eine homogene Temperaturverteilung sorgt dagegen für eine gleichmäßige Materialorientierung, konstante Wandstärken und eine dauerhaft hohe Produktqualität – auch bei hohen Produktionsgeschwindigkeiten und langen Laufzeiten. Die SSB-SLE-100 wurde deshalb konsequent auf eine präzise thermische Prozessführung ausgelegt. Das Infrarot-Heizsystem bildet die Grundlage für eine stabile und wirtschaftliche PET-Flaschenproduktion."
+  ],
+  "featuresTitle": "Hauptmerkmale und technische Eigenschaften",
+  "features": [
+    {
+      "title": "Mehrzonige Infrarot-Heizung",
+      "description": "Die SEPPA SSB-SLE-100 verfügt über ein mehrzoniges Infrarot-Heizsystem mit unabhängig regelbaren Lampengruppen. Dadurch lassen sich Halsbereich, Flaschenkörper und Anspritzpunkt separat temperieren. Dies ermöglicht eine präzisere Temperaturverteilung als herkömmliche Einzonen-Systeme."
+    },
+    {
+      "title": "Servoelektrische Streckstangen",
+      "description": "Servoelektrische Streckstangen mit hochpräziser Bewegungssteuerung sorgen für eine gleichmäßige axiale Reckung und verhindern Materialrisse oder ungleichmäßige Wandstärken, insbesondere im Bodenbereich."
+    },
+    {
+      "title": "Hochbelastbare Schließeinheiten",
+      "description": "Die formschlüssigen Verriegelungsmechanismen sind für den kontinuierlichen 24-Stunden-Betrieb unter hohen Drücken ausgelegt. Ein werkzeugloser Formwechsel ist innerhalb von ca. 20 bis 30 Minuten möglich."
+    },
+    {
+      "title": "Geschlossener Regelkreis",
+      "description": "Die Echtzeit-Temperaturüberwachung misst die Oberflächentemperatur kontinuierlich und korrigiert Abweichungen automatisch, um eine gleichbleibend hohe Qualität sicherzustellen."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche in der Getränke-, Lebensmittel- und Verpackungsindustrie",
+  "applicationsSubtitle": "Die SSB-SLE-100 eignet sich für eine Vielzahl unterschiedlicher PET-Verpackungen und bietet hohe Flexibilität bei wechselnden Flaschenformaten.",
+  "applications": [
+    {
+      "title": "Mineralwasser & Erfrischungsgetränke",
+      "description": "Bietet hohe Ausbringungsraten bei leichten Preforms und hält die Wandstärken exakt im Toleranzbereich."
+    },
+    {
+      "title": "Säfte, Milch- & Molkereiprodukte",
+      "description": "Ermöglicht eine hygienische und formstabile Flaschenproduktion, die auch für Heißabfüllungen geeignet ist."
+    },
+    {
+      "title": "Speiseöle, Saucen & Lebensmittelverpackungen",
+      "description": "Ideal für dickwandigere Preforms und spezielle Mündungsgeometrien von Lebensmittelbehältern."
+    },
+    {
+      "title": "Flexibler Linieneinsatz",
+      "description": "Ein Wechsel zwischen Flaschenformaten erfolgt überwiegend über Rezepte in der HMI. Die Maschine lässt sich optimal mit einer vorhandenen halbautomatischen Flaschenfüllmaschine kombinieren."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum PET-Streckblasmaschinen von SEPPA Solutions?",
+    "description": "SEPPA Solutions entwickelt seit vielen Jahren leistungsfähige PET-Streckblasmaschinen für Getränkehersteller, Lebensmittelproduzenten und Lohnabfüller.",
+    "paragraphs": [
+      "Die Entwicklung der SSB-SLE-100 basiert auf umfangreicher Erfahrung im Bereich der PET-Thermodynamik sowie der präzisen Regelung von Infrarot-Heizsystemen. Dadurch bleibt die Temperaturverteilung auch bei langen Produktionsläufen konstant.",
+      "Darüber hinaus sind die Maschinen für eine einfache Integration in bestehende Produktionslinien ausgelegt. Ob in Kombination mit einer vorhandenen halbautomatischen Flaschenfüllmaschine oder mit Förder- und Etikettiersystemen anderer Hersteller – die SSB-SLE-100 lässt sich flexibel integrieren."
+    ]
+  },
+  "methodology": {
+    "title": "Arbeitsweise der SEPPA SSB-SLE-100",
+    "subtitle": "Der Produktionsprozess ist klar strukturiert und auf maximale Prozesssicherheit ausgelegt:",
+    "steps": [
+      {
+        "title": "Zuführung der Preforms",
+        "description": "Die Preforms werden automatisch über einen Sortierbehälter halsorientiert in den Produktionsprozess geleitet."
+      },
+      {
+        "title": "Thermische Konditionierung",
+        "description": "Im mehrzonigen Ofen werden die Preforms auf die optimale Verarbeitungstemperatur (zwischen 95 °C und 105 °C) temperiert. Parameter für rPET sind flexibel anpassbar."
+      },
+      {
+        "title": "Strecken und zweistufiges Blasen",
+        "description": "Die servoelektrische Reckstange verlängert den Preform axial. Anschließend formt Vorblasen und Hochdruckblasen das PET an die Konturen der Form."
+      },
+      {
+        "title": "Auswurf & Abfüllintegration",
+        "description": "Die fertigen Flaschen werden automatisch ausgeworfen und können direkt einer halbautomatischen Flaschenfüllmaschine zugeführt werden."
+      }
+    ],
+    "outro": [
+      "Ein wesentlicher Teil des Energieverbrauchs entfällt auf den Ofen. Deshalb reduzieren optimierte Reflektorgeometrien in der SSB-SLE-100 die Energieverluste erheblich."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie oft muss das Infrarot-Heizsystem gewartet werden?",
+      "answer": "Die Heizlampen erreichen je nach Betriebsbedingungen in der Regel eine Lebensdauer von etwa 3.000 bis 5.000 Betriebsstunden. Die Reflektoren sollten vierteljährlich gereinigt werden."
+    },
+    {
+      "question": "2. Kann die SSB-SLE-100 auch PET-Rezyklate (rPET) verarbeiten?",
+      "answer": "Ja. PET-Rezyklate besitzen andere thermische Eigenschaften als Neuware. Deshalb lassen sich Heiztemperatur und Verweilzeit individuell anpassen."
+    },
+    {
+      "question": "3. Warum ist das mehrzonige Infrarot-Heizsystem herkömmlichen Einzonen-Systemen überlegen?",
+      "answer": "Durch die getrennte Regelung einzelner Heizbereiche können Hals, Körper und Boden des Preforms unabhängig voneinander erwärmt werden."
+    },
+    {
+      "question": "4. Welchen Einfluss hat das Infrarot-Heizsystem auf die Produktionskosten?",
+      "answer": "Die optimierte Reflektortechnik sowie die geschlossene Temperaturregelung reduzieren den Energieverbrauch und verhindern unnötiges Überheizen der Preforms."
+    },
+    {
+      "question": "5. Kann die SSB-SLE-100 mit einer vorhandenen halbautomatischen Flaschenfüllmaschine kombiniert werden?",
+      "answer": "Ja. Die Maschine wurde für die Integration in bestehende Produktionslinien entwickelt. Vor der Installation prüfen die SEPPA-Ingenieure alle Schnittstellen."
+    }
+  ]
+}

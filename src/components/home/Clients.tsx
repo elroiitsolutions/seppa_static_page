@@ -18,6 +18,10 @@ import playboy from '@/assets/logo/playboy.png';
 import royalchallenge from '@/assets/logo/royalchallenge.png';
 
 
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
+import { usePathname } from 'next/navigation';
+
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -46,7 +50,7 @@ const clients = [
   { id: 15, name: 'Client 16', image: royalchallenge.src }
 ];
 
-const Clients = () => {
+const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
   const [activeClientId, setActiveClientId] = useState<number | null>(null);
   const [isPaused, setIsPaused] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -87,12 +91,14 @@ const Clients = () => {
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-            <span className="text-sm font-medium text-dark uppercase tracking-wider">Our Trusted Clients</span>
+            <span className="text-sm font-medium text-dark uppercase tracking-wider">
+              {getT('tag')}
+            </span>
           </motion.div>
           
           <div className='w-full max-w-[1000px] mx-auto flex justify-center text-center'>
             <AnimatedHeading 
-              text="Empowering Industry Leaders Worldwide" 
+              text={getT('heading')} 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-[52px] font-heading font-bold text-dark leading-tight [&>span]:justify-center" 
             />
@@ -101,6 +107,7 @@ const Clients = () => {
 
         {/* Marquee Slider */}
         <motion.div
+          dir="ltr"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
@@ -167,11 +174,30 @@ const Clients = () => {
           .client-logo-interactive:hover {
             filter: grayscale(0) !important;
             opacity: 1 !important;
+            transform: scale(1.05);
           }
         }
       `}} />
     </section>
   );
+};
+
+const LocalizedClients = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const getT = (key: string) => t(`Clients.${key}`);
+  return <ClientsContent getT={getT} />;
+};
+
+const StaticClients = () => {
+  const getT = (key: string) => ((enHome as any).Clients?.[key] || key);
+  return <ClientsContent getT={getT} />;
+};
+
+const Clients = () => {
+  const pathname = usePathname() || '';
+  const isLocalized = pathname.startsWith('/ar') || pathname.startsWith('/en') || pathname.startsWith('/de');
+  return isLocalized ? <LocalizedClients /> : <StaticClients />;
 };
 
 export default Clients;

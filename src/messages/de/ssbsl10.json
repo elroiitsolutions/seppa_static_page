@@ -1,0 +1,103 @@
+{
+  "title": "SEPPA SSB-SL-10: Flexible PET-Streckblasmaschine für flexible PET-Flaschenproduktion",
+  "breadcrumbName": "SSB-SL-10",
+  "rootBreadcrumbName": "Pneumatic",
+  "rootBreadcrumbPath": "/blowing/pneumatic",
+  "overviewTitle": "Überblick über die SEPPA SSB-SL-10 PET-Streckblasmaschine",
+  "overviewDescription": "Die lineare Streckblas-Technologie bildet weiterhin die Grundlage für viele kleine und mittlere Produktionsanlagen zur Herstellung von PET-Behältern. Die SEPPA SSB-SL-10 wurde speziell für diesen Anwendungsbereich entwickelt und bietet Herstellern eine zuverlässige Lösung zwischen manueller Fertigung und vollautomatisierten Hochleistungsanlagen.",
+  "overviewsubDescription": [
+    "Im Gegensatz zu Rotationsblasmaschinen, die für maximale Produktionsmengen ausgelegt sind, ermöglicht diese lineare PET-Streckblasmaschine eine direkte Kontrolle über jeden einzelnen Prozessschritt – von der Preform-Zuführung bis zur fertigen Flasche. Bei geschlossenen Rotationssystemen kann die Ursachenanalyse bei Wandstärkenabweichungen aufwendig sein. Die SSB-SL-10 bietet dagegen einen klaren Zugang zu jeder Station, sodass Prozesse individuell angepasst und optimiert werden können.",
+    "Gerade für Unternehmen mit wechselnden Flaschenformaten und unterschiedlichen Produktlinien ist diese Flexibilität entscheidend. Die SEPPA SSB-SL-10 eignet sich ideal für Betriebe, die ihre Produktion ausbauen möchten, ohne sofort in eine kostenintensive Hochleistungs-Rotationsanlage investieren zu müssen. Als PET-Flaschenproduktionsmaschine ist sie besonders für kleinere und mittlere Serien geeignet, darunter Mineralwasserflaschen, Speiseölbehälter, Gewürz- und Spezialverpackungen aus PET."
+  ],
+  "featuresTitle": "Hauptmerkmale der SEPPA SSB-SL-10",
+  "features": [
+    {
+      "title": "Infrarot-Preform-Konditionierung",
+      "description": "Die Maschine arbeitet mit zonengesteuerten Infrarot-Heizmodulen entlang des Preform-Transportweges. Jede Heizzonen kann unabhängig eingestellt werden, wodurch sich die Temperaturverteilung exakt an unterschiedliche Preform-Geometrien und Materialeigenschaften anpassen lässt. Da die SSB-SL-10 als lineare PET-Streckblasmaschine arbeitet, kann jede Heizzone separat angepasst werden, was dem Bediener unmittelbare Kontrolle verschafft."
+    },
+    {
+      "title": "Optimierte Formkühlung",
+      "description": "Die Zykluszeit einer PET-Streckblasmaschine hängt nicht nur vom Blasprozess selbst ab, sondern vor allem davon, wie schnell die Form die Wärme aus dem Behälter ableitet. Die SSB-SL-10 verwendet effizient positionierte Kühlkanäle nahe der Formkontur. Dadurch wird die Abkühlzeit reduziert, bevor die Flasche ohne Verformung entnommen werden kann. Dies verbessert die Materialstruktur und sorgt für konstante Flaschenqualität."
+    },
+    {
+      "title": "Werkzeugloser Formenwechsel",
+      "description": "Bei linearen Blasformmaschinen spielt die Flexibilität bei Formatwechseln eine zentrale Rolle. Die SEPPA SSB-SL-10 verfügt über ein optimiertes Formspannsystem, das schnelle Umstellungen zwischen verschiedenen Flaschenformaten ermöglicht. Dadurch reduziert sich die Stillstandszeit zwischen unterschiedlichen Produktionsaufträgen erheblich, sodass mehrere Flaschenformen auf derselben Anlage gefahren werden können."
+    },
+    {
+      "title": "Kompakte Bauweise mit konstanter Leistung",
+      "description": "Die SSB-SL-10 benötigt deutlich weniger Stellfläche als vergleichbare Rotationsanlagen und eignet sich daher auch für Produktionsstandorte mit begrenztem Platzangebot. Obwohl die Stundenleistung unter der einer industriellen Rotationsmaschine liegt, überzeugt die lineare PET-Streckblasmaschine durch hohe Wiederholgenauigkeit. Jeder Preform durchläuft denselben kontrollierten Ablauf."
+    }
+  ],
+  "applicationsTitle": "Anwendungen der SSB-SL-10",
+  "applicationsSubtitle": "Die häufigste Anwendung ist die Herstellung von Mineralwasserflaschen. Die SEPPA SSB-SL-10 eignet sich für Flaschengrößen von 330 ml bis 1,5 Liter.",
+  "applications": [
+    {
+      "title": "Mineralwasserflaschen",
+      "description": "Bietet eine zuverlässige und wirtschaftliche Lösung für kleinere und mittlere Mineralwasserproduzenten bei Flaschen von 330 ml bis 1,5 Liter."
+    },
+    {
+      "title": "Gewürz- und Saucenbehälter",
+      "description": "Präzise Halsausführungen stellen sicher, dass Schraubverschlüsse und Dichtkappen optimal und leckagefrei schließen."
+    },
+    {
+      "title": "Speiseöl- und Spezialflaschen",
+      "description": "Ermöglicht stabile Bodenstrukturen für Standfestigkeit und exzellente Festigkeitswerte über die gesamte Flaschenhöhe."
+    },
+    {
+      "title": "Kundenspezifische Kleinserien",
+      "description": "Dank des flexiblen linearen Designs ist die Maschine nicht auf ein einzelnes Flaschenformat beschränkt. Unterschiedliche Behälterformen können effizient umgesetzt werden, ohne dass ein komplexer Rotationswerkzeugturm erforderlich ist."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für PET-Flaschen-Maschinen wählen?",
+    "description": "SEPPA Solutions entwickelt komplette PET-Verpackungslösungen und betrachtet jede Anlage als Teil eines gesamten Produktionsprozesses.",
+    "paragraphs": [
+      "Beim Einsatz einer SEPPA Mineralwasser-Produktionsmaschine erhalten Kunden Unterstützung bei Layoutplanung, Versorgungsauslegung und Inbetriebnahme. Dies ist besonders für Unternehmen wichtig, die erstmals eine eigene PET-Flaschenproduktion aufbauen.",
+      "Jede ausgelieferte PET-Flaschenproduktionsmaschine wird vor Versand mit den tatsächlichen Preform-Spezifikationen des Kunden getestet. Dadurch können mögliche Unterschiede bei Materialeigenschaften oder Temperaturverhalten bereits vor der Installation erkannt werden. Diese praxisnahe Vorgehensweise reduziert Risiken vor Ort."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise der SEPPA SSB-SL-10",
+    "subtitle": "Der Prozess beginnt mit der Zuführung der PET-Preforms in die Infrarot-Konditionierungszone. Heizleistung und Rotationsgeschwindigkeit werden so eingestellt, dass eine gleichmäßige Temperatur knapp oberhalb der Glasübergangstemperatur erreicht wird:",
+    "steps": [
+      {
+        "title": "Temperierung und Transfer",
+        "description": "Die Preforms werden in der IR-Zone erwärmt und anschließend über ein mechanisches Transfersystem direkt in die Blasform transportiert."
+      },
+      {
+        "title": "Zweistufiger Streckblasprozess",
+        "description": "Ein Reckstab dehnt den Preform axial, während Niederdruckluft die erste Vorformung übernimmt. Danach folgt der Hochdruck-Blasvorgang (über 35 bar), bei dem das PET vollständig an die Formkontur angepasst wird."
+      },
+      {
+        "title": "Automatisches Auswerfen",
+        "description": "Nach Abschluss der Haltephase öffnet sich die Form automatisch und die fertige Flasche wird auf das Austragsband übergeben. Währenddessen befindet sich bereits der nächste Preform im Heizprozess."
+      }
+    ],
+    "outro": [
+      "Diese zweistufige Technologie sorgt für eine gleichmäßige Materialverteilung, reduziert das Risiko von Materialrissen und senkt die Investitions- und Betriebskosten gegenüber Rotationsanlagen erheblich."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie hoch ist der Wartungsaufwand einer linearen PET-Streckblasmaschine?",
+      "answer": "Die wichtigsten Wartungspunkte sind Infrarot-Heizlampen, pneumatische Dichtungen und Formkühlleitungen. Lampen werden regelmäßig nach Bedarf gewechselt, während Dichtungen bei Druckverlusten überprüft werden sollten."
+    },
+    {
+      "question": "2. Wie erreicht die SSB-SL-10 eine gleichmäßige Wandstärke?",
+      "answer": "Durch die Kombination aus zonengesteuerter Infraroterwärmung, kontrollierter Preform-Drehung und zweistufigem Streckblasprozess. Jede Prozessphase kann individuell angepasst werden."
+    },
+    {
+      "question": "3. Warum ist die SEPPA PET-Flaschenproduktionsmaschine leistungsfähiger als ältere lineare Systeme?",
+      "answer": "Ältere Anlagen arbeiten häufig mit festen Heizprofilen und einstufigen Blasverfahren. Die SSB-SL-10 bietet dagegen flexible Temperaturzonen und eine präzisere Prozesssteuerung."
+    },
+    {
+      "question": "4. Wie unterscheiden sich die Kosten einer PET-Flaschenproduktionsanlage gegenüber einer Rotationslösung?",
+      "answer": "Eine lineare Blasformmaschine benötigt deutlich geringere Investitionen sowie weniger unterstützende Infrastruktur für Druckluft und Kühlung."
+    },
+    {
+      "question": "5. Was macht SEPPA Solutions zu einem zuverlässigen Partner?",
+      "answer": "Neben der Maschinentechnik bietet SEPPA Unterstützung bei Installation, Ersatzteilen und Vorabtests mit kundenspezifischen Preforms. Dadurch wird die Einführung neuer Produktionsanlagen sicherer."
+    }
+  ]
+}

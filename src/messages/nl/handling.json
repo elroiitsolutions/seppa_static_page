@@ -1,0 +1,126 @@
+{
+  "title": "Bottle Handling Systems",
+  "breadcrumbName": "Flessenhandling",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Flessentransport: De Onzichtbare Motor Achter Elke Bottelarij",
+  "overviewDescription": "Praat met een productiemanager over stilstand op de lijn, en negen van de tien keer gaat het niet over de vulmachine of de labelaar. Het gaat over flessen die omvallen, vastlopen bij een bocht, of net iets te traag aankomen bij de volgende stap. Flessentransport krijgt zelden de aandacht die het verdient, tot het moment dat het faalt. Bij Seppa Solutions bouwen we al jaren aan systemen die dat probleem structureel oplossen, niet met een pleister maar met een doordacht ontwerp.",
+  "overviewsubDescription": [
+    "Goed flessentransport doet iets dat op het eerste gezicht simpel klinkt: het beweegt flessen van punt A naar punt B zonder ze te beschadigen, om te laten vallen of de lijn te vertragen. In de praktijk is dat een van de lastigere engineering vraagstukken in een bottelarij.",
+    "Waarom? Omdat een fles geen stabiel object is. Een lege PET fles weegt bijna niets en waait al scheef bij een tochtstroom. Een volle glazen fles is zwaar, glad en breekbaar. Beide moeten over dezelfde lijn kunnen, vaak zelfs in dezelfde week, als een fabriek tussen productlijnen wisselt.",
+    "Onze aanpak begint bij de conveyorbaan zelf. We werken met roestvrijstalen geleiders die de fles precies genoeg ondersteunen zonder wrijving te introduceren die de baan vertraagt. Combineer dat met zelflubricerende kunststof kettingen, en je krijgt een systeem dat maandenlang kan draaien zonder dat iemand met een oliekan hoeft langs te lopen.",
+    "Wat ons betreft is dat de kern van goed flessentransport: niet de snelste machine op papier, maar het systeem dat het langst probleemloos blijft draaien."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van SEPPA Flessenhandlingsystemen voor Productielijnen",
+      "paragraphs": [
+        "Laten we naar de cijfers kijken, want dat is uiteindelijk waar een investeringsbeslissing op rust.",
+        "Terugverdientijd: De meeste klanten zien hun investering in een flessentransportsysteem binnen twaalf tot vijftien maanden terugverdiend. Dat komt grotendeels door minder productverlies: omgevallen flessen, gebroken glas, verspilde tijd bij het opruimen van een blokkade.",
+        "Energiebesparing: Onze aandrijvingen werken met frequentieregeling, wat betekent dat de motor niet continu op vol vermogen draait wanneer de lijn even minder flessen verwerkt. Bij fabrieken met wisselende productiesnelheden scheelt dit merkbaar op de energierekening over een jaar.",
+        "Minder productstilstand: Goed ingericht flessentransport voorkomt opstoppingen voordat ze ontstaan, in plaats van erop te reageren nadat de lijn al is vastgelopen. Fotocelgestuurde sensoren detecteren een opeenhoping vroegtijdig en passen de baansnelheid automatisch aan.",
+        "Schaalbaarheid: Wanneer een flessenproductielijn uitbreidt, wil je niet de hele infrastructuur vervangen. Onze modulaire secties laten toe dat je een extra accumulatiezone of bocht toevoegt zonder de bestaande baan te ontmantelen. Een conveyorsysteem groeit mee met de productielijn.",
+        "Consistente doorvoer: Waar handmatige bijsturing van de lijnsnelheid vaak leidt tot pieken en dalen, houdt een correct afgesteld systeem een gelijkmatige stroom flessen aan, wat verderop in de lijn voor minder wachttijd zorgt."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Dranken-, Voedingsmiddelen-, Farmaceutische en FMCG-industrie",
+      "paragraphs": [
+        "De eisen verschillen enorm per sector, ook al lijkt \"een fles is een fles\" een redelijke aanname vanaf een afstand.",
+        "In de drankenindustrie zien we vooral lichte PET flessen naast zware glazen flessen voor bier, wijn of gedistilleerde dranken. Beide vragen om een andere baanconfiguratie. Voor PET werkt een lichte, snelle industriële conveyor met minimale zijdelingse druk. Voor glas moet de baan juist steviger en trillingsvrij zijn, omdat glas nu eenmaal minder vergevingsgezind is dan plastic.",
+        "In de voedingsmiddelenindustrie, denk aan sauzen, oliën of zuivelproducten in glazen of kunststof potten, komt hygiëne sterk op de voorgrond. Hier ontwerpen we het flessentransport met gladde, makkelijk te reinigen oppervlakken die bestand zijn tegen regelmatige wasbeurten met chemische reinigingsmiddelen.",
+        "De farmaceutische sector stelt weer strengere eisen aan validatie en documentatie. Elk onderdeel van het flessentransportsysteem moet traceerbaar zijn, en vaak is een volledige kwalificatie van de installatie vereist voordat een lijn in productie mag gaan.",
+        "In de bredere FMCG-sector, met producten die snel wisselen tussen formaten, bespaart een industriële conveyor die eenvoudig om te bouwen is naar een ander flesformaat aanzienlijk op omsteltijd tussen productieruns."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van SEPPA Flessentransportsystemen",
+  "featuresSubtitle": "De praktische voordelen van een goed geconfigureerd conveyorsysteem worden direct zichtbaar op OEE-niveau.",
+  "features": [
+    {
+      "title": "Wrijvingsarme UHMW-geleiders",
+      "description": "UHMW-slijtstrippen op geleiderails verminderen de zijwaartse kracht die flessen uitoefenen, wat slijtage en krassen op PET of breukrisico bij glas minimaliseert. Formaatwissels gebeuren snel en zonder handgereedschap."
+    },
+    {
+      "title": "Frequentiegeregelde Aandrijvingen (VFD)",
+      "description": "Hierdoor past elk segment zijn baansnelheid automatisch aan op basis van PLC-metingen. Wanneer de vuller vertraagt, remt het transportsysteem mee af in plaats van flessen tegen elkaar op te hopen."
+    },
+    {
+      "title": "Dynamische Accumulatietafels",
+      "description": "Absorberen snelheidsverschillen tussen machines. Onze bufferzones voorkomen dat een kleine storing bij de labelaar direct de vulmachine stillegt."
+    }
+  ],
+  "applicationsTitle": "Industrie Toepassingen",
+  "applicationsSubtitle": "De belasting op flessentransportsystemen is specifiek voor elke productgroep.",
+  "applications": [
+    {
+      "title": "Dranken (Bier, Water, Sappen)",
+      "description": "Prioriteert volume en snelheid met 24/7 werkende kettingbanen en ruime accumulatietafels voor stabiele bufferingsperiodes."
+    },
+    {
+      "title": "Farmaceutisch",
+      "description": "Ontwikkeld volgens GMP-richtlijnen met rvs 316L op contactzones, bacterievrij frame-ontwerp en uitsluitend NSF-gecertificeerde smeermiddelen."
+    },
+    {
+      "title": "FMCG & Cosmetica",
+      "description": "Voorzien van flexibele meervoudige banen en snelle spoorverstellingen voor frequente verpakkingswisselingen zonder vertraging."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor SEPPA Oplossingen voor Flessenhandling en Transportsystemen",
+    "description": "Seppa bouwt stijve en trillingsvrije frames uit robuust kokerprofiel rvs met rvs-zijplaten om omvallen te voorkomen.",
+    "paragraphs": [
+      "Elk flessentransportsysteem dat we leveren wordt afgestemd op de specifieke flesvorm, lijnsnelheid en ruimtelijke indeling van de fabriek. Dat kost meer tijd in de ontwerpfase, maar bespaart aanpassingen achteraf.",
+      "Onze technische ondersteuning werkt met vaste aanspreekpunten die de installatie kennen. Wanneer een klant belt over een storing in het flessentransportsysteem, hoeven we niet eerst uit te zoeken hoe de lijn is opgebouwd, want dat weten we al.",
+      "Tot slot denken we mee over groei. Een flessenproductielijn die vandaag op één formaat draait, wisselt over een paar jaar misschien naar meerdere formaten. Onze systemen zijn zo ontworpen dat die overgang geen volledige herbouw vereist, ongeacht hoe de flessenproductielijn zich verder ontwikkelt."
+    ]
+  },
+  "methodology": {
+    "title": "Methodologie: Van Routeplanning tot Eindsynchronisatie",
+    "subtitle": "Het integratieproces verloopt stapsgewijs om een optimale doorstroom te garanderen.",
+    "steps": [
+      {
+        "title": "Routeplanning & Lay-out",
+        "description": "We brengen in kaart waar elke fles vandaan komt, welke machines ze passeert en waar ruimte nodig is voor buffering. Dit bepaalt de conveyorindeling."
+      },
+      {
+        "title": "Snelheidsmatching",
+        "description": "Snelheidsregeling en sensoren synchroniseren de baansnelheden om schokken of wachttijden tussen machines te minimaliseren."
+      },
+      {
+        "title": "Mechanische Precisie",
+        "description": "Elke industriële conveyor wordt tot op de millimeter uitgelijnd, wat essentieel is om trillingen bij hoge snelheden te elimineren."
+      },
+      {
+        "title": "Flessenomkeersysteem & Handover",
+        "description": "Bij lijnen die oriëntatie vereisen, draait het flessenomkeersysteem de fles nauwkeurig in positie vóór de invoer van de labelaar of vuller."
+      }
+    ],
+    "outro": [
+      "Deze methodologie garandeert een storingsvrij conveyorsysteem dat de productielijn soepel laat doorlopen."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Voldoet een flessentransportsysteem aan hygiënenormen voor de voedingsmiddelenindustrie?",
+      "answer": "Ja. De materialen en oppervlakken zijn ontworpen om bestand te zijn tegen regelmatige, ook natte, reiniging zonder dat corrosie of slijtage optreedt."
+    },
+    {
+      "question": "Wat kost onderhoud van een flessentransportsysteem over de tijd?",
+      "answer": "Dat hangt van het gebruik af, maar zelflubricerende kettingen en modulaire onderdelen houden de onderhoudskosten doorgaans lager dan bij oudere metalen bandsystemen."
+    },
+    {
+      "question": "Hoe energie-efficiënt is een industriële conveyor in de praktijk?",
+      "answer": "Met frequentiegeregelde aandrijving past de motor zijn verbruik aan de daadwerkelijke belasting aan, wat op jaarbasis een merkbaar verschil maakt ten opzichte van vaste-snelheid systemen."
+    },
+    {
+      "question": "Hoe optimaliseer je de doorvoer van een bestaand conveyorsysteem zonder het te vervangen?",
+      "answer": "Vaak volstaat het aanpassen van accumulatiezones en sensorinstellingen. Een volledige vervanging is zelden nodig als de basisstructuur nog gezond is."
+    },
+    {
+      "question": "Kan een bestaand flessenomkeersysteem geïntegreerd worden in een nieuwe lijn?",
+      "answer": "In de meeste gevallen wel, zolang de aansluitpunten en snelheden compatibel zijn met de rest van de nieuwe infrastructuur."
+    }
+  ]
+}

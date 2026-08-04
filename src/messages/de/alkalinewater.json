@@ -1,0 +1,113 @@
+{
+  "title": "Alkalische Wasser-Abfüllanlagen",
+  "breadcrumbName": "Alkalisches Wasser",
+  "rootBreadcrumbName": "Flüssigkeiten",
+  "rootBreadcrumbPath": "/liquid",
+  "overviewTitle": "Was ist alkalisches Wasser?",
+  "overviewDescription": "Alkalisches Wasser ist Wasser mit einem pH-Wert über 7,0 – in der Regel zwischen 8,0 und 9,5. Es wird entweder durch elektrolytische Ionisation oder durch die Dosierung lebensmitteltauglicher Mineralstoffe hergestellt. Hinter diesem scheinbar einfachen Verfahren steht jedoch ein komplexer Produktionsprozess, bei dem Wasserchemie, Prozesskontrolle und Anlagentechnik präzise aufeinander abgestimmt werden müssen.",
+  "overviewsubDescription": [
+    "Normales Trinkwasser besitzt je nach Quelle einen pH-Wert zwischen 6,5 und 7,5. Mit der steigenden Nachfrage aus den Bereichen Sporternährung, Wellness und klinische Ernährung wächst gleichzeitig der Bedarf an alkalischem Wasser mit definiertem pH-Wert, negativem Oxidations-Reduktions-Potenzial (ORP) und dokumentierter Mineralstoffzusammensetzung.",
+    "Die industrielle Herstellung erfolgt überwiegend auf zwei Wegen. Bei der elektrolytischen Ionisation werden Wassermoleküle mithilfe von Gleichstrom über eine semipermeable Membran getrennt. Dabei entstehen auf der Kathodenseite hydroxidionenreiches alkalisches Wasser und auf der Anodenseite saures Wasser. Alternativ erfolgt die Einstellung des gewünschten pH-Wertes durch eine präzise Dosierung lebensmitteltauglicher Mineralien."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Vorteile von alkalischem Wasser",
+      "paragraphs": [
+        "Der Markt für funktionelle Getränke entwickelt sich zunehmend auf Basis wissenschaftlich nachvollziehbarer Produkteigenschaften. Zu den untersuchten Merkmalen alkalischen Wassers zählen unter anderem die Pufferwirkung gegenüber Säuren während intensiver körperlicher Belastung sowie verbesserte Hydrationsparameter.",
+        "Diese Eigenschaften bleiben jedoch nur erhalten, wenn der eingestellte pH-Wert über die gesamte Lager- und Vertriebsdauer stabil bleibt. Bereits geringe Veränderungen während der Abfüllung oder Lagerung können die ursprünglichen Produkteigenschaften verändern.",
+        "Aus diesem Grund beginnt die Qualität eines alkalischen Wassers nicht erst beim Produkt selbst, sondern bereits bei der Auslegung der gesamten Produktionslinie."
+      ]
+    }
+  ],
+  "featuresTitle": "Leistungsmerkmale moderner Produktionslinien für alkalisches Wasser",
+  "featuresSubtitle": "",
+  "features": [
+    {
+      "title": "Ionenstabilisierung und präzise pH-Regelung",
+      "description": "Die Erzeugung eines definierten pH-Wertes ist vergleichsweise einfach – ihn bis zur versiegelten Flasche konstant zu halten, stellt die eigentliche Herausforderung dar. Der pH-Wert sinkt bei steigenden Temperaturen, durch gelöstes Kohlendioxid während des Füllprozesses oder durch ungeeignete produktberührende Materialien. Deshalb verfügen professionelle Produktionslinien über mehrere Inline-pH-Sensoren entlang des gesamten Prozesses – nach der Ionisation beziehungsweise Mineraldosierung, nach dem Puffertank, am Füllverteiler sowie unmittelbar vor dem Verschließen. Geschlossene PID-Regelkreise korrigieren den pH-Wert kontinuierlich und halten ihn mit einer Genauigkeit von ±0,05 pH-Einheiten. Gerade bei Premium-Produkten entscheidet diese Präzision über eine gleichbleibende Produktqualität bis zum Endverbraucher."
+    },
+    {
+      "title": "Werkstoffauswahl für hochalkalische Medien",
+      "description": "Alkalisches Trinkwasser mit einem pH-Wert von bis zu 9,5 stellt besondere Anforderungen an die verwendeten Werkstoffe. Für sämtliche produktberührenden Komponenten verwendet Seppa Solutions ausschließlich Edelstahl AISI 316L sowie PTFE-ausgekleidete Ventile und hygienische Armaturen. Diese Materialkombination gewährleistet eine hohe Korrosionsbeständigkeit und verhindert Wechselwirkungen zwischen Wasser und Anlagentechnik auch bei dauerhaft hohen Produktionsleistungen."
+    },
+    {
+      "title": "ORP-Überwachung",
+      "description": "Neben dem pH-Wert spielt das Oxidations-Reduktions-Potenzial (ORP) eine zentrale Rolle bei der Qualitätskontrolle. Natürlich alkalisches Wasser, das durch Elektrolyse erzeugt wird, erreicht typischerweise ORP-Werte zwischen –100 mV und –400 mV. Zur kontinuierlichen Überwachung kommen hochpräzise Platin-Elektrodensensoren zum Einsatz. Da ORP-Werte temperaturabhängig sind, erfolgt die Messung unter streng kontrollierten Bedingungen. Moderne Produktionslinien behandeln pH-Wert und ORP als zwei voneinander unabhängige Qualitätsparameter, die kontinuierlich überwacht und dokumentiert werden."
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche alkalischer Wasserprodukte",
+  "applicationsSubtitle": "",
+  "applications": [
+    {
+      "title": "Sporternährung",
+      "description": "Hersteller von Sportgetränken produzieren überwiegend alkalisches Wasser mit einem pH-Wert zwischen 8,5 und 9,0 sowie definierten Elektrolytzusätzen. Aufgrund langer Produktionskampagnen und kurzer Umrüstzeiten sind leistungsfähige CIP-Systeme für hochalkalische Medien unverzichtbar."
+    },
+    {
+      "title": "Wellness- und Premiumprodukte",
+      "description": "Im Premiumsegment werden häufig pH-Werte zwischen 9,0 und 9,5 angestrebt. Die Produktion erfolgt meist in kleineren Chargen mit unterschiedlichen Verpackungsformaten aus Glas oder Aluminium, wodurch erhöhte Anforderungen an Fülltechnik und Materialverträglichkeit entstehen."
+    },
+    {
+      "title": "Hotellerie und Gemeinschaftsverpflegung",
+      "description": "Hotels, Gastronomie und Catering beziehen alkalisches Wasser überwiegend in Mehrlitergebinden mit pH-Werten zwischen 8,0 und 8,5. Für diese Anwendungen steht vor allem eine reproduzierbare Chargenkonstanz im Mittelpunkt, da Beschaffungsprozesse auf festgelegten Produktspezifikationen basieren."
+    },
+    {
+      "title": "Medizinische und klinische Anwendungen",
+      "description": "Alkalisches Wasser findet zunehmend Anwendung in Bereichen der klinischen Hydration und Rehabilitation. Hier sind vollständige Mineralstoffanalysen, chargenbezogene ORP-Dokumentationen sowie hygienische Produktionsbedingungen erforderlich, die sich an pharmazeutischen Standards orientieren."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions?",
+    "description": "Seppa Solutions entwickelt komplette Produktionslinien für alkalisches Wasser – von der Rohwasseraufbereitung bis zur palettierten Endverpackung. Unsere Anlagen unterstützen sowohl elektrolytische Ionisationssysteme als auch mineralbasierte Dosierverfahren und werden individuell auf die jeweilige Produktionsanforderung ausgelegt.",
+    "paragraphs": [
+      "Sämtliche produktberührenden Komponenten bestehen aus Edelstahl 316L und PTFE, wodurch eine dauerhaft sichere Verarbeitung hochalkalischer Medien gewährleistet wird. Die vollständige Dokumentation aller pH- und ORP-Regelkreise unterstützt zusätzlich regulatorische Anforderungen und Qualitätsnachweise."
+    ]
+  },
+  "methodology": {
+    "title": "Unsere Methodik – Von der Wasseranalyse bis zur versiegelten Flasche",
+    "steps": [
+      {
+        "title": "Analyse des Rohwassers",
+        "description": "Jede Produktionslinie von Seppa Solutions beginnt mit einer detaillierten Analyse des Rohwassers. Dabei werden Gesamtlösungsgehalt (TDS), Gesamthärte, Alkalinität, Eisen, Mangan sowie mikrobiologische Parameter untersucht."
+      },
+      {
+        "title": "Individuelle Anlagenauslegung",
+        "description": "Auf Basis dieser Daten wird die gesamte Wasseraufbereitung individuell ausgelegt. Die Ergebnisse bestimmen unter anderem die erforderliche Aufbereitungskapazität, die Dosiermengen der Mineralstoffe sowie die notwendige Verweilzeit im Pufferspeicher."
+      },
+      {
+        "title": "Zwischenspeicherung und Stabilisierung",
+        "description": "Nach der Wasseraufbereitung wird das alkalische Wasser in temperaturgeregelten Puffertanks zwischengespeichert. Dort stabilisieren sich pH-Wert und Temperatur, bevor der Füllprozess beginnt."
+      },
+      {
+        "title": "Kontinuierliche Qualitätskontrolle",
+        "description": "Eine ausreichend dimensionierte Pufferkapazität verhindert Schwankungen und gewährleistet in Kombination mit präzisen Inline-Sensoren eine gleichbleibende Produktqualität während der gesamten Produktion."
+      }
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen (FAQ)",
+  "faqs": [
+    {
+      "question": "1. Wie stabil bleibt alkalisches Wasser nach der Abfüllung?",
+      "answer": "Die Stabilität hängt maßgeblich vom Verpackungsmaterial, dem Kopfraummanagement sowie der Pufferkapazität des Wassers ab. PET-Flaschen mit Stickstoffspülung ermöglichen unter normalen Lagerbedingungen eine stabile pH-Erhaltung von etwa 12 bis 18 Monaten. Für Produkte mit pH-Werten über 9,2 bieten Glasflaschen zusätzliche Vorteile."
+    },
+    {
+      "question": "2. Worin unterscheiden sich industrielle und Premium-Produktionslinien?",
+      "answer": "Industrielle Anlagen sind auf hohe Produktionsleistungen und kontinuierliche Prozesse ausgelegt. Premium-Linien produzieren kleinere Chargen mit größerer Formatvielfalt und nutzen speziell abgestimmte Dosier-, Regel- und Füllsysteme."
+    },
+    {
+      "question": "3. Wie stellt Seppa Solutions sicher, dass die Produkteigenschaften bis zum Verbraucher erhalten bleiben?",
+      "answer": "Durch kontinuierliche ORP-Überwachung, CO₂-Ausschluss während der Abfüllung, Stickstoffbegasung, kontrollierte Kopfraumgestaltung sowie dokumentierte Haltbarkeitstests bleibt die Produktqualität über die gesamte Lieferkette erhalten."
+    },
+    {
+      "question": "4. Ist die industrielle Herstellung von alkalischem Wasser sicher?",
+      "answer": "Ja. Sowohl elektrolytische Verfahren als auch die Dosierung lebensmitteltauglicher Mineralstoffe sind bei fachgerechter Auslegung und Wartung sichere Produktionsverfahren. Unsere Anlagen verfügen über validierte CIP- und COP-Reinigungsprozesse, automatische Dosierüberwachung sowie Chargendokumentation."
+    },
+    {
+      "question": "5. Warum ist Seppa Solutions der richtige Partner für Produktionslinien für alkalisches Wasser?",
+      "answer": "Bei alkalischem Wasser beeinflussen Wasserchemie und Abfülltechnik unmittelbar die Produktqualität. Seppa Solutions entwickelt beide Bereiche als integriertes Gesamtsystem. Werkstoffauswahl, pH-Regelung, ORP-Überwachung und hygienische Prozessführung werden bereits in der Planungsphase vollständig aufeinander abgestimmt."
+    }
+  ],
+  "outro": [
+    "Seppa Solutions – Ihr Partner für moderne Produktionslinien für alkalisches Wasser",
+    "Mit Seppa Solutions investieren Sie in maßgeschneiderte Produktions- und Abfüllanlagen für alkalisches Wasser, die präzise Wasserchemie, intelligente Prozessautomatisierung und höchste Hygienestandards miteinander verbinden. Unsere Lösungen gewährleisten stabile pH-Werte, zuverlässige ORP-Kontrolle und eine gleichbleibend hohe Produktqualität – von der Wasseraufbereitung bis zur versiegelten Flasche."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "title": "Video Gallery",
+  "breadcrumbName": "Video Gallery",
+  "searchPlaceholder": "Search videos...",
+  "categoriesHeading": "Categories",
+  "noVideos": "No videos found matching your criteria.",
+  "closeVideo": "Close video",
+  "readyTitle": "Ready to Get Started?",
+  "readyHeading": "Experience Our Machines In Your Facility",
+  "readyText": "From PET blowing to complete line solutions, Seppa delivers world-class engineering. Contact our experts for a personalized consultation.",
+  "productEnquiry": "Product Enquiry",
+  "contactUs": "Contact Us",
+  "categories": {
+    "All": "All",
+    "PET Blowing Machines": "PET Blowing Machines",
+    "Complete Line Equipment": "Complete Line Equipment",
+    "Industrial Solutions": "Industrial Solutions",
+    "Packaging & Processing": "Packaging & Processing"
+  },
+  "videoList": [
+    {
+      "id": "v1",
+      "title": "Automatic PET Blowing Machine 1 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v2",
+      "title": "Fully Automatic PET Blow Machine 2 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v3",
+      "title": "Fully / Semi Automatic PET Blow Machine 3 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v4",
+      "title": "Automatic PET Blow Machine 4 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v5",
+      "title": "Fully Automatic PET Bottle Blow Machine 6 Cavity",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v6",
+      "title": "Glass Bottle Cleaning Machine | Glass Bottle Washer",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v7",
+      "title": "PET Bottle Unscrambler Machine",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v8",
+      "title": "Jar Blowing Machine",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v9",
+      "title": "8 Cavity Fully Automatic PET Bottle Blowing Machine — SSB SLE 80",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v10",
+      "title": "Containerised Sea Water Desalination Systems",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v11",
+      "title": "Mineral Water Plant — Industrial Water Treatment Plant — Fosters",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v12",
+      "title": "Soda Filling Machine",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v13",
+      "title": "Shrink Wrapping Machine | Tertiary Packaging Machine",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v14",
+      "title": "BLUE RO — Water Purifier Plant — RO Plant",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v15",
+      "title": "BLUE RO — Domestic Reverse Osmosis Plant — RO Plant for Residence",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v16",
+      "title": "Rinser Filler Capper Machine — 200 Bottles Per Minute",
+      "category": "Packaging & Processing"
+    }
+  ]
+}

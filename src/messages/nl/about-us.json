@@ -1,0 +1,141 @@
+{
+  "title": "Over SEPPA Solutions | Drankverwerkingsapparatuur & Turnkey Geïntegreerde Lijnen",
+  "breadcrumbName": "Over Ons",
+  "whoWeAre": {
+    "title": "Wie Wij Zijn",
+    "description": "Er zijn genoeg leveranciers die machines verkopen. Er zijn minder leveranciers die begrijpen wat er gebeurt als een lijn om drie uur 's nachts stilvalt en een plant manager wakker wordt gebeld. Dat verschil is precies waarom Seppa Solutions bestaat: we bouwen drankverwerkingsapparatuur die niet alleen op papier goed presteert, maar ook wanneer niemand kijkt. Van de eerste menging tot de laatste vloeistof vulmachine in de lijn, elk onderdeel van onze drankverwerkingsapparatuur wordt getest onder realistische omstandigheden.",
+    "subDescription": [
+      "Seppa Solutions is ontstaan uit een simpele frustratie: te veel drankverwerkingsapparatuur werd ontworpen voor de spec sheet, niet voor de vloer. Onze oprichters, zelf afkomstig uit de procesindustrie, zagen fabrieken worstelen met machines die lastig te onderhouden of te schalen waren.",
+      "Vandaag leveren we wereldwijd betrouwbare drankverwerkingsapparatuur aan fabrieken op meerdere continenten. Onze missie is de industriële standaard verhogen door apparatuur te bouwen die werkt, blijft werken en makkelijk meegroeit met uw ambities."
+    ]
+  },
+  "whatWeBuild": {
+    "title": "Onze Apparatuur en Productiesystemen",
+    "paragraphs": [
+      "De technologische slagkracht achter onze systemen begint bij modulariteit. Een complete productielijn die we vandaag installeren, is opgebouwd uit modules die afzonderlijk kunnen worden uitgebreid of vervangen.",
+      "Elke vloeistof vulmachine die we bouwen, combineert precisie met flexibiliteit: nauwkeurige doseerkoppen die tot op de milliliter consistent vullen, gecombineerd met snelwisselonderdelen voor verschillende flesformaten.",
+      "Onze drankverwerkingsapparatuur omvat het volledige proces: menging, pasteurisatie, carbonatatie, filtratie en afvulling, communicerend via één centraal PLC besturingssysteem."
+    ]
+  },
+  "expertise": {
+    "title": "Onze Expertise in Drankverwerkingsoplossingen",
+    "paragraphs": [
+      "Bij het ontwerpen van elke drankproductielijn beginnen we met vragen over het product, volumes en hygiëne-eisen. Elke drankproductielijn die we opleveren, weerspiegelt die wensen in de uiteindelijke configuratie.",
+      "Onze energiezuinige aandrijvingen minimaliseren verbruik zonder in te leveren op snelheid. Sanitaire roestvrijstalen componenten met afgeronde hoeken versnellen het CIP proces.",
+      "Onze PLC-gebaseerde besturingssystemen monitoren continu de status van kritieke onderdelen, zodat onderhoud gepland kan worden voordat een storing zich voordoet."
+    ]
+  },
+  "equipment": {
+    "title": "Apparatuur Die Wij Leveren",
+    "subtitle": "Van mengsystemen tot afvulling en verpakking:",
+    "features": [
+      {
+        "title": "Verwerkingssystemen",
+        "description": "Mengtanks, pasteurisatoren, carbonators, homogenisatoren en CIP-circuits voor dranken verwerking."
+      },
+      {
+        "title": "Vloeistof Vulmachines",
+        "description": "Nauwkeurige vulsystemen voor water, frisdrank, sappen, spirits, zuivel en sauzen."
+      },
+      {
+        "title": "PET Blaasmachines",
+        "description": "Automatische rotatieve en lineaire blaasmachines voor PET-flessen en potten met snelle omstelling."
+      },
+      {
+        "title": "Spoel-, Vul- en Sluitmonoblocks",
+        "description": "Hygiënische monoblocks voor hoge snelheden bij platte en koolzuurhoudende dranken."
+      },
+      {
+        "title": "Verpakkings- & Palletiseersystemen",
+        "description": "Etiketteermachines, krimpfoliewikkelaars, kartonneerders, krattenstapelaars en palletiseersystemen."
+      },
+      {
+        "title": "Complete Bottellijnen",
+        "description": "Turnkey bottellijnen voor water, CSD, sap, bier, wijn en spirits met multi-SKU flexibiliteit."
+      }
+    ]
+  },
+  "industriesText": {
+    "title": "Sectoren Die Wij Bedienen",
+    "paragraphs": [
+      "Onze projecten variëren van een complete drankfabriek van de grond af (inclusief gebouwontwerp-ondersteuning en utiliteiten) tot gespecialiseerde oplossingen voor regionale spelers.",
+      "Een moderne frisdrank productielijn voor een regionaal merk vraagt snelle doorlooptijd en een kleinere voetafdruk, terwijl een grote drankfabriek duizenden flessen per uur verwerkt op hetzelfde robuuste fundament.",
+      "We bedienen ook zuivel, bier, wijn en gedistilleerde dranken, aangepast aan viscositeit, koolzuurgehalte en temperatuurgevoeligheid van elk producttype."
+    ]
+  },
+  "industries": {
+    "title": "Sectoren Die Wij Bedienen",
+    "subtitle": "Oplossingen afgestemd op de specifieke eisen van elke drankenbranche:",
+    "features": [
+      {
+        "title": "Waterproductie",
+        "description": "Stil, mineraal, alkalisch, bruisend, gestructureerd en gearomatiseerd vitaminewater van PET-fles tot 19L bussen."
+      },
+      {
+        "title": "Koolzuurhoudende Frisdranken",
+        "description": "Complete CSD-lijnen met carbonatatie, siroopdosering en high-speed isobare afvulling."
+      },
+      {
+        "title": "Sappen, Nectars & Isotonisch",
+        "description": "Hot-fill en koud-aseptische vulsystemen voor sappen, nectars, isotonische dranken en thee."
+      },
+      {
+        "title": "Bier & Brouwerijen",
+        "description": "Brouwhuis-apparatuur, fermentatietanks, filtratie, tunnelpasteuriseerders en complete bierbottellijnen."
+      },
+      {
+        "title": "Wijn, Spirits & RTD's",
+        "description": "Verwerkings- en verpakkingsoplossingen voor wijn, gedistilleerd, RTD seltzers en spritzes in glas, PET of blik."
+      },
+      {
+        "title": "Zuivelproducten",
+        "description": "Vloeibare zuivelverwerking en aseptische vulsystemen voor melk, yoghurt- en UHT-dranken."
+      },
+      {
+        "title": "Sauzen & Ketchup",
+        "description": "Vulsystemen voor tomatenproducten, ketchup en vloeibare sauzen met aangepaste klepgeometrie."
+      }
+    ]
+  },
+  "whyChoose": {
+    "title": "Waarom Fabrikanten Kiezen voor SEPPA Solutions",
+    "description": "Klanten komen bij ons vanwege onze bereikbaarheid na installatie en bewezen cijfers.",
+    "paragraphs": [
+      "Geen Standaard Vormen: Elke lijn wordt geëngineerd rond het specifieke product, volume en beschikbare fabriekshal.",
+      "Maatwerk & Complexe Projecten: Multi-formaat fabrieken, multi-product lijnen en gefaseerde nieuwbouw.",
+      "Bereikbaarheid & Wereldwijde Support: Snelle ondersteuning en onderdelenlogistiek via onze globale servicenetwerken."
+    ]
+  },
+  "whyChooseText": {
+    "title": "Waarom Kiezen voor SEPPA Solutions?",
+    "paragraphs": [
+      "Wereldwijde Service & Onderdelen: Ons serviceteam en lokale partners staan snel voor u klaar bij vragen of onderhoud.",
+      "Continue Innovatie: Jaarlijkse herziening van ons machineaanbod op basis van directe feedback van de werkvloer.",
+      "Energie-efficiëntie: Aanzienlijk lager stroom- en waterverbruik dankzij frequentieregelaars en slimme koelcircuits.",
+      "Flexibiliteit in Engineering: Maatwerk in lay-out en lijnconversies zonder uw bestaande garanties in gevaar te brengen."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen over Seppa Solutions",
+  "faqs": [
+    {
+      "question": "Bieden jullie wereldwijde installatieservices aan?",
+      "answer": "Ja. We hebben teams en partners op meerdere continenten voor installatie, inbedrijfstelling en lokale ondersteuning."
+    },
+    {
+      "question": "Kan jullie drankverwerkingsapparatuur worden geïntegreerd in een bestaande fabriek?",
+      "answer": "In de meeste gevallen wel. We beoordelen tijdens de haalbaarheidsstudie de compatibiliteit en ontwerpen geschikte interfaces."
+    },
+    {
+      "question": "Wat is de onderhoudscyclus van een complete productielijn?",
+      "answer": "De meeste klanten plannen preventief onderhoud elk kwartaal, aangevuld met continue monitoring via het PLC-systeem."
+    },
+    {
+      "question": "Hoe nauwkeurig is een moderne vloeistof vulmachine?",
+      "answer": "Onze vulmachines behalen een nauwkeurigheid tot op enkele milliliters (of 0,1g op gewicht) per fles."
+    },
+    {
+      "question": "Welke kwaliteitsgaranties gelden er voor een high-speed frisdrank productielijn?",
+      "answer": "We bieden garantie op kernonderdelen en documenteren elke installatie volledig voor traceerbare prestaties gedurende de levensduur."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "title": "Selbstklebende Etikettierer: Präzisionstechnologie für moderne Hochgeschwindigkeitslinien",
+  "breadcrumbName": "Selbstklebende Etikettierer",
+  "rootBreadcrumbName": "Labelling",
+  "rootBreadcrumbPath": "/labelling",
+  "overviewTitle": "Präzise Etikettierung ohne Kompromisse",
+  "overviewDescription": "Wenn eine Flasche eine Produktionslinie durchläuft und das Etikett jedes Mal exakt positioniert erscheint, sorgt eine selbstklebende Etikettiermaschine für diese wiederholbare Präzision. Keine Leimbehälter, keine Verschmutzung, keine manuelle Ausrichtung – nur saubere, zuverlässige und automatisierte Etikettenapplikation bei Produktionsgeschwindigkeiten, die moderne FMCG-Hersteller benötigen. SEPPA Solutions entwickelt automatische Etikettiermaschinen für Unternehmen, die bei großen Produktionsmengen keine Fehler bei der Kennzeichnung akzeptieren können.",
+  "overviewsubDescription": [
+    "Der Wechsel von klassischen Leimsystemen zu selbstklebender Etikettiertechnik erfolgte aus mehreren technischen Gründen: geringerer Wartungsaufwand, schnellere Formatwechsel, konstante Klebeleistung unabhängig von Temperaturschwankungen und ein extrem sauberer Produktionsprozess.",
+    "Besonders in gekühlten Produktionsumgebungen oder sensiblen Bereichen wie Lebensmittel- und Pharmaindustrie erleichtert die saubere Prozessführung die Dokumentation, Qualitätssicherung und Validierung."
+  ],
+  "featuresTitle": "Kernmerkmale einer präzisen selbstklebenden Etikettiermaschine",
+  "features": [
+    {
+      "title": "Servogesteuerter Etikettenvorschub",
+      "description": "Das Vorschubsystem für das Etikettenband wird über geschlossene Servo-Regelkreise und Encoder gesteuert. Dies gewährleistet eine Millisekunden-Synchronisation mit der Fördertechnik auch bei Geschwindigkeitsänderungen."
+    },
+    {
+      "title": "Präzisions-Sensorik & Registrierung",
+      "description": "Berührungslose faseroptische Sensoren erfassen die Produktposition und die Vorderkante des Etiketts. Dies sichert eine hervorragende Positioniergenauigkeit von ±0,5 mm unter allen Bedingungen."
+    },
+    {
+      "title": "Aktive Bandspannungsregelung",
+      "description": "Faltenbildung und Luftblasen werden durch aktive Tänzerarme mit pneumatischer Druckregelung verhindert. Die Trägerfolien-Spannung bleibt über die gesamte Rollenlaufzeit konstant."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Vorteile automatisierter selbstklebender Etikettierung",
+      "paragraphs": [
+        "Niedrigere Betriebskosten: Durch den Wegfall von Flüssigklebstoffen und die Integration automatisierter Spendersysteme wird der Wartungs- und Reinigungsaufwand auf ein Minimum reduziert.",
+        "Maximierte Gesamtanlageneffizienz (OEE): Die Etikettierverfügbarkeit liegt bei über 98 %, während die Ausschussquote durch Fehletikettierung auf unter 0,2 % bei optimaler Kalibrierung sinkt.",
+        "Hygienischer & sauberer Prozess: Keine Leimrückstände an den Maschinen oder Verpackungen, was die Einhaltung gesetzlicher Anforderungen in der Lebensmittel- und Pharmaindustrie erleichtert."
+      ]
+    }
+  ],
+  "applicationsTitle": "Einsatzbereiche in verschiedenen Branchen",
+  "applicationsSubtitle": "Vielseitig einsetzbare Systeme für unterschiedlichste Behälterformen, Kosmetika, Getränke und Arzneimittel.",
+  "applications": [
+    {
+      "title": "Getränke- & Flaschenetikettierung",
+      "description": "Mehrkopf-Etikettiermaschinen für Vorder-, Rück- und Halsbandetiketten bei Geschwindigkeiten von über 600 Flaschen pro Minute."
+    },
+    {
+      "title": "Pharmazeutische Industrie",
+      "description": "Verarbeitung unter strenger optischer Kontrolle (Barcode-Lesung, Serialisierung und automatisches Ausschleusen von Fehlprodukten)."
+    },
+    {
+      "title": "Kosmetik- & Körperpflegeartikel",
+      "description": "Präzises Aufbringen auf gewölbte, konische oder flexible Kunststoffoberflächen mittels kontrollierter Luftunterstützung."
+    },
+    {
+      "title": "Konsumgüter & Kartonverpackung",
+      "description": "Rezeptgesteuerte Anpassung an flache, ovale oder eckige Produktgeometrien ohne mechanische Umbauten."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum SEPPA Solutions für selbstklebende Etikettierer wählen?",
+    "description": "SEPPA Solutions liefert keine Standardmaschinen aus dem Katalog, sondern individuell ausgelegte Lösungen.",
+    "paragraphs": [
+      "Jedes Projekt beginnt mit einer detaillierten Analyse von Linienstruktur, Produktsortiment, Etikettenmaterialien und Geschwindigkeitsanforderungen. Unsere langjährige Erfahrung garantiert eine fehlerfreie Integration.",
+      "Wir unterstützen Sie mit maßgeschneiderten Wartungsplänen, anwendungsspezifischen Ersatzteilen und zuverlässigem Vor-Ort- und Remote-Service für einen reibungslosen Dauerbetrieb."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise einer selbstklebenden Etikettiermaschine",
+    "steps": [
+      {
+        "title": "Zuführung & Erfassung",
+        "description": "Produkte werden vereinzelt und mit definiertem Abstand zugeführt. Optische Sensoren erfassen die Vorderkante des Behälters und triggern den Etikettiervorgang."
+      },
+      {
+        "title": "Ablösung & Applikation",
+        "description": "Das Trägermaterial läuft über eine Abziehkante (Winkel ca. 25-35°). Das Etikett löst sich ab und wird über Andruckrollen oder Luftunterstützung faltenfrei übertragen."
+      },
+      {
+        "title": "Kamerakontrolle & Ejektion",
+        "description": "Ein nachgeschaltetes Kamerasystem prüft die Ausrichtung. Fehlerhafte Produkte werden automatisch aus dem Linienfluss ausgeschleust."
+      }
+    ],
+    "outro": [
+      "Fazit: Präzise Etikettierung für moderne Produktionslinien. Selbstklebende Etikettiermaschinen sind ein entscheidender Bestandteil effizienter Verpackungslinien. Durch Servo-Technologie, intelligente Steuerung und präzise Sensorik ermöglichen SEPPA Systeme eine zuverlässige Kennzeichnung bei höchsten Produktionsgeschwindigkeiten. Für Getränke-, Lebensmittel-, Pharma- und FMCG-Hersteller bedeutet dies weniger Ausschuss, schnellere Prozesse und eine konstant hohe Produktqualität."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Wie häufig benötigt die selbstklebende Etikettiermaschine Wartung?",
+      "answer": "Vorbeugende Wartungsintervalle sind nach etwa 750 Betriebsstunden vorgesehen. Dazu gehören die Prüfung der Abziehkante, Sensorreinigung und Pneumatikkontrolle."
+    },
+    {
+      "question": "2. Wie hoch ist die erreichbare Positioniergenauigkeit?",
+      "answer": "Durch geschlossene Servo-Regelkreise und Echtzeit-Synchronisation mit dem Förderband liegt die Standardgenauigkeit bei ±0,5 mm."
+    },
+    {
+      "question": "3. Was unterscheidet Standard- und Hochgeschwindigkeitssysteme?",
+      "answer": "Hochgeschwindigkeitssysteme nutzen mehrere synchronisierte Etikettierköpfe, separate Bandantriebe und eine integrierte 100%-Bildverarbeitung."
+    },
+    {
+      "question": "4. Warum sind selbstklebende Etikettierer besser als halbautomatische Systeme?",
+      "answer": "Sie eliminieren manuelle Positionierungsfehler, arbeiten unabhängig von Bedienerfähigkeiten und ermöglichen deutlich höhere Liniengeschwindigkeiten."
+    },
+    {
+      "question": "5. Können mehrere Etiketten gleichzeitig aufgebracht werden?",
+      "answer": "Ja, Mehrkopf-Systeme können Vorder-, Rück-, Hals- und Sicherheitsetiketten in einem einzigen Produktionsdurchlauf aufbringen. Jede Einheit wird separat über die Rezeptverwaltung eingestellt."
+
+    }
+  ]
+}

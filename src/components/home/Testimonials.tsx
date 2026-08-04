@@ -1,7 +1,10 @@
 import React from 'react';
-import { motion , Variants } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations, useLocale } from 'next-intl';
+import enHome from '@/messages/en/home.json';
+import { usePathname } from 'next/navigation';
 
 const fadeInUp:Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -13,28 +16,28 @@ const staggerContainer = {
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };
 
-const testimonials = [
-  {
-    name: "Rajesh Vardhan",
-    quote: "Seppa's Kombo Pure monobloc system cut our floor footprint by 40% while maintaining absolute sterility. Their turnkey water line engineering is unmatched.",
-    image: "/pics/Rajesh.jpg",
-    rating: 5
-  },
-  {
-    name: "Marcus Vance",
-    quote: "Their high-speed RFC filling system and four-axis automated palletizer completely streamlined our CSD production, halving our end-of-line logistics costs.",
-    image: "/pics/Marcus.jpg",
-    rating: 5
-  },
-  {
-    name: "Amara Al-Jamil",
-    quote: "The combination of Non-Thermal Pasteurization and Aseptic Non-Contact Fillers extended our juice shelf life perfectly with zero contamination risks.",
-    image: "/pics/Amara.jpg",
-    rating: 5
-  }
-];
+const TestimonialsContent = ({ getT }: { getT: (key: string) => string }) => {
+  const testimonials = [
+    {
+      name: getT('name1'),
+      quote: getT('quote1'),
+      image: "/pics/Rajesh.jpg",
+      rating: 5
+    },
+    {
+      name: getT('name2'),
+      quote: getT('quote2'),
+      image: "/pics/Marcus.jpg",
+      rating: 5
+    },
+    {
+      name: getT('name3'),
+      quote: getT('quote3'),
+      image: "/pics/Amara.jpg",
+      rating: 5
+    }
+  ];
 
-const Testimonials = () => {
   return (
     <section className="py-12 lg:py-24 bg-white relative overflow-hidden">
       {/* Background Dot Pattern (Optional) */}
@@ -52,59 +55,18 @@ const Testimonials = () => {
             variants={staggerContainer}
           >
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
-              {/* <span className="w-1.5 h-1.5 rounded-full bg-red"></span> */}
               <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-              <span className="text-sm font-medium text-dark uppercase tracking-wider">Global Trust & Proven Success</span>
+              <span className="text-sm font-medium text-dark uppercase tracking-wider">
+                {getT('tag')}
+              </span>
             </motion.div>
             
             <AnimatedHeading 
-              text="What Global Beverage Brands Say About Seppa Automation" 
+              text={getT('heading')} 
               elementType="h2" 
               className="text-[28px] md:text-[52px] font-heading font-bold text-dark leading-tight break-words" 
             />
           </motion.div>
-
-          {/* <motion.div 
-            className="flex items-center gap-6 bg-white p-4 rounded-2xl shadow-sm border border-gray-100"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <div className="text-2xl font-bold text-[#4285F4] flex items-center">
-              G<span className="text-[#EA4335]">o</span><span className="text-[#FBBC05]">o</span>g<span className="text-[#34A853]">l</span><span className="text-[#EA4335]">e</span>
-            </div>
-            
-            <div className="w-px h-10 bg-gray-200"></div>
-
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-3">
-                <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="User" className="w-10 h-10 rounded-full border-2 border-white object-cover" />
-                <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="User" className="w-10 h-10 rounded-full border-2 border-white object-cover relative z-10" />
-                <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="User" className="w-10 h-10 rounded-full border-2 border-white object-cover relative z-20" />
-              </div>
-              
-              <div>
-                <div className="flex items-center gap-2">
-                  <span className="font-bold text-dark text-lg">4.5</span>
-                  <div className="flex text-gold text-sm">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <svg key={i} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill={i === 5 ? "url(#halfGradient)" : "currentColor"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <defs>
-                          <linearGradient id="halfGradient">
-                            <stop offset="50%" stopColor="currentColor" />
-                            <stop offset="50%" stopColor="transparent" />
-                          </linearGradient>
-                        </defs>
-                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                      </svg>
-                    ))}
-                  </div>
-                </div>
-                <p className="text-gray-500 text-xs font-medium">(1000+ Review)</p>
-              </div>
-            </div>
-          </motion.div> */}
         </div>
 
         {/* Testimonials Grid */}
@@ -154,23 +116,27 @@ const Testimonials = () => {
           ))}
         </motion.div>
 
-        {/* Bottom Bar */}
-        {/* <motion.div 
-          className="text-center flex items-center justify-center gap-3 border-t border-gray-200/50 pt-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="Icon" className="w-6 h-6 rounded-full object-cover" />
-          <p className="text-gray-600 font-medium text-sm md:text-base">
-            From raw fibers to refined fabrics – <Link href="/about-us" className="text-gold font-bold hover:underline">Sustainability Woven Into Every Thread.</Link>
-          </p>
-        </motion.div> */}
-
       </div>
     </section>
   );
+};
+
+const LocalizedTestimonials = () => {
+  const t = useTranslations('home');
+  const locale = useLocale();
+  const getT = (key: string) => t(`Testimonials.${key}`);
+  return <TestimonialsContent getT={getT} />;
+};
+
+const StaticTestimonials = () => {
+  const getT = (key: string) => ((enHome as any).Testimonials?.[key] || key);
+  return <TestimonialsContent getT={getT} />;
+};
+
+const Testimonials = () => {
+  const pathname = usePathname() || '';
+  const isLocalized = pathname.startsWith('/ar') || pathname.startsWith('/en') || pathname.startsWith('/de');
+  return isLocalized ? <LocalizedTestimonials /> : <StaticTestimonials />;
 };
 
 export default Testimonials;

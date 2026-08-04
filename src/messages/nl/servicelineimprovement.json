@@ -1,0 +1,106 @@
+{
+  "title": "Productielijnverbetering & Automatisering",
+  "breadcrumbName": "Lijnverbetering",
+  "rootBreadcrumbName": "Diensten",
+  "rootBreadcrumbPath": "/services",
+  "overviewTitle": "Productielijnautomatisering: Hoe Seppa Solutions Uw Fabriek Klaarstoomt voor de Toekomst",
+  "overviewDescription": "Er is een moment dat elke fabriekseigenaar wel kent: de productielijn draait, de orders komen binnen, maar de marges knijpen steeds harder omdat handmatige handelingen de bottleneck vormen. Precies daar begint het gesprek over productielijnautomatisering. Bij Seppa Solutions zien we dit als een fundamentele herstructurering van hoe een automatische productielijn waarde creëert.",
+  "overviewsubDescription": [
+    "Onze aanpak van productielijnautomatisering draait om één centrale gedachte: systemen die met elkaar praten, presteren beter dan systemen die naast elkaar draaien.",
+    "We bouwen geïntegreerde automatiseringssystemen waarin PLC aansturing, SCADA monitoring en servogestuurde mechaniek naadloos samenwerken, zodat elke schakel van de lijn weet wat de andere doet.",
+    "Onze systemen werken met servogestuurde synchronisatie, wat morsverlies reduceert en zorgt voor een stabiele output."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van Productielijnautomatisering voor de Productie-efficiëntie",
+      "paragraphs": [
+        "Een automatische productielijn verdient zichzelf terug via minder ongeplande stilstand en een hogere output per arbeidsuur. Beide effecten versterken elkaar als onderdeel van dezelfde productieverbetering.",
+        "Door sensoren, energiezuinige frequentieregelaars en voorspellend onderhoud te integreren signaleert het systeem afwijkingen voordat ze tot een stop leiden.",
+        "Onze systemen zijn modulair opgebouwd, zodat uitbreiding van de automatische productielijn een kwestie is van toevoegen, niet van vervangen."
+      ]
+    },
+    {
+      "title": "Toepassingen in de Dranken, Water en Verpakkingsindustrie",
+      "paragraphs": [
+        "In bottelarijen draait alles om precisie bij hoge snelheid: doseerkoppen moeten exact dezelfde hoeveelheid afgeven. Onze fabrieksautomatisering corrigeert afwijkingen real-time.",
+        "In verpakkingsfabrieken gaat het om de synchronisatie tussen meerdere machines (van vulinstallatie tot kartonneermachine). Grondige procesautomatisering laat deze als één systeem functioneren.",
+        "Onze procesautomatisering registreert automatisch batchgegevens, temperaturen en drukwaarden voor borging van hygiëne en traceerbaarheid."
+      ]
+    }
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van Geautomatiseerde Productielijnen",
+  "featuresSubtitle": "Geavanceerde besturings- en monitoringtechnologieën voor hoogwaardige productie:",
+  "features": [
+    {
+      "title": "Real-time Data Integratie & SCADA",
+      "description": "Elke sensor en servomotor voedt continu data terug naar een centraal dashboard voor directe prestatieinzichten."
+    },
+    {
+      "title": "Nauwkeurige PLC & Servo Synchronisatie",
+      "description": "Milliseconde-nauwkeurige aansturing voor een vlekkeloze overdracht tussen vul-, sluit- en etiketteerstations."
+    },
+    {
+      "title": "Energiezuinige Frequentieregelaars",
+      "description": "Soepele motoraansturing die stroomverbruik verlaagt en mechanische schokken bij opstarten voorkomt."
+    },
+    {
+      "title": "Voorspellend Onderhoud op Trillingsdata",
+      "description": "Continu monitoring van trillingspatronen om slijtage vroegtijdig te signaleren vóór uitval optreedt."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor Seppa Solutions voor Productielijnautomatisering",
+    "description": "Automatiseringssystemen ontworpen op maat van uw specifieke productmix, ruimtelijke indeling en groeiambities.",
+    "paragraphs": [
+      "Maatwerkoplossingen Zonder Standaardsjablonen: Wij bouwen industrial automation rond uw unieke fabriekssituatie.",
+      "Langdurige Technische Betrokkenheid: Ondersteuning stopt niet bij oplevering, maar begeleidt de complete opstart en optimalisatie.",
+      "Transparante Businesscase & ROI: Elk project start met heldere rendementsdoelen en meetbare prestatie-indicatoren."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodologie",
+    "title": "Onze Methodologie voor de Implementatie van Productielijnautomatisering",
+    "subtitle": "Een gestroomlijnd 4-staps gefaseerd transformatieproces:",
+    "steps": [
+      {
+        "title": "1. Initiële Nulmeting & Bottleneck Analyse",
+        "description": "In kaart brengen van handmatige vertragingen en ontbrekende data voor scherpe prioriteitstelling."
+      },
+      {
+        "title": "2. Gefaseerde Upgrade naar Fabrieksautomatisering",
+        "description": "Stapsgewijze koppeling van machines aan nieuwe besturingssystemen zonder lange productiestilstand."
+      },
+      {
+        "title": "3. Optimalisatiefase & Parameter-afstemming",
+        "description": "Analyseren van productiedata in de eerste weken om theoretische winst naar daadwerkelijk hogere output te vertalen."
+      },
+      {
+        "title": "4. Operationele Borging & Training",
+        "description": "Training van operators en borging van werkwijzen zodat het rendement ook op lange termijn behouden blijft."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen",
+  "faqs": [
+    {
+      "question": "Voldoet geautomatiseerde apparatuur aan de hygiënenormen voor de voedings en drankindustrie?",
+      "answer": "Ja. Alle componenten die wij integreren zijn ontworpen conform de geldende hygiënenormen voor voedsel en drankverwerking."
+    },
+    {
+      "question": "Wat kost een moderne productielijnautomatisering gemiddeld?",
+      "answer": "Dat hangt sterk af van de bestaande infrastructuur en gewenste automatiseringsgraad. We stellen altijd eerst een scherpe businesscase op."
+    },
+    {
+      "question": "Wat zijn de belangrijkste voordelen van een automatische productielijn ten opzichte van handmatige bediening?",
+      "answer": "Hogere output, minder menselijke fouten en consistentere kwaliteit met directe reactie op afwijkingen."
+    },
+    {
+      "question": "Hoeveel productieverbetering kan ik realistisch verwachten?",
+      "answer": "Klanten rapporteren doorgaans een merkbare stijging in output binnen het eerste jaar na implementatie van de nieuwe besturing."
+    },
+    {
+      "question": "Kan lijnautomatisering worden toegevoegd aan een bestaande, deels handmatige lijn?",
+      "answer": "Absoluut. Veel van onze projecten starten met een gedeeltelijk geautomatiseerde lijn die we stap voor stap uitbouwen."
+    }
+  ]
+}

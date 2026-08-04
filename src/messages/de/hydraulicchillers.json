@@ -1,0 +1,95 @@
+{
+  "title": "Hydraulik-Ölkühler-Systeme für industrielle Maschinen und zuverlässige Temperaturkontrolle",
+  "breadcrumbName": "Hydraulik-Kühler",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Industrielle Hydraulikkühlung für maximale Prozessstabilität",
+  "overviewDescription": "Viele Anlagenbetreiber beschäftigen sich erst dann mit der Temperatur ihres Hydrauliköls, wenn erste Probleme auftreten. Eine Presse verliert ihre Position, eine Spritzgussanlage arbeitet ungleichmäßig oder eine CNC-Maschine verliert während der Produktion ihre Genauigkeit. In vielen Fällen liegt die Ursache nicht an der Pumpe oder dem Ventilblock, sondern an einer zu hohen Öltemperatur. Wenn die ersten Symptome sichtbar werden, hat der Alterungsprozess des Hydrauliköls oft bereits über längere Zeit stattgefunden. Ein korrekt ausgelegter Hydraulik-Ölkühler verhindert diese Probleme, bevor sie entstehen.",
+  "overviewsubDescription": [
+    "Das Prinzip ist einfach: Ein Hydraulik-Ölkühler entzieht dem Hydrauliköl kontinuierlich Wärme und führt es auf eine optimale Betriebstemperatur zurück. Je nach Öltyp und Systemdruck liegt diese üblicherweise zwischen 35 °C und 55 °C.",
+    "Hydraulische Anlagen erzeugen während des Betriebs dauerhaft Wärme. Verluste in Pumpen, Druckabfälle an Ventilen und Reibung in Aktuatoren führen dazu, dass sich die Temperatur schneller erhöht, als die Wärme natürlich abgeführt werden kann. Zu heißes Öl verändert seine Viskosität. Dadurch werden Schmierfilme an Pumpenflächen, Ventilschiebern und Zylinderdichtungen dünner. Die Folge sind höherer Verschleiß, reduzierte Effizienz und kostspielige Reparaturen.",
+    "Der Seppa I-HOC (Industrial Hydraulic Oil Chiller) wurde speziell für diese Anforderungen entwickelt. Das System arbeitet mit internen Zahnradpumpen und Plattenwärmetauscher und verarbeitet Hydrauliköle mit einer Viskosität von VG 32 bis VG 68. Die Zahnradpumpe arbeitet geräuscharm und eignet sich optimal für mittlere Viskositäten."
+  ],
+  "featuresTitle": "Leistungsmerkmale und Vorteile effizienter Hydraulikkühlung",
+  "features": [
+    {
+      "title": "Plattenwärmetauscher statt Luftkühlung",
+      "description": "Seppa Hydraulik-Ölkühler verwenden hocheffiziente Plattenwärmetauscher. Diese ermöglichen eine deutlich größere Wärmeübertragungsfläche bei kompakter Bauweise und verursachen gleichzeitig einen geringen Druckverlust auf der Ölseite."
+    },
+    {
+      "title": "Geschlossene Temperaturregelung",
+      "description": "Die Seppa Systeme verfügen über eine geschlossene Regelung mit elektronischen Temperatursensoren. Die Rücklauftemperatur des Öls wird kontinuierlich überwacht und die Kühlleistung automatisch angepasst, um das Öl konstant am Sollwert zu halten."
+    },
+    {
+      "title": "Aktive Hydraulikölkühlung",
+      "description": "Dieses System reagiert auf die tatsächlichen Bedingungen im Hydraulikkreislauf und nicht lediglich auf die Umgebungstemperatur, was den Energiebedarf optimiert und die Kälteschutzwirkung steigert."
+    }
+  ],
+  "applicationsTitle": "Industrielle Anwendungen für Hydraulik-Ölkühler",
+  "applicationsSubtitle": "Überall dort, wo Hydrauliksysteme über lange Produktionszeiten mit hoher Belastung arbeiten, bietet eine aktive Ölkühlung entscheidende Vorteile.",
+  "applications": [
+    {
+      "title": "Spritzguss- und Druckgussanlagen",
+      "description": "Sichert stabile Zykluszeiten und verhindert Auswaschungen an Formwerkzeugen durch konstant gekühltes Hydrauliköl."
+    },
+    {
+      "title": "Pressenlinien und Schwerindustrie",
+      "description": "Reduziert thermische Belastungen auf Dichtungen und Ventilschieber bei kontinuierlichen Pressvorgängen."
+    },
+    {
+      "title": "CNC-Bearbeitungszentren",
+      "description": "Vermeidet Viskositätsänderungen des Hydraulikmediums für eine dauerhaft präzise Positionierung und Spannkraft."
+    },
+    {
+      "title": "Gummi- & Kunststoffverarbeitung",
+      "description": "Stoppt thermischen Verschleiß an Pumpenflächen und verlängert die Wechselintervalle synthetischer Öle."
+    }
+  ],
+  "whyChoose": {
+    "title": "Warum Seppa Solutions für Hydraulik-Ölkühler?",
+    "description": "Wir entwickeln Hydraulikkühlsysteme, die auf maximale Lebensdauer und präzise Prozessstabilität ausgelegt sind.",
+    "paragraphs": [
+      "Die I-HOC-Serie kombiniert bewährte Plattenwärmetauscher mit leisen, langlebigen Zahnradpumpen, um auch bei Dauereinsatz stabile Öltemperaturen zu gewährleisten.",
+      "Durch die integrierte Sensorik und die intelligente PID-Leistungsanpassung arbeitet das Kühlsystem extrem energieeffizient und verlängert die Standzeiten von Pumpen und Ventilen in Ihrer gesamten Produktion."
+    ]
+  },
+  "methodology": {
+    "title": "Funktionsweise und Kühlprozess zur Temperaturkontrolle",
+    "steps": [
+      {
+        "title": "Eintritt des heißen Hydrauliköls",
+        "description": "Nach einem vollständigen Produktionszyklus gelangt das erwärmte Rücklauföl in den Kühlkreislauf. Die Temperatur liegt typischerweise 10 bis 20 °C über dem gewünschten Betriebswert."
+      },
+      {
+        "title": "Wärmeübertragung im Plattenwärmetauscher",
+        "description": "Das Hydrauliköl strömt durch eine Seite des Wärmetauschers, während das gekühlte Kältemittel auf der anderen Seite zirkuliert. Die Wärme wird vom Öl auf das Kältemittel übertragen."
+      },
+      {
+        "title": "Kältemittelkreislauf & Regelung",
+        "description": "Die Wärme wird über luft- oder wassergekühlte Kondensatoren abgegeben. Sensoren überwachen die Öl-Austrittstemperatur und passen die Kompressorleistung automatisch an, bevor das gekühlte Öl zurückgeführt wird."
+      }
+    ],
+    "outro": [
+      "Genau hier zeigt sich der eigentliche Nutzen eines Hydraulik-Ölkühlers: Nicht nur Überhitzung wird verhindert, sondern der gesamte Hydraulikprozess bleibt dauerhaft innerhalb seiner optimalen Betriebsbedingungen."
+    ]
+  },
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "question": "1. Welche Viskositätsklassen können verarbeitet werden?",
+      "answer": "Die Seppa-Systeme sind für Hydrauliköle mit Viskositäten von ISO VG 32 bis ISO VG 68 optimiert."
+    },
+    {
+      "question": "2. Warum ist ein niedriger Druckverlust auf der Ölseite wichtig?",
+      "answer": "Ein hoher Gegendruck belastet die Hydraulikpumpe zusätzlich und erhöht den Energieverbrauch. Plattenwärmetauscher bieten hier die beste Effizienz."
+    },
+    {
+      "question": "3. Wie wirkt sich die Öltemperatur auf Dichtungen aus?",
+      "answer": "Zu heißes Öl lässt Dichtungsmaterialien schneller altern und spröde werden, was zu Leckagen an Zylindern und Ventilen führt."
+    },
+    {
+      "question": "4. Können Seppa-Kühler an bestehende Maschinen nachgerüstet werden?",
+      "answer": "Ja, durch die kompakte Bauweise und die integrierten Pumpensysteme lassen sich die I-HOC-Einheiten problemlos an vorhandene Hydrauliktanks anschließen."
+    }
+  ]
+}
