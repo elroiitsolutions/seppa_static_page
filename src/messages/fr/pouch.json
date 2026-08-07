@@ -25,25 +25,10 @@
       ]
     }
   ],
-  "applicationsTitle": "Soorten Pouch Verpakkingen",
-  "applicationsSubtitle": "Verschillende producten hebben verschillende formaten nodig.",
+  "applicationsTitle": "",
+  "applicationsSubtitle": "",
   "applications": [
-    {
-      "title": "Stand Up Pouches (Doypack)",
-      "description": "Dit is het standaard retailformaat geworden voor babyvoeding, dierensnacks en wasmiddelen. Ze staan op het schap, kunnen voorzien worden van een sluiting of tuit zonder complexe tooling, en bieden 360 graden bedrukking."
-    },
-    {
-      "title": "Spouted Pouches",
-      "description": "Domineren kindervoeding, vruchtensappen en persoonlijke verzorging. De tuit wordt inline geplaatst en gelast op onze pouch verpakkingsmachine, met een lektest op elke unit."
-    },
-    {
-      "title": "Drie en vierzijdige seal pouches",
-      "description": "Blijven het meest materiaalefficiënte formaat voor sauzen in sachets en eenheidsdoses. Ze zijn ook de standaard voor retort pouch verpakkingen."
-    },
-    {
-      "title": "Pillow en Back Seal formaten",
-      "description": "Zijn de snelheidsleiders voor chips, noten en snoep. Horizontale flow wrap is geschikt voor producten waarbij integriteit even belangrijk is als doorvoer."
-    }
+   
   ],
   "featuresTitle": "Belangrijkste Kenmerken van de SEPPA Pouch Verpakkingsmachine",
   "featuresSubtitle": "Wat maakt de Machine de remplissage de poches van SEPPA technisch onderscheidend?",
