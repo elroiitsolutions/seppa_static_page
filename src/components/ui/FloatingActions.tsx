@@ -71,11 +71,11 @@ const FloatingActions = () => {
       <button
         suppressHydrationWarning
         onClick={openEnquiryModal}
-        className="w-10 h-10 md:w-12 md:h-12 bg-[#101934] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-seppa-red transition-all duration-300 group relative border border-white/20"
+        className="w-10 h-10 md:w-12 md:h-12 bg-seppa-red text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-[#101934] transition-all duration-300 group relative border border-white/20"
         aria-label="Request Quote"
       >
         <LuMessageSquareText className="text-xl md:text-2xl" />
-        <span className="absolute right-full mr-3 px-3 py-1 bg-dark text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        <span className="absolute right-full mr-3 px-2.5 py-1 bg-[#101934] text-white text-xs sm:text-sm font-medium rounded-md shadow-md opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
           Enquiry Form
         </span>
       </button>
