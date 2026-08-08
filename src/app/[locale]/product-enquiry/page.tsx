@@ -18,11 +18,8 @@ export default async function LocalizedProductEnquiryPage({ params }: Props) {
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'enquiry' });
-  const tEn = await getTranslations({ locale: 'en', namespace: 'enquiry' });
-
-  const isDe = locale === 'de';
-  const getT = (key: string) => isDe ? tEn(key) : t(key);
-  const getRaw = (key: string) => isDe ? tEn.raw(key) : t.raw(key);
+  const getT = (key: string) => t(key);
+  const getRaw = (key: string) => t.raw(key);
 
   const messages = await getMessages({ locale });
 

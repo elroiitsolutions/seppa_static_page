@@ -41,79 +41,128 @@ export default async function PneumaticBlowingPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
+    overviewsubDescription: (() => {
+      try {
+        const raw = t.raw('overviewsubDescription');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
     overviewImage: overviewImg.src,
-    contentBlocks: (t.raw('contentBlocks') as any[] || []).map((block: any, index: number) => ({
-      title: block.title,
-      paragraphs: block.paragraphs,
-      image1: [img1.src, img2.src][index] || undefined,
-      reverse: [true, false][index] || false,
-      bgClass: [undefined, "bg-light"][index] || undefined
-    })),
+    contentBlocks: (() => {
+      try {
+        const raw = t.raw('contentBlocks');
+        if (Array.isArray(raw)) {
+          return raw.map((block: any, index: number) => ({
+            title: block.title,
+            paragraphs: block.paragraphs,
+            image1: [img1.src, img2.src][index] || undefined,
+            reverse: [true, false][index] || false,
+            bgClass: [undefined, "bg-light"][index] || undefined
+          }));
+        }
+      } catch (e) {}
+      return [];
+    })(),
     applicationsTitle: t('applicationsTitle'),
     applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    applications: (() => {
+      try {
+        const raw = t.raw('applications');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
     whyChoose: {
       title: t('whyChoose.title'),
       description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
-      paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
+      paragraphs: (() => {
+        try {
+          const raw = t.raw('whyChoose.paragraphs');
+          if (Array.isArray(raw)) return raw;
+        } catch (e) {}
+        return [];
+      })(),
       image: over.src
     },
     methodology: {
       title: t('methodology.title'),
       subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined,
-      steps: (t.raw('methodology.steps') as any[] || []).map((step: any, index: number) => ({
-        title: step.title,
-        description: step.description,
-        image: [meth1.src, meth2.src, meth3.src][index] || meth1.src
-      })),
-      outro: t.has('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : []) : undefined
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw)) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title,
+              description: step.description,
+              image: [meth1.src, meth2.src, meth3.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: (() => {
+        try {
+          const raw = t.raw('methodology.outro');
+          if (Array.isArray(raw)) return raw;
+        } catch (e) {}
+        return undefined;
+      })()
     },
     faqTitle: t('faqTitle'),
-    faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
+    faqs: (() => {
+      try {
+        const raw = t.raw('faqs');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  const lineOptions = [
+    {
+      title: locale === 'ar' ? "نافخ PET" : "Seppa SSB-SL-10",
+      img: img1.src,
+      link: `/${locale}/blowing/pneumatic/ssb-sl-10`
+    },
+    {
+      title: locale === 'ar' ? "تكنولوجيا المعالجة" : "Seppa SSB-SL-20",
+      img: meth1.src,
+      link: `/${locale}/blowing/pneumatic/ssb-sl-20`
+    },
+    {
+      title: locale === 'ar' ? "خط تعبئة PET" : "Seppa SSB-SL-40",
+      img: meth2.src,
+      link: `/${locale}/blowing/pneumatic/ssb-sl-40`
+    },
+    {
+      title: locale === 'ar' ? "خط تعبئة الزجاج" : "Seppa SSB-SL-60",
+      img: meth3.src,
+      link: `/${locale}/blowing/pneumatic/ssb-sl-60`
+    }
+  ];
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-    <PackagingPageLayout data={pageData} locale={locale}>
-          {/* Custom Section 2: Comprehensive Lines */}
-          <section className="py-16 bg-white relative">
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale}>
+           <section className="py-16 bg-white relative">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
                 <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-                  <span className="text-xs font-semibold text-[#101934] uppercase tracking-wider">{locale === 'ar' ? 'حلول الخطوط الكاملة' : 'COMPLETE LINE SOLUTIONS'}</span>
+                  <span className="text-xs font-semibold text-[#101934] uppercase tracking-wider">
+                    {locale === 'ar' ? 'حلول الخطوط الكاملة' : (locale === 'nl' ? 'VOLLEDIGE LIJNOPLOSSINGEN' : 'COMPLETE LINE SOLUTIONS')}
+                  </span>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-[#101934] leading-tight max-w-4xl mx-auto">
-                  {locale === 'ar' ? 'خطوط معالجة المشروبات والألبان الشاملة' : 'Comprehensive Beverage & Dairy Processing Lines'}
+                  {locale === 'ar' ? 'خطوط معالجة المشروبات والألبان الشاملة' : (locale === 'nl' ? 'Volledige Lijnoplossingen voor Dranken en Zuivel' : 'Comprehensive Beverage & Dairy Processing Lines')}
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                {[
-                  {
-                    title: locale === 'ar' ? "نافخ PET" : "Seppa SSB-SL-10",
-                    img: img1.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-10" : "/en/blowing/pneumatic/ssb-sl-10"
-                  },
-                  {
-                    title: locale === 'ar' ? "تكنولوجيا المعالجة" : "Seppa SSB-SL-20",
-                    img: meth1.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-20" : "/en/blowing/pneumatic/ssb-sl-20"
-                  },
-                  {
-                    title: locale === 'ar' ? "خط تعبئة PET" : "Seppa SSB-SL-40",
-                    img: meth2.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-40" : "/en/blowing/pneumatic/ssb-sl-40"
-                  },
-                  {
-                    title: locale === 'ar' ? "خط تعبئة الزجاج" : "Seppa SSB-SL-60",
-                    img: meth3.src,
-                    link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-60" : "/en/blowing/pneumatic/ssb-sl-60"
-                  }
-                ].map((item, idx) => (
+                {lineOptions.map((item, idx) => (
                   <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block">
                     <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
@@ -126,6 +175,7 @@ export default async function PneumaticBlowingPage({ params }: PageProps) {
             </div>
           </section>
         </PackagingPageLayout>
+      </div>
     </NextIntlClientProvider>
   );
 }

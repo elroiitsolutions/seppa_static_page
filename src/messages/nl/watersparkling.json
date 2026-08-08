@@ -1,0 +1,103 @@
+{
+  "title": "Bruiswater Productielijn: De Water en Sparklingoplossingen van SEPPA Solutions",
+  "breadcrumbName": "Water & Bruiswater",
+  "rootBreadcrumbName": "Verwerking",
+  "rootBreadcrumbPath": "/processing",
+  "overviewTitle": "Bruiswater Productielijn: De Water en Sparklingoplossingen van SEPPA Solutions",
+  "overviewDescription": "Er is een moment tijdens elke rondleiding door een bottelarij waarop een plant manager stilstaat bij de carbonator en zegt: \"Dit onderdeel bepaalt of de klant een goede of een matige fles koopt.\" Bij stilstaand water valt een klein verschil in zuiverheid nauwelijks op. Bij bruiswater proeft de consument het meteen, in elke slok prik of juist het gebrek daaraan. Dat is precies waarom de keuze voor een goede bruiswater productielijn zoveel gewicht in de schaal legt.",
+  "overviewsubDescription": [
+    "Overzicht van de Water en Bruiswater Productielijn: De bruiswater productielijn van SEPPA Solutions is gebouwd rond drie stappen die elkaar naadloos moeten opvolgen: ontgassing, menging en carbonatatie. Voordat er ook maar een druppel koolzuur wordt toegevoegd, moet het water eerst worden ontdaan van opgeloste lucht om schuimende, oncontroleerbare flessen te voorkomen.",
+    "Na de ontgassing volgt de menging en carbonatatie. Seppa Solutions levert deze bruiswater productielijn als volledig geïntegreerd systeem, dat een constant koolzuurgehalte garandeert bij zowel 15 als 35 graden Celsius omgevingstemperatuur.",
+    "Van compacte bruiswater installaties voor beperkte volumes tot volledig geautomatiseerde industriële lijnen die dag en nacht doordraait, beide draaien op dezelfde onderliggende technologie."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Water en Bruiswater Verwerkingslijn",
+  "features": [
+    {
+      "title": "Inline Carbonatatie & Drukprecisie",
+      "description": "Injecteert koolzuurgas direct in de waterstroom. Inline sensoren en druksysteemprecisie passen de druk per fles continu aan om koolzuurverlies of schuimvorming te voorkomen."
+    },
+    {
+      "title": "CIP-Reiniging & Sanitaire Platenkoelers",
+      "description": "Geïntegreerde CIP-reinigingskoppen spoelen leidingen en tanks automatisch. Sanitaire platenkoelers brengen het water op de optimale temperatuur voor koolzuuropname."
+    },
+    {
+      "title": "Geavanceerde Waterbehandeling",
+      "description": "Zand- en koolstoffiltratie, omgekeerde osmose (RO) en UV/ozon-sterilisatie vormen de solide basis voor een voorspelbare bruiswater productie."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Water, Dranken en Voedingsindustrie",
+  "applications": [
+    {
+      "title": "Grootschalige Bruiswater Productielijnen",
+      "description": "Hoge capaciteit met honderdduizenden flessen per day en een consistent koolzuurniveau, ondersteund door robuuste waterbehandeling."
+    },
+    {
+      "title": "Stil Water & Omschakelbare Lijnen",
+      "description": "Flexibel omschakelen tussen stil en bruisend water op dezelfde watervulmachine zonder aparte installaties te hoeven onderhouden."
+    },
+    {
+      "title": "Voedingsindustrie & Exportgerichte Producenten",
+      "description": "Strengste zuiverheidsnormen voor water als ingrediënt en gegarandeerde batch-to-batch consistentie over seizoensschommelingen heen."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Water en Bruiswater Oplossingen van SEPPA",
+    "paragraphs": [
+      "Geïntegreerde Systeemarchitectuur: Geen losse componenten, maar een naadloos samenspel tussen waterzuiveringsinstallatie, carbonator en watervulmachine.",
+      "Ervaring bij Elk Productievolume: Beproefde afstellingen voor zowel 10.000 flessen per uur als grootschalige 50.000 flessen per uur.",
+      "Langdurige Investeringsbescherming: Fysieke uitbreidbaarheid van de waterzuiveringsinstallatie bij capaciteitsgroei zonder de basisinfrastructuur te slopen."
+    ]
+  },
+  "methodology": {
+    "title": "Hoe de Water en Bruiswater Productielijn Werkt (Productieproces)",
+    "steps": [
+      {
+        "title": "Fase 1: Waterbehandeling & Filtratie",
+        "description": "Ruw water doorloopt zandfiltratie, geactiveerd koolfilter en omgekeerde osmose of UV-behandeling om onzuiverheden en chloor te verwijderen."
+      },
+      {
+        "title": "Fase 2: Ontgassing & Menging",
+        "description": "Opgeloste lucht wordt onttrokken aan het gezuiverde water om schuimvorming te voorkomen. Optionele mineralen- of smaakdosering volgt via een doseersysteem."
+      },
+      {
+        "title": "Fase 3: Koeling via Platenkoelers",
+        "description": "Sanitaire platenkoelers brengen het water naar 2 tot 4 °C, het optimale temperatuurbereik voor gasabsorptie."
+      },
+      {
+        "title": "Fase 4: Inline Carbonatatie",
+        "description": "Koolzuurgas wordt onder gecontroleerde druk direct in de vloeistofstroom geïnjecteerd en bewaakt via inline CO2-sensoren."
+      },
+      {
+        "title": "Fase 5: Isobaar Afvullen op High-Speed Watervulmachine",
+        "description": "Isobare vulventielen maken de druk in fles en tank gelijk tijdens het vullen om koolzuurverlies volledig uit te sluiten."
+      },
+      {
+        "title": "Fase 6: Afdichting, Etikettering & Traceerbaarheid",
+        "description": "Drupvrije sluiting, capsulering, etikettering en batchcodering borgen dat elke fles herleidbaar is tot de exacte productierun."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Aan welke hygiënenormen moet botteling van bruiswater voldoen?",
+      "answer": "De lijn is ontworpen conform de gangbare voedselveiligheidsnormen voor waterproducten, met CIP-reinigingskoppen en eenvoudig te steriliseren materialen."
+    },
+    {
+      "question": "Wat kosten de onderhoudswerkzaamheden binnen een bruiswater productielijn?",
+      "answer": "Dat hangt af van het volume en de configuratie, maar preventief onderhoud houdt de kosten laag vergeleken met onverwachte stilstand."
+    },
+    {
+      "question": "Hoe efficiënt is een bruiswater installatie in vergelijking met oudere systemen?",
+      "answer": "Moderne inline carbonators en isobare vulventielen verminderen koolzuurverlies aanzienlijk vergeleken met oudere batchsystemen."
+    },
+    {
+      "question": "Wat is de capaciteit van een waterzuiveringsinstallatie bij SEPPA?",
+      "answer": "De capaciteit wordt afgestemd op de productielijn en varieert van kleinschalige installaties tot tienduizenden liters per uur."
+    },
+    {
+      "question": "Hoe nauwkeurig is een watervulmachine bij hoge productiesnelheden?",
+      "answer": "Dankzij isobare vulventielen en elektronische doseerregeling blijft de vulnauwkeurigheid binnen een fractie van een procent."
+    }
+  ]
+}
