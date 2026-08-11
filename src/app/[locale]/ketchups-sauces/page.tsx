@@ -35,12 +35,14 @@ export default async function KetchupsSaucesPage({ params }: PageProps) {
     overviewDescription: t('overviewDescription'),
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
-    contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
-      title: block.title,
-      paragraphs: block.paragraphs,
-      image1: bannerImg.src,
-      reverse: true
-    })),
+    contentBlocks: t.has('contentBlocks') && Array.isArray(t.raw('contentBlocks'))
+      ? (t.raw('contentBlocks') as any[]).map((block: any) => ({
+          title: block.title,
+          paragraphs: block.paragraphs,
+          image1: bannerImg.src,
+          reverse: true
+        }))
+      : undefined,
     featuresTitle: t('featuresTitle'),
     featuresSubtitle: t('featuresSubtitle'),
     features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
@@ -49,8 +51,9 @@ export default async function KetchupsSaucesPage({ params }: PageProps) {
     applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
-      reasons: t.raw('whyChoose.reasons'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
+      reasons: t.has('whyChoose.paragraphs') ? undefined : (t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined),
       image: overviewImg.src
     },
     methodology: {
@@ -67,7 +70,7 @@ export default async function KetchupsSaucesPage({ params }: PageProps) {
     faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
