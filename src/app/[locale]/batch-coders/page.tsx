@@ -43,20 +43,12 @@ export default async function BatchCodersPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: (() => {
-      try {
-        const raw = t.raw('overviewsubDescription');
-        if (Array.isArray(raw)) {
-          return raw.map((paragraph, index) => (
-            <p key={index} className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12 mt-4">
-              {paragraph}
-            </p>
-          ));
-        }
-      } catch (e) {}
-      return undefined;
-    })(),
+    overviewsubDescription: t.has('overviewsubDescription') && Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
+    featuresTitle: t.has('featuresTitle') && t('featuresTitle') ? t('featuresTitle') : undefined,
+    features: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 ? t.raw('features') : undefined,
+    applicationsTitle: t.has('applicationsTitle') && t('applicationsTitle') ? t('applicationsTitle') : undefined,
+    applications: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 ? t.raw('applications') : undefined,
     contentBlocks: (() => {
       try {
         const raw = t.raw('contentBlocks');
@@ -66,7 +58,8 @@ export default async function BatchCodersPage({ params }: PageProps) {
             paragraphs: block.paragraphs,
             image1: [img1.src, img2.src, img3.src][index] || img1.src,
             reverse: index % 2 === 0,
-            bgClass: index % 2 === 1 ? "bg-light" : undefined
+            bgClass: index % 2 === 1 ? "bg-light" : undefined,
+            layout: (block.paragraphs && block.paragraphs.length >= 4) ? ("stacked" as const) : undefined
           }));
         }
       } catch (e) {}
@@ -74,7 +67,7 @@ export default async function BatchCodersPage({ params }: PageProps) {
     })(),
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: (() => {
         try {
           const raw = t.raw('whyChoose.paragraphs');
@@ -86,6 +79,7 @@ export default async function BatchCodersPage({ params }: PageProps) {
     },
     methodology: {
       title: t('methodology.title'),
+      subtitle: (t.raw('methodology') as any)?.subtitle || (t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined),
       steps: (() => {
         try {
           const raw = t.raw('methodology.steps');
@@ -98,6 +92,15 @@ export default async function BatchCodersPage({ params }: PageProps) {
           }
         } catch (e) {}
         return [];
+      })(),
+      outro: (() => {
+        try {
+          const raw = (t.raw('methodology') as any)?.outro || (t.has('methodology.outro') ? t.raw('methodology.outro') : undefined);
+          if (Array.isArray(raw) && raw.length > 0) {
+            return raw;
+          }
+        } catch (e) {}
+        return undefined;
       })()
     },
     faqTitle: t('faqTitle'),
@@ -115,11 +118,13 @@ export default async function BatchCodersPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <PackagingPageLayout data={pageData} />
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale} />
+      </div>
     </NextIntlClientProvider>
   );
 }
