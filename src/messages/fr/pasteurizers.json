@@ -1,0 +1,87 @@
+{
+  "title": "Pasteurisateur Tunnel Industriel | SEPPA Solutions",
+  "breadcrumbName": "Pasteurisateur Tunnel",
+  "rootBreadcrumbName": "Équipements",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Présentation du pasteurisateur tunnel SEPPA",
+  "overviewDescription": "Dans l'ingénierie avancée du conditionnement agroalimentaire, la stabilisation microbiologique continue des liquides scellés constitue une étape stratégique déterminante pour la rentabilité et la conformité sanitaire. En tant qu'ingénieur en génie des procédés thermiques, j'observe quotidiennement que la maîtrise rigoureuse du traitement thermique conditionne la durée de conservation commerciale et l'empreinte carbone globale du site d'emballage. Le pasteurisateur à tunnel développé par SEPPA Solutions s'impose comme une référence technologique de premier plan pour le traitement thermique continu des récipients hermétiquement clos, qu'il s'agisse de bouteilles en verre, de canettes en aluminium ou de flacons synthétiques thermorésistants.",
+  "overviewsubDescription": [
+    "Cette machine de pasteurisation de haute ingénierie est spécifiquement conçue pour relever les défis techniques complexes de la pasteurisation boissons. Contrairement aux solutions alternatives de thermisation en vrac suivies d'un remplissage aseptique coûteux et délicat à maintenir, le pasteurisateur à tunnel agit directement sur le produit déjà emballé. Cette approche élimine fondamentalement tout risque de recontamination croisée post remplissage au niveau du bouchage ou du sertissage, apportant une garantie biologique absolue aux directeurs de la qualité et chefs d'exploitation."
+  ],
+  "contentBlocks": [
+    {
+      "title": "Avantages du pasteurisateur SEPPA",
+      "paragraphs": [
+        "L'acquisition d'un pasteurisateur à tunnel SEPPA Solutions s'inscrit dans une logique stricte d'optimisation du coût total de possession (TCO). Notre système de pasteurisation combine des rendements thermodynamiques élevés avec une grande frugalité dans l'utilisation des ressources naturelles.",
+        "Performance énergétique et régénération d'eau : Le vecteur d'efficience majeur de notre équipement de pasteurisation réside dans l'intégration d'une boucle de récupération thermique croisée. Les calories extraites lors du refroidissement sont transférées vers l'eau de préchauffage via des échangeurs à plaques performants. Cette régénération réduit la consommation de vapeur saturée jusqu'à 45 %. Parallèlement, la recirculation fermée de l'eau abaisse la consommation d'eau fraîche de plus de 60 %, diminuant drastiquement le volume des effluents à traiter.",
+        "Préservation des qualités organoleptiques : Une pasteurisation industrielle optimale ne doit pas se réduire à la destruction systématique des germes altérants ; elle doit préserver la fraîcheur, la couleur et le profil aromatique du liquide. Grâce à un pilotage numérique précis du barème thermique, le pasteurisateur à tunnel SEPPA empêche tout phénomène de surmédication thermique, préservant la totalité des arômes volatils originels.",
+        "Robustesse structurelle et fiabilité : L'ensemble du pasteurisateur à tunnel est fabriqué en acier inoxydable massif AISI 304 ou 316L. Le tapis roulant à haute résistance mécanique limite les contraintes sur les emballages, éliminant les risques de casse et garantissant un taux de disponibilité opérationnelle (OEE) supérieur à 98 % sur les lignes à grande cadence."
+      ]
+    },
+    {
+      "title": "Applications dans les industries des boissons et des aliments liquides",
+      "paragraphs": [
+        "La flexibilité opérationnelle remarquable de notre machine de pasteurisation en fait une solution modulaire adaptée aux exigences variées des usines modernes de conditionnement.",
+        "Secteur brasserie et boissons fermentées : Dans la production de bières, la destruction contrôlée des levures résiduelles est indispensable pour stopper la fermentation secondaire et prévenir la surpression dans les conteneurs. Le pasteurisateur à tunnel garantit un apport thermique mesuré au millième d'UP près, sécurisant la stabilité microbiologique des bières tout en maintenant la tenue de mousse.",
+        "Jus de fruits, nectars et sodas : La pasteurisation boissons demande un paramétrage thermique spécifique capable de détruire les micro organismes acidophiles tout en inactivant les enzymes pectinolytiques responsables du déphasage. Notre équipement de pasteurisation prend en charge aussi bien les jus clairs que les boissons pulpeuses, maintenant un transfert de chaleur homogène quel que soit le taux de solides.",
+        "Sauces et produits liquides alimentaires : Au-delà des boissons, la pasteurisation industrielle continue convient idéalement aux condiments liquides, marinades et sauces conditionnés en pots en verre. Le pasteurisateur à tunnel amortit l'inertie thermique du verre épais, assurant la stérilité commerciale sans altérer la texture ni les arômes des aliments."
+      ]
+    },
+    {
+      "title": "Caractéristiques clés du pasteurisateur tunnel",
+      "paragraphs": [
+        "L'excellence d'un procédé thermique repose sur la précision de sa régulation et la robustesse de ses sous-ensembles fonctionnels industriels.",
+        "Segmentation multi zones et régulation d'UP : Le pasteurisateur à tunnel est subdivisé en sections thermiques autonomes : préchauffage, chauffe, maintien pasteurisateur, pré refroidissement et refroidissement. Chaque section possède son propre circuit d'eau avec sonde PT100 et vanne modulante PID. En cas d'arrêt de ligne, le système de pasteurisation enclenche un mode de sécurité automatique (\"Holding Mode\"). La température d'aspersion est abaissée instantanément pour figer l'accumulation d'UP et éviter la détérioration du produit immobilisé.",
+        "Pulvérisation homogène et buses anti-colmatage : Afin d'obtenir un transfert thermique maximal, notre machine de pasteurisation met en œuvre une rampe de buses d'aspersion spécialement profilées. Elles génèrent un rideau d'eau uniforme à basse pression. La géométrie des buses prévient l'entartrage et le colmatage par les étiquettes détachées, réduisant les besoins de maintenance préventive.",
+        "Supervision IHM et traçabilité globale : Chaque équipement de pasteurisation embarque un automate industriel couplé à une interface tactile intuitive. Le système enregistre en continu les températures, débits et valeurs d'UP accumulées pour alimenter vos démarches d'assurance qualité sanitaire (HACCP, IFS). Ce pasteurisateur à tunnel communique nativement avec vos systèmes MES et ERP via les protocoles Ethernet/IP ou OPC-UA."
+      ]
+    }
+  ],
+  "features": [],
+  "applications": [],
+  "whyChoose": {
+    "title": "Pourquoi choisir SEPPA Solutions pour les systèmes de pasteurisation",
+    "description": "",
+    "paragraphs": [
+      "L'acquisition d'une machine de pasteurisation représente un investissement matériel majeur engageant votre rentabilité industrielle sur le long terme. SEPPA Solutions s'impose comme un partenaire global d'ingénierie d'excellence.",
+      "Ingénierie personnalisée et intégration sur mesure : Chaque usine possède ses contraintes d'espace et de flux. C'est pourquoi chaque système de pasteurisation est conçu sur mesure selon l'espace disponible au sol, les cadences de production et les fluides disponibles. Nos ingénieurs modélisent la machine en 3D dans votre environnement industriel pour garantir une implantation ergonomique et un raccordement fluide aux convoyeurs de ligne.",
+      "Expertise reconnue en pasteurisation boissons : L'expertise de SEPPA repose sur une maîtrise approfondie de la microbiologie et de la rhéologie des liquides. Notre laboratoire de procédé vous accompagne dans la définition des barèmes thermiques optimaux pour vos projets de pasteurisation boissons, conciliant sécurité sanitaire irréprochable et qualités organoleptiques préservées.",
+      "Engagement pour une pasteurisation industrielle durable : En retenant un équipement de pasteurisation SEPPA, vous inscrivez votre usine dans une démarche globale d'éco conception. Nos technologies réduisent considérablement la consommation de vapeur saturée et préservent la ressource en eau, soutenant efficacement la décarbonation de vos opérations."
+    ]
+  },
+  "methodology": {
+    "badge": "Méthodologie",
+    "title": "Méthodologie de pasteurisation",
+    "subtitle": "La pasteurisation repose sur la destruction cinétique des micro organismes sous l'effet conjugué de la température et du temps d'exposition. Dans le pasteurisateur à tunnel, cette cinétique est modélisée scientifiquement afin de maîtriser chaque paramètre du procédé.",
+    "steps": [
+      {
+        "title": "Calcul et contrôle dynamique des Unités de Pasteurisation",
+        "description": "L'Unité de Pasteurisation (UP) mesure l'effet létal cumulé du traitement thermique. En brasserie, 1 UP équivaut à 1 minute d'exposition à 60 °C. La formule de calcul est exprimée par : UP = t × 10^((T - 60) / z), où t est le temps de séjour en minutes, T la température au cœur du produit en °C, et z le facteur de résistance thermique (z = 6,94 °C pour la bière). Dans notre système de pasteurisation, des algorithmes prédictifs intègrent les données de température en temps réel. Si une variation de vitesse de ligne survient, la température des rampes du pasteurisateur à tunnel s'ajuste dynamiquement pour garantir scrupuleusement la consigne d'UP sans risque de surchauffe."
+      }
+    ],
+    "outro": []
+  },
+  "faqTitle": "Foire aux questions (FAQ)",
+  "faqs": [
+    {
+      "question": "Quelle est la différence entre pasteurisateur flash et pasteurisateur à tunnel ?",
+      "answer": "Le pasteurisateur flash traite le liquide en vrac avant conditionnement et nécessite une ligne aseptique complexe. À l'inverse, le pasteurisateur à tunnel traite les conteneurs une fois scellés. Ce système de pasteurisation élimine tout risque de recontamination lors du bouchage, constituant le choix de référence pour la pasteurisation boissons nécessitant une sécurité microbiologique maximale sur le long terme."
+    },
+    {
+      "question": "Quels formats d'emballage accepte ce système thermique ?",
+      "answer": "Notre machine de pasteurisation accepte une grande variété de conteneurs primaires : bouteilles en verre, canettes en aluminium, bocaux en verre et flacons en PET thermorésistant. Le tapis à mailles fines assure une excellente stabilité des emballages à haute vitesse."
+    },
+    {
+      "question": "Comment l'installation gère-t-elle les arrêts de ligne ?",
+      "answer": "Lors d'un arrêt imprévu en aval, l'équipement de pasteurisation active automatiquement son mode de sécurité \"Holding\". Le système injecte immédiatement de l'eau rafraîchie dans les zones chaudes pour abaisser la température et stopper l'accumulation d'UP, préservant le produit immobilisé de tout surtraitement gustatif."
+    },
+    {
+      "question": "Quelle économie d'énergie réalise ce matériel de traitement ?",
+      "answer": "Grâce à la récupération thermique croisée entre zones chaudes et froides, la machine de pasteurisation réduit la consommation de vapeur saturée jusqu'à 45 %. La recirculation d'eau bouclée diminue l'eau d'appoint de plus de 60 %, rendant la pasteurisation industrielle particulièrement rentable sur le plan opérationnel."
+    },
+    {
+      "question": "Quels sont les prérequis pour installer ce système de pasteurisation ?",
+      "answer": "Installer un système de pasteurisation exige une dalle bétonnée dimensionnée, de la surface au sol et les raccordements aux utilités : vapeur saturée, eau de refroidissement, air comprimé et électricité. SEPPA fournit les plans d'implantation complets pour réussir votre projet de pasteurisation industrielle et de pasteurisation boissons."
+    }
+  ]
+}

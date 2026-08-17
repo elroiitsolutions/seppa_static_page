@@ -41,19 +41,7 @@ export default async function BottleHandlingPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: (() => {
-      try {
-        const raw = t.raw('overviewsubDescription');
-        if (Array.isArray(raw)) {
-          return raw.map((paragraph, index) => (
-            <p key={index} className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12 mt-4">
-              {paragraph}
-            </p>
-          ));
-        }
-      } catch (e) {}
-      return undefined;
-    })(),
+    overviewsubDescription: t.has('overviewsubDescription') && Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
     contentBlocks: (() => {
       try {
@@ -64,43 +52,44 @@ export default async function BottleHandlingPage({ params }: PageProps) {
             paragraphs: block.paragraphs,
             image1: [img1.src, img2.src][index] || img1.src,
             reverse: index % 2 === 1,
-            bgClass: index % 2 === 1 ? "bg-light" : undefined
+            bgClass: index % 2 === 1 ? "bg-light" : undefined,
+            layout: (block.paragraphs && block.paragraphs.length >= 4) ? ("stacked" as const) : undefined
           }));
         }
       } catch (e) {}
       return undefined;
     })(),
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t('featuresSubtitle'),
+    featuresTitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
     features: (() => {
       try {
         const raw = t.raw('features');
-        if (Array.isArray(raw)) {
+        if (Array.isArray(raw) && raw.length > 0) {
           return raw.map((feature: any) => ({
             title: feature.title,
             description: feature.description
           }));
         }
       } catch (e) {}
-      return [];
+      return undefined;
     })(),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t('applicationsSubtitle'),
+    applicationsTitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsTitle') ? t('applicationsTitle') : undefined,
+    applicationsSubtitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
     applications: (() => {
       try {
         const raw = t.raw('applications');
-        if (Array.isArray(raw)) {
+        if (Array.isArray(raw) && raw.length > 0) {
           return raw.map((app: any) => ({
             title: app.title,
             description: app.description
           }));
         }
       } catch (e) {}
-      return [];
+      return undefined;
     })(),
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: (() => {
         try {
           const raw = t.raw('whyChoose.paragraphs');
@@ -112,7 +101,7 @@ export default async function BottleHandlingPage({ params }: PageProps) {
     },
     methodology: {
       title: t('methodology.title'),
-      subtitle: t('methodology.subtitle'),
+      subtitle: (t.raw('methodology') as any)?.subtitle || (t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined),
       steps: (() => {
         try {
           const raw = t.raw('methodology.steps');
@@ -128,8 +117,8 @@ export default async function BottleHandlingPage({ params }: PageProps) {
       })(),
       outro: (() => {
         try {
-          const raw = t.raw('methodology.outro');
-          if (Array.isArray(raw)) return raw;
+          const raw = (t.raw('methodology') as any)?.outro || (t.has('methodology.outro') ? t.raw('methodology.outro') : undefined);
+          if (Array.isArray(raw) && raw.length > 0) return raw;
         } catch (e) {}
         return undefined;
       })()
@@ -149,11 +138,13 @@ export default async function BottleHandlingPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <PackagingPageLayout data={pageData} />
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale} />
+      </div>
     </NextIntlClientProvider>
   );
 }
