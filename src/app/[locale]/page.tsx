@@ -19,9 +19,13 @@ export default async function LocalizedHomePage({ params }: Props) {
   const messages = await getMessages({ locale });
   const filteredMessages = pickMessages(messages, ['home', 'videos']);
 
+  const { getAllBlogs } = await import('@/lib/strapi/client');
+  const allBlogs = await getAllBlogs(locale);
+  const latestBlogs = allBlogs.slice(0, 3);
+
   return (
     <NextIntlClientProvider locale={locale} messages={filteredMessages}>
-      <HomeView />
+      <HomeView latestBlogs={latestBlogs} />
     </NextIntlClientProvider>
   );
 }

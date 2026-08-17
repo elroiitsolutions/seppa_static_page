@@ -3,12 +3,16 @@ import qs from 'qs';
 export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
 
 export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
-  // Merge default and user options
+  const headers: Record<string, string> = {
+    'Content-Type': 'application/json',
+  };
+
+  if (process.env.STRAPI_API_TOKEN) {
+    headers['Authorization'] = `Bearer ${process.env.STRAPI_API_TOKEN}`;
+  }
+
   const mergedOptions = {
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.STRAPI_API_TOKEN}`,
-    },
+    headers,
     ...options,
   };
 
