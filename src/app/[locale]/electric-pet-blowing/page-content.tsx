@@ -145,22 +145,22 @@ const ElectricPetBlowingPage = () => {
               {
                 title: locale === 'ar' ? "نافخ PET" : "Seppa SSB-SL-10",
                 img: img1.src,
-                link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-10" : "/en/blowing/pneumatic/ssb-sl-10"
+                link: `/${locale}/blowing/pneumatic/ssb-sl-10`
               },
               {
                 title: locale === 'ar' ? "تكنولوجيا المعالجة" : "Seppa SSB-SL-20",
                 img: meth1.src,
-                link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-20" : "/en/blowing/pneumatic/ssb-sl-20"
+                link: `/${locale}/blowing/pneumatic/ssb-sl-20`
               },
               {
                 title: locale === 'ar' ? "خط تعبئة PET" : "Seppa SSB-SL-40",
                 img: meth2.src,
-                link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-40" : "/en/blowing/pneumatic/ssb-sl-40"
+                link: `/${locale}/blowing/pneumatic/ssb-sl-40`
               },
               {
                 title: locale === 'ar' ? "خط تعبئة الزجاج" : "Seppa SSB-SL-60",
                 img: meth3.src,
-                link: locale === 'ar' ? "/ar/blowing/pneumatic/ssb-sl-60" : "/en/blowing/pneumatic/ssb-sl-60"
+                link: `/${locale}/blowing/pneumatic/ssb-sl-60`
               }
             ].map((item, idx) => (
               <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block">

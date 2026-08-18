@@ -21,7 +21,7 @@ interface PageProps {
 export default async function JuicePage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'juice' });
+  const t = await getTranslations({ locale, namespace: 'juiceprocessing' });
   const messages = await getMessages({ locale });
 
   // Fetch blogs related to this page automatically
@@ -80,17 +80,39 @@ export default async function JuicePage({ params }: PageProps) {
       })()
     },
     methodology: {
-      title: t('methodology.title'),
+      title: t.has('methodology.title') ? t('methodology.title') : "",
       subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : "",
-      steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
-        title: step.title,
-        description: step.description,
-        image: [imgB.src, imgC.src, imgD.src, imgA.src][index] || imgB.src
-      })),
-      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw)) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title,
+              description: step.description,
+              image: [imgB.src, imgC.src, imgD.src, imgA.src][index] || imgB.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: (() => {
+        try {
+          if (t.has('methodology.outro')) {
+            const raw = t.raw('methodology.outro');
+            return Array.isArray(raw) ? raw : [raw];
+          }
+        } catch (e) {}
+        return undefined;
+      })()
     },
-    faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqTitle: t.has('faqTitle') ? t('faqTitle') : "",
+    faqs: (() => {
+      try {
+        const raw = t.raw('faqs');
+        return Array.isArray(raw) ? raw : [];
+      } catch (e) {}
+      return [];
+    })()
   };
 
     pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;

@@ -1,0 +1,105 @@
+{
+  "title": "Videogalerij",
+  "breadcrumbName": "Videogalerij",
+  "productsInAction": "Onze producten in actie",
+  "productVideos": "Productvideo's",
+  "productVideosDesc": "Bekijk onze machines van wereldklasse en complete lijnoplossingen in reële werking in faciliteiten wereldwijd.",
+  "searchPlaceholder": "Video's zoeken...",
+  "categoriesHeading": "Categorieën",
+  "noVideos": "Geen video's gevonden die aan uw criteria voldoen.",
+  "closeVideo": "Video sluiten",
+  "readyTitle": "Klaar om te beginnen?",
+  "readyHeading": "Ervaar onze machines in uw bedrijf",
+  "readyText": "Van PET-blazen tot complete lijnoplossingen, Seppa levert engineering van wereldklasse. Neem contact op met onze experts voor een persoonlijk advies.",
+  "productEnquiry": "Product Aanvraag",
+  "contactUs": "Neem Contact Op",
+  "categories": {
+    "All": "Alle",
+    "PET Blowing Machines": "PET-blaasmachines",
+    "Complete Line Equipment": "Complete Lijn Apparatuur",
+    "Industrial Solutions": "Industriële Oplossingen",
+    "Packaging & Processing": "Verpakking & Verwerking"
+  },
+  "videoList": [
+    {
+      "id": "v1",
+      "title": "Automatische PET-blaasmachine 1 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v2",
+      "title": "Volautomatische PET-blaasmachine 2 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v3",
+      "title": "Vol- / Semi-automatische PET-blaasmachine 3 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v4",
+      "title": "Automatische PET-blaasmachine 4 Cavity",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v5",
+      "title": "Volautomatische PET-flessenblaasmachine 6 Cavity",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v6",
+      "title": "Glazen flessenreinigingsmachine | Glazen Flessen Wasser",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v7",
+      "title": "PET-flessen unscrambler machine",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v8",
+      "title": "Glazen potten blaasmachine",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v9",
+      "title": "8 Cavity Volautomatische PET-flessenblaasmachine — SSB SLE 80",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v10",
+      "title": "Gecontaineriseerde zeewaterontziltingssystemen",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v11",
+      "title": "Mineraalwaterfabriek — Industriële waterzuiveringsinstallatie — Fosters",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v12",
+      "title": "Frisdrank afvulmachine",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v13",
+      "title": "Krimpverpakkingsmachine | Tertiaire Verpakkingsmachine",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v14",
+      "title": "BLUE RO — Waterzuiveringsinstallatie — RO Plant",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v15",
+      "title": "BLUE RO — Huishoudelijke omgekeerde osmose-installatie — RO Plant voor woningen",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v16",
+      "title": "Rinser Filler Capper Machine — 200 flessen per minuut",
+      "category": "Packaging & Processing"
+    }
+  ]
+}

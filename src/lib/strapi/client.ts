@@ -3,12 +3,16 @@ import qs from 'qs';
 export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
 
 export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
-  // Merge default and user options
+  const headers: Record<string, string> = {
+    'Content-Type': 'application/json',
+  };
+
+  if (process.env.STRAPI_API_TOKEN) {
+    headers['Authorization'] = `Bearer ${process.env.STRAPI_API_TOKEN}`;
+  }
+
   const mergedOptions = {
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.STRAPI_API_TOKEN}`,
-    },
+    headers,
     ...options,
   };
 
@@ -18,15 +22,20 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options = {})
 
 
   // Trigger API call
-  const response = await fetch(requestUrl, mergedOptions);
+  try {
+    const response = await fetch(requestUrl, mergedOptions);
 
-  // Handle response
-  if (!response.ok) {
-    console.error(`Error fetching ${requestUrl}: ${response.statusText}`);
+    // Handle response
+    if (!response.ok) {
+      console.error(`Error fetching ${requestUrl}: ${response.statusText}`);
+      return null;
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(`Fetch error for ${requestUrl}:`, error);
     return null;
   }
-  const data = await response.json();
-  return data;
 }
 
 export async function getPageBySlug(slug: string, locale: string = 'en') {
