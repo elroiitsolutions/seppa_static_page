@@ -5,14 +5,17 @@ import { routing } from '@/i18n/routing';
 import { getRelatedBlogs } from '@/lib/strapi/client';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
-import imgA from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
+import imgA from '@/assets/packaging/generated/softdrink_banner.png';
 import imgB from '@/assets/packaging/generated/csd_bottles_closeup_1781701449618.png';
 import imgC from '@/assets/packaging/generated/modern_beverage_factory_1781701623841.png';
 import imgD from '@/assets/packaging/generated/stainless_steel_tanks_1781701637471.png';
-import imgE from '@/assets/packaging/generated/juice_processing_wide_1781701462502.png';
-import imgF from '@/assets/packaging/generated/spirits_distillery_wide_1781701553769.png';
-import imgG from '@/assets/packaging/generated/brewery_line_wide_1781701502517.png';
-import imgH from '@/assets/packaging/generated/glass_bottling_wide_1781701406159.png';
+import imgE from '@/assets/packaging/generated/csd_filler_wide_1781701435025.png';
+import imgF from '@/assets/packaging/generated/juice_processing_wide_1781701462502.png';
+import imgG from '@/assets/packaging/generated/glass_bottling_wide_1781701406159.png';
+import imgWhyChoose from '@/assets/packaging/generated/softdrink_whychoose.png';
+import meth1 from '@/assets/packaging/generated/softdrink_execute.png';
+import meth2 from '@/assets/packaging/generated/brewery_line_wide_1781701502517.png';
+import meth3 from '@/assets/packaging/generated/juice_bottling_closeup_1781701475686.png';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -31,6 +34,8 @@ export default async function SoftDrinkLinesPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/soft-drink-lines', locale);
 
+  const blockImages = [imgD.src, imgE.src, imgF.src, imgG.src];
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -43,21 +48,22 @@ export default async function SoftDrinkLinesPage({ params }: PageProps) {
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: imgB.src,
     overviewImage2: imgC.src,
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t('featuresSubtitle'),
-    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
+    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: t.has('features') && Array.isArray(t.raw('features')) ? t.raw('features') : undefined,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
-      image1: index === 0 ? imgD.src : imgE.src,
-      reverse: index === 0,
-      bgClass: index === 1 ? "bg-light" : undefined
+      image1: blockImages[index] || imgD.src,
+      reverse: index % 2 === 0,
+      bgClass: index % 2 === 1 ? "bg-light" : undefined
     })),
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
-      reasons: t.raw('whyChoose.reasons'),
-      image: imgB.src
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
+      reasons: t.has('whyChoose.paragraphs') ? undefined : (t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined),
+      image: imgWhyChoose.src
     },
     methodology: {
       title: t('methodology.title'),
@@ -65,7 +71,7 @@ export default async function SoftDrinkLinesPage({ params }: PageProps) {
       steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
         title: step.title,
         description: step.description,
-        image: [imgF.src, imgG.src, imgH.src][index] || imgF.src
+        image: [meth1.src, meth2.src, meth3.src][index] || meth1.src
       })),
       outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
@@ -73,7 +79,7 @@ export default async function SoftDrinkLinesPage({ params }: PageProps) {
     faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

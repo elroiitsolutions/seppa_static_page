@@ -41,37 +41,41 @@ export default async function PreformSterilizationPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
+    overviewsubDescription: t.has('overviewsubDescription') && Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
-      image1: [img1.src, img2.src][index] || img1.src,
+      image1: [img1.src, img2.src, img1.src][index] || img1.src,
       reverse: index % 2 === 0,
-      bgClass: index === 1 ? "bg-light" : "bg-white"
+      bgClass: index % 2 === 1 ? "bg-light" : "bg-white",
+      layout: "stacked"
     })),
-    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
-    features: t.has('features') ? t.raw('features') : undefined,
+    featuresTitle: t.has('featuresTitle') && t('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('featuresSubtitle') && t('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 ? t.raw('features') : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
       description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
+      reasons: t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined,
       image: over.src
     },
     methodology: {
       title: t('methodology.title'),
+      subtitle: (t.raw('methodology') as any)?.subtitle || (t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined),
       steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
         title: step.title,
         description: step.description,
         image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
       })),
-      outro: t.has('outro') ? t.raw('outro') : undefined
+      outro: t.has('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : (t.has('outro') ? (Array.isArray(t.raw('outro')) ? t.raw('outro') : [t('outro')]) : undefined)
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
