@@ -1,0 +1,117 @@
+{
+  "title": "Koelwaterinstallatie: Waarom Constante Vloeistoftemperatuur Bepalend Is voor Uw Productie",
+  "breadcrumbName": "Koelwaterinstallatie",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Koelwaterinstallatie: Waarom Constante Vloeistoftemperatuur Bepalend Is voor Uw Productie",
+  "overviewDescription": "Vraag een plant manager in de metaalbewerking naar zijn grootste bron van onverwachte stilstand, en het antwoord draait zelden om de machine zelf. Het draait om wat de machine koelt: snijvloeistof die te warm wordt, proceswater dat niet meer op temperatuur blijft tijdens een lange productieronde. Een Koelwaterinstallatie voorkomt precies dat: ze houdt vloeistoftemperaturen binnen een strakke marge, ongeacht hoe zwaar de productielijn belast wordt.",
+  "overviewsubDescription": [
+    "Overzicht van de SEPPA Coolant Chiller voor Industriële Koeltoepassingen: Elk productieproces genereert warmte. Een Koelwaterinstallatie trekt opgewarmde vloeistof uit het proces, voert de warmte af via een shell and coil warmtewisselaar met roestvrijstalen verdampers, en stuurt gekoelde vloeistof terug voordat temperatuurschommelingen zich vertalen in productiefouten.",
+    "Wat de SEPPA Koelwaterinstallatie onderscheidt, is de snelle reactiesnelheid op belastingswisselingen (piekmomenten, opstartfases en rust) zonder dat een operator voortdurend hoeft bij te sturen.",
+    "Bij SEPPA Solutions bouwen we koelsystemen voor fabrieken waar elke minuut stilstand direct geld kost."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de Shell and Coil Coolant Chiller",
+  "featuresSubtitle": "Nauwkeurige componenten ontworpen voor continue industriële belastingen:",
+  "features": [
+    {
+      "title": "PID-Regelaars (Precisie tot 1 °C)",
+      "description": "Houdt de vloeistoftemperatuur binnen 1 °C van de ingestelde waarde om maattoleranties in precisiebewerkingen te waarborgen."
+    },
+    {
+      "title": "Shell & Coil RVS Verdampers",
+      "description": "Beter bestand tegen agressieve koelvloeistoffen en vervuiling dan gewone koperen of aluminium spiralen."
+    },
+    {
+      "title": "Ozonvriendelijke Koudemiddelen",
+      "description": "Voldoet aan de nieuwste Europese milieurichtlijnen voor langdurige betrouwbaarheid zonder verplichte uitfasering."
+    },
+    {
+      "title": "Nauwkeurige Doorstroomregeling",
+      "description": "Voorkomt hotspots in het proces door continu de vloeistofdoorstroom te monitoren en het pomptoerental aan te passen."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Metaalbewerking, Productie en Verwerkende Industrie",
+  "applicationsSubtitle": "Oplossingen van CNC-frezen tot lasersnijden, kunststofverwerking en lassen:",
+  "applications": [
+    {
+      "title": "CNC Frezen & Draaibanken",
+      "description": "Koelt de snijvloeistof tijdens continue bewerkingscycli ter bescherming van spilnauwkeurigheid en gereedschap."
+    },
+    {
+      "title": "Lasersnijden, Plasmasnijden & Lasrobots",
+      "description": "Voorkomt oververhitting van de snijbron en optiek, wat de levensduur van kostbare componenten verlengt."
+    },
+    {
+      "title": "Kunststofverwerking & Matrijzen",
+      "description": "Houdt mallen en matrijzen op een constante temperatuur om krimpafwijkingen en cyclusvertragingen te voorkomen."
+    },
+    {
+      "title": "Inductieverwarming & Zware Persen",
+      "description": "Hoge koelcapaciteit voor grote vloeistofvolumes bij zware metaalbewerkings- en persinstallaties."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van de SEPPA Coolant Chiller voor Nauwkeurige Temperatuurregeling",
+      "paragraphs": [
+        "Minder Thermische Stilstand & Onderhoudskosten: Voorkomt snelle slijtage van snijgereedschap en overbelasting van pompen. Klanten behalen vaak een terugverdientijd van minder dan 18 maanden door minder ongeplande stilstand.",
+        "Consistente Maatvastheid & Productkwaliteit: Voorkomt maatafwijkingen bij precisieverspaning door de temperatuur van snijvloeistof en koelwater continu stabiel te houden ongeacht de omgevingstemperatuur.",
+        "Tragere Vloeistofdegradatie & Energiebesparing: Voorkomt bacteriële groei en emulsie-afbraak bij wateroplosbare koelvloeistoffen, wat de verversingsintervallen en pompefficiëntie aanzienlijk verlengt."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Coolant Chillers van Seppa Solutions",
+    "description": "Wij verkopen geen losse doos met een compressor; wij stemmen het koelsysteem af op uw specifieke belastingscurve.",
+    "paragraphs": [
+      "Afgestemd op het Belastingsprofiel: We analyseren draaiuren, piekwarmtelast en type koelvloeistof vóór de installatie.",
+      "Snelle Integratie in Bestaande Lijnen: Eenvoudige toevoeging van een industriële waterkoeler op bestaande CNC- of laserlijnen zonder lange productiestilstand.",
+      "Duurzame & Servicebare Componenten: RVS-verdampers, actieve PID-regeling en snelle service voor een langdurige werking."
+    ]
+  },
+  "methodology": {
+    "title": "Werking van de Shell and Coil Koelmethode",
+    "subtitle": "Warmteoverdrachtsproces zonder fysische mengcontaminatie:",
+    "steps": [
+      {
+        "title": "1. Instroom van Opgewarmde Vloeistof",
+        "description": "Warm koelwater of snijvloeistof stroomt de chiller binnen en passeert de shell and coil warmtewisselaar."
+      },
+      {
+        "title": "2. Warmteoverdracht in RVS Spiraal",
+        "description": "Koudemiddel circuleert door de spiraalvormige spiraal en absorbeert de warmte uit de procesvloeistof zonder vermenging."
+      },
+      {
+        "title": "3. Compressie & Warmteafvoer",
+        "description": "Het koudemiddel wordt samengeperst in de compressor en voert de warmte via de condensor af naar de omgeving."
+      },
+      {
+        "title": "4. Gekoelde Terugstroom & PID-Regeling",
+        "description": "Gekoelde vloeistof stroomt terug naar de spil en snijkop, terwijl PID-sensoren de temperatuur continu binnen ±1 °C houden."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Hoe vaak moet dit systeem onderhoud krijgen?",
+      "answer": "Een inspectie elke 3 tot 6 maanden is voldoende. Warmtewisselaars moeten periodiek worden gecontroleerd op vervuiling."
+    },
+    {
+      "question": "Wat kost een Koelsysteem industrie aan energie?",
+      "answer": "Een goed gedimensioneerd systeem verbruikt doorgaans aanzienlijk minder energie dan het bespaart via minder slijtage en stilstand."
+    },
+    {
+      "question": "Hoe nauwkeurig is een Industriële waterkoeler in de praktijk?",
+      "answer": "Met PID-regeling houden onze systemen de vloeistoftemperatuur strak binnen 1 °C van de ingestelde waarde."
+    },
+    {
+      "question": "Wat gebeurt er als de Koelinstallatie uitvalt tijdens productie?",
+      "answer": "Geïntegreerde alarmfuncties waarschuwen voordat een kritische temperatuur wordt bereikt, zodat de lijn gecontroleerd kan worden stilgelegd."
+    },
+    {
+      "question": "Welke capaciteit Koelinstallatie heb ik nodig?",
+      "answer": "Onze technici berekenen de benodigde capaciteit op basis van uw proceswarmtelast, cyclustijd en omgevingstemperatuur."
+    }
+  ]
+}

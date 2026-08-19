@@ -56,12 +56,11 @@ export default async function JuicesNectarsPage({ params }: PageProps) {
       steps: t.raw('methodology.steps')
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
 
   const messages = await getMessages({ locale });
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

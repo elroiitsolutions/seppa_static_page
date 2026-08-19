@@ -35,39 +35,83 @@ export default async function EnergyEfficientChillersPage({ params }: PageProps)
     headerImage: "/images/equipments/immersion_chiller_banner.png",
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
+    overviewsubDescription: (() => {
+      try {
+        const raw = t.raw('overviewsubDescription');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
     overviewImage: "/images/equipments/chiller_overview.png",
-    contentBlocks: (t.raw('contentBlocks') as any[] || []).map((block: any, index: number) => ({
-      title: block.title,
-      paragraphs: block.paragraphs,
-      image1: [ "/images/equipments/chiller_overview.png" ][index] || undefined,
-      reverse: [true][index] || false
-    })),
+    contentBlocks: (() => {
+      try {
+        const raw = t.raw('contentBlocks');
+        if (Array.isArray(raw)) {
+          return raw.map((block: any, index: number) => ({
+            title: block.title,
+            paragraphs: block.paragraphs,
+            image1: [ "/images/equipments/chiller_overview.png" ][index] || undefined,
+            reverse: [true][index] || false
+          }));
+        }
+      } catch (e) {}
+      return [];
+    })(),
     featuresTitle: t('featuresTitle'),
     featuresSubtitle: t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
-    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
+    features: (() => {
+      try {
+        const raw = t.raw('features');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
     applicationsTitle: t('applicationsTitle'),
     applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    applications: (() => {
+      try {
+        const raw = t.raw('applications');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
     whyChoose: {
       title: t('whyChoose.title'),
       description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
-      paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
+      paragraphs: (() => {
+        try {
+          const raw = t.raw('whyChoose.paragraphs');
+          if (Array.isArray(raw)) return raw;
+        } catch (e) {}
+        return [];
+      })(),
       image: "/images/equipments/chiller_overview.png"
     },
     methodology: {
       title: t('methodology.title'),
-      steps: (t.raw('methodology.steps') as any[] || []).map((step: any, index: number) => ({
-        title: step.title,
-        description: step.description,
-        image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      }))
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw)) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title,
+              description: step.description,
+              image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })()
     },
     faqTitle: t('faqTitle'),
-    faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
+    faqs: (() => {
+      try {
+        const raw = t.raw('faqs');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })()
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion , Variants} from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { FiCalendar, FiArrowUpRight } from 'react-icons/fi';
@@ -20,9 +20,31 @@ import enHome from '@/messages/en/home.json';
 import { usePathname } from 'next/navigation';
 
 const LatestBlogsContent = ({ getT, isArabic, heading, tag, selected_blogs, layout = 'grid' }: any) => {
-  const blogs = selected_blogs && selected_blogs.length > 0 
-    ? selected_blogs.map((b: any) => ({
-        title: b.title || 'Untitled Blog',
+  const [fetchedBlogs, setFetchedBlogs] = useState<any[]>([]);
+
+  useEffect(() => {
+    if (!selected_blogs || selected_blogs.length === 0) {
+      const strapiUrl = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
+      fetch(encodeURI(`${strapiUrl}/api/pages?filters[template][$eq]=blog&populate[hero][populate]=*&sort[0]=publishedAt:desc`))
+        .then(res => res.json())
+        .then(data => {
+          if (data?.data && Array.isArray(data.data) && data.data.length > 0) {
+            setFetchedBlogs(data.data);
+          }
+        })
+        .catch(err => console.warn('Failed to fetch dynamic blogs for LatestBlogs widget:', err));
+    }
+  }, [selected_blogs]);
+
+  const activeBlogList = (selected_blogs && selected_blogs.length > 0) 
+    ? selected_blogs 
+    : (fetchedBlogs && fetchedBlogs.length > 0) 
+      ? fetchedBlogs 
+      : null;
+
+  const blogs = activeBlogList 
+    ? activeBlogList.slice(0, 3).map((b: any) => ({
+        title: b.title || b.hero?.title || 'Untitled Blog',
         date: b.publishedAt ? new Date(b.publishedAt).toLocaleDateString() : 'Recent',
         image: b.hero?.background_image?.url || "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg",
         url: b.full_path || '/blog'
@@ -134,11 +156,21 @@ const LatestBlogsContent = ({ getT, isArabic, heading, tag, selected_blogs, layo
 };
 
 const LocalizedLatestBlogs = (props: any) => {
-  const t = useTranslations('home');
-  const locale = useLocale();
-  const isArabic = locale === 'ar';
-  const getT = (key: string) => t(`LatestBlogs.${key}`);
-  return <LatestBlogsContent getT={getT} isArabic={isArabic} {...props} />;
+  try {
+    const t = useTranslations('home');
+    const locale = useLocale();
+    const isArabic = locale === 'ar';
+    const getT = (key: string) => {
+      try {
+        return t(`LatestBlogs.${key}`);
+      } catch {
+        return (enHome as any).LatestBlogs?.[key] || key;
+      }
+    };
+    return <LatestBlogsContent getT={getT} isArabic={isArabic} {...props} />;
+  } catch {
+    return <StaticLatestBlogs {...props} />;
+  }
 };
 
 const StaticLatestBlogs = (props: any) => {

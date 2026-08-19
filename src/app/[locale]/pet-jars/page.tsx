@@ -72,10 +72,9 @@ export default async function PetJarsPage({ params }: PageProps) {
         : (t.raw('methodology.outro') ? [t.raw('methodology.outro')] : [])
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

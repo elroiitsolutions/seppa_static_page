@@ -34,6 +34,8 @@ export default async function CanPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/can', locale);
 
+  const blockImages = [img1.src, filling.src, img2.src, still.src];
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -44,12 +46,12 @@ export default async function CanPage({ params }: PageProps) {
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overview.src,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
-        title: block.title,
-        paragraphs: block.paragraphs,
-        image1: [img1.src][index] || img1.src,
-        reverse: [false][index] || false,
-        bgClass: [undefined][index]
-      })),
+      title: block.title,
+      paragraphs: block.paragraphs,
+      image1: blockImages[index % blockImages.length],
+      reverse: index % 2 === 1,
+      bgClass: index % 2 === 1 ? 'bg-gray-50' : undefined
+    })),
     applicationsTitle: t('applicationsTitle'),
     applicationsSubtitle: t('applicationsSubtitle'),
     applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
@@ -81,10 +83,9 @@ export default async function CanPage({ params }: PageProps) {
       description: t('cta.description'),
       buttonText: t('cta.buttonText'),
       buttonLink: '/contact-us'
-    }
+    },
+    trending_articles: relatedBlogs
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

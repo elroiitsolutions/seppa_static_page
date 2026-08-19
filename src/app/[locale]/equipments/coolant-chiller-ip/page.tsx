@@ -127,8 +127,6 @@ export default async function CoolantChillerIpPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
-
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <PackagingPageLayout data={pageData} />

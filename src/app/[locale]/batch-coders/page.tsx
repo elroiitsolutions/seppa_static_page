@@ -115,8 +115,6 @@ export default async function BatchCodersPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
-
   return (
     <NextIntlClientProvider messages={messages}>
       <PackagingPageLayout data={pageData} />

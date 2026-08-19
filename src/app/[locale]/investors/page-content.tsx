@@ -8,6 +8,7 @@ const InvestorsPage = () => {
   const t = useTranslations('investors');
 
   const pageData: EnquiryPageData = {
+    formType: 'investor',
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
     bgImage: bannerImg.src,

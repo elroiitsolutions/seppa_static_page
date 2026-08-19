@@ -62,9 +62,7 @@ export default function VideoGallery() {
   const t = useTranslations('videos');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const isDe = locale === 'de';
-
-  const rawVideoList = (isDe ? (enVideos.videoList as any) : (t.raw('videoList') || [])) as { id: string; title: string; category: string }[];
+  const rawVideoList = (t.raw('videoList') || []) as { id: string; title: string; category: string }[];
   const videos = useMemo(() => {
     return Array.isArray(rawVideoList) ? rawVideoList.map(v => ({
       ...v,
@@ -72,20 +70,12 @@ export default function VideoGallery() {
     })) : [];
   }, [rawVideoList]);
 
-  const categoriesMap = (isDe ? (enVideos.categories as any) : (t.raw('categories') || {})) as Record<string, string>;
+  const categoriesMap = (t.raw('categories') || {}) as Record<string, string>;
   const allCategories = useMemo(() => {
     return ["All", ...Array.from(new Set(Array.isArray(rawVideoList) ? rawVideoList.map((v) => v.category) : []))];
   }, [rawVideoList]);
 
   const getT = (key: string) => {
-    if (isDe) {
-      const keys = key.split('.');
-      let val: any = enVideos;
-      for (const k of keys) {
-        val = val?.[k];
-      }
-      return val || key;
-    }
     return t(key);
   };
 
@@ -167,15 +157,13 @@ export default function VideoGallery() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-seppa-red font-medium uppercase tracking-wider text-xs sm:text-sm mb-1.5 sm:mb-2">
-              {isArabic ? "آلاتنا قيد العمل" : "Our Products In Action"}
+              {getT('productsInAction')}
             </h3>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#101934] leading-tight">
-              {isArabic ? "فيديوهات المنتجات" : "Product Videos"}
+              {getT('productVideos')}
             </h2>
             <p className="mt-2.5 sm:mt-3 md:mt-4 text-gray-600 text-sm sm:text-base lg:text-lg px-2 sm:px-0">
-              {isArabic 
-                ? "شاهد آلاتنا ذات المستوى العالمي وحلول الخطوط المتكاملة in واقعي عبر منشآت حول العالم."
-                : "See our world-class machinery and complete line solutions in real-world operation across facilities worldwide."}
+              {getT('productVideosDesc')}
             </p>
           </motion.div>
 

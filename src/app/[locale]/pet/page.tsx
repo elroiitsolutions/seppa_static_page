@@ -69,7 +69,7 @@ export default async function PetPage({ params }: PageProps) {
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs'),
-    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
+    trending_articles: relatedBlogs
   };
 
   return (

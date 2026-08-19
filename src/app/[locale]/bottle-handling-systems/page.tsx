@@ -149,8 +149,6 @@ export default async function BottleHandlingPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
-
   return (
     <NextIntlClientProvider messages={messages}>
       <PackagingPageLayout data={pageData} />

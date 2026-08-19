@@ -37,15 +37,9 @@ export default async function OilChillersPage({ params }: PageProps) {
     overviewsubDescription: (() => {
       try {
         const raw = t.raw('overviewsubDescription');
-        if (Array.isArray(raw)) {
-          return raw.map((paragraph, index) => (
-            <p key={index} className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12 mt-4">
-              {paragraph}
-            </p>
-          ));
-        }
+        if (Array.isArray(raw)) return raw;
       } catch (e) {}
-      return undefined;
+      return [];
     })(),
     overviewImage: overviewImg.src,
     featuresTitle: t('featuresTitle'),
@@ -98,7 +92,7 @@ export default async function OilChillersPage({ params }: PageProps) {
             return raw;
           }
         } catch (e) {}
-        return undefined;
+        return [];
       })()
     },
     faqTitle: t('faqTitle'),
@@ -116,11 +110,11 @@ export default async function OilChillersPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
-
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <PackagingPageLayout data={pageData} />
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale} />
+      </div>
     </NextIntlClientProvider>
   );
 }

@@ -1,0 +1,108 @@
+{
+  "title": "SEPPA SSB-SLE-40: Het High Speed Systeem voor PET Fles Productie",
+  "breadcrumbName": "SSB-SLE-40",
+  "rootBreadcrumbName": "Electric",
+  "rootBreadcrumbPath": "/electric-pet-blowing",
+  "overviewTitle": "Overzicht van de SEPPA SSB-SLE-40 PET Flesblaasmachine",
+  "overviewDescription": "Wie de afgelopen jaren machines heeft zien draaien bij Europese en Aziatische bottelaars, kent het beeld: rijen preforms die binnen seconden veranderen in glasheldere flessen. De SSB-SLE-40 van Seppa Solutions is gebouwd om dat proces te versnellen zonder aan nauwkeurigheid in te boeten. Het is een roterende Kunststof flesproductiemachine, ontworpen voor fabrieken die hun PET fles productie willen opschalen zonder de vloeroppervlakte drastisch te vergroten.",
+  "overviewsubDescription": [
+    "Wat me bij deze Drankverpakkingsmachine opvalt, is hoe de ingenieurs de balans hebben gezocht tussen snelheid en energieverbruik. Veel high-speed systemen op de markt leveren output, maar tegen een torenhoge stroomrekening. De SSB-SLE 40 doet dat anders. Als Energiezuinige PET blaasmachine haalt het model output-cijfers die je normaal alleen bij zwaardere, duurdere lijnen ziet, terwijl het stroomverbruik per fles merkbaar lager ligt dan bij oudere generaties. Voor iedereen die de kosten van PET fles productie want te drukken, is dat verschil op jaarbasis niet te negeren.",
+    "Voor fabriekseigenaren die overwegen te investeren in een nieuwe Flessenproductielijn, is dit machinetype relevant omdat het zowel kleine als middelgrote bottelarijen bedient. De machine past in bestaande productiehallen en kan, afhankelijk van de preformconfiguratie, meerdere flesformaten produceren zonder complete ombouw."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken en Technische Specificaties",
+  "features": [
+    {
+      "title": "Servo aangedreven rekstangen",
+      "description": "De SSB-SLE-40 draait op een rotatiesysteem met veertig holtes, wat deze Kunststof flesproductiemachine positioneert als een Hoge snelheid PET blaasmachine met een output tot ruim 2.000 flessen per uur per holte, afhankelijk van flesgewicht en wanddikte. De machine gebruikt servo aangedreven rekstangen die de biaxiale oriëntatie nauwkeuriger sturen dan pneumatische varianten."
+    },
+    {
+      "title": "Verwarmingssysteem met IR-lampen",
+      "description": "Infrarood lampen met individuele power management per zone zorgen dat elke preform gelijkmatig wordt opgewarmd. Dit voorkomt ongelijke wanddiktes, iets wat ik bij oudere machines vaak genoeg heb zien misgaan."
+    },
+    {
+      "title": "PLC besturing",
+      "description": "Een geavanceerd PLC systeem monitort temperatuur, blaasdruk en cyclustijd in real time. Operators kunnen recepten opslaan per flesformaat, wat de omsteltijd tussen producties aanzienlijk verkort."
+    },
+    {
+      "title": "Pneumatische matrijssluiting",
+      "description": "De precieze pneumatische matrijssluiting houdt de sluitkracht constant, zelfs bij hoge cyclussnelheden. Dat is precies waar veel goedkopere Drankverpakkingsmachine modellen tekortschieten: bij hogere snelheden begint de matrijs te \"ademen\", met naadlijnen en lekkage tot gevolg. Deze Hoge snelheid PET blaasmachine ondersteunt flesvolumes van 200 ml tot 2 liter."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Dranken, Voedingsmiddelen en Verpakkingsindustrie",
+  "applicationsSubtitle": "Bottelarijen van mineraalwater vormen de grootste doelgroep voor PET fles productie, maar de machine wordt ook ingezet voor frisdranken, sappen en zuivelvervangers. Binnen de bredere verpakkingsindustrie zie je de SSB-SLE-40 vaker opduiken bij bedrijven die overstappen van glas naar PET, omdat de logistieke kosten lager liggen.",
+  "applications": [
+    {
+      "title": "Voedingsmiddelen & Sauzen",
+      "description": "Voor voedingsmiddelenproducenten die sauzen of vloeibare kruiden bottelen, is de flexibiliteit van het matrijzensysteem een reden om deze machine voor PET fles productie te overwegen boven concurrerende modellen."
+    },
+    {
+      "title": "Mixed SKU Flexibiliteit",
+      "description": "De matrijzen van deze Drankverpakkingsmachine zijn relatief snel te wisselen, wat betekent dat een productielijn binnen een dagdeel kan overschakelen van de ene flesvorm naar de andere."
+    },
+    {
+      "title": "Flessenproductielijn Integratie",
+      "description": "Grotere bottelarijen combineren de SSB-SLE-40 vaak met een bestaande Flessenproductielijn voor vulling en verpakking, zodat de nieuwe blaasmachine als extra capaciteit fungeert naast oudere apparatuur."
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor Seppa Solutions?",
+    "description": "Er zijn genoeg leveranciers die vergelijkbare specificaties voor PET fles productie op papier claimen. Het verschil zit hem meestal in de service na de verkoop.",
+    "paragraphs": [
+      "Seppa Solutions levert niet alleen de machine, maar ook een team dat meedenkt over matrijsontwerp, preformselectie en energieoptimalisatie.",
+      "Ik heb gesprekken gevoerd met klanten die aangaven dat de installatietijd van deze Kunststof flesproductiemachine korter was dan bij vergelijkbare Aziatische leveranciers, mede dankzij vooraf geteste PLC programma's die op locatie alleen nog gefinetuned hoeven te worden.",
+      "De combinatie van betrouwbare hardware en toegankelijke support maakt deze Energiezuinige PET blaasmachine tot een aantrekkelijke keuze voor zowel startende bottelarijen als gevestigde spelers die hun bestaande Flessenproductielijn willen uitbreiden."
+    ]
+  },
+  "methodology": {
+    "title": "Hoe de SEPPA SSB-SLE-40 PET Rekblaasmachine Werkt",
+    "subtitle": "Het proces van PET fles productie begint met preforms die via een trilgoot worden gesorteerd en op de spindels van het verwarmingswiel geplaatst:",
+    "steps": [
+      {
+        "title": "1. Sortering & Oven Invoer",
+        "description": "Preforms worden via een trilgoot gesorteerd en gecontroleerd op de spindels geplaatst om de infrarood oven in te gaan."
+      },
+      {
+        "title": "2. Infrarood Verhitting",
+        "description": "Ze doorlopen de oven, waar de wanden op precies de juiste temperatuur worden gebracht om te kunnen rekken zonder te scheuren."
+      },
+      {
+        "title": "3. Axiaal Servo Rekken",
+        "description": "Vervolgens grijpt een rekstang de preform en trekt deze axiaal uit om de materiaalverdeling optimaal te sturen."
+      },
+      {
+        "title": "4. Tweetraps Blaasproces",
+        "description": "Lagedruklucht blaast het materiaal voor (voorblazen) en hoge druk zorgt voor de definitieve vorming (hoofdblazen)."
+      },
+      {
+        "title": "5. Koeling & Ejection",
+        "description": "Na de definitieve vorming wordt de fles gekoeld en vlekkeloos uit de matrijs op de transportband geplaatst."
+      }
+    ],
+    "outro": [
+      "What dit proces van PET fles productie onderscheidt van eenvoudigere modellen, is de synchronisatie tussen verwarming, rekken en blazen. Een kleine afwijking in timing kan bij goedkopere machines leiden tot ongelijke wanddiktes; bij de SSB-SLE-40 wordt dat continu gecorrigeerd door sensoren die de druk per station meten."
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Wat is de maximale output van deze Flessenproductielijn?",
+      "answer": "Afhankelijk van het flesformaat en de wanddikte kan de machine oplopen tot enkele duizenden flessen per uur, wat hem geschikt maakt voor middelgrote tot grote lijnen voor PET fles productie."
+    },
+    {
+      "question": "Can de machine meerdere flesvormen aan?",
+      "answer": "Ja, met een matrijswissel kan dezelfde Hoge snelheid PET blaasmachine overschakelen tussen verschillende flesformaten binnen hetzelfde volumebereik."
+    },
+    {
+      "question": "Hoe verhoudt het energieverbruik zich tot oudere modellen?",
+      "answer": "Dankzij het individuele power management per verwarmingszone verbruikt deze Energiezuinige PET blaasmachine doorgaans minder stroom per fles dan machines van vijf tot tien jaar oud."
+    },
+    {
+      "question": "Is de machine geschikt voor kleinere bottelarijen?",
+      "answer": "Ja, hoewel de SSB-SLE-40 is ontworpen als high speed systeem, kan de instelbare cyclustijd hem ook geschikt maken voor bedrijven die nog groeien richting volledige capaciteit."
+    },
+    {
+      "question": "Welke ondersteuning biedt Seppa Solutions na aankoop?",
+      "answer": "Naast installatie en training biedt Seppa Solutions doorlopende technische ondersteuning, wat deze Energiezuinige PET blaasmachine tot een praktische keuze maakt voor wie langdurig wil investeren in PET fles productie."
+    }
+  ]
+}

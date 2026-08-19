@@ -8,6 +8,7 @@ const DealersPage = () => {
   const t = useTranslations('dealers');
 
   const pageData: EnquiryPageData = {
+    formType: 'dealer',
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
     bgImage: bannerImg.src,

@@ -63,6 +63,7 @@ export default async function MineralWaterLinePage({ params }: PageProps) {
     },
     whyChoose: {
       title: t('whyChoose.title'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
       paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
       reasons: t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined,
       image: install.src
@@ -71,8 +72,6 @@ export default async function MineralWaterLinePage({ params }: PageProps) {
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : [],
     hideWhyChoose: false
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

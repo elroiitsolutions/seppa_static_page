@@ -51,10 +51,9 @@ export default async function ProcessingPage({ params }: PageProps) {
           if (pText.includes('für:')) {
             const parts = pText.split('für:');
             const mainText = parts[0] + 'für:';
-            const listItems = parts[1].split(',').map(item => item.trim()).filter(Boolean);
-              pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
-
-  return (
+            const listItems = parts[1].split(',').map((item: string) => item.trim()).filter(Boolean);
+            
+            return (
               <div key={pIdx}>
                 <p className="mb-4 text-base md:text-lg text-gray-600 leading-relaxed">{mainText}</p>
                 <ul className="list-disc pl-6 mb-4 space-y-2 text-base md:text-lg text-gray-600 leading-relaxed marker:text-seppa-red">
@@ -95,7 +94,8 @@ export default async function ProcessingPage({ params }: PageProps) {
       outro: t.has('outro') ? t.raw('outro') : undefined
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
 
   return (

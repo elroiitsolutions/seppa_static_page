@@ -5,16 +5,9 @@ const withNextIntl = createNextIntlPlugin()
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
+  output: 'export',
   images: {
     unoptimized: true,
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/uploads/:path*',
-        destination: `${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}/uploads/:path*`,
-      },
-    ]
   },
 }
 

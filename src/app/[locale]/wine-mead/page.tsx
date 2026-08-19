@@ -41,10 +41,19 @@ export default async function WineMeadPage({ params }: PageProps) {
     applicationsTitle: t('applicationsTitle'),
     applicationsSubtitle: t('applicationsSubtitle'),
     applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    contentBlocks: t.has('contentBlocks') && Array.isArray(t.raw('contentBlocks'))
+      ? (t.raw('contentBlocks') as any[]).map((block: any) => ({
+          title: block.title,
+          paragraphs: block.paragraphs,
+          layout: "stacked",
+          image1: overviewImg.src,
+        }))
+      : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
       description: t('whyChoose.description') || "",
-      reasons: t.raw('whyChoose.reasons'),
+      paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
+      reasons: t.has('whyChoose.paragraphs') ? undefined : (t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined),
       image: overviewImg.src
     },
     methodology: {
@@ -58,10 +67,9 @@ export default async function WineMeadPage({ params }: PageProps) {
       outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

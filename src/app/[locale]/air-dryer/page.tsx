@@ -101,8 +101,6 @@ export default async function LocalizedAirDryerPage({ params }: Props) {
     faqs: getRaw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
-
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>

@@ -74,8 +74,6 @@ export default async function SsbSl40Page({ params }: PageProps) {
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
-
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <PackagingPageLayout data={pageData} locale={locale} />

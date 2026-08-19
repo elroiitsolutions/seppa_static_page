@@ -64,15 +64,15 @@ export default async function AsepticDrumPage({ params }: PageProps) {
     },
     whyChoose: {
       title: t('whyChoose.title'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
       paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
       reasons: t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined,
       image: brickAvif.src
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

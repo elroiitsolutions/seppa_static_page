@@ -54,7 +54,6 @@ export default async function TomatoKetchupPage({ params }: PageProps) {
             const parts = pText.split(':');
             const stepTitle = parts[0];
             const stepBody = parts.slice(1).join(':');
-              pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
               <div key={stepTitle} className="mb-2">
@@ -184,7 +183,8 @@ export default async function TomatoKetchupPage({ params }: PageProps) {
       outro: t.has('outro') ? t.raw('outro') : undefined
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
 
   return (

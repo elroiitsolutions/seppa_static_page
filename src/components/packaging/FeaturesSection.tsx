@@ -175,6 +175,7 @@ const FeatureCard: React.FC<{ feature: FeatureItem; itemClass: string; onReadMor
             </Link>
           ) : (
             <button 
+              suppressHydrationWarning
               onClick={onReadMore}
               className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline focus:outline-none"
             >

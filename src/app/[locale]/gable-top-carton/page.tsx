@@ -8,6 +8,8 @@ import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/P
 import top from '@/assets/packaging/gable/gabletop1.jpg';
 import machine from '@/assets/packaging/brick/machine.jpg';
 import packag from '@/assets/packaging/brick/package.webp';
+import orange from '@/assets/packaging/brick/orange.jpg';
+import pouchPackage from '@/assets/packaging/pouch/pouch-package.jpg';
 import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
 import brickBanner from '@/assets/packaging/brick/brick-banner.png';
 import execute from '@/assets/packaging/can/execute.webp';
@@ -31,6 +33,8 @@ export default async function GableTopCartonPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/gable-top-carton', locale);
 
+  const blockImages = [brickCarton.src, top.src, machine.src, packag.src];
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -40,12 +44,12 @@ export default async function GableTopCartonPage({ params }: PageProps) {
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: top.src,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
-        title: block.title,
-        paragraphs: block.paragraphs,
-        image1: [brickCarton.src][index] || brickCarton.src,
-        reverse: [false][index] || false,
-        bgClass: [undefined][index]
-      })),
+      title: block.title,
+      paragraphs: block.paragraphs,
+      image1: blockImages[index % blockImages.length],
+      reverse: index % 2 === 1,
+      bgClass: index % 2 === 1 ? 'bg-light' : undefined
+    })),
     applicationsTitle: t('applicationsTitle'),
     applicationsSubtitle: t('applicationsSubtitle'),
     applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
@@ -57,7 +61,7 @@ export default async function GableTopCartonPage({ params }: PageProps) {
       description: t('whyChoose.description'),
       reasons: t.raw('whyChoose.reasons'),
       paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
-      image: packag.src
+      image: orange.src
     },
     methodology: {
       title: t('methodology.title'),
@@ -65,17 +69,16 @@ export default async function GableTopCartonPage({ params }: PageProps) {
       steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
         title: step.title,
         description: step.description,
-        image: [machine.src, brickCarton.src, execute.src, install.src, training.src][index] || machine.src
+        image: [execute.src, install.src, training.src][index] || execute.src
       })),
       outro: Array.isArray(t.raw('methodology.outro')) 
         ? t.raw('methodology.outro') 
         : (t.raw('methodology.outro') ? [t.raw('methodology.outro')] : [])
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

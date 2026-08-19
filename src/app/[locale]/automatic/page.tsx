@@ -38,6 +38,7 @@ export default async function AutomaticPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
+    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: imgA.src,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
         title: block.title,
@@ -64,12 +65,11 @@ export default async function AutomaticPage({ params }: PageProps) {
     hideWhyChoose: false,
     whyChoose: {
       title: t('whyChoose.title'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
       paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
       image: imgE.src
     }
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

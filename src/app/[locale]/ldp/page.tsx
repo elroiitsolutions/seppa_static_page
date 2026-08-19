@@ -49,8 +49,9 @@ export default async function LdpPage({ params }: PageProps) {
     applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
-      reasons: t.raw('whyChoose.reasons'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
+      reasons: t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined,
       image: overviewImg.src
     },
     methodology: {
@@ -64,10 +65,9 @@ export default async function LdpPage({ params }: PageProps) {
       outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
-    faqs: t.raw('faqs')
+    faqs: t.raw('faqs'),
+    trending_articles: relatedBlogs?.length > 0 ? relatedBlogs : undefined
   };
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

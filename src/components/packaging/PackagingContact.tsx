@@ -2,9 +2,8 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
-import SuccessModal from '@/components/ui/SuccessModal';
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import enEnquiry from '@/messages/en/enquiry.json';
 import arEnquiry from '@/messages/ar/enquiry.json';
 
@@ -33,6 +32,8 @@ const PackagingContact = () => {
   const [errors, setErrors] = React.useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [showSuccessModal, setShowSuccessModal] = React.useState(false);
+  const router = useRouter();
+  const locale = pathname?.split('/')[1] || 'en';
 
   const handleInputChange = (field: string, value: string) => {
     let sanitizedValue = value;
@@ -49,7 +50,7 @@ const PackagingContact = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
@@ -75,9 +76,24 @@ const PackagingContact = () => {
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('/api/submit-enquiry.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_type: 'product',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          product_name: formData.packagingType,
+          message: formData.message,
+          page_url: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      });
+    } catch (err) {
+      console.error('Failed to save packaging inquiry:', err);
+    } finally {
       setIsSubmitting(false);
-      setShowSuccessModal(true);
       setFormData({
         name: '',
         email: '',
@@ -85,7 +101,9 @@ const PackagingContact = () => {
         packagingType: isArabic ? "استفسار عن التعبئة والتغليف" : "Packaging Inquiry",
         message: ''
       });
-    }, 600);
+      // Redirect to thank-you page
+      router.push(`/${locale}/thank-you`);
+    }
   };
 
   const getT = (key: string) => {
@@ -99,12 +117,7 @@ const PackagingContact = () => {
 
   return (
     <section className="py-20 lg:py-28 bg-light overflow-hidden">
-      <SuccessModal 
-        isOpen={showSuccessModal} 
-        onClose={() => setShowSuccessModal(false)} 
-        title={isArabic ? "شكراً لاستفسارك!" : "Thank You for Your Enquiry!"}
-        message={isArabic ? "تم استلام استفسارك بنجاح. سيتواصل معك فريقنا في أقرب وقت." : "Your quote request has been received. Our specialists will reach out to you shortly."}
-      />
+
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16" style={{ direction: isArabic ? 'rtl' : 'ltr' }}>
           

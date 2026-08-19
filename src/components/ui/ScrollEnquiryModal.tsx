@@ -3,15 +3,16 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import enEnquiry from '@/messages/en/enquiry.json';
 import arEnquiry from '@/messages/ar/enquiry.json';
-import SuccessModal from '@/components/ui/SuccessModal';
 
 const ScrollEnquiryModal: React.FC = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const isArabic = pathname.startsWith('/ar');
   const isDe = pathname.startsWith('/de');
+  const locale = pathname?.split('/')[1] || 'en';
 
   const getT = (key: string) => {
     const keys = key.split('.');
@@ -86,6 +87,8 @@ const ScrollEnquiryModal: React.FC = () => {
     let sanitizedValue = value;
     if (field === 'phone') {
       sanitizedValue = value.replace(/[^0-9+\s-]/g, '');
+    } else if (field === 'name' || field === 'country' || field === 'city') {
+      sanitizedValue = value.replace(/[0-9]/g, '');
     }
     setFormData(prev => ({ ...prev, [field]: sanitizedValue }));
     if (errors[field]) {
@@ -99,7 +102,7 @@ const ScrollEnquiryModal: React.FC = () => {
 
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
@@ -128,12 +131,30 @@ const ScrollEnquiryModal: React.FC = () => {
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('/api/submit-enquiry.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_type: 'scroll',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          country: formData.country,
+          city: formData.city,
+          message: formData.message,
+          page_url: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      });
+    } catch (err) {
+      console.error('Failed to save enquiry:', err);
+    } finally {
       setIsSubmitting(false);
       setIsOpen(false);
-      setShowSuccessModal(true);
       setFormData({ name: '', email: '', phone: '', country: '', city: '', message: '' });
-    }, 500);
+      // Redirect to thank-you page
+      router.push(`/${locale}/thank-you`);
+    }
   };
 
   const handleClose = () => {
@@ -143,12 +164,7 @@ const ScrollEnquiryModal: React.FC = () => {
 
   return (
     <>
-      <SuccessModal 
-        isOpen={showSuccessModal} 
-        onClose={() => setShowSuccessModal(false)} 
-        title={isArabic ? "شكراً لاستفسارك!" : "Thank You!"}
-        message={isArabic ? "تم استلام طلبك بنجاح وسنتواصل معك قريباً." : "Your enquiry has been received. Our team will contact you shortly."}
-      />
+
       <AnimatePresence>
         {isOpen && (
           <div className="fixed inset-0 z-[999] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
