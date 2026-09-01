@@ -6,12 +6,21 @@ const MagicCursor: React.FC = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const isVisibleRef = useRef(false);
+  const isHoveringRef = useRef(false);
 
   // Smooth springs for the dot delay
   const springX = useSpring(0, { stiffness: 300, damping: 30 });
   const springY = useSpring(0, { stiffness: 300, damping: 30 });
 
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       springX.set(e.clientX - 4); // Center the 8px dot
       springY.set(e.clientY - 4);
@@ -19,48 +28,39 @@ const MagicCursor: React.FC = () => {
         isVisibleRef.current = true;
         setIsVisible(true);
       }
+
+      const target = e.target as HTMLElement | null;
+      const hovering = !!(target && target.closest && target.closest('a, button, input, select, textarea, [role="button"]'));
+      if (isHoveringRef.current !== hovering) {
+        isHoveringRef.current = hovering;
+        setIsHovering(hovering);
+      }
     };
 
     const handleMouseLeave = () => {
-      isVisibleRef.current = false;
-      setIsVisible(false);
-    };
-    const handleMouseEnter = () => {
-      isVisibleRef.current = true;
-      setIsVisible(true);
+      if (isVisibleRef.current) {
+        isVisibleRef.current = false;
+        setIsVisible(false);
+      }
     };
 
-    const handleLinkHoverStart = () => setIsHovering(true);
-    const handleLinkHoverEnd = () => setIsHovering(false);
+    const handleMouseEnter = () => {
+      if (!isVisibleRef.current) {
+        isVisibleRef.current = true;
+        setIsVisible(true);
+      }
+    };
 
     window.addEventListener('mousemove', handleMouseMove, { passive: true });
     document.body.addEventListener('mouseleave', handleMouseLeave);
     document.body.addEventListener('mouseenter', handleMouseEnter);
 
-    // Attach hover listeners to all clickable elements
-    const interactiveElements = document.querySelectorAll('a, button, input, select, textarea, [role="button"]');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', handleLinkHoverStart);
-      el.addEventListener('mouseleave', handleLinkHoverEnd);
-    });
-
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       document.body.removeEventListener('mouseleave', handleMouseLeave);
       document.body.removeEventListener('mouseenter', handleMouseEnter);
-      
-      interactiveElements.forEach(el => {
-        el.removeEventListener('mouseenter', handleLinkHoverStart);
-        el.removeEventListener('mouseleave', handleLinkHoverEnd);
-      });
     };
-  }, [springX, springY]);
-
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  }, [isMounted, springX, springY]);
 
   // Don't render on server, or during hydration
   if (!isMounted) return null;

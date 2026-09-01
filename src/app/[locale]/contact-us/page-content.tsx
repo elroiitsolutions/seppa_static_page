@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin, FiGlobe, FiChevronDown, FiChevronUp, FiCheck } from 'react-icons/fi';
 import bannerImg from '@/assets/about-us/generated/header.png';
 import SuccessModal from '@/components/ui/SuccessModal';
+import InternationalPhoneInput, { validatePhoneNumber, validateEmail, formatEmailInput, validateName, formatNameInput } from '@/components/ui/InternationalPhoneInput';
+import CountrySelectDropdown from '@/components/ui/CountrySelectDropdown';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -47,11 +49,14 @@ const ContactUs: React.FC = () => {
   const [showSuccessModal, setShowSuccessModal] = React.useState(false);
 
   const handleInputChange = (field: string, value: string) => {
-    let sanitizedValue = value;
-    if (field === 'phone') {
-      sanitizedValue = value.replace(/[^0-9+\s-]/g, '');
+    let val = value;
+    if (field === 'email') {
+      val = formatEmailInput(value);
+    } else if (field === 'name') {
+      val = formatNameInput(value);
     }
-    setFormData(prev => ({ ...prev, [field]: sanitizedValue }));
+
+    setFormData(prev => ({ ...prev, [field]: val }));
     if (errors[field]) {
       setErrors(prev => {
         const next = { ...prev };
@@ -65,19 +70,21 @@ const ContactUs: React.FC = () => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) newErrors.name = t('errName');
+    if (!formData.name.trim()) {
+      newErrors.name = t('errName');
+    } else if (!validateName(formData.name)) {
+      newErrors.name = 'Name must contain letters only (no numbers)';
+    }
+
     if (!formData.email.trim()) {
       newErrors.email = t('errEmailRequired');
-    } else if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
-      newErrors.email = t('errEmailInvalid');
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email = 'Please enter a valid lowercase email (e.g. name@domain.com)';
     }
-    if (!formData.phone.trim()) {
+    if (!formData.phone || !formData.phone.trim()) {
       newErrors.phone = t('errPhoneRequired');
-    } else {
-      const digitsOnly = formData.phone.replace(/\D/g, '');
-      if (digitsOnly.length < 10 || digitsOnly.length > 15) {
-        newErrors.phone = t('errPhoneInvalid');
-      }
+    } else if (!validatePhoneNumber(formData.phone)) {
+      newErrors.phone = t('errPhoneInvalid');
     }
     if (!formData.location.trim()) newErrors.location = t('errLocation');
     if (!formData.message.trim()) newErrors.message = t('errMessage');
@@ -191,6 +198,7 @@ const ContactUs: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <input 
+                          suppressHydrationWarning={true}
                           type="text" 
                           placeholder={t('placeholderName')} 
                           value={formData.name}
@@ -201,6 +209,7 @@ const ContactUs: React.FC = () => {
                       </div>
                       <div>
                         <input 
+                          suppressHydrationWarning={true}
                           type="email" 
                           placeholder={t('placeholderEmail')} 
                           value={formData.email}
@@ -212,28 +221,28 @@ const ContactUs: React.FC = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <input 
-                          type="tel" 
-                          placeholder={t('placeholderPhone')} 
+                        <InternationalPhoneInput
                           value={formData.phone}
-                          onChange={(e) => handleInputChange('phone', e.target.value)}
-                          className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.phone ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
+                          onChange={(val) => handleInputChange('phone', val)}
+                          onCountryChange={(_code, countryName) => handleInputChange('location', countryName)}
+                          error={errors.phone}
+                          placeholder={t('placeholderPhone')}
+                          variant="dark"
                         />
-                        {errors.phone && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.phone}</p>}
                       </div>
                       <div>
-                        <input 
-                          type="text" 
-                          placeholder={t('placeholderLocation')} 
+                        <CountrySelectDropdown
                           value={formData.location}
-                          onChange={(e) => handleInputChange('location', e.target.value)}
-                          className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors.location ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition backdrop-blur-sm`} 
+                          onChange={(val) => handleInputChange('location', val)}
+                          error={errors.location}
+                          placeholder={t('placeholderLocation') || 'Select Country *'}
+                          variant="dark"
                         />
-                        {errors.location && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.location}</p>}
                       </div>
                     </div>
                     <div>
                       <textarea 
+                        suppressHydrationWarning={true}
                         rows={5} 
                         placeholder={t('placeholderMessage')} 
                         value={formData.message}
@@ -243,6 +252,7 @@ const ContactUs: React.FC = () => {
                       {errors.message && <p className="text-red-400 text-xs mt-1.5 ml-3 font-medium">{errors.message}</p>}
                     </div>
                     <button 
+                      suppressHydrationWarning={true}
                       type="submit" 
                       disabled={isSubmitting}
                       className="bg-seppa-red text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-seppa-red transition duration-300 w-full md:w-auto shadow-lg disabled:opacity-50"
@@ -273,6 +283,7 @@ const ContactUs: React.FC = () => {
               {Object.entries(groupedOffices).map(([country, countryOffices]) => (
                 <div key={country} className="border border-gray-200 rounded-2xl overflow-hidden bg-white shadow-sm">
                   <button 
+                    suppressHydrationWarning={true}
                     onClick={() => setExpandedCountries(prev => prev.includes(country) ? prev.filter(c => c !== country) : [...prev, country])}
                     className="w-full flex items-center justify-between p-5 bg-white hover:bg-gray-50 transition"
                   >

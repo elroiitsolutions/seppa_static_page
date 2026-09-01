@@ -6,8 +6,35 @@ import PackagingPageLayout from '@/components/packaging/PackagingPageLayout';
 import BlogTemplate from '@/components/templates/BlogTemplate';
 import { getPageBySlug } from '@/lib/strapi/client'; 
 
+import { routing } from '@/i18n/routing';
+
 interface Props {
   params: Promise<{ locale: string; slug: string[] }>;
+}
+
+export async function generateStaticParams() {
+  const fallbackSlugs = [
+    'dummy-slug',
+    'alcohol-spirits-pet-blowing',
+    'pharma-cosmetics-pet-blowing',
+    'blowing/electric/ssb-sle-40',
+    'blowing/electric/ssb-sle-60',
+    'blowing/electric/ssb-sle-80',
+    'blowing/electric/ssb-sle-100',
+    'blowing/electric/ssb-sle-120',
+    'blowing/electric/ssb-sle-150',
+    'blowing/pneumatic/ssb-sl-10',
+    'blowing/pneumatic/ssb-sl-20',
+    'blowing/pneumatic/ssb-sl-40',
+    'blowing/pneumatic/ssb-sl-60'
+  ];
+
+  return routing.locales.flatMap((locale) =>
+    fallbackSlugs.map((slugStr) => ({
+      locale,
+      slug: slugStr.split('/'),
+    }))
+  );
 }
 
 export default async function CatchAllPage({ params }: Props) {
@@ -25,10 +52,9 @@ export default async function CatchAllPage({ params }: Props) {
 
   // Map CMS data to components
   let TemplateComponent = PackagingPageLayout;
-  if (pageData.template === 'blog') {
+  if (pageData && pageData.template === 'blog') {
     TemplateComponent = BlogTemplate;
   }
-  // Add other templates (e.g. 'home', 'machine') as they are built
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

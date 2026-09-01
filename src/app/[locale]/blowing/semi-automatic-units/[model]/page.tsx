@@ -45,6 +45,22 @@ export default async function SemiAutoModelPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/blowing/semi-automatic-units/[model]', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -55,21 +71,27 @@ export default async function SemiAutoModelPage({ params }: PageProps) {
     overviewDescription: t('overviewDescription'),
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
     contentBlocks: t.has('contentBlocks') && Array.isArray(t.raw('contentBlocks')) ? (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
-      image1: [img1.src, img2.src][index] || undefined,
-      reverse: [true, false][index] || false,
-      bgClass: [undefined, "bg-light"][index] || undefined
+      image1: [img1.src, img2.src, meth1.src, over.src][index] || undefined,
+      reverse: [true, false, true, false][index] || false,
+      bgClass: [undefined, "bg-light", undefined, "bg-light"][index] || undefined
     })) : undefined,
-    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
-    features: t.has('features') && Array.isArray(t.raw('features')) ? t.raw('features') : [],
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
       image: over.src
     },
@@ -87,7 +109,7 @@ export default async function SemiAutoModelPage({ params }: PageProps) {
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

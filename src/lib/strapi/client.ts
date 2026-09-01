@@ -3,6 +3,9 @@ import qs from 'qs';
 export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
 
 export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
+  // Strapi backend is not used, short-circuit fetch calls to avoid build errors.
+  return null;
+
   // Merge default and user options
   const mergedOptions = {
     headers: {

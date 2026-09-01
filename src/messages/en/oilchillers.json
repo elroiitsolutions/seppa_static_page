@@ -1,8 +1,8 @@
 {
   "title": "Precision Thermal Management: The Engineering of High-Performance Oil Chillers",
   "breadcrumbName": "Oil Chillers",
-  "rootBreadcrumbName": "",
-  "rootBreadcrumbPath": "",
+  "rootBreadcrumbName": "Equipments",
+  "rootBreadcrumbPath": "/equipments",
   "overviewTitle": "High-Performance Oil Chillers",
   "overviewDescription": "The harsh environment of heavy manufacturing and precision machining calls for efficient thermal management as an essential mechanical need. Industrial oil coolers embody the ultimate solution in terms of cooling fluid temperature to become the key protection from thermal breakdown of the hydraulic fluid and lubricants.",
   "overviewsubDescription": [
@@ -58,6 +58,25 @@
       "Major global manufacturing conglomerates and high precision engineering firms consistently trust Seppa Solutions because of our absolutely uncompromising engineering pedigree. We do not simply assemble off the shelf components.",
       "Our profound expertise in the complex micro nuances of fluid dynamics allows us to build a high performance process chiller that severely outlasts standard commercial HVAC equipment.",
       "By partnering with Seppa Solutions, you align with a proven industry leader globally recognized for delivering highly durable, precision engineered oil chillers that actively protect your assets."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodology",
+    "title": "Operation Methodology & Cooling Process",
+    "subtitle": "The thermodynamic cycle at the heart of an industrial oil chiller.",
+    "steps": [
+      {
+        "title": "Fluid Intake & Recirculation",
+        "description": "The thermodynamic cycle begins when the high-capacity recirculation pump draws warm oil directly from the machine tool reservoir into the cooling circuit."
+      },
+      {
+        "title": "Heat Exchange & CNC Cooling",
+        "description": "The oil enters the shell-and-tube evaporator where eco-friendly refrigerant rapidly evaporates, absorbing massive amounts of heat. The cooled oil is returned to friction zones with precision thermal stability."
+      },
+      {
+        "title": "Compression & Heat Rejection",
+        "description": "Refrigerant gas is compressed to elevate its temperature and transits to the air-cooled condenser to expel excess heat into the ambient air, maintaining a continuous closed loop."
+      }
     ]
   },
   "faqTitle": "Frequently Asked Questions About Oil Chillers",

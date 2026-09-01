@@ -1,0 +1,105 @@
+{
+  "title": "Galerie Vidéo",
+  "breadcrumbName": "Galerie Vidéo",
+  "productsInAction": "Nos produits en action",
+  "productVideos": "Vidéos de produits",
+  "productVideosDesc": "Découvrez nos machines de classe mondiale et nos solutions de lignes complètes en fonctionnement réel dans des installations du monde entier.",
+  "searchPlaceholder": "Rechercher des vidéos...",
+  "categoriesHeading": "Catégories",
+  "noVideos": "Aucune vidéo ne correspond à vos critères.",
+  "closeVideo": "Fermer la vidéo",
+  "readyTitle": "Prêt à commencer ?",
+  "readyHeading": "Découvrez nos machines dans votre entreprise",
+  "readyText": "Du soufflage PET aux solutions de lignes complètes, Seppa fournit une ingénierie de classe mondiale. Contactez nos experts pour une consultation personnalisée.",
+  "productEnquiry": "Demande de produit",
+  "contactUs": "Contactez-nous",
+  "categories": {
+    "All": "Toutes",
+    "PET Blowing Machines": "Souffleuses PET",
+    "Complete Line Equipment": "Équipements de Ligne Complète",
+    "Industrial Solutions": "Solutions Industrielles",
+    "Packaging & Processing": "Emballage & Traitement"
+  },
+  "videoList": [
+    {
+      "id": "v1",
+      "title": "Machine de soufflage PET automatique 1 cavité",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v2",
+      "title": "Machine de soufflage PET entièrement automatique 2 cavités",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v3",
+      "title": "Machine de soufflage PET semi / automatique 3 cavités",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v4",
+      "title": "Machine de soufflage PET automatique 4 cavités",
+      "category": "PET Blowing Machines"
+    },
+    {
+      "id": "v5",
+      "title": "Machine de soufflage de bouteilles PET automatique 6 cavités",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v6",
+      "title": "Rinceuse de bouteilles en verre | Laveuse de bouteilles en verre",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v7",
+      "title": "Redresseur de bouteilles PET",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v8",
+      "title": "Machine de soufflage de pots en verre",
+      "category": "Complete Line Equipment"
+    },
+    {
+      "id": "v9",
+      "title": "Machine de soufflage PET automatique 8 cavités — SSB SLE 80",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v10",
+      "title": "Systèmes de dessalement d'eau de mer conteneurisés",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v11",
+      "title": "Usine d'eau minérale — Traitement d'eau industriel — Fosters",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v12",
+      "title": "Remplisseuse de boissons gazeuses",
+      "category": "Industrial Solutions"
+    },
+    {
+      "id": "v13",
+      "title": "Fardeleuse sous film rétractable | Emballeuse tertiaire",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v14",
+      "title": "BLUE RO — Station de traitement d'eau — Usine RO",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v15",
+      "title": "BLUE RO — Osmoseur domestique — Usine RO résidentielle",
+      "category": "Packaging & Processing"
+    },
+    {
+      "id": "v16",
+      "title": "Rinceuse Remplisseuse Bouchonneuse — 200 bouteilles par minute",
+      "category": "Packaging & Processing"
+    }
+  ]
+}

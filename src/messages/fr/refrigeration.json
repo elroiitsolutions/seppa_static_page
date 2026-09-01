@@ -10,6 +10,29 @@
   ],
   "contentBlocks": [
     {
+      "title": "Ingénierie avancée Seppa : Refroidisseurs d'huile",
+      "paragraphs": [
+        "Refroidisseurs d'huile: Conçus spécifiquement pour la maintenance des machines et l'intégrité des fluides, nos refroidisseurs d'huile offrent une plage de capacité de refroidissement de 1,75 kW à 35 kW. Les refroidisseurs refroidis par air Seppa sont une solution parfaite pour toute application nécessitant un refroidisseur industriel fiable. Ils sont divisés en configurations spécialisées pour maintenir une viscosité optimale du fluide.",
+        "Refroidisseur d'huile hydraulique: Prévient la dégradation thermique des fluides hydrauliques lors de cycles mécaniques intensifs.",
+        "Refroidisseur de liquide de refroidissement: Formulé pour réguler les fluides de coupe et les liquides de refroidissement dans les applications d'usinage lourd.",
+        "Refroidisseur de liquide de refroidissement à immersion: Conçu pour les applications en immersion directe où les fluides doivent être refroidis dans un réservoir actif sans tuyauterie en boucle externe."
+      ]
+    },
+    {
+      "title": "Refroidisseurs Scroll refroidis par air & par eau",
+      "paragraphs": [
+        "Refroidisseur Scroll refroidi par air: Avec une plage de capacité de refroidissement polyvalente de 1,75 kW à 1050 kW, les refroidisseurs scroll Seppa sont répartis sur quatre séries distinctes. Ceux-ci sont largement catégorisés en fonction de la qualité de l'eau utilisée pour le procédé et des températures ambiantes sous lesquelles ils fonctionnent. Tous ces refroidisseurs sont conçus pour être compatibles avec une installation en intérieur et en extérieur.",
+        "Refroidisseur Scroll refroidi par eau: Offrant une plage de capacité de refroidissement dédiée de 17,5 kW à 462 kW, les refroidisseurs scroll refroidis par eau Seppa sont construits avec des condenseurs et évaporateurs à multitubulaire qui garantissent un haut rendement et un fonctionnement sans problème. Des modèles redondants sont disponibles à partir de 10 TR pour éliminer les points de défaillance uniques."
+      ]
+    },
+    {
+      "title": "Refroidisseurs à haute efficacité énergétique & à vis intelligents",
+      "paragraphs": [
+        "Refroidisseurs à haute efficacité énergétique: Seppa a conçu et construit des systèmes de refroidissement qui évitent la surconsommation d'énergie, réduisant ainsi les dépenses d'exploitation pour les acheteurs qui utilisent nos produits. Les modèles à haute efficacité énergétique de Seppa utilisent une technologie modulante pour ajuster la puissance en temps réel.",
+        "Série de refroidisseurs à vis intelligents: Pour les tâches de fabrication lourdes, notre série à vis intelligente offre une capacité de refroidissement de 140 kW à 875 kW. Ces unités sont équipées d'un compresseur Bitzer éprouvé fonctionnant avec des réfrigérants écologiques comme le R134a, R407C et R404A. Un sous-refroidisseur intégré améliore les performances lors de températures ambiantes élevées."
+      ]
+    },
+    {
       "title": "Avantages des solutions thermiques Seppa",
       "paragraphs": [
         "L'approche de Seppa Solutions en matière de réfrigération industrielle se distingue par une combinaison parfaite de robustesse et de logique d'automatisation. Nos ingénieurs procédés intègrent systématiquement des compresseurs à vis, couplés à des variateurs de fréquence. Cette avancée permet à l'équipement frigorifique industriel de moduler sa puissance frigorifique de façon dynamique en fonction de la demande de l'usine. L'efficacité énergétique est au centre de notre philosophie de conception technique. Chaque système de réfrigération industrielle que nous développons favorise l'utilisation de fluides naturels comme l'ammoniac, reconnus pour leurs excellentes propriétés de transfert thermique. Opter pour notre équipement de réfrigération industrielle, c'est s'assurer une conformité totale avec les réglementations environnementales actuelles. Par ailleurs, nous concevons des skids modulaires qui simplifient drastiquement la maintenance système frigorifique sur le site de production. Une installation frigorifique industrielle signée par nos experts garantit ainsi un taux de rendement synthétique maximal et une usure mécanique réduite."
@@ -43,20 +66,8 @@
     "subtitle": "Notre approche méthodique de la réfrigération industrielle repose sur une ingénierie stricte.",
     "steps": [
       {
-        "title": "1. Audit et calculs thermiques",
-        "description": "Tout commence par une phase d'audit et de calculs thermiques rigoureux. Nos ingénieurs évaluent précisément les bilans thermodynamiques pour sélectionner l'équipement de réfrigération industrielle dont les capacités correspondent parfaitement à votre cahier des charges spécifique."
-      },
-      {
-        "title": "2. Assemblage et raccordement sur le terrain",
-        "description": "Sur le terrain, l'assemblage de votre infrastructure respecte les normes les plus exigeantes de la tuyauterie sous pression. Le raccordement électrique et fluidique de votre équipement frigorifique industriel s'effectue avec un contrôle qualité continu."
-      },
-      {
-        "title": "3. Calibrage et mise en route",
-        "description": "Lors de la mise en route, nous calibrons le système de réfrigération industrielle afin de valider l'ensemble des sécurités intégrées."
-      },
-      {
-        "title": "4. Formation des techniciens et autonomie",
-        "description": "La formation complète de vos techniciens clôture notre intervention technique. La maîtrise des gestes essentiels pour la maintenance système frigorifique garantit l'autonomie et la réactivité de vos opérateurs au quotidien."
+        "title": "Ingénierie & Installation",
+        "description": "Notre approche méthodique de la réfrigération industrielle repose sur une ingénierie stricte. Tout commence par une phase d'audit et de calculs thermiques rigoureux. Nos ingénieurs évaluent précisément les bilans thermodynamiques pour sélectionner l'équipement de réfrigération industrielle dont les capacités correspondent parfaitement à votre cahier des charges spécifique. Sur le terrain, l'assemblage de votre infrastructure respecte les normes les plus exigeantes de la tuyauterie sous pression. Le raccordement électrique et fluidique de votre équipement frigorifique industriel s'effectue avec un contrôle qualité continu. Lors de la mise en route, nous calibrons le système de réfrigération industrielle afin de valider l'ensemble des sécurités intégrées. La formation complète de vos techniciens clôture notre intervention technique. La maîtrise des gestes essentiels pour la maintenance système frigorifique garantit l'autonomie et la réactivité de vos opérateurs au quotidien."
       }
     ],
     "outro": []
@@ -64,23 +75,23 @@
   "faqTitle": "Foire aux questions (FAQ)",
   "faqs": [
     {
-      "question": "Quelle est la différence majeure entre la climatisation tertiaire et la réfrigération industrielle ?",
+      "question": "1. Quelle est la différence majeure entre la climatisation tertiaire et la réfrigération industrielle ?",
       "answer": "La réfrigération industrielle est conçue pour des applications critiques nécessitant des puissances frigorifiques massives. Contrairement au secteur commercial, ces systèmes stabilisent des procédés chimiques complexes ou des stockages géants sous des contraintes sévères, fonctionnant en flux tendu sans arrêt programmé pendant de longs mois d'exploitation continue."
     },
     {
-      "question": "Quel est l'impact des compresseurs à vitesse variable sur la consommation globale ?",
+      "question": "2. Quel est l'impact des compresseurs à vitesse variable sur la consommation globale ?",
       "answer": "L'intégration de variateurs de fréquence (VFD) dans le domaine du froid transforme le profil énergétique de l'usine. Au lieu de fonctionner en mode tout ou rien, le compresseur ajuste sa vitesse de rotation pour correspondre à la charge thermique requise. Cela élimine les pics d'intensité électrique au démarrage et permet d'économiser jusqu'à 30 % sur la facture d'électricité."
     },
     {
-      "question": "Comment les fluides naturels améliorent ils le bilan environnemental des usines modernes ?",
+      "question": "3. Comment les fluides naturels améliorent ils le bilan environnemental des usines modernes ?",
       "answer": "Les fluides synthétiques traditionnels (HFC) possèdent un potentiel de réchauffement global (GWP) extrêmement élevé. En utilisant l'ammoniac (NH3) ou le dioxyde de carbone (CO2), nous exploitons des substances dont le GWP est de 0 ou 1. Ces fluides offrent un transfert de chaleur supérieur et protègent l'environnement de manière durable."
     },
     {
-      "question": "Quelle est la durée de vie moyenne des infrastructures de production de froid ?",
+      "question": "4. Quelle est la durée de vie moyenne des infrastructures de production de froid ?",
       "answer": "Avec une conception robuste et des matériaux résistants à la corrosion, ces infrastructures sont bâties pour durer entre vingt et trente ans. Toutefois, cette longévité est liée à la qualité du suivi préventif. Le remplacement régulier des huiles et le nettoyage des faisceaux tubulaires sont déterminants pour éviter l'obsolescence prématurée."
     },
     {
-      "question": "Pourquoi la récupération de chaleur est elle souvent intégrée en réfrigération industrielle ?",
+      "question": "5. Pourquoi la récupération de chaleur est elle souvent intégrée en réfrigération industrielle ?",
       "answer": "La réfrigération industrielle déplace une énorme quantité d'énergie thermique. Au lieu de rejeter cette chaleur fatale dans l'atmosphère, nous installons des condenseurs récupérateurs. Cette chaleur revalorisée sert à chauffer l'eau de lavage des usines, offrant un retour sur investissement extrêmement rapide et performant."
     }
   ]

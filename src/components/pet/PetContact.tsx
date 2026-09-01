@@ -1,45 +1,53 @@
 "use client";
-import React from 'react';
-import { motion, Variants } from 'framer-motion';
-import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
-import SuccessModal from '@/components/ui/SuccessModal';
-
+import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import enEnquiry from '@/messages/en/enquiry.json';
-import arEnquiry from '@/messages/ar/enquiry.json';
+import { motion } from 'framer-motion';
+import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
+import enPet from '@/messages/en/pet.json';
+import frPet from '@/messages/fr/pet.json';
+import SuccessModal from '@/components/ui/SuccessModal';
+import InternationalPhoneInput, { validatePhoneNumber, validateEmail, formatEmailInput, validateName, formatNameInput } from '@/components/ui/InternationalPhoneInput';
+import CountrySelectDropdown from '@/components/ui/CountrySelectDropdown';
 
-const fadeInUp: Variants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
-};
-
-const PetContact = () => {
+export const PetContact: React.FC = () => {
   const pathname = usePathname();
   const isArabic = pathname.startsWith('/ar');
-  const isDe = pathname.startsWith('/de');
+  const isFrench = pathname.startsWith('/fr');
 
-  const [formData, setFormData] = React.useState({
+  const getT = (key: string) => {
+    const keys = key.split('.');
+    let val: any = isFrench ? frPet : enPet;
+    for (const k of keys) {
+      val = val?.[k];
+    }
+    return val || key;
+  };
+
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    packagingType: isArabic ? "استفسار عن التعبئة والتغليف" : "Packaging Inquiry",
+    country: '',
     message: ''
   });
-  const [errors, setErrors] = React.useState<Record<string, string>>({});
-  const [isSubmitting, setIsSubmitting] = React.useState(false);
-  const [showSuccessModal, setShowSuccessModal] = React.useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
-    let sanitizedValue = value;
-    if (field === 'phone') {
-      sanitizedValue = value.replace(/[^0-9+\s-]/g, '');
+    let val = value;
+    if (field === 'email') {
+      val = formatEmailInput(value);
+    } else if (field === 'name') {
+      val = formatNameInput(value);
     }
-    setFormData(prev => ({ ...prev, [field]: sanitizedValue }));
+
+    setFormData(prev => ({ ...prev, [field]: val }));
     if (errors[field]) {
       setErrors(prev => {
         const next = { ...prev };
@@ -53,21 +61,32 @@ const PetContact = () => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) newErrors.name = isArabic ? "الاسم مطلوب" : 'Name is required';
+    if (!formData.name.trim()) {
+      newErrors.name = isArabic ? "الاسم مطلوب" : 'Name is required';
+    } else if (!validateName(formData.name)) {
+      newErrors.name = isArabic 
+        ? "الاسم يجب أن يحتوي على أحرف فقط (بدون أرقام)" 
+        : 'Name must contain letters only (no numbers)';
+    }
+
     if (!formData.email.trim()) {
       newErrors.email = isArabic ? "البريد الإلكتروني مطلوب" : 'Email address is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
-      newErrors.email = isArabic ? "يرجى إدخال بريد إلكتروني صحيح" : 'Please enter a valid email address';
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email = isArabic 
+        ? "يرجى إدخال بريد إلكتروني صحيح (أحرف صغيرة، @، و .com)" 
+        : 'Email must be lowercase and contain @ and .com';
     }
-    if (!formData.phone.trim()) {
+    if (!formData.phone || !formData.phone.trim()) {
       newErrors.phone = isArabic ? "رقم الهاتف مطلوب" : 'Phone number is required';
-    } else {
-      const digitsOnly = formData.phone.replace(/\D/g, '');
-      if (digitsOnly.length < 10 || digitsOnly.length > 15) {
-        newErrors.phone = isArabic ? "يرجى إدخال رقم هاتف صحيح (10-15 رقم)" : 'Please enter a valid phone number (10-15 digits)';
-      }
+    } else if (!validatePhoneNumber(formData.phone)) {
+      newErrors.phone = isArabic ? "يرجى إدخال رقم هاتف صحيح" : 'Please enter a valid phone number';
     }
-    if (!formData.message.trim()) newErrors.message = isArabic ? "الرسالة مطلوبة" : 'Message is required';
+    if (!formData.country.trim()) {
+      newErrors.country = isArabic ? "الدولة مطلوبة" : 'Country is required';
+    }
+    if (!formData.message.trim()) {
+      newErrors.message = isArabic ? "الرسالة مطلوبة" : 'Message is required';
+    }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -82,169 +101,163 @@ const PetContact = () => {
         name: '',
         email: '',
         phone: '',
-        packagingType: isArabic ? "استفسار عن التعبئة والتغليف" : "Packaging Inquiry",
+        country: '',
         message: ''
       });
     }, 600);
   };
 
-  const getT = (key: string) => {
-    const keys = key.split('.');
-    let val: any = isArabic ? arEnquiry : enEnquiry;
-    for (const k of keys) {
-      val = val?.[k];
-    }
-    return val || key;
-  };
-
   return (
-    <section className="py-20 lg:py-28 bg-light overflow-hidden">
+    <section className="py-20 bg-white relative">
       <SuccessModal 
         isOpen={showSuccessModal} 
         onClose={() => setShowSuccessModal(false)} 
-        title={isArabic ? "شكراً لاستفسارك!" : "Thank You for Your Enquiry!"}
-        message={isArabic ? "تم استلام استفسارك بنجاح. سيتواصل معك فريقنا في أقرب وقت." : "Your quote request has been received. Our specialists will reach out to you shortly."}
+        title={isArabic ? "شكراً لك!" : "Thank You!"}
+        message={isArabic ? "تم استلام استفسارك بنجاح وسيتواصل معك فريقنا قريباً." : "Your enquiry has been received. Our team will contact you shortly."}
       />
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row gap-16" style={{ direction: isArabic ? 'rtl' : 'ltr' }}>
-          
-          {/* Contact Details */}
-          <motion.div 
-            className="lg:w-1/3"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
-              <span className="text-sm font-medium text-dark uppercase tracking-wider">{getT('getInTouch')}</span>
-            </motion.div>
+        <div className="max-w-6xl mx-auto bg-gray-50 rounded-3xl p-8 lg:p-14 shadow-sm border border-gray-100">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             
-            <motion.h2 variants={fadeInUp} className="text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-8">
-              {isArabic ? "دعنا نناقش احتياجات التعبئة والتغليف الخاصة بك" : "Let's Discuss Your Packaging Needs"}
-            </motion.h2>
-            
-            <motion.p variants={fadeInUp} className="text-gray-600 mb-8">
-              {isArabic 
-                ? "تواصل مع خبرائنا للعثور على حلول التعبئة والتغليف المثالية المخصصة لعملك. نحن هنا لمساعدتك على النجاح."
-                : "Reach out to our experts to find the perfect packaging solutions tailored for your business. We are here to help you succeed."}
-            </motion.p>
+            {/* Contact Details */}
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="space-y-8"
+            >
+              <div>
+                <span className="text-seppa-red font-medium uppercase tracking-wider text-sm">
+                  {getT('contactSubtitle')}
+                </span>
+                <h2 className="text-3xl lg:text-4xl font-heading font-bold text-dark mt-2">
+                  {getT('contactTitle')}
+                </h2>
+                <p className="text-gray-600 mt-4 leading-relaxed">
+                  {getT('contactDescription')}
+                </p>
+              </div>
 
-            <motion.div variants={fadeInUp} className="space-y-6">
-              <a href="tel:123456789" className="flex items-center gap-6 p-6 bg-white rounded-2xl hover:shadow-md transition group">
-                <div className="w-16 h-16 bg-light text-seppa-red rounded-full flex items-center justify-center text-2xl shrink-0 group-hover:bg-seppa-red hover:text-dark group-hover:text-white transition shadow-sm">
-                  <FiPhoneCall />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-heading text-dark mb-1">{getT('callUs')}</h3>
-                  <p className="text-gray-600">+(123) 456-789</p>
-                </div>
-              </a>
+              <div className="space-y-6 pt-4">
+                <a href="tel:180042520000" className="flex items-center gap-6 p-5 bg-white rounded-2xl hover:shadow-md transition group border border-gray-100">
+                  <div className="w-14 h-14 bg-seppa-red/10 text-seppa-red rounded-full flex items-center justify-center text-xl shrink-0 group-hover:bg-seppa-red group-hover:text-white transition">
+                    <FiPhoneCall />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold font-heading text-dark mb-1">{getT('callUs')}</h3>
+                    <p className="text-gray-600">1800-4252-0000</p>
+                  </div>
+                </a>
 
-              <a href="mailto:info@seppa.com" className="flex items-center gap-6 p-6 bg-white rounded-2xl hover:shadow-md transition group">
-                <div className="w-16 h-16 bg-light text-seppa-red rounded-full flex items-center justify-center text-2xl shrink-0 group-hover:bg-seppa-red hover:text-dark group-hover:text-white transition shadow-sm">
-                  <FiMail />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-heading text-dark mb-1">{getT('emailUs')}</h3>
-                  <p className="text-gray-600">packaging@seppa.com</p>
-                </div>
-              </a>
+                <a href="mailto:info@seppasolutions.com" className="flex items-center gap-6 p-5 bg-white rounded-2xl hover:shadow-md transition group border border-gray-100">
+                  <div className="w-14 h-14 bg-seppa-red/10 text-seppa-red rounded-full flex items-center justify-center text-xl shrink-0 group-hover:bg-seppa-red group-hover:text-white transition">
+                    <FiMail />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold font-heading text-dark mb-1">{getT('emailUs')}</h3>
+                    <p className="text-gray-600">info@seppasolutions.com</p>
+                  </div>
+                </a>
 
-              <div className="flex items-center gap-6 p-6 bg-white rounded-2xl hover:shadow-md transition group">
-                <div className="w-16 h-16 bg-light text-seppa-red rounded-full flex items-center justify-center text-2xl shrink-0 group-hover:bg-seppa-red hover:text-dark group-hover:text-white transition shadow-sm">
-                  <FiMapPin />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold font-heading text-dark mb-1">{isArabic ? "الموقع:" : "Location:"}</h3>
-                  <p className="text-gray-600">Global Headquarters</p>
+                <div className="flex items-center gap-6 p-5 bg-white rounded-2xl hover:shadow-md transition group border border-gray-100">
+                  <div className="w-14 h-14 bg-seppa-red/10 text-seppa-red rounded-full flex items-center justify-center text-xl shrink-0 group-hover:bg-seppa-red group-hover:text-white transition">
+                    <FiMapPin />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold font-heading text-dark mb-1">{getT('headOffice')}</h3>
+                    <p className="text-gray-600 text-sm">Chennai, Tamil Nadu, India</p>
+                  </div>
                 </div>
               </div>
             </motion.div>
-          </motion.div>
 
-          {/* Contact Form */}
-          <motion.div 
-            className="lg:w-2/3"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="bg-white p-10 lg:p-14 rounded-[2rem] h-full shadow-lg border border-gray-100 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold font-heading text-dark mb-8">{isArabic ? "طلب تسعيرة" : "Request a Quote"}</h3>
-              <form className="space-y-6" onSubmit={handleSubmit} noValidate>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Form */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
+            >
+              <form onSubmit={handleSubmit} noValidate className="space-y-5">
+                <div>
+                  <input 
+                    type="text" 
+                    placeholder={getT('fields.namePlaceholder')} 
+                    value={formData.name}
+                    onChange={(e) => handleInputChange('name', e.target.value)}
+                    suppressHydrationWarning={true}
+                    className={`w-full px-6 py-4 rounded-full bg-light border ${errors.name ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm`} 
+                  />
+                  {errors.name && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.name}</p>}
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <input 
-                      suppressHydrationWarning
-                      type="text" 
-                      placeholder={getT('fields.namePlaceholder')} 
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      className={`w-full px-6 py-4 rounded-full bg-light border ${errors.name ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm`} 
-                    />
-                    {errors.name && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.name}</p>}
-                  </div>
-                  <div>
-                    <input 
-                      suppressHydrationWarning
                       type="email" 
                       placeholder={getT('fields.emailPlaceholder')} 
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
+                      suppressHydrationWarning={true}
                       className={`w-full px-6 py-4 rounded-full bg-light border ${errors.email ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm`} 
                     />
                     {errors.email && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.email}</p>}
                   </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
                   <div>
-                    <input 
-                      suppressHydrationWarning
-                      type="tel" 
-                      placeholder={getT('fields.phonePlaceholder')} 
+                    <InternationalPhoneInput
                       value={formData.phone}
-                      onChange={(e) => handleInputChange('phone', e.target.value)}
-                      className={`w-full px-6 py-4 rounded-full bg-light border ${errors.phone ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm`} 
-                    />
-                    {errors.phone && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.phone}</p>}
-                  </div>
-                  <div>
-                    <input 
-                      suppressHydrationWarning
-                      type="text" 
-                      placeholder={isArabic ? "نوع التعبئة والتغليف" : "Packaging Type"} 
-                      value={formData.packagingType}
-                      onChange={(e) => handleInputChange('packagingType', e.target.value)}
-                      className="w-full px-6 py-4 rounded-full bg-light border-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm" 
+                      onChange={(val) => handleInputChange('phone', val)}
+                      onCountryChange={(_code, countryName) => {
+                        if (countryName) {
+                          handleInputChange('country', countryName);
+                        }
+                      }}
+                      error={errors.phone}
+                      placeholder={getT('fields.phonePlaceholder') || 'Phone Number *'}
+                      variant="light"
+                      locale={isArabic ? 'ar' : isFrench ? 'fr' : 'en'}
                     />
                   </div>
                 </div>
+
+                <div>
+                  <CountrySelectDropdown
+                    value={formData.country}
+                    onChange={(val) => handleInputChange('country', val)}
+                    error={errors.country}
+                    placeholder={isArabic ? 'اختر الدولة *' : isFrench ? 'Sélectionner le pays *' : 'Select Country *'}
+                    variant="light"
+                    locale={isArabic ? 'ar' : isFrench ? 'fr' : 'en'}
+                  />
+                </div>
+
                 <div>
                   <textarea 
-                    suppressHydrationWarning
-                    rows={5} 
-                    placeholder={isArabic ? "أخبرنا عن متطلبات التعبئة والتغليف الخاصة بك..." : "Tell us about your packaging requirements..."} 
+                    rows={4} 
+                    placeholder={getT('fields.messagePlaceholder')} 
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
+                    suppressHydrationWarning={true}
                     className={`w-full px-6 py-4 rounded-3xl bg-light border ${errors.message ? 'border-red-400' : 'border-0'} text-gray-700 focus:outline-none focus:ring-2 focus:ring-seppa-red transition shadow-sm resize-none`}
                   ></textarea>
                   {errors.message && <p className="text-red-500 text-xs mt-1.5 ml-3 font-medium">{errors.message}</p>}
                 </div>
+
                 <button 
-                  suppressHydrationWarning
                   type="submit" 
                   disabled={isSubmitting}
-                  className="bg-[#101934] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-seppa-red transition duration-300 w-auto inline-block disabled:opacity-50"
+                  suppressHydrationWarning={true}
+                  className="w-full bg-seppa-red text-white py-4 rounded-full font-bold hover:bg-dark transition duration-300 shadow-md disabled:opacity-50"
                 >
-                  {isSubmitting ? (isArabic ? 'جاري الإرسال...' : 'Submitting...') : getT('submitButtonText')}
+                  {isSubmitting ? (isArabic ? 'جاري الإرسال...' : 'Sending...') : getT('submitButton')}
                 </button>
               </form>
-            </div>
-          </motion.div>
-          
+            </motion.div>
+
+          </div>
         </div>
       </div>
     </section>

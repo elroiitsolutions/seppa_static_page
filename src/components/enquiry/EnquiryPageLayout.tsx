@@ -4,6 +4,8 @@ import PageHeader from '@/components/layout/PageHeader';
 import { motion } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
 import SuccessModal from '@/components/ui/SuccessModal';
+import InternationalPhoneInput, { validatePhoneNumber, validateEmail, formatEmailInput, validateName, formatNameInput } from '@/components/ui/InternationalPhoneInput';
+import CountrySelectDropdown from '@/components/ui/CountrySelectDropdown';
 
 export interface FormField {
   name: string;
@@ -46,18 +48,31 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [showSuccessModal, setShowSuccessModal] = React.useState(false);
 
-  const handleInputChange = (name: string, value: string, type?: string) => {
-    let sanitizedValue = value;
-    if (type === 'tel') {
-      sanitizedValue = value.replace(/[^0-9+\s-]/g, '');
+  const handleInputChange = (name: string, value: string) => {
+    let val = value;
+    if (name === 'email') {
+      val = formatEmailInput(value);
+    } else if (name === 'name' || name === 'fullName' || name === 'userName') {
+      val = formatNameInput(value);
     }
-    setFormData(prev => ({ ...prev, [name]: sanitizedValue }));
+
+    setFormData(prev => ({ ...prev, [name]: val }));
     if (errors[name]) {
       setErrors(prev => {
         const next = { ...prev };
         delete next[name];
         return next;
       });
+    }
+  };
+
+  const handleCountryAutoSelect = (countryName: string) => {
+    if (!countryName) return;
+    const targetField = data.formFields.find(f => 
+      f.name === 'country' || f.name === 'region' || f.name === 'location'
+    );
+    if (targetField) {
+      handleInputChange(targetField.name, countryName);
     }
   };
 
@@ -69,12 +84,17 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
       const val = (formData[field.name] || '').trim();
       if (field.required && !val) {
         newErrors[field.name] = `${field.label} is required`;
-      } else if (field.type === 'email' && val && !/\S+@\S+\.\S+/.test(val)) {
-        newErrors[field.name] = 'Please enter a valid email address';
+      } else if ((field.name === 'name' || field.name === 'fullName') && val) {
+        if (!validateName(val)) {
+          newErrors[field.name] = 'Name must contain letters only (no numbers)';
+        }
+      } else if (field.type === 'email' && val) {
+        if (!validateEmail(val)) {
+          newErrors[field.name] = 'Email must be lowercase and contain @ and .com (e.g. name@domain.com)';
+        }
       } else if (field.type === 'tel' && val) {
-        const digitsOnly = val.replace(/\D/g, '');
-        if (digitsOnly.length < 10 || digitsOnly.length > 15) {
-          newErrors[field.name] = 'Please enter a valid phone number (10-15 digits)';
+        if (!validatePhoneNumber(val)) {
+          newErrors[field.name] = 'Please enter a valid phone number';
         }
       }
     });
@@ -188,12 +208,33 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
                             {field.label} {field.required && <span className="text-seppa-red">*</span>}
                           </label>
                           
-                          {field.type === 'textarea' ? (
+                          {field.type === 'tel' ? (
+                            <InternationalPhoneInput
+                              id={field.name}
+                              name={field.name}
+                              value={formData[field.name] || ''}
+                              onChange={(val) => handleInputChange(field.name, val)}
+                              onCountryChange={(_code, countryName) => handleCountryAutoSelect(countryName)}
+                              error={errors[field.name]}
+                              placeholder={field.placeholder || field.label}
+                              variant="dark"
+                            />
+                          ) : (field.name === 'country' || field.name === 'region' || field.name === 'location') ? (
+                            <CountrySelectDropdown
+                              id={field.name}
+                              name={field.name}
+                              value={formData[field.name] || ''}
+                              onChange={(val) => handleInputChange(field.name, val)}
+                              error={errors[field.name]}
+                              placeholder={field.placeholder || `Select ${field.label}`}
+                              variant="dark"
+                            />
+                          ) : field.type === 'textarea' ? (
                             <textarea 
                               id={field.name}
                               name={field.name}
                               value={formData[field.name] || ''}
-                              onChange={(e) => handleInputChange(field.name, e.target.value, field.type)}
+                              onChange={(e) => handleInputChange(field.name, e.target.value)}
                               placeholder={field.placeholder} 
                               rows={5}
                               suppressHydrationWarning={true}
@@ -205,7 +246,7 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
                                 id={field.name}
                                 name={field.name}
                                 value={formData[field.name] || ''}
-                                onChange={(e) => handleInputChange(field.name, e.target.value, field.type)}
+                                onChange={(e) => handleInputChange(field.name, e.target.value)}
                                 suppressHydrationWarning={true}
                                 className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors[field.name] ? 'border-red-400' : 'border-white/20'} text-white appearance-none focus:outline-none focus:ring-2 focus:ring-seppa-red focus:border-transparent transition shadow-sm backdrop-blur-sm`}
                               >
@@ -224,13 +265,13 @@ const EnquiryPageLayout: React.FC<EnquiryPageLayoutProps> = ({ data }) => {
                               id={field.name}
                               name={field.name}
                               value={formData[field.name] || ''}
-                              onChange={(e) => handleInputChange(field.name, e.target.value, field.type)}
+                              onChange={(e) => handleInputChange(field.name, e.target.value)}
                               placeholder={field.placeholder} 
                               suppressHydrationWarning={true}
                               className={`w-full px-6 py-4 rounded-full bg-white/10 border ${errors[field.name] ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red focus:border-transparent transition shadow-sm backdrop-blur-sm`} 
                             />
                           )}
-                          {errors[field.name] && (
+                          {field.type !== 'tel' && !(field.name === 'country' || field.name === 'region' || field.name === 'location') && errors[field.name] && (
                             <p className="text-red-400 text-xs mt-1.5 ml-2 font-medium">{errors[field.name]}</p>
                           )}
                         </div>

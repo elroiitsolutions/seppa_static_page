@@ -8,6 +8,11 @@ import bannerImg from '@/assets/packaging/generated/spirits_distillery_wide_1781
 import overviewImg from '@/assets/packaging/generated/premium_spirits_closeup_1781701569217.png';
 import wineProd from '@/assets/packaging/generated/wine_production_wide_1781701527332.png';
 
+import meth1 from '@/assets/pet/generated/pet_meth1_1782103277774.png';
+import meth2 from '@/assets/pet/generated/pet_meth2_1782103291753.png';
+import meth3 from '@/assets/pet/generated/pet_meth3_1782103305856.png';
+import meth4 from '@/assets/pet/generated/pet_meth4_1782103318966.png';
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -21,14 +26,10 @@ export default async function AlcoholSpiritsPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'alcohol-spirits' });
 
-  const getArray = (val: any): any[] => {
-    if (Array.isArray(val)) return val;
-    if (val !== null && typeof val === 'object') return Object.values(val);
-    return val ? [val] : [];
-  };
-
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/alcohol-spirits', locale);
+
+  const rawContentBlocks = t.has('contentBlocks') && Array.isArray(t.raw('contentBlocks')) ? t.raw('contentBlocks') : [];
 
   const pageData: PackagingPageData = {
     title: t('title'),
@@ -38,44 +39,95 @@ export default async function AlcoholSpiritsPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: getArray(t.raw('overviewsubDescription')),
+    overviewsubDescription: t.has('overviewsubDescription') && Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t('featuresSubtitle'),
-    features: getArray(t.raw('features')),
+    contentBlocks: rawContentBlocks.map((block: any, index: number) => ({
+      title: block.title,
+      paragraphs: block.paragraphs,
+      image1: [wineProd.src, bannerImg.src, overviewImg.src][index % 3] || wineProd.src,
+      reverse: index % 2 === 0,
+      bgClass: index % 2 === 1 ? "bg-light" : "bg-white",
+      layout: (block.paragraphs && block.paragraphs.length >= 3) ? ("stacked" as const) : undefined
+    })),
+    featuresTitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: (() => {
+      try {
+        const raw = t.raw('features');
+        if (Array.isArray(raw) && raw.length > 0) {
+          return raw.map((feature: any) => ({
+            title: feature.title,
+            description: feature.description
+          }));
+        }
+      } catch (e) {}
+      return undefined;
+    })(),
+    applicationsTitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsTitle') ? t('applicationsTitle') : undefined,
+    applicationsSubtitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
+    applications: (() => {
+      try {
+        const raw = t.raw('applications');
+        if (Array.isArray(raw) && raw.length > 0) {
+          return raw.map((app: any) => ({
+            title: app.title,
+            description: app.description
+          }));
+        }
+      } catch (e) {}
+      return undefined;
+    })(),
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
-      image: wineProd.src,
-      paragraphs: getArray(t.raw('whyChoose.paragraphs'))
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
+      image: wineProd.src
     },
     methodology: {
-      title: t('methodology.title'),
-      subtitle: t('methodology.subtitle'),
-      steps: getArray(t.raw('methodology.steps')).map((step: any, index: number) => {
-        const images = [wineProd.src, bannerImg.src, overviewImg.src, wineProd.src];
-        return { ...step, image: images[index] || "" };
-      }),
-      outro: getArray(t.raw('methodology.outro'))
+      badge: t.has('methodology.badge') ? t('methodology.badge') : (t.raw('methodology') as any)?.badge,
+      title: t.has('methodology.title') ? t('methodology.title') : (t.raw('methodology') as any)?.title,
+      subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : (t.raw('methodology') as any)?.subtitle,
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw) && raw.length > 0) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title || "",
+              description: step.description,
+              image: step.image || [meth1.src, meth2.src, meth3.src, meth4.src, wineProd.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: (() => {
+        try {
+          if (t.has('methodology.outro')) {
+            const rawOutro = t.raw('methodology.outro');
+            if (Array.isArray(rawOutro) && rawOutro.length > 0) return rawOutro;
+            if (typeof rawOutro === 'string' && rawOutro.trim()) return [rawOutro];
+          }
+          const rawMeth = t.raw('methodology') as any;
+          if (rawMeth && rawMeth.outro) {
+            if (Array.isArray(rawMeth.outro) && rawMeth.outro.length > 0) return rawMeth.outro;
+            if (typeof rawMeth.outro === 'string' && rawMeth.outro.trim()) return [rawMeth.outro];
+          }
+        } catch (e) {}
+        return undefined;
+      })()
     },
     faqTitle: t('faqTitle'),
-    faqs: getArray(t.raw('faqs')),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t('applicationsSubtitle'),
-    applications: getArray(t.raw('applications')),
-    contentBlocks: getArray(t.raw('contentBlocks')).map((block: any, index: number) => {
-      const images = [bannerImg.src];
-      return { ...block, paragraphs: getArray(block.paragraphs), image1: images[index] || "" };
-    })
+    faqs: t.raw('faqs')
   };
 
   const messages = await getMessages({ locale });
-
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <PackagingPageLayout data={pageData} locale={locale} />
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale} />
+      </div>
     </NextIntlClientProvider>
   );
 }

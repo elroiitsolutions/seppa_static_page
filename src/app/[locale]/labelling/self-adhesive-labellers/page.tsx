@@ -32,6 +32,8 @@ export default async function SelfAdhesiveLabellersPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/labelling/self-adhesive-labellers', locale);
 
+  const rawContentBlocks = t.has('contentBlocks') && Array.isArray(t.raw('contentBlocks')) ? t.raw('contentBlocks') : [];
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -40,56 +42,39 @@ export default async function SelfAdhesiveLabellersPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: (() => {
-      try {
-        const raw = t.raw('overviewsubDescription');
-        if (Array.isArray(raw)) {
-          return raw.map((paragraph, index) => (
-            <p key={index} className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12 mt-4">
-              {paragraph}
-            </p>
-          ));
-        }
-      } catch (e) {}
-      return undefined;
-    })(),
+    overviewsubDescription: t.has('overviewsubDescription') && Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
-    featuresTitle: t('featuresTitle'),
+    contentBlocks: rawContentBlocks.map((block: any, index: number) => ({
+      title: block.title,
+      paragraphs: block.paragraphs,
+      image1: [img3.src, overviewImg.src, over.src][index % 3] || img3.src,
+      reverse: index % 2 === 0,
+      bgClass: index % 2 === 1 ? "bg-light" : "bg-white",
+      layout: (block.paragraphs && block.paragraphs.length >= 3) ? ("stacked" as const) : undefined
+    })),
+    featuresTitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
     features: (() => {
       try {
         const raw = t.raw('features');
-        if (Array.isArray(raw)) {
+        if (Array.isArray(raw) && raw.length > 0) {
           return raw.map((feature: any) => ({
             title: feature.title,
             description: feature.description
           }));
         }
       } catch (e) {}
-      return [];
+      return undefined;
     })(),
-    applicationsTitle: t('applicationsTitle'),
+    applicationsTitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsTitle') ? t('applicationsTitle') : undefined,
+    applicationsSubtitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
     applications: (() => {
       try {
         const raw = t.raw('applications');
-        if (Array.isArray(raw)) {
+        if (Array.isArray(raw) && raw.length > 0) {
           return raw.map((app: any) => ({
             title: app.title,
             description: app.description
-          }));
-        }
-      } catch (e) {}
-      return [];
-    })(),
-    contentBlocks: (() => {
-      try {
-        const raw = t.raw('contentBlocks');
-        if (Array.isArray(raw)) {
-          return raw.map((block: any) => ({
-            title: block.title,
-            paragraphs: block.paragraphs,
-            image1: img3.src,
-            reverse: false,
-            bgClass: "bg-light"
           }));
         }
       } catch (e) {}
@@ -97,50 +82,48 @@ export default async function SelfAdhesiveLabellersPage({ params }: PageProps) {
     })(),
     whyChoose: {
       title: t('whyChoose.title'),
-      image: over.src,
-      paragraphs: (() => {
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
+      image: over.src
+    },
+    methodology: {
+      badge: t.has('methodology.badge') ? t('methodology.badge') : (t.raw('methodology') as any)?.badge,
+      title: t.has('methodology.title') ? t('methodology.title') : (t.raw('methodology') as any)?.title,
+      subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : (t.raw('methodology') as any)?.subtitle,
+      steps: (() => {
         try {
-          const raw = t.raw('whyChoose.paragraphs');
-          if (Array.isArray(raw)) {
-            return raw;
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw) && raw.length > 0) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title || "",
+              description: step.description,
+              image: step.image || [meth1.src, meth2.src, meth3.src, meth4.src, meth1.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: (() => {
+        try {
+          if (t.has('methodology.outro')) {
+            const rawOutro = t.raw('methodology.outro');
+            if (Array.isArray(rawOutro) && rawOutro.length > 0) return rawOutro;
+            if (typeof rawOutro === 'string' && rawOutro.trim()) return [rawOutro];
+          }
+          const rawMeth = t.raw('methodology') as any;
+          if (rawMeth && rawMeth.outro) {
+            if (Array.isArray(rawMeth.outro) && rawMeth.outro.length > 0) return rawMeth.outro;
+            if (typeof rawMeth.outro === 'string' && rawMeth.outro.trim()) return [rawMeth.outro];
           }
         } catch (e) {}
         return undefined;
       })()
     },
-    methodology: {
-      title: t('methodology.title'),
-      subtitle: t('methodology.subtitle'),
-      steps: (() => {
-        try {
-          const raw = t.raw('methodology.steps');
-          if (Array.isArray(raw)) {
-            return raw.map((step: any, index: number) => ({
-              title: step.title,
-              description: step.description,
-              image: [meth1.src, meth2.src, meth3.src, meth4.src, meth1.src][index] || meth1.src
-            }));
-          }
-        } catch (e) {}
-        return [];
-      })()
-    },
     faqTitle: t('faqTitle'),
-    faqs: (() => {
-      try {
-        const raw = t.raw('faqs');
-        if (Array.isArray(raw)) {
-          return raw.map((faq: any) => ({
-            question: faq.question,
-            answer: faq.answer
-          }));
-        }
-      } catch (e) {}
-      return [];
-    })()
+    faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

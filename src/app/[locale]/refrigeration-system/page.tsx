@@ -37,6 +37,22 @@ export default async function LocalizedRefrigerationSystemPage({ params }: Props
 
   const rawContentBlocks = (t.raw('contentBlocks') as any[]) || [];
 
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -55,34 +71,18 @@ export default async function LocalizedRefrigerationSystemPage({ params }: Props
       bgClass: index % 2 === 1 ? "bg-light" : "bg-white",
       layout: (block.paragraphs && block.paragraphs.length >= 4) ? ("stacked" as const) : undefined
     })),
-    featuresTitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresTitle') ? t('featuresTitle') : undefined,
-    featuresSubtitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
-    features: (() => {
-      try {
-        const raw = t.raw('features');
-        if (Array.isArray(raw) && raw.length > 0) {
-          return raw.map((feature: any) => ({
-            title: feature.title,
-            description: feature.description
-          }));
-        }
-      } catch (e) {}
-      return undefined;
-    })(),
-    applicationsTitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsTitle') ? t('applicationsTitle') : undefined,
-    applicationsSubtitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: (() => {
-      try {
-        const raw = t.raw('applications');
-        if (Array.isArray(raw) && raw.length > 0) {
-          return raw.map((app: any) => ({
-            title: app.title,
-            description: app.description
-          }));
-        }
-      } catch (e) {}
-      return undefined;
-    })(),
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
       description: t.has('whyChoose.description') ? t('whyChoose.description') : "",

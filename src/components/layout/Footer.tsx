@@ -12,10 +12,10 @@ import { useTranslations } from 'next-intl';
 
 const Footer: React.FC = () => {
   const t = useTranslations('footer');
-  const pathname = usePathname();
-  const isArabic = pathname.startsWith('/ar');
-  const isGerman = pathname.startsWith('/de');
-  
+  const pathname = usePathname() || '';
+  const locale = pathname.split('/')[1] || 'en';
+  const isArabic = locale === 'ar';
+
   const f = {
     subscribeNewsletter: t('subscribeNewsletter'),
     enterEmail: t('enterEmail'),
@@ -48,7 +48,17 @@ const Footer: React.FC = () => {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newsletterEmail.trim() || !/\S+@\S+\.\S+/.test(newsletterEmail.trim())) {
-      setNewsletterError(isArabic ? 'يرجى إدخال بريد إلكتروني صحيح' : 'Please enter a valid email');
+      setNewsletterError(
+        isArabic 
+          ? 'يرجى إدخال بريد إلكتروني صحيح' 
+          : locale === 'nl'
+          ? 'Voer een geldig e-mailadres in'
+          : locale === 'fr'
+          ? 'Veuillez entrer une adresse e-mail valide'
+          : locale === 'de'
+          ? 'Bitte geben Sie eine gültige E-Mail-Adresse ein'
+          : 'Please enter a valid email'
+      );
       return;
     }
     setNewsletterError('');
@@ -60,9 +70,8 @@ const Footer: React.FC = () => {
   };
 
   const getLink = (path: string) => {
-    if (path === '/') return isArabic ? '/ar' : isGerman ? '/de' : '/en';
-    const prefix = isArabic ? '/ar' : isGerman ? '/de' : '/en';
-    return `${prefix}${path}`;
+    if (!path || path === '/') return `/${locale}`;
+    return `/${locale}${path}`;
   };
 
   return (
@@ -75,7 +84,7 @@ const Footer: React.FC = () => {
         {/* Top Section: Logo & Newsletter */}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-16 pb-12 border-b border-white/10">
           <div className="shrink-0 flex items-center gap-3">
-            <Link href="/">
+            <Link href={getLink("/")}>
               <Image 
                 src={logoImg} 
                 alt="Seppa Solutions Logo" 
@@ -88,7 +97,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-heading font-bold">{f.subscribeNewsletter}</h3>
             {newsletterSubscribed ? (
               <div className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-6 py-3 rounded-lg text-sm font-medium">
-                ✓ {isArabic ? 'تم الاشتراك بنجاح!' : 'Subscribed successfully!'}
+                ✓ {isArabic ? 'تم الاشتراك بنجاح!' : locale === 'nl' ? 'Succesvol geabonneerd!' : locale === 'fr' ? 'Abonnement réussi !' : locale === 'de' ? 'Erfolgreich abonniert!' : 'Subscribed successfully!'}
               </div>
             ) : (
               <div className="flex flex-col">
@@ -146,7 +155,7 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-xl font-heading font-bold mb-8">{f.quickLinks}</h3>
               <ul className="space-y-4 text-gray-300 font-medium">
-                <li><Link href="/" className="hover:text-seppa-red transition">{f.home}</Link></li>
+                <li><Link href={getLink("/")} className="hover:text-seppa-red transition">{f.home}</Link></li>
                 <li><Link href={getLink("/about-us")} className="hover:text-seppa-red transition">{f.aboutUs}</Link></li>
                 <li><Link href={getLink("/blog")} className="hover:text-seppa-red transition">{f.ourBlog}</Link></li>
                 <li><Link href={getLink("/contact-us")} className="hover:text-seppa-red transition">{f.contactUs}</Link></li>
@@ -181,7 +190,7 @@ const Footer: React.FC = () => {
                   <div className="text-seppa-red mt-1 shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                   </div>
-                  <a href="mailto:info@domainname.com" className="hover:text-seppa-red transition">info@seppasolutions.com</a>
+                  <a href="mailto:info@seppasolutions.com" className="hover:text-seppa-red transition">info@seppasolutions.com</a>
                 </li>
                 <li className="flex items-start gap-4">
                   <div className="text-seppa-red mt-1 shrink-0">
@@ -200,7 +209,7 @@ const Footer: React.FC = () => {
           <div className="text-gray-400 font-medium text-sm md:text-base">
             {f.copyright}{' '}
             <span className="text-white hover:text-seppa-red transition cursor-pointer">
-              <Link href="/">{f.seppaSolutions}</Link>
+              <Link href={getLink("/")}>{f.seppaSolutions}</Link>
             </span>
             . {f.allRightsReserved}
           </div>

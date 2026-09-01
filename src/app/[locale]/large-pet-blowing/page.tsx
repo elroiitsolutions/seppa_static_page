@@ -13,8 +13,6 @@ import over from '@/assets/processing/generated/processing_whychoose_17817591826
 
 import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.png';
 import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
-import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
-import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -33,6 +31,22 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/large-pet-blowing', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -49,14 +63,12 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
       return [];
     })(),
     overviewImage: overviewImg.src,
-    features: (() => {
-      try {
-        const raw = t.raw('features');
-        if (Array.isArray(raw)) return raw;
-      } catch (e) {}
-      return [];
-    })(),
-    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
     contentBlocks: (() => {
       try {
         const raw = t.raw('contentBlocks');
@@ -72,18 +84,15 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
       } catch (e) {}
       return [];
     })(),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: (() => {
-      try {
-        const raw = t.raw('applications');
-        if (Array.isArray(raw)) return raw;
-      } catch (e) {}
-      return [];
-    })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: (() => {
         try {
           const raw = t.raw('whyChoose.paragraphs');
@@ -103,13 +112,13 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
             return raw.map((step: any, index: number) => ({
               title: step.title,
               description: step.description,
-              image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
+              image: [meth1.src, meth2.src][index] || meth1.src
             }));
           }
         } catch (e) {}
         return [];
       })(),
-      outro: t.has('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : []) : undefined
+      outro: undefined
     },
     faqTitle: t('faqTitle'),
     faqs: (() => {
@@ -121,7 +130,7 @@ export default async function LargePetBlowingPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

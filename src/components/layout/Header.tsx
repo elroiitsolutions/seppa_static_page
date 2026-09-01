@@ -150,23 +150,31 @@ const Header: React.FC = () => {
   }, [isArabic, isGerman]);
 
   useEffect(() => {
-    let ticking = false;
+    let rafId: number | null = null;
 
     const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const isScrolled = window.scrollY > 50;
-          setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
-          ticking = false;
+      if (rafId !== null) return;
+
+      rafId = window.requestAnimationFrame(() => {
+        rafId = null;
+        const currentY = window.scrollY;
+        setScrolled((prev) => {
+          if (!prev && currentY > 80) return true;
+          if (prev && currentY < 20) return false;
+          return prev;
         });
-        ticking = true;
-      }
+      });
     };
 
-    handleScroll();
+    // Initial check on mount
+    const currentY = window.scrollY;
+    setScrolled(currentY > 80);
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
+      if (rafId !== null) {
+        window.cancelAnimationFrame(rafId);
+      }
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);

@@ -37,7 +37,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
-  const [can, pet, glass, pouch, brick, gable, drum, automatic, semi, mineral, softdrink, beer, wine, beerPage, juice, juiceprocessing, labelling, ldp, sauce, softdrinkline, completeline, wineline, dairyline, sauceline, processing, blowing, preform, unscrambler, rfc, kombo, elevators, liquid, batch, handling, shrink, carton, pallet, stretch, stacker, refrigeration, dryer, washers, glasswasher, glasscapper, pasteurizers, decapper, largefiller, servicepackaging, servicespareparts, servicemaintenance, servicelineimprovement, serviceaudits, servicetraining, enquiry, videos, home, petjars, stillwater, mineralwater, alkalinewater, sparklingwater, structuredwater, flavoredwater, lineconversions, juicenectars, isotonics, teas, alcoholSpirits, liquorSpiritsLineMachines, rt, aboutUs, tunnelcooler, selfadhesivelabellers, watersparkling, hotgluelabelling, oilchillers, hydraulicchillers, coolantchillers, coolantchillerip, smartscrew, watercooledscrollchiller, aircooledscrollchiller, energyefficientchillers, semiautomaticpetblowing, softdrinkpetblowing, milkjuicepetblowing, householdcleaningpetblowing, oilketchuppetblowing, largepetblowing, electricpetblowing, rotarypetblowing, pneumaticpetblowing, ssbsl10, ssbsl20, ssbsl40, ssbsl60, ssbsle40, ssbsle60, ssbsle80, ssbsle100, ssbsle120, ssbsle150, ssbr6, ssbr8, ssbr10, ssbr12, ssbr16, ssb05a, ssb05b, ssb05c, ssb20c, ssb2d, ssb2dat, ssb4d, ssb4dat, investors, dealers, contactUs, header, footer] = await Promise.all([
+  const [can, pet, glass, pouch, brick, gable, drum, automatic, semi, mineral, softdrink, beer, wine, beerPage, juice, juiceprocessing, labelling, ldp, sauce, softdrinkline, completeline, wineline, dairyline, sauceline, processing, blowing, preform, unscrambler, rfc, kombo, elevators, liquid, batch, handling, shrink, carton, pallet, stretch, stacker, refrigeration, dryer, washers, glasswasher, glasscapper, pasteurizers, decapper, largefiller, servicepackaging, servicespareparts, servicemaintenance, servicelineimprovement, serviceaudits, servicetraining, enquiry, videos, home, petjars, stillwater, mineralwater, alkalinewater, sparklingwater, structuredwater, flavoredwater, lineconversions, juicenectars, isotonics, teas, alcoholSpirits, liquorSpiritsLineMachines, rt, aboutUs, tunnelcooler, selfadhesivelabellers, watersparkling, hotgluelabelling, oilchillers, hydraulicchillers, coolantchillers, coolantchillerip, smartscrew, watercooledscrollchiller, aircooledscrollchiller, energyefficientchillers, semiautomaticpetblowing, softdrinkpetblowing, milkjuicepetblowing, householdcleaningpetblowing, oilketchuppetblowing, largepetblowing, electricpetblowing, pharmacosmeticspetblowing, rotarypetblowing, pneumaticpetblowing, ssbsl10, ssbsl20, ssbsl40, ssbsl60, ssbsle40, ssbsle60, ssbsle80, ssbsle100, ssbsle120, ssbsle150, ssbr6, ssbr8, ssbr10, ssbr12, ssbr16, ssb05a, ssb05b, ssb05c, ssb20c, ssb2d, ssb2dat, ssb4d, ssb4dat, investors, dealers, contactUs, header, footer] = await Promise.all([
     loadNamespace(locale, 'can'),
     loadNamespace(locale, 'pet'),
     loadNamespace(locale, 'glass'),
@@ -128,6 +128,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     loadNamespace(locale, 'oilketchuppetblowing'),
     loadNamespace(locale, 'largepetblowing'),
     loadNamespace(locale, 'electricpetblowing'),
+    loadNamespace(locale, 'pharmacosmeticspetblowing'),
     loadNamespace(locale, 'rotarypetblowing'),
     loadNamespace(locale, 'pneumaticpetblowing'),
     loadNamespace(locale, 'ssbsl10'),
@@ -253,6 +254,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       oilketchuppetblowing,
       largepetblowing,
       electricpetblowing,
+      pharmacosmeticspetblowing,
       rotarypetblowing,
       pneumaticpetblowing,
       ssbsl10,

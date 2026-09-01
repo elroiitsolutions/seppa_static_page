@@ -30,6 +30,22 @@ export default async function HydraulicChillersPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/equipments/hydraulic-chillers', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -52,37 +68,33 @@ export default async function HydraulicChillersPage({ params }: PageProps) {
       return undefined;
     })(),
     overviewImage: overviewImg.src,
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t('featuresSubtitle'),
-    features: (() => {
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
+    contentBlocks: (() => {
       try {
-        const raw = t.raw('features');
+        const raw = t.raw('contentBlocks');
         if (Array.isArray(raw)) {
-          return raw.map((feature: any) => ({
-            title: feature.title,
-            description: feature.description
+          return raw.map((block: any) => ({
+            title: block.title,
+            paragraphs: block.paragraphs
           }));
         }
       } catch (e) {}
       return [];
     })(),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t('applicationsSubtitle'),
-    applications: (() => {
-      try {
-        const raw = t.raw('applications');
-        if (Array.isArray(raw)) {
-          return raw.map((app: any) => ({
-            title: app.title,
-            description: app.description
-          }));
-        }
-      } catch (e) {}
-      return [];
-    })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       image: over.src,
       paragraphs: (() => {
         try {
@@ -96,7 +108,7 @@ export default async function HydraulicChillersPage({ params }: PageProps) {
     },
     methodology: {
       title: t('methodology.title'),
-      subtitle: t('methodology.subtitle'),
+      subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined,
       steps: (() => {
         try {
           const raw = t.raw('methodology.steps');
@@ -126,11 +138,13 @@ export default async function HydraulicChillersPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <PackagingPageLayout data={pageData} />
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale} />
+      </div>
     </NextIntlClientProvider>
   );
 }

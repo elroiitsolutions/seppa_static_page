@@ -35,6 +35,22 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/blowing/rotary-high-speed-systems', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -51,6 +67,12 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
       return [];
     })(),
     overviewImage: overviewImg.src,
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
     contentBlocks: (() => {
       try {
         const raw = t.raw('contentBlocks');
@@ -58,26 +80,23 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
           return raw.map((block: any, index: number) => ({
             title: block.title,
             paragraphs: block.paragraphs,
-            image1: [img1.src, img2.src][index] || undefined,
-            reverse: [true, false][index] || false,
-            bgClass: [undefined, "bg-light"][index] || undefined
+            image1: [img1.src, img2.src, meth1.src, over.src][index] || undefined,
+            reverse: [true, false, true, false][index] || false,
+            bgClass: [undefined, "bg-light", undefined, "bg-light"][index] || undefined
           }));
         }
       } catch (e) {}
       return [];
     })(),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: (() => {
-      try {
-        const raw = t.raw('applications');
-        if (Array.isArray(raw)) return raw;
-      } catch (e) {}
-      return [];
-    })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: (() => {
         try {
           const raw = t.raw('whyChoose.paragraphs');
@@ -97,7 +116,7 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
             return raw.map((step: any, index: number) => ({
               title: step.title,
               description: step.description,
-              image: [meth1.src, meth2.src, meth3.src, meth4.src, meth1.src][index] || meth1.src
+              image: [meth1.src, meth2.src, meth3.src, meth4.src, meth1.src, meth2.src][index] || meth1.src
             }));
           }
         } catch (e) {}
@@ -106,7 +125,7 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
       outro: (() => {
         try {
           const raw = t.raw('methodology.outro');
-          if (Array.isArray(raw)) return raw;
+          if (Array.isArray(raw) && raw.length > 0) return raw;
         } catch (e) {}
         return undefined;
       })()
@@ -144,7 +163,7 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
     },
     {
       title: "Seppa SSB-R16",
-      img: img2.src,
+      img: meth4.src,
       link: `/${locale}/blowing/rotary-high-speed-systems/ssb-r16`
     }
   ];
@@ -154,23 +173,24 @@ export default async function RotaryHighSpeedPage({ params }: PageProps) {
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
         <PackagingPageLayout data={pageData} locale={locale}>
+          {/* Custom Section 2: Comprehensive Lines */}
           <section className="py-16 bg-white relative">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
                 <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
                   <span className="text-xs font-semibold text-[#101934] uppercase tracking-wider">
-                    {locale === 'ar' ? 'موديلات الأنظمة الدوارة' : (locale === 'nl' ? 'ROTERENDE MODELOPTIES' : 'ROTARY SYSTEM MODELS')}
+                    {locale === 'ar' ? 'حلول الخطوط الكاملة' : (locale === 'nl' ? 'VOLLEDIGE LIJNOPLOSSINGEN' : (locale === 'de' ? 'KOMPLETTE LINIENLÖSUNGEN' : (locale === 'fr' ? 'SOLUTIONS DE LIGNES COMPLÈTES' : 'COMPLETE LINE SOLUTIONS')))}
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-[#101934] leading-tight max-w-4xl mx-auto">
-                  {locale === 'ar' ? 'سلسلة ماكينات نفخ زجاجات PET الدوارة' : (locale === 'nl' ? 'Roterende High-Speed PET Blaasmachine Series' : 'Rotary PET Bottle Blowing Machine Series')}
+                  {locale === 'ar' ? 'أنظمة النفخ عالية السرعة Rotatives' : (locale === 'nl' ? 'Rotatieve Hoge Snelheid Blaassystemen' : (locale === 'de' ? 'Hochgeschwindigkeits-Rotationsblasformen' : (locale === 'fr' ? 'Systèmes de Soufflage Rotatifs Haute Vitesse' : 'Rotary High Speed Blowing Systems')))}
                 </h2>
               </div>
 
-              <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {lineOptions.map((item, idx) => (
-                  <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[370px]">
+                  <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block">
                     <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-6 left-6 right-6">

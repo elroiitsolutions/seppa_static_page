@@ -36,6 +36,22 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/electric-pet-blowing', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -52,6 +68,12 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
       return [];
     })(),
     overviewImage: overviewImg.src,
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
     contentBlocks: (() => {
       try {
         const raw = t.raw('contentBlocks');
@@ -67,9 +89,15 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
       } catch (e) {}
       return [];
     })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: (() => {
         try {
           const raw = t.raw('whyChoose.paragraphs');
@@ -88,7 +116,7 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
             return raw.map((step: any, index: number) => ({
               title: step.title,
               description: step.description,
-              image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
+              image: [meth1.src, meth2.src, meth3.src, meth4.src, meth1.src, meth2.src][index] || meth1.src
             }));
           }
         } catch (e) {}
@@ -97,7 +125,7 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
       outro: (() => {
         try {
           const raw = t.raw('methodology.outro');
-          if (Array.isArray(raw)) return raw;
+          if (Array.isArray(raw) && raw.length > 0) return raw;
         } catch (e) {}
         return undefined;
       })()
@@ -112,29 +140,39 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
     })()
   };
 
-     const lineOptions = [
-      {
-        title: locale === 'ar' ? "نافخ PET" : "Seppa SSB-SL-10",
-        img: img1.src,
-        link: `/${locale}/blowing/pneumatic/ssb-sl-10`
-      },
-      {
-        title: locale === 'ar' ? "تكنولوجيا المعالجة" : "Seppa SSB-SL-20",
-        img: meth1.src,
-        link: `/${locale}/blowing/pneumatic/ssb-sl-20`
-      },
-      {
-        title: locale === 'ar' ? "خط تعبئة PET" : "Seppa SSB-SL-40",
-        img: meth2.src,
-        link: `/${locale}/blowing/pneumatic/ssb-sl-40`
-      },
-      {
-        title: locale === 'ar' ? "خط تعبئة الزجاج" : "Seppa SSB-SL-60",
-        img: meth3.src,
-        link: `/${locale}/blowing/pneumatic/ssb-sl-60`
-      }
-    ];
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  const lineOptions = [
+    {
+      title: "Seppa SSB-SLE-40",
+      img: img1.src,
+      link: `/${locale}/electric-pet-blowing/ssb-sle-40`
+    },
+    {
+      title: "Seppa SSB-SLE-60",
+      img: meth1.src,
+      link: `/${locale}/electric-pet-blowing/ssb-sle-60`
+    },
+    {
+      title: "Seppa SSB-SLE-80",
+      img: meth2.src,
+      link: `/${locale}/electric-pet-blowing/ssb-sle-80`
+    },
+    {
+      title: "Seppa SSB-SLE-100",
+      img: meth3.src,
+      link: `/${locale}/electric-pet-blowing/ssb-sle-100`
+    },
+    {
+      title: "Seppa SSB-SLE-120",
+      img: meth3.src,
+      link: `/${locale}/electric-pet-blowing/ssb-sle-120`
+    },
+    {
+      title: "Seppa SSB-SLE-150",
+      img: meth3.src,
+      link: `/${locale}/electric-pet-blowing/ssb-sle-150`
+    }
+  ];
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
@@ -147,11 +185,11 @@ export default async function ElectricPetBlowingPage({ params }: PageProps) {
                 <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
                   <span className="text-xs font-semibold text-[#101934] uppercase tracking-wider">
-                    {locale === 'ar' ? 'حلول الخطوط الكاملة' : (locale === 'nl' ? 'VOLLEDIGE LIJNOPLOSSINGEN' : 'COMPLETE LINE SOLUTIONS')}
+                    {locale === 'ar' ? 'حلول الخطوط الكاملة' : (locale === 'nl' ? 'VOLLEDIGE LIJNOPLOSSINGEN' : (locale === 'de' ? 'KOMPLETTE LINIENLÖSUNGEN' : (locale === 'fr' ? 'SOLUTIONS DE LIGNES COMPLÈTES' : 'COMPLETE LINE SOLUTIONS')))}
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-[#101934] leading-tight max-w-4xl mx-auto">
-                  {locale === 'ar' ? 'خطوط معالجة المشروبات والألبان الشاملة' : (locale === 'nl' ? 'Volledige Lijnoplossingen voor Dranken en Zuivel' : 'Comprehensive Beverage & Dairy Processing Lines')}
+                  {locale === 'ar' ? 'خطوط معالجة المشروبات والألبان الشاملة' : (locale === 'nl' ? 'Volledige Lijnoplossingen voor Dranken en Zuivel' : (locale === 'de' ? 'Umfassende Getränke- und Molkereiverarbeitungslinien' : (locale === 'fr' ? 'Lignes de Traitement Complètes pour Boissons et Produits Laitiers' : 'Comprehensive Beverage & Dairy Processing Lines')))}
                 </h2>
               </div>
 

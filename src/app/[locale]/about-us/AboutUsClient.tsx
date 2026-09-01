@@ -40,6 +40,10 @@ interface AboutUsClientProps {
     title: string;
     paragraphs: any[];
   };
+  industriesText?: {
+    title: string;
+    paragraphs: any[];
+  };
   equipmentFeatures: any[];
   industryFeatures: any[];
   faqs: any[];
@@ -60,6 +64,7 @@ export default function AboutUsClient({
   whoWeAre,
   whatWeBuild,
   expertise,
+  industriesText,
   equipmentFeatures,
   industryFeatures,
   faqs,
@@ -90,46 +95,64 @@ export default function AboutUsClient({
         locale={locale}
       />
 
-      {/* What We Build / الرسالة والرؤية */}
+      {/* What We Build */}
       <ContentBlock
         title={whatWeBuild.title}
         paragraphs={whatWeBuild.paragraphs}
         image1={whatWeBuildImg.src}
         reverse={true}
         bgClass="bg-light"
+        layout={whatWeBuild.paragraphs && whatWeBuild.paragraphs.length >= 3 ? "stacked" : undefined}
       />
 
-      {/* Our Expertise / خبرتنا في حلول معالجة المشروبات */}
-      {expertise.paragraphs.length > 0 && (
+      {/* Our Expertise / Équipements que nous fournissons */}
+      {expertise.paragraphs && expertise.paragraphs.length > 0 && (
         <ContentBlock
           title={expertise.title}
           paragraphs={expertise.paragraphs}
           image1={whyChooseImg.src}
           reverse={false}
           bgClass="bg-white"
+          layout={expertise.paragraphs.length >= 3 ? "stacked" : undefined}
         />
       )}
 
-      {/* Equipment We Supply */}
-      <FeaturesSection
-        badge={isAr ? "المعدات" : "Equipment"}
-        title={translations.equipmentTitle}
-        subtitle={translations.equipmentSubtitle}
-        features={equipmentFeatures}
-        columns={3}
-        bgClass="bg-[#fdfbf6] m-3 rounded-2xl relative"
-      />
+      {/* Equipment We Supply (Features) */}
+      {equipmentFeatures && equipmentFeatures.length > 0 && (
+        <FeaturesSection
+          badge={isAr ? "المعدات" : "Equipment"}
+          title={translations.equipmentTitle}
+          subtitle={translations.equipmentSubtitle}
+          features={equipmentFeatures}
+          columns={3}
+          bgClass="bg-[#fdfbf6] m-3 rounded-2xl relative"
+        />
+      )}
 
-      {/* Industries We Serve */}
-      <FeaturesSection
-        badge={isAr ? "الصناعات" : "Industries"}
-        title={translations.industriesTitle}
-        subtitle={translations.industriesSubtitle}
-        features={industryFeatures}
-        columns={4}
-        centerLastRow={true}
-        bgClass="bg-white"
-      />
+      {/* Industries We Serve (Features) */}
+      {industryFeatures && industryFeatures.length > 0 && (
+        <FeaturesSection
+          badge={isAr ? "الصناعات" : "Industries"}
+          title={translations.industriesTitle}
+          subtitle={translations.industriesSubtitle}
+          features={industryFeatures}
+          columns={4}
+          centerLastRow={true}
+          bgClass="bg-white"
+        />
+      )}
+
+      {/* Industries Text Block / Secteurs que nous desservons */}
+      {industriesText?.paragraphs && industriesText.paragraphs.length > 0 && (
+        <ContentBlock
+          title={industriesText.title}
+          paragraphs={industriesText.paragraphs}
+          image1={whatWeBuildImg.src}
+          reverse={true}
+          bgClass="bg-light"
+          layout={industriesText.paragraphs.length >= 3 ? "stacked" : undefined}
+        />
+      )}
 
       {/* Why Manufacturers Choose SEPPA */}
       <PackagingWhyChooseUs
@@ -147,6 +170,7 @@ export default function AboutUsClient({
           image1={whatWeBuildImg.src}
           reverse={true}
           bgClass="bg-light"
+          layout={whyChooseText.paragraphs.length >= 3 ? "stacked" : undefined}
         />
       )}
 
