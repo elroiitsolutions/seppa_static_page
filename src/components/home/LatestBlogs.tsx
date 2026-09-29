@@ -20,13 +20,21 @@ import enHome from '@/messages/en/home.json';
 import { usePathname } from 'next/navigation';
 
 const LatestBlogsContent = ({ getT, isArabic, heading, tag, selected_blogs, layout = 'grid' }: any) => {
+  const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
   const blogs = selected_blogs && selected_blogs.length > 0 
-    ? selected_blogs.map((b: any) => ({
-        title: b.title || 'Untitled Blog',
-        date: b.publishedAt ? new Date(b.publishedAt).toLocaleDateString() : 'Recent',
-        image: b.hero?.background_image?.url || "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg",
-        url: b.full_path || '/blog'
-      }))
+    ? selected_blogs.map((b: any) => {
+        const rawImg = b.hero?.background_image?.url || b.image?.url;
+        const image = rawImg 
+          ? (rawImg.startsWith('http') || rawImg.startsWith('//') ? rawImg : `${strapiBase}${rawImg.startsWith('/') ? '' : '/'}${rawImg}`)
+          : "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg";
+
+        return {
+          title: b.hero?.title || b.title || 'Untitled Blog',
+          date: b.publishedAt ? new Date(b.publishedAt).toLocaleDateString() : 'Recent',
+          image,
+          url: b.full_path || '/blog'
+        };
+      })
     : [
         {
           title: getT('blog1Title'),

@@ -180,8 +180,7 @@ const Header: React.FC = () => {
   }, []);
 
   // Dynamic header classes - sticky behavior across all viewports
-  const isBlogPage = pathname.includes('/blog') && !pathname.endsWith('/blog') && !pathname.endsWith('/blog/');
-  const isSolid = scrolled || isBlogPage;
+  const isSolid = scrolled;
 
   const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-3 sm:px-6 lg:px-8 ${isSolid
       ? 'w-full top-0 bg-seppa-blue shadow-lg py-2.5 lg:py-3.5 rounded-none'

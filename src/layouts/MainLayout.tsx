@@ -27,7 +27,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   }, [pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen max-w-[100vw] overflow-x-hidden" style={{ minHeight: '100dvh' }}>
+    <div className="flex flex-col min-h-screen max-w-[100vw]" style={{ minHeight: '100dvh' }}>
       <FloatingActions />
       <div className="flex flex-col flex-grow">
         <MagicCursor />

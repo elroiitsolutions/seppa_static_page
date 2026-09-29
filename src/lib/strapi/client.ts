@@ -2,16 +2,19 @@ import qs from 'qs';
 
 export const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
 
-export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
-  // Strapi backend is not used, short-circuit fetch calls to avoid build errors.
-  return null;
-
+export async function fetchAPI(path: string, urlParamsObject = {}, options: RequestInit = {}) {
   // Merge default and user options
-  const mergedOptions = {
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.STRAPI_API_TOKEN}`,
-    },
+  const headers: Record<string, string> = {
+    'Content-Type': 'application/json',
+    ...(options.headers as Record<string, string> || {}),
+  };
+
+  if (process.env.STRAPI_API_TOKEN) {
+    headers['Authorization'] = `Bearer ${process.env.STRAPI_API_TOKEN}`;
+  }
+
+  const mergedOptions: RequestInit = {
+    headers,
     ...options,
   };
 
@@ -19,20 +22,22 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options = {})
   const queryString = qs.stringify(urlParamsObject, { encodeValuesOnly: true });
   const requestUrl = `${STRAPI_URL}/api${path}${queryString ? `?${queryString}` : ''}`;
 
-
   // Trigger API call
   try {
-    const response = await fetch(requestUrl, mergedOptions);
+    const response = await fetch(requestUrl, {
+      ...mergedOptions,
+      next: { revalidate: 60 } // Automatically cache & revalidate every 60s
+    });
 
     // Handle response
     if (!response.ok) {
-      console.error(`Error fetching ${requestUrl}: ${response.statusText}`);
+      console.warn(`Strapi request warning for ${requestUrl}: ${response.status} ${response.statusText}`);
       return null;
     }
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error(`Fetch error for ${requestUrl}:`, error);
+    console.warn(`Fetch error for ${requestUrl}:`, error);
     return null;
   }
 }
@@ -110,3 +115,18 @@ export async function getAllBlogs(locale: string = 'en') {
   const res = await fetchAPI('/pages', query);
   return res?.data || [];
 }
+
+export async function getAllPageSlugs(): Promise<string[]> {
+  const res = await fetchAPI('/pages', {
+    fields: ['full_path'],
+    pagination: { pageSize: 200 },
+  });
+
+  if (res && res.data && Array.isArray(res.data)) {
+    return res.data
+      .map((item: any) => item.full_path ? item.full_path.replace(/^\/+/, '') : '')
+      .filter(Boolean);
+  }
+  return [];
+}
+

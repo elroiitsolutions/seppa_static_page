@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import PackagingPageLayout from '@/components/packaging/PackagingPageLayout';
 import BlogTemplate from '@/components/templates/BlogTemplate';
-import { getPageBySlug } from '@/lib/strapi/client'; 
+import { getPageBySlug, getAllPageSlugs } from '@/lib/strapi/client'; 
 
 import { routing } from '@/i18n/routing';
 
@@ -15,6 +15,10 @@ interface Props {
 export async function generateStaticParams() {
   const fallbackSlugs = [
     'dummy-slug',
+    'can/blog/pet-vs-glass-vs-aluminium-cans',
+    'can/blog/innovations-in-can-filling',
+    'pet/blog/next-gen-pet-stretch-blow-moulding',
+    'mineral-water/blog/maintaining-purity-in-mineral-water-bottling',
     'alcohol-spirits-pet-blowing',
     'pharma-cosmetics-pet-blowing',
     'blowing/electric/ssb-sle-40',
@@ -29,12 +33,24 @@ export async function generateStaticParams() {
     'blowing/pneumatic/ssb-sl-60'
   ];
 
-  return routing.locales.flatMap((locale) =>
-    fallbackSlugs.map((slugStr) => ({
-      locale,
-      slug: slugStr.split('/'),
-    }))
-  );
+  try {
+    const cmsSlugs = await getAllPageSlugs();
+    const allSlugs = Array.from(new Set([...fallbackSlugs, ...cmsSlugs]));
+
+    return routing.locales.flatMap((locale) =>
+      allSlugs.map((slugStr) => ({
+        locale,
+        slug: slugStr.split('/'),
+      }))
+    );
+  } catch (e) {
+    return routing.locales.flatMap((locale) =>
+      fallbackSlugs.map((slugStr) => ({
+        locale,
+        slug: slugStr.split('/'),
+      }))
+    );
+  }
 }
 
 export default async function CatchAllPage({ params }: Props) {
