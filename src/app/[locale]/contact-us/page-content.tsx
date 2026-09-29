@@ -8,6 +8,7 @@ import bannerImg from '@/assets/about-us/generated/header.png';
 import SuccessModal from '@/components/ui/SuccessModal';
 import InternationalPhoneInput, { validatePhoneNumber, validateEmail, formatEmailInput, validateName, formatNameInput } from '@/components/ui/InternationalPhoneInput';
 import CountrySelectDropdown from '@/components/ui/CountrySelectDropdown';
+import { usePathname, useRouter } from 'next/navigation';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -32,6 +33,9 @@ interface Office {
 const ContactUs: React.FC = () => {
   const t = useTranslations('contactUs');
   const offices = t.raw('offices') as Office[];
+  const pathname = usePathname();
+  const router = useRouter();
+  const locale = pathname?.split('/')[1] || 'en';
 
   const [activeOffice, setActiveOffice] = React.useState<Office>(offices[0]);
   const [expandedCountries, setExpandedCountries] = React.useState<string[]>([offices[0].country]);
@@ -66,7 +70,7 @@ const ContactUs: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
@@ -95,11 +99,27 @@ const ContactUs: React.FC = () => {
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('/api/submit-enquiry.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_type: 'contact',
+          full_name: formData.name,
+          email: formData.email,
+          phone_number: formData.phone,
+          location: formData.location,
+          message: formData.message,
+          page_url: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      });
+    } catch (err) {
+      console.error('Failed to submit contact enquiry:', err);
+    } finally {
       setIsSubmitting(false);
-      setShowSuccessModal(true);
       setFormData({ name: '', email: '', phone: '', location: '', message: '' });
-    }, 600);
+      router.push(`/${locale}/thank-you`);
+    }
   };
 
   const groupedOffices = React.useMemo(() => {
@@ -113,12 +133,6 @@ const ContactUs: React.FC = () => {
 
   return (
     <div className="bg-gray-50">
-      <SuccessModal 
-        isOpen={showSuccessModal} 
-        onClose={() => setShowSuccessModal(false)} 
-        title={t('successTitle')}
-        message={t('successMsg')}
-      />
       <PageHeader 
         title={t('title')} 
         breadcrumbs={[{ name: t('breadcrumbsHome'), path: '/' }, { name: t('breadcrumbsContact') }]} 
@@ -228,6 +242,7 @@ const ContactUs: React.FC = () => {
                           error={errors.phone}
                           placeholder={t('placeholderPhone')}
                           variant="dark"
+                          locale={locale}
                         />
                       </div>
                       <div>
@@ -237,6 +252,7 @@ const ContactUs: React.FC = () => {
                           error={errors.location}
                           placeholder={t('placeholderLocation') || 'Select Country *'}
                           variant="dark"
+                          locale={locale}
                         />
                       </div>
                     </div>

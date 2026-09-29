@@ -3,17 +3,17 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import enEnquiry from '@/messages/en/enquiry.json';
 import arEnquiry from '@/messages/ar/enquiry.json';
-import SuccessModal from '@/components/ui/SuccessModal';
 import InternationalPhoneInput, { validatePhoneNumber, validateEmail, formatEmailInput, validateName, formatNameInput } from '@/components/ui/InternationalPhoneInput';
 import CountrySelectDropdown from '@/components/ui/CountrySelectDropdown';
 
 const ScrollEnquiryModal: React.FC = () => {
   const pathname = usePathname();
-  const isArabic = pathname.startsWith('/ar');
-  const isDe = pathname.startsWith('/de');
+  const router = useRouter();
+  const locale = pathname?.split('/')[1] === 'ar' ? 'ar' : 'en';
+  const isArabic = locale === 'ar';
 
   const getT = (key: string) => {
     const keys = key.split('.');
@@ -101,9 +101,7 @@ const ScrollEnquiryModal: React.FC = () => {
     }
   };
 
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
@@ -138,12 +136,29 @@ const ScrollEnquiryModal: React.FC = () => {
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('/api/submit-enquiry.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_type: 'scroll',
+          full_name: formData.name,
+          phone_number: formData.phone,
+          email: formData.email,
+          country: formData.country,
+          city: formData.city,
+          message: formData.message,
+          page_url: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      });
+    } catch (err) {
+      console.error('Failed to submit scroll enquiry:', err);
+    } finally {
       setIsSubmitting(false);
       setIsOpen(false);
-      setShowSuccessModal(true);
       setFormData({ name: '', email: '', phone: '', country: '', city: '', message: '' });
-    }, 500);
+      router.push(`/${locale}/thank-you`);
+    }
   };
 
   const handleClose = () => {
@@ -153,12 +168,6 @@ const ScrollEnquiryModal: React.FC = () => {
 
   return (
     <>
-      <SuccessModal 
-        isOpen={showSuccessModal} 
-        onClose={() => setShowSuccessModal(false)} 
-        title={isArabic ? "شكراً لاستفسارك!" : "Thank You!"}
-        message={isArabic ? "تم استلام طلبك بنجاح وسنتواصل معك قريباً." : "Your enquiry has been received. Our team will contact you shortly."}
-      />
       <AnimatePresence>
         {isOpen && (
           <div className="fixed inset-0 z-[999] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
@@ -194,7 +203,7 @@ const ScrollEnquiryModal: React.FC = () => {
               <div className="absolute top-0 right-0 w-48 h-48 bg-seppa-red rounded-full mix-blend-multiply filter blur-3xl opacity-30 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#cda262] rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
-              <div className="relative z-10 p-5 sm:p-8 text-start overflow-y-auto">
+              <div className="relative z-10 p-5 sm:p-8 text-start overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                 <h3 className="text-2xl sm:text-3xl font-bold font-heading text-white mb-2">{isArabic ? "طلب تسعيرة" : "Request a Quote"}</h3>
                 <p className="text-gray-300 text-sm mb-6">
                   {isArabic 
@@ -240,6 +249,7 @@ const ScrollEnquiryModal: React.FC = () => {
                         placeholder={isArabic ? "رقم الهاتف *" : "Phone Number *"}
                         variant="dark"
                         locale={isArabic ? 'ar' : 'en'}
+                        popoverAlign="right"
                       />
                     </div>
                   </div>

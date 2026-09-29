@@ -91,6 +91,8 @@ export const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({
 
   const SelectedFlag = selectedCountryObj ? flags[selectedCountryObj.code as Country] : null;
 
+  const isRtl = locale === 'ar';
+
   return (
     <div className={`w-full relative ${className}`} ref={dropdownRef}>
       {/* Trigger Button */}
@@ -125,6 +127,7 @@ export const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({
       {/* Searchable Options Popover */}
       {isOpen && (
         <div
+          dir={isRtl ? 'rtl' : 'ltr'}
           className={`absolute top-full left-0 right-0 mt-2 rounded-2xl shadow-2xl z-[9999] overflow-hidden flex flex-col p-3 backdrop-blur-xl border ${
             isDark
               ? 'bg-[#101934] border-white/20 text-white shadow-black/50'
@@ -133,15 +136,15 @@ export const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({
         >
           {/* Search Box */}
           <div className="relative mb-2 shrink-0">
-            <FiSearch className={`absolute left-3.5 top-1/2 -translate-y-1/2 text-xs ${isDark ? 'text-gray-400' : 'text-gray-500'}`} />
+            <FiSearch className={`absolute ${isRtl ? 'right-3.5' : 'left-3.5'} top-1/2 -translate-y-1/2 text-xs ${isDark ? 'text-gray-400' : 'text-gray-500'}`} />
             <input
               type="text"
               autoFocus
-              placeholder="Search country..."
+              placeholder={isRtl ? 'بحث عن دولة...' : locale === 'fr' ? 'Rechercher un pays...' : 'Search country...'}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               suppressHydrationWarning={true}
-              className={`w-full pl-9 pr-8 py-2.5 text-xs rounded-xl border focus:outline-none transition ${
+              className={`w-full ${isRtl ? 'pr-9 pl-8' : 'pl-9 pr-8'} py-2.5 text-xs rounded-xl border focus:outline-none transition ${
                 isDark
                   ? 'bg-white/10 text-white placeholder-gray-400 border-white/10 focus:ring-1 focus:ring-seppa-red'
                   : 'bg-gray-50 text-gray-900 placeholder-gray-500 border-gray-200 focus:ring-1 focus:ring-seppa-red'
@@ -152,7 +155,7 @@ export const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({
                 type="button"
                 onClick={() => setSearch('')}
                 suppressHydrationWarning={true}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
+                className={`absolute ${isRtl ? 'left-3' : 'right-3'} top-1/2 -translate-y-1/2 text-gray-400 hover:text-white`}
               >
                 <FiX className="text-xs" />
               </button>
@@ -162,7 +165,9 @@ export const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({
           {/* List of Countries */}
           <div className="overflow-y-auto max-h-60 space-y-1 custom-scrollbar pr-0.5">
             {filteredCountries.length === 0 ? (
-              <div className="py-4 text-center text-xs text-gray-400">No matching country found</div>
+              <div className="py-4 text-center text-xs text-gray-400">
+                {isRtl ? 'لم يتم العثور على دولة مطابقة' : 'No matching country found'}
+              </div>
             ) : (
               filteredCountries.map((c) => {
                 const isSelected = value.toLowerCase() === c.name.toLowerCase();
@@ -178,7 +183,7 @@ export const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({
                       setSearch('');
                     }}
                     suppressHydrationWarning={true}
-                    className={`w-full flex items-center gap-3 px-3.5 py-2.5 text-xs rounded-xl transition cursor-pointer text-left ${
+                    className={`w-full flex items-center gap-3 px-3.5 py-2.5 text-xs rounded-xl transition cursor-pointer text-start ${
                       isSelected
                         ? 'bg-seppa-red text-white font-bold shadow-sm'
                         : isDark

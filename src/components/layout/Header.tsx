@@ -770,13 +770,13 @@ const Header: React.FC = () => {
             <Link href={getLink("/video-gallery")} className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>{menu.videos}</Link>
             
             <div className="pt-6 mt-auto flex flex-col gap-3">
-              <div className="flex justify-around gap-2 bg-[#0d162a]/50 p-2 rounded-xl border border-white/10">
-                {['en', 'ar', 'de', 'nl'].map((loc) => (
+              <div className="flex justify-around gap-1 sm:gap-2 bg-[#0d162a]/50 p-2 rounded-xl border border-white/10 flex-wrap">
+                {['en', 'ar', 'de', 'nl', 'fr'].map((loc) => (
                   <button
                     key={loc}
                     suppressHydrationWarning
                     onClick={() => { changeLanguage(loc); setIsMobileMenuOpen(false); }}
-                    className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${currentLocale === loc ? 'bg-gold text-[#0d162a]' : 'text-white hover:text-gold'}`}
+                    className={`px-2.5 sm:px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold transition-all ${currentLocale === loc ? 'bg-gold text-[#0d162a]' : 'text-white hover:text-gold'}`}
                   >
                     {getLocaleLabel(loc)}
                   </button>

@@ -26,6 +26,7 @@ export interface InternationalPhoneInputProps {
   name?: string;
   locale?: string;
   defaultCountry?: Country;
+  popoverAlign?: 'left' | 'right';
 }
 
 /**
@@ -52,7 +53,8 @@ const SearchableCountrySelect = ({
   variant = 'dark', 
   locale = 'en', 
   onManualSelect,
-  selectedCountry: selectedCountryProp 
+  selectedCountry: selectedCountryProp,
+  popoverAlign = 'left'
 }: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState('');
@@ -72,6 +74,7 @@ const SearchableCountrySelect = ({
   const selectedCountry = selectedCountryProp || value || 'US';
   const callingCode = selectedCountry ? getCountryCallingCode(selectedCountry as Country) : '1';
   const isDark = variant === 'dark';
+  const isRtl = locale === 'ar';
 
   // Filter countries by name, code or dial code
   const filteredCountries = options.filter(({ value: countryCode }: any) => {
@@ -109,7 +112,12 @@ const SearchableCountrySelect = ({
       {/* Searchable Dropdown Popover */}
       {isOpen && (
         <div
-          className={`absolute top-full left-0 mt-2 w-72 max-h-80 rounded-2xl shadow-2xl z-[9999] overflow-hidden flex flex-col p-2.5 backdrop-blur-xl border ${
+          dir={isRtl ? 'rtl' : 'ltr'}
+          className={`absolute top-full ${
+            isRtl
+              ? (popoverAlign === 'right' ? 'right-0 left-auto sm:left-0 sm:right-auto' : 'right-0 left-auto sm:right-0 sm:left-auto')
+              : (popoverAlign === 'right' ? 'left-0 right-auto sm:right-0 sm:left-auto' : 'left-0 right-auto sm:left-0 sm:right-auto')
+          } mt-2 w-72 max-w-[calc(100vw-3rem)] max-h-80 rounded-2xl shadow-2xl z-[99999] overflow-hidden flex flex-col p-2.5 backdrop-blur-xl border ${
             isDark
               ? 'bg-[#101934] border-white/20 text-white shadow-black/50'
               : 'bg-white border-gray-200 text-gray-900 shadow-xl'
@@ -117,14 +125,14 @@ const SearchableCountrySelect = ({
         >
           {/* Search Bar Input */}
           <div className="relative mb-2 shrink-0">
-            <FiSearch className={`absolute left-3 top-1/2 -translate-y-1/2 text-xs ${isDark ? 'text-gray-400' : 'text-gray-500'}`} />
+            <FiSearch className={`absolute ${isRtl ? 'right-3' : 'left-3'} top-1/2 -translate-y-1/2 text-xs ${isDark ? 'text-gray-400' : 'text-gray-500'}`} />
             <input
               type="text"
               autoFocus
-              placeholder="Search country or code (+1, US...)"
+              placeholder={isRtl ? "بحث عن دولة أو رمز (+1)..." : "Search country or code (+1, US...)"}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className={`w-full pl-8 pr-8 py-2 text-xs rounded-xl border focus:outline-none transition ${
+              className={`w-full ${isRtl ? 'pr-8 pl-8' : 'pl-8 pr-8'} py-2 text-xs rounded-xl border focus:outline-none transition ${
                 isDark
                   ? 'bg-white/10 text-white placeholder-gray-400 border-white/10 focus:ring-1 focus:ring-seppa-red'
                   : 'bg-gray-50 text-gray-900 placeholder-gray-500 border-gray-200 focus:ring-1 focus:ring-seppa-red'
@@ -134,7 +142,7 @@ const SearchableCountrySelect = ({
               <button
                 type="button"
                 onClick={() => setSearch('')}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
+                className={`absolute ${isRtl ? 'left-2.5' : 'right-2.5'} top-1/2 -translate-y-1/2 text-gray-400 hover:text-white`}
               >
                 <FiX className="text-xs" />
               </button>
@@ -144,7 +152,9 @@ const SearchableCountrySelect = ({
           {/* Scrollable Country List */}
           <div className="overflow-y-auto max-h-60 space-y-0.5 custom-scrollbar pr-0.5">
             {filteredCountries.length === 0 ? (
-              <div className="py-4 text-center text-xs text-gray-400">No matching country found</div>
+              <div className="py-4 text-center text-xs text-gray-400">
+                {isRtl ? 'لم يتم العثور على دولة مطابقة' : 'No matching country found'}
+              </div>
             ) : (
               filteredCountries.map(({ value: countryCode }: any) => {
                 const countryName = getCountryName(countryCode, locale);
@@ -164,7 +174,7 @@ const SearchableCountrySelect = ({
                       setIsOpen(false);
                       setSearch('');
                     }}
-                    className={`w-full flex items-center justify-between px-3 py-2 text-xs rounded-xl transition cursor-pointer text-left ${
+                    className={`w-full flex items-center justify-between px-3 py-2 text-xs rounded-xl transition cursor-pointer text-start ${
                       isSelected
                         ? 'bg-seppa-red text-white font-bold shadow-sm'
                         : isDark
@@ -179,7 +189,7 @@ const SearchableCountrySelect = ({
                       <span className="truncate">{countryName}</span>
                     </div>
                     <span
-                      className={`text-[11px] font-mono shrink-0 ml-2 ${
+                      className={`text-[11px] font-mono shrink-0 ${isRtl ? 'mr-2' : 'ml-2'} ${
                         isSelected ? 'text-white' : isDark ? 'text-gray-400' : 'text-gray-500'
                       }`}
                     >
@@ -213,6 +223,7 @@ export const InternationalPhoneInput: React.FC<InternationalPhoneInputProps> = (
   name = 'phone',
   locale = 'en',
   defaultCountry = 'US',
+  popoverAlign = 'left',
 }) => {
   const [mounted, setMounted] = useState(false);
   const [country, setCountry] = useState<Country>(defaultCountry);
@@ -361,6 +372,7 @@ export const InternationalPhoneInput: React.FC<InternationalPhoneInputProps> = (
               variant={variant}
               locale={locale}
               onManualSelect={handleManualCountrySelect}
+              popoverAlign={popoverAlign}
             />
           )}
           placeholder={placeholder}

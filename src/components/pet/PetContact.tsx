@@ -1,11 +1,10 @@
 "use client";
 import React, { useState } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { FiPhoneCall, FiMail, FiMapPin } from 'react-icons/fi';
 import enPet from '@/messages/en/pet.json';
 import frPet from '@/messages/fr/pet.json';
-import SuccessModal from '@/components/ui/SuccessModal';
 import InternationalPhoneInput, { validatePhoneNumber, validateEmail, formatEmailInput, validateName, formatNameInput } from '@/components/ui/InternationalPhoneInput';
 import CountrySelectDropdown from '@/components/ui/CountrySelectDropdown';
 
@@ -16,8 +15,10 @@ const fadeInUp = {
 
 export const PetContact: React.FC = () => {
   const pathname = usePathname();
-  const isArabic = pathname.startsWith('/ar');
-  const isFrench = pathname.startsWith('/fr');
+  const router = useRouter();
+  const locale = pathname?.split('/')[1] || 'en';
+  const isArabic = locale === 'ar';
+  const isFrench = locale === 'fr';
 
   const getT = (key: string) => {
     const keys = key.split('.');
@@ -37,7 +38,6 @@ export const PetContact: React.FC = () => {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
     let val = value;
@@ -57,7 +57,7 @@ export const PetContact: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
@@ -94,9 +94,25 @@ export const PetContact: React.FC = () => {
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('/api/submit-enquiry.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_type: 'product',
+          full_name: formData.name,
+          email: formData.email,
+          phone_number: formData.phone,
+          location_country: formData.country,
+          project_requirement: formData.message,
+          message: formData.message,
+          page_url: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      });
+    } catch (err) {
+      console.error('Failed to submit PET inquiry:', err);
+    } finally {
       setIsSubmitting(false);
-      setShowSuccessModal(true);
       setFormData({
         name: '',
         email: '',
@@ -104,17 +120,12 @@ export const PetContact: React.FC = () => {
         country: '',
         message: ''
       });
-    }, 600);
+      router.push(`/${locale}/thank-you`);
+    }
   };
 
   return (
     <section className="py-20 bg-white relative">
-      <SuccessModal 
-        isOpen={showSuccessModal} 
-        onClose={() => setShowSuccessModal(false)} 
-        title={isArabic ? "شكراً لك!" : "Thank You!"}
-        message={isArabic ? "تم استلام استفسارك بنجاح وسيتواصل معك فريقنا قريباً." : "Your enquiry has been received. Our team will contact you shortly."}
-      />
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto bg-gray-50 rounded-3xl p-8 lg:p-14 shadow-sm border border-gray-100">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
