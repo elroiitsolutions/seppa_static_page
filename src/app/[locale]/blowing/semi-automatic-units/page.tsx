@@ -35,6 +35,22 @@ export default async function SemiAutomaticPetBlowingPage({ params }: PageProps)
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/blowing/semi-automatic-units', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -43,36 +59,88 @@ export default async function SemiAutomaticPetBlowingPage({ params }: PageProps)
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
+    overviewsubDescription: (() => {
+      try {
+        const raw = t.raw('overviewsubDescription');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
     overviewImage: overviewImg.src,
-    contentBlocks: (t.raw('contentBlocks') as any[] || []).map((block: any, index: number) => ({
-      title: block.title,
-      paragraphs: block.paragraphs,
-      image1: [img1.src, img2.src][index] || undefined,
-      reverse: [true, false][index] || false,
-      bgClass: [undefined, "bg-light"][index] || undefined
-    })),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
+    contentBlocks: (() => {
+      try {
+        const raw = t.raw('contentBlocks');
+        if (Array.isArray(raw)) {
+          return raw.map((block: any, index: number) => ({
+            title: block.title,
+            paragraphs: block.paragraphs,
+            image1: [img1.src, img2.src][index] || undefined,
+            reverse: [true, false][index] || false,
+            bgClass: [undefined, "bg-light"][index] || undefined
+          }));
+        }
+      } catch (e) {}
+      return [];
+    })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
-      paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: (() => {
+        try {
+          const raw = t.raw('whyChoose.paragraphs');
+          if (Array.isArray(raw)) return raw;
+        } catch (e) {}
+        return [];
+      })(),
       image: over.src
     },
     methodology: {
       title: t('methodology.title'),
       subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined,
-      steps: (t.raw('methodology.steps') as any[] || []).map((step: any, index: number) => ({
-        title: step.title,
-        description: step.description,
-        image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      })),
-      outro: t.has('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : []) : undefined
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw)) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title,
+              description: step.description,
+              image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: (() => {
+        try {
+          if (t.has('methodology.outro')) {
+            const raw = t.raw('methodology.outro');
+            if (Array.isArray(raw) && raw.length > 0) return raw;
+            if (typeof raw === 'string' && raw.length > 0 && !raw.startsWith('methodology.')) return [raw];
+          }
+        } catch (e) {}
+        return undefined;
+      })()
     },
     faqTitle: t('faqTitle'),
-    faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
+    faqs: (() => {
+      try {
+        const raw = t.raw('faqs');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })()
   };
 
   const gridItems = [
@@ -86,7 +154,7 @@ export default async function SemiAutomaticPetBlowingPage({ params }: PageProps)
     { title: "SEPPA SSB-4D-AT", img: overviewImg.src, slug: "ssb-4d-at" }
   ];
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
@@ -99,11 +167,11 @@ export default async function SemiAutomaticPetBlowingPage({ params }: PageProps)
                 <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
                   <span className="text-xs font-semibold text-[#101934] uppercase tracking-wider">
-                    {locale === 'ar' ? 'موديلات نصف آلية' : 'SEMI-AUTOMATIC MODELS'}
+                    {locale === 'ar' ? 'موديلات نصف آلية' : (locale === 'de' ? 'SEMI-AUTOMATISCHE MODELLE' : (locale === 'fr' ? 'MODÈLES SEMI-AUTOMATIQUES' : (locale === 'nl' ? 'SEMI-AUTOMATISCHE MODELLEN' : 'SEMI-AUTOMATIC MODELS')))}
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-[#101934] leading-tight max-w-4xl mx-auto">
-                  {locale === 'ar' ? 'سلسلة ماكينات نفخ PET نصف الآلية' : 'Semi-Automatic PET Blow Molding Machine Series'}
+                  {locale === 'ar' ? 'سلسلة ماكينات نفخ PET نصف الآلية' : (locale === 'de' ? 'Semi-Automatische PET Blaasmachines Serie' : (locale === 'fr' ? 'Série de Machines de Soufflage PET Semi-Automatiques' : (locale === 'nl' ? 'Semi-Automatische PET Blaasmachines Serie' : 'Semi-Automatic PET Blow Molding Machine Series')))}
                 </h2>
               </div>
 

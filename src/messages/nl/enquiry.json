@@ -1,0 +1,36 @@
+{
+  "title": "Productaanvraag",
+  "breadcrumbName": "Productaanvraag",
+  "heading": "Heeft u een project in gedachten?",
+  "subheading": "Vul het onderstaande formulier in om ons te laten weten wat uw projectvereisten zijn. Ons team van experts neemt zo snel mogelijk contact met u op met de beste oplossingen op maat.",
+  "formTitle": "Stuur ons een aanvraag",
+  "submitButtonText": "Aanvraag Verzenden",
+  "getInTouch": "Neem Contact Op",
+  "callUs": "Bel ons:",
+  "emailUs": "E-mail ons:",
+  "headOffice": "Hoofdkantoor:",
+  "headOfficeAddress": "Chennai, Tamil Nadu, India",
+  "fields": {
+    "name": "Volledige Naam",
+    "namePlaceholder": "Voer uw volledige naam in",
+    "email": "E-mailadres",
+    "emailPlaceholder": "Voer uw e-mailadres in",
+    "phone": "Telefoonnummer",
+    "phonePlaceholder": "Voer uw telefoonnummer in",
+    "location": "Locatie / Land",
+    "locationPlaceholder": "Waar bent u gevestigd?",
+    "product": "Product van interesse",
+    "productPlaceholder": "Selecteer product van interesse",
+    "message": "Projectvereisten",
+    "messagePlaceholder": "Vertel ons over uw project, capaciteitsvereisten en eventuele specifieke details...",
+    "products": [
+      "Complete Lijnen",
+      "Vloeistofafvulmachines",
+      "PET Blaasmachines",
+      "Verwerkingsapparatuur",
+      "Verpakking & Etikettering",
+      "Diensten & Onderhoud",
+      "Overig"
+    ]
+  }
+}

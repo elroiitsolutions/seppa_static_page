@@ -64,7 +64,11 @@ const BlogView: React.FC<BlogViewProps> = ({ blogs = [] }) => {
               </div>
             ) : (
               blogs.map((post, index) => {
-                const imageUrl = post.hero?.background_image?.url || "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/blog-1.jpg";
+                const rawImg = post.hero?.background_image?.url || post.image?.url;
+                const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
+                const imageUrl = rawImg 
+                  ? (rawImg.startsWith('http') || rawImg.startsWith('//') ? rawImg : `${strapiBase}${rawImg.startsWith('/') ? '' : '/'}${rawImg}`)
+                  : "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg";
                 const title = post.hero?.title || post.title;
                 const description = post.seo?.metaDescription || post.hero?.subtitle || "Read this amazing blog post to learn more about our packaging innovations.";
                 const dateObj = new Date(post.publishedAt || post.createdAt);

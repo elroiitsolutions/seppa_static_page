@@ -1,0 +1,24 @@
+{
+  "title": "Investeerders",
+  "breadcrumbName": "Investeerders",
+  "heading": "Relaties met Investeerders",
+  "subheading": "Seppa Solutions loopt voorop bij innovatie in de afvul- en verpakkingsindustrie. We verwelkomen strategische investeerders die onze visie op groei en technologische vooruitgang delen.",
+  "formTitle": "Investeringsaanvraag",
+  "submitButtonText": "Aanvraag Verzenden",
+  "name": "Volledige Naam",
+  "namePlaceholder": "Uw volledige naam",
+  "email": "E-mailadres",
+  "emailPlaceholder": "Uw e-mailadres",
+  "phone": "Telefoonnummer",
+  "phonePlaceholder": "Contactnummer",
+  "interest": "Investeringsinteresse",
+  "message": "Bericht / Aanvraag",
+  "messagePlaceholder": "Deel uw investeringsinteresse, achtergrond en eventuele specifieke vragen...",
+  "options": [
+    "Aandeleninvestering",
+    "Strategisch Partnerschap",
+    "Joint Venture",
+    "Projectfinanciering",
+    "Overig"
+  ]
+}

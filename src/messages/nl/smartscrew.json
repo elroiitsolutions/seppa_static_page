@@ -1,0 +1,117 @@
+{
+  "title": "Overzicht van de Industriële Schroefkoeler van SEPPA",
+  "breadcrumbName": "Smart Screw Chillers",
+  "rootBreadcrumbName": "Apparatuur",
+  "rootBreadcrumbPath": "/equipments",
+  "overviewTitle": "Overzicht van de Industriële Schroefkoeler van SEPPA",
+  "overviewDescription": "Als plant manager in de procesindustrie weet u dat thermisch beheer cruciaal is. Een haperend koelsysteem leidt direct tot productieverlies, een daling in kwaliteit en kostbare downtime. Hier biedt de industriële schroefkoeler van SEPPA Solutions de uitkomst. SEPPA levert een state-of-the-art koelmachine die niet alleen een constante vloeistoftemperatuur garandeert, maar ook gebouwd is voor maximale operationele betrouwbaarheid.",
+  "overviewsubDescription": [
+    "Overzicht van de Industriële Schroefkoeler van SEPPA: Binnen moderne productielijnen is absolute precisie vereist. Een robuuste koelwaterinstallatie vormt de vitale ruggengraat van effectieve warmte-uitwisseling in uw faciliteit.",
+    "Het hart van dit geheel is een uiterst krachtige schroefcompressor met geavanceerde dubbelwormige rotoren die zorgen voor een soepele, continue en nagenoeg trillingsvrije compressiecyclus met minimale interne slijtage.",
+    "Bij SEPPA Solutions integreren we slimme traploze capaciteitsregeling zodat uw schroefcompressor chiller zijn stroomverbruik dynamisch aanpast aan de daadwerkelijke koellast van de fabriek."
+  ],
+  "featuresTitle": "Belangrijkste Kenmerken van de SEPPA Schroefkoeler",
+  "featuresSubtitle": "Geavanceerde engineering voor grootschalige warmteafvoer en continu-bedrijf:",
+  "features": [
+    {
+      "title": "Dubbelwormige Precisierotoren",
+      "description": "Uit de beste legeringen gefreesd met asymmetrisch profiel voor maximale volumetrische efficiëntie en minimale trillingen."
+    },
+    {
+      "title": "Traploze Capaciteitsregeling & EEV",
+      "description": "Regelt de capaciteit traploos tussen 25% en 100% via een hydraulische schuifafsluiter en elektronisch expansieventiel (EEV)."
+    },
+    {
+      "title": "Geavanceerde Shell & Tube / Microchannel Verdampers",
+      "description": "Optimale warmteoverdracht in verdampers en condensors, geschikt voor zowel water- als luchtgekoelde configuraties."
+    },
+    {
+      "title": "Intelligente Sensoriek & Predictive Maintenance",
+      "description": "Monitort continu duizenden datapunten voor proactief onderhoud en waarschuwt bij afwijkingen vóór een storing optreedt."
+    }
+  ],
+  "applicationsTitle": "Toepassingen in de Industrie, Proceskoeling en Productiefaciliteiten",
+  "applicationsSubtitle": "Uiterst veelzijdige koeloplossingen voor grootschalige industriële faciliteiten:",
+  "applications": [
+    {
+      "title": "Petrochemie & Chemische Processen",
+      "description": "Constante thermische stabiliteit bij exotherme reacties, destillatiekolommen en kristallisatievaten."
+    },
+    {
+      "title": "Voedingsmiddelen & Zuivelverwerking",
+      "description": "Levert een constante glycol- of pekelstroom voor pasteurisatie, brouwerijgisting en productopslag."
+    },
+    {
+      "title": "Hyperscale Datacenters & Cleanrooms",
+      "description": "Grootschalige gekoeldwatercircuits voor serverracks en kiemvrije faciliteiten met 24/7 bedrijfszekerheid."
+    },
+    {
+      "title": "Kunststofspuitgieten & Zware Persen",
+      "description": "Betrouwbare koeling van grote matrijsvolumes en hydraulische systemen onder zware productiebelastingen."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "title": "Voordelen van het Gebruik van de SEPPA Schroefkoeler",
+      "paragraphs": [
+        "Traploze Modulatie & Lage Energiekosten: In plaats van een aan/uit-systeem moduleert de schroefcompressor zijn geleverde koelvermogen strak op de actuele koellast, wat energiekosten sterk verlaagt.",
+        "Lange Levensduur & Hoge ROI: Met slechts twee roterende hoofdelementen is er minder slijtage. Een SEPPA schroefkoeler levert probleemloos meer dan 20 jaar dienst met lage onderhoudskosten.",
+        "Toekomstbestendig & Milieuvriendelijk: Werkt naadloos met ecologische koudemiddelen (zoals R134a, R513A en R1234ze) conform de modernste milieunormen."
+      ]
+    }
+  ],
+  "whyChoose": {
+    "title": "Waarom Kiezen voor de Schroefkoelers van SEPPA Solutions",
+    "description": "SEPPA onderscheidt zich door een fundamenteel begrip van industriële thermodynamica en levert maatwerkoplossingen voor de zware industrie.",
+    "paragraphs": [
+      "Integraal Systeemontwerp: Wij analyseren uw warmtelast en integreren complete systemen die naadloos aansluiten op uw productie-eisen.",
+      "Watergekoeld, Luchtgekoeld of Hybride: Flexibiliteit in configuratie afhankelijk van uw beschikbare opstelruimte, waterbronnen en buitenomstandigheden.",
+      "Lagere Total Cost of Ownership (TCO): Duurzame componenten, voorspellend onderhoud en fabriekstestings (FAT) garanderen maximale uptime."
+    ]
+  },
+  "methodology": {
+    "title": "Werking van het Schroefkoelsysteem",
+    "subtitle": "Technische beschrijving van de thermodynamische compressiecyclus:",
+    "steps": [
+      {
+        "title": "1. Gasinlaat & Rotormenging",
+        "description": "Koud koudemiddelgas stroomt de afgesloten rotorkamer binnen tussen de in elkaar grijpende stalen schroefrotoren."
+      },
+      {
+        "title": "2. Gelijkmatige Compressie",
+        "description": "Terwijl de rotoren draaien, verkleint het gasvolume geleidelijk, wat druk en temperatuur verhoogt zonder pulsaties."
+      },
+      {
+        "title": "3. Condensatie & Warmteafvoer",
+        "description": "Het hete gas staat zijn warmte af via een watergekoelde shell-and-tube condensor of luchtgekoelde microchannel axiaalventilatoren."
+      },
+      {
+        "title": "4. Expansie via EEV & Verdamping",
+        "description": "Het koudemiddel passeert het elektronische expansieventiel (EEV) en absorbeert via de verdamper razendsnel warmte uit het proceswater."
+      }
+    ]
+  },
+  "faqTitle": "Veelgestelde Vragen (FAQ)",
+  "faqs": [
+    {
+      "question": "Wat zijn de aanbevolen onderhoudsintervallen voor een industriële schroefkoeler?",
+      "answer": "We adviseren een halfjaarlijkse inspectie van draaiende delen en sensoren, gecombineerd met een jaarlijkse olie- en koudemiddelanalyse."
+    },
+    {
+      "question": "Hoe kan ik de energiekosten van een industriële schroefkoeler verlagen?",
+      "answer": "Door gebruik te maken van traploze, elektronische capaciteitsregeling en intelligente frequentieregelaars (VFD's)."
+    },
+    {
+      "question": "Wat bepaalt de hoge nauwkeurigheid van een schroefcompressor chiller?",
+      "answer": "De combinatie van nauwkeurig gefreesde dubbelwormige rotoren en razendsnelle elektronische expansieventielen (EEV)."
+    },
+    {
+      "question": "Hoe waarborgen we de integriteit bij aggressief koelwater?",
+      "answer": "We gebruiken gespecialiseerde warmtewisselaars met corrosiebestendige coatings of RVS/titaan-legeringen gecombineerd met waterbehandeling."
+    },
+    {
+      "question": "Is de thermische capaciteit van een luchtgekoelde schroefkoeler voldoende voor extreme hittegolven?",
+      "answer": "Absoluut. Onze systemen zijn ontworpen voor omgevingstemperaturen tot 50 °C met behoud van koelvermogen."
+    }
+  ]
+}

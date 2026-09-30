@@ -59,6 +59,7 @@ export default async function SoftDrinksPage({ params }: PageProps) {
     applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
     whyChoose: {
       title: t('whyChoose.title'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
       image: whyChooseImg.src,
       paragraphs: (() => {
         try {

@@ -8,6 +8,8 @@ import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/P
 import top from '@/assets/packaging/gable/gabletop1.jpg';
 import machine from '@/assets/packaging/brick/machine.jpg';
 import packag from '@/assets/packaging/brick/package.webp';
+import orange from '@/assets/packaging/brick/orange.jpg';
+import pouchPackage from '@/assets/packaging/pouch/pouch-package.jpg';
 import brickCarton from '@/assets/packaging/gable/gabletop.jpg';
 import brickBanner from '@/assets/packaging/brick/brick-banner.png';
 import execute from '@/assets/packaging/can/execute.webp';
@@ -42,9 +44,9 @@ export default async function GableTopCartonPage({ params }: PageProps) {
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
         title: block.title,
         paragraphs: block.paragraphs,
-        image1: [brickCarton.src][index] || brickCarton.src,
-        reverse: [false][index] || false,
-        bgClass: [undefined][index]
+        image1: [brickCarton.src, machine.src, pouchPackage.src][index] || brickCarton.src,
+        reverse: [false, true, false][index] || false,
+        bgClass: [undefined, "bg-white", undefined][index]
       })),
     applicationsTitle: t('applicationsTitle'),
     applicationsSubtitle: t('applicationsSubtitle'),
@@ -57,7 +59,7 @@ export default async function GableTopCartonPage({ params }: PageProps) {
       description: t('whyChoose.description'),
       reasons: t.raw('whyChoose.reasons'),
       paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
-      image: packag.src
+      image: orange.src
     },
     methodology: {
       title: t('methodology.title'),
@@ -65,7 +67,7 @@ export default async function GableTopCartonPage({ params }: PageProps) {
       steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
         title: step.title,
         description: step.description,
-        image: [machine.src, brickCarton.src, execute.src, install.src, training.src][index] || machine.src
+        image: [execute.src, install.src, training.src][index] || execute.src
       })),
       outro: Array.isArray(t.raw('methodology.outro')) 
         ? t.raw('methodology.outro') 

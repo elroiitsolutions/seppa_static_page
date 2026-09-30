@@ -42,12 +42,16 @@ export default async function WineMeadLinesPage({ params }: PageProps) {
     overviewDescription: t('overviewDescription'),
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
+    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: t.has('features') && Array.isArray(t.raw('features')) ? t.raw('features') : undefined,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
       image1: [img1.src, img2.src, img3.src, img1.src, img2.src][index] || img1.src,
       reverse: index % 2 === 0,
-      bgClass: index === 1 || index === 3 ? "bg-light" : undefined
+      bgClass: index === 1 || index === 3 ? "bg-light" : undefined,
+      layout: index === 2 ? "stacked" : undefined
     })),
     whyChoose: {
       title: t('whyChoose.title'),
@@ -63,13 +67,14 @@ export default async function WineMeadLinesPage({ params }: PageProps) {
         title: step.title,
         description: step.description,
         image: [meth1.src, meth2.src, meth3.src, meth4.src, meth1.src][index] || meth1.src
-      }))
+      })),
+      outro: t.has('methodology.outro') && t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

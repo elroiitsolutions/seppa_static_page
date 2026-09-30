@@ -19,6 +19,7 @@ const Header: React.FC = () => {
   const isArabic = pathname.startsWith('/ar');
   const isGerman = pathname.startsWith('/de');
   const isDutch = pathname.startsWith('/nl');
+  const isFrench = pathname.startsWith('/fr');
 
   const menu = {
     home: t('home'),
@@ -104,27 +105,28 @@ const Header: React.FC = () => {
 
   const getLink = (path: string) => {
     if (path === '/') {
-      return isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : '/en';
+      return isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : isFrench ? '/fr' : '/en';
     }
-    const prefix = isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : '/en';
+    const prefix = isArabic ? '/ar' : isGerman ? '/de' : isDutch ? '/nl' : isFrench ? '/fr' : '/en';
     return `${prefix}${path}`;
   };
 
-  const currentLocale = isArabic ? 'ar' : isGerman ? 'de' : isDutch ? 'nl' : 'en';
+  const currentLocale = isArabic ? 'ar' : isGerman ? 'de' : isDutch ? 'nl' : isFrench ? 'fr' : 'en';
 
   const getLocaleLabel = (loc: string) => {
     switch (loc) {
       case 'ar': return 'العربية';
       case 'de': return 'Germany';
       case 'nl': return 'Dutch';
+      case 'fr': return 'French';
       default: return 'English';
     }
   };
 
   const changeLanguage = (newLocale: string) => {
     if (newLocale === currentLocale) return;
-    const prefix = currentLocale === 'en' ? '/en' : currentLocale === 'ar' ? '/ar' : currentLocale === 'de' ? '/de' : '/nl';
-    const targetPrefix = newLocale === 'en' ? '/en' : newLocale === 'ar' ? '/ar' : newLocale === 'de' ? '/de' : '/nl';
+    const prefix = currentLocale === 'en' ? '/en' : currentLocale === 'ar' ? '/ar' : currentLocale === 'de' ? '/de' : currentLocale === 'nl' ? '/nl' : '/fr';
+    const targetPrefix = newLocale === 'en' ? '/en' : newLocale === 'ar' ? '/ar' : newLocale === 'de' ? '/de' : newLocale === 'nl' ? '/nl' : '/fr';
     router.replace(pathname.replace(prefix, targetPrefix));
   };
 
@@ -147,26 +149,38 @@ const Header: React.FC = () => {
     document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
   }, [isArabic, isGerman]);
 
-  // Handle scroll event for sticky header
   useEffect(() => {
+    let rafId: number | null = null;
+
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      if (rafId !== null) return;
+
+      rafId = window.requestAnimationFrame(() => {
+        rafId = null;
+        const currentY = window.scrollY;
+        setScrolled((prev) => {
+          if (!prev && currentY > 80) return true;
+          if (prev && currentY < 20) return false;
+          return prev;
+        });
+      });
     };
 
-    // Check scroll position immediately on mount (handles page refresh when already scrolled)
-    handleScroll();
+    // Initial check on mount
+    const currentY = window.scrollY;
+    setScrolled(currentY > 80);
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      if (rafId !== null) {
+        window.cancelAnimationFrame(rafId);
+      }
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   // Dynamic header classes - sticky behavior across all viewports
-  const isBlogPage = pathname.includes('/blog') && !pathname.endsWith('/blog') && !pathname.endsWith('/blog/');
-  const isSolid = scrolled || isBlogPage;
+  const isSolid = scrolled;
 
   const headerClass = `fixed inset-x-0 mx-auto z-50 transition-all duration-300 px-3 sm:px-6 lg:px-8 ${isSolid
       ? 'w-full top-0 bg-seppa-blue shadow-lg py-2.5 lg:py-3.5 rounded-none'
@@ -377,7 +391,7 @@ const Header: React.FC = () => {
               <FiChevronDown className="transition-transform group-hover/lang:rotate-180 text-xs" />
             </button>
             <div className="absolute right-0 top-full mt-2 w-32 bg-[#0d162a] border border-gold/20 text-white rounded-md shadow-lg opacity-0 invisible group-hover/lang:opacity-100 group-hover/lang:visible transition-all duration-300 transform translate-y-2 group-hover/lang:translate-y-0 z-50 flex flex-col py-1.5 overflow-hidden">
-              {['en', 'ar', 'de', 'nl'].map((loc) => (
+              {['en', 'ar', 'de', 'nl', 'fr'].map((loc) => (
                 <button
                   key={loc}
                   suppressHydrationWarning
@@ -755,13 +769,13 @@ const Header: React.FC = () => {
             <Link href={getLink("/video-gallery")} className="text-white font-medium font-heading hover:text-[#cda262] transition border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>{menu.videos}</Link>
             
             <div className="pt-6 mt-auto flex flex-col gap-3">
-              <div className="flex justify-around gap-2 bg-[#0d162a]/50 p-2 rounded-xl border border-white/10">
-                {['en', 'ar', 'de', 'nl'].map((loc) => (
+              <div className="flex justify-around gap-1 sm:gap-2 bg-[#0d162a]/50 p-2 rounded-xl border border-white/10 flex-wrap">
+                {['en', 'ar', 'de', 'nl', 'fr'].map((loc) => (
                   <button
                     key={loc}
                     suppressHydrationWarning
                     onClick={() => { changeLanguage(loc); setIsMobileMenuOpen(false); }}
-                    className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${currentLocale === loc ? 'bg-gold text-[#0d162a]' : 'text-white hover:text-gold'}`}
+                    className={`px-2.5 sm:px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold transition-all ${currentLocale === loc ? 'bg-gold text-[#0d162a]' : 'text-white hover:text-gold'}`}
                   >
                     {getLocaleLabel(loc)}
                   </button>

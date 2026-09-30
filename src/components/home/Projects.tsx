@@ -142,10 +142,10 @@ const Projects = () => {
           </Swiper>
 
           {/* Custom Navigation Arrows */}
-          <button className="projects-prev absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center text-dark shadow-xl border border-gray-100 hover:bg-seppa-red hover:text-white transition duration-300 opacity-0 group-hover:opacity-100 disabled:opacity-0 hidden md:flex">
+          <button type="button" aria-label="Previous Project" suppressHydrationWarning className="projects-prev absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center text-dark shadow-xl border border-gray-100 hover:bg-seppa-red hover:text-white transition duration-300 opacity-0 group-hover:opacity-100 disabled:opacity-0 hidden md:flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
           </button>
-          <button className="projects-next absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center text-dark shadow-xl border border-gray-100 hover:bg-seppa-red hover:text-white transition duration-300 opacity-0 group-hover:opacity-100 disabled:opacity-0 hidden md:flex">
+          <button type="button" aria-label="Next Project" suppressHydrationWarning className="projects-next absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white rounded-full flex items-center justify-center text-dark shadow-xl border border-gray-100 hover:bg-seppa-red hover:text-white transition duration-300 opacity-0 group-hover:opacity-100 disabled:opacity-0 hidden md:flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </button>
         </motion.div>

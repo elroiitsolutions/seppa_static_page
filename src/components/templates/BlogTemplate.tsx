@@ -2,6 +2,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { Link } from '@/i18n/routing';
+import PageHeader from '@/components/layout/PageHeader';
 import { DynamicZoneRenderer } from '@/lib/sections/registry';
 import LatestBlogs from '@/components/home/LatestBlogs';
 import { FiClock, FiUser, FiCalendar, FiTag } from 'react-icons/fi';
@@ -25,25 +26,33 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data, locale }) => {
   // Estimate reading time based on body text length (very rough estimate)
   const readingTime = data.body ? Math.max(1, Math.ceil(JSON.stringify(data.body).split(' ').length / 200)) : 3;
 
+  // Resolve header background image
+  const rawBanner = data.hero?.background_image?.url || "/pics/packaging_blog_banner.png";
+  const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
+  const bannerBg = (rawBanner.startsWith('http') || rawBanner.startsWith('//') || rawBanner.startsWith('/pics/'))
+    ? rawBanner
+    : `${strapiBase}${rawBanner.startsWith('/') ? '' : '/'}${rawBanner}`;
+
   return (
-    <div className="overflow-hidden bg-[#fdfbf6]">
+    <div className="bg-[#fdfbf6] relative">
+      {/* Top Banner with Background Image & Breadcrumbs */}
+      <PageHeader 
+        title={data.hero?.title || data.title}
+        bgImage={bannerBg}
+        breadcrumbs={[
+          { name: isAr ? 'الرئيسية' : 'Home', path: '/' },
+          { name: isAr ? 'المدونة' : 'Blog', path: '/blog' },
+          { name: data.title }
+        ]}
+      />
       
       {/* Main Blog Layout (Two Column) */}
-      <section className="pt-32 pb-12 lg:pt-40 lg:pb-20">
+      <section className="py-12 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-12 relative">
             
-            {/* Left Column: Blog Content (70%) */}
-            <div className="w-full lg:w-8/12">
-              
-              {/* Breadcrumbs */}
-              <nav className="flex flex-wrap items-center justify-start gap-y-1 text-gray-500 font-medium text-sm mb-6">
-                <Link href="/" className="hover:text-seppa-red transition duration-300">Home</Link>
-                <span className="mx-2 shrink-0">/</span>
-                <Link href="/blog" className="hover:text-seppa-red transition duration-300">Blog</Link>
-                <span className="mx-2 shrink-0">/</span>
-                <span className="text-dark font-bold">{data.title}</span>
-              </nav>
+            {/* Left Column: Blog Content (8 cols / ~67%) */}
+            <div className="lg:col-span-8 min-w-0">
 
               {/* Blog Meta Data */}
               <div className="bg-white rounded-xl p-3 md:p-4 mb-6 shadow-sm border border-gray-100 flex flex-wrap items-center gap-4 text-sm">
@@ -80,35 +89,36 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data, locale }) => {
               </div>
 
               {/* Title */}
-              <h1 className={`text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight ${data.hero?.subtitle ? 'mb-4' : 'mb-8'}`}>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-dark leading-tight mb-8">
                 {data.hero?.title || data.title}
               </h1>
 
-              {/* Subtitle */}
-              {data.hero?.subtitle && (
-                <h2 className="text-xl md:text-2xl text-gray-600 mb-8 font-medium leading-relaxed">
-                  {data.hero.subtitle}
-                </h2>
-              )}
-
               {/* Hero Image / Video */}
-              {data.hero?.background_image?.url && (
-                <div className="rounded-2xl overflow-hidden mb-10 shadow-md aspect-video relative">
-                  {data.hero.background_image.mime?.startsWith('video/') ? (
-                    <video 
-                      src={data.hero.background_image.url} 
-                      controls 
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <img 
-                      src={data.hero.background_image.url} 
-                      alt={data.hero.title || data.title}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
-              )}
+              {data.hero?.background_image?.url && (() => {
+                const rawUrl = data.hero.background_image.url;
+                const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
+                const mediaUrl = (rawUrl.startsWith('http') || rawUrl.startsWith('//')) 
+                  ? rawUrl 
+                  : `${strapiBase}${rawUrl.startsWith('/') ? '' : '/'}${rawUrl}`;
+
+                return (
+                  <div className="rounded-2xl overflow-hidden mb-10 shadow-md aspect-video relative">
+                    {data.hero.background_image.mime?.startsWith('video/') ? (
+                      <video 
+                        src={mediaUrl} 
+                        controls 
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <img 
+                        src={mediaUrl} 
+                        alt={data.hero.title || data.title} 
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                  </div>
+                );
+              })()}
 
               {/* Dynamic Zone Content Blocks */}
               <div className="blog-content prose prose-lg max-w-none prose-headings:font-heading prose-headings:font-bold prose-a:text-seppa-red">
@@ -117,12 +127,12 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data, locale }) => {
 
             </div>
 
-            {/* Right Column: Sidebar (30%) */}
-            <div className="w-full lg:w-4/12">
-              <div className="sticky top-32">
+            {/* Right Column: Sticky Sidebar (4 cols / ~33%) */}
+            <div className="lg:col-span-4 relative">
+              <div className="sticky top-28 space-y-8">
                 
-                {/* Search or CTA Banner (Optional) */}
-                <div className="bg-seppa-red rounded-2xl p-8 text-white mb-8 shadow-lg">
+                {/* Search or CTA Banner */}
+                <div className="bg-seppa-red rounded-2xl p-8 text-white shadow-lg">
                   <h3 className="text-2xl font-bold font-heading mb-4">Looking for Packaging Solutions?</h3>
                   <p className="mb-6 text-white/90">Get expert advice tailored for your product lines.</p>
                   <a href="/contact-us" className="inline-block bg-white text-seppa-red font-bold px-6 py-3 rounded-full hover:bg-gray-50 transition">

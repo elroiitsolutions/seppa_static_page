@@ -3,15 +3,17 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import enEnquiry from '@/messages/en/enquiry.json';
 import arEnquiry from '@/messages/ar/enquiry.json';
-import SuccessModal from '@/components/ui/SuccessModal';
+import InternationalPhoneInput, { validatePhoneNumber, validateEmail, formatEmailInput, validateName, formatNameInput } from '@/components/ui/InternationalPhoneInput';
+import CountrySelectDropdown from '@/components/ui/CountrySelectDropdown';
 
 const ScrollEnquiryModal: React.FC = () => {
   const pathname = usePathname();
-  const isArabic = pathname.startsWith('/ar');
-  const isDe = pathname.startsWith('/de');
+  const router = useRouter();
+  const locale = pathname?.split('/')[1] === 'ar' ? 'ar' : 'en';
+  const isArabic = locale === 'ar';
 
   const getT = (key: string) => {
     const keys = key.split('.');
@@ -29,7 +31,6 @@ const ScrollEnquiryModal: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', country: '', city: '', message: '' });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
     // Always listen for the custom event to open the modal
@@ -83,11 +84,14 @@ const ScrollEnquiryModal: React.FC = () => {
   }, [isOpen]);
 
   const handleInputChange = (field: string, value: string) => {
-    let sanitizedValue = value;
-    if (field === 'phone') {
-      sanitizedValue = value.replace(/[^0-9+\s-]/g, '');
+    let val = value;
+    if (field === 'email') {
+      val = formatEmailInput(value);
+    } else if (field === 'name') {
+      val = formatNameInput(value);
     }
-    setFormData(prev => ({ ...prev, [field]: sanitizedValue }));
+
+    setFormData(prev => ({ ...prev, [field]: val }));
     if (errors[field]) {
       setErrors(prev => {
         const next = { ...prev };
@@ -97,25 +101,29 @@ const ScrollEnquiryModal: React.FC = () => {
     }
   };
 
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: Record<string, string> = {};
 
-    if (!formData.name.trim()) newErrors.name = isArabic ? "الاسم مطلوب" : 'Name is required';
-    if (!formData.phone.trim()) {
+    if (!formData.name.trim()) {
+      newErrors.name = isArabic ? "الاسم مطلوب" : 'Name is required';
+    } else if (!validateName(formData.name)) {
+      newErrors.name = isArabic 
+        ? "الاسم يجب أن يحتوي على أحرف فقط (بدون أرقام)" 
+        : 'Name must contain letters only (no numbers)';
+    }
+
+    if (!formData.phone || !formData.phone.trim()) {
       newErrors.phone = isArabic ? "رقم الهاتف مطلوب" : 'Phone number is required';
-    } else {
-      const digitsOnly = formData.phone.replace(/\D/g, '');
-      if (digitsOnly.length < 10 || digitsOnly.length > 15) {
-        newErrors.phone = isArabic ? "رقم هاتف غير صحيح (10-15 رقم)" : 'Invalid phone number (10-15 digits)';
-      }
+    } else if (!validatePhoneNumber(formData.phone)) {
+      newErrors.phone = isArabic ? "يرجى إدخال رقم هاتف صحيح" : 'Please enter a valid phone number';
     }
     if (!formData.email.trim()) {
       newErrors.email = isArabic ? "البريد الإلكتروني مطلوب" : 'Email address is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email.trim())) {
-      newErrors.email = isArabic ? "بريد إلكتروني غير صحيح" : 'Invalid email address';
+    } else if (!validateEmail(formData.email)) {
+      newErrors.email = isArabic 
+        ? "يرجى إدخال بريد إلكتروني صحيح (أحرف صغيرة، @، و .com)" 
+        : 'Email must be lowercase and contain @ and .com (e.g. name@domain.com)';
     }
     if (!formData.country.trim()) {
       newErrors.country = isArabic ? "الدولة مطلوبة" : 'Country is required';
@@ -128,12 +136,29 @@ const ScrollEnquiryModal: React.FC = () => {
     }
 
     setIsSubmitting(true);
-    setTimeout(() => {
+    try {
+      await fetch('/api/submit-enquiry.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_type: 'scroll',
+          full_name: formData.name,
+          phone_number: formData.phone,
+          email: formData.email,
+          country: formData.country,
+          city: formData.city,
+          message: formData.message,
+          page_url: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      });
+    } catch (err) {
+      console.error('Failed to submit scroll enquiry:', err);
+    } finally {
       setIsSubmitting(false);
       setIsOpen(false);
-      setShowSuccessModal(true);
       setFormData({ name: '', email: '', phone: '', country: '', city: '', message: '' });
-    }, 500);
+      router.push(`/${locale}/thank-you`);
+    }
   };
 
   const handleClose = () => {
@@ -143,12 +168,6 @@ const ScrollEnquiryModal: React.FC = () => {
 
   return (
     <>
-      <SuccessModal 
-        isOpen={showSuccessModal} 
-        onClose={() => setShowSuccessModal(false)} 
-        title={isArabic ? "شكراً لاستفسارك!" : "Thank You!"}
-        message={isArabic ? "تم استلام طلبك بنجاح وسنتواصل معك قريباً." : "Your enquiry has been received. Our team will contact you shortly."}
-      />
       <AnimatePresence>
         {isOpen && (
           <div className="fixed inset-0 z-[999] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
@@ -172,7 +191,7 @@ const ScrollEnquiryModal: React.FC = () => {
             >
               {/* Close Button */}
               <button 
-                suppressHydrationWarning
+                suppressHydrationWarning={true}
                 onClick={handleClose}
                 className={`absolute top-4 ${isArabic ? 'left-4' : 'right-4'} z-20 w-10 h-10 bg-white/10 hover:bg-seppa-red text-white rounded-full flex items-center justify-center transition backdrop-blur-md`}
                 aria-label="Close modal"
@@ -184,7 +203,7 @@ const ScrollEnquiryModal: React.FC = () => {
               <div className="absolute top-0 right-0 w-48 h-48 bg-seppa-red rounded-full mix-blend-multiply filter blur-3xl opacity-30 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#cda262] rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
 
-              <div className="relative z-10 p-5 sm:p-8 text-start overflow-y-auto">
+              <div className="relative z-10 p-5 sm:p-8 text-start overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                 <h3 className="text-2xl sm:text-3xl font-bold font-heading text-white mb-2">{isArabic ? "طلب تسعيرة" : "Request a Quote"}</h3>
                 <p className="text-gray-300 text-sm mb-6">
                   {isArabic 
@@ -195,6 +214,7 @@ const ScrollEnquiryModal: React.FC = () => {
                 <form className="space-y-4" onSubmit={handleSubmit} noValidate>
                   <div>
                     <input 
+                      suppressHydrationWarning={true}
                       type="text" 
                       placeholder={isArabic ? "الاسم الكامل *" : "Enter your full name *"} 
                       value={formData.name}
@@ -207,6 +227,7 @@ const ScrollEnquiryModal: React.FC = () => {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="w-full sm:w-1/2">
                       <input 
+                        suppressHydrationWarning={true}
                         type="email" 
                         placeholder={isArabic ? "البريد الإلكتروني *" : "Email Address *"} 
                         value={formData.email}
@@ -216,31 +237,38 @@ const ScrollEnquiryModal: React.FC = () => {
                       {errors.email && <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{errors.email}</p>}
                     </div>
                     <div className="w-full sm:w-1/2">
-                      <input 
-                        type="tel" 
-                        placeholder={isArabic ? "رقم الهاتف *" : "Phone Number *"} 
+                      <InternationalPhoneInput
                         value={formData.phone}
-                        onChange={(e) => handleInputChange('phone', e.target.value)}
-                        className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.phone ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition truncate`}
+                        onChange={(val) => handleInputChange('phone', val)}
+                        onCountryChange={(_code, countryName) => {
+                          if (countryName) {
+                            handleInputChange('country', countryName);
+                          }
+                        }}
+                        error={errors.phone}
+                        placeholder={isArabic ? "رقم الهاتف *" : "Phone Number *"}
+                        variant="dark"
+                        locale={isArabic ? 'ar' : 'en'}
+                        popoverAlign="right"
                       />
-                      {errors.phone && <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{errors.phone}</p>}
                     </div>
                   </div>
 
-                  {/* Country (Required) and City (Not Required) */}
+                  {/* Country (All Countries Dropdown) and City (Optional) */}
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="w-full sm:w-1/2">
-                      <input 
-                        type="text" 
-                        placeholder={isArabic ? "الدولة *" : "Country *"} 
+                      <CountrySelectDropdown
                         value={formData.country}
-                        onChange={(e) => handleInputChange('country', e.target.value)}
-                        className={`w-full px-5 py-3 rounded-xl bg-white/10 border ${errors.country ? 'border-red-400' : 'border-white/20'} text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-seppa-red transition truncate`}
+                        onChange={(val) => handleInputChange('country', val)}
+                        error={errors.country}
+                        placeholder={isArabic ? "اختر الدولة *" : "Select Country *"}
+                        variant="dark"
+                        locale={isArabic ? 'ar' : 'en'}
                       />
-                      {errors.country && <p className="text-red-400 text-xs mt-1 ml-2 font-medium">{errors.country}</p>}
                     </div>
                     <div className="w-full sm:w-1/2">
                       <input 
+                        suppressHydrationWarning={true}
                         type="text" 
                         placeholder={isArabic ? "المدينة (اختياري)" : "City (Optional)"} 
                         value={formData.city}
@@ -252,6 +280,7 @@ const ScrollEnquiryModal: React.FC = () => {
 
                   <div>
                     <textarea 
+                      suppressHydrationWarning={true}
                       placeholder={isArabic ? "أخبرنا عن متطلبات المشروع... *" : "Tell us about your project, capacity requirements, and any specific details... *"} 
                       rows={3}
                       value={formData.message}
@@ -262,7 +291,7 @@ const ScrollEnquiryModal: React.FC = () => {
                   </div>
                   
                   <button 
-                    suppressHydrationWarning
+                    suppressHydrationWarning={true}
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full py-4 bg-seppa-red hover:bg-white hover:text-seppa-red text-white font-bold rounded-xl transition duration-300 mt-2 disabled:opacity-50"

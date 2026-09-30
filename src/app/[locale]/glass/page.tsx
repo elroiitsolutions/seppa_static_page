@@ -45,6 +45,9 @@ export default async function GlassPage({ params }: PageProps) {
         reverse: [false, true, false, true, false, true][index] || false,
         bgClass: [undefined, "bg-white", undefined, "bg-white", undefined, "bg-white"][index]
       })),
+    featuresTitle: t('featuresTitle'),
+    featuresSubtitle: t('featuresSubtitle'),
+    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
     faqTitle: t('faqTitle'),
     faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : [],
     hideWhyChoose: true,

@@ -9,6 +9,11 @@ import bannerImg from '@/assets/processing/generated/processing_banner_178175910
 import overviewImg from '@/assets/blowing/generated/blowing_overview_1781759662496.png';
 import over from '@/assets/processing/generated/processing_whychoose_1781759182691.png';
 
+import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.png';
+import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
+import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
+import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -26,6 +31,22 @@ export default async function OilChillersPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/equipments/oil-chillers', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -37,30 +58,16 @@ export default async function OilChillersPage({ params }: PageProps) {
     overviewsubDescription: (() => {
       try {
         const raw = t.raw('overviewsubDescription');
-        if (Array.isArray(raw)) {
-          return raw.map((paragraph, index) => (
-            <p key={index} className="text-base md:text-lg text-gray-600 leading-relaxed indent-8 md:indent-12 mt-4">
-              {paragraph}
-            </p>
-          ));
-        }
-      } catch (e) {}
-      return undefined;
-    })(),
-    overviewImage: overviewImg.src,
-    featuresTitle: t('featuresTitle'),
-    features: (() => {
-      try {
-        const raw = t.raw('features');
-        if (Array.isArray(raw)) {
-          return raw.map((feature: any) => ({
-            title: feature.title,
-            description: feature.description
-          }));
-        }
+        if (Array.isArray(raw)) return raw;
       } catch (e) {}
       return [];
     })(),
+    overviewImage: overviewImg.src,
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
     contentBlocks: (() => {
       try {
         const raw = t.raw('contentBlocks');
@@ -73,23 +80,15 @@ export default async function OilChillersPage({ params }: PageProps) {
       } catch (e) {}
       return [];
     })(),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t('applicationsSubtitle'),
-    applications: (() => {
-      try {
-        const raw = t.raw('applications');
-        if (Array.isArray(raw)) {
-          return raw.map((app: any) => ({
-            title: app.title,
-            description: app.description
-          }));
-        }
-      } catch (e) {}
-      return [];
-    })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       image: over.src,
       paragraphs: (() => {
         try {
@@ -98,9 +97,25 @@ export default async function OilChillersPage({ params }: PageProps) {
             return raw;
           }
         } catch (e) {}
-        return undefined;
+        return [];
       })()
     },
+    methodology: (() => {
+      try {
+        if (t.has('methodology')) {
+          const title = t.has('methodology.title') ? t('methodology.title') : '';
+          const subtitle = t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined;
+          const rawSteps = t.raw('methodology.steps');
+          const steps = Array.isArray(rawSteps) ? rawSteps.map((step: any, index: number) => ({
+            title: step.title,
+            description: step.description,
+            image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
+          })) : [];
+          return { title, subtitle, steps };
+        }
+      } catch (e) {}
+      return undefined;
+    })(),
     faqTitle: t('faqTitle'),
     faqs: (() => {
       try {
@@ -116,11 +131,13 @@ export default async function OilChillersPage({ params }: PageProps) {
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <PackagingPageLayout data={pageData} />
+      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+        <PackagingPageLayout data={pageData} locale={locale} />
+      </div>
     </NextIntlClientProvider>
   );
 }

@@ -52,8 +52,9 @@ export default async function CompleteLinesPage({ params }: PageProps) {
     })),
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
-      paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: t.has('whyChoose.paragraphs') && Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : undefined,
+      reasons: t.has('whyChoose.reasons') && Array.isArray(t.raw('whyChoose.reasons')) ? t.raw('whyChoose.reasons') : undefined,
       image: over.src
     },
     methodology: {

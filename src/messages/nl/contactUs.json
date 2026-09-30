@@ -1,0 +1,118 @@
+{
+  "breadcrumbsHome": "Home",
+  "breadcrumbsContact": "Neem Contact Op",
+  "title": "Neem Contact Op",
+  "headquarters": "Hoofdkantoor",
+  "getInTouch": "Neem Contact Op",
+  "subtitle": "Neem contact op met ons hoofdkantoor of verken onze wereldwijde regiokantoren om in contact te komen met een vertegenwoordiger bij u in de buurt.",
+  "tollFree": "Gratis nummer:",
+  "quickEmail": "Snelle E-mail:",
+  "registeredOffice": "Geregistreerd Kantoor:",
+  "sendMessage": "Stuur ons een bericht",
+  "placeholderName": "Uw Naam *",
+  "placeholderEmail": "E-mailadres *",
+  "placeholderPhone": "Telefoonnummer *",
+  "placeholderLocation": "Locatie *",
+  "placeholderMessage": "Schrijf Bericht... *",
+  "btnSubmit": "Bericht Verzenden",
+  "btnSending": "Verzenden...",
+  "network": "Ons Netwerk",
+  "branchOffices": "Wereldwijde Regiokantoren",
+  "selectOffice": "Selecteer hieronder een kantoor om de locatie op de kaart te bekijken.",
+  "showing": "Weergave:",
+  "errName": "Uw naam is verplicht",
+  "errEmailRequired": "E-mailadres is verplicht",
+  "errEmailInvalid": "Voer een geldig e-mailadres in",
+  "errPhoneRequired": "Telefoonnummer is verplicht",
+  "errPhoneInvalid": "Voer een geldig telefoonnummer in (10-15 cijfers)",
+  "errLocation": "Locatie is verplicht",
+  "errMessage": "Voer uw bericht in",
+  "successTitle": "Bedankt voor het opnemen van contact!",
+  "successMsg": "Uw bericht is succesvol verzonden. Ons supportteam neemt zo snel mogelijk contact met u op.",
+  "offices": [
+    {
+      "city": "Mumbai (Hoofdkantoor)",
+      "address": "712 Shivai Plaza, Andheri (East), Mumbai-400059, India",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "Chennai",
+      "address": "Vatsala Eashwaran Estate, No. 7, Paarivakkam Road, Chennai - 600056, Tamilnadu, India",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "dgmw@canadiancrystalline.net",
+      "country": "India"
+    },
+    {
+      "city": "Bengaluru",
+      "address": "4th Floor, Novel office, Begaum Mahal, Yellappachetty Layout, Bengaluru- 560042",
+      "phone": ["+91-9483525500"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "New Delhi",
+      "address": "No.1305, 13th Floor, Vikram Towers, Building no-16, Rajendra place, New Delhi - 110008",
+      "phone": ["1-800-425-20000", "+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "Hyderabad",
+      "address": "Hyderabad Region",
+      "phone": ["+91-9384806105"],
+      "email": "info@seppasolutions.com",
+      "country": "India"
+    },
+    {
+      "city": "USA",
+      "address": "439 N Briery Road, Biery Industrial Area, Irving, Texas",
+      "phone": ["Gratis nummer: 1-(888)-270-2217", "+1 267 7339 732"],
+      "email": "mail@seppasolutions.com",
+      "country": "USA"
+    },
+    {
+      "city": "Canada (Edmonton)",
+      "address": "Alberta Region",
+      "phone": ["+1-(403)-469-4015"],
+      "email": "ccw@canadianclear.com",
+      "country": "Canada"
+    },
+    {
+      "city": "VAE",
+      "address": "Ajman Free Zone, V.A.E.",
+      "phone": ["+971507726933"],
+      "email": "mail@seppasolutions.com",
+      "country": "VAE"
+    },
+    {
+      "city": "Verenigd Koninkrijk",
+      "address": "UK Region",
+      "phone": ["+44 20300 27711"],
+      "email": "mail@seppasolutions.com",
+      "country": "VK"
+    },
+    {
+      "city": "Duitsland & België",
+      "address": "Brussels Region",
+      "phone": ["+4917622913101"],
+      "email": "ccw@canadianclear.com",
+      "country": "Europa"
+    },
+    {
+      "city": "Australië",
+      "address": "Australia Region",
+      "phone": ["+61363877084"],
+      "email": "mail@seppasolutions.com",
+      "country": "Australië"
+    },
+    {
+      "city": "Armenië",
+      "address": "Armenia Region",
+      "phone": ["+37494890965"],
+      "email": "mail@seppasolutions.com",
+      "country": "Armenië"
+    }
+  ]
+}

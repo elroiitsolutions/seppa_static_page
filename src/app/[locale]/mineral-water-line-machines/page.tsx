@@ -63,6 +63,7 @@ export default async function MineralWaterLinePage({ params }: PageProps) {
     },
     whyChoose: {
       title: t('whyChoose.title'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
       paragraphs: t.has('whyChoose.paragraphs') ? t.raw('whyChoose.paragraphs') : undefined,
       reasons: t.has('whyChoose.reasons') ? t.raw('whyChoose.reasons') : undefined,
       image: install.src

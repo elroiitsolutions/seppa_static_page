@@ -32,6 +32,8 @@ export default async function StructuredWaterPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/structured-water', locale);
 
+  const rawContentBlocks = (t.raw('contentBlocks') as any[]) || [];
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -40,40 +42,88 @@ export default async function StructuredWaterPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
+    overviewsubDescription: t.has('overviewsubDescription') && Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
-    contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any) => ({
+    contentBlocks: rawContentBlocks.map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
-      image1: img1.src,
-      reverse: true
+      image1: [img1.src, over.src][index] || img1.src,
+      reverse: index % 2 === 0,
+      bgClass: index % 2 === 1 ? "bg-light" : "bg-white",
+      layout: (block.paragraphs && block.paragraphs.length >= 3) ? ("stacked" as const) : undefined
     })),
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t('featuresSubtitle'),
-    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t('applicationsSubtitle'),
-    applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    featuresTitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: (() => {
+      try {
+        const raw = t.raw('features');
+        if (Array.isArray(raw) && raw.length > 0) {
+          return raw.map((feature: any) => ({
+            title: feature.title,
+            description: feature.description
+          }));
+        }
+      } catch (e) {}
+      return undefined;
+    })(),
+    applicationsTitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsTitle') ? t('applicationsTitle') : undefined,
+    applicationsSubtitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
+    applications: (() => {
+      try {
+        const raw = t.raw('applications');
+        if (Array.isArray(raw) && raw.length > 0) {
+          return raw.map((app: any) => ({
+            title: app.title,
+            description: app.description
+          }));
+        }
+      } catch (e) {}
+      return undefined;
+    })(),
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
       image: over.src
     },
     methodology: {
-      title: t('methodology.title'),
-      steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
-        title: step.title,
-        description: step.description,
-        image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      })),
-      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
+      badge: t.has('methodology.badge') ? t('methodology.badge') : (t.raw('methodology') as any)?.badge,
+      title: t.has('methodology.title') ? t('methodology.title') : (t.raw('methodology') as any)?.title,
+      subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : (t.raw('methodology') as any)?.subtitle,
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw) && raw.length > 0) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title || "",
+              description: step.description,
+              image: [meth1.src, meth2.src, meth3.src, meth4.src, over.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: (() => {
+        try {
+          if (t.has('methodology.outro')) {
+            const rawOutro = t.raw('methodology.outro');
+            if (Array.isArray(rawOutro) && rawOutro.length > 0) return rawOutro;
+            if (typeof rawOutro === 'string' && rawOutro.trim()) return [rawOutro];
+          }
+          const rawMeth = t.raw('methodology') as any;
+          if (rawMeth && rawMeth.outro) {
+            if (Array.isArray(rawMeth.outro) && rawMeth.outro.length > 0) return rawMeth.outro;
+            if (typeof rawMeth.outro === 'string' && rawMeth.outro.trim()) return [rawMeth.outro];
+          }
+        } catch (e) {}
+        return undefined;
+      })()
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

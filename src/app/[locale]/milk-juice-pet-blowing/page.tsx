@@ -14,7 +14,6 @@ import over from '@/assets/processing/generated/processing_whychoose_17817591826
 import meth1 from '@/assets/processing/generated/processing_meth1_1781759196548.png';
 import meth2 from '@/assets/processing/generated/processing_meth2_1781759215088.png';
 import meth3 from '@/assets/processing/generated/processing_meth3_1781759228926.png';
-import meth4 from '@/assets/processing/generated/processing_meth4_1781759240871.png';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -33,6 +32,22 @@ export default async function MilkJuicePetBlowingPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/milk-juice-pet-blowing', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -41,39 +56,82 @@ export default async function MilkJuicePetBlowingPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
+    overviewsubDescription: (() => {
+      try {
+        const raw = t.raw('overviewsubDescription');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })(),
     overviewImage: overviewImg.src,
-    contentBlocks: (t.raw('contentBlocks') as any[] || []).map((block: any, index: number) => ({
-      title: block.title,
-      paragraphs: block.paragraphs,
-      image1: [img1.src, img2.src][index] || undefined,
-      reverse: [true, false][index] || false,
-      bgClass: [undefined, "bg-light"][index] || undefined
-    })),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
+    contentBlocks: (() => {
+      try {
+        const raw = t.raw('contentBlocks');
+        if (Array.isArray(raw)) {
+          return raw.map((block: any, index: number) => ({
+            title: block.title,
+            paragraphs: block.paragraphs,
+            image1: [img1.src, img2.src][index] || undefined,
+            reverse: [true, false][index] || false,
+            bgClass: [undefined, "bg-light"][index] || undefined
+          }));
+        }
+      } catch (e) {}
+      return [];
+    })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
-      paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
+      paragraphs: (() => {
+        try {
+          const raw = t.raw('whyChoose.paragraphs');
+          if (Array.isArray(raw)) return raw;
+        } catch (e) {}
+        return [];
+      })(),
       image: over.src
     },
     methodology: {
       title: t('methodology.title'),
       subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined,
-      steps: (t.raw('methodology.steps') as any[] || []).map((step: any, index: number) => ({
-        title: step.title,
-        description: step.description,
-        image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      })),
-      outro: t.has('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : []) : undefined
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw)) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title,
+              description: step.description,
+              image: [meth1.src, meth2.src, meth3.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: undefined
     },
     faqTitle: t('faqTitle'),
-    faqs: Array.isArray(t.raw('faqs')) ? t.raw('faqs') : []
+    faqs: (() => {
+      try {
+        const raw = t.raw('faqs');
+        if (Array.isArray(raw)) return raw;
+      } catch (e) {}
+      return [];
+    })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

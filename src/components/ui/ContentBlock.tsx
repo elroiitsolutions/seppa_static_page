@@ -3,6 +3,7 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from './AnimatedHeading';
 import { Link } from '@/i18n/routing';
+import { usePathname } from 'next/navigation';
 import { FiArrowUpRight, FiCheckCircle } from 'react-icons/fi';
 import { FaPhoneAlt } from 'react-icons/fa';
 
@@ -16,6 +17,7 @@ export interface ContentBlockProps {
   bgClass?: string;
   reverse?: boolean;
   layout?: 'side-by-side' | 'stacked';
+  showReadMore?: boolean;
 }
 
 const fadeInUp: Variants = {
@@ -33,121 +35,163 @@ const imageVariants: Variants = {
   visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
+const getReadMoreText = (pathname: string): string => {
+  if (pathname.startsWith('/fr')) return 'LIRE LA SUITE';
+  if (pathname.startsWith('/ar')) return 'اقرأ المزيد';
+  if (pathname.startsWith('/nl')) return 'MEER LEZEN';
+  if (pathname.startsWith('/de')) return 'MEHR LESEN';
+  return 'READ MORE';
+};
+
 const getLinkPathForTitle = (title: string): string => {
   const cleanTitle = title.trim().toLowerCase().replace(/:$/, '');
+  
+  // 1. Hydraulic Oil Chiller
   if (
-    cleanTitle === "oil chillers" || 
-    cleanTitle === "مبردات الزيت الصناعية" ||
-    cleanTitle.includes("oil chillers") ||
-    cleanTitle.includes("مبردات الزيت")
-  ) {
-    return "/equipments/oil-chillers";
-  }
-  if (
-    cleanTitle === "hydraulic oil chiller" || 
-    cleanTitle === "hydraulic oil chillers" || 
-    cleanTitle === "مبرد الزيت الهيدروليكي" ||
     cleanTitle.includes("hydraulic oil") ||
+    cleanTitle.includes("hydraulische olie") ||
+    cleanTitle.includes("hydrauliköl") ||
+    cleanTitle.includes("huile hydraulique") ||
     cleanTitle.includes("الهيدروليكي")
   ) {
     return "/equipments/hydraulic-chillers";
   }
+
+  // 2. Oil Chillers
   if (
-    cleanTitle === "coolant chiller" || 
-    cleanTitle === "coolant chillers" || 
-    cleanTitle === "مبرد سوائل التبريد" ||
-    cleanTitle.includes("coolant chiller") ||
-    cleanTitle.includes("سوائل التبريد")
+    cleanTitle.includes("oil chiller") ||
+    cleanTitle.includes("olie-chiller") ||
+    cleanTitle.includes("oliechiller") ||
+    cleanTitle.includes("öl-chiller") ||
+    cleanTitle.includes("öl-kühler") ||
+    cleanTitle.includes("ölchiller") ||
+    cleanTitle.includes("refroidisseur d'huile") ||
+    cleanTitle.includes("refroidisseurs d'huile") ||
+    cleanTitle.includes("مبردات الزيت") ||
+    cleanTitle.includes("مبرد الزيت")
   ) {
-    if (cleanTitle.includes("i dip") || cleanTitle.includes("ip") || cleanTitle.includes("الغمر")) {
-      return "/equipments/coolant-chiller-ip";
-    }
-    return "/equipments/coolant-chillers";
+    return "/equipments/oil-chillers";
   }
+
+  // 3. Coolant Chiller I Dip / IP
   if (
-    cleanTitle === "coolant chiller i dip" || 
-    cleanTitle === "coolant chiller ip" || 
-    cleanTitle === "مبرد الغمر المباشر" ||
     cleanTitle.includes("i dip") ||
-    cleanTitle.includes("الغمر المباشر")
+    cleanTitle.includes("ip") ||
+    cleanTitle.includes("dompel") ||
+    cleanTitle.includes("tauchkühler") ||
+    cleanTitle.includes("immersion") ||
+    cleanTitle.includes("الغمر")
   ) {
     return "/equipments/coolant-chiller-ip";
   }
+
+  // 4. Coolant Chiller
   if (
-    cleanTitle === "air cooled scroll chiller" || 
-    cleanTitle === "air cooled scroll chillers" || 
-    cleanTitle === "مبرد حلزوني مبرد بالهواء" ||
+    cleanTitle.includes("coolant chiller") ||
+    cleanTitle.includes("koelmiddelchiller") ||
+    cleanTitle.includes("koelmiddel-chiller") ||
+    cleanTitle.includes("kühlmittel-chiller") ||
+    cleanTitle.includes("kühlmittel-kühler") ||
+    cleanTitle.includes("liquide de refroidissement") ||
+    cleanTitle.includes("سوائل التبريد") ||
+    cleanTitle.includes("سائل التبريد")
+  ) {
+    return "/equipments/coolant-chillers";
+  }
+
+  // 5. Air Cooled Scroll Chiller
+  if (
     cleanTitle.includes("air cooled scroll") ||
-    cleanTitle.includes("مبرد بالهواء")
+    cleanTitle.includes("luchtgekoelde scroll") ||
+    cleanTitle.includes("luftgekühlte scroll") ||
+    cleanTitle.includes("luftgekühlter scroll") ||
+    cleanTitle.includes("refroidi par air") ||
+    cleanTitle.includes("refroidis par air") ||
+    cleanTitle.includes("التمرير بالهواء") ||
+    cleanTitle.includes("مبرد بالهواء") ||
+    cleanTitle.includes("المبردة بالهواء")
   ) {
     return "/equipments/air-cooled-scroll-chillers";
   }
+
+  // 6. Water Cooled Scroll Chiller
   if (
-    cleanTitle === "water cooled scroll chiller" || 
-    cleanTitle === "water cooled scroll chillers" || 
-    cleanTitle === "مبرد حلزوني مبرد بالماء" ||
     cleanTitle.includes("water cooled scroll") ||
-    cleanTitle.includes("مبرد بالماء")
+    cleanTitle.includes("watergekoelde scroll") ||
+    cleanTitle.includes("wassergekühlte scroll") ||
+    cleanTitle.includes("wassergekühlter scroll") ||
+    cleanTitle.includes("refroidi par eau") ||
+    cleanTitle.includes("refroidis par eau") ||
+    cleanTitle.includes("التمرير بالماء") ||
+    cleanTitle.includes("مبرد بالماء") ||
+    cleanTitle.includes("المبردة بالماء")
   ) {
     return "/equipments/water-cooled-scroll-chillers";
   }
+
+  // 7. Smart Screw Chiller
   if (
-    cleanTitle === "smart screw chiller series" || 
-    cleanTitle === "smart screw chillers" || 
-    cleanTitle === "مبردات لولبية ذكية" ||
-    cleanTitle === "سلسلة المبردات اللولبية الذكية" ||
     cleanTitle.includes("smart screw") ||
+    cleanTitle.includes("schroefchiller") ||
+    cleanTitle.includes("schrauben-chiller") ||
+    cleanTitle.includes("à vis intelligent") ||
+    cleanTitle.includes("à vis") ||
+    cleanTitle.includes("اللولبية الذكية") ||
+    cleanTitle.includes("الذكي") ||
     cleanTitle.includes("لولبية")
   ) {
     return "/equipments/smart-screw-chillers";
   }
+
+  // 8. Energy Efficient Chillers
   if (
-    cleanTitle === "energy efficient chillers" || 
-    cleanTitle === "مبردات مياه صناعية موفرة للطاقة" ||
-    cleanTitle === "مبردات موفرة للطاقة" ||
-    cleanTitle.includes("energy efficient chiller") ||
-    cleanTitle.includes("موفرة للطاقة")
+    cleanTitle.includes("energy efficient") ||
+    cleanTitle.includes("energiezuinige") ||
+    cleanTitle.includes("energieeffiziente") ||
+    cleanTitle.includes("efficacité énergétique") ||
+    cleanTitle.includes("écoénergétique") ||
+    cleanTitle.includes("éco-énergétique") ||
+    cleanTitle.includes("موفرة للطاقة") ||
+    cleanTitle.includes("كفاءة الطاقة")
   ) {
     return "/equipments/energy-efficient-chillers";
   }
+
+  // Blowing machine titles
   if (
-    cleanTitle === "semi automatic pet blowing machine" || 
-    cleanTitle === "ماكينة نفخ زجاجات pet نصف الأوتوماتيكية" ||
-    cleanTitle === "ماكينة نصف آلية لـ pet" ||
     cleanTitle.includes("semi automatic pet") ||
-    cleanTitle.includes("نصف الأوتوماتيكية")
+    cleanTitle.includes("semi-automatique") ||
+    cleanTitle.includes("نصف الأوتوماتيكية") ||
+    cleanTitle.includes("نصف آلية")
   ) {
     return "/blowing/semi-automatic-units";
   }
   if (
-    cleanTitle === "mineral water & soft drink pet bottle machine" || 
-    cleanTitle === "ماكينة تصنيع زجاجات pet للمياه المعدنية والمشروبات الغازية" ||
     cleanTitle.includes("soft drink pet") ||
+    cleanTitle.includes("boissons gazeuses") ||
     cleanTitle.includes("للمياه المعدنية والمشروبات الغازية")
   ) {
     return "/soft-drink-pet-blowing";
   }
   if (
-    cleanTitle === "milk / juice pet bottle machine" ||
-    cleanTitle === "آلة تعبئة زجاجات عصير pet" ||
-    cleanTitle === "ماكينة تصنيع زجاجات pet للعصائر" ||
     cleanTitle.includes("milk / juice pet") ||
+    cleanTitle.includes("lait / jus") ||
+    cleanTitle.includes("lait/jus") ||
     cleanTitle.includes("عصير pet") ||
     cleanTitle.includes("زجاجات pet للعصائر")
   ) {
     return "/milk-juice-pet-blowing";
   }
   if (
-    cleanTitle === "bottle machines for household cleaning products" ||
-    cleanTitle === "ماكينة تصنيع عبوات منتجات التنظيف المنزلية" ||
     cleanTitle.includes("household cleaning") ||
+    cleanTitle.includes("nettoyage ménager") ||
     cleanTitle.includes("منتجات التنظيف")
   ) {
     return "/household-cleaning-pet-blowing";
   }
   if (
-    cleanTitle.includes("oil, vinegar & ketchup") ||
     cleanTitle.includes("oil, vinegar") ||
+    cleanTitle.includes("huile, vinaigre") ||
     cleanTitle.includes("عبوات الزيت من مادة pet") ||
     cleanTitle.includes("زجاجات pet للزيت") ||
     cleanTitle.includes("تعبئة الزيوت والخل")
@@ -157,6 +201,8 @@ const getLinkPathForTitle = (title: string): string => {
   if (
     cleanTitle.includes("large pet bottle") ||
     cleanTitle.includes("3 to 20") ||
+    cleanTitle.includes("3 à 20") ||
+    cleanTitle.includes("grands formats") ||
     cleanTitle.includes("زجاجة pet كبيرة") ||
     cleanTitle.includes("3 إلى 20 لتر") ||
     cleanTitle.includes("زجاجات pet كبيرة السعة")
@@ -165,6 +211,7 @@ const getLinkPathForTitle = (title: string): string => {
   }
   if (
     cleanTitle.includes("electric pet") ||
+    cleanTitle.includes("électrique pour pet") ||
     cleanTitle.includes("كهربائية لـ pet") ||
     cleanTitle.includes("كهربائية لنفخ عبوات pet")
   ) {
@@ -172,17 +219,21 @@ const getLinkPathForTitle = (title: string): string => {
   }
   if (
     cleanTitle.includes("rotary") ||
+    cleanTitle.includes("rotative") ||
     cleanTitle.includes("الدوارة") ||
     cleanTitle.includes("rotary high speed")
   ) {
     return "/blowing/rotary-high-speed-systems";
   }
+
   return "";
 };
 
-const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, features, image1, image2, bgClass = "bg-[#fdfbf6] m-3 rounded-2xl", reverse = false, layout = 'side-by-side' }) => {
+const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, features, image1, image2, bgClass = "bg-[#fdfbf6] m-3 rounded-2xl", reverse = false, layout = 'side-by-side', showReadMore = false }) => {
   const hasImages = image1 || image2;
   const [isMounted, setIsMounted] = React.useState(false);
+  const pathname = usePathname() || '';
+  const readMoreText = getReadMoreText(pathname);
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -275,18 +326,18 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                         <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                         <strong>{title}:</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>
                     ) : isBoldPrefix ? (
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                         <strong>{title}.</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>
@@ -371,18 +422,18 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                           <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                           <strong>{title}:</strong> {desc}
-                          {linkPath && isMounted && (
+                          {showReadMore && linkPath && isMounted && (
                             <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                              Read More <FiArrowUpRight className="text-xs" />
+                              {readMoreText} <FiArrowUpRight className="text-xs" />
                             </Link>
                           )}
                         </p>
                       ) : isBoldPrefix ? (
                         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                           <strong>{title}.</strong> {desc}
-                          {linkPath && isMounted && (
+                          {showReadMore && linkPath && isMounted && (
                             <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                              Read More <FiArrowUpRight className="text-xs" />
+                              {readMoreText} <FiArrowUpRight className="text-xs" />
                             </Link>
                           )}
                         </p>
@@ -504,18 +555,18 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
                         <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                         <strong>{title}:</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>
                     ) : isBoldPrefix ? (
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
                         <strong>{title}.</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>

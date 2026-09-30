@@ -18,7 +18,7 @@ import Partners from '@/components/home/Partners';
 import Awards from '@/components/home/Awards';
 import SpecialOffer from '@/components/home/SpecialOffer';
 
-export default function HomeView() {
+export default function HomeView({ latestBlogs }: { latestBlogs?: any[] }) {
   return (
     <>
 
@@ -38,7 +38,7 @@ export default function HomeView() {
       <ContactMap />
       <HomeFAQs />
       <Awards />
-      <LatestBlogs />
+      <LatestBlogs selected_blogs={latestBlogs} />
     </>
   );
 }

@@ -1,6 +1,9 @@
 {
   "title": "Video Gallery",
   "breadcrumbName": "Video Gallery",
+  "productsInAction": "Our Products In Action",
+  "productVideos": "Product Videos",
+  "productVideosDesc": "See our world-class machinery and complete line solutions in real-world operation across facilities worldwide.",
   "searchPlaceholder": "Search videos...",
   "categoriesHeading": "Categories",
   "noVideos": "No videos found matching your criteria.",

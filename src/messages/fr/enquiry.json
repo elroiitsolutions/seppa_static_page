@@ -1,0 +1,36 @@
+{
+  "title": "Demande de produit",
+  "breadcrumbName": "Demande de produit",
+  "heading": "Vous avez un projet en tête ?",
+  "subheading": "Remplissez le formulaire ci-dessous pour nous faire part de vos besoins. Notre équipe d'experts vous recontactera avec les meilleures solutions adaptées à vos besoins.",
+  "formTitle": "Envoyez-nous une demande",
+  "submitButtonText": "Soumettre la demande",
+  "getInTouch": "CONTACTEZ-NOUS",
+  "callUs": "Appelez-nous :",
+  "emailUs": "Écrivez-nous :",
+  "headOffice": "Siège social :",
+  "headOfficeAddress": "Chennai, Tamil Nadu, Inde",
+  "fields": {
+    "name": "Nom complet",
+    "namePlaceholder": "Entrez votre nom complet",
+    "email": "Adresse e-mail",
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "phone": "Numéro de téléphone",
+    "phonePlaceholder": "Entrez votre numéro de téléphone",
+    "location": "Localisation / Pays",
+    "locationPlaceholder": "Où êtes-vous situé ?",
+    "product": "Produit d'intérêt",
+    "productPlaceholder": "Sélectionnez le produit d'intérêt",
+    "message": "Besoins du projet",
+    "messagePlaceholder": "Parlez-nous de votre projet, de vos besoins en capacité et de tous détails spécifiques...",
+    "products": [
+      "Lignes complètes",
+      "Remplisseuses liquides",
+      "Souffleuses PET",
+      "Équipements de traitement",
+      "Emballage & Étiquetage",
+      "Services & Maintenance",
+      "Autre"
+    ]
+  }
+}

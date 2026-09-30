@@ -73,12 +73,19 @@ const ReasonItem = ({ reason }: { reason: { icon?: React.ReactNode; title: strin
         <p className="text-gray-600 text-sm leading-relaxed">
           {displayText}
           {isLongText && (
-            <button 
+            <span 
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-seppa-red ml-1 font-medium hover:underline focus:outline-none text-xs inline-block"
+              className="text-seppa-red ml-1 font-medium hover:underline focus:outline-none text-xs inline-block cursor-pointer"
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  setIsExpanded(!isExpanded);
+                }
+              }}
             >
               {isExpanded ? "Read Less" : "Read More"}
-            </button>
+            </span>
           )}
         </p>
       </div>
@@ -88,7 +95,7 @@ const ReasonItem = ({ reason }: { reason: { icon?: React.ReactNode; title: strin
 
 const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, description, paragraphs, reasons, imageSrc }) => {
   const displayTitle = title || "Elevating Your Brand with Superior Automation";
-  const displayDesc = description || "We combine innovative designs, sustainable operations, and advanced manufacturing technologies to deliver automated solutions that protect your products and captivate your customers.";
+  const displayDesc = description !== undefined ? description : "We combine innovative designs, sustainable operations, and advanced manufacturing technologies to deliver automated solutions that protect your products and captivate your customers.";
   const displayImage = imageSrc || "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg";
   const displayReasons = reasons && reasons.length > 0 ? reasons : defaultReasons;
 

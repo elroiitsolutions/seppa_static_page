@@ -1,0 +1,156 @@
+{
+  "HomeHero": {
+    "sub": "Conception de machines de qualité pour les industries mondiales",
+    "heading": "Leader mondial des technologies de traitement et d'emballage",
+    "desc": "Conception de lignes à haute efficacité et entièrement automatisées pour l'eau, les sodas, les jus, la bière, les spiritueux et les produits laitiers liquides. S'appuyant sur 50 ans d'excellence industrielle sur les marchés d'Inde, des États-Unis et du Moyen-Orient.",
+    "cta": "Réserver une consultation",
+    "video": "Regarder la vidéo de présentation",
+    "bullet1": "Procédés de coloration écologiques",
+    "bullet2": "Remplisseuses aseptiques sans contact",
+    "bullet3": "Pasteurisation non thermique",
+    "bullet4": "Soufflage PET électrique haute vitesse"
+  },
+  "AboutIndustries": {
+    "tag": "À propos de notre entreprise / Impact industriel",
+    "heading": "Nous sommes dédiés à l'automatisation de lignes liquides haute performance pour diverses industries mondiales.",
+    "expertiseTitle": "Expertise de confiance",
+    "expertiseDesc": "Forts de 50 ans d'expérience, nous fournissons des solutions fiables avec une qualité constante.",
+    "projectsLabel": "Projets multi-produits mondiaux",
+    "factoriesDesc": "+1 000 usines dans le monde fonctionnent avec les systèmes Seppa.",
+    "learnMore": "En savoir plus sur nous"
+  },
+  "Services": {
+    "tag": "Nos Services",
+    "heading": "Systèmes complets de traitement et d'emballage en lesquels vous pouvez avoir confiance",
+    "service1": "Lignes complètes de traitement et d'emballage de bière, vin et hydromel",
+    "service2": "Lignes complètes de traitement et d'emballage d'alcools, spiritueux et RTD",
+    "service3": "Lignes complètes de traitement et d'emballage d'eau minérale et d'eau alcaline",
+    "service4": "Lignes complètes de traitement et d'emballage de sodas, jus et lait"
+  },
+  "OurIndustries": {
+    "tag": "L'avantage Seppa",
+    "heading": "POURQUOI CHOISIR SEPPA SOLUTIONS ? Une efficacité opérationnelle sans compromis, conçue à l'international",
+    "description": "Des décennies d'ingénierie liquide spécialisée permettent à Seppa de fournir des systèmes multi-produits fiables et très adaptables. Nous fabriquons des machines répondant aux normes mondiales de sécurité les plus strictes tout en garantissant un retour sur investissement rapide.",
+    "tab1Title": "Jus, boissons & isotoniques",
+    "tab1Desc": "Les jus, nectars, boissons gazeuses, isotoniques et thés (JNSDIT) représentent l'un des segments de boissons à la croissance la plus rapide au monde.",
+    "tab2Title": "Boissons gazeuses (CSD)",
+    "tab2Desc": "Les boissons gazeuses restent l'une des catégories de boissons les plus prisées au monde, surpassées seulement par l'eau en bouteille.",
+    "tab3Title": "Produits laitiers liquides",
+    "tab3Desc": "Les produits laitiers liquides demeurent un élément nutritif essentiel de la vie quotidienne...",
+    "tab4Title": "Bière",
+    "tab4Desc": "Plus de 5 milliards de litres de bière ont été conditionnés en PET. Le passage au PET a débuté il y a quelques décennies avec les boissons gazeuses.",
+    "consultation": "Planifier une consultation technique",
+    "more": "en savoir plus."
+  },
+  "Projects": {
+    "tag": "SOLUTIONS DE LIGNES COMPLÈTES",
+    "heading": "Lignes complètes de traitement de boissons & produits laitiers",
+    "project1Title": "SOUFFLEUSE PET",
+    "project1Subtitle": "Solutions de lignes complètes pour le soufflage PET.",
+    "project2Title": "TECHNOLOGIE DE PROCÉDÉ",
+    "project2Subtitle": "Solutions de lignes complètes pour la technologie de procédé.",
+    "project3Title": "LIGNE DE REMPLISSAGE PET",
+    "project3Subtitle": "Solutions de lignes complètes pour le remplissage PET.",
+    "project4Title": "LIGNE DE REMPLISSAGE VERRE",
+    "project4Subtitle": "Solutions de lignes complètes pour le remplissage verre.",
+    "project5Title": "LIGNE DE REMPLISSAGE CANNETTE",
+    "project5Subtitle": "Solutions de lignes complètes pour le remplissage cannette.",
+    "project6Title": "LIGNE DE REMPLISSAGE GRANDS CONTENANTS",
+    "project6Subtitle": "Solutions de lignes complètes pour grands contenants."
+  },
+  "PetTechnology": {
+    "tag": "TECHNOLOGIE PET",
+    "heading": "Sélectionnez la SOLUTION PET SEPPA que vous recherchez ?",
+    "project1": "MACHINE À BOUTEILLES PET EAU MINÉRALE / SODA",
+    "project2": "MACHINE À BOUTEILLES PET LAIT / JUS",
+    "project3": "PRODUITS D'ENTRETIEN MÉNAGER EN PET",
+    "project4": "MACHINE À BOUTEILLES PET HUILE / KETCHUP",
+    "project5": "BOUTEILLE PET ALCOOL ET SPIRITUEUX",
+    "project6": "GRANDS CONTENANTS PET DE 3 À 20 LITRES",
+    "project7": "MACHINE PET BOUTEILLES PHARMA / COSMÉTIQUE"
+  },
+  "HowItWorks": {
+    "tag": "Mises à jour SEPPA",
+    "heading": "Dernières innovations technologiques",
+    "process1Title": "MACHINE DE SOUFFLAGE PET ÉLECTRIQUE",
+    "process1Desc": "Une solution de moulage haute vitesse servomoteur conçue pour une fabrication de bouteilles PET écoénergétique, écologique et d'une grande précision.",
+    "process2Title": "PASTEURISEURS NON THERMIQUES",
+    "process2Desc": "Systèmes avancés de conservation à froid prolongeant la durée de conservation des boissons et éliminant les micro-organismes sans chaleur, préservant ainsi les arômes naturels et les nutriments.",
+    "process3Title": "REMPLISSEUSES ASEPTIQUES SANS CONTACT",
+    "process3Desc": "Systèmes de remplissage volumétrique à haute stérilité éliminant totalement les risques de contamination en versant les liquides sans toucher le goulot de la bouteille.",
+    "process4Title": "PALETTISEUR ROBOTISÉ 4 AXES",
+    "process4Desc": "Système de palettisation robotique entièrement automatisé pour l'empilage haute vitesse et précis des caisses, cartons et logistique de fin de ligne.",
+    "process5Title": "KOMBO PURE",
+    "process5Desc": "Système monobloc compact intégré fusionnant soufflage de bouteilles, remplissage sans contact et bouchage dans un environnement stérile unique pour réduire le footprint.",
+    "process6Title": "MACHINE DE SOUFFLAGE AUTO ÉCONOMIQUE",
+    "process6Desc": "Un système de soufflage automatique d'entrée de gamme abordable et très efficace, conçu pour offrir aux petites usines d'embouteillage une automatisation à haut rendement.",
+    "knowMore": "En savoir plus"
+  },
+  "SpecialOffer": {
+    "tag": "Offre Spéciale",
+    "heading": "Obtenez votre exemplaire gratuit des rapports de projet",
+    "report1": "EAU MINÉRALE : FORTE CROISSANCE ET HAUTE RENTABILITÉ",
+    "report2": "MICROBRASSERIE : EXPÉRIENCE AMÉLIORÉE - FORTS PROFITS",
+    "report3": "LE PET, L'AVENIR DE L'EMBALLAGE : DES BESOINS MULTIPLIÉS",
+    "report4": "JUS PRESSÉS À FROID : CROISSANCE EXPONENTIELLE",
+    "report5": "TRANSFORMATION DE LA TOMATE : CROISSANCE ET DEMANDE CONTINUE",
+    "report6": "LAVEUSE DE BOUTEILLES EN VERRE RECYCLABLE : REVENUS DURABLES",
+    "report7": "BRASSERIE COMMERCIALE : MARCHÉ EN CROISSANCE ET VOLUMES DE BIÈRE EN HAUSSE"
+  },
+  "Clients": {
+    "tag": "Nos Clients de Confiance",
+    "heading": "Accompagner les leaders industriels dans le monde entier"
+  },
+  "Testimonials": {
+    "tag": "Confiance Mondiale & Succès Éprouvé",
+    "heading": "Ce que les marques mondiales de boissons disent de l'automatisation Seppa",
+    "name1": "Rajesh Vardhan",
+    "quote1": "Le système monobloc Kombo Pure de Seppa a réduit notre empreinte au sol de 40% tout en maintenant une stérilité absolue. Leur ingénierie de ligne d'eau est inégalée.",
+    "name2": "Marcus Vance",
+    "quote2": "Leur système de remplissage RFC haute vitesse et leur palettiseur robotisé ont rationalisé notre production de sodas, réduisant nos coûts logistiques de moitié.",
+    "name3": "Amara Al-Jamil",
+    "quote3": "La combinaison de la pasteurisation non thermique et des remplisseuses aseptiques sans contact a parfaitement prolongé la durée de conservation de nos jus sans aucun risque de contamination."
+  },
+  "Partners": {
+    "tag": "Nos Partenaires",
+    "heading": "Collaborer avec les meilleurs de l'industrie"
+  },
+  "ContactMap": {
+    "tag": "CONTACTEZ-NOUS",
+    "heading": "Devenez partenaire de spécialistes mondiaux de l'emballage liquide",
+    "helpTitle": "Nous sommes là pour vous aider",
+    "helpDesc": "Nous vous accompagnons à chaque étape de votre projet, de l'ingénierie de l'implantation de l'usine jusqu'à la mise en service des machines et la maintenance.",
+    "callUs": "Appelez-nous à tout moment"
+  },
+  "HomeFAQs": {
+    "tag": "Foire aux questions (FAQ)",
+    "heading": "Réponses d'experts aux questions sur le conditionnement & le traitement des liquides",
+    "viewAll": "Voir toutes les FAQ",
+    "q1": "Quelles lignes clés en main et machines complètes Seppa Solutions fabrique-t-elle ?",
+    "a1": "Nous concevons et fabriquons des lignes de production entièrement automatisées et de bout en bout pour l'eau minérale, les boissons gazeuses (CSD), les jus, les produits laitiers liquides et les brasseries commerciales. Nos équipements comprennent le soufflage PET haute vitesse, les monoblocs rinceuse-remplisseuse-bouchonneuse (RFC) et la logistique de palettisation.",
+    "q2": "Comment vos remplisseuses aseptiques sans contact préviennent-elles la contamination des produits ?",
+    "a2": "Nos remplisseuses aseptiques sans contact utilisent une technologie de dosage volumétrique haute stérilité qui remplit les liquides avec précision sans jamais toucher le goulot de la bouteille, éliminant totalement les risques de contamination croisée.",
+    "q3": "Quels sont les avantages opérationnels et financiers du système Seppa Kombo Pure ?",
+    "a3": "Le Kombo Pure est une architecture monobloc spécialisée intégrant le soufflage, le remplissage liquide stérile et le bouchage dans une enceinte fermée unique. Cette disposition innovante réduit vos dépenses d'investissement (CAPEX), diminue l'empreinte au sol jusqu'à 40% et réduit la consommation d'énergie.",
+    "q4": "Fournissez-vous l'ingénierie d'implantation d'usine sur mesure et le support après installation ?",
+    "a4": "Oui. Nous gérons l'ensemble du cycle de vie du projet, y compris l'ingénierie de l'implantation de l'usine, l'analyse de faisabilité technique et les essais liquides. Après la mise en service, nous assurons la formation des opérateurs, des audits préventifs et la fourniture de pièces de rechange certifiées.",
+    "q5": "Quelles régions internationales et normes de conformité vos systèmes respectent-ils ?",
+    "a5": "Fort de 50 ans d'expérience en ingénierie, Seppa opère sur les principaux hubs en Inde, aux États-Unis et au Moyen-Orient. Toutes nos lignes sont construites pour respecter les réglementations internationales strictes en matière de sécurité, de santé et d'environnement."
+  },
+  "Awards": {
+    "tag": "Reconnaissance",
+    "heading": "Prix & Récompenses",
+    "description": "Notre quête constante d'excellence et d'innovation a été reconnue à l'échelle mondiale. Nous sommes fiers des étapes franchies dans notre parcours de transformation de l'industrie."
+  },
+  "LatestBlogs": {
+    "tag": "Derniers Articles",
+    "heading": "Des informations et actualités ciblées sur l'industrie",
+    "readMore": "Lire la suite",
+    "blog1Title": "PET vs Verre vs Cannettes Aluminium : Choisir la bonne solution d'emballage pour le succès de votre marque",
+    "blog1Date": "14 février 2026",
+    "blog2Title": "PET vs Verre vs Cannettes Aluminium : Choisir la bonne solution d'emballage pour le succès de votre marque",
+    "blog2Date": "11 mars 2026",
+    "blog3Title": "PET vs Verre vs Cannettes Aluminium : Choisir la bonne solution d'emballage pour le succès de votre marque",
+    "blog3Date": "04 avril 2026"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "HomeHero": {
+    "sub": "Kwaliteitsmachines bouwen voor wereldwijde industrieën",
+    "heading": "Wereldleider in proces- en verpakkingstechnologie",
+    "desc": "Engineering van uiterst efficiënte, volautomatische lijnen voor water, frisdranken, sappen, bier, sterke drank en vloeibare zuivel. Aangedreven door 50 jaar uitmuntendheid in productie in India, de VS en het Midden-Oosten.",
+    "cta": "Boek een consultatie",
+    "video": "Bekijk video om ons te leren kennen",
+    "bullet1": "Milieuvriendelijke verfprocessen",
+    "bullet2": "Aseptische contactloze afvullers",
+    "bullet3": "Niet-thermische pasteurisatie",
+    "bullet4": "Snelle elektrische PET-blaasinstallaties"
+  },
+  "AboutIndustries": {
+    "tag": "Over ons bedrijf / Impact op de industrie",
+    "heading": "Wij zijn toegewijd aan het automatiseren van hoogwaardige vloeistoflijnen voor diverse wereldwijde industrieën.",
+    "expertiseTitle": "Betrouwbare expertise",
+    "expertiseDesc": "Gesteund door 50 jaar ervaring leveren wij betrouwbare oplossingen met consistente kwaliteit.",
+    "projectsLabel": "Wereldwijde multi-product projecten",
+    "factoriesDesc": "Meer dan 1.000 fabrieken wereldwijd draaien op Seppa-systemen.",
+    "learnMore": "Lees meer over ons"
+  },
+  "Services": {
+    "tag": "Onze diensten",
+    "heading": "Uitgebreide verwerkings- en verpakkingssystemen waarop u kunt vertrouwen",
+    "service1": "Complete bier-, wijn- en mede-verwerkings- en verpakkingslijnen",
+    "service2": "Complete sterke drank-, RTD- en seltzers-verwerkings- en verpakkingslijnen",
+    "service3": "Complete mineraalwater- en alkalisch waterverwerkings- en verpakkingslijnen",
+    "service4": "Complete frisdrank-, sap- en melkverwerkings- en verpakkingslijnen"
+  },
+  "OurIndustries": {
+    "tag": "Het Seppa-voordeel",
+    "heading": "WAAROM SEPPA SOLUTIONS? Een compromisloze operationele efficiëntie, internationaal ontwikkeld",
+    "description": "Decennia aan gespecialiseerde vloeistofengineering stelt Seppa in staat om betrouwbare, zeer aanpasbare multi-productsystemen te leveren. We bouwen machines die voldoen aan strikte wereldwijde veiligheidsnormen en tegelijkertijd een snelle ROI garanderen voor moderne bottelarijen.",
+    "tab1Title": "Sappen, dranken & isotonische dranken",
+    "tab1Desc": "Sappen, nectars, frisdranken, isotonische dranken en thee (JNSDIT) behoren wereldwijd tot de snelst groeiende dranksegmenten.",
+    "tab2Title": "Koolzuurhoudende frisdranken",
+    "tab2Desc": "Koolzuurhoudende frisdranken blijven een van 's werelds meest waardevolle drankcategorieën, alleen overtroffen door flessenwater.",
+    "tab3Title": "Vloeibare zuivelproducten",
+    "tab3Desc": "Vloeibare zuivelproducten blijven een voedzaam onderdeel van het dagelijks leven, en met de groeiende nadruk van de consument op gezonder leven...",
+    "tab4Title": "Bier",
+    "tab4Desc": "Meer dan 5 bijld liter bier werd verpakt in PET. De overstap naar PET werd enkele decennia geleden al gezien bij koolzuurhoudende frisdranken.",
+    "consultation": "Plan een technische consultatie",
+    "more": "meer."
+  },
+  "Projects": {
+    "tag": "COMPLETE LIJNOPLOSSINGEN",
+    "heading": "Uitgebreide verwerkingslijnen voor dranken en zuivel",
+    "project1Title": "PET-BLAASINSTALLATIE",
+    "project1Subtitle": "Complete lijnoplossingen voor PET-blazen.",
+    "project2Title": "PROCESTECHNOLOGIE",
+    "project2Subtitle": "Complete lijnoplossingen voor procestechnologie.",
+    "project3Title": "PET-AFVULLIJN",
+    "project3Subtitle": "Complete lijnoplossingen voor PET-afvullen.",
+    "project4Title": "GLAS-AFVULLIJN",
+    "project4Subtitle": "Complete lijnoplossingen voor glasafvullen.",
+    "project5Title": "BLIK-AFVULLIJN",
+    "project5Subtitle": "Complete lijnoplossingen voor blikafvullen.",
+    "project6Title": "GROTE FLESSEN-AFVULLIJN",
+    "project6Subtitle": "Complete lijnoplossingen voor grote flessen."
+  },
+  "PetTechnology": {
+    "tag": "PET-TECHNOLOGIE",
+    "heading": "Selecteer een SEPPA PET-oplossing waarnaar u op zoek bent:",
+    "project1": "MINERAALWATER / FRISDRANK PET-FLESSENMACHINE",
+    "project2": "MELK / SAP PET-FLESSENMACHINE",
+    "project3": "PET HUISHOUDELIJKE REINIGINGSPRODUCTEN",
+    "project4": "OLIE / KETCHUP PET-FLESSENMACHINE",
+    "project5": "ALCOHOL EN STERKE DRANK PET-FLES",
+    "project6": "GROTE PET-FLES VOOR 3 TOT 20 LITER",
+    "project7": "FARMA / COSMETICA PET-FLESSENMACHINE"
+  },
+  "HowItWorks": {
+    "tag": "SEPPA Updates",
+    "heading": "Nieuwste technologische lanceringen",
+    "process1Title": "ELEKTRISCHE PET-BLAASMACHINE",
+    "process1Desc": "Een snelle, servogestuurde blaasoplossing ontworpen voor energiezuinige, milieuvriendelijke en uiterst nauwkeurige PET-flessenproductie.",
+    "process2Title": "NIET-THERMISCHE PASTEURISEERMACHINES",
+    "process2Desc": "Geavanceerde koude conserveringssystemen die de houdbaarheid van dranken verlengen en micro-organismen elimineren zonder warmte toe te passen, met behoud van natuurlijke smaken en voedingsstoffen.",
+    "process3Title": "ASEPTISCHE CONTACTLOZE AFVULLERS",
+    "process3Desc": "Uiterst steriele volumetrische afvulsystemen die besmettingsrisico's volledig elimineren door vloeistoffen nauwkeurig te doseren zonder de flesmond fysiek aan te raken.",
+    "process4Title": "VIER-ASSIGE PALLETISEERDER",
+    "process4Desc": "Een volautomatisch robotstapelsysteem ontworpen voor snelle, nauwkeurige configuratie van kratten, dozen en logistieke eindverpakkingen.",
+    "process5Title": "KOMBO PURE",
+    "process5Desc": "Een compact, geïntegreerd monoblocsysteem dat flessenblazen, contactloos afvullen en sluiten combineert in een enkele steriele omgeving om investeringskosten en vloeroppervlak drastisch te verminderen.",
+    "process6Title": "VOORDELIGE AUTOMATISCHE BLAASMACHINE",
+    "process6Desc": "Een betaalbaar, zeer efficiënt automatisch instap-blaassysteem op maat gemaakt om kleinschalige bottelarijen hoogwaardige automatisering te bieden binnen hun budget.",
+    "knowMore": "Meer informatie"
+  },
+  "SpecialOffer": {
+    "tag": "Speciale aanbieding",
+    "heading": "Ontvang uw gratis exemplaar van projectrapporten",
+    "report1": "MINERAALWATER: HOGE GROEI EN HOGE WINSTGEVENDHEID",
+    "report2": "MICROBROUWERIJ: VERBETERDE ERVARING - ENORME WINST",
+    "report3": "PET: DE TOEKOMST VAN VERPAKKINGEN MULTIPLE FOLD VEREISTEN",
+    "report4": "KOUDGEDRUKT SAP: EXPONENTIËLE GROEI",
+    "report5": "TOMATENVERWERKING: CONSISTENTE GROEI, EINDELOZE VRAAG",
+    "report6": "RECYCLEBARE GLAZEN FLESSENWASSER: EINDELOZE VRAAG / OMZET",
+    "report7": "COMMERCIËLE BROUWERIJ: GROEIENDE MARKT, STIJGEND BIERVOLUME"
+  },
+  "Clients": {
+    "tag": "Onze vertrouwde klanten",
+    "heading": "Ondersteuning van marktleiders wereldwijd"
+  },
+  "Testimonials": {
+    "tag": "Wereldwijd vertrouwen & bewezen succes",
+    "heading": "Wat wereldwijde drankmerken zeggen over Seppa Automation",
+    "name1": "Rajesh Vardhan",
+    "quote1": "Seppa's Kombo Pure monoblocsysteem verminderde ons vloeroppervlak met 40% met behoud van absolute steriliteit. Hun turnkey engineering voor waterlijnen is ongeëvenaard.",
+    "name2": "Marcus Vance",
+    "quote2": "Hun snelle RFC-afvulsysteem en vier-assige automatische palletiseerder hebben onze frisdrankproductie volledig gestroomlijnd en onze logistieke kosten aan het einde van de lijn gehalveerd.",
+    "name3": "Amara Al-Jamil",
+    "quote3": "De combinatie van niet-thermische pasteurisatie en aseptische contactloze afvullers heeft de houdbaarheid van ons sap perfect verlengd met nul besmettingsrisico's."
+  },
+  "Partners": {
+    "tag": "Onze partners",
+    "heading": "Samenwerken met de besten in de sector"
+  },
+  "ContactMap": {
+    "tag": "NEEM CONTACT OP",
+    "heading": "Werk samen met wereldwijde specialisten in vloeibare verpakkingen",
+    "helpTitle": "We zijn er om u te helpen",
+    "helpDesc": "Wij ondersteunen u in elke fase van uw project, van het initiële turnkey ontwerp van de fabriekslay-out tot de naadloze inbedrijfstelling van machines en levenslang onderhoud.",
+    "callUs": "Bel ons op elk gewenst moment"
+  },
+  "HomeFAQs": {
+    "tag": "Veelgestelde vragen.",
+    "heading": "Deskundige antwoorden op vragen over vloeibare verpakkingen en verwerking",
+    "viewAll": "Bekijk alle veelgestelde vragen",
+    "q1": "Welke complete turnkey lijnen en machines produceert Seppa Solutions?",
+    "a1": "Wij ontwerpen en bouwen volautomatische, end-to-end productielijnen voor mineraalwater, koolzuurhoudende frisdranken (CSD), sappen, vloeibare zuivel en commerciële brouwerijen. Onze eigen machines omvatten snelle PET-stretchblaasmachines, geavanceerde Rinser-Filler-Capper (RFC) monoblocs en slimme palletiseerlogistiek aan het einde van de lijn.",
+    "q2": "Hoe voorkomen uw aseptische contactloze afvullers productbesmetting?",
+    "a2": "Onze aseptische contactloze afvullers maken gebruik van uiterst steriele volumetrische doseertechnologie die vloeistoffen nauwkeurig vult zonder ooit de flesmond fysiek aan te raken. Dit elimineert risico's op kruisbesmetting volledig, waardoor het de perfecte oplossing is voor gevoelige dranken zoals sappen, nectars en zuivelproducten.",
+    "q3": "Wat zijn de operationele en kostenvoordelen van het Seppa Kombo Pure-systeem?",
+    "a3": "De Kombo Pure is een gespecialiseerde monobloc-architectuur die flessenblazen, steriel vloeistofafvullen en sluiten integreert in één gesloten omgeving. Deze innovatieve lay-out verlaagt uw initiële investeringskosten (CAPEX), vermindert uw fabrieksoppervlak met maximaal 40% en verlaagt het dagelijkse stroomverbruik aanzienlijk.",
+    "q4": "Biedt u op maat gemaakte engineering van de fabriekslay-out en ondersteuning na installatie?",
+    "a4": "Ja. Wij beheren de gehele levenscyclus van het project, inclusief op maat gemaakt fabriekslay-outontwerp, technische haalbaarheidsanalyse en vloeistoftests. Na de inbedrijfstelling van de fabriek bieden we grondige training voor operators, levenslange proactieve engineering-audits en een naadloze wereldwijde toeleveringsketen voor gecertificeerde reserveonderdelen.",
+    "q5": "Welke internationale regio's en nalevingsnormen ondersteunen uw systemen?",
+    "a5": "Gesteund door 50 jaar ervaring in engineering is Seppa actief in belangrijke productiecentra in India, de VS en het Midden-Oosten. Al onze verwerkings- en verpakkingslijnen zijn gebouwd om te voldoen aan strikte wereldwijde veiligheids-, gezondheids- en milieuregelgeving, en bedienen merken op 5 continenten."
+  },
+  "Awards": {
+    "tag": "Erkenning",
+    "heading": "Prijzen & Prestaties",
+    "description": "Ons onophoudelijke streven naar uitmuntendheid en innovatie is wereldwijd erkend. We zijn trots op de mijlpalen die we hebben bereikt op onze reis om de industrie te transformeren."
+  },
+  "LatestBlogs": {
+    "tag": "Nieuwste blogs",
+    "heading": "U informeren met branchegerichte updates",
+    "readMore": "Lees meer",
+    "blog1Title": "PET vs Glas vs Aluminium Blikjes: De juiste verpakkingsoplossingen kiezen voor het succes van uw merk",
+    "blog1Date": "14 februari 2026",
+    "blog2Title": "PET vs Glas vs Aluminium Blikjes: De juiste verpakkingsoplossingen kiezen voor het succes van uw merk",
+    "blog2Date": "11 maart 2026",
+    "blog3Title": "PET vs Glas vs Aluminium Blikjes: De juiste verpakkingsoplossingen kiezen voor het succes van uw merk",
+    "blog3Date": "4 april 2026"
+  }
+}
