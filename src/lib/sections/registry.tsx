@@ -6,7 +6,6 @@ import MethodologySection from '@/components/packaging/MethodologySection';
 import PackagingWhyChooseUs from '@/components/packaging/PackagingWhyChooseUs';
 import LatestBlogs from '@/components/home/LatestBlogs';
 import RichText from '@/components/ui/RichText';
-import FaqSection from '@/components/sections/FaqSection';
 // Import other components as needed
 
 export const sectionRegistry: Record<string, React.FC<any>> = {
@@ -17,7 +16,6 @@ export const sectionRegistry: Record<string, React.FC<any>> = {
   'sections.latest-blogs': LatestBlogs,
   'shared.content-block': ContentBlock,
   'shared.rich-text': RichText,
-  'sections.faq-section': FaqSection,
   // Add other mappings here as they are developed
 };
 

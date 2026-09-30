@@ -3,6 +3,7 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from './AnimatedHeading';
 import { Link } from '@/i18n/routing';
+import { usePathname } from 'next/navigation';
 import { FiArrowUpRight, FiCheckCircle } from 'react-icons/fi';
 import { FaPhoneAlt } from 'react-icons/fa';
 
@@ -16,6 +17,7 @@ export interface ContentBlockProps {
   bgClass?: string;
   reverse?: boolean;
   layout?: 'side-by-side' | 'stacked';
+  showReadMore?: boolean;
 }
 
 const fadeInUp: Variants = {
@@ -33,6 +35,14 @@ const imageVariants: Variants = {
   visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
+const getReadMoreText = (pathname: string): string => {
+  if (pathname.startsWith('/fr')) return 'LIRE LA SUITE';
+  if (pathname.startsWith('/ar')) return 'اقرأ المزيد';
+  if (pathname.startsWith('/nl')) return 'MEER LEZEN';
+  if (pathname.startsWith('/de')) return 'MEHR LESEN';
+  return 'READ MORE';
+};
+
 const getLinkPathForTitle = (title: string): string => {
   const cleanTitle = title.trim().toLowerCase().replace(/:$/, '');
   
@@ -41,6 +51,7 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("hydraulic oil") ||
     cleanTitle.includes("hydraulische olie") ||
     cleanTitle.includes("hydrauliköl") ||
+    cleanTitle.includes("huile hydraulique") ||
     cleanTitle.includes("الهيدروليكي")
   ) {
     return "/equipments/hydraulic-chillers";
@@ -54,6 +65,8 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("öl-chiller") ||
     cleanTitle.includes("öl-kühler") ||
     cleanTitle.includes("ölchiller") ||
+    cleanTitle.includes("refroidisseur d'huile") ||
+    cleanTitle.includes("refroidisseurs d'huile") ||
     cleanTitle.includes("مبردات الزيت") ||
     cleanTitle.includes("مبرد الزيت")
   ) {
@@ -66,6 +79,7 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("ip") ||
     cleanTitle.includes("dompel") ||
     cleanTitle.includes("tauchkühler") ||
+    cleanTitle.includes("immersion") ||
     cleanTitle.includes("الغمر")
   ) {
     return "/equipments/coolant-chiller-ip";
@@ -78,6 +92,7 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("koelmiddel-chiller") ||
     cleanTitle.includes("kühlmittel-chiller") ||
     cleanTitle.includes("kühlmittel-kühler") ||
+    cleanTitle.includes("liquide de refroidissement") ||
     cleanTitle.includes("سوائل التبريد") ||
     cleanTitle.includes("سائل التبريد")
   ) {
@@ -90,6 +105,8 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("luchtgekoelde scroll") ||
     cleanTitle.includes("luftgekühlte scroll") ||
     cleanTitle.includes("luftgekühlter scroll") ||
+    cleanTitle.includes("refroidi par air") ||
+    cleanTitle.includes("refroidis par air") ||
     cleanTitle.includes("التمرير بالهواء") ||
     cleanTitle.includes("مبرد بالهواء") ||
     cleanTitle.includes("المبردة بالهواء")
@@ -103,6 +120,8 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("watergekoelde scroll") ||
     cleanTitle.includes("wassergekühlte scroll") ||
     cleanTitle.includes("wassergekühlter scroll") ||
+    cleanTitle.includes("refroidi par eau") ||
+    cleanTitle.includes("refroidis par eau") ||
     cleanTitle.includes("التمرير بالماء") ||
     cleanTitle.includes("مبرد بالماء") ||
     cleanTitle.includes("المبردة بالماء")
@@ -115,6 +134,8 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("smart screw") ||
     cleanTitle.includes("schroefchiller") ||
     cleanTitle.includes("schrauben-chiller") ||
+    cleanTitle.includes("à vis intelligent") ||
+    cleanTitle.includes("à vis") ||
     cleanTitle.includes("اللولبية الذكية") ||
     cleanTitle.includes("الذكي") ||
     cleanTitle.includes("لولبية")
@@ -127,6 +148,9 @@ const getLinkPathForTitle = (title: string): string => {
     cleanTitle.includes("energy efficient") ||
     cleanTitle.includes("energiezuinige") ||
     cleanTitle.includes("energieeffiziente") ||
+    cleanTitle.includes("efficacité énergétique") ||
+    cleanTitle.includes("écoénergétique") ||
+    cleanTitle.includes("éco-énergétique") ||
     cleanTitle.includes("موفرة للطاقة") ||
     cleanTitle.includes("كفاءة الطاقة")
   ) {
@@ -136,6 +160,7 @@ const getLinkPathForTitle = (title: string): string => {
   // Blowing machine titles
   if (
     cleanTitle.includes("semi automatic pet") ||
+    cleanTitle.includes("semi-automatique") ||
     cleanTitle.includes("نصف الأوتوماتيكية") ||
     cleanTitle.includes("نصف آلية")
   ) {
@@ -143,12 +168,15 @@ const getLinkPathForTitle = (title: string): string => {
   }
   if (
     cleanTitle.includes("soft drink pet") ||
+    cleanTitle.includes("boissons gazeuses") ||
     cleanTitle.includes("للمياه المعدنية والمشروبات الغازية")
   ) {
     return "/soft-drink-pet-blowing";
   }
   if (
     cleanTitle.includes("milk / juice pet") ||
+    cleanTitle.includes("lait / jus") ||
+    cleanTitle.includes("lait/jus") ||
     cleanTitle.includes("عصير pet") ||
     cleanTitle.includes("زجاجات pet للعصائر")
   ) {
@@ -156,12 +184,14 @@ const getLinkPathForTitle = (title: string): string => {
   }
   if (
     cleanTitle.includes("household cleaning") ||
+    cleanTitle.includes("nettoyage ménager") ||
     cleanTitle.includes("منتجات التنظيف")
   ) {
     return "/household-cleaning-pet-blowing";
   }
   if (
     cleanTitle.includes("oil, vinegar") ||
+    cleanTitle.includes("huile, vinaigre") ||
     cleanTitle.includes("عبوات الزيت من مادة pet") ||
     cleanTitle.includes("زجاجات pet للزيت") ||
     cleanTitle.includes("تعبئة الزيوت والخل")
@@ -171,6 +201,8 @@ const getLinkPathForTitle = (title: string): string => {
   if (
     cleanTitle.includes("large pet bottle") ||
     cleanTitle.includes("3 to 20") ||
+    cleanTitle.includes("3 à 20") ||
+    cleanTitle.includes("grands formats") ||
     cleanTitle.includes("زجاجة pet كبيرة") ||
     cleanTitle.includes("3 إلى 20 لتر") ||
     cleanTitle.includes("زجاجات pet كبيرة السعة")
@@ -179,6 +211,7 @@ const getLinkPathForTitle = (title: string): string => {
   }
   if (
     cleanTitle.includes("electric pet") ||
+    cleanTitle.includes("électrique pour pet") ||
     cleanTitle.includes("كهربائية لـ pet") ||
     cleanTitle.includes("كهربائية لنفخ عبوات pet")
   ) {
@@ -186,6 +219,7 @@ const getLinkPathForTitle = (title: string): string => {
   }
   if (
     cleanTitle.includes("rotary") ||
+    cleanTitle.includes("rotative") ||
     cleanTitle.includes("الدوارة") ||
     cleanTitle.includes("rotary high speed")
   ) {
@@ -195,9 +229,11 @@ const getLinkPathForTitle = (title: string): string => {
   return "";
 };
 
-const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, features, image1, image2, bgClass = "bg-[#fdfbf6] m-3 rounded-2xl", reverse = false, layout = 'side-by-side' }) => {
+const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, features, image1, image2, bgClass = "bg-[#fdfbf6] m-3 rounded-2xl", reverse = false, layout = 'side-by-side', showReadMore = false }) => {
   const hasImages = image1 || image2;
   const [isMounted, setIsMounted] = React.useState(false);
+  const pathname = usePathname() || '';
+  const readMoreText = getReadMoreText(pathname);
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -290,18 +326,18 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                         <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                         <strong>{title}:</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>
                     ) : isBoldPrefix ? (
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                         <strong>{title}.</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>
@@ -386,18 +422,18 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                           <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                           <strong>{title}:</strong> {desc}
-                          {linkPath && isMounted && (
+                          {showReadMore && linkPath && isMounted && (
                             <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                              Read More <FiArrowUpRight className="text-xs" />
+                              {readMoreText} <FiArrowUpRight className="text-xs" />
                             </Link>
                           )}
                         </p>
                       ) : isBoldPrefix ? (
                         <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                           <strong>{title}.</strong> {desc}
-                          {linkPath && isMounted && (
+                          {showReadMore && linkPath && isMounted && (
                             <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                              Read More <FiArrowUpRight className="text-xs" />
+                              {readMoreText} <FiArrowUpRight className="text-xs" />
                             </Link>
                           )}
                         </p>
@@ -519,18 +555,18 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
                         <span className="text-seppa-red me-2 text-xl leading-none">&bull;</span>
                         <strong>{title}:</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>
                     ) : isBoldPrefix ? (
                       <p className="text-base md:text-lg text-gray-600 leading-relaxed text-start">
                         <strong>{title}.</strong> {desc}
-                        {linkPath && isMounted && (
+                        {showReadMore && linkPath && isMounted && (
                           <Link href={linkPath} className="text-seppa-red font-bold text-sm hover:underline ml-2 uppercase tracking-wider transition-colors inline-flex items-center gap-0.5">
-                            Read More <FiArrowUpRight className="text-xs" />
+                            {readMoreText} <FiArrowUpRight className="text-xs" />
                           </Link>
                         )}
                       </p>

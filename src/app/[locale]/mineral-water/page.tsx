@@ -32,6 +32,8 @@ export default async function MineralWaterPage({ params }: PageProps) {
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/mineral-water', locale);
 
+  const rawContentBlocks = (t.raw('contentBlocks') as any[]) || [];
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -40,39 +42,115 @@ export default async function MineralWaterPage({ params }: PageProps) {
     headerImage: bannerImg.src,
     overviewTitle: t('overviewTitle'),
     overviewDescription: t('overviewDescription'),
-    overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
+    overviewsubDescription: t.has('overviewsubDescription') && Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: overviewImg.src,
-    contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any) => ({
+    contentBlocks: rawContentBlocks.map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
-      image1: img1.src,
-      reverse: true
+      image1: [img1.src, over.src][index] || img1.src,
+      reverse: index % 2 === 0,
+      bgClass: index % 2 === 1 ? "bg-light" : "bg-white",
+      layout: (block.paragraphs && block.paragraphs.length >= 4) ? ("stacked" as const) : undefined
     })),
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t('featuresSubtitle'),
-    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t('applicationsSubtitle'),
-    applications: Array.isArray(t.raw('applications')) ? t.raw('applications') : [],
+    featuresTitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('features') && Array.isArray(t.raw('features')) && t.raw('features').length > 0 && t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: (() => {
+      try {
+        const raw = t.raw('features');
+        if (Array.isArray(raw) && raw.length > 0) {
+          return raw.map((feature: any) => ({
+            title: feature.title,
+            description: feature.description
+          }));
+        }
+      } catch (e) {}
+      return undefined;
+    })(),
+    applicationsTitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsTitle') ? t('applicationsTitle') : undefined,
+    applicationsSubtitle: t.has('applications') && Array.isArray(t.raw('applications')) && t.raw('applications').length > 0 && t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
+    applications: (() => {
+      try {
+        const raw = t.raw('applications');
+        if (Array.isArray(raw) && raw.length > 0) {
+          return raw.map((app: any) => ({
+            title: app.title,
+            description: app.description
+          }));
+        }
+      } catch (e) {}
+      return undefined;
+    })(),
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t('whyChoose.description'),
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: Array.isArray(t.raw('whyChoose.paragraphs')) ? t.raw('whyChoose.paragraphs') : [],
       image: over.src
     },
     methodology: {
-      title: t('methodology.title'),
-      steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
-        title: step.title,
-        description: step.description,
-        image: [meth1.src, meth2.src, meth3.src, meth4.src][index] || meth1.src
-      }))
+      badge: (() => {
+        try {
+          const raw = t.raw('methodology') as any;
+          if (raw && typeof raw.badge === 'string') return raw.badge;
+        } catch (e) {}
+        try {
+          if (t.has('methodology.badge')) return t('methodology.badge');
+        } catch (e) {}
+        return undefined;
+      })(),
+      title: (() => {
+        try {
+          const raw = t.raw('methodology') as any;
+          if (raw && typeof raw.title === 'string') return raw.title;
+        } catch (e) {}
+        try {
+          if (t.has('methodology.title')) return t('methodology.title');
+        } catch (e) {}
+        return "";
+      })(),
+      subtitle: (() => {
+        try {
+          const raw = t.raw('methodology') as any;
+          if (raw && typeof raw.subtitle === 'string') return raw.subtitle;
+        } catch (e) {}
+        try {
+          if (t.has('methodology.subtitle')) return t('methodology.subtitle');
+        } catch (e) {}
+        return undefined;
+      })(),
+      steps: (() => {
+        try {
+          const raw = t.raw('methodology.steps');
+          if (Array.isArray(raw) && raw.length > 0) {
+            return raw.map((step: any, index: number) => ({
+              title: step.title || "",
+              description: step.description,
+              image: [meth1.src, meth2.src, meth3.src, meth4.src, over.src][index] || meth1.src
+            }));
+          }
+        } catch (e) {}
+        return [];
+      })(),
+      outro: (() => {
+        try {
+          if (t.has('methodology.outro')) {
+            const rawOutro = t.raw('methodology.outro');
+            if (Array.isArray(rawOutro) && rawOutro.length > 0) return rawOutro;
+            if (typeof rawOutro === 'string' && rawOutro.trim()) return [rawOutro];
+          }
+          const rawMeth = t.raw('methodology') as any;
+          if (rawMeth && rawMeth.outro) {
+            if (Array.isArray(rawMeth.outro) && rawMeth.outro.length > 0) return rawMeth.outro;
+            if (typeof rawMeth.outro === 'string' && rawMeth.outro.trim()) return [rawMeth.outro];
+          }
+        } catch (e) {}
+        return undefined;
+      })()
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

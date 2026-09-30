@@ -56,8 +56,6 @@ const cardVariants = {
   },
 };
 
-import enVideos from '@/messages/en/videos.json';
-
 export default function VideoGallery() {
   const t = useTranslations('videos');
   const locale = useLocale();
@@ -74,6 +72,10 @@ export default function VideoGallery() {
   const allCategories = useMemo(() => {
     return ["All", ...Array.from(new Set(Array.isArray(rawVideoList) ? rawVideoList.map((v) => v.category) : []))];
   }, [rawVideoList]);
+
+  const getCategoryLabel = useCallback((cat: string) => {
+    return categoriesMap[cat] || cat;
+  }, [categoriesMap]);
 
   const getT = (key: string) => {
     return t(key);
@@ -142,7 +144,7 @@ export default function VideoGallery() {
     <div className="bg-gray-50" dir={isArabic ? 'rtl' : 'ltr'}>
       <PageHeader
         title={getT('title')}
-        breadcrumbs={[{ name: isArabic ? "الرئيسية" : "Home", path: isArabic ? "/ar" : "/en" }, { name: getT('breadcrumbName') }]}
+        breadcrumbs={[{ name: isArabic ? "الرئيسية" : "Home", path: isArabic ? "/ar" : `/${locale}` }, { name: getT('breadcrumbName') }]}
         bgImage={bannerImg.src}
       />
 
@@ -179,6 +181,7 @@ export default function VideoGallery() {
               <div className={`relative w-full md:w-72 lg:w-80 order-1 md:order-2`}>
                 <FiSearch className={`absolute ${isArabic ? 'right-4' : 'left-4'} top-1/2 -translate-y-1/2 text-gray-400`} size={18} />
                 <input
+                  suppressHydrationWarning
                   id="video-search"
                   type="text"
                   placeholder={getT('searchPlaceholder')}
@@ -188,6 +191,7 @@ export default function VideoGallery() {
                 />
                 {searchQuery && (
                   <button
+                    suppressHydrationWarning
                     onClick={() => setSearchQuery("")}
                     className={`absolute ${isArabic ? 'left-4' : 'right-4'} top-1/2 -translate-y-1/2 text-gray-400 hover:text-seppa-red transition`}
                     aria-label="Clear search"
@@ -198,11 +202,12 @@ export default function VideoGallery() {
               </div>
 
               <button
+                suppressHydrationWarning
                 onClick={() => setShowMobileFilters(!showMobileFilters)}
                 className="flex md:hidden items-center justify-center gap-2 px-5 py-3 bg-white rounded-full border border-gray-200 text-gray-700 font-semibold text-sm shadow-sm active:scale-[0.97] transition order-2"
               >
                 <FiFilter size={16} className="text-seppa-red" />
-                {activeCategory === "All" ? getT('categoriesHeading') : (categoriesMap[activeCategory] || activeCategory)}
+                {getCategoryLabel(activeCategory)}
                 <span className="ml-auto text-xs text-gray-400">
                   {activeCategory !== "All" && (
                     <span
@@ -226,6 +231,7 @@ export default function VideoGallery() {
                   >
                     {allCategories.map((cat) => (
                       <button
+                        suppressHydrationWarning
                         key={cat}
                         id={`filter-mobile-${cat.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
                         onClick={() => { setActiveCategory(cat); setShowMobileFilters(false); }}
@@ -235,7 +241,7 @@ export default function VideoGallery() {
                             : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
                         }`}
                       >
-                        {cat === "All" ? (isArabic ? "الكل" : "All") : (categoriesMap[cat] || cat)}
+                        {getCategoryLabel(cat)}
                       </button>
                     ))}
                   </motion.div>
@@ -247,6 +253,7 @@ export default function VideoGallery() {
 
                 {canScrollLeft && (
                   <button
+                    suppressHydrationWarning
                     onClick={() => scrollFilters("left")}
                     className="shrink-0 w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-seppa-red hover:border-seppa-red transition shadow-sm"
                     aria-label="Scroll filters left"
@@ -262,6 +269,7 @@ export default function VideoGallery() {
                 >
                   {allCategories.map((cat) => (
                     <button
+                      suppressHydrationWarning
                       key={cat}
                       id={`filter-${cat.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
                       onClick={() => setActiveCategory(cat)}
@@ -271,13 +279,14 @@ export default function VideoGallery() {
                           : "bg-white text-gray-600 hover:bg-[#101934] hover:text-white border border-gray-200 hover:border-transparent"
                       }`}
                     >
-                      {cat === "All" ? (isArabic ? "الكل" : "All") : (categoriesMap[cat] || cat)}
+                      {getCategoryLabel(cat)}
                     </button>
                   ))}
                 </div>
 
                 {canScrollRight && (
                   <button
+                    suppressHydrationWarning
                     onClick={() => scrollFilters("right")}
                     className="shrink-0 w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-seppa-red hover:border-seppa-red transition shadow-sm"
                     aria-label="Scroll filters right"
@@ -335,7 +344,7 @@ export default function VideoGallery() {
 
                     <div className={`absolute top-2 ${isArabic ? 'right-2' : 'left-2'} sm:top-3 sm:${isArabic ? 'right-3' : 'left-3'} md:top-4 md:${isArabic ? 'right-4' : 'left-4'}`}>
                       <span className="px-2 py-1 sm:px-3 sm:py-1.5 bg-white/15 backdrop-blur-md text-white text-[10px] sm:text-xs font-semibold rounded-full border border-white/20 line-clamp-1 max-w-[140px] sm:max-w-none truncate">
-                        {categoriesMap[video.category] || video.category}
+                        {getCategoryLabel(video.category)}
                       </span>
                     </div>
                   </div>
@@ -346,6 +355,7 @@ export default function VideoGallery() {
                     </h3>
 
                     <button
+                      suppressHydrationWarning
                       onClick={() => handlePlay(video)}
                       className="mt-2.5 sm:mt-3 md:mt-4 inline-flex items-center gap-1.5 sm:gap-2 text-seppa-red font-semibold text-xs sm:text-sm hover:gap-3 transition-all duration-300"
                     >
@@ -377,6 +387,7 @@ export default function VideoGallery() {
                   : "Try adjusting your search or filter to find what you're looking for."}
               </p>
               <button
+                suppressHydrationWarning
                 onClick={() => {
                   setSearchQuery("");
                   setActiveCategory("All");
@@ -454,6 +465,7 @@ export default function VideoGallery() {
               transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] as const }}
             >
               <button
+                suppressHydrationWarning
                 onClick={handleClose}
                 className={`absolute -top-1 ${isArabic ? 'left-1' : 'right-1'} sm:-top-10 sm:${isArabic ? 'left-0' : 'right-0'} md:-top-12 md:${isArabic ? 'left-0' : 'right-0'} z-20 w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-white/20 sm:bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-seppa-red transition-colors duration-300 border border-white/20`}
                 aria-label={getT('closeVideo')}
@@ -475,7 +487,7 @@ export default function VideoGallery() {
                 <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-heading font-bold line-clamp-2">
                   {playingVideo.title}
                 </h3>
-                <p className="text-gray-400 text-xs sm:text-sm mt-1">{categoriesMap[playingVideo.category] || playingVideo.category}</p>
+                <p className="text-gray-400 text-xs sm:text-sm mt-1">{getCategoryLabel(playingVideo.category)}</p>
               </div>
             </motion.div>
           </motion.div>

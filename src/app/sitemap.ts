@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { fetchAPI } from '@/lib/strapi/client';
 
+export const dynamic = 'force-static';
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Fetch all pages from Strapi
   const res = await fetchAPI('/pages', { fields: ['full_path', 'updatedAt'] });

@@ -39,32 +39,35 @@ export default async function AboutUsPage({ params }: PageProps) {
     paragraphs: getArray(t.raw('expertise.paragraphs'))
   };
 
-  const equipmentFeatures = getArray(t.raw('equipment.features'));
-  const industryFeatures = getArray(t.raw('industries.features'));
+  const industriesText = t.has('industriesText') ? {
+    title: t('industriesText.title'),
+    paragraphs: getArray(t.raw('industriesText.paragraphs'))
+  } : undefined;
+
+  const equipmentFeatures = t.has('equipment.features') ? getArray(t.raw('equipment.features')) : [];
+  const industryFeatures = t.has('industries.features') ? getArray(t.raw('industries.features')) : [];
   const faqs = getArray(t.raw('faqs'));
 
   const whyChoose = {
     title: t('whyChoose.title'),
-    description: t('whyChoose.description'),
+    description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
     paragraphs: getArray(t.raw('whyChoose.paragraphs'))
   };
 
-  const whyChooseText = {
+  const whyChooseText = t.has('whyChooseText') ? {
     title: t('whyChooseText.title'),
-    description: t('whyChooseText.description'),
-    
     paragraphs: getArray(t.raw('whyChooseText.paragraphs'))
-  };
+  } : undefined;
 
   const messages = await getMessages({ locale });
 
   const translations = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
-    equipmentTitle: t('equipment.title'),
-    equipmentSubtitle: t('equipment.subtitle'),
-    industriesTitle: t('industries.title'),
-    industriesSubtitle: t('industries.subtitle'),
+    equipmentTitle: t.has('equipment.title') ? t('equipment.title') : "",
+    equipmentSubtitle: t.has('equipment.subtitle') ? t('equipment.subtitle') : "",
+    industriesTitle: t.has('industries.title') ? t('industries.title') : "",
+    industriesSubtitle: t.has('industries.subtitle') ? t('industries.subtitle') : "",
     faqTitle: t('faqTitle')
   };
 
@@ -76,11 +79,12 @@ export default async function AboutUsPage({ params }: PageProps) {
         whoWeAre={whoWeAre}
         whatWeBuild={whatWeBuild}
         expertise={expertise}
+        industriesText={industriesText}
         equipmentFeatures={equipmentFeatures}
         industryFeatures={industryFeatures}
         faqs={faqs}
         whyChoose={whyChoose}
-        // whyChooseText={whyChoose}
+        whyChooseText={whyChooseText}
       />
     </NextIntlClientProvider>
   );

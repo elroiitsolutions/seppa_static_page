@@ -40,9 +40,9 @@ export default async function JuiceLineMachinesPage({ params }: PageProps) {
     overviewLayout: "stacked",
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: imgB.src,
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t('featuresSubtitle'),
-    features: Array.isArray(t.raw('features')) ? t.raw('features') : [],
+    featuresTitle: t.has('featuresTitle') ? t('featuresTitle') : undefined,
+    featuresSubtitle: t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
+    features: t.has('features') && Array.isArray(t.raw('features')) ? t.raw('features') : undefined,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({
       title: block.title,
       paragraphs: block.paragraphs,
@@ -64,15 +64,15 @@ export default async function JuiceLineMachinesPage({ params }: PageProps) {
       steps: (t.raw('methodology.steps') as any[]).map((step: any, index: number) => ({
         title: step.title,
         description: step.description,
-        image: [imgC.src, imgD.src, imgE.src][index] || imgC.src
+        image: [imgC.src, imgD.src, imgE.src, imgF.src, imgB.src][index] || imgC.src
       })),
-      outro: t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
+      outro: t.has('methodology.outro') && t.raw('methodology.outro') ? (Array.isArray(t.raw('methodology.outro')) ? t.raw('methodology.outro') : [t('methodology.outro')]) : undefined
     },
     faqTitle: t('faqTitle'),
     faqs: t.raw('faqs')
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

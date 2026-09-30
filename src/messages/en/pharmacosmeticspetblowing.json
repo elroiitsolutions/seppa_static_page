@@ -1,0 +1,98 @@
+{
+  "title": "Pharma & Cosmetics PET Bottle Blowing Machine",
+  "breadcrumbName": "Pharma & Cosmetics PET Blowing",
+  "rootBreadcrumbName": "PET Blowing Machine",
+  "rootBreadcrumbPath": "/blowing",
+  "overviewTitle": "Precision PET Blow Molding for Pharmaceutical & Cosmetic Packaging",
+  "overviewDescription": "Pharmaceutical syrup bottles, personal care containers, and cosmetic flacons demand extraordinary dimensional accuracy, zero particulate contamination, and high barrier protection. Standard blow molding systems often introduce airborne dust and oil vapor that compromise cleanroom standards. The SEPPA Pharma & Cosmetics PET Blower is purpose-engineered to meet strict cGMP, FDA, and ISO cleanroom packaging requirements.",
+  "overviewsubDescription": [
+    "From high-clarity cough syrup bottles to ergonomic lotion containers and ultra-pure skincare packaging, our machinery delivers defect-free containers with flawless neck sealing surface finish and exact volumetric capacity.",
+    "Utilizing advanced servo-electric actuation and oil-free pneumatic options, SEPPA provides maximum process stability, eliminating contamination risks while securing high-speed throughput."
+  ],
+  "featuresTitle": "",
+  "featuresSubtitle": "",
+  "features": [],
+  "contentBlocks": [
+    {
+      "title": "Key Advantages for Pharmaceutical & Cosmetic Container Production",
+      "paragraphs": [
+        "Uncompromising Cleanliness & Particulate Control: Designed for cleanroom-adjacent operations, our PET blowing machines eliminate oil lubrication in product contact zones and utilize HEPA-filtered laminar air flow to prevent dust deposition inside blown bottles.",
+        "Precision Neck Finish & Volumetric Uniformity: Accurate syrup dosing and leak-free dropper or pump integration depend on exact neck dimensions. Servo-driven stretch rods ensure uniform wall thickness distribution, preventing micro-leaks and neck deformation.",
+        "High Chemical Inertness & UV Barrier Options: PET containers produced on SEPPA machinery provide exceptional chemical resistance to alcohol-based tonics, essential oils, and active pharmaceutical syrups, with full support for UV-blocking preform additives."
+      ]
+    },
+    {
+      "title": "Applications Across Health, Beauty, and Medical Packaging",
+      "paragraphs": [
+        "Pharmaceutical Syrups & Oral Liquids: High-precision production of 30ml to 1000ml amber and transparent syrup bottles with standard tamper-evident neck finishes.",
+        "Cosmetic Flacons & Skincare Lotion Containers: Elegant, high-clarity PET and rPET bottles for shampoos, body washes, micellar water, and pump-dispensed serums.",
+        "Sanitizers, Antiseptics & Personal Care: Heavy-duty, chemical-resistant PET bottles engineered to withstand alcohol formulations without stress cracking."
+      ]
+    },
+    {
+      "title": "Technical Highlights & System Architecture",
+      "paragraphs": [
+        "Dynamic IR Heating Furnace: Multi-zone infrared ovens with closed-loop temperature control guarantee optimal thermal conditioning for amber, opaque, and multi-layer preforms.",
+        "Quick Changeover SMED Tooling: Fast mold swapping in under 45 minutes enables efficient short-run production for diverse cosmetic SKUs and pharmaceutical batch sizes.",
+        "Integrated Vision & Leak Inspection: Optional inline camera inspection verifies neck geometry, particle absence, and seal integrity before filling line transfer."
+      ]
+    }
+  ],
+  "applicationsTitle": "",
+  "applicationsSubtitle": "",
+  "applications": [],
+  "whyChoose": {
+    "title": "Why Choose SEPPA Solutions for Pharma & Cosmetic PET Blowing",
+    "description": "",
+    "paragraphs": [
+      "SEPPA Solutions brings over 25 years of specialized packaging engineering to the pharmaceutical and cosmetic industries. Our machines are built with full IQ/OQ validation documentation support, ensuring seamless integration into regulated manufacturing facilities.",
+      "With energy-efficient servo drives, ultra-clean operation, and 24/7 industrial durability, SEPPA empowers brands to achieve premium packaging quality with low total cost of ownership."
+    ]
+  },
+  "methodology": {
+    "badge": "Methodology",
+    "title": "Pharma & Cosmetic PET Bottle Manufacturing Process",
+    "subtitle": "A fully automated, sterile-compliant four-step process for high-precision container production.",
+    "steps": [
+      {
+        "title": "Preform Thermal Conditioning",
+        "description": "Preforms are neck-up oriented and passed through an adjustable IR tunnel to reach exact glass transition temperature without neck distortion."
+      },
+      {
+        "title": "Cleanroom-Compliant Servo Stretching & Blowing",
+        "description": "High-torque servo stretch rods perform bi-axial orientation while sterile, oil-free high-pressure air expands the polymer into mirror-finish aluminum mold cavities."
+      },
+      {
+        "title": "Rapid Mold Cooling & Neck Crystallization",
+        "description": "Integrated chilled water channels rapidly cool container walls, locking in structural rigidity, crystal clarity, and exact volumetric tolerances."
+      },
+      {
+        "title": "Inline Inspection & Automated Ejection",
+        "description": "Finished containers undergo automatic leak testing and neck finish inspection before clean transfer to downstream filling lines."
+      }
+    ]
+  },
+  "faqTitle": "Frequently Asked Questions (FAQ)",
+  "faqs": [
+    {
+      "question": "Are SEPPA PET blowing machines compliant with cGMP and cleanroom standards?",
+      "answer": "Yes, our machines feature oil-free pneumatic circuits, stainless steel contact surfaces, and HEPA air filtration options designed for ISO Class 7/8 cleanroom environments."
+    },
+    {
+      "question": "Can the machine produce amber and UV-protected pharmaceutical bottles?",
+      "answer": "Absolutely. Multi-zone IR heating controls allow precise thermal profiling for amber, opaque, and UV-inhibited preforms without surface overheating."
+    },
+    {
+      "question": "What container size range is supported for cosmetic flacons?",
+      "answer": "The platform supports container sizes from 10ml ampoules and vials up to 2-liter bulk personal care bottles, with quick toolless mold changeover."
+    },
+    {
+      "question": "How does the machine prevent stress cracking in alcohol-based sanitizer bottles?",
+      "answer": "Bi-axial stretch optimization and controlled mold cooling eliminate internal material stress, ensuring high stress-crack resistance (ESCR) when storing alcohol formulations."
+    },
+    {
+      "question": "Is rPET (recycled PET) supported for sustainable cosmetic packaging?",
+      "answer": "Yes, our advanced heating algorithms easily process up to 100% rPET preforms while maintaining crystal clarity and mechanical integrity."
+    }
+  ]
+}

@@ -87,14 +87,16 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
               >
                 {/* Content */}
                 <motion.div variants={fadeInUp} className="w-full lg:w-1/2 group cursor-pointer">
-                  <div className={`flex items-center ${isPhaseOrStep ? 'gap-0' : 'gap-4'} mb-6`}>
-                    {!isPhaseOrStep && (
-                      <span className="w-12 h-12 shrink-0 rounded-full flex items-center justify-center text-seppa-red font-bold font-heading text-xl shadow-sm group-hover:bg-seppa-red group-hover:text-white group-hover:border-seppa-red transition-all duration-500">
-                        <FiStar size={24}/>
-                      </span>
-                    )}
-                    <h3 className="text-3xl md:text-4xl font-bold font-heading text-dark leading-tight">{title}</h3>
-                  </div>
+                  {title && title.trim() !== "" && (
+                    <div className={`flex items-center ${isPhaseOrStep ? 'gap-0' : 'gap-4'} mb-6`}>
+                      {!isPhaseOrStep && (
+                        <span className="w-12 h-12 shrink-0 rounded-full flex items-center justify-center text-seppa-red font-bold font-heading text-xl shadow-sm group-hover:bg-seppa-red group-hover:text-white group-hover:border-seppa-red transition-all duration-500">
+                          <FiStar size={24}/>
+                        </span>
+                      )}
+                      <h3 className="text-3xl md:text-4xl font-bold font-heading text-dark leading-tight">{title}</h3>
+                    </div>
+                  )}
                   {Array.isArray(step?.description) ? (
                     <div className="space-y-4">
                       {step.description.map((desc, i) => (

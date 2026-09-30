@@ -31,6 +31,7 @@ export default async function LocalizedProductEnquiryPage({ params }: Props) {
     subheading: getT('subheading'),
     formTitle: getT('formTitle'),
     submitButtonText: getT('submitButtonText'),
+    formType: 'product',
     formFields: [
       {
         name: "name",

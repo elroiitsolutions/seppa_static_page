@@ -27,6 +27,22 @@ export default async function WaterCooledScrollChillersPage({ params }: PageProp
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/equipments/water-cooled-scroll-chillers', locale);
 
+  const rawApplications = (() => {
+    try {
+      const raw = t.raw('applications');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
+  const rawFeatures = (() => {
+    try {
+      const raw = t.raw('features');
+      if (Array.isArray(raw) && raw.length > 0) return raw;
+    } catch (e) {}
+    return undefined;
+  })();
+
   const pageData: PackagingPageData = {
     title: t('title'),
     breadcrumbName: t('breadcrumbName'),
@@ -43,6 +59,12 @@ export default async function WaterCooledScrollChillersPage({ params }: PageProp
       return [];
     })(),
     overviewImage: "/images/equipments/chiller_overview.png",
+    featuresTitle: rawFeatures ? (t.has('featuresTitle') ? t('featuresTitle') : undefined) : undefined,
+    featuresSubtitle: rawFeatures ? (t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined) : undefined,
+    features: rawFeatures ? rawFeatures.map((feature: any) => ({
+      title: feature.title,
+      description: feature.description
+    })) : undefined,
     contentBlocks: (() => {
       try {
         const raw = t.raw('contentBlocks');
@@ -57,27 +79,15 @@ export default async function WaterCooledScrollChillersPage({ params }: PageProp
       } catch (e) {}
       return [];
     })(),
-    featuresTitle: t('featuresTitle'),
-    featuresSubtitle: t.has('featuresSubtitle') ? t('featuresSubtitle') : undefined,
-    features: (() => {
-      try {
-        const raw = t.raw('features');
-        if (Array.isArray(raw)) return raw;
-      } catch (e) {}
-      return [];
-    })(),
-    applicationsTitle: t('applicationsTitle'),
-    applicationsSubtitle: t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined,
-    applications: (() => {
-      try {
-        const raw = t.raw('applications');
-        if (Array.isArray(raw)) return raw;
-      } catch (e) {}
-      return [];
-    })(),
+    applicationsTitle: rawApplications ? (t.has('applicationsTitle') ? t('applicationsTitle') : undefined) : undefined,
+    applicationsSubtitle: rawApplications ? (t.has('applicationsSubtitle') ? t('applicationsSubtitle') : undefined) : undefined,
+    applications: rawApplications ? rawApplications.map((app: any) => ({
+      title: app.title,
+      description: app.description
+    })) : undefined,
     whyChoose: {
       title: t('whyChoose.title'),
-      description: t.has('whyChoose.description') ? t('whyChoose.description') : undefined,
+      description: t.has('whyChoose.description') ? t('whyChoose.description') : "",
       paragraphs: (() => {
         try {
           const raw = t.raw('whyChoose.paragraphs');
@@ -89,6 +99,7 @@ export default async function WaterCooledScrollChillersPage({ params }: PageProp
     },
     methodology: {
       title: t('methodology.title'),
+      subtitle: t.has('methodology.subtitle') ? t('methodology.subtitle') : undefined,
       steps: (() => {
         try {
           const raw = t.raw('methodology.steps');
@@ -101,6 +112,16 @@ export default async function WaterCooledScrollChillersPage({ params }: PageProp
           }
         } catch (e) {}
         return [];
+      })(),
+      outro: (() => {
+        try {
+          if (t.has('methodology.outro')) {
+            const raw = t.raw('methodology.outro');
+            if (Array.isArray(raw) && raw.length > 0) return raw;
+            if (typeof raw === 'string' && raw.length > 0 && !raw.startsWith('methodology.')) return [raw];
+          }
+        } catch (e) {}
+        return undefined;
       })()
     },
     faqTitle: t('faqTitle'),
@@ -113,7 +134,7 @@ export default async function WaterCooledScrollChillersPage({ params }: PageProp
     })()
   };
 
-    pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
+  pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
