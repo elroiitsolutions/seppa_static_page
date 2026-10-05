@@ -3,6 +3,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { pickMessages } from '@/lib/i18n-helper';
+import { getAllBlogs } from '@/lib/strapi/client';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -18,10 +19,12 @@ export default async function LocalizedHomePage({ params }: Props) {
 
   const messages = await getMessages({ locale });
   const filteredMessages = pickMessages(messages, ['home', 'videos']);
+  const latestBlogs = await getAllBlogs(locale);
 
   return (
     <NextIntlClientProvider locale={locale} messages={filteredMessages}>
-      <HomeView />
+      <HomeView latestBlogs={latestBlogs} />
     </NextIntlClientProvider>
   );
 }
+

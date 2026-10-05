@@ -34,8 +34,16 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options: Requ
       console.warn(`Strapi request warning for ${requestUrl}: ${response.status} ${response.statusText}`);
       return null;
     }
-    const data = await response.json();
-    return data;
+    const text = await response.text();
+    if (!text || !text.trim()) {
+      return null;
+    }
+    try {
+      const data = JSON.parse(text);
+      return data;
+    } catch {
+      return null;
+    }
   } catch (error) {
     console.warn(`Fetch error for ${requestUrl}:`, error);
     return null;

@@ -27,7 +27,19 @@ export async function apiRequest(endpoint: string, options: RequestInit = {}) {
 
   const contentType = response.headers.get('content-type');
   const isJson = contentType && contentType.includes('application/json');
-  const data = isJson ? await response.json() : await response.text();
+  let data: any = null;
+  const rawText = await response.text();
+  if (rawText && rawText.trim()) {
+    if (isJson) {
+      try {
+        data = JSON.parse(rawText);
+      } catch {
+        data = rawText;
+      }
+    } else {
+      data = rawText;
+    }
+  }
 
   if (!response.ok) {
     const message = (data && data.error && data.error.message) || data || response.statusText;
