@@ -12,6 +12,8 @@ interface Props {
   params: Promise<{ locale: string; slug: string[] }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const fallbackSlugs = [
     'dummy-slug',
