@@ -22,17 +22,22 @@ import { usePathname } from 'next/navigation';
 const LatestBlogsContent = ({ getT, isArabic, heading, tag, selected_blogs, layout = 'grid' }: any) => {
   const strapiBase = process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337';
   const blogs = selected_blogs && selected_blogs.length > 0 
-    ? selected_blogs.map((b: any) => {
+    ? selected_blogs.slice(0, 3).map((b: any) => {
         const rawImg = b.hero?.background_image?.url || b.image?.url;
         const image = rawImg 
           ? (rawImg.startsWith('http') || rawImg.startsWith('//') ? rawImg : `${strapiBase}${rawImg.startsWith('/') ? '' : '/'}${rawImg}`)
           : "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg";
 
+        const pubDate = b.publishedAt || b.createdAt;
+        const formattedDate = pubDate 
+          ? new Date(pubDate).toLocaleDateString(isArabic ? 'ar-EG' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+          : 'Recent';
+
         return {
           title: b.hero?.title || b.title || 'Untitled Blog',
-          date: b.publishedAt ? new Date(b.publishedAt).toLocaleDateString() : 'Recent',
+          date: formattedDate,
           image,
-          url: b.full_path || '/blog'
+          url: b.full_path || (b.slug ? `/blog/${b.slug}` : '/blog')
         };
       })
     : [
@@ -40,21 +45,22 @@ const LatestBlogsContent = ({ getT, isArabic, heading, tag, selected_blogs, layo
           title: getT('blog1Title'),
           date: getT('blog1Date'),
           image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg",
-          url: "/blog"
+          url: "/can/blog/pet-vs-glass-vs-aluminium-cans"
         },
         {
           title: getT('blog2Title'),
           date: getT('blog2Date'),
-          image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg",
-          url: "/blog"
+          image: "/pics/can-filling-machine.jpg",
+          url: "/can/blog/innovations-in-can-filling"
         },
         {
           title: getT('blog3Title'),
           date: getT('blog3Date'),
-          image: "/pics/aluminium-can-vs-plastic-bottle-vs-glass-comparison.jpg",
-          url: "/blog"
+          image: "/pics/pet-blower.jpg",
+          url: "/pet/blog/next-gen-pet-stretch-blow-moulding"
         }
       ];
+
 
   const displayHeading = heading || (getT ? getT('heading') : 'Informing you with industry focused updates');
   const displayTag = tag || (getT ? getT('tag') : 'LATEST BLOGS');
@@ -145,7 +151,13 @@ const LocalizedLatestBlogs = (props: any) => {
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
-  const getT = (key: string) => t(`LatestBlogs.${key}`);
+  const getT = (key: string) => {
+    try {
+      return t(`LatestBlogs.${key}`);
+    } catch {
+      return ((enHome as any).LatestBlogs?.[key] || key);
+    }
+  };
   return <LatestBlogsContent getT={getT} isArabic={isArabic} {...props} />;
 };
 
@@ -158,7 +170,7 @@ const StaticLatestBlogs = (props: any) => {
 
 const LatestBlogs = (props: any) => {
   const pathname = usePathname() || '';
-  const isLocalized = pathname.startsWith('/ar') || pathname.startsWith('/en') || pathname.startsWith('/de');
+  const isLocalized = ['/en', '/ar', '/de', '/nl', '/fr'].some(loc => pathname === loc || pathname.startsWith(`${loc}/`));
   
   return isLocalized ? <LocalizedLatestBlogs {...props} /> : <StaticLatestBlogs {...props} />;
 };

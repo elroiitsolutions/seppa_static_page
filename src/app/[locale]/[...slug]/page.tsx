@@ -55,6 +55,17 @@ export async function generateStaticParams() {
 
 export default async function CatchAllPage({ params }: Props) {
   const { locale, slug } = await params;
+
+  // Immediately reject invalid locales, internal Next.js assets, sourcemaps, or devtools requests
+  if (
+    !routing.locales.includes(locale as any) ||
+    !slug ||
+    slug.length === 0 ||
+    slug.some((s) => s.endsWith('.map') || s.endsWith('.json') || s.startsWith('.'))
+  ) {
+    notFound();
+  }
+
   setRequestLocale(locale);
 
   const fullPath = '/' + slug.join('/');
