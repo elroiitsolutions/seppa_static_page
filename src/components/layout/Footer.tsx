@@ -167,9 +167,9 @@ const Footer: React.FC = () => {
               <h3 className="text-xl font-heading font-bold mb-8">{f.ourServices}</h3>
               <ul className="space-y-4 text-gray-300 font-medium">
                 <li><Link href={getLink("/services/packaging")} className="hover:text-seppa-red transition">{f.packaging}</Link></li>
-                <li><Link href={getLink("/services/spare-parts")} className="hover:text-seppa-red transition">{f.spareParts}</Link></li>
+                <li><Link href={getLink("/services/spare-parts-and-logistics-training")} className="hover:text-seppa-red transition">{f.spareParts}</Link></li>
                 <li><Link href={getLink("/services/maintenance")} className="hover:text-seppa-red transition">{f.maintenance}</Link></li>
-                <li><Link href={getLink("/services/improvement")} className="hover:text-seppa-red transition">{f.lineImprovement}</Link></li>
+                <li><Link href={getLink("/services/line-improvement")} className="hover:text-seppa-red transition">{f.lineImprovement}</Link></li>
                 <li><Link href={getLink("/services/conversions")} className="hover:text-seppa-red transition">{f.lineConversions}</Link></li>
                 <li><Link href={getLink("/services/audits")} className="hover:text-seppa-red transition">{f.audits}</Link></li>
                 <li><Link href={getLink("/services/training")} className="hover:text-seppa-red transition">{f.training}</Link></li>

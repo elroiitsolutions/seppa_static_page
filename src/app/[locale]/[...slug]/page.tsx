@@ -12,7 +12,7 @@ interface Props {
   params: Promise<{ locale: string; slug: string[] }>;
 }
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const fallbackSlugs = [
@@ -37,19 +37,22 @@ export async function generateStaticParams() {
 
   try {
     const cmsSlugs = await getAllPageSlugs();
-    const allSlugs = Array.from(new Set([...fallbackSlugs, ...cmsSlugs]));
+    const rawSlugs = Array.from(new Set([...fallbackSlugs, ...cmsSlugs]));
+    const cleanSlugs = rawSlugs
+      .map((s) => s.replace(/^\/+|\/+$/g, ''))
+      .filter(Boolean);
 
     return routing.locales.flatMap((locale) =>
-      allSlugs.map((slugStr) => ({
+      cleanSlugs.map((slugStr) => ({
         locale,
-        slug: slugStr.split('/'),
+        slug: slugStr.split('/').filter(Boolean),
       }))
     );
   } catch (e) {
     return routing.locales.flatMap((locale) =>
       fallbackSlugs.map((slugStr) => ({
         locale,
-        slug: slugStr.split('/'),
+        slug: slugStr.replace(/^\/+|\/+$/g, '').split('/').filter(Boolean),
       }))
     );
   }
