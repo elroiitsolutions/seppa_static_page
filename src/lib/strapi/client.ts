@@ -24,10 +24,12 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options: Requ
 
   // Trigger API call
   try {
-    const response = await fetch(requestUrl, {
-      ...mergedOptions,
-      next: { revalidate: 60 } // Automatically cache & revalidate every 60s
-    });
+    const isDev = process.env.NODE_ENV === 'development';
+    const fetchConfig: RequestInit = isDev
+      ? { ...mergedOptions, cache: 'no-store' }
+      : { ...mergedOptions, next: { revalidate: 60 } };
+
+    const response = await fetch(requestUrl, fetchConfig);
 
     // Handle response
     if (!response.ok) {
@@ -51,11 +53,12 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options: Requ
 }
 
 export async function getPageBySlug(slug: string, locale: string = 'en') {
-  // Filters by full_path
+  const cleanPath = '/' + slug.replace(/^\/+|\/+$/g, '');
+  // Filters by full_path (matching with or without trailing slash)
   const query = {
     filters: {
       full_path: {
-        $eq: slug,
+        $in: [cleanPath, `${cleanPath}/`],
       },
     },
     locale,
