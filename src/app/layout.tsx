@@ -55,10 +55,14 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning className={`${poppins.variable} ${calSans.variable}`}>
       <head>
-        {/* Google tag (gtag.js) */}
+        {/* Google tag (gtag.js) - Google Ads & Google Analytics */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=AW-18368451165"
+        />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-HYNF3GKR6K"
         />
         <Script
           id="google-tag-init"
@@ -69,6 +73,7 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-18368451165');
+              gtag('config', 'G-HYNF3GKR6K');
             `,
           }}
         />
