@@ -262,7 +262,7 @@ const PackagingContact = () => {
 
     setIsSubmitting(true);
     try {
-      await fetch('/api/submit-enquiry.php', {
+      await fetch('/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

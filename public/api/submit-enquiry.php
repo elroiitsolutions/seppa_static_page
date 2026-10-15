@@ -263,7 +263,7 @@ try {
             }
 
             // Construct email headers
-            $to = "support@canadianclear.com";
+            $to = "rameshkumar25.work@gmail.com";
             $subject = "New " . ($email_fields['Form Type'] ?? 'Enquiry') . " from " . $full_name;
             
             $headers = [];
@@ -319,8 +319,59 @@ try {
             </body>
             </html>";
 
-            // Send mail
+            // Send mail to Admin
             @mail($to, $subject, $email_html, implode("\r\n", $headers));
+
+            // Send confirmation mail to Sender / Customer
+            if (!empty($sender_email) && filter_var($sender_email, FILTER_VALIDATE_EMAIL)) {
+                $customer_subject = "Thank you for your enquiry - SEPPA Solutions";
+                $customer_html = "
+                <html>
+                <head>
+                    <title>" . htmlspecialchars($customer_subject) . "</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+                        table { width: 100%; max-width: 600px; border-collapse: collapse; margin-top: 20px; }
+                        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+                        th { background-color: #f4f4f4; width: 35%; }
+                        .header { background: #101934; color: white; padding: 20px; text-align: center; border-radius: 4px 4px 0 0; max-width: 600px; border-bottom: 4px solid #f53838; }
+                        .content { padding: 20px 0; }
+                    </style>
+                </head>
+                <body>
+                    <div class='header'>
+                        <h2 style='margin:0;'>SEPPA SOLUTIONS</h2>
+                        <p style='margin:5px 0 0 0; color:#cbd5e1; font-size:14px;'>Enquiry Confirmation</p>
+                    </div>
+                    <div class='content'>
+                        <h3 style='color:#101934;'>Dear " . htmlspecialchars($full_name) . ",</h3>
+                        <p>Thank you for reaching out to <strong>SEPPA Solutions</strong>. We have successfully received your enquiry. Our team is reviewing your requirements and will connect with you shortly.</p>
+                        <p style='font-weight:bold; margin-top:15px;'>Summary of your submission:</p>
+                        <table>";
+                        
+                foreach ($email_fields as $label => $value) {
+                    if ($value !== null && $value !== '') {
+                        $customer_html .= "<tr><th>" . htmlspecialchars($label) . "</th><td>" . nl2br(htmlspecialchars($value)) . "</td></tr>";
+                    }
+                }
+                
+                $customer_html .= "
+                        </table>
+                        <div style='margin-top: 24px; padding: 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 13px;'>
+                            <p style='margin: 0; font-weight: bold;'>Need immediate assistance?</p>
+                            <p style='margin: 4px 0 0 0;'>You can reply directly to this email or visit our website at <a href='https://seppasolutions.com' style='color:#f53838;'>seppasolutions.com</a>.</p>
+                        </div>
+                        <p style='margin-top: 25px; font-size: 12px; color: #777;'>© " . date('Y') . " SEPPA Solutions. All rights reserved.</p>
+                    </div>
+                </body>
+                </html>";
+
+                $cust_headers = [];
+                $cust_headers[] = 'MIME-Version: 1.0';
+                $cust_headers[] = 'Content-type: text/html; charset=utf-8';
+                $cust_headers[] = 'From: SEPPA Solutions <no-reply@' . $domain . '>';
+                @mail($sender_email, $customer_subject, $customer_html, implode("\r\n", $cust_headers));
+            }
         } catch (Throwable $mail_err) {
             // Log/ignore mail errors so it doesn't break the client's success response
         }
