@@ -40,6 +40,9 @@ const calSans = localFont({
 export const metadata: Metadata = {
   title: "seppa solutions.com",
   description: "Seppa Solutions",
+  verification: {
+    google: "wcF2xooOMglCm4txniropgRgpvhtE8aEN-U9iW9_oY0",
+  },
 };
 
 const defaultMessages = {
@@ -55,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning className={`${poppins.variable} ${calSans.variable}`}>
       <head>
+        <meta name="google-site-verification" content="wcF2xooOMglCm4txniropgRgpvhtE8aEN-U9iW9_oY0" />
         {/* Google tag (gtag.js) - Google Ads & Google Analytics */}
         <Script
           strategy="afterInteractive"
