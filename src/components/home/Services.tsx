@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { motion , Variants } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import AnimatedHeading from '../ui/AnimatedHeading';
@@ -82,10 +83,13 @@ const Services = () => {
             <motion.div key={idx} variants={fadeInUp} className="group cursor-pointer h-full">
               <div className="bg-[#1c1c1c] rounded-3xl overflow-hidden p-3 shadow-lg border border-gray-800 transition duration-300 hover:border-gray-600 h-full flex flex-col">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shrink-0 relative group/image">
-                  <img 
+                  <Image 
                     src={service.image} 
                     alt={service.title} 
-                    className="w-full h-full object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out" 
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    loading="lazy"
+                    className="object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out" 
                   />
                   <div className="shine-overlay" />
                 </div>

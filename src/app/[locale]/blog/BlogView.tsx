@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import PageHeader from '@/components/layout/PageHeader';
 import AnimatedHeading from '@/components/ui/AnimatedHeading';
@@ -82,10 +83,12 @@ const BlogView: React.FC<BlogViewProps> = ({ blogs = [] }) => {
                     className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 group"
                   >
                     <div className="relative h-64 overflow-hidden">
-                      <img 
+                      <Image 
                         src={imageUrl} 
                         alt={title} 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute top-4 left-4 bg-white text-dark text-sm font-bold py-1 px-4 rounded-full shadow-lg">
                         {dateStr}

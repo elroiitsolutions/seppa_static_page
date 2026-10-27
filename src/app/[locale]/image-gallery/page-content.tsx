@@ -1,67 +1,237 @@
 "use client";
-import React from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
+import PageHeader from '@/components/layout/PageHeader';
+import AnimatedHeading from '@/components/ui/AnimatedHeading';
+import { FiMaximize2, FiX } from 'react-icons/fi';
 
-const ImageGallery = () => {
-  return (
-    <>
-      
-				<div className="elementor-element elementor-element-1875bc2 e-con-full e-flex e-con e-parent" data-id="1875bc2" data-element_type="container" data-e-type="container">
-		<div data-ekitparallax="{&quot;ekit_section_parallax_bg&quot;:&quot;yes&quot;,&quot;ekit_section_parallax_bg_speed&quot;:0.5,&quot;elementor_lazy_load&quot;:&quot;1&quot;}" className="elementor-element elementor-element-be24628 page-header-lg e-flex e-con-boxed e-con e-child" data-id="be24628" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div className="e-con-inner">
-		<div className="elementor-element elementor-element-5189cc7 e-con-full e-flex e-con e-child" data-id="5189cc7" data-element_type="container" data-e-type="container">
-				<div className="elementor-element elementor-element-a40eee6 at-heading-animation at-animation-heading-style-3 page-header-lg elementor-widget elementor-widget-heading" data-id="a40eee6" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
-					<h1 className="elementor-heading-title elementor-size-default">Our gallery</h1>				</div>
-				<div className="elementor-element elementor-element-57a8249 elementor-invisible elementor-widget elementor-widget-yarnex-breadcrumb" data-id="57a8249" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="yarnex-breadcrumb.default">
-				<div className="elementor-widget-container">
-					<div role="navigation" aria-label="Breadcrumbs" className="breadcrumb-trail breadcrumbs"><ol className="trail-items"><li className="trail-item trail-begin"><a href="../index.html" rel="home"><span>Home</span></a></li><li className="trail-item trail-end"><span><span>Image Gallery</span></span></li></ol></div>				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<div className="elementor-element elementor-element-7cc14e9 e-flex e-con-boxed e-con e-parent" data-id="7cc14e9" data-element_type="container" data-e-type="container">
-					<div className="e-con-inner">
-		<div className="elementor-element elementor-element-adc4fa6 e-con-full e-flex e-con e-child" data-id="adc4fa6" data-element_type="container" data-e-type="container">
-				<div className="elementor-element elementor-element-b31f50c gallery-spacing-custom photo-gallery elementor-invisible elementor-widget elementor-widget-image-gallery" data-id="b31f50c" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-gallery.default">
-							<div className="elementor-image-gallery">
-			<div id="gallery-1" className="gallery galleryid-210 gallery-columns-3 gallery-size-full"><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-1" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjgzLCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS0xLmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-1.jpg"><img fetchPriority="high" decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-1.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-1.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-1-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-1-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-1-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-1-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjgyLCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS0yLmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-2.jpg"><img decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-2.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-2.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-2-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-2-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-2-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-2-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-3" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjgxLCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS0zLmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-3.jpg"><img decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-3.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-3.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-3-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-3-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-3-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-3-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-4" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjgwLCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS00LmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-4.jpg"><img loading="lazy" decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-4.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-4.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-4-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-4-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-4-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-4-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-5" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mjc5LCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS01LmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-5.jpg"><img loading="lazy" decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-5.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-5.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-5-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-5-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-5-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-5-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-6" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mjc4LCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS02LmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-6.jpg"><img loading="lazy" decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-6.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-6.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-6-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-6-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-6-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-6-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-7" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mjc3LCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS03LmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-7.jpg"><img loading="lazy" decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-7.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-7.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-7-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-7-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-7-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-7-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-8" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mjc2LCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS04LmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-8.jpg"><img loading="lazy" decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-8.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-8.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-8-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-8-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-8-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-8-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure><figure className="gallery-item">
-			<div className="gallery-icon landscape">
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="b31f50c" data-elementor-lightbox-title="gallery-9" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mjc1LCJ1cmwiOiJodHRwczpcL1wvZGVtby5hd2Fpa2VudGhlbWVzLmNvbVwveWFybmV4XC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI2XC8wMlwvZ2FsbGVyeS05LmpwZyIsInNsaWRlc2hvdyI6ImIzMWY1MGMifQ%3D%3D" href="../wp-content/uploads/2026/02/gallery-9.jpg"><img loading="lazy" decoding="async" width="1200" height="800" src="../wp-content/uploads/2026/02/gallery-9.jpg" className="attachment-full size-full" alt="" srcSet="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-9.jpg 1200w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-9-600x400.jpg 600w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-9-300x200.jpg 300w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-9-1024x683.jpg 1024w, https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/gallery-9-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
-			</div></figure>
-		</div>
-		</div>
-						</div>
-				</div>
-					</div>
-				</div>
-				
-    </>
-  );
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-export default ImageGallery;
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
+};
+
+interface GalleryItem {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+}
+
+const galleryItems: GalleryItem[] = [
+  {
+    id: 1,
+    title: "Monobloc PET Rinsing, Filling & Capping Line",
+    category: "PET Filling",
+    image: "/pics/pet-filling-machine.jpg"
+  },
+  {
+    id: 2,
+    title: "High-Speed Beverage Can Filling & Seaming System",
+    category: "Can Automation",
+    image: "/pics/can-filling-machine.jpg"
+  },
+  {
+    id: 3,
+    title: "Precision Glass Bottle Rinser-Filler-Crown Capper",
+    category: "Glass Lines",
+    image: "/pics/glass-filling-machine.jpg"
+  },
+  {
+    id: 4,
+    title: "Heavy-Duty 3 to 20-Liter Large Jar Filling Plant",
+    category: "Large Formats",
+    image: "/pics/large-bottle-filling-machine.jpg"
+  },
+  {
+    id: 5,
+    title: "Rotary Electric Servo Stretch PET Blow Molding Unit",
+    category: "PET Blowers",
+    image: "/pics/pet-blower.jpg"
+  },
+  {
+    id: 6,
+    title: "Turnkey Stainless Steel Beverage Processing Plant",
+    category: "Processing",
+    image: "/pics/process-technology.jpg"
+  },
+  {
+    id: 7,
+    title: "High-Volume Multi-Format Large PET Container Production",
+    category: "Large Formats",
+    image: "/pics/LARGE-PET-BOTTLE.jpg"
+  },
+  {
+    id: 8,
+    title: "Aseptic Household & Chemical Liquid Filling Automation",
+    category: "Liquid Packaging",
+    image: "/pics/PET-HOUSEHOLD.png"
+  },
+  {
+    id: 9,
+    title: "Complete End-to-End Packaging Line Integration",
+    category: "Turnkey Lines",
+    image: "/pics/packaging_blog_banner.png"
+  }
+];
+
+const categories = ["All", "PET Filling", "Can Automation", "Glass Lines", "Large Formats", "PET Blowers", "Processing"];
+
+export default function ImageGallery() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [activeImage, setActiveImage] = useState<GalleryItem | null>(null);
+
+  const filteredItems = selectedCategory === "All" 
+    ? galleryItems 
+    : galleryItems.filter(item => item.category === selectedCategory);
+
+  return (
+    <div className="bg-light min-h-screen">
+      <PageHeader 
+        title="Equipment Gallery" 
+        breadcrumbs={[
+          { name: "Home", path: "/" },
+          { name: "Gallery" }
+        ]} 
+      />
+
+      <section className="py-20 lg:py-28">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <motion.div 
+              variants={fadeInUp} 
+              initial="hidden" 
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
+              <span className="text-sm font-medium text-dark uppercase tracking-wider">Industrial Plant Showcase</span>
+            </motion.div>
+
+            <AnimatedHeading 
+              text="Explore Our Advanced Machinery & Production Installations" 
+              elementType="h2" 
+              className="text-4xl md:text-5xl font-heading font-bold text-dark mb-6 leading-tight" 
+            />
+            <p className="text-gray-600 text-lg">
+              Precision engineering deployed across beverage, mineral water, dairy, brewery, and spirits facilities globally.
+            </p>
+
+            {/* Category Filter Pills */}
+            <div className="flex flex-wrap justify-center gap-2 mt-8">
+              {categories.map((cat, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+                    selectedCategory === cat
+                      ? "bg-seppa-red text-white shadow-md shadow-seppa-red/30 scale-105"
+                      : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Gallery Grid */}
+          <motion.div 
+            layout
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <AnimatePresence>
+              {filteredItems.map((item) => (
+                <motion.div
+                  layout
+                  key={item.id}
+                  variants={fadeInUp}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.4 }}
+                  className="group relative rounded-3xl overflow-hidden aspect-[4/3] bg-white shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer"
+                  onClick={() => setActiveImage(item)}
+                >
+                  <Image 
+                    src={item.image} 
+                    alt={item.title} 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                  />
+
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 md:p-8">
+                    <span className="text-seppa-red bg-white/90 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full w-max mb-2">
+                      {item.category}
+                    </span>
+                    <h3 className="text-white font-heading font-bold text-lg md:text-xl leading-snug">
+                      {item.title}
+                    </h3>
+                    <div className="mt-3 flex items-center gap-2 text-white/80 text-sm font-medium">
+                      <FiMaximize2 className="text-seppa-red" />
+                      <span>Click to view</span>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {activeImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 md:p-10"
+            onClick={() => setActiveImage(null)}
+          >
+            <button
+              onClick={() => setActiveImage(null)}
+              className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/20 hover:bg-white text-white hover:text-dark flex items-center justify-center transition-colors z-50"
+            >
+              <FiX size={24} />
+            </button>
+
+            <div 
+              className="relative max-w-5xl w-full max-h-[85vh] aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl bg-dark"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={activeImage.image}
+                alt={activeImage.title}
+                fill
+                sizes="100vw"
+                className="object-contain"
+                priority
+              />
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                <span className="text-xs uppercase tracking-wider font-semibold text-seppa-red bg-black/40 px-3 py-1 rounded-full">
+                  {activeImage.category}
+                </span>
+                <h4 className="text-xl md:text-2xl font-heading font-bold mt-2">
+                  {activeImage.title}
+                </h4>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}

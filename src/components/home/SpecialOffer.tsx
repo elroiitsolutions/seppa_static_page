@@ -25,34 +25,13 @@ const SpecialOffer = () => {
   const getT = (key: string) => t(`SpecialOffer.${key}`);
 
   const reports = [
-    {
-      title: getT('report1'),
-      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
-    },
-    {
-      title: getT('report2'),
-      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
-    },
-    {
-      title: getT('report3'),
-      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
-    },
-    {
-      title: getT('report4'),
-      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
-    },
-    {
-      title: getT('report5'),
-      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg'
-    },
-    {
-      title: getT('report6'),
-      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg'
-    },
-    {
-      title: getT('report7'),
-      image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-1.jpg'
-    }
+    { title: getT('report1') },
+    { title: getT('report2') },
+    { title: getT('report3') },
+    { title: getT('report4') },
+    { title: getT('report5') },
+    { title: getT('report6') },
+    { title: getT('report7') },
   ];
 
   return (

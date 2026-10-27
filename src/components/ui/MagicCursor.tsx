@@ -21,19 +21,34 @@ const MagicCursor: React.FC = () => {
   useEffect(() => {
     if (!isMounted) return;
 
-    const handleMouseMove = (e: MouseEvent) => {
-      springX.set(e.clientX - 4); // Center the 8px dot
-      springY.set(e.clientY - 4);
-      if (!isVisibleRef.current) {
-        isVisibleRef.current = true;
-        setIsVisible(true);
-      }
+    let rafId: number | null = null;
+    let lastClientX = 0;
+    let lastClientY = 0;
+    let lastTarget: HTMLElement | null = null;
 
-      const target = e.target as HTMLElement | null;
-      const hovering = !!(target && target.closest && target.closest('a, button, input, select, textarea, [role="button"]'));
-      if (isHoveringRef.current !== hovering) {
-        isHoveringRef.current = hovering;
-        setIsHovering(hovering);
+    const handleMouseMove = (e: MouseEvent) => {
+      lastClientX = e.clientX;
+      lastClientY = e.clientY;
+      lastTarget = e.target as HTMLElement | null;
+
+      if (!rafId) {
+        rafId = requestAnimationFrame(() => {
+          springX.set(lastClientX - 4); // Center the 8px dot
+          springY.set(lastClientY - 4);
+          if (!isVisibleRef.current) {
+            isVisibleRef.current = true;
+            setIsVisible(true);
+          }
+
+          if (lastTarget && lastTarget.closest) {
+            const hovering = !!lastTarget.closest('a, button, input, select, textarea, [role="button"]');
+            if (isHoveringRef.current !== hovering) {
+              isHoveringRef.current = hovering;
+              setIsHovering(hovering);
+            }
+          }
+          rafId = null;
+        });
       }
     };
 
@@ -56,6 +71,7 @@ const MagicCursor: React.FC = () => {
     document.body.addEventListener('mouseenter', handleMouseEnter);
 
     return () => {
+      if (rafId) cancelAnimationFrame(rafId);
       window.removeEventListener('mousemove', handleMouseMove);
       document.body.removeEventListener('mouseleave', handleMouseLeave);
       document.body.removeEventListener('mouseenter', handleMouseEnter);

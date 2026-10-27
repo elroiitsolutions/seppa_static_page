@@ -18,33 +18,33 @@ const staggerContainer = {
 };
 
 const faqCategories = [
-  "General Questions",
-  "Products & Customization",
-  "Quality & Standards",
-  "Pricing & Orders",
-  "Production & Delivery"
+  "General Machinery & Plant Engineering",
+  "Bottle Formats & Line Capacities",
+  "Sterility, Hygiene & ISO Standards",
+  "Custom Turnkey Solutions",
+  "Commissioning & Worldwide Support"
 ];
 
 const generalQuestions = [
   {
-    question: "What types of textiles do you manufacture and supply?",
-    answer: "We combine eco friendly processes, responsible sourcing & advance technology to deliver sustainable textiles without compromising quality or performance. We manufacture a wide range of products including cotton, polyester, blended fabrics, and custom-designed textiles for industrial and fashion use."
+    question: "What types of beverage and packaging machinery does Seppa provide?",
+    answer: "Seppa Solutions engineers complete turnkey lines for Mineral Water, Carbonated Soft Drinks, Juices, Beer, Spirits, Dairy, and Liquid Packaging. Our portfolio includes high-speed Electric PET Blowers, Non-Contact Aseptic Monoblocs, Rinsing-Filling-Capping systems, Labelers, and Robotic Palletizers."
   },
   {
-    question: "What quality standards do your textile products follow?",
-    answer: "We strictly adhere to international quality standards including ISO 9001 and OEKO-TEX certified processes to ensure that all our textiles are safe, durable, and of the highest premium quality."
+    question: "What bottle materials, sizes, and capacities do your lines accommodate?",
+    answer: "Our machinery accommodates PET bottles, Glass bottles, Aluminum Cans, Pouches, and Large format containers (from 200ml up to 20-liter jars). Line throughput ranges from 2,000 BPH up to 36,000 BPH depending on plant configuration."
   },
   {
-    question: "Can I request custom fabric designs or specific material blends?",
-    answer: "Absolutely! We offer comprehensive customization options. Our R&D team can work closely with you to develop specific fabric blends, colors, and patterns tailored to your exact requirements."
+    question: "What sanitary and quality certifications do Seppa machines follow?",
+    answer: "All our beverage machinery is fabricated using certified food-grade stainless steel (SS304/SS316L) adhering to ISO 9001, CE, ASME, and global FDA hygiene and sterility compliance."
   },
   {
-    question: "What is your minimum order quantity (MOQ)?",
-    answer: "Our minimum order quantity varies depending on the specific textile and customization requirements. Generally, for standard fabrics, our MOQ is 1,000 meters. Please contact our sales team for detailed information regarding your specific needs."
+    question: "Do you offer full plant layout, engineering, and turnkey integration?",
+    answer: "Yes. We manage the entire lifecycle: water treatment, processing, blow molding, filling, secondary packaging, conveyor automation, factory layout optimization, and plant SCADA integration."
   },
   {
-    question: "How long does it take to process and deliver an order?",
-    answer: "Standard orders are usually processed and shipped within 2-3 weeks. Custom orders may take 4-6 weeks depending on the complexity of the design and the volume requested."
+    question: "What after-sales, warranty, and spare parts support is available?",
+    answer: "We provide comprehensive on-site installation, operator training, rapid global spare parts dispatch, and 24/7 technical assistance across our offices in USA, UAE, India, Africa, and Europe."
   }
 ];
 
@@ -89,7 +89,7 @@ const Faqs = () => {
 
               {/* Contact CTA */}
               <motion.div variants={fadeInUp} className="relative rounded-2xl overflow-hidden bg-dark text-white p-8">
-                <div className="absolute inset-0 opacity-20 bg-[url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/sidebar-cta-image.jpg')] bg-cover bg-center"></div>
+                <div className="absolute inset-0 opacity-20 bg-[url('/pics/process-technology.jpg')] bg-cover bg-center"></div>
                 <div className="relative z-10">
                   <AnimatedHeading 
                     text="Need More Help?" 
@@ -98,25 +98,25 @@ const Faqs = () => {
                   />
                   
                   <div className="space-y-6">
-                    <div className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white hover:text-dark hover:border-gold transition duration-300 cursor-pointer">
+                    <a href="tel:+919940097000" className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white hover:text-dark hover:border-gold transition duration-300 cursor-pointer">
                       <div className="w-12 h-12 rounded-full bg-white text-dark flex items-center justify-center text-xl">
                         <FiPhoneCall />
                       </div>
                       <div>
-                        <p className="text-sm text-gray-300">Phone Number</p>
-                        <p className="font-bold">+123 456 789</p>
+                        <p className="text-sm text-gray-300">Phone Support</p>
+                        <p className="font-bold">+91 99400 97000</p>
                       </div>
-                    </div>
+                    </a>
 
-                    <div className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white hover:text-dark hover:border-gold transition duration-300 cursor-pointer">
+                    <a href="mailto:info@seppasolutions.com" className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white hover:text-dark hover:border-gold transition duration-300 cursor-pointer">
                       <div className="w-12 h-12 rounded-full bg-white text-dark flex items-center justify-center text-xl">
                         <FiMail />
                       </div>
                       <div>
                         <p className="text-sm text-gray-300">Email Address</p>
-                        <p className="font-bold">info@domainname.com</p>
+                        <p className="font-bold">info@seppasolutions.com</p>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </motion.div>

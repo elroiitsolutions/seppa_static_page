@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -117,10 +118,13 @@ const Projects = () => {
               <SwiperSlide key={idx} className="h-auto py-4">
                 <motion.div variants={fadeInUp} className="group/item cursor-pointer h-full">
                   <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] shadow-lg h-full">
-                    <img
+                    <Image
                       src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover/item:scale-110 transition duration-700"
+                      alt={`${project.title} - Seppa Solutions Machine Line`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      loading="lazy"
+                      className="object-cover group-hover/item:scale-110 transition duration-700"
                     />
 
                     {/* Gradient Overlay */}

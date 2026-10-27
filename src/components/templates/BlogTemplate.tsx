@@ -58,7 +58,7 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data, locale }) => {
               <div className="bg-white rounded-xl p-3 md:p-4 mb-6 shadow-sm border border-gray-100 flex flex-wrap items-center gap-4 text-sm">
                 {authorAvatar && (
                   <div className="flex items-center gap-2">
-                    <img src={authorAvatar} alt={authorName} className="w-8 h-8 rounded-full object-cover" />
+                    <Image src={authorAvatar} alt={authorName} width={32} height={32} className="rounded-full object-cover" />
                     <div>
                       <p className="text-xs text-gray-500 font-medium">Written by</p>
                       <p className="font-bold text-dark text-sm">{authorName}</p>
@@ -110,10 +110,12 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ data, locale }) => {
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <img 
+                      <Image 
                         src={mediaUrl} 
                         alt={data.hero.title || data.title} 
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 800px"
+                        className="object-cover"
                       />
                     )}
                   </div>

@@ -1,22 +1,22 @@
 "use client";
 
-//import React from 'react';
+import dynamic from 'next/dynamic';
 import HomeHero from '@/components/home/HomeHero';
 import AboutIndustries from '@/components/home/AboutIndustries';
 import Services from '@/components/home/Services';
-import OurIndustries from '@/components/home/OurIndustries';
-import WhyChooseUs from '@/components/home/WhyChooseUs';
-import Projects from '@/components/home/Projects';
-import HowItWorks from '@/components/home/HowItWorks';
-import HomeFAQs from '@/components/home/HomeFAQs';
-import ContactMap from '@/components/home/ContactMap';
-// import Testimonials from '@/components/home/Testimonials';
-import LatestBlogs from '@/components/home/LatestBlogs';
-import PetTechnology from '@/components/home/PetTechnology';
-import Clients from '@/components/home/Clients';
-import Partners from '@/components/home/Partners';
-import Awards from '@/components/home/Awards';
-import SpecialOffer from '@/components/home/SpecialOffer';
+
+// Dynamic lazy imports for below-the-fold sections to optimize initial JS bundle
+const OurIndustries = dynamic(() => import('@/components/home/OurIndustries'));
+const Projects = dynamic(() => import('@/components/home/Projects'));
+const PetTechnology = dynamic(() => import('@/components/home/PetTechnology'));
+const HowItWorks = dynamic(() => import('@/components/home/HowItWorks'));
+const SpecialOffer = dynamic(() => import('@/components/home/SpecialOffer'));
+const Clients = dynamic(() => import('@/components/home/Clients'));
+const Partners = dynamic(() => import('@/components/home/Partners'));
+const ContactMap = dynamic(() => import('@/components/home/ContactMap'));
+const HomeFAQs = dynamic(() => import('@/components/home/HomeFAQs'));
+const Awards = dynamic(() => import('@/components/home/Awards'));
+const LatestBlogs = dynamic(() => import('@/components/home/LatestBlogs'));
 
 export default function HomeView({ latestBlogs }: { latestBlogs?: any[] }) {
   return (

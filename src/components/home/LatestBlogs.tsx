@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { motion , Variants} from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { FiCalendar, FiArrowUpRight } from 'react-icons/fi';
@@ -107,11 +108,14 @@ const LatestBlogsContent = ({ getT, isArabic, heading, tag, selected_blogs, layo
             <motion.div key={idx} variants={fadeInUp} className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
               
               <div className={`relative overflow-hidden aspect-[4/3] ${isCompact ? 'p-1' : 'p-2'}`}>
-                <div className="w-full h-full rounded-xl overflow-hidden">
-                  <img 
+                <div className="w-full h-full rounded-xl overflow-hidden relative">
+                  <Image 
                     src={blog.image} 
                     alt={blog.title} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-700" 
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    loading="lazy"
+                    className="object-cover group-hover:scale-110 transition duration-700" 
                   />
                 </div>
               </div>

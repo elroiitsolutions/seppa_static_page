@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import aquafina from '@/assets/logo/aquafina-logo-vector.png';
 import atlas from '@/assets/logo/atlas.jpg';
@@ -17,37 +18,36 @@ import sip from '@/assets/logo/sip.jpg';
 import playboy from '@/assets/logo/playboy.png';
 import royalchallenge from '@/assets/logo/royalchallenge.png';
 
-
 import { useTranslations, useLocale } from 'next-intl';
 import enHome from '@/messages/en/home.json';
 import { usePathname } from 'next/navigation';
 
 const fadeInUp: Variants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
+  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
 
 const clients = [
-  { id: 1, name: 'Client 2', image: aquafina.src },
-  { id: 2, name: 'Client 3', image: atlas.src },
-  { id: 3, name: 'Client 4', image: bis.src },
-  { id: 4, name: 'Client 5', image: direct.src },
-  { id: 5, name: 'Client 6', image: foster.src },
-  { id: 6, name: 'Client 7', image: haywards.src },
-  { id: 7, name: 'Client 8', image: hello.src },
-  { id: 8, name: 'Client 9', image: kingfish.src },
-  { id: 9, name: 'Client 10', image: mcdo.src },
-  { id: 10, name: 'Client 11', image: perno.src },
-  { id: 11, name: 'Client 12', image: sabol.src },
-  { id: 12, name: 'Client 13', image: seagrams.src },
-  { id: 13, name: 'Client 14', image: sip.src },
-  { id: 14, name: 'Client 15', image: playboy.src },
-  { id: 15, name: 'Client 16', image: royalchallenge.src }
+  { id: 1, name: 'Aquafina', image: aquafina },
+  { id: 2, name: 'Atlas Copco', image: atlas },
+  { id: 3, name: 'Bisleri', image: bis },
+  { id: 4, name: 'Direct', image: direct },
+  { id: 5, name: "Foster's", image: foster },
+  { id: 6, name: 'Haywards 5000', image: haywards },
+  { id: 7, name: 'Hello', image: hello },
+  { id: 8, name: 'Kingfisher', image: kingfish },
+  { id: 9, name: "McDowell's No. 1", image: mcdo },
+  { id: 10, name: 'Pernod Ricard', image: perno },
+  { id: 11, name: 'Sabol', image: sabol },
+  { id: 12, name: "Seagram's", image: seagrams },
+  { id: 13, name: 'Sip', image: sip },
+  { id: 14, name: 'Playboy Beer', image: playboy },
+  { id: 15, name: 'Royal Challenge', image: royalchallenge }
 ];
 
 const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
@@ -114,8 +114,8 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
           variants={fadeInUp}
           className={`relative w-full overflow-hidden py-8 marquee-container ${isPaused ? 'is-paused' : ''}`}
         >
-          {/* CSS Marquee Implementation */}
-          <div className="flex w-max animate-marquee">
+          {/* CSS Marquee Implementation with GPU acceleration */}
+          <div className="flex w-max animate-marquee will-change-transform">
             
             {/* First set of logos */}
             <div className="flex shrink-0 items-center">
@@ -123,29 +123,39 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
                 <div 
                   key={`first-${client.id}`} 
                   onClick={() => handleClientClick(client.id)}
-                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
+                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-300 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
                 >
-                  <img 
+                  <Image 
                     src={client.image} 
-                    alt={client.name} 
-                    className="max-h-20 w-auto object-contain drop-shadow-sm" 
+                    alt={`${client.name} Client Logo - Seppa Solutions`} 
+                    width={180}
+                    height={80}
+                    sizes="(max-width: 768px) 140px, (max-width: 1024px) 180px, 220px"
+                    loading="lazy"
+                    style={{ width: 'auto', height: 'auto' }}
+                    className="max-h-20 object-contain drop-shadow-sm" 
                   />
                 </div>
               ))}
             </div>
 
-            {/* Second set of logos (duplicate for seamless infinite loop) */}
-            <div className="flex shrink-0 items-center">
+            {/* Second set of logos for seamless infinite loop */}
+            <div className="flex shrink-0 items-center" aria-hidden="true">
               {clients.map((client) => (
                 <div 
                   key={`second-${client.id}`} 
                   onClick={() => handleClientClick(client.id)}
-                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
+                  className={`client-logo-interactive w-[140px] md:w-[180px] lg:w-[220px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-300 cursor-pointer flex justify-center ${activeClientId === client.id ? 'grayscale-0 opacity-100' : 'grayscale opacity-60'}`}
                 >
-                  <img 
+                  <Image 
                     src={client.image} 
-                    alt={client.name} 
-                    className="max-h-20 w-auto object-contain drop-shadow-sm" 
+                    alt="" 
+                    width={180}
+                    height={80}
+                    sizes="(max-width: 768px) 140px, (max-width: 1024px) 180px, 220px"
+                    loading="lazy"
+                    style={{ width: 'auto', height: 'auto' }}
+                    className="max-h-20 object-contain drop-shadow-sm" 
                   />
                 </div>
               ))}
@@ -158,8 +168,8 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
 
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes marquee {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
+          0% { transform: translate3d(0%, 0, 0); }
+          100% { transform: translate3d(-50%, 0, 0); }
         }
         .animate-marquee {
           animation: marquee 40s linear infinite;
@@ -184,7 +194,6 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
 
 const LocalizedClients = () => {
   const t = useTranslations('home');
-  const locale = useLocale();
   const getT = (key: string) => t(`Clients.${key}`);
   return <ClientsContent getT={getT} />;
 };

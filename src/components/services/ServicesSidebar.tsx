@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 
 interface SidebarItem {
@@ -70,12 +71,15 @@ const ServicesSidebar: React.FC<ServicesSidebarProps> = ({ activeId, title, item
         {/* Contact Card */}
         <div className="bg-[#1c1c1c] rounded-[2rem] overflow-hidden shadow-xl text-center relative pb-10">
           <div className="h-48 relative">
-            <img 
-              src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-single.jpg" 
-              alt="Contact Us" 
-              className="w-full h-full object-cover"
+            <Image 
+              src="/pics/process-technology.jpg" 
+              alt="Contact Seppa Solutions Support" 
+              fill
+              sizes="(max-width: 1024px) 100vw, 33vw"
+              loading="lazy"
+              className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
           </div>
           
           {/* Floating Icon */}

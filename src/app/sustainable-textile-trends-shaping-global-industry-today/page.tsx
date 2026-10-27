@@ -8,7 +8,7 @@ export default function RedirectPage() {
   useEffect(() => {
     const lang = typeof navigator !== 'undefined' ? navigator.language : 'en';
     const detectedLang = lang?.startsWith('ar') ? 'ar' : lang?.startsWith('de') ? 'de' : 'en';
-    router.replace(`/${detectedLang}/sustainable-textile-trends-shaping-global-industry-today`);
+    router.replace(`/${detectedLang}/blog`);
   }, [router]);
 
   return (

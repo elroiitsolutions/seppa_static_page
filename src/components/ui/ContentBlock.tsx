@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from './AnimatedHeading';
 import { Link } from '@/i18n/routing';
@@ -268,11 +269,15 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                   viewport={{ once: true, amount: 0.1 }}
                   variants={imageVariants}
                 >
-                  <img 
-                    src={image1 || ''} 
-                    alt={title || "Industrial machinery"} 
-                    className="w-full h-full object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
-                  />
+                  {image1 && (
+                    <Image 
+                      src={image1} 
+                      alt={title || "Industrial machinery"} 
+                      fill
+                      sizes="(max-width: 768px) 90vw, 65vw"
+                      className="object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
+                    />
+                  )}
                   <div className="shine-overlay" />
                 </motion.div>
                 
@@ -284,10 +289,12 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                     viewport={{ once: true, amount: 0.1 }}
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                   >
-                    <img 
+                    <Image 
                       src={image2} 
                       alt="Packaging detail" 
-                      className="w-full h-full object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
+                      fill
+                      sizes="(max-width: 768px) 70vw, 40vw"
+                      className="object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
                     />
                     <div className="shine-overlay" />
                   </motion.div>
@@ -472,11 +479,15 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                 viewport={{ once: true, amount: 0.1 }}
                 variants={imageVariants}
               >
-                <img 
-                  src={image1 || ''} 
-                  alt="Industrial machinery" 
-                  className="w-full h-full object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
-                />
+                {image1 && (
+                  <Image 
+                    src={image1} 
+                    alt="Industrial machinery" 
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
+                  />
+                )}
                 <div className="shine-overlay" />
               </motion.div>
               
@@ -488,10 +499,12 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ badge, title, paragraphs, f
                   viewport={{ once: true, amount: 0.1 }}
                   transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                 >
-                  <img 
+                  <Image 
                     src={image2} 
                     alt="Packaging line scheme" 
-                    className="w-full h-full object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
+                    fill
+                    sizes="(max-width: 1024px) 70vw, 35vw"
+                    className="object-cover group-hover/image:scale-105 transition-transform duration-700 ease-in-out"
                   />
                   <div className="shine-overlay" />
                 </motion.div>

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import AnimatedHeading from '../ui/AnimatedHeading';
 
@@ -16,6 +17,7 @@ const staggerContainer = {
 };
 
 const AboutIndustries = () => {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const t = useTranslations('home');
   const locale = useLocale();
   const isArabic = locale === 'ar';
@@ -70,27 +72,51 @@ const AboutIndustries = () => {
             </div>
           </motion.div>
 
-          {/* Center: Large Video */}
+          {/* Center: Large Video with Click-to-Play Facade */}
           <motion.div variants={fadeInUp} className="w-full lg:w-2/4 relative rounded-[2rem] overflow-hidden group aspect-video shadow-lg bg-black flex items-center justify-center">
-            <video
-              src="/videos/celebration_video.mp4"
-              className="w-full h-full object-cover"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
+            {isVideoPlaying ? (
+              <video
+                src="/videos/celebration_video.mp4"
+                className="w-full h-full object-cover"
+                controls
+                autoPlay
+                playsInline
+              />
+            ) : (
+              <div 
+                onClick={() => setIsVideoPlaying(true)}
+                className="relative w-full h-full cursor-pointer group flex items-center justify-center"
+              >
+                <Image
+                  src="/images/beverage_processing_plant.png"
+                  alt="Seppa Solutions Beverage Processing & Bottling Plant"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
+                <div className="relative z-10 flex flex-col items-center gap-3">
+                  <div className="w-16 h-16 rounded-full bg-seppa-red flex items-center justify-center text-white shadow-xl group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-semibold tracking-wider uppercase bg-black/60 px-4 py-1.5 rounded-full backdrop-blur-sm">
+                    Watch Video
+                  </span>
+                </div>
+              </div>
+            )}
           </motion.div>
 
           {/* Right Card: Ratings */}
           <motion.div variants={fadeInUp} className="w-full lg:w-1/4 bg-white rounded-[2rem] p-8 shadow-sm h-full min-h-[350px] flex flex-col justify-between">
             <div>
               <div className="flex -space-x-3 mb-6 relative">
-                <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="User" className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm" />
-                <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="User" className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm relative z-10" />
-                <img src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="User" className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm relative z-20" />
-                <div className="w-12 h-12 rounded-full border-2 border-white bg-[seppa-red] text-white flex items-center justify-center relative z-30 font-bold text-lg shadow-sm">+</div>
+                <Image width={48} height={48} src="/images/avatars/author-1.jpg" alt="Seppa Client Partner" className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm" />
+                <Image width={48} height={48} src="/images/avatars/author-2.jpg" alt="Enterprise Client Representative" className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm relative z-10" />
+                <Image width={48} height={48} src="/images/avatars/author-3.jpg" alt="Manufacturing Client Executive" className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm relative z-20" />
+                <div className="w-12 h-12 rounded-full border-2 border-white bg-seppa-red text-white flex items-center justify-center relative z-30 font-bold text-lg shadow-sm">+</div>
               </div>
 
               <div className="flex items-end gap-2 mb-4">

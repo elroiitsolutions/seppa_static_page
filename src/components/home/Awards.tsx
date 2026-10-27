@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image';
 import AnimatedHeading from '../ui/AnimatedHeading';
 
 const fadeInUp: Variants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
 const staggerContainer = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
+  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
 
 import achieve1 from '@/assets/achievements/achieve1.jpeg';
@@ -19,11 +20,11 @@ import achieve4 from '@/assets/achievements/achieve4.jpeg';
 import achieve5 from '@/assets/achievements/achieve5.jpeg';
 
 const achievements = [
-  { id: 1, image: achieve1.src },
-  { id: 2, image: achieve2.src },
-  { id: 3, image: achieve3.src },
-  { id: 4, image: achieve4.src },
-  { id: 5, image: achieve5.src }
+  { id: 1, title: 'National Packaging Excellence Award - Seppa Solutions', image: achieve1 },
+  { id: 2, title: 'Industry Leadership in Liquid Packaging Automation', image: achieve2 },
+  { id: 3, title: 'Manufacturing Innovation & Sustainability Award', image: achieve3 },
+  { id: 4, title: 'Global Quality Milestone Recognition', image: achieve4 },
+  { id: 5, title: 'Beverage Industry Pioneer Honor', image: achieve5 }
 ];
 
 import { useTranslations, useLocale } from 'next-intl';
@@ -67,34 +68,44 @@ const AwardsContent = ({ getT }: { getT: (key: string) => string }) => {
           dir="ltr"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={fadeInUp}
           className="relative w-full overflow-hidden py-2 marquee-container"
         >
-          {/* CSS Marquee Implementation */}
-          <div className="flex w-max animate-marquee">
+          {/* CSS Marquee Implementation with will-change for GPU acceleration */}
+          <div className="flex w-max animate-marquee will-change-transform">
             
             {/* First set of images */}
             <div className="flex shrink-0 items-center">
               {achievements.map((achievement) => (
-                <div key={`first-${achievement.id}`} className="w-[200px] md:w-[280px] lg:w-[350px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center">
-                  <img 
+                <div key={`first-${achievement.id}`} className="w-[200px] md:w-[280px] lg:w-[350px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-300 cursor-pointer flex justify-center">
+                  <Image 
                     src={achievement.image} 
-                    alt={`Achievement ${achievement.id}`} 
-                    className="max-h-32 md:max-h-40 lg:max-h-48 w-auto object-contain drop-shadow-sm rounded-lg" 
+                    alt={achievement.title} 
+                    width={350}
+                    height={192}
+                    sizes="(max-width: 768px) 200px, (max-width: 1024px) 280px, 350px"
+                    loading="lazy"
+                    style={{ width: 'auto', height: 'auto' }}
+                    className="max-h-32 md:max-h-40 lg:max-h-48 object-contain drop-shadow-sm rounded-lg" 
                   />
                 </div>
               ))}
             </div>
 
-            {/* Second set of images (duplicate for seamless infinite loop) */}
-            <div className="flex shrink-0 items-center">
+            {/* Second set of images for seamless infinite loop */}
+            <div className="flex shrink-0 items-center" aria-hidden="true">
               {achievements.map((achievement) => (
-                <div key={`second-${achievement.id}`} className="w-[200px] md:w-[280px] lg:w-[350px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-500 cursor-pointer flex justify-center">
-                  <img 
+                <div key={`second-${achievement.id}`} className="w-[200px] md:w-[280px] lg:w-[350px] mx-6 md:mx-10 flex-shrink-0 transition-all duration-300 cursor-pointer flex justify-center">
+                  <Image 
                     src={achievement.image} 
-                    alt={`Achievement ${achievement.id}`} 
-                    className="max-h-32 md:max-h-40 lg:max-h-48 w-auto object-contain drop-shadow-sm rounded-lg" 
+                    alt="" 
+                    width={350}
+                    height={192}
+                    sizes="(max-width: 768px) 200px, (max-width: 1024px) 280px, 350px"
+                    loading="lazy"
+                    style={{ width: 'auto', height: 'auto' }}
+                    className="max-h-32 md:max-h-40 lg:max-h-48 object-contain drop-shadow-sm rounded-lg" 
                   />
                 </div>
               ))}
@@ -107,8 +118,8 @@ const AwardsContent = ({ getT }: { getT: (key: string) => string }) => {
 
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes marquee {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
+          0% { transform: translate3d(0%, 0, 0); }
+          100% { transform: translate3d(-50%, 0, 0); }
         }
         .animate-marquee {
           animation: marquee 30s linear infinite;
@@ -123,7 +134,6 @@ const AwardsContent = ({ getT }: { getT: (key: string) => string }) => {
 
 const LocalizedAwards = () => {
   const t = useTranslations('home');
-  const locale = useLocale();
   const getT = (key: string) => t(`Awards.${key}`);
   return <AwardsContent getT={getT} />;
 };

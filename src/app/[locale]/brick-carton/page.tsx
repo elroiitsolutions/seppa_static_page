@@ -34,7 +34,7 @@ export default async function BrickCartonPage({ params }: PageProps) {
     headerImage: orange.src,
     overviewLayout: "stacked",
     overviewTitle: t('overviewTitle'),
-    overviewDescription: React.createElement('span', { className: 'text-seppa-red font-bold' }, t('overviewDescription')),
+    overviewDescription: t('overviewDescription'),
     overviewsubDescription: Array.isArray(t.raw('overviewsubDescription')) ? t.raw('overviewsubDescription') : [],
     overviewImage: machine.src,
     contentBlocks: (t.raw('contentBlocks') as any[]).map((block: any, index: number) => ({

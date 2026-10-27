@@ -1,9 +1,9 @@
 import React from 'react';
 
 export const metadata = {
-  title: "seppa solutions.com",
-  description: "Crafting quality textiles for global industries. We combine eco-friendly processes, responsible sourcing & advanced technology to deliver sustainable textiles.",
-  keywords: "textile, manufacturing, fabric, sustainable, yarn, custom textiles",
+  title: "Seppa Solutions | Beverage Processing, PET Bottling & Packaging Machinery",
+  description: "Global manufacturer of complete beverage bottling lines, PET blow moulding machines, water treatment plants, and end-of-line packaging automation systems.",
+  keywords: "beverage processing, bottling lines, PET blow moulding machines, water treatment plant, liquid packaging automation, Seppa Solutions",
 };
 
 import { redirect } from 'next/navigation';
