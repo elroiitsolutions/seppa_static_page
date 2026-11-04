@@ -61,7 +61,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
           className="text-center max-w-3xl mx-auto mb-16"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
           variants={staggerContainer}
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
@@ -87,7 +87,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
           className={gridClass}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
           variants={staggerContainer}
         >
           {features.map((feature, idx) => {
