@@ -5,6 +5,8 @@ import { Link } from '@/i18n/routing';
 import { FiCheckCircle } from 'react-icons/fi';
 import AnimatedHeading from '../ui/AnimatedHeading';
 
+import Image from 'next/image';
+
 const fadeInUp:Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -17,36 +19,36 @@ const staggerContainer = {
 
 const tabsData = [
   {
-    id: 'organic',
-    title: 'Organic Farming',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-tab-1.jpg',
+    id: 'engineering',
+    title: 'Turnkey Engineering',
+    image: '/pics/process-technology.jpg',
     features: [
-      "Industry-leading expertise",
-      "Innovative product technology",
-      "Competitive pricing global reach",
-      "Dedicated customer support"
+      "50 years manufacturing pedigree",
+      "Complete liquid packaging lines",
+      "Aseptic non-contact filling",
+      "Energy-efficient servo drive systems"
     ]
   },
   {
-    id: 'fresh',
-    title: 'Fresh Produce',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-2.jpg',
+    id: 'automation',
+    title: 'Smart Automation',
+    image: '/pics/pet-filling-machine.jpg',
     features: [
-      "Sustainable raw materials",
-      "Eco-friendly manufacturing",
-      "Ethical labor practices",
-      "Premium quality assurance"
+      "PLC-controlled high precision",
+      "Integrated monobloc filling",
+      "Real-time line diagnostics",
+      "Automated robotic palletizers"
     ]
   },
   {
-    id: 'delivery',
-    title: 'Delivery & Supply',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-image-3.jpg',
+    id: 'global',
+    title: 'Global Support',
+    image: '/pics/large-bottle-filling-machine.jpg',
     features: [
-      "Global logistics network",
-      "On-time delivery tracking",
-      "Secure packaging solutions",
-      "24/7 support availability"
+      "Over 1,000 plants commissioned",
+      "Rapid worldwide spare parts delivery",
+      "Turnkey on-site installation",
+      "24/7 dedicated engineering team"
     ]
   }
 ];
@@ -67,11 +69,13 @@ const WhyChooseUs = () => {
             viewport={{ once: true, amount: 0.1 }}
             variants={fadeInUp}
           >
-            <div className="rounded-[2rem] overflow-hidden aspect-[4/5] min-h-[380px] max-h-[650px] lg:h-full w-full shadow-lg">
-              <img 
-                src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg" 
-                alt="Woman inspecting thread" 
-                className="w-full h-full object-cover"
+            <div className="rounded-[2rem] overflow-hidden aspect-[4/5] min-h-[380px] max-h-[650px] lg:h-full w-full shadow-lg relative">
+              <Image 
+                src="/pics/process-technology.jpg" 
+                alt="Seppa Packaging Engineering" 
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
               />
             </div>
           </motion.div>
@@ -85,18 +89,18 @@ const WhyChooseUs = () => {
             variants={staggerContainer}
           >
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-seppa-red"></span>
               <span className="text-sm font-medium text-dark uppercase tracking-wider">Why Choose Us</span>
             </motion.div>
             
             <AnimatedHeading 
-              text="Why choose us sustainable textile manufacturing" 
+              text="Engineered for Precision, Scale & Reliability" 
               elementType="h2" 
               className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-dark leading-tight mb-6" 
             />
             
             <motion.p variants={fadeInUp} className="text-lg text-gray-500 mb-12 leading-relaxed">
-              We combine eco-friendly processes, responsible sourcing & advanced technology to deliver sustainable textiles without compromising quality or performance.
+              We combine half a century of engineering excellence, eco-friendly energy savings, and state-of-the-art automation to deliver high-yield bottling and liquid packaging plants globally.
             </motion.p>
 
             {/* Custom Tabs */}
@@ -114,9 +118,9 @@ const WhyChooseUs = () => {
                     {activeTab.id === tab.id && (
                       <motion.div 
                         layoutId="activeTabIndicator"
-                        className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-white flex justify-center"
+                        className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-seppa-red flex justify-center"
                       >
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-white border-[3px] border-white box-content"></div>
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-seppa-red border-[3px] border-white box-content"></div>
                       </motion.div>
                     )}
                   </button>
@@ -135,11 +139,13 @@ const WhyChooseUs = () => {
                   transition={{ duration: 0.4 }}
                   className="flex flex-col sm:flex-row gap-8 items-center"
                 >
-                  <div className="w-full sm:w-2/5 rounded-[2rem] overflow-hidden shadow-sm aspect-[4/3]">
-                    <img 
+                  <div className="w-full sm:w-2/5 rounded-[2rem] overflow-hidden shadow-sm aspect-[4/3] relative">
+                    <Image 
                       src={activeTab.image} 
                       alt={activeTab.title} 
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(max-width: 640px) 100vw, 30vw"
+                      className="object-cover"
                     />
                   </div>
                   <div className="w-full sm:w-3/5">

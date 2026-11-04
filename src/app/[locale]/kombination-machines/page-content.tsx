@@ -15,7 +15,7 @@ const pageData: PackagingPageData = {
     "Advanced automation and real-time monitoring",
     "Eco-friendly and energy-saving technology"
   ],
-  overviewImage: "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/services-single-img-1.jpg",
+  overviewImage: "/pics/process-technology.jpg",
   featuresTitle: "Key Features of Our Kombination Machines Systems",
   featuresSubtitle: "Discover the innovative features that set our solutions apart in the industry.",
   features: [

@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import { FiBox, FiShield, FiCheckCircle, FiLayers, FiGlobe } from 'react-icons/fi';
 import AnimatedHeading from '../ui/AnimatedHeading';
@@ -96,7 +97,7 @@ const ReasonItem = ({ reason }: { reason: { icon?: React.ReactNode; title: strin
 const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, description, paragraphs, reasons, imageSrc }) => {
   const displayTitle = title || "Elevating Your Brand with Superior Automation";
   const displayDesc = description !== undefined ? description : "We combine innovative designs, sustainable operations, and advanced manufacturing technologies to deliver automated solutions that protect your products and captivate your customers.";
-  const displayImage = imageSrc || "https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg";
+  const displayImage = imageSrc || "/pics/corporate.jpg";
   const displayReasons = reasons && reasons.length > 0 ? reasons : defaultReasons;
 
   return (
@@ -112,12 +113,15 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
             variants={fadeInUp}
           >
             <div className="rounded-[2rem] overflow-hidden aspect-[4/5] min-h-[350px] max-h-[620px] w-full shadow-lg relative bg-light">
-              <img
+              <Image
                 src={displayImage}
-                alt="Packaging Quality"
-                className="w-full h-full object-cover"
+                alt="Seppa Packaging Automation Quality"
+                fill
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                loading="lazy"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-dark/20 mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-dark/20 mix-blend-multiply pointer-events-none"></div>
             </div>
           </motion.div>
 

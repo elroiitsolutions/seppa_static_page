@@ -1,18 +1,19 @@
 "use client";
 import React, { useState } from 'react';
 import Link from "next/link";
+import Image from "next/image";
 import PageHeader from '@/components/layout/PageHeader';
 
-// Mock product data based on the HTML template
+// Industrial machinery spare parts and component catalog
 const products = [
-  { id: 1, name: 'Colorful T-shirt', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-1-300x300.jpg', price: 25.00, oldPrice: 30.00, rating: 5, slug: 'colorful-t-shirt' },
-  { id: 2, name: 'Colourful spool', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-9-300x300.jpg', price: 25.00, oldPrice: 28.00, rating: 5, slug: 'colourful-spool' },
-  { id: 3, name: 'Cozy knitted blankets', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-2-300x300.jpg', price: 49.00, oldPrice: 59.00, rating: 5, slug: 'cozy-knitted-blankets' },
-  { id: 4, name: 'Embroidery thread', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-10-300x300.jpg', price: 34.00, oldPrice: 39.00, rating: 5, slug: 'embroidery-thread' },
-  { id: 5, name: 'Knitted cap', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-12-300x300.jpg', price: 15.00, oldPrice: 19.00, rating: 5, slug: 'knitted-cap' },
-  { id: 6, name: 'Natural silk fabric', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-4-300x300.jpg', price: 54.00, oldPrice: 59.00, rating: 5, slug: 'natural-silk-fabric' },
-  { id: 7, name: 'Sewing threads', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-11-300x300.jpg', price: 25.00, oldPrice: 30.00, rating: 5, slug: 'sewing-threads' },
-  { id: 8, name: 'Winter hat', image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-3-300x300.jpg', price: 19.00, oldPrice: 29.00, rating: 5, slug: 'winter-hat' },
+  { id: 1, name: 'PET Blow Mold Cavities (500ml - 2L)', image: '/pics/pet-blower.jpg', price: 450.00, oldPrice: 520.00, rating: 5, slug: 'pet-blow-mold-cavities' },
+  { id: 2, name: 'Aseptic Non-Contact Filling Valve', image: '/pics/pet-filling-machine.jpg', price: 320.00, oldPrice: 380.00, rating: 5, slug: 'aseptic-filling-valve' },
+  { id: 3, name: 'Stainless Beverage Can Seaming Head', image: '/pics/can-filling-machine.jpg', price: 580.00, oldPrice: 650.00, rating: 5, slug: 'can-seaming-head' },
+  { id: 4, name: 'Crown Capping Chuck Assembly (28mm)', image: '/pics/glass-filling-machine.jpg', price: 210.00, oldPrice: 250.00, rating: 5, slug: 'capping-chuck-assembly' },
+  { id: 5, name: '5-Gallon Jar Gripper & Rinsing Nozzle', image: '/pics/large-bottle-filling-machine.jpg', price: 175.00, oldPrice: 195.00, rating: 5, slug: 'jar-gripper-nozzle' },
+  { id: 6, name: 'Sanitary CIP Spray Ball (316L)', image: '/pics/process-technology.jpg', price: 95.00, oldPrice: 120.00, rating: 5, slug: 'cip-spray-ball' },
+  { id: 7, name: 'Large Preform Neck Guide System', image: '/pics/LARGE-PET-BOTTLE.jpg', price: 290.00, oldPrice: 330.00, rating: 5, slug: 'preform-neck-guide' },
+  { id: 8, name: 'Conveyor Table-Top Slat Chain (SS)', image: '/pics/PET-HOUSEHOLD.png', price: 140.00, oldPrice: 165.00, rating: 5, slug: 'conveyor-slat-chain' },
 ];
 
 const Shop: React.FC = () => {
@@ -21,10 +22,10 @@ const Shop: React.FC = () => {
   return (
     <>
       <PageHeader 
-        title="Shop" 
+        title="Spares & Components Catalog" 
         breadcrumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Shop' }
+          { name: 'Spares & Components' }
         ]} 
       />
 
@@ -33,7 +34,7 @@ const Shop: React.FC = () => {
           
           {/* Shop Header (Results Count & Sorting) */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-10">
-            <p className="text-gray-600 mb-4 sm:mb-0 font-medium">Showing all {products.length} results</p>
+            <p className="text-gray-600 mb-4 sm:mb-0 font-medium">Showing all {products.length} spare parts & components</p>
             <form className="woocommerce-ordering">
               <select 
                 name="orderby" 
@@ -55,26 +56,27 @@ const Shop: React.FC = () => {
           {/* Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {products.map(product => (
-              <div key={product.id} className="group relative bg-white overflow-hidden rounded shadow-sm hover:shadow-md transition duration-300">
+              <div key={product.id} className="group relative bg-white overflow-hidden rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
                 {/* Sale Badge */}
                 {product.oldPrice && (
-                  <span className="absolute top-4 left-4 z-10 bg-white text-dark text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm">
-                    Sale!
+                  <span className="absolute top-4 left-4 z-10 bg-seppa-red text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-full shadow-md">
+                    In Stock
                   </span>
                 )}
                 
                 {/* Product Image */}
-                <Link href={`/product-details`} className="block relative overflow-hidden">
-                  <img 
+                <Link href={`/product-enquiry`} className="block relative overflow-hidden aspect-square bg-gray-50">
+                  <Image 
                     src={product.image} 
                     alt={product.name} 
-                    className="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover transform group-hover:scale-105 transition duration-500"
                   />
                   {/* Quick Add To Cart Overlay on Hover */}
                   <div className="absolute bottom-[-50px] left-0 w-full bg-dark bg-opacity-90 flex justify-center py-4 opacity-0 group-hover:opacity-100 group-hover:bottom-0 transition-all duration-300">
                     <span className="text-white font-medium text-sm flex items-center gap-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                      Add to cart
+                      Request Part Quote
                     </span>
                   </div>
                 </Link>

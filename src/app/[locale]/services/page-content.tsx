@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import PageHeader from '@/components/layout/PageHeader';
 import { motion } from 'framer-motion';
 import Link from "next/link";
@@ -65,10 +66,13 @@ const Services: React.FC = () => {
               >
                 <Link href={service.link} className="block w-full h-full">
                   <div className="aspect-[4/3] w-full overflow-hidden relative group/image">
-                    <img 
+                    <Image 
                       src={service.image} 
                       alt={service.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition duration-700" 
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      loading="lazy"
+                      className="object-cover group-hover:scale-110 transition duration-700" 
                     />
                     <div className="shine-overlay"></div>
                   </div>

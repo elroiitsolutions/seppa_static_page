@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { Link } from '@/i18n/routing';
@@ -84,10 +85,12 @@ const TestimonialsContent = ({ getT }: { getT: (key: string) => string }) => {
               className={`group cursor-pointer ${idx === 2 ? 'md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:w-full' : ''}`}
             >
               <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4] shadow-lg">
-                <img 
+                <Image 
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-700" 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition duration-700" 
                 />
                 
                 {/* Dark Gradient Overlay */}

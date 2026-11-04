@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { FiCheckCircle } from 'react-icons/fi';
@@ -45,10 +46,12 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
                 className={`absolute top-0 left-0 w-full h-full rounded-[2rem] overflow-hidden shadow-2xl group/image cursor-pointer z-10`}
                 variants={fadeInUp}
               >
-                <img 
+                <Image 
                   src={imageSrc} 
                   alt={title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 90vw, 65vw"
+                  className="object-cover transition-transform duration-700 group-hover/image:scale-105"
                 />
                 <div className="shine-overlay" />
               </motion.div>
@@ -58,10 +61,12 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
                   className="absolute -bottom-8 -left-4 md:-bottom-16 md:-left-16 w-[70%] md:w-[55%] aspect-video rounded-[2rem] overflow-hidden shadow-2xl border-[6px] md:border-8 border-white group group/image2 cursor-pointer z-20"
                   variants={fadeInUp}
                 >
-                  <img 
+                  <Image 
                     src={imageSrc2} 
                     alt={`${title} Detail`} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover/image2:scale-105"
+                    fill
+                    sizes="(max-width: 768px) 70vw, 40vw"
+                    className="object-cover transition-transform duration-700 group-hover/image2:scale-105"
                   />
                   <div className="shine-overlay" />
                 </motion.div>
@@ -183,10 +188,12 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
             >
               <div className="rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3] bg-white p-4">
                 <div className="w-full h-full rounded-2xl overflow-hidden relative group">
-                  <img 
+                  <Image 
                     src={imageSrc} 
                     alt={title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="shine-overlay" />
                 </div>

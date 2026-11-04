@@ -1,22 +1,23 @@
 "use client";
 import React, { useState } from 'react';
 import Link from "next/link";
+import Image from "next/image";
 import PageHeader from '@/components/layout/PageHeader';
 
 // Mock cart data
 const initialCartItems = [
   {
     id: 1,
-    name: 'Colorful T-shirt',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-1-100x100.jpg',
-    price: 25.00,
+    name: 'PET Blow Mold Cavities (500ml - 2L)',
+    image: '/pics/pet-blower.jpg',
+    price: 450.00,
     quantity: 1,
   },
   {
-    id: 3,
-    name: 'Cozy knitted blankets',
-    image: 'https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/product-2-100x100.jpg',
-    price: 49.00,
+    id: 2,
+    name: 'Aseptic Non-Contact Filling Valve',
+    image: '/pics/pet-filling-machine.jpg',
+    price: 320.00,
     quantity: 2,
   }
 ];
@@ -80,8 +81,8 @@ const Cart: React.FC = () => {
                         <tr key={item.id} className="border-b border-gray-100">
                           <td className="py-6">
                             <div className="flex items-center gap-4">
-                              <Link href="/product-details">
-                                <img src={item.image} alt={item.name} className="w-20 h-20 object-cover border border-gray-100" />
+                              <Link href="/product-enquiry" className="relative w-20 h-20 rounded-lg overflow-hidden border border-gray-100 flex-shrink-0 block">
+                                <Image src={item.image} alt={item.name} fill sizes="80px" className="object-cover" />
                               </Link>
                               <Link href="/product-details" className="font-medium hover:text-gold transition">
                                 {item.name}

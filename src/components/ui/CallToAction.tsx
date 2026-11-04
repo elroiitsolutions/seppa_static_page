@@ -18,7 +18,7 @@ const CallToAction: React.FC<CTAProps> = ({
 }) => {
   return (
     <section className="py-12 lg:py-24 bg-[#101934] relative overflow-hidden my-12 mx-3 rounded-[2rem] shadow-2xl">
-      <div className="absolute inset-0 opacity-10 bg-[url('https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/bg-pattern.png')] bg-repeat" />
+      <div className="absolute inset-0 opacity-10 bg-radial from-white/10 to-transparent pointer-events-none" />
       
       {/* Decorative Blur Orbs */}
       <div className="absolute top-0 left-0 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] max-w-full bg-seppa-red/20 rounded-full blur-[90px] md:blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />

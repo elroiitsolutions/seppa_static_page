@@ -207,7 +207,7 @@ const Footer: React.FC = () => {
         {/* Bottom Footer Area */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 font-medium text-sm md:text-base">
-            {f.copyright}{' '}
+            {f.copyright?.replace(/2021|202\d/, `${new Date().getFullYear()}`) || `Copyright © ${new Date().getFullYear()}`}{' '}
             <span className="text-white hover:text-seppa-red transition cursor-pointer">
               <Link href={getLink("/")}>{f.seppaSolutions}</Link>
             </span>

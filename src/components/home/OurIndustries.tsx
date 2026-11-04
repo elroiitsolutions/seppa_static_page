@@ -1,5 +1,6 @@
 "use client";
 import { useState, useRef } from 'react';
+import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { FiCheckCircle, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
@@ -106,17 +107,22 @@ const OurIndustries = () => {
             transition={{ duration: 0.8 }}
           >
             <div className="w-full md:w-[85%] mx-auto relative group overflow-hidden rounded-[2rem] shadow-xl aspect-[16/9] md:aspect-[21/9] cursor-pointer">
-              <img 
+              <Image 
                 src="/pics/corporate.jpg" 
-                alt="Factory machinery" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                alt="Seppa Solutions Factory Machinery & Automated Lines" 
+                fill
+                sizes="(max-width: 768px) 100vw, 85vw"
+                loading="lazy"
+                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
               />
               <div className="shine-overlay" />
             </div>
-            <img 
+            <Image 
               src="/pics/seppa logo.png" 
-              alt="Seppa logo" 
-              className="w-[45%] md:w-[35%] max-w-[200px] absolute -bottom-10 left-8 md:left-[10%] border-[6px] md:border-[8px] border-[#f9f8f4] rounded-2xl shadow-xl object-cover z-10 bg-white"
+              alt="Seppa Solutions Brand Seal" 
+              width={200}
+              height={100}
+              className="w-[45%] md:w-[35%] max-w-[200px] h-auto absolute -bottom-10 left-8 md:left-[10%] border-[6px] md:border-[8px] border-[#f9f8f4] rounded-2xl shadow-xl object-contain z-10 bg-white"
             />
           </motion.div>
 
@@ -195,10 +201,13 @@ const OurIndustries = () => {
                 className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full"
               >
                 <div className="w-full lg:w-1/2 relative group overflow-hidden rounded-2xl shadow-md aspect-[4/3] max-h-[300px]">
-                  <img 
+                  <Image 
                     src={activeTab.image} 
                     alt={activeTab.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    loading="lazy"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                   />
                   <div className="shine-overlay" />
                 </div>

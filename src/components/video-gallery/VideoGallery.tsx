@@ -3,6 +3,7 @@ import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react'
 import PageHeader from '@/components/layout/PageHeader';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiPlay, FiSearch, FiX, FiGrid, FiFilter, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import Image from 'next/image';
 import bannerImg from '@/assets/about-us/generated/header.png';
 import { useTranslations, useLocale } from 'next-intl';
 
@@ -327,11 +328,12 @@ export default function VideoGallery() {
                     className="relative aspect-video overflow-hidden cursor-pointer"
                     onClick={() => handlePlay(video)}
                   >
-                    <img
+                    <Image
                       src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
                       alt={video.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      loading="lazy"
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />

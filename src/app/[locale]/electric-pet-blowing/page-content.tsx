@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
 
 // Reusing generic industrial processing images due to generation limits
@@ -174,7 +175,7 @@ const ElectricPetBlowingPage = () => {
               },
             ].map((item, idx) => (
               <Link href={item.link} key={idx} className="relative rounded-[2rem] overflow-hidden group shadow-lg hover:shadow-xl transition-all duration-300 aspect-[4/3] cursor-pointer block">
-                <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <Image src={item.img} alt={item.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <h3 className="text-white font-bold text-lg md:text-xl font-heading tracking-wide uppercase">{item.title}</h3>
