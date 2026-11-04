@@ -9,8 +9,8 @@
   --color-seppa-red: #E30D28;
   --color-seppa-blue: #101934;
   
-  --font-sans: 'Poppins', sans-serif;
-  --font-heading: 'Cal Sans', sans-serif;
+  --font-sans: var(--font-sans), 'Poppins', sans-serif;
+  --font-heading: var(--font-heading), 'Cal Sans', sans-serif;
 }
 
 

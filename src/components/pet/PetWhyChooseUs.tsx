@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import { FiBox, FiShield, FiCheckCircle, FiLayers, FiGlobe } from 'react-icons/fi';
 import AnimatedHeading from '../ui/AnimatedHeading';
@@ -62,13 +63,15 @@ const PetWhyChooseUs = () => {
             variants={fadeInUp}
           >
             <div className="rounded-[2rem] overflow-hidden aspect-[4/5] min-h-[350px] max-h-[620px] w-full shadow-lg relative bg-light">
-              {/* Optional Placeholder Image for Packaging */}
-              <img 
-                src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/why-choose-us-img.jpg" 
-                alt="Packaging Quality Inspection" 
-                className="w-full h-full object-cover"
+              <Image 
+                src="/pics/corporate.jpg" 
+                alt="Seppa Packaging Quality Inspection" 
+                fill
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                loading="lazy"
+                className="object-cover"
               />
-              <div className="absolute inset-0 bg-dark/20 mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-dark/20 mix-blend-multiply pointer-events-none"></div>
             </div>
           </motion.div>
 

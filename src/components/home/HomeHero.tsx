@@ -47,6 +47,7 @@ const HomeHero = () => {
             loop
             muted
             playsInline
+            preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source
@@ -84,9 +85,9 @@ const HomeHero = () => {
           {/* Top avatars and subtitle */}
           <motion.div variants={fadeInUp} className="flex flex-row items-center justify-start gap-2.5 sm:gap-4 mb-3 sm:mb-4">
             <div className="flex -space-x-2 md:-space-x-3">
-              <Image unoptimized width={40} height={40} src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-1.jpg" alt="Avatar" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
-              <Image unoptimized width={40} height={40} src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-2.jpg" alt="Avatar" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
-              <Image unoptimized width={40} height={40} src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/author-3.jpg" alt="Avatar" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
+              <Image width={40} height={40} src="/images/avatars/author-1.jpg" alt="Client Testimonial Partner" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
+              <Image width={40} height={40} src="/images/avatars/author-2.jpg" alt="Global Beverage Manufacturer" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
+              <Image width={40} height={40} src="/images/avatars/author-3.jpg" alt="Bottling Plant Executive" className="w-6 h-6 md:w-10 md:h-10 rounded-full border-2 border-dark object-cover" />
             </div>
             <span className="text-white font-medium text-xs sm:text-sm md:text-base tracking-wide">
               {getT('sub')}

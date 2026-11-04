@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { FiCheck, FiCircle, FiStar } from 'react-icons/fi';
@@ -119,10 +120,12 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
                 >
                   <div className="rounded-[2rem] overflow-hidden aspect-[4/3] shadow-2xl relative">
                     {step.image ? (
-                      <img 
+                      <Image 
                         src={step.image} 
                         alt={step.title} 
-                        className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                       />
                     ) : null}
                     <div className="absolute inset-0 bg-dark/10 group-hover:bg-transparent transition-colors duration-500"></div>

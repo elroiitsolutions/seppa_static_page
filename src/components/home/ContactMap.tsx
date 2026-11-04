@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import AnimatedHeading from '../ui/AnimatedHeading';
 import { FiPhoneCall, FiMail } from 'react-icons/fi';
@@ -16,17 +17,17 @@ const staggerContainer = {
 };
 
 const locations = [
-  { id: 'usa', name: 'USA', desc: 'Irving, Texas', top: '35%', left: '22%', flag: 'https://flagcdn.com/w80/us.png', cities: ['Irving, Texas'] },
-  { id: 'canada', name: 'Canada', desc: 'Edmonton, Alberta', top: '22%', left: '18%', flag: 'https://flagcdn.com/w80/ca.png', cities: ['Edmonton, Alberta'] },
-  { id: 'uk', name: 'UK', desc: 'United Kingdom', top: '25%', left: '46%', flag: 'https://flagcdn.com/w80/gb.png', cities: ['United Kingdom'] },
-  { id: 'belgium', name: 'Brussels', desc: 'Belgium', top: '27%', left: '48%', flag: 'https://flagcdn.com/w80/be.png', cities: ['Belgium'] },
-  { id: 'germany', name: 'Germany', desc: 'Europe', top: '25%', left: '51%', flag: 'https://flagcdn.com/w80/de.png', cities: ['Europe'] },
-  { id: 'armenia', name: 'Armenia', desc: 'Eurasia', top: '30%', left: '59%', flag: 'https://flagcdn.com/w80/am.png', cities: ['Eurasia'] },
-  { id: 'uae', name: 'UAE', desc: 'Ajman Free Zone', top: '42%', left: '61%', flag: 'https://flagcdn.com/w80/ae.png', cities: ['Ajman Free Zone'] },
-  { id: 'australia', name: 'Australia', desc: 'Oceania', top: '75%', left: '85%', flag: 'https://flagcdn.com/w80/au.png', cities: ['Oceania'] },
+  { id: 'usa', name: 'USA', desc: 'Irving, Texas', top: '35%', left: '22%', flag: '/images/flags/us.png', cities: ['Irving, Texas'] },
+  { id: 'canada', name: 'Canada', desc: 'Edmonton, Alberta', top: '22%', left: '18%', flag: '/images/flags/ca.png', cities: ['Edmonton, Alberta'] },
+  { id: 'uk', name: 'UK', desc: 'United Kingdom', top: '25%', left: '46%', flag: '/images/flags/gb.png', cities: ['United Kingdom'] },
+  { id: 'belgium', name: 'Brussels', desc: 'Belgium', top: '27%', left: '48%', flag: '/images/flags/be.png', cities: ['Belgium'] },
+  { id: 'germany', name: 'Germany', desc: 'Europe', top: '25%', left: '51%', flag: '/images/flags/de.png', cities: ['Europe'] },
+  { id: 'armenia', name: 'Armenia', desc: 'Eurasia', top: '30%', left: '59%', flag: '/images/flags/am.png', cities: ['Eurasia'] },
+  { id: 'uae', name: 'UAE', desc: 'Ajman Free Zone', top: '42%', left: '61%', flag: '/images/flags/ae.png', cities: ['Ajman Free Zone'] },
+  { id: 'australia', name: 'Australia', desc: 'Oceania', top: '75%', left: '85%', flag: '/images/flags/au.png', cities: ['Oceania'] },
 ];
 
-const indiaLocation = { id: 'india', name: 'India', desc: 'Click to view cities', top: '45%', left: '68%', flag: 'https://flagcdn.com/w80/in.png' };
+const indiaLocation = { id: 'india', name: 'India', desc: 'Click to view cities', top: '45%', left: '68%', flag: '/images/flags/in.png' };
 const indiaCities = ['Mumbai (Corporate Office)', 'Bengaluru', 'New Delhi', 'Hyderabad', 'Chennai'];
 
 const allLocations = [...locations, { ...indiaLocation, cities: indiaCities }];
@@ -83,16 +84,19 @@ const ContactMap = () => {
                 {getT('helpDesc')}
               </p>
               
-              <div className="rounded-2xl overflow-hidden mb-8 shadow-sm">
-                <img 
+              <div className="rounded-2xl overflow-hidden mb-8 shadow-sm relative aspect-[4/3] w-full">
+                <Image 
                   src="/pics/customer.jpg" 
-                  alt="Customer Support" 
-                  className="w-full h-auto object-cover"
+                  alt="Seppa Solutions 24/7 Global Customer & Technical Support" 
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  loading="lazy"
+                  className="object-cover"
                 />
               </div>
 
               <div className="flex flex-col gap-6">
-                <a href="tel:+1234567890" className="flex items-center gap-5 group">
+                <a href="tel:+919384806105" className="flex items-center gap-5 group">
                   <div className="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center text-seppa-red group-hover:bg-seppa-red group-hover:text-white transition-colors duration-300 shadow-sm">
                     <FiPhoneCall className="text-2xl" />
                   </div>
@@ -101,7 +105,7 @@ const ContactMap = () => {
                       {getT('callUs')}
                     </p>
                     <h4 className="text-xl font-bold font-heading text-dark group-hover:text-seppa-red transition-colors duration-300">
-                      +1 (234) 567-890
+                      +91 93848 06105
                     </h4>
                   </div>
                 </a>
@@ -130,15 +134,14 @@ const ContactMap = () => {
             variants={fadeInUp}
           >
             {/* Using an SVG or image for the map background */}
-            <div className="relative w-full opacity-60">
-              <img 
+            <div className="relative w-full opacity-60 aspect-[16/9] sm:aspect-[2/1]">
+              <Image 
                 src="/pics/cta-map-image.png" 
-                alt="World Map" 
-                className="w-full h-auto"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg";
-                  (e.target as HTMLImageElement).style.opacity = "0.2";
-                }}
+                alt="Seppa Global Distribution & Operations Map" 
+                fill
+                sizes="(max-width: 1024px) 100vw, 66vw"
+                loading="lazy"
+                className="object-contain"
               />
             </div>
 
@@ -155,7 +158,7 @@ const ContactMap = () => {
               >
                 <div className="relative transform -translate-x-1/2 -translate-y-1/2">
                   <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border-[2px] md:border-[3px] border-white shadow-xl overflow-hidden group-hover:scale-110 transition-transform duration-300 relative">
-                    <img src={loc.flag} alt={loc.name} className="w-full h-full object-cover" />
+                    <Image src={loc.flag} alt={`${loc.name} Office - Seppa Solutions`} width={48} height={48} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                   {/* Red dot status indicator */}
                   <div className="absolute bottom-0 right-0 w-3 h-3 bg-seppa-red rounded-full border-2 border-white group-hover:scale-110 transition-transform duration-300"></div>
@@ -179,7 +182,7 @@ const ContactMap = () => {
                   className="w-10 h-10 md:w-14 md:h-14 rounded-full border-[2px] md:border-[4px] border-white shadow-xl overflow-hidden hover:scale-110 transition-transform duration-300 cursor-pointer relative"
                   onClick={(e) => { e.stopPropagation(); setActivePin(activePin === 'india' ? null : 'india'); }}
                 >
-                  <img src={indiaLocation.flag} alt={indiaLocation.name} className="w-full h-full object-cover" />
+                  <Image src={indiaLocation.flag} alt={`${indiaLocation.name} Headquarters - Seppa Solutions`} width={56} height={56} loading="lazy" className="w-full h-full object-cover" />
                 </div>
                 {/* Red dot status indicator */}
                 <div className="absolute bottom-1 right-0 w-3.5 h-3.5 bg-seppa-red rounded-full border-2 border-white pointer-events-none"></div>

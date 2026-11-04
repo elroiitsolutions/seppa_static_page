@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 interface ServiceContentProps {
@@ -16,16 +17,19 @@ const ServiceContent: React.FC<ServiceContentProps> = ({ serviceName }) => {
     <div className="w-full lg:w-2/3 order-1 lg:order-2">
       {/* Large Service Image */}
       <motion.div 
-        className="rounded-3xl overflow-hidden mb-10 shadow-md shine-overlay"
+        className="rounded-3xl overflow-hidden mb-10 shadow-md relative aspect-[16/10] w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeInUp}
       >
-        <img 
-          src="https://demo.awaikenthemes.com/yarnex/wp-content/uploads/2026/02/service-single.jpg" 
-          alt={serviceName} 
-          className="w-full aspect-[16/10] object-cover"
+        <Image 
+          src="/pics/process-technology.jpg" 
+          alt={`Seppa Solutions ${serviceName} Overview`} 
+          fill
+          sizes="(max-width: 1024px) 100vw, 66vw"
+          loading="lazy"
+          className="object-cover"
         />
       </motion.div>
       

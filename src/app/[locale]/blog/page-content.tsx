@@ -1,8 +1,8 @@
 import BlogView from './BlogView';
 
 export const metadata = {
-  title: 'Yarnex - Latest News & Articles',
-  description: 'Read the latest trends in sustainable textiles and yarn technology. Stay updated with the latest news from Yarnex.',
+  title: 'Seppa Solutions - Latest Packaging & Bottling News',
+  description: 'Read the latest trends in beverage processing, liquid packaging, and PET blow molding technology from Seppa Solutions.',
 };
 
 export default function BlogPage({ blogs }: { blogs: any[] }) {
