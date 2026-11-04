@@ -1,5 +1,6 @@
 import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import PackagingPageLayout, { PackagingPageData } from '@/components/packaging/PackagingPageLayout';
@@ -28,6 +29,7 @@ export default async function PetPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'pet' });
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['pet']);
 
   // Fetch blogs related to PET automatically
   const relatedBlogs = await getRelatedBlogs('/pet', locale);
@@ -73,7 +75,7 @@ export default async function PetPage({ params }: PageProps) {
   };
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
         <PackagingPageLayout data={pageData} locale={locale} />
       </div>

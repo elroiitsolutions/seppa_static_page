@@ -1,5 +1,6 @@
 import React from 'react';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import EnquiryPageLayout, { EnquiryPageData } from '@/components/enquiry/EnquiryPageLayout';
@@ -22,6 +23,7 @@ export default async function LocalizedProductEnquiryPage({ params }: Props) {
   const getRaw = (key: string) => t.raw(key);
 
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['enquiry']);
 
   const pageData: EnquiryPageData = {
     title: getT('title'),
@@ -82,7 +84,7 @@ export default async function LocalizedProductEnquiryPage({ params }: Props) {
   };
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
         <EnquiryPageLayout data={pageData} />
       </div>
