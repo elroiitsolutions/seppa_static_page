@@ -1,5 +1,6 @@
 import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import AboutUsClient from './AboutUsClient';
@@ -60,6 +61,7 @@ export default async function AboutUsPage({ params }: PageProps) {
   } : undefined;
 
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['about-us']);
 
   const translations = {
     title: t('title'),
@@ -72,7 +74,7 @@ export default async function AboutUsPage({ params }: PageProps) {
   };
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <AboutUsClient
         locale={locale}
         translations={translations}

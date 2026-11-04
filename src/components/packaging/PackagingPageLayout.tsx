@@ -166,7 +166,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data, locale,
                 className="w-full lg:w-5/12 lg:sticky lg:top-24"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
                 variants={staggerContainer}
               >
                 <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6 shadow-sm">
@@ -188,7 +188,7 @@ const PackagingPageLayout: React.FC<PackagingPageLayoutProps> = ({ data, locale,
                 className="w-full lg:w-7/12"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
                 variants={fadeInUp}
               >
                 <Accordion items={data.faqs} defaultOpenIndex={0} />

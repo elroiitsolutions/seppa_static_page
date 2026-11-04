@@ -87,7 +87,7 @@ const AwardsContent = ({ getT }: { getT: (key: string) => string }) => {
                     sizes="(max-width: 768px) 200px, (max-width: 1024px) 280px, 350px"
                     loading="lazy"
                     style={{ width: 'auto', height: 'auto' }}
-                    className="max-h-32 md:max-h-40 lg:max-h-48 object-contain drop-shadow-sm rounded-lg" 
+                    className="w-auto h-auto max-h-32 md:max-h-40 lg:max-h-48 object-contain drop-shadow-sm rounded-lg" 
                   />
                 </div>
               ))}
@@ -105,7 +105,7 @@ const AwardsContent = ({ getT }: { getT: (key: string) => string }) => {
                     sizes="(max-width: 768px) 200px, (max-width: 1024px) 280px, 350px"
                     loading="lazy"
                     style={{ width: 'auto', height: 'auto' }}
-                    className="max-h-32 md:max-h-40 lg:max-h-48 object-contain drop-shadow-sm rounded-lg" 
+                    className="w-auto h-auto max-h-32 md:max-h-40 lg:max-h-48 object-contain drop-shadow-sm rounded-lg" 
                   />
                 </div>
               ))}

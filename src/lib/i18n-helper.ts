@@ -4,7 +4,7 @@
  */
 export function pickMessages(messages: Record<string, any>, namespaces: string[]) {
   const picked: Record<string, any> = {};
-  const commonNamespaces = ['header', 'footer']; // Always include layout namespaces
+  const commonNamespaces = ['header', 'footer', 'home']; // Always include layout and shared component namespaces
   const allNamespaces = [...new Set([...commonNamespaces, ...namespaces])];
 
   for (const ns of allNamespaces) {

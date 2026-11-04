@@ -109,7 +109,7 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
             className="w-full lg:w-5/12"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
             variants={fadeInUp}
           >
             <div className="rounded-[2rem] overflow-hidden aspect-[4/5] min-h-[350px] max-h-[620px] w-full shadow-lg relative bg-light">
@@ -129,7 +129,7 @@ const PackagingWhyChooseUs: React.FC<PackagingWhyChooseUsProps> = ({ title, desc
             className="w-full lg:w-7/12 lg:pl-8"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
             variants={staggerContainer}
           >
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">

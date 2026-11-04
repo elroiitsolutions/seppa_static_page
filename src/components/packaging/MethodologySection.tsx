@@ -83,7 +83,7 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
                 className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-20 items-center`}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
                 variants={staggerContainer}
               >
                 {/* Content */}
@@ -124,6 +124,8 @@ const MethodologySection: React.FC<MethodologySectionProps> = ({
                         src={step.image} 
                         alt={step.title} 
                         fill
+                        loading={idx < 2 ? "eager" : "lazy"}
+                        decoding="async"
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                       />

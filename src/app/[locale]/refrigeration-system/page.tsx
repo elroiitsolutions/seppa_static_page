@@ -1,5 +1,6 @@
 import React from 'react';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { getRelatedBlogs } from '@/lib/strapi/client';
@@ -31,6 +32,7 @@ export default async function LocalizedRefrigerationSystemPage({ params }: Props
   
   const t = await getTranslations({ locale, namespace: 'refrigeration' });
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['refrigeration']);
 
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/refrigeration-system', locale);
@@ -120,7 +122,7 @@ export default async function LocalizedRefrigerationSystemPage({ params }: Props
   pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
         <PackagingPageLayout data={pageData} locale={locale} />
       </div>

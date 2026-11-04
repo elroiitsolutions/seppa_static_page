@@ -1,5 +1,6 @@
 import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { getRelatedBlogs } from '@/lib/strapi/client';
@@ -123,13 +124,14 @@ export default async function JuicesNectarsPage({ params }: PageProps) {
   };
 
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['juicenectars']);
   pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   const hasConclusion = t.has('conclusion') && t.raw('conclusion') && t.raw('conclusion').title;
   const conclusionData = hasConclusion ? t.raw('conclusion') : null;
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
         <PackagingPageLayout data={pageData} locale={locale} />
         {conclusionData && (
