@@ -4,10 +4,14 @@ import nodemailer from 'nodemailer';
 // Helper to construct SMTP transporter
 function getTransporter() {
   const host = process.env.SMTP_HOST || 'smtp.hostinger.com';
-  const port = parseInt(process.env.SMTP_PORT || '465', 10);
-  const user = process.env.SMTP_USER || '';
-  const pass = process.env.SMTP_PASS || '';
-  const secure = process.env.SMTP_SECURE !== 'false' && port === 465;
+  const port = parseInt(process.env.SMTP_PORT || '587', 10);
+  const user = process.env.SMTP_USER || 'noreply@seppasolutions.com';
+  let pass = process.env.SMTP_PASS || 'Seppa$#149!^';
+  const secure = process.env.SMTP_SECURE === 'true' || port === 465;
+
+  if (pass === 'Seppa$' || !pass) {
+    pass = 'Seppa$#149!^';
+  }
 
   if (user && pass) {
     return nodemailer.createTransport({
