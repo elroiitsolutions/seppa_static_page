@@ -215,37 +215,41 @@ export async function POST(request: Request) {
     let senderEmailSent = false;
     let emailError = null;
 
-    try {
-      const transporter = getTransporter();
-      if (transporter) {
-        // 1. Dispatch Notification Email to Admin / Form Submit Receivers
-        await transporter.sendMail({
-          from: process.env.SMTP_FROM || `"SEPPA Solutions" <no-reply@seppasolutions.com>`,
-          to: recipients,
-          replyTo: `${fullName} <${email}>`,
-          subject: subject,
-          html: adminEmailHtml
-        });
-        adminEmailSent = true;
-
-        // 2. Dispatch Confirmation Email to the Customer / Sender
-        if (email && email.includes('@')) {
+    // 4. Send Email Notification
+    // If Strapi backend saved the enquiry, Strapi's backend service handles email dispatch.
+    // If Strapi was unreachable, Next.js fallback dispatches via local transporter so no leads are lost.
+    if (!strapiSaved) {
+      try {
+        const transporter = getTransporter();
+        if (transporter) {
+          // 1. Dispatch Notification Email to Admin / Form Submit Receivers
           await transporter.sendMail({
             from: process.env.SMTP_FROM || `"SEPPA Solutions" <no-reply@seppasolutions.com>`,
-            to: email,
-            subject: `Thank you for your enquiry - SEPPA Solutions`,
-            html: senderEmailHtml
+            to: recipients,
+            replyTo: `${fullName} <${email}>`,
+            subject: subject,
+            html: adminEmailHtml
           });
-          senderEmailSent = true;
+          adminEmailSent = true;
+
+          // 2. Dispatch Confirmation Email to the Customer / Sender
+          if (email && email.includes('@')) {
+            await transporter.sendMail({
+              from: process.env.SMTP_FROM || `"SEPPA Solutions" <no-reply@seppasolutions.com>`,
+              to: email,
+              subject: `Thank you for your enquiry - SEPPA Solutions`,
+              html: senderEmailHtml
+            });
+            senderEmailSent = true;
+          }
         }
-      } else {
-        console.log(`[Email Notice] SMTP not fully configured yet.`);
-        console.log(`Admin email would be sent to: ${recipients.join(', ')}`);
-        console.log(`Sender confirmation email would be sent to: ${email}`);
+      } catch (mailErr: any) {
+        console.error('[Fallback Email Dispatch Error]:', mailErr);
+        emailError = mailErr?.message || 'Mail dispatch error';
       }
-    } catch (mailErr: any) {
-      console.error('[Email Dispatch Error]:', mailErr);
-      emailError = mailErr?.message || 'Mail dispatch error';
+    } else {
+      adminEmailSent = true;
+      senderEmailSent = true;
     }
 
     return NextResponse.json({
