@@ -132,8 +132,8 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
                     height={80}
                     sizes="(max-width: 768px) 140px, (max-width: 1024px) 180px, 220px"
                     loading="lazy"
-                    style={{ width: 'auto', height: 'auto' }}
-                    className="max-h-20 object-contain drop-shadow-sm" 
+                    style={{ width: 'auto', height: 'auto', maxHeight: '80px' }}
+                    className="object-contain drop-shadow-sm" 
                   />
                 </div>
               ))}
@@ -154,8 +154,8 @@ const ClientsContent = ({ getT }: { getT: (key: string) => string }) => {
                     height={80}
                     sizes="(max-width: 768px) 140px, (max-width: 1024px) 180px, 220px"
                     loading="lazy"
-                    style={{ width: 'auto', height: 'auto' }}
-                    className="max-h-20 object-contain drop-shadow-sm" 
+                    style={{ width: 'auto', height: 'auto', maxHeight: '80px' }}
+                    className="object-contain drop-shadow-sm" 
                   />
                 </div>
               ))}

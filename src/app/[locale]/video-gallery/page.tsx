@@ -1,5 +1,6 @@
 import React from 'react';
 import { getMessages, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import VideoGallery from '@/components/video-gallery/VideoGallery';
@@ -17,9 +18,10 @@ export default async function LocalizedVideoGalleryPage({ params }: Props) {
   setRequestLocale(locale);
 
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['videos']);
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <VideoGallery />
     </NextIntlClientProvider>
   );

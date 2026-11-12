@@ -1,5 +1,6 @@
 import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import PackagingPageLayout from '@/components/packaging/PackagingPageLayout';
@@ -81,6 +82,7 @@ export default async function CatchAllPage({ params }: Props) {
   }
 
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, []);
 
   // Map CMS data to components
   let TemplateComponent = PackagingPageLayout;
@@ -89,7 +91,7 @@ export default async function CatchAllPage({ params }: Props) {
   }
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <TemplateComponent data={pageData} locale={locale} />
     </NextIntlClientProvider>
   );

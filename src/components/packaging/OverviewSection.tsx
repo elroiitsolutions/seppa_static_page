@@ -39,7 +39,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
               className="relative w-[90%] md:w-[65%] h-[300px] md:h-[400px] mb-20 md:mb-24 mx-auto"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
               variants={staggerContainer}
             >
               <motion.div 
@@ -77,7 +77,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
               className="w-full text-start"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
               variants={staggerContainer}
             >
               <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
@@ -131,7 +131,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
               className="w-full lg:w-1/2 order-2 lg:order-1"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
               variants={staggerContainer}
             >
               <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white mb-6">
@@ -183,7 +183,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({ title, description, s
               className="w-full lg:w-1/2 order-1 lg:order-2"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.05, margin: "250px 0px" }}
               variants={fadeInUp}
             >
               <div className="rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3] bg-white p-4">

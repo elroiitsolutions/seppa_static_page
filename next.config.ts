@@ -8,8 +8,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   compress: true,
   images: {
-    formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days cache for optimized images
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60 * 60 * 24 * 60, // 60 days cache for optimized images
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
@@ -62,10 +62,6 @@ const nextConfig: NextConfig = {
     });
 
     return redirectsList;
-  },
-  experimental: {
-    workerThreads: false,
-    cpus: 2,
   },
 }
 

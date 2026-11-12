@@ -1,5 +1,6 @@
 import React from 'react';
 import { getTranslations, getMessages, setRequestLocale } from 'next-intl/server';
+import { pickMessages } from '@/lib/i18n-helper';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { getRelatedBlogs } from '@/lib/strapi/client';
@@ -26,6 +27,7 @@ export default async function HotGlueLabellingPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'hotgluelabelling' });
   const messages = await getMessages({ locale });
+  const filteredMessages = pickMessages(messages, ['hotgluelabelling']);
 
   // Fetch blogs related to this page automatically
   const relatedBlogs = await getRelatedBlogs('/labelling/hot-glue-labelling', locale);
@@ -141,7 +143,7 @@ export default async function HotGlueLabellingPage({ params }: PageProps) {
     pageData.trending_articles = relatedBlogs?.length > 0 ? relatedBlogs : undefined;
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={filteredMessages}>
       <PackagingPageLayout data={pageData} />
     </NextIntlClientProvider>
   );
