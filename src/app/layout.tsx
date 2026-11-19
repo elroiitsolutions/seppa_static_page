@@ -53,9 +53,6 @@ export const metadata: Metadata = {
     "Seppa Solutions"
   ],
   metadataBase: new URL("https://seppasolutions.com"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Seppa Solutions | Processing & Packaging Technology",
     description: "Complete bottling and packaging machinery solutions for water, soft drinks, juices, beer, and liquid packaging worldwide.",
