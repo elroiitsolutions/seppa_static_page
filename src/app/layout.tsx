@@ -52,11 +52,11 @@ export const metadata: Metadata = {
     "aseptic filling machines",
     "Seppa Solutions"
   ],
-  metadataBase: new URL("https://seppasolutions.com"),
+  metadataBase: new URL("https://www.seppasolutions.com"),
   openGraph: {
     title: "Seppa Solutions | Processing & Packaging Technology",
     description: "Complete bottling and packaging machinery solutions for water, soft drinks, juices, beer, and liquid packaging worldwide.",
-    url: "https://seppasolutions.com",
+    url: "https://www.seppasolutions.com",
     siteName: "Seppa Solutions",
     locale: "en_US",
     type: "website",

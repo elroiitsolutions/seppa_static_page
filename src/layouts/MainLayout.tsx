@@ -18,7 +18,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   // Normalize pathname: ensure leading and trailing slash matching canonical URL structure
   const cleanPath = pathname.startsWith('/') ? pathname : `/${pathname}`;
   const normalizedPath = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
-  const canonicalUrl = `https://seppasolutions.com${normalizedPath}`;
+  const canonicalUrl = `https://www.seppasolutions.com${normalizedPath}`;
 
   // Extract path without locale for multilingual hreflang alternates (e.g. /en/contact-us/ -> /contact-us/)
   const pathWithoutLocale = normalizedPath.replace(/^\/(en|ar|de|nl|fr)(\/|$)/, '/');
@@ -40,12 +40,12 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       {/* Canonical and Multilingual SEO Hreflang Tags */}
       <link rel="canonical" href={canonicalUrl} />
       <meta property="og:url" content={canonicalUrl} />
-      <link rel="alternate" hrefLang="en" href={`https://seppasolutions.com/en${subPath === '/' ? '/' : subPath}`} />
-      <link rel="alternate" hrefLang="ar" href={`https://seppasolutions.com/ar${subPath === '/' ? '/' : subPath}`} />
-      <link rel="alternate" hrefLang="de" href={`https://seppasolutions.com/de${subPath === '/' ? '/' : subPath}`} />
-      <link rel="alternate" hrefLang="nl" href={`https://seppasolutions.com/nl${subPath === '/' ? '/' : subPath}`} />
-      <link rel="alternate" hrefLang="fr" href={`https://seppasolutions.com/fr${subPath === '/' ? '/' : subPath}`} />
-      <link rel="alternate" hrefLang="x-default" href={`https://seppasolutions.com/en${subPath === '/' ? '/' : subPath}`} />
+      <link rel="alternate" hrefLang="en" href={`https://www.seppasolutions.com/en${subPath === '/' ? '/' : subPath}`} />
+      <link rel="alternate" hrefLang="ar" href={`https://www.seppasolutions.com/ar${subPath === '/' ? '/' : subPath}`} />
+      <link rel="alternate" hrefLang="de" href={`https://www.seppasolutions.com/de${subPath === '/' ? '/' : subPath}`} />
+      <link rel="alternate" hrefLang="nl" href={`https://www.seppasolutions.com/nl${subPath === '/' ? '/' : subPath}`} />
+      <link rel="alternate" hrefLang="fr" href={`https://www.seppasolutions.com/fr${subPath === '/' ? '/' : subPath}`} />
+      <link rel="alternate" hrefLang="x-default" href={`https://www.seppasolutions.com/en${subPath === '/' ? '/' : subPath}`} />
 
       <FloatingActions />
       <div className="flex flex-col flex-grow">
