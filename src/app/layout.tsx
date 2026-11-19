@@ -56,7 +56,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Seppa Solutions | Processing & Packaging Technology",
     description: "Complete bottling and packaging machinery solutions for water, soft drinks, juices, beer, and liquid packaging worldwide.",
-    url: "https://www.seppasolutions.com",
     siteName: "Seppa Solutions",
     locale: "en_US",
     type: "website",
@@ -71,6 +70,60 @@ const defaultMessages = {
   footer: enFooter,
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.seppasolutions.com/#organization",
+      "name": "Seppa Solutions",
+      "url": "https://www.seppasolutions.com",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.seppasolutions.com/#logo",
+        "url": "https://www.seppasolutions.com/logo.png",
+        "contentUrl": "https://www.seppasolutions.com/logo.png",
+        "caption": "Seppa Solutions Logo"
+      },
+      "image": {
+        "@id": "https://www.seppasolutions.com/#logo"
+      },
+      "description": "Global manufacturer of advanced liquid processing equipment, PET blow moulding machinery, water bottling plants, and automated packaging lines.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-9483525500",
+          "contactType": "sales",
+          "areaServed": "Global",
+          "availableLanguage": ["English", "Arabic", "German", "Dutch", "French"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-888-270-2217",
+          "contactType": "customer service",
+          "areaServed": ["US", "CA"],
+          "availableLanguage": ["English"]
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/seppasolutions",
+        "https://www.youtube.com/@seppasolutions"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.seppasolutions.com/#website",
+      "url": "https://www.seppasolutions.com",
+      "name": "Seppa Solutions",
+      "description": "Beverage Processing, PET Bottling & Packaging Machinery",
+      "publisher": {
+        "@id": "https://www.seppasolutions.com/#organization"
+      },
+      "inLanguage": ["en", "ar", "de", "nl", "fr"]
+    }
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -80,6 +133,22 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning className={`${poppins.variable} ${calSans.variable}`}>
       <head>
         <meta name="google-site-verification" content="wcF2xooOMglCm4txniropgRgpvhtE8aEN-U9iW9_oY0" />
+        {/* Preload High-Priority Mobile Hero LCP Poster */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-poster-mobile.webp"
+          type="image/webp"
+          media="(max-width: 768px)"
+          fetchPriority="high"
+        />
+
+        {/* JSON-LD Structured Data for Rich Results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         {/* Google tag (gtag.js) - Google Ads & Google Analytics */}
         <Script
           strategy="afterInteractive"
