@@ -42,13 +42,26 @@ const HomeHero = () => {
       {/* Background Video Wrapper - uses hero-video-wrapper class defined in globals.css */}
       <div className="hero-video-wrapper absolute inset-0 z-0 pointer-events-none">
         <div className="relative w-full h-full bg-dark overflow-hidden pointer-events-auto hero-video-inner">
+          {/* High Priority LCP Poster Image: Paints instantly before video loads to achieve < 1.5s LCP */}
+          <picture className="absolute inset-0 w-full h-full pointer-events-none z-0">
+            <source media="(max-width: 768px)" srcSet="/images/hero-poster-mobile.webp" />
+            <img
+              src="/images/hero-poster.webp"
+              alt="Seppa Solutions Beverage Processing & PET Bottling Line"
+              fetchPriority="high"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </picture>
+
           <video
             autoPlay
             loop
             muted
             playsInline
-            preload="metadata"
-            className="absolute inset-0 w-full h-full object-cover"
+            preload="none"
+            poster="/images/hero-poster.webp"
+            className="absolute inset-0 w-full h-full object-cover z-0"
           >
             <source
               src="/videos/stock-footage-shop-for-the-production-of-drinking-water-on-the-conveyor-moving-water-bottles-production-of.mp4"
